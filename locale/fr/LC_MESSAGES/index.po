@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-23 23:51+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-24 00:45+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,8 @@ msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
 msgid "$Date: 2013-09-27 10:21:57 +0200 (Fri, 27 Sep 2013) $"
 msgstr "$Date: 2013-09-27 10:21:57 +0200 (Fri, 27 Sep 2013) $"
 
-#: ../../index.txt:10 ../../index.txt:0
+#: ../../index.txt:10
+#: ../../index.txt:0
 msgid "Quick Links"
 msgstr "Liens rapides"
 
@@ -49,7 +50,7 @@ msgstr ":ref:`community`"
 
 #: ../../index.txt:1
 msgid "`Search mailing list <http://zoo-discuss.1049523.n5.nabble.com/>`__"
-msgstr ""
+msgstr "`Chercher dans la liste de diffusion <http://zoo-discuss.1049523.n5.nabble.com/>`__"
 
 #: ../../index.txt:1
 msgid ":ref:`documentation_development`"
@@ -64,63 +65,46 @@ msgid ":ref:`workshop-foss4g-cee-2012`"
 msgstr ":ref:`workshop-foss4g-cee-2012`"
 
 #: ../../index.txt:19
-msgid ""
-"The entire documentation is also available as a single `PDF document "
-"<./ZOOProject.pdf>`__ |image|  and `ePub document <./ZOOProject.epub>`__"
-msgstr ""
+msgid "The entire documentation is also available as a single `PDF document <./ZOOProject.pdf>`__ |image|  and `ePub document <./ZOOProject.epub>`__"
+msgstr "La documentation complète est aussi disponible en un seul `document PDF <./ZOOProject.pdf>`__ |image|  et en `document ePub <./ZOOProject.epub>`__"
 
 #: ../../index.txt:23
 msgid "About ZOO Documentation"
 msgstr "A propos de la documentation de ZOO"
 
 #: ../../index.txt:25
-msgid ""
-"ZOO Documentation is a collaborative process; once users contribute "
-"documentation through the ZOO Wiki, the Documentation Committee will then "
-"review the contributions to add them into the official docs.  The committee "
-"is currently composed of:"
-msgstr ""
+msgid "ZOO Documentation is a collaborative process; once users contribute documentation through the ZOO Wiki, the Documentation Committee will then review the contributions to add them into the official docs.  The committee is currently composed of:"
+msgstr "La documentation ZOO est un processus collaboratif; une fois lque les utilisateurs ont contribué à la documentation via la Wiki de ZOO, le comité de documentation réexaminera les contributions pour les ajouter dans la documentation officiel.  Le comité est composé actuellement de:"
 
 #: ../../index.txt:35
-msgid ""
-"A special thank to the ZOO-Project sponsors and knwoledge partners for their"
-" support."
-msgstr ""
+msgid "A special thank to the ZOO-Project sponsors and knwoledge partners for their support."
+msgstr "Un remerciement particulier aux sponsors du ZOO-Project et aux partenaires de connaissance pour leur support."
 
 #: ../../index.txt:37
-msgid ""
-"The committee would like to thank ``Venkatesh Raghavan`` for his help on "
-"promoting ZOO Workshop in many places."
-msgstr ""
+msgid "The committee would like to thank ``Venkatesh Raghavan`` for his help on promoting ZOO Workshop in many places."
+msgstr "Le commité souhaite remercier ``Venkatesh Raghavan`` pour son aide pour promouvoir le Workshop ZOO dans de nombreux lieux."
 
 #: ../../index.txt:39
-msgid ""
-"The committee would like to thank ``Hirofumi Hayashi`` and ``Daisuke "
-"Yoshida`` for their help and japanese translation effort for the ZOO-Project"
-" Worshop 2010."
-msgstr ""
+msgid "The committee would like to thank ``Hirofumi Hayashi`` and ``Daisuke Yoshida`` for their help and japanese translation effort for the ZOO-Project Worshop 2010."
+msgstr "Le comité souhaite remercier ``Hirofumi Hayashi`` et ``Daisuke Yoshida`` pour leur aide et leur effort pour la taduction japonaise du Workshop ZOO-Project 2010."
 
 #: ../../index.txt:41
-msgid ""
-"The committee would also like to thank the early contributors to the "
-"documentation: ``Luca Delucchi``, ``René-Luc D'Hont``,  ``Angelos Tzotsos`` "
-"and ``Guillaume Sueur``."
-msgstr ""
+msgid "The committee would also like to thank the early contributors to the documentation: ``Luca Delucchi``, ``René-Luc D'Hont``,  ``Angelos Tzotsos`` and ``Guillaume Sueur``."
+msgstr "Le comité souhaite aussi remercier les contributeurs de la première heure à la documentation: ``Luca Delucchi``, ``René-Luc D'Hont``,  ``Angelos Tzotsos`` et ``Guillaume Sueur``."
 
 #: ../../index.txt:45
 msgid "ZOO Wiki"
-msgstr ""
+msgstr "Wiki ZOO"
 
 #: ../../index.txt:47
-msgid ""
-"Users wishing to contribute steps and documents should use the `ZOO Wiki "
-"<http://www.zoo-project.org/trac>`__."
-msgstr ""
+msgid "Users wishing to contribute steps and documents should use the `ZOO Wiki <http://www.zoo-project.org/trac>`__."
+msgstr "Les utilisateurs souhaitant contribuer aux étapes et à la documentation doivent utiliser le`Wiki ZOO <http://www.zoo-project.org/trac>`__."
 
 #: ../../index.txt:51
 msgid "Official Documentation"
-msgstr ""
+msgstr "Documentation officielle"
 
 #: ../../index.txt:53
 msgid "This section contains the official ZOO Project documentation."
-msgstr ""
+msgstr "Cette section contient la documentation officiel du projet ZOO."
+
