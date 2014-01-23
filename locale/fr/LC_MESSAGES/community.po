@@ -1,0 +1,482 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-23 23:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../community/developer.txt:4
+msgid "ZOO-Project Committer Guildlines"
+msgstr ""
+
+#: ../../community/developer.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../community/developer.txt:7
+msgid "$Date: 2011-12-07 14:19:47 +0100 (Mer, 07 déc 2011) $"
+msgstr ""
+
+#: ../../community/developer.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../community/developer.txt:14
+msgid "Election to SVN Commit Access"
+msgstr ""
+
+#: ../../community/developer.txt:16
+msgid ""
+"Permission for SVN commit access shall be provided to new developers only if"
+" accepted by the ZOO-Project Project Steering Committee. A proposal should "
+"be written to the PSC for new committers and voted."
+msgstr ""
+
+#: ../../community/developer.txt:18
+msgid "Removal of SVN commit access should be handled by the same process."
+msgstr ""
+
+#: ../../community/developer.txt:20
+msgid ""
+"The new committer should have demonstrated commitment to ZOO-Project and "
+"knowledge of the ZOO-Project source code and processes to the committee's "
+"satisfaction, usually by reporting bugs, submitting patches, and/or actively"
+" participating in the ZOO-Project mailing list(s)."
+msgstr ""
+
+#: ../../community/developer.txt:22
+msgid ""
+"The new committer should also be prepared to support any new feature or "
+"changes that he/she commits to the ZOO-Project source tree in future "
+"releases, or to find someone to which to delegate responsibility for them if"
+" he/she stops being available to support the portions of code that he/she is"
+" responsible for."
+msgstr ""
+
+#: ../../community/developer.txt:24
+msgid ""
+"All committers should also be a member of the zoo-discuss mailing list so "
+"they can stay informed on policies, technical developments and release "
+"preparation."
+msgstr ""
+
+#: ../../community/developer.txt:26
+msgid ""
+"New commiters are responsible for having read, and understood this document."
+msgstr ""
+
+#: ../../community/developer.txt:30
+msgid "Committer Tracking"
+msgstr ""
+
+#: ../../community/developer.txt:32
+msgid ""
+"A list of all project committers will be kept in the main zoo-project "
+"directory (called COMMITTERS) listing for each SVN committer:"
+msgstr ""
+
+#: ../../community/developer.txt:34
+msgid "Userid: the id that will appear in the SVN logs for this person."
+msgstr ""
+
+#: ../../community/developer.txt:35
+msgid "Full name: the users actual name."
+msgstr ""
+
+#: ../../community/developer.txt:36
+msgid ""
+"Email address: A current email address at which the committer can be "
+"reached. It may be altered in normal ways to make it harder to auto-harvest."
+msgstr ""
+
+#: ../../community/developer.txt:39
+msgid "SVN Administrator"
+msgstr ""
+
+#: ../../community/developer.txt:41
+msgid ""
+"One member of the Project Steering Committee will be designed the SVN "
+"Administrator. That person will be responsible for giving SVN commit access "
+"to folks, updating the COMMITTERS file, and other SVN related management. "
+"That person will need login access on the SVN server of course."
+msgstr ""
+
+#: ../../community/developer.txt:43
+msgid "Initially Gérald Fenoy will be the SVN Adminstrator."
+msgstr ""
+
+#: ../../community/developer.txt:46
+msgid "SVN Commit Practices"
+msgstr ""
+
+#: ../../community/developer.txt:48
+msgid ""
+"The following are considered good SVN commit practices for the ZOO-Project "
+"project."
+msgstr ""
+
+#: ../../community/developer.txt:50
+msgid "Use meaningful descriptions for SVN commit log entries."
+msgstr ""
+
+#: ../../community/developer.txt:51
+msgid ""
+"Add a bug reference like \"(#1234)\" at the end of SVN commit log entries "
+"when committing changes related to a ticket in Trac. The '#' character "
+"enables Trac to create a hyperlink from the changeset to the mentionned "
+"ticket."
+msgstr ""
+
+#: ../../community/developer.txt:52
+msgid ""
+"After commiting changes related to a ticket in Trac, write the tree and "
+"revision in which it was fixed in the ticket description. Such as \"Fixed in"
+" trunk (r12345) and in branches/1.7 (r12346)\". The 'r' character enables "
+"Trac to create a hyperlink from the ticket to the changeset."
+msgstr ""
+
+#: ../../community/developer.txt:53
+msgid ""
+"Changes should not be committed in stable branches without a corresponding "
+"bug id. Any change worth pushing into the stable version is worth a bug "
+"entry."
+msgstr ""
+
+#: ../../community/developer.txt:54
+msgid ""
+"Never commit new features to a stable branch without permission of the PSC "
+"or release manager. Normally only fixes should go into stable branches."
+msgstr ""
+
+#: ../../community/developer.txt:55
+msgid "New features go in the main development trunk."
+msgstr ""
+
+#: ../../community/developer.txt:56
+msgid ""
+"Only bug fixes should be committed to the code during pre-release code "
+"freeze, without permission from the PSC or release manager."
+msgstr ""
+
+#: ../../community/developer.txt:57
+msgid ""
+"Significant changes to the main development version should be discussed on "
+"the zoo-discuss list before you make them, and larger changes will require a"
+" to be discussed and approved on zoo-psc list by the PSC."
+msgstr ""
+
+#: ../../community/developer.txt:58
+msgid ""
+"Do not create new branches without the approval of the PSC. Release managers"
+" are assumed to have permission to create a branch."
+msgstr ""
+
+#: ../../community/developer.txt:59
+msgid ""
+"All source code in SVN should be in Unix text format as opposed to DOS text "
+"mode."
+msgstr ""
+
+#: ../../community/developer.txt:60
+msgid ""
+"When committing new features or significant changes to existing source code,"
+" the committer should take reasonable measures to insure that the source "
+"code continues to build and work on the most commonly supported platforms "
+"(currently Linux and Windows), either by testing on those platforms "
+"directly, running Buildbot tests, or by getting help from other developers "
+"working on those platforms. If new files or library dependencies are added, "
+"then the configure.in, Makefile.in, Makefile.vc and related documentations "
+"should be kept up to date."
+msgstr ""
+
+#: ../../community/developer.txt:63
+msgid "Legal"
+msgstr ""
+
+#: ../../community/developer.txt:65
+msgid ""
+"Committers are the front line gatekeepers to keep the code base clear of "
+"improperly contributed code. It is important to the ZOO-Project users, "
+"developers and the OSGeo foundation to avoid contributing any code to the "
+"project without it being clearly licensed under the project license."
+msgstr ""
+
+#: ../../community/developer.txt:67
+msgid ""
+"Generally speaking the key issues are that those providing code to be "
+"included in the repository understand that the code will be released under "
+"the MIT/X license, and that the person providing the code has the right to "
+"contribute the code. For the commiter themselves understanding about the "
+"license is hopefully clear. For other contributors, the commiter should "
+"verify the understanding unless the commiter is very comfortable that the "
+"contributor understands the license (for instance frequent contributors)."
+msgstr ""
+
+#: ../../community/developer.txt:69
+msgid ""
+"If the contribution was developed on behalf of an employer (on work time, as"
+" part of a work project, etc) then it is important that an appropriate "
+"representative of the employer understand that the code will be contributed "
+"under the MIT/X license. The arrangement should be cleared with an "
+"authorized supervisor/manager, etc."
+msgstr ""
+
+#: ../../community/developer.txt:71
+msgid ""
+"The code should be developed by the contributor, or the code should be from "
+"a source which can be rightfully contributed such as from the public domain,"
+" or from an open source project under a compatible license."
+msgstr ""
+
+#: ../../community/developer.txt:73
+msgid "All unusual situations need to be discussed and/or documented."
+msgstr ""
+
+#: ../../community/developer.txt:75
+msgid ""
+"Committers should adhere to the following guidelines, and may be personally "
+"legally liable for improperly contributing code to the source repository:"
+msgstr ""
+
+#: ../../community/developer.txt:77
+msgid ""
+"Make sure the contributor (and possibly employer) is aware of the "
+"contribution terms."
+msgstr ""
+
+#: ../../community/developer.txt:78
+msgid ""
+"Code coming from a source other than the contributor (such as adapted from "
+"another project) should be clearly marked as to the original source, "
+"copyright holders, license terms and so forth. This information can be in "
+"the file headers, but should also be added to the project licensing file if "
+"not exactly matching normal project licensing (zoo-project/zoo-"
+"kernel/LICENSE)."
+msgstr ""
+
+#: ../../community/developer.txt:79
+msgid ""
+"Existing copyright headers and license text should never be stripped from a "
+"file. If a copyright holder wishes to give up copyright they must do so in "
+"writing to the foundation before copyright messages are removed. If license "
+"terms are changed it has to be by agreement (written in email is ok) of the "
+"copyright holders."
+msgstr ""
+
+#: ../../community/developer.txt:80
+msgid ""
+"Code with licenses requiring credit, or disclosure to users should be added "
+"to /trunk/zoo-project/zoo-kernel/LICENSE."
+msgstr ""
+
+#: ../../community/developer.txt:81
+msgid ""
+"When substantial contributions are added to a file (such as substantial "
+"patches) the author/contributor should be added to the list of copyright "
+"holders for the file."
+msgstr ""
+
+#: ../../community/developer.txt:82
+msgid ""
+"If there is uncertainty about whether a change it proper to contribute to "
+"the code base, please seek more information from the project steering "
+"committee, or the foundation legal counsel."
+msgstr ""
+
+#: ../../community/developer.txt:85
+msgid "Bootstrapping"
+msgstr ""
+
+#: ../../community/developer.txt:87
+msgid ""
+"The following existing commiters will be considered authorized ZOO-Project "
+"committers as long as they each review the commiter guidelines, and agree to"
+" adhere to them. The SVN administrator will be responsible for checking with"
+" each person."
+msgstr ""
+
+#: ../../community/developer.txt:89
+msgid "David SAGGIORATO (aka david)"
+msgstr ""
+
+#: ../../community/developer.txt:90
+msgid "Gérald FENOY (aka djay)"
+msgstr ""
+
+#: ../../community/developer.txt:91
+msgid "Jeff MCKENNA (aka jmckenna)"
+msgstr ""
+
+#: ../../community/developer.txt:92
+msgid "Angelos TZOTSOS (aka kalxas)"
+msgstr ""
+
+#: ../../community/developer.txt:93
+msgid "Luca DELUCCHI (aka lucadelu)"
+msgstr ""
+
+#: ../../community/developer.txt:94
+msgid "Markus NETELER (aka neteler)"
+msgstr ""
+
+#: ../../community/developer.txt:95
+msgid "Marco NEGRETTI (aka nmarco)"
+msgstr ""
+
+#: ../../community/developer.txt:96
+msgid "René-Luc D'HONT (aka reluc)"
+msgstr ""
+
+#: ../../community/developer.txt:97
+msgid "Trevor CLARKE (aka tclarke)"
+msgstr ""
+
+#: ../../community/index.txt:4
+msgid "ZOO Community"
+msgstr ""
+
+#: ../../community/index.txt:6
+msgid "The following sections will help you interact with the ZOO community."
+msgstr ""
+
+#: ../../community/irc.txt:4
+msgid "IRC Chat"
+msgstr ""
+
+#: ../../community/irc.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
+msgstr ""
+
+#: ../../community/irc.txt:7
+msgid "$Date: 2013-03-28 11:00:07 +0100 (Thu, 28 Mar 2013) $"
+msgstr ""
+
+#: ../../community/irc.txt:9
+msgid ""
+"Some of the development of the ZOO-Project is coordinated through IRC. This "
+"page describes how you log on to chat, ask questions, and hack around with "
+"the developers."
+msgstr ""
+
+#: ../../community/irc.txt:14
+msgid "Server and Channel Information"
+msgstr ""
+
+#: ../../community/irc.txt:22
+msgid "Why IRC?"
+msgstr ""
+
+#: ../../community/irc.txt:24
+msgid ""
+"IRC is a primary medium where Open Source GIS hackers congregate, "
+"collaborate, and hack. It makes it easy to communicate things like "
+"compilation issues, where immediate, iterative feedback allows folks to make"
+" a lot of progress. Something that might take days of heavily-quoted emails "
+"through a mailinglist might only take fifteen minutes on IRC."
+msgstr ""
+
+#: ../../community/irc.txt:30
+msgid ""
+"IRC is a great way to coordinate on-line meetings. The ZOO PSC conducts "
+"their monthly meetings through IRC."
+msgstr ""
+
+#: ../../community/irc.txt:34
+msgid "How do I join?"
+msgstr ""
+
+#: ../../community/irc.txt:36
+msgid ""
+"`Chatzilla <http://chatzilla.hacksrus.com/>`__ is probably the easiest way "
+"to get going. Chatzilla works with Mozilla or Firefox, and once you have it "
+"installed, you can log on to the channel by pointing your browser at::"
+msgstr ""
+
+#: ../../community/irc.txt:43
+msgid ""
+"There are many other IRC clients available. `This page "
+"<http://tikiwiki.org/ConnectingToIrc>`__ provides a good listing for many "
+"different platforms."
+msgstr ""
+
+#: ../../community/irc.txt:47
+msgid ""
+"You can also connect to IRC directly in your Web browser without a client:"
+msgstr ""
+
+#: ../../community/irc.txt:49
+msgid "goto http://webchat.freenode.net/"
+msgstr ""
+
+#: ../../community/irc.txt:50
+msgid "enter a nickname (usually your first initial plus your last name)"
+msgstr ""
+
+#: ../../community/irc.txt:51
+msgid "in \"Channels\" enter: zoo-project"
+msgstr ""
+
+#: ../../community/irc.txt:52
+msgid "Connect!"
+msgstr ""
+
+#: ../../community/irc.txt:55
+msgid "IRC logs"
+msgstr ""
+
+#: ../../community/irc.txt:57
+msgid ""
+"It is possible to see the logs (history) of ZOO-Project IRC channel `here "
+"<http://svn.zoo-project.org/irc/>`_"
+msgstr ""
+
+#: ../../community/mailinglist.txt:4
+msgid "Mailing Lists"
+msgstr ""
+
+#: ../../community/mailinglist.txt:7
+msgid "ZOO-Discuss"
+msgstr ""
+
+#: ../../community/mailinglist.txt:9
+msgid ""
+"The ``zoo-discuss`` list is your main source of support for the ZOO-Project."
+msgstr ""
+
+#: ../../community/mailinglist.txt:11
+msgid "**Subscribing to zoo-discuss**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:13
+msgid ""
+"To subscribe to the zoo-discuss listserv visit http://lists.osgeo.org/cgi-"
+"bin/mailman/listinfo/zoo-discuss. You can later change your subscription "
+"information or leave the list at this website."
+msgstr ""
+
+#: ../../community/mailinglist.txt:17
+msgid "**Submitting Questions to zoo-discuss**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:19
+msgid ""
+"To submit questions to the zoo-discuss listserv, first join the list by "
+"following the subscription procedure above. Then post questions to the list "
+"by sending an email message to zoo-discuss@lists.osgeo.org."
+msgstr ""
+
+#: ../../community/mailinglist.txt:23
+msgid "**Searching the Archives**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:25
+msgid ""
+"All zoo-discuss archives are located in http://lists.osgeo.org/pipermail"
+"/zoo-discuss/."
+msgstr ""

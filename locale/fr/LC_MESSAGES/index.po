@@ -1,0 +1,126 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-23 23:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.txt:4
+msgid "ZOO 1.3 Documentation"
+msgstr "Documentation ZOO 1.3"
+
+#: ../../index.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+
+#: ../../index.txt:7
+msgid "$Date: 2013-09-27 10:21:57 +0200 (Fri, 27 Sep 2013) $"
+msgstr "$Date: 2013-09-27 10:21:57 +0200 (Fri, 27 Sep 2013) $"
+
+#: ../../index.txt:10 ../../index.txt:0
+msgid "Quick Links"
+msgstr "Liens rapides"
+
+#: ../../index.txt:1
+msgid ":ref:`kernel`"
+msgstr ":ref:`kernel`"
+
+#: ../../index.txt:1
+msgid ":ref:`services`"
+msgstr ":ref:`services`"
+
+#: ../../index.txt:1
+msgid ":ref:`api`"
+msgstr ":ref:`api`"
+
+#: ../../index.txt:1
+msgid ":ref:`kernel-installation`"
+msgstr ":ref:`kernel-installation`"
+
+#: ../../index.txt:1
+msgid ":ref:`community`"
+msgstr ":ref:`community`"
+
+#: ../../index.txt:1
+msgid "`Search mailing list <http://zoo-discuss.1049523.n5.nabble.com/>`__"
+msgstr ""
+
+#: ../../index.txt:1
+msgid ":ref:`documentation_development`"
+msgstr ":ref:`documentation_development`"
+
+#: ../../index.txt:1
+msgid ":ref:`workshop-foss4g-japan-2010`"
+msgstr ":ref:`workshop-foss4g-japan-2010`"
+
+#: ../../index.txt:1
+msgid ":ref:`workshop-foss4g-cee-2012`"
+msgstr ":ref:`workshop-foss4g-cee-2012`"
+
+#: ../../index.txt:19
+msgid ""
+"The entire documentation is also available as a single `PDF document "
+"<./ZOOProject.pdf>`__ |image|  and `ePub document <./ZOOProject.epub>`__"
+msgstr ""
+
+#: ../../index.txt:23
+msgid "About ZOO Documentation"
+msgstr "A propos de la documentation de ZOO"
+
+#: ../../index.txt:25
+msgid ""
+"ZOO Documentation is a collaborative process; once users contribute "
+"documentation through the ZOO Wiki, the Documentation Committee will then "
+"review the contributions to add them into the official docs.  The committee "
+"is currently composed of:"
+msgstr ""
+
+#: ../../index.txt:35
+msgid ""
+"A special thank to the ZOO-Project sponsors and knwoledge partners for their"
+" support."
+msgstr ""
+
+#: ../../index.txt:37
+msgid ""
+"The committee would like to thank ``Venkatesh Raghavan`` for his help on "
+"promoting ZOO Workshop in many places."
+msgstr ""
+
+#: ../../index.txt:39
+msgid ""
+"The committee would like to thank ``Hirofumi Hayashi`` and ``Daisuke "
+"Yoshida`` for their help and japanese translation effort for the ZOO-Project"
+" Worshop 2010."
+msgstr ""
+
+#: ../../index.txt:41
+msgid ""
+"The committee would also like to thank the early contributors to the "
+"documentation: ``Luca Delucchi``, ``René-Luc D'Hont``,  ``Angelos Tzotsos`` "
+"and ``Guillaume Sueur``."
+msgstr ""
+
+#: ../../index.txt:45
+msgid "ZOO Wiki"
+msgstr ""
+
+#: ../../index.txt:47
+msgid ""
+"Users wishing to contribute steps and documents should use the `ZOO Wiki "
+"<http://www.zoo-project.org/trac>`__."
+msgstr ""
+
+#: ../../index.txt:51
+msgid "Official Documentation"
+msgstr ""
+
+#: ../../index.txt:53
+msgid "This section contains the official ZOO Project documentation."
+msgstr ""

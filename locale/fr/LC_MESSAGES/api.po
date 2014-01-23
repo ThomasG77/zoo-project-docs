@@ -1,0 +1,5140 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-23 23:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/classes.txt:4
+msgid "Classes"
+msgstr ""
+
+#: ../../api/classes.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../api/classes.txt:7
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../api/classes.txt:9
+msgid "The following classes are available in the ZOO API:"
+msgstr ""
+
+#: ../../api/description.txt:4
+msgid "Description"
+msgstr ""
+
+#: ../../api/description.txt:6
+msgid ""
+"ZOO API is a Javascript library designed to make the WPS Process creation "
+"and chaining easier. It works on the server-side using the Mozilla "
+"foundation `JavaScript <https://developer.mozilla.org/en/JavaScript>`__ "
+"engine,  `SpiderMonkey <https://developer.mozilla.org/en/SpiderMonkey>`__. "
+"It uses a  `Proj4js <http://proj4js.org/>`__ adaptation for server-side "
+"reprojection. It also allows to easily convert vector formats (such as `GML "
+"<http://www.opengeospatial.org/standards/gml>`__,  `KML "
+"<http://www.opengeospatial.org/standards/kml>`__, `GeoJSON "
+"<http://geojson.org/geojson-spec.html>`__, etc). The API lets you "
+"orchestrate WPS services simply and offers the ability to add logic and "
+"controls in the WPS chaining."
+msgstr ""
+
+#: ../../api/description.txt:15
+msgid "Download ZOO API"
+msgstr ""
+
+#: ../../api/description.txt:17
+msgid ""
+"`zoo-api.js <http://zoo-project.org/trac/export/1/trunk/zoo-api/js/ZOO-"
+"api.js>`__"
+msgstr ""
+
+#: ../../api/description.txt:18
+msgid ""
+"`zoo-proj4js.js <http://zoo-project.org/trac/export/1/trunk/zoo-api/js/ZOO-"
+"proj4js.js>`__"
+msgstr ""
+
+#: ../../api/description.txt:21
+msgid "ZOO API MIT/X-11 License"
+msgstr ""
+
+#: ../../api/examples.txt:4
+msgid "Examples"
+msgstr ""
+
+#: ../../api/examples.txt:6
+msgid ""
+"In this page you can find some small examples on how to use the JavaScript "
+"ZOO-API on the server side."
+msgstr ""
+
+#: ../../api/examples.txt:9
+msgid ""
+"ZOO-API contains many classes and functions. You can find the description "
+"list :ref:`here <api-classes>`."
+msgstr ""
+
+#: ../../api/examples.txt:12
+msgid "ZOO.Process example of use"
+msgstr ""
+
+#: ../../api/examples.txt:23
+msgid ""
+"In this really short example you can see how to create ``ZOO.Process`` class"
+" instance and call the Execute method on such an instance. Then you'll just "
+"need to return a JavaScript object containing the attributes result and "
+"outputs, which I'm sure you already know what is about. The first is about "
+"the status of the process (can be ``ZOO.SERVICE_SUCEEDED``, "
+"``ZOO.SERVICE_FAILED`` and so on), the last is obviously the resulting maps "
+"(take a look at the maps internal data structure used by ZOO Kernel in "
+"``service.h``)."
+msgstr ""
+
+#: ../../api/examples.txt:31
+msgid "ZOO.UpdateStatus"
+msgstr ""
+
+#: ../../api/examples.txt:50
+msgid ""
+"You can see in this sample code how to use the ``ZOOUpdateStatus`` function "
+"to update the current status of your running process. This information will "
+"be really helpfull when the ZOO Kernel will run your JavaScript Service in "
+"background mode (if the user set to ``true`` the ``storeExecuteResponse`` "
+"parameter in his request)."
+msgstr ""
+
+#: ../../api/index.txt:4
+msgid "ZOO API Documentation"
+msgstr ""
+
+#: ../../api/index.txt:6
+msgid "The following sections will assist you with the ZOO API:"
+msgstr ""
+
+#: ../../api/zoo.txt:4
+msgid "ZOO"
+msgstr ""
+
+#: ../../api/zoo.txt:6
+msgid "The following constants and functions are available for the ZOO class:"
+msgstr ""
+
+#: ../../api/zoo.txt:9
+msgid "Constants"
+msgstr ""
+
+#: ../../api/zoo.txt:15 ../../api/zoo.txt:35 ../../api/zoo-bounds.txt:15
+#: ../../api/zoo-bounds.txt:33 ../../api/zoo-feature.txt:15
+#: ../../api/zoo-feature.txt:33 ../../api/zoo-format.txt:15
+#: ../../api/zoo-format.txt:35 ../../api/zoo-format-geojson.txt:19
+#: ../../api/zoo-format-geojson.txt:39 ../../api/zoo-format-geojson.txt:51
+#: ../../api/zoo-format-geojson.txt:79 ../../api/zoo-format-geojson.txt:91
+#: ../../api/zoo-format-gml.txt:19 ../../api/zoo-format-json.txt:19
+#: ../../api/zoo-format-json.txt:39 ../../api/zoo-format-json.txt:61
+#: ../../api/zoo-format-json.txt:73 ../../api/zoo-format-kml.txt:19
+#: ../../api/zoo-format-wkt.txt:19 ../../api/zoo-format-wps.txt:19
+#: ../../api/zoo-geometry.txt:15 ../../api/zoo-geometry.txt:31
+#: ../../api/zoo-geometry-collection.txt:29
+#: ../../api/zoo-geometry-collection.txt:43
+#: ../../api/zoo-geometry-curve.txt:21 ../../api/zoo-geometry-curve.txt:33
+#: ../../api/zoo-geometry-linearring.txt:23
+#: ../../api/zoo-geometry-linearring.txt:35
+#: ../../api/zoo-geometry-linestring.txt:19
+#: ../../api/zoo-geometry-multilinestring.txt:19
+#: ../../api/zoo-geometry-multipoint.txt:20
+#: ../../api/zoo-geometry-multipoint.txt:32
+#: ../../api/zoo-geometry-multipolygon.txt:20
+#: ../../api/zoo-geometry-point.txt:19 ../../api/zoo-geometry-point.txt:33
+#: ../../api/zoo-geometry-polygon.txt:19 ../../api/zoo-process.txt:15
+#: ../../api/zoo-projection.txt:15 ../../api/zoo-projection.txt:29
+#: ../../api/zoo-request.txt:15 ../../api/zoo-string.txt:15
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo.txt:16 ../../api/zoo.txt:36 ../../api/zoo-bounds.txt:16
+#: ../../api/zoo-bounds.txt:34 ../../api/zoo-feature.txt:16
+#: ../../api/zoo-feature.txt:34 ../../api/zoo-format.txt:16
+#: ../../api/zoo-format.txt:36 ../../api/zoo-format-geojson.txt:20
+#: ../../api/zoo-format-geojson.txt:40 ../../api/zoo-format-geojson.txt:52
+#: ../../api/zoo-format-geojson.txt:80 ../../api/zoo-format-geojson.txt:92
+#: ../../api/zoo-format-gml.txt:20 ../../api/zoo-format-json.txt:20
+#: ../../api/zoo-format-json.txt:40 ../../api/zoo-format-json.txt:62
+#: ../../api/zoo-format-json.txt:74 ../../api/zoo-format-kml.txt:20
+#: ../../api/zoo-format-wkt.txt:20 ../../api/zoo-format-wps.txt:20
+#: ../../api/zoo-geometry.txt:16 ../../api/zoo-geometry.txt:32
+#: ../../api/zoo-geometry-collection.txt:30
+#: ../../api/zoo-geometry-collection.txt:44
+#: ../../api/zoo-geometry-curve.txt:22 ../../api/zoo-geometry-curve.txt:34
+#: ../../api/zoo-geometry-linearring.txt:24
+#: ../../api/zoo-geometry-linearring.txt:36
+#: ../../api/zoo-geometry-linestring.txt:20
+#: ../../api/zoo-geometry-multilinestring.txt:20
+#: ../../api/zoo-geometry-multipoint.txt:21
+#: ../../api/zoo-geometry-multipoint.txt:33
+#: ../../api/zoo-geometry-multipolygon.txt:21
+#: ../../api/zoo-geometry-point.txt:20 ../../api/zoo-geometry-point.txt:34
+#: ../../api/zoo-geometry-polygon.txt:20 ../../api/zoo-process.txt:16
+#: ../../api/zoo-projection.txt:16 ../../api/zoo-projection.txt:30
+#: ../../api/zoo-request.txt:16 ../../api/zoo-string.txt:16
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo.txt:17
+msgid ":ref:`SERVICE_ACCEPTED <service_accepted>`"
+msgstr ""
+
+#: ../../api/zoo.txt:18 ../../api/zoo.txt:20 ../../api/zoo.txt:22
+#: ../../api/zoo.txt:24 ../../api/zoo.txt:26
+msgid "{Integer} used for"
+msgstr ""
+
+#: ../../api/zoo.txt:19
+msgid ":ref:`SERVICE_STARTED <service_started>`"
+msgstr ""
+
+#: ../../api/zoo.txt:21
+msgid ":ref:`SERVICE_PAUSED <service_paused>`"
+msgstr ""
+
+#: ../../api/zoo.txt:23
+msgid ":ref:`SERVICE_SUCCEEDED <service_succeeded>`"
+msgstr ""
+
+#: ../../api/zoo.txt:25
+msgid ":ref:`SERVICE_FAILED <service_failed>`"
+msgstr ""
+
+#: ../../api/zoo.txt:29 ../../api/zoo-bounds.txt:27
+#: ../../api/zoo-feature.txt:27 ../../api/zoo-format.txt:29
+#: ../../api/zoo-format-json.txt:33 ../../api/zoo-geometry.txt:25
+#: ../../api/zoo-geometry-collection.txt:37
+#: ../../api/zoo-geometry-curve.txt:27
+#: ../../api/zoo-geometry-linearring.txt:29
+#: ../../api/zoo-geometry-linestring.txt:13
+#: ../../api/zoo-geometry-multilinestring.txt:13
+#: ../../api/zoo-geometry-multipoint.txt:26
+#: ../../api/zoo-geometry-multipolygon.txt:14
+#: ../../api/zoo-geometry-point.txt:27 ../../api/zoo-geometry-polygon.txt:13
+#: ../../api/zoo-projection.txt:23 ../../api/zoo-request.txt:9
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo.txt:37
+msgid ":ref:`removeItem <removeItem>`"
+msgstr ""
+
+#: ../../api/zoo.txt:38
+msgid "Remove an object from an array."
+msgstr ""
+
+#: ../../api/zoo.txt:39
+msgid ":ref:`indexOf <indexOf>`"
+msgstr ""
+
+#: ../../api/zoo.txt:41 ../../api/zoo-bounds.txt:53
+msgid ":ref:`extend <extend>`"
+msgstr ""
+
+#: ../../api/zoo.txt:42
+msgid "Copy all properties of a source object to a destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:43
+msgid ":ref:`rad <rad>`"
+msgstr ""
+
+#: ../../api/zoo.txt:45
+msgid ":ref:`distVincenty <distVincenty>`"
+msgstr ""
+
+#: ../../api/zoo.txt:46 ../../api/zoo.txt:158
+msgid ""
+"Given two objects representing points with geographic coordinates, this "
+"calculates the distance between those points on the surface of an ellipsoid."
+msgstr ""
+
+#: ../../api/zoo.txt:49
+msgid ":ref:`Class <Class>`"
+msgstr ""
+
+#: ../../api/zoo.txt:50
+msgid "Method used to create ZOO classes."
+msgstr ""
+
+#: ../../api/zoo.txt:51
+msgid ":ref:`UpdateStatus <UpdateStatus>`"
+msgstr ""
+
+#: ../../api/zoo.txt:52 ../../api/zoo.txt:182
+msgid "Method used to update the status of the process"
+msgstr ""
+
+#: ../../api/zoo.txt:54
+msgid "**Constants**"
+msgstr ""
+
+#: ../../api/zoo.txt:59
+msgid "SERVICE_ACCEPTED"
+msgstr ""
+
+#: ../../api/zoo.txt:59 ../../api/zoo.txt:64 ../../api/zoo.txt:69
+#: ../../api/zoo.txt:74 ../../api/zoo.txt:79
+msgid "``{Integer}`` used for"
+msgstr ""
+
+#: ../../api/zoo.txt:64
+msgid "SERVICE_STARTED"
+msgstr ""
+
+#: ../../api/zoo.txt:69
+msgid "SERVICE_PAUSED"
+msgstr ""
+
+#: ../../api/zoo.txt:74
+msgid "SERVICE_SUCCEEDED"
+msgstr ""
+
+#: ../../api/zoo.txt:79
+msgid "SERVICE_FAILED"
+msgstr ""
+
+#: ../../api/zoo.txt:81 ../../api/zoo-bounds.txt:82
+#: ../../api/zoo-feature.txt:69 ../../api/zoo-format.txt:83
+#: ../../api/zoo-format-geojson.txt:112 ../../api/zoo-format-json.txt:115
+#: ../../api/zoo-geometry.txt:70 ../../api/zoo-geometry-collection.txt:96
+#: ../../api/zoo-geometry-curve.txt:48
+#: ../../api/zoo-geometry-linearring.txt:66
+#: ../../api/zoo-geometry-multipoint.txt:49
+#: ../../api/zoo-geometry-point.txt:73 ../../api/zoo-projection.txt:58
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo.txt:99
+msgid "removeItem"
+msgstr ""
+
+#: ../../api/zoo.txt:90
+msgid ""
+"Remove an object from an array.  Iterates through the array to find the "
+"item, then removes it."
+msgstr ""
+
+#: ../../api/zoo.txt:92 ../../api/zoo.txt:108 ../../api/zoo.txt:127
+#: ../../api/zoo.txt:143 ../../api/zoo.txt:184 ../../api/zoo-bounds.txt:89
+#: ../../api/zoo-bounds.txt:118 ../../api/zoo-bounds.txt:145
+#: ../../api/zoo-bounds.txt:195 ../../api/zoo-bounds.txt:214
+#: ../../api/zoo-bounds.txt:228 ../../api/zoo-bounds.txt:246
+#: ../../api/zoo-feature.txt:77 ../../api/zoo-format.txt:90
+#: ../../api/zoo-format.txt:120 ../../api/zoo-format.txt:137
+#: ../../api/zoo-format-geojson.txt:120 ../../api/zoo-format-geojson.txt:133
+#: ../../api/zoo-format-geojson.txt:168 ../../api/zoo-format-geojson.txt:185
+#: ../../api/zoo-format-geojson.txt:208 ../../api/zoo-format-geojson.txt:221
+#: ../../api/zoo-format-geojson.txt:234 ../../api/zoo-format-geojson.txt:247
+#: ../../api/zoo-format-geojson.txt:260 ../../api/zoo-format-geojson.txt:273
+#: ../../api/zoo-format-geojson.txt:286 ../../api/zoo-format-geojson.txt:303
+#: ../../api/zoo-format-geojson.txt:321 ../../api/zoo-format-geojson.txt:345
+#: ../../api/zoo-format-geojson.txt:358 ../../api/zoo-format-geojson.txt:371
+#: ../../api/zoo-format-geojson.txt:384 ../../api/zoo-format-geojson.txt:397
+#: ../../api/zoo-format-geojson.txt:410 ../../api/zoo-format-geojson.txt:423
+#: ../../api/zoo-format-geojson.txt:436 ../../api/zoo-format-geojson.txt:449
+#: ../../api/zoo-format-gml.txt:130 ../../api/zoo-format-gml.txt:143
+#: ../../api/zoo-format-gml.txt:162 ../../api/zoo-format-gml.txt:180
+#: ../../api/zoo-format-gml.txt:193 ../../api/zoo-format-gml.txt:206
+#: ../../api/zoo-format-gml.txt:219 ../../api/zoo-format-gml.txt:232
+#: ../../api/zoo-format-gml.txt:245 ../../api/zoo-format-gml.txt:258
+#: ../../api/zoo-format-gml.txt:273 ../../api/zoo-format-gml.txt:290
+#: ../../api/zoo-format-gml.txt:307 ../../api/zoo-format-gml.txt:322
+#: ../../api/zoo-format-gml.txt:340 ../../api/zoo-format-gml.txt:353
+#: ../../api/zoo-format-gml.txt:366 ../../api/zoo-format-gml.txt:379
+#: ../../api/zoo-format-gml.txt:392 ../../api/zoo-format-gml.txt:405
+#: ../../api/zoo-format-gml.txt:418 ../../api/zoo-format-gml.txt:439
+#: ../../api/zoo-format-json.txt:122 ../../api/zoo-format-json.txt:135
+#: ../../api/zoo-format-json.txt:153 ../../api/zoo-format-json.txt:216
+#: ../../api/zoo-format-json.txt:229 ../../api/zoo-format-json.txt:242
+#: ../../api/zoo-format-json.txt:255 ../../api/zoo-format-json.txt:268
+#: ../../api/zoo-format-json.txt:281 ../../api/zoo-format-kml.txt:108
+#: ../../api/zoo-format-kml.txt:121 ../../api/zoo-format-kml.txt:137
+#: ../../api/zoo-format-kml.txt:155 ../../api/zoo-format-kml.txt:168
+#: ../../api/zoo-format-kml.txt:181 ../../api/zoo-format-kml.txt:194
+#: ../../api/zoo-format-kml.txt:209 ../../api/zoo-format-kml.txt:227
+#: ../../api/zoo-format-kml.txt:244 ../../api/zoo-format-kml.txt:261
+#: ../../api/zoo-format-kml.txt:278 ../../api/zoo-format-kml.txt:296
+#: ../../api/zoo-format-kml.txt:309 ../../api/zoo-format-kml.txt:322
+#: ../../api/zoo-format-kml.txt:335 ../../api/zoo-format-kml.txt:348
+#: ../../api/zoo-format-kml.txt:361 ../../api/zoo-format-kml.txt:374
+#: ../../api/zoo-format-kml.txt:387 ../../api/zoo-format-kml.txt:404
+#: ../../api/zoo-format-wkt.txt:51 ../../api/zoo-format-wkt.txt:70
+#: ../../api/zoo-format-wkt.txt:87 ../../api/zoo-format-wkt.txt:112
+#: ../../api/zoo-format-wkt.txt:125 ../../api/zoo-format-wkt.txt:138
+#: ../../api/zoo-format-wkt.txt:151 ../../api/zoo-format-wkt.txt:164
+#: ../../api/zoo-format-wkt.txt:177 ../../api/zoo-format-wkt.txt:190
+#: ../../api/zoo-format-wps.txt:55 ../../api/zoo-format-wps.txt:70
+#: ../../api/zoo-format-wps.txt:88 ../../api/zoo-format-wps.txt:101
+#: ../../api/zoo-format-wps.txt:114 ../../api/zoo-geometry.txt:109
+#: ../../api/zoo-geometry.txt:167 ../../api/zoo-geometry-collection.txt:103
+#: ../../api/zoo-geometry-collection.txt:161
+#: ../../api/zoo-geometry-collection.txt:179
+#: ../../api/zoo-geometry-collection.txt:192
+#: ../../api/zoo-geometry-collection.txt:229
+#: ../../api/zoo-geometry-collection.txt:248
+#: ../../api/zoo-geometry-collection.txt:262
+#: ../../api/zoo-geometry-collection.txt:276
+#: ../../api/zoo-geometry-collection.txt:296
+#: ../../api/zoo-geometry-collection.txt:313
+#: ../../api/zoo-geometry-collection.txt:331
+#: ../../api/zoo-geometry-collection.txt:348
+#: ../../api/zoo-geometry-curve.txt:54
+#: ../../api/zoo-geometry-linearring.txt:76
+#: ../../api/zoo-geometry-linearring.txt:112
+#: ../../api/zoo-geometry-linearring.txt:126
+#: ../../api/zoo-geometry-linearring.txt:140
+#: ../../api/zoo-geometry-linearring.txt:159
+#: ../../api/zoo-geometry-linearring.txt:202
+#: ../../api/zoo-geometry-linearring.txt:225
+#: ../../api/zoo-geometry-linestring.txt:43
+#: ../../api/zoo-geometry-linestring.txt:57
+#: ../../api/zoo-geometry-linestring.txt:73
+#: ../../api/zoo-geometry-linestring.txt:103
+#: ../../api/zoo-geometry-linestring.txt:126
+#: ../../api/zoo-geometry-linestring.txt:150
+#: ../../api/zoo-geometry-linestring.txt:174
+#: ../../api/zoo-geometry-multilinestring.txt:29
+#: ../../api/zoo-geometry-multipoint.txt:57
+#: ../../api/zoo-geometry-multipoint.txt:74
+#: ../../api/zoo-geometry-multipoint.txt:88
+#: ../../api/zoo-geometry-multipolygon.txt:30
+#: ../../api/zoo-geometry-point.txt:80 ../../api/zoo-geometry-point.txt:115
+#: ../../api/zoo-geometry-point.txt:144 ../../api/zoo-geometry-point.txt:158
+#: ../../api/zoo-geometry-point.txt:185 ../../api/zoo-geometry-point.txt:204
+#: ../../api/zoo-geometry-point.txt:221 ../../api/zoo-geometry-point.txt:239
+#: ../../api/zoo-geometry-polygon.txt:36 ../../api/zoo-geometry-polygon.txt:62
+#: ../../api/zoo-geometry-polygon.txt:82 ../../api/zoo-process.txt:65
+#: ../../api/zoo-process.txt:79 ../../api/zoo-process.txt:97
+#: ../../api/zoo-process.txt:111 ../../api/zoo-process.txt:125
+#: ../../api/zoo-process.txt:143 ../../api/zoo-projection.txt:65
+#: ../../api/zoo-projection.txt:145 ../../api/zoo-request.txt:27
+#: ../../api/zoo-request.txt:41 ../../api/zoo-string.txt:43
+#: ../../api/zoo-string.txt:61 ../../api/zoo-string.txt:79
+#: ../../api/zoo-string.txt:96
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo.txt:97 ../../api/zoo.txt:113 ../../api/zoo.txt:132
+#: ../../api/zoo.txt:147 ../../api/zoo-bounds.txt:105
+#: ../../api/zoo-bounds.txt:122 ../../api/zoo-bounds.txt:134
+#: ../../api/zoo-bounds.txt:149 ../../api/zoo-bounds.txt:162
+#: ../../api/zoo-bounds.txt:173 ../../api/zoo-bounds.txt:184
+#: ../../api/zoo-bounds.txt:200 ../../api/zoo-bounds.txt:233
+#: ../../api/zoo-bounds.txt:252 ../../api/zoo-feature.txt:100
+#: ../../api/zoo-format.txt:98 ../../api/zoo-format.txt:124
+#: ../../api/zoo-format.txt:141 ../../api/zoo-format-geojson.txt:139
+#: ../../api/zoo-format-geojson.txt:155 ../../api/zoo-format-geojson.txt:172
+#: ../../api/zoo-format-geojson.txt:189 ../../api/zoo-format-geojson.txt:212
+#: ../../api/zoo-format-geojson.txt:225 ../../api/zoo-format-geojson.txt:238
+#: ../../api/zoo-format-geojson.txt:251 ../../api/zoo-format-geojson.txt:264
+#: ../../api/zoo-format-geojson.txt:277 ../../api/zoo-format-geojson.txt:290
+#: ../../api/zoo-format-geojson.txt:308 ../../api/zoo-format-geojson.txt:325
+#: ../../api/zoo-format-geojson.txt:349 ../../api/zoo-format-geojson.txt:362
+#: ../../api/zoo-format-geojson.txt:375 ../../api/zoo-format-geojson.txt:388
+#: ../../api/zoo-format-geojson.txt:401 ../../api/zoo-format-geojson.txt:414
+#: ../../api/zoo-format-geojson.txt:427 ../../api/zoo-format-geojson.txt:440
+#: ../../api/zoo-format-geojson.txt:453 ../../api/zoo-format-gml.txt:147
+#: ../../api/zoo-format-gml.txt:166 ../../api/zoo-format-gml.txt:184
+#: ../../api/zoo-format-gml.txt:197 ../../api/zoo-format-gml.txt:210
+#: ../../api/zoo-format-gml.txt:223 ../../api/zoo-format-gml.txt:236
+#: ../../api/zoo-format-gml.txt:249 ../../api/zoo-format-gml.txt:262
+#: ../../api/zoo-format-gml.txt:277 ../../api/zoo-format-gml.txt:294
+#: ../../api/zoo-format-gml.txt:311 ../../api/zoo-format-gml.txt:326
+#: ../../api/zoo-format-gml.txt:344 ../../api/zoo-format-gml.txt:357
+#: ../../api/zoo-format-gml.txt:370 ../../api/zoo-format-gml.txt:383
+#: ../../api/zoo-format-gml.txt:396 ../../api/zoo-format-gml.txt:409
+#: ../../api/zoo-format-gml.txt:422 ../../api/zoo-format-gml.txt:443
+#: ../../api/zoo-format-json.txt:140 ../../api/zoo-format-json.txt:158
+#: ../../api/zoo-format-json.txt:171 ../../api/zoo-format-json.txt:184
+#: ../../api/zoo-format-json.txt:197 ../../api/zoo-format-json.txt:220
+#: ../../api/zoo-format-json.txt:233 ../../api/zoo-format-json.txt:246
+#: ../../api/zoo-format-json.txt:259 ../../api/zoo-format-json.txt:272
+#: ../../api/zoo-format-json.txt:285 ../../api/zoo-format-kml.txt:141
+#: ../../api/zoo-format-kml.txt:159 ../../api/zoo-format-kml.txt:172
+#: ../../api/zoo-format-kml.txt:185 ../../api/zoo-format-kml.txt:198
+#: ../../api/zoo-format-kml.txt:213 ../../api/zoo-format-kml.txt:231
+#: ../../api/zoo-format-kml.txt:248 ../../api/zoo-format-kml.txt:265
+#: ../../api/zoo-format-kml.txt:282 ../../api/zoo-format-kml.txt:300
+#: ../../api/zoo-format-kml.txt:313 ../../api/zoo-format-kml.txt:326
+#: ../../api/zoo-format-kml.txt:339 ../../api/zoo-format-kml.txt:352
+#: ../../api/zoo-format-kml.txt:365 ../../api/zoo-format-kml.txt:378
+#: ../../api/zoo-format-kml.txt:391 ../../api/zoo-format-wkt.txt:55
+#: ../../api/zoo-format-wkt.txt:74 ../../api/zoo-format-wkt.txt:91
+#: ../../api/zoo-format-wkt.txt:116 ../../api/zoo-format-wkt.txt:129
+#: ../../api/zoo-format-wkt.txt:142 ../../api/zoo-format-wkt.txt:155
+#: ../../api/zoo-format-wkt.txt:168 ../../api/zoo-format-wkt.txt:181
+#: ../../api/zoo-format-wkt.txt:194 ../../api/zoo-format-wps.txt:59
+#: ../../api/zoo-format-wps.txt:74 ../../api/zoo-format-wps.txt:92
+#: ../../api/zoo-format-wps.txt:105 ../../api/zoo-format-wps.txt:118
+#: ../../api/zoo-geometry.txt:95 ../../api/zoo-geometry.txt:132
+#: ../../api/zoo-geometry.txt:154 ../../api/zoo-geometry.txt:171
+#: ../../api/zoo-geometry-collection.txt:125
+#: ../../api/zoo-geometry-collection.txt:138
+#: ../../api/zoo-geometry-collection.txt:166
+#: ../../api/zoo-geometry-collection.txt:205
+#: ../../api/zoo-geometry-collection.txt:216
+#: ../../api/zoo-geometry-collection.txt:234
+#: ../../api/zoo-geometry-collection.txt:282
+#: ../../api/zoo-geometry-collection.txt:300
+#: ../../api/zoo-geometry-collection.txt:318
+#: ../../api/zoo-geometry-collection.txt:335
+#: ../../api/zoo-geometry-collection.txt:353
+#: ../../api/zoo-geometry-curve.txt:66
+#: ../../api/zoo-geometry-linearring.txt:98
+#: ../../api/zoo-geometry-linearring.txt:146
+#: ../../api/zoo-geometry-linearring.txt:164
+#: ../../api/zoo-geometry-linearring.txt:175
+#: ../../api/zoo-geometry-linearring.txt:188
+#: ../../api/zoo-geometry-linearring.txt:211
+#: ../../api/zoo-geometry-linearring.txt:229
+#: ../../api/zoo-geometry-linestring.txt:77
+#: ../../api/zoo-geometry-linestring.txt:88
+#: ../../api/zoo-geometry-linestring.txt:113
+#: ../../api/zoo-geometry-linestring.txt:137
+#: ../../api/zoo-geometry-linestring.txt:161
+#: ../../api/zoo-geometry-linestring.txt:178
+#: ../../api/zoo-geometry-multipoint.txt:61
+#: ../../api/zoo-geometry-point.txt:92 ../../api/zoo-geometry-point.txt:119
+#: ../../api/zoo-geometry-point.txt:130 ../../api/zoo-geometry-point.txt:170
+#: ../../api/zoo-geometry-point.txt:191 ../../api/zoo-geometry-point.txt:208
+#: ../../api/zoo-geometry-point.txt:226 ../../api/zoo-geometry-point.txt:244
+#: ../../api/zoo-geometry-polygon.txt:49 ../../api/zoo-geometry-polygon.txt:66
+#: ../../api/zoo-process.txt:83 ../../api/zoo-process.txt:102
+#: ../../api/zoo-process.txt:116 ../../api/zoo-process.txt:130
+#: ../../api/zoo-process.txt:147 ../../api/zoo-projection.txt:70
+#: ../../api/zoo-projection.txt:83 ../../api/zoo-projection.txt:96
+#: ../../api/zoo-projection.txt:109 ../../api/zoo-projection.txt:122
+#: ../../api/zoo-projection.txt:151 ../../api/zoo-request.txt:32
+#: ../../api/zoo-request.txt:47 ../../api/zoo-string.txt:48
+#: ../../api/zoo-string.txt:66 ../../api/zoo-string.txt:83
+#: ../../api/zoo-string.txt:100 ../../api/zoo-string.txt:132
+#: ../../api/zoo-string.txt:145
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo.txt:99
+msgid "``{Array}`` A reference to the array"
+msgstr ""
+
+#: ../../api/zoo.txt:115
+msgid "indexOf"
+msgstr ""
+
+#: ../../api/zoo.txt:115
+msgid ""
+"``{Integer}`` The index at, which the first object was found in the array.  "
+"If not found, returns -1."
+msgstr ""
+
+#: ../../api/zoo.txt:134 ../../api/zoo-bounds.txt:216
+msgid "extend"
+msgstr ""
+
+#: ../../api/zoo.txt:124
+msgid ""
+"Copy all properties of a source object to a destination object.  Modifies "
+"the passed in destination object. Any properties on the source object that "
+"are set to undefined will not be (re)set on the destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:134
+msgid "``{Object}`` The destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:149
+msgid "rad"
+msgstr ""
+
+#: ../../api/zoo.txt:149
+msgid "``{Float}``"
+msgstr ""
+
+#: ../../api/zoo.txt:164
+msgid "distVincenty"
+msgstr ""
+
+#: ../../api/zoo.txt:161
+msgid "*Parameters:*"
+msgstr ""
+
+#: ../../api/zoo.txt:173
+msgid "Class"
+msgstr ""
+
+#: ../../api/zoo.txt:173
+msgid ""
+"Method used to create ZOO classes.  Includes support for multiple "
+"inheritance."
+msgstr ""
+
+#: ../../api/zoo.txt:187
+msgid "UpdateStatus"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:4 ../../api/zoo-bounds.txt:94
+msgid "ZOO.Bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:6
+msgid "Instances of this class represent bounding boxes."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:9 ../../api/zoo-feature.txt:9
+#: ../../api/zoo-format.txt:9 ../../api/zoo-format-geojson.txt:13
+#: ../../api/zoo-format-json.txt:13 ../../api/zoo-geometry.txt:9
+#: ../../api/zoo-geometry-collection.txt:23
+#: ../../api/zoo-geometry-curve.txt:15
+#: ../../api/zoo-geometry-linearring.txt:17
+#: ../../api/zoo-geometry-multipoint.txt:14
+#: ../../api/zoo-geometry-point.txt:13 ../../api/zoo-projection.txt:9
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:17
+msgid ":ref:`left <left>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:18
+msgid "{Number} Minimum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:19
+msgid ":ref:`bottom <bottom>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:20
+msgid "{Number} Minimum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:21
+msgid ":ref:`right <right>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:22
+msgid "{Number} Maximum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:23
+msgid ":ref:`top <top>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:24
+msgid "{Number} Maximum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:35
+msgid ":ref:`ZOO.Bounds <ZOO.Bounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:36 ../../api/zoo-bounds.txt:87
+msgid "Construct a new bounds object."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:37 ../../api/zoo-feature.txt:39
+#: ../../api/zoo-geometry.txt:37 ../../api/zoo-geometry-collection.txt:49
+#: ../../api/zoo-geometry-point.txt:37
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:38 ../../api/zoo-bounds.txt:103
+msgid "Create a cloned instance of this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:39 ../../api/zoo-geometry-collection.txt:73
+#: ../../api/zoo-geometry-point.txt:41 ../../api/zoo-projection.txt:39
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:40 ../../api/zoo-bounds.txt:116
+msgid "Test a two bounds for equivalence."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:41 ../../api/zoo-geometry.txt:47
+#: ../../api/zoo-projection.txt:37
+msgid ":ref:`toString <toString>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:42
+msgid "{String} String representation of bounds object."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:43
+msgid ":ref:`toBBOX <toBBOX>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:45
+msgid ":ref:`toGeometry <toGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:46 ../../api/zoo-bounds.txt:160
+msgid "Create a new polygon geometry based on this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:47
+msgid ":ref:`getWidth <getWidth>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:48
+msgid "{Float} The width of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:49
+msgid ":ref:`getHeight <getHeight>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:50
+msgid "{Float} The height of the bounds (top minus bottom)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:51
+msgid ":ref:`add <add>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:54
+msgid "Extend the bounds to include the point, lonlat, or bounds specified."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:55
+msgid ":ref:`intersectsBounds <intersectsBounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:56
+msgid "Determine whether the target bounds intersects this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:57
+msgid ":ref:`containsBounds <containsBounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:58 ../../api/zoo-bounds.txt:244
+msgid "Determine whether the target bounds is contained within this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:60 ../../api/zoo-feature.txt:45
+#: ../../api/zoo-format.txt:48 ../../api/zoo-format-json.txt:88
+#: ../../api/zoo-geometry.txt:53 ../../api/zoo-geometry-collection.txt:83
+#: ../../api/zoo-geometry-curve.txt:40
+#: ../../api/zoo-geometry-linearring.txt:58
+#: ../../api/zoo-geometry-multipoint.txt:41
+#: ../../api/zoo-geometry-point.txt:61 ../../api/zoo-projection.txt:46
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:65
+msgid "left"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:65
+msgid "``{Number}`` Minimum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:70
+msgid "bottom"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:70
+msgid "``{Number}`` Minimum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:75
+msgid "right"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:75
+msgid "``{Number}`` Maximum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:80
+msgid "top"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:80
+msgid "``{Number}`` Maximum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:107 ../../api/zoo-feature.txt:102
+#: ../../api/zoo-geometry.txt:97 ../../api/zoo-geometry-collection.txt:127
+#: ../../api/zoo-geometry-point.txt:94
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:107
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` A fresh copy of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:125 ../../api/zoo-geometry-collection.txt:302
+#: ../../api/zoo-geometry-point.txt:121 ../../api/zoo-projection.txt:124
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:124
+msgid ""
+"``{Boolean}`` The passed-in bounds object has the same left, right, top, "
+"bottom components as this.  Note that if bounds passed in is null, returns "
+"false."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:136 ../../api/zoo-geometry.txt:156
+#: ../../api/zoo-projection.txt:111
+msgid "toString"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:136
+msgid ""
+"``{String}`` String representation of bounds object.  (ex. *<i>\"left-"
+"bottom=(5,42) right-top=(10,45)\"</i>*)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:151
+msgid "toBBOX"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:147
+msgid ""
+"``decimal {Integer}`` How many significant digits in the bbox coords?  "
+"Default is 6"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:151
+msgid ""
+"``{String}`` Simple String representation of bounds object.  (ex. "
+"*<i>\"5,42,10,45\"</i>*)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:164
+msgid "toGeometry"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:164
+msgid ""
+":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A new polygon with "
+"the coordinates of this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:175
+msgid "getWidth"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:175
+msgid "``{Float}`` The width of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:186
+msgid "getHeight"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:186
+msgid "``{Float}`` The height of the bounds (top minus bottom)."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:202
+msgid "add"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:202
+msgid ""
+":ref:`{ZOO.Bounds} <api-zoo-bounds>` A new bounds whose coordinates are the "
+"same as this, but shifted by the passed-in x and y values."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:211
+msgid ""
+"Extend the bounds to include the point, lonlat, or bounds specified.  Note, "
+"this function assumes that left < right and bottom < top."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:216
+msgid "``object {Object}`` Can be Point, or Bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:235
+msgid "intersectsBounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:225
+msgid ""
+"Determine whether the target bounds intersects this bounds.  Bounds are "
+"considered intersecting if any of their edges intersect or if one bounds "
+"contains the other."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:235
+msgid "``{Boolean}`` The passed-in bounds object intersects this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:253
+msgid "containsBounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:254
+msgid ""
+"``{Boolean}`` The passed-in bounds object is contained within this bounds."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:4 ../../api/zoo-feature.txt:80
+msgid "ZOO.Feature"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:6
+msgid "Vector features use the ZOO.Geometry classes as geometry description."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:17
+msgid ":ref:`fid <fid>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:18 ../../api/zoo-projection.txt:20
+msgid "{String}"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:19
+msgid ":ref:`geometry <geometry>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:20
+msgid "{ZOO.Geometry}"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:21
+msgid ":ref:`attributes <attributes>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:22
+msgid ""
+"{Object} This object holds arbitrary properties that describe the feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:23 ../../api/zoo-geometry.txt:21
+msgid ":ref:`bounds <bounds>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:24
+msgid ""
+"{ZOO.Bounds} The box bounding that feature's geometry, that property can be "
+"set by an ZOO.Format object when deserializing the feature, so in most cases"
+" it represents an information set by the server."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:35
+msgid ":ref:`ZOO.Feature <ZOO.Feature>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:36 ../../api/zoo-feature.txt:74
+msgid "Create a vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:37 ../../api/zoo-format.txt:39
+#: ../../api/zoo-geometry.txt:35 ../../api/zoo-geometry-collection.txt:47
+#: ../../api/zoo-projection.txt:41
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:38 ../../api/zoo-feature.txt:89
+#: ../../api/zoo-geometry.txt:36
+msgid "nullify references to prevent circular references and memory leaks"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:40 ../../api/zoo-geometry.txt:38
+msgid "Create a clone of this vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:41 ../../api/zoo-geometry-collection.txt:67
+#: ../../api/zoo-geometry-linearring.txt:41
+#: ../../api/zoo-geometry-point.txt:45
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:42 ../../api/zoo-feature.txt:107
+#: ../../api/zoo-geometry.txt:40
+msgid "Moves the feature and redraws it at its new location"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:50
+msgid "fid"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:50 ../../api/zoo-projection.txt:56
+msgid "``{String}``"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:55
+msgid "geometry"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:55 ../../api/zoo-geometry-collection.txt:320
+#: ../../api/zoo-geometry-linearring.txt:166
+#: ../../api/zoo-geometry-point.txt:228
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:60
+msgid "attributes"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:60
+msgid ""
+"``{Object}`` This object holds arbitrary properties that describe the "
+"feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:67 ../../api/zoo-geometry.txt:68
+msgid "bounds"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:65
+msgid ""
+":ref:`{ZOO.Bounds} <api-zoo-bounds>` The box bounding that feature's "
+"geometry, that property can be set by an ZOO.Format object when "
+"deserializing the feature, so in most cases it represents an information set"
+" by the server."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:89 ../../api/zoo-format.txt:109
+#: ../../api/zoo-geometry.txt:84 ../../api/zoo-geometry-collection.txt:112
+#: ../../api/zoo-projection.txt:133
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:98
+msgid ""
+"Create a clone of this vector feature.  Does not set any non-standard "
+"properties."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:102
+msgid ""
+":ref:`{ZOO.Feature} <api-zoo-feature>` An exact clone of this vector "
+"feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:106 ../../api/zoo-geometry-collection.txt:251
+#: ../../api/zoo-geometry-linearring.txt:115
+#: ../../api/zoo-geometry-point.txt:147
+msgid "move"
+msgstr ""
+
+#: ../../api/zoo-format.txt:4 ../../api/zoo-format.txt:100
+msgid "ZOO.Format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:6
+msgid "Base class for format reading/writing a variety of formats."
+msgstr ""
+
+#: ../../api/zoo-format.txt:17
+msgid ":ref:`options <options>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:18
+msgid "{Object} A reference to options passed to the constructor."
+msgstr ""
+
+#: ../../api/zoo-format.txt:19
+msgid ":ref:`externalProjection <externalProjection>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:20 ../../api/zoo-format.txt:22
+msgid ""
+"{ZOO.Projection} When passed a externalProjection and internalProjection, "
+"the format will reproject the geometries it reads or writes."
+msgstr ""
+
+#: ../../api/zoo-format.txt:21
+msgid ":ref:`internalProjection <internalProjection>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:23 ../../api/zoo-format.txt:43
+msgid ":ref:`data <data>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:24 ../../api/zoo-format.txt:44
+msgid ""
+"{Object} When keepData is true, this is the parsed string sent to read."
+msgstr ""
+
+#: ../../api/zoo-format.txt:25
+msgid ":ref:`keepData <keepData>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:26
+msgid "{Object} Maintain a reference (data) to the most recently read data."
+msgstr ""
+
+#: ../../api/zoo-format.txt:37
+msgid ":ref:`ZOO.Format <ZOO.Format>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:38
+msgid "Instances of this class are not useful."
+msgstr ""
+
+#: ../../api/zoo-format.txt:40 ../../api/zoo-format.txt:109
+msgid "Clean up."
+msgstr ""
+
+#: ../../api/zoo-format.txt:41 ../../api/zoo-format-geojson.txt:23
+#: ../../api/zoo-format-gml.txt:39 ../../api/zoo-format-json.txt:43
+#: ../../api/zoo-format-wkt.txt:23 ../../api/zoo-format-wps.txt:25
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:42 ../../api/zoo-format.txt:118
+msgid ""
+"Read data from a string, and return an object whose type depends on the "
+"subclass."
+msgstr ""
+
+#: ../../api/zoo-format.txt:45 ../../api/zoo-format-geojson.txt:67
+#: ../../api/zoo-format-gml.txt:59 ../../api/zoo-format-json.txt:45
+#: ../../api/zoo-format-kml.txt:51 ../../api/zoo-format-wkt.txt:25
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:46 ../../api/zoo-format.txt:135
+msgid "Accept an object, and return a string."
+msgstr ""
+
+#: ../../api/zoo-format.txt:53
+msgid "options"
+msgstr ""
+
+#: ../../api/zoo-format.txt:53
+msgid "``{Object}`` A reference to options passed to the constructor."
+msgstr ""
+
+#: ../../api/zoo-format.txt:62
+msgid "externalProjection"
+msgstr ""
+
+#: ../../api/zoo-format.txt:58
+msgid ""
+":ref:`{ZOO.Projection} <api-zoo-projection>` When passed a "
+"externalProjection and internalProjection, the format will reproject the "
+"geometries it reads or writes. The externalProjection is the projection used"
+" by the content which is passed into read or which comes out of write.  In "
+"order to reproject, a projection transformation function for the specified "
+"projections must be available.  This support is provided via zoo-proj4js."
+msgstr ""
+
+#: ../../api/zoo-format.txt:71
+msgid "internalProjection"
+msgstr ""
+
+#: ../../api/zoo-format.txt:67
+msgid ""
+":ref:`{ZOO.Projection} <api-zoo-projection>` When passed a "
+"externalProjection and internalProjection, the format will reproject the "
+"geometries it reads or writes. The internalProjection is the projection used"
+" by the geometries which are returned by read or which are passed into "
+"write.  In order to reproject, a projection transformation function for the "
+"specified projections must be available.  This support is provided via zoo-"
+"proj4js."
+msgstr ""
+
+#: ../../api/zoo-format.txt:76
+msgid "data"
+msgstr ""
+
+#: ../../api/zoo-format.txt:76
+msgid ""
+"``{Object}`` When :ref:`keepData <keepData>` is true, this is the parsed "
+"string sent to :ref:`read <read>`."
+msgstr ""
+
+#: ../../api/zoo-format.txt:81
+msgid "keepData"
+msgstr ""
+
+#: ../../api/zoo-format.txt:81
+msgid ""
+"``{Object}`` Maintain a reference (:ref:`data <data>`) to the most recently "
+"read data.  Default is false."
+msgstr ""
+
+#: ../../api/zoo-format.txt:88
+msgid "Instances of this class are not useful.  See one of the subclasses."
+msgstr ""
+
+#: ../../api/zoo-format.txt:92
+msgid ""
+"``options {Object}`` An optional object with properties to set on the format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:94 ../../api/zoo-geometry-linestring.txt:108
+#: ../../api/zoo-geometry-linestring.txt:131
+#: ../../api/zoo-geometry-linestring.txt:155
+msgid "*Valid options*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:96
+msgid ""
+"``keepData {Boolean}`` If true, upon read, the data property will be set to "
+"the parsed object (e.g. the json or xml object)."
+msgstr ""
+
+#: ../../api/zoo-format.txt:100
+msgid "An instance of ZOO.Format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:126 ../../api/zoo-format-geojson.txt:144
+#: ../../api/zoo-format-gml.txt:149 ../../api/zoo-format-json.txt:142
+#: ../../api/zoo-format-wkt.txt:76 ../../api/zoo-format-wps.txt:61
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format.txt:122
+msgid "``data {string}`` Data to read/parse."
+msgstr ""
+
+#: ../../api/zoo-format.txt:126
+msgid "Depends on the subclass"
+msgstr ""
+
+#: ../../api/zoo-format.txt:142 ../../api/zoo-format-geojson.txt:310
+#: ../../api/zoo-format-gml.txt:296 ../../api/zoo-format-json.txt:160
+#: ../../api/zoo-format-kml.txt:250 ../../api/zoo-format-wkt.txt:93
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format.txt:139
+msgid "``object {Object}`` Object to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format.txt:143
+msgid "``{String}`` A string representation of the object."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:4 ../../api/zoo-format-geojson.txt:122
+msgid "ZOO.Format.GeoJSON"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:6
+msgid "Read and write GeoJSON."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:8 ../../api/zoo-format-gml.txt:8
+#: ../../api/zoo-format-json.txt:8 ../../api/zoo-format-kml.txt:8
+#: ../../api/zoo-format-wkt.txt:8 ../../api/zoo-format-wps.txt:8
+#: ../../api/zoo-geometry-collection.txt:18
+#: ../../api/zoo-geometry-curve.txt:10
+#: ../../api/zoo-geometry-linearring.txt:12
+#: ../../api/zoo-geometry-linestring.txt:8
+#: ../../api/zoo-geometry-multilinestring.txt:8
+#: ../../api/zoo-geometry-multipoint.txt:9
+#: ../../api/zoo-geometry-multipolygon.txt:9
+#: ../../api/zoo-geometry-point.txt:8 ../../api/zoo-geometry-polygon.txt:8
+#: ../../api/zoo-geometry-surface.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:10
+msgid ":ref:`ZOO.Format.JSON <api-zoo-format-json>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:21
+msgid ":ref:`ZOO.Format.GeoJSON <ZOO.Format.GeoJSON>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:22 ../../api/zoo-format-geojson.txt:117
+msgid "Create a new parser for GeoJSON."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:24 ../../api/zoo-format-geojson.txt:131
+msgid "Deserialize a GeoJSON string."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:25
+msgid ":ref:`isValidType <isValidType>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:26 ../../api/zoo-format-geojson.txt:153
+msgid "Check if a GeoJSON object is a valid representative of the given type."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:27 ../../api/zoo-format-gml.txt:41
+#: ../../api/zoo-format-kml.txt:35
+msgid ":ref:`parseFeature <parseFeature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:28
+msgid "Convert a feature object from GeoJSON into an ZOO.Feature."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:29 ../../api/zoo-format-gml.txt:43
+#: ../../api/zoo-format-kml.txt:37
+msgid ":ref:`parseGeometry <parseGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:30
+msgid "Convert a geometry object from GeoJSON into an ZOO.Geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:33
+msgid "parseCoords Properties"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:41
+msgid ":ref:`parseCoords <parseCoords>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:42
+msgid "Object with properties corresponding to the GeoJSON geometry types."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:45
+msgid "parseCoords Functions"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:53
+msgid ":ref:`parseCoords.point <parseCoords.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:54
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.Point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:55
+msgid ":ref:`parseCoords.multipoint <parseCoords.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:56
+msgid ""
+"Convert a coordinate array from GeoJSON into an ZOO.Geometry.MultiPoint."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:57
+msgid ":ref:`parseCoords.linestring <parseCoords.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:58
+msgid ""
+"Convert a coordinate array from GeoJSON into an ZOO.Geometry.LineString."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:59
+msgid ":ref:`parseCoords.multilinestring <parseCoords.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:60
+msgid ""
+"Convert a coordinate array from GeoJSON into an "
+"ZOO.Geometry.MultiLineString."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:61
+msgid ":ref:`parseCoords.polygon <parseCoords.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:62 ../../api/zoo-format-geojson.txt:66
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.Polygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:63
+msgid ":ref:`parseCoords.multipolygon <parseCoords.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:64
+msgid ""
+"Convert a coordinate array from GeoJSON into an ZOO.Geometry.MultiPolygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:65
+msgid ":ref:`parseCoords.box <parseCoords.box>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:68 ../../api/zoo-format-geojson.txt:301
+msgid ""
+"Serialize a feature, geometry, array of features into a GeoJSON string."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:69
+msgid ":ref:`createCRSObject <createCRSObject>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:70 ../../api/zoo-format-geojson.txt:319
+msgid "Create the CRS object for an object."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:73
+msgid "extract Properties"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:81 ../../api/zoo-format-wkt.txt:27
+msgid ":ref:`extract <extract>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:82
+msgid "Object with properties corresponding to the GeoJSON types."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:85
+msgid "extract Functions"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:93
+msgid ":ref:`extract.feature <extract.feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:94 ../../api/zoo-format-geojson.txt:342
+msgid "Return a partial GeoJSON object representing a single feature."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:95
+msgid ":ref:`extract.geometry <extract.geometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:96 ../../api/zoo-format-geojson.txt:356
+msgid "Return a GeoJSON object representing a single geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:97
+msgid ":ref:`extract.point <extract.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:98 ../../api/zoo-format-geojson.txt:369
+msgid "Return an array of coordinates from a point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:99
+msgid ":ref:`extract.multipoint <extract.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:100 ../../api/zoo-format-geojson.txt:382
+msgid "Return an array of coordinates from a multipoint."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:101
+msgid ":ref:`extract.linestring <extract.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:102 ../../api/zoo-format-geojson.txt:395
+msgid "Return an array of coordinate arrays from a linestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:103
+msgid ":ref:`extract.multilinestring <extract.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:104 ../../api/zoo-format-geojson.txt:408
+msgid "Return an array of linestring arrays from a linestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:105
+msgid ":ref:`extract.polygon <extract.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:106 ../../api/zoo-format-geojson.txt:421
+msgid "Return an array of linear ring arrays from a polygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:107
+msgid ":ref:`extract.multipolygon <extract.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:108 ../../api/zoo-format-geojson.txt:434
+msgid "Return an array of polygon arrays from a multipolygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:109
+msgid ":ref:`extract.collection <extract.collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:110 ../../api/zoo-format-geojson.txt:447
+msgid "Return an array of geometries from a geometry collection."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:122 ../../api/zoo-format-gml.txt:132
+#: ../../api/zoo-format-json.txt:124 ../../api/zoo-format-kml.txt:110
+msgid ""
+"``options {Object}`` An optional object whose properties will be set on this"
+" instance."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:141
+msgid ""
+"``{Object}`` The return depends on the value of the type argument.  If type "
+"is \"FeatureCollection\" (the default), the return will be an array of "
+":ref:`ZOO.Feature <api-zoo-feature>`.  If type is \"Geometry\", the input "
+"json must represent a single geometry, and the return will be an "
+":ref:`ZOO.Geometry <api-zoo-geometry>`.  If type is \"Feature\", the input "
+"json must represent a single feature, and the return will be an "
+":ref:`ZOO.Feature <api-zoo-feature>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:157
+msgid "isValidType"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:157
+msgid "``{Boolean}`` The object is valid GeoJSON object of the given type."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:174 ../../api/zoo-format-gml.txt:168
+#: ../../api/zoo-format-kml.txt:143
+msgid "parseFeature"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:166
+msgid ""
+"Convert a feature object from GeoJSON into a :ref:`ZOO.Feature <api-zoo-"
+"feature>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:170 ../../api/zoo-format-geojson.txt:187
+msgid "``obj {Object}`` An object created from a GeoJSON object"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:174
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A feature."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:191 ../../api/zoo-format-gml.txt:173
+#: ../../api/zoo-format-kml.txt:148
+msgid "parseGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:183
+msgid ""
+"Convert a geometry object from GeoJSON into a :ref:`ZOO.Geometry <api-zoo-"
+"geometry>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:191
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:193
+msgid "**parseCoords Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:199
+msgid "parseCoords"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:198
+msgid ""
+"Object with properties corresponding to the GeoJSON geometry types. Property"
+" values are functions that do the actual parsing."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:201
+msgid "**parseCoords Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:214
+msgid "parseCoords.point"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:206
+msgid ""
+"Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.Point "
+"<api-zoo-geometry-point>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:210 ../../api/zoo-format-geojson.txt:223
+#: ../../api/zoo-format-geojson.txt:236 ../../api/zoo-format-geojson.txt:249
+#: ../../api/zoo-format-geojson.txt:262 ../../api/zoo-format-geojson.txt:275
+#: ../../api/zoo-format-geojson.txt:288
+msgid "``array {Object}`` The coordinates array from the GeoJSON fragment."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:214
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:227
+msgid "parseCoords.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:219
+msgid ""
+"Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.MultiPoint"
+" <api-zoo-geometry-multipoint>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:227
+msgid ""
+":ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-multipoint>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:240
+msgid "parseCoords.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:232
+msgid ""
+"Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.LineString"
+" <api-zoo-geometry-linestring>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:240
+msgid ""
+":ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:253
+msgid "parseCoords.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:245
+msgid ""
+"Convert a coordinate array from GeoJSON into a "
+":ref:`ZOO.Geometry.MultiLineString <api-zoo-geometry-multilinestring>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:253
+msgid ""
+":ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-multilinestring>` A "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:266
+msgid "parseCoords.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:258 ../../api/zoo-format-geojson.txt:284
+msgid ""
+"Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.Polygon "
+"<api-zoo-geometry-polygon>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:266 ../../api/zoo-format-geojson.txt:292
+msgid ":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:279
+msgid "parseCoords.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:271
+msgid ""
+"Convert a coordinate array from GeoJSON into a "
+":ref:`ZOO.Geometry.MultiPolygon <api-zoo-geometry-multipolygon>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:279
+msgid ""
+":ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-multipolygon>` A "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:292
+msgid "parseCoords.box"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:310
+msgid ""
+"``{String}`` The GeoJSON string representation of the input geometry, "
+"features, or array of features."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:327
+msgid "createCRSObject"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:323
+msgid "``object`` :ref:`{ZOO.Feature} <api-zoo-feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:327
+msgid ""
+"``{Object}`` An object which can be assigned to the crs property of a "
+"GeoJSON object."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:329
+msgid "**extract Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:335 ../../api/zoo-format-wkt.txt:99
+msgid "extract"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:334
+msgid ""
+"Object with properties corresponding to the GeoJSON types. Property values "
+"are functions that do the actual value extraction."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:337
+msgid "**extract Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:351
+msgid "extract.feature"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:347 ../../api/zoo-format-kml.txt:263
+msgid "``feature`` :ref:`{ZOO.Feature} <api-zoo-feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:351
+msgid "``{Object}`` An object representing the point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:364
+msgid "extract.geometry"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:360 ../../api/zoo-format-gml.txt:441
+#: ../../api/zoo-format-kml.txt:280 ../../api/zoo-format-kml.txt:406
+#: ../../api/zoo-geometry-linestring.txt:75
+msgid "``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:364
+msgid "``{Object}`` An object representing the geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:377
+msgid "extract.point"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:373
+#: ../../api/zoo-geometry-linearring.txt:227
+#: ../../api/zoo-geometry-polygon.txt:64
+msgid "``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:377
+msgid "``{Array}`` An array of coordinates representing the point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:390
+msgid "extract.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:386
+msgid ""
+"``multipoint`` :ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-"
+"multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:390
+msgid ""
+"``{Array}`` An array of point coordinate arrays representing the multipoint."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:403
+msgid "extract.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:399
+msgid ""
+"``linestring`` :ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-"
+"linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:403
+msgid "``{Array}`` An array of coordinate arrays representing the linestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:416
+msgid "extract.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:412
+msgid ""
+"``multilinestring`` :ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-"
+"multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:416
+msgid ""
+"``{Array}`` An array of linestring arrays representing the multilinestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:429
+msgid "extract.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:425
+msgid "``polygon`` :ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:429
+msgid "``{Array}`` An array of linear ring arrays representing the polygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:442
+msgid "extract.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:438
+msgid ""
+"``multipolygon`` :ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-"
+"multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:442
+msgid "``{Array}`` An array of polygon arrays representing the multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:454
+msgid "extract.collection"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:451
+msgid ""
+"``collection`` :ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-"
+"collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:455
+msgid ""
+"``{Array}`` An array of geometry objects representing the geometry "
+"collection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:4 ../../api/zoo-format-gml.txt:132
+msgid "ZOO.Format.GML"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:6
+msgid "Read/Write GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:10 ../../api/zoo-format-json.txt:10
+#: ../../api/zoo-format-kml.txt:10 ../../api/zoo-format-wkt.txt:10
+#: ../../api/zoo-format-wps.txt:10
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:13 ../../api/zoo-format-kml.txt:13
+#: ../../api/zoo-process.txt:9
+msgid "Properties and Functions"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:21 ../../api/zoo-format-wps.txt:21
+#: ../../api/zoo-process.txt:17
+msgid ":ref:`schemaLocation <schemaLocation>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:22 ../../api/zoo-format-wps.txt:22
+#: ../../api/zoo-process.txt:18
+msgid "{String} Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:23 ../../api/zoo-format-wps.txt:23
+#: ../../api/zoo-process.txt:19
+msgid ":ref:`namespaces <namespaces>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:24 ../../api/zoo-format-wps.txt:24
+#: ../../api/zoo-process.txt:20
+msgid "{Object} Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:25
+msgid ":ref:`defaultPrefix <defaultPrefix>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:27
+msgid ":ref:`collectionName <collectionName>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:28
+msgid "{String} Name of featureCollection element."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:29
+msgid ":ref:`featureName <featureName>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:30
+msgid "{String} Element name for features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:31
+msgid ":ref:`geometryName <geometryName>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:32
+msgid "{String} Name of geometry element."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:33
+msgid ":ref:`xy <xy>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:34
+msgid ""
+"{Boolean} Order of the GML coordinate true:(x,y) or false:(y,x) Changing is "
+"not recommended, a new Format should be instantiated."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:35 ../../api/zoo-format-kml.txt:29
+msgid ":ref:`extractAttributes <extractAttributes>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:36
+msgid "{Boolean} Could we extract attributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:37
+msgid ":ref:`ZOO.Format.GML <ZOO.Format.GML>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:38 ../../api/zoo-format-gml.txt:128
+msgid "Create a new parser for GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:40 ../../api/zoo-format-gml.txt:141
+msgid "Read data from a string, and return a list of features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:42
+msgid "This function is the core of the GML parsing code in ZOO."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:44 ../../api/zoo-format-gml.txt:173
+#: ../../api/zoo-format-kml.txt:38 ../../api/zoo-format-kml.txt:148
+msgid ""
+"Properties of this object are the functions that parse geometries based on "
+"their type."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:45 ../../api/zoo-format-kml.txt:39
+msgid ":ref:`parseGeometry.point <parseGeometry.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:46 ../../api/zoo-format-gml.txt:178
+msgid ""
+"Given a GML node representing a point geometry, create a ZOO point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:47
+msgid ":ref:`parseGeometry.multipoint <parseGeometry.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:48
+msgid ""
+"Given a GML node representing a point geometry, create a ZOO multipoint "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:49 ../../api/zoo-format-kml.txt:41
+msgid ":ref:`parseGeometry.linestring <parseGeometry.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:50 ../../api/zoo-format-gml.txt:204
+msgid ""
+"Given a GML node representing a linestring geometry, create a ZOO linestring"
+" geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:51 ../../api/zoo-format-kml.txt:43
+msgid ":ref:`parseGeometry.polygon <parseGeometry.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:52 ../../api/zoo-format-gml.txt:230
+msgid ""
+"Given a GML node representing a polygon geometry, create a ZOO polygon "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:53 ../../api/zoo-format-kml.txt:45
+msgid ":ref:`parseGeometry.multigeometry <parseGeometry.multigeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:54
+msgid ""
+"Given a GML node representing a multigeometry, create a ZOO geometry "
+"collection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:55 ../../api/zoo-format-kml.txt:47
+msgid ":ref:`parseAttributes <parseAttributes>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:57 ../../api/zoo-format-kml.txt:49
+msgid ":ref:`parseExtendedData <parseExtendedData>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:58
+msgid "Parse ExtendedData from GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:60 ../../api/zoo-format-kml.txt:52
+#: ../../api/zoo-format-kml.txt:242
+msgid "Accept Feature Collection, and return a string."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:61
+msgid ":ref:`createFeature <createFeature>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:62 ../../api/zoo-format-gml.txt:305
+msgid "Accept an ZOO.Feature, and build a GML node for it."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:63 ../../api/zoo-format-kml.txt:55
+msgid ":ref:`buildGeometryNode <buildGeometryNode>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:64
+msgid "Builds and returns a GML geometry node with the given geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:65 ../../api/zoo-format-kml.txt:57
+msgid ":ref:`buildGeometry <buildGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:66 ../../api/zoo-format-gml.txt:333
+#: ../../api/zoo-format-kml.txt:58 ../../api/zoo-format-kml.txt:289
+msgid ""
+"Object containing methods to do the actual geometry node building based on "
+"geometry type."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:67 ../../api/zoo-format-kml.txt:59
+msgid ":ref:`buildGeometry.point <buildGeometry.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:68 ../../api/zoo-format-gml.txt:338
+msgid "Given a ZOO point geometry, create a GML point."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:69 ../../api/zoo-format-kml.txt:61
+msgid ":ref:`buildGeometry.multipoint <buildGeometry.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:70
+msgid "Given a ZOO multipoint geometry, create a GML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:71 ../../api/zoo-format-kml.txt:63
+msgid ":ref:`buildGeometry.linestring <buildGeometry.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:72 ../../api/zoo-format-gml.txt:364
+msgid "Given a ZOO linestring geometry, create a GML linestring."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:73 ../../api/zoo-format-kml.txt:65
+msgid ":ref:`buildGeometry.multilinestring <buildGeometry.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:74
+msgid "Given a ZOO multilinestring geometry, create a GML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:75 ../../api/zoo-format-kml.txt:67
+msgid ":ref:`buildGeometry.linearring <buildGeometry.linearring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:76 ../../api/zoo-format-gml.txt:390
+msgid "Given a ZOO linearring geometry, create a GML linearring."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:77 ../../api/zoo-format-kml.txt:69
+msgid ":ref:`buildGeometry.polygon <buildGeometry.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:78
+msgid "Given a ZOO polygon geometry, create a GML polygon."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:79 ../../api/zoo-format-kml.txt:71
+msgid ":ref:`buildGeometry.multipolygon <buildGeometry.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:80
+msgid "Given a ZOO multipolygon geometry, create a GML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:81 ../../api/zoo-format-kml.txt:73
+msgid ":ref:`buildGeometry.collection <buildGeometry.collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:82
+msgid "Given a ZOO geometry collection, create a GML MultiGeometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:83 ../../api/zoo-format-kml.txt:75
+msgid ":ref:`buildCoordinatesNode <buildCoordinatesNode>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:84 ../../api/zoo-format-gml.txt:433
+msgid "builds the coordinates XmlNode"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:89 ../../api/zoo-format-wps.txt:41
+#: ../../api/zoo-process.txt:43
+msgid "schemaLocation"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:89 ../../api/zoo-format-wps.txt:41
+#: ../../api/zoo-process.txt:43
+msgid "``{String}`` Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:94 ../../api/zoo-format-wps.txt:46
+#: ../../api/zoo-process.txt:48
+msgid "namespaces"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:94 ../../api/zoo-format-wps.txt:46
+#: ../../api/zoo-process.txt:48
+msgid "``{Object}`` Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:98
+msgid "defaultPrefix"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:103
+msgid "collectionName"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:103
+msgid "``{String}`` Name of featureCollection element."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:108
+msgid "featureName"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:108
+msgid "``{String}`` Element name for features. Default is \"sql_statement\"."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:113
+msgid "geometryName"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:113
+msgid "``{String}`` Name of geometry element. Defaults to \"geometryProperty\"."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:118
+msgid "xy"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:118
+msgid ""
+"``{Boolean}`` Order of the GML coordinate true:(x,y) or false:(y,x) Changing"
+" is not recommended, a new Format should be instantiated."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:123 ../../api/zoo-format-kml.txt:101
+msgid "extractAttributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:123
+msgid "``{Boolean}`` Could we extract attributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:145
+msgid "``data {String}`` data to read/parse."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:149
+msgid ":ref:`{Array(ZOO.Feature)} <api-zoo-feature>` An array of features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:158
+msgid ""
+"This function is the core of the GML parsing code in ZOO.  It creates the "
+"geometries that are then attached to the returned feature, and calls "
+"parseAttributes() to get attribute data out."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:164 ../../api/zoo-format-gml.txt:275
+#: ../../api/zoo-format-kml.txt:139 ../../api/zoo-format-kml.txt:211
+#: ../../api/zoo-format-kml.txt:229
+msgid "``node {E4XElement}``"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:168 ../../api/zoo-format-kml.txt:143
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A vector feature."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:186 ../../api/zoo-format-kml.txt:161
+msgid "parseGeometry.point"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:182 ../../api/zoo-format-gml.txt:195
+#: ../../api/zoo-format-gml.txt:208 ../../api/zoo-format-gml.txt:221
+#: ../../api/zoo-format-gml.txt:234 ../../api/zoo-format-gml.txt:247
+#: ../../api/zoo-format-gml.txt:260
+msgid "``node {E4XElement}`` A GML node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:186 ../../api/zoo-format-kml.txt:161
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:199
+msgid "parseGeometry.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:191
+msgid ""
+"Given a GML node representing a multipoint geometry, create a ZOO multipoint"
+" geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:199
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A multipoint geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:212 ../../api/zoo-format-kml.txt:174
+msgid "parseGeometry.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:212 ../../api/zoo-format-kml.txt:174
+msgid ""
+":ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` A linestring "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:225
+msgid "parseGeometry.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:217
+msgid ""
+"Given a GML node representing a multilinestring geometry, create a ZOO "
+"multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:225
+msgid ""
+":ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-multilinestring>` A "
+"multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:238 ../../api/zoo-format-kml.txt:187
+msgid "parseGeometry.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:238 ../../api/zoo-format-gml.txt:264
+#: ../../api/zoo-format-kml.txt:187
+msgid ""
+":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:251
+msgid "parseGeometry.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:243
+msgid ""
+"Given a GML node representing a multipolygon geometry, create a ZOO "
+"multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:251
+msgid ""
+":ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-multipolygon>` A "
+"multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:264
+msgid "parseGeometry.envelope"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:256
+msgid ""
+"Given a GML node representing an envelope, create a ZOO polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:279 ../../api/zoo-format-kml.txt:215
+msgid "parseAttributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:279 ../../api/zoo-format-kml.txt:215
+#: ../../api/zoo-format-kml.txt:233
+msgid "``{Object}`` An attributes object."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:288
+msgid "Generate a GML document string given a list of features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:292
+msgid ""
+"``features`` :ref:`{Array(ZOO.Feature)} <api-zoo-feature>` List of features "
+"to serialize into a string."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:296
+msgid "``{String}`` A string representing the GML document."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:313
+msgid "createFeature"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:309
+msgid ""
+"``feature`` :ref:`{ZOO.Feature} <api-zoo-feature>` The feature to be built "
+"as GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:313
+msgid "``{E4XElement}`` A node reprensting the feature in GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:328 ../../api/zoo-format-kml.txt:284
+msgid "buildGeometryNode"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:324
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` The geometry to be "
+"built as GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:328
+msgid "``{E4XElement}`` A node reprensting the geometry in GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:333 ../../api/zoo-format-kml.txt:289
+msgid "buildGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:346 ../../api/zoo-format-kml.txt:302
+msgid "buildGeometry.point"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:342 ../../api/zoo-format-kml.txt:298
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A point "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:346
+msgid "``{E4XElement}`` A GML point node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:359 ../../api/zoo-format-kml.txt:315
+msgid "buildGeometry.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:351
+msgid "Given a ZOO multipoint geometry, create a GML multipoint."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:355 ../../api/zoo-format-kml.txt:311
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-multipoint>` "
+"A multipoint geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:359
+msgid "``{E4XElement}`` A GML multipoint node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:372 ../../api/zoo-format-kml.txt:328
+msgid "buildGeometry.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:368 ../../api/zoo-format-kml.txt:324
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` "
+"A linestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:372
+msgid "``{E4XElement}`` A GML linestring node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:385 ../../api/zoo-format-kml.txt:341
+msgid "buildGeometry.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:377
+msgid "Given a ZOO multilinestring geometry, create a GML multilinestring."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:381 ../../api/zoo-format-kml.txt:337
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-"
+"multilinestring>` A multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:385
+msgid "``{E4XElement}`` A GML multilinestring node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:398 ../../api/zoo-format-kml.txt:354
+msgid "buildGeometry.linearring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:394 ../../api/zoo-format-kml.txt:350
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.LinearRing} <api-zoo-geometry-linearring>` "
+"A linearring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:398
+msgid "``{E4XElement}`` A GML linearring node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:411 ../../api/zoo-format-kml.txt:367
+msgid "buildGeometry.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:403
+msgid "Given an ZOO polygon geometry, create a GML polygon."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:407 ../../api/zoo-format-kml.txt:363
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A "
+"polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:411
+msgid "``{E4XElement}`` A GML polygon node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:424 ../../api/zoo-format-kml.txt:380
+msgid "buildGeometry.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:416
+msgid "Given a ZOO multipolygon geometry, create a GML multipolygon."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:420
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-"
+"multipolygon>` A multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:424
+msgid "``{E4XElement}`` A GML multipolygon node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:445 ../../api/zoo-format-kml.txt:411
+msgid "buildCoordinatesNode"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:445
+msgid "``{E4XElement}`` created E4XElement"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:4 ../../api/zoo-format-json.txt:124
+msgid "ZOO.Format.JSON"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:6
+msgid "A parser to read/write JSON safely."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:21
+msgid ":ref:`indent <indent>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:22
+msgid ""
+"{String} For \"pretty\" printing, the indent string will be used once for "
+"each indentation level."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:23
+msgid ":ref:`space <space>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:24
+msgid ""
+"{String} For \"pretty\" printing, the space string will be used after the "
+"\":\" separating a name/value pair."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:25
+msgid ":ref:`newline <newline>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:26
+msgid ""
+"{String} For \"pretty\" printing, the newline string will be used at the end"
+" of each name/value pair or array item."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:27
+msgid ":ref:`level <level>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:28
+msgid ""
+"{Integer} For \"pretty\" printing, this is incremented/decremented during "
+"serialization."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:29
+msgid ":ref:`pretty <pretty>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:30
+msgid "{Boolean} Serialize with extra whitespace for structure."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:41
+msgid ":ref:`ZOO.Format.JSON <ZOO.Format.JSON>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:42 ../../api/zoo-format-json.txt:120
+msgid "Create a new parser for JSON."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:44 ../../api/zoo-format-json.txt:133
+msgid "Deserialize a json string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:46 ../../api/zoo-format-json.txt:151
+msgid "Serialize an object into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:47
+msgid ":ref:`writeIndent <writeIndent>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:48 ../../api/zoo-format-json.txt:169
+msgid "Output an indentation string depending on the indentation level."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:49
+msgid ":ref:`writeNewline <writeNewline>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:50 ../../api/zoo-format-json.txt:182
+msgid "Output a string representing a newline if in pretty printing mode."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:51
+msgid ":ref:`writeSpace <writeSpace>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:52 ../../api/zoo-format-json.txt:195
+msgid "Output a string representing a space if in pretty printing mode."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:55
+msgid "Serialize Properties"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:63
+msgid ":ref:`serialize <serialize>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:64
+msgid "Object with properties corresponding to the serializable data types."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:67
+msgid "Serialize Functions"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:75
+msgid ":ref:`serialize.object <serialize.object>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:76 ../../api/zoo-format-json.txt:214
+msgid "Transform an object into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:77
+msgid ":ref:`serialize.array <serialize.array>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:78 ../../api/zoo-format-json.txt:227
+msgid "Transform an array into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:79
+msgid ":ref:`serialize.string <serialize.string>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:80 ../../api/zoo-format-json.txt:240
+msgid "Transform a string into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:81
+msgid ":ref:`serialize.number <serialize.number>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:82 ../../api/zoo-format-json.txt:253
+msgid "Transform a number into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:83
+msgid ":ref:`serialize.boolean <serialize.boolean>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:84 ../../api/zoo-format-json.txt:266
+msgid "Transform a boolean into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:85
+msgid ":ref:`serialize.date <serialize.date>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:86 ../../api/zoo-format-json.txt:279
+msgid "Transform a date into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:93
+msgid "indent"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:93
+msgid ""
+"``{String}`` For \"pretty\" printing, the indent string will be used once "
+"for each indentation level."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:98
+msgid "space"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:98
+msgid ""
+"``{String}`` For \"pretty\" printing, the space string will be used after "
+"the \":\" separating a name/value pair."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:103
+msgid "newline"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:103
+msgid ""
+"``{String}`` For \"pretty\" printing, the newline string will be used at the"
+" end of each name/value pair or array item."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:108
+msgid "level"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:108
+msgid ""
+"``{Integer}`` For \"pretty\" printing, this is incremented/decremented "
+"during serialization."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:113
+msgid "pretty"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:113
+msgid ""
+"``{Boolean}`` Serialize with extra whitespace for structure. This is set by "
+"the :ref:`write <write>` method."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:142
+msgid "``{Object}`` An object, array, string, or number."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:160
+msgid "``{String}`` The JSON string representation of the input value."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:173
+msgid "writeIndent"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:173
+msgid "``{String}`` An appropriate indentation string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:186
+msgid "writeNewline"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:186
+msgid "``{String}`` A string representing a new line."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:199
+msgid "writeSpace"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:199
+msgid "``{String}`` A space."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:201
+msgid "**Serialize Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:207
+msgid "serialize"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:206
+msgid ""
+"Object with properties corresponding to the serializable data types. "
+"Property values are functions that do the actual serializing."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:209
+msgid "**Serialize Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:222
+msgid "serialize.object"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:218
+msgid "``object {Object}`` The object to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:222
+msgid "``{String}`` A JSON string representing the object."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:235
+msgid "serialize.array"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:231
+msgid "``array {Array}`` The array to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:235
+msgid "``{String}`` A JSON string representing the array."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:248
+msgid "serialize.string"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:244
+msgid "``string {String}`` The string to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:248
+msgid "``{String}`` A JSON string representing the string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:261
+msgid "serialize.number"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:257
+msgid "``number {Number}`` The number to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:261
+msgid "``{String}`` A JSON string representing the number."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:274
+msgid "serialize.boolean"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:270
+msgid "``bool {Boolean}`` The boolean to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:274
+msgid "``{String}`` A JSON string representing the boolean."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:286
+msgid "serialize.date"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:283
+msgid "``date {Date}`` The date to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:287
+msgid "``{String}`` A JSON string representing the date."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:4 ../../api/zoo-format-kml.txt:110
+msgid "ZOO.Format.KML"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:6
+msgid "Read/Write KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:21
+msgid ":ref:`kmlns <kmlns>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:22
+msgid "{String} KML Namespace to use."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:23
+msgid ":ref:`foldersName <foldersName>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:24
+msgid "{String} Name of the folders."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:25
+msgid ":ref:`foldersDesc <foldersDesc>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:26
+msgid "{String} Description of the folders."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:27
+msgid ":ref:`placemarksDesc <placemarksDesc>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:28
+msgid "{String} Name of the placemarks."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:30
+msgid "{Boolean} Extract attributes from KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:31
+msgid ":ref:`ZOO.Format.KML <ZOO.Format.KML>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:32 ../../api/zoo-format-kml.txt:106
+msgid "Create a new parser for KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:33
+msgid ":ref:`parseFeatures <parseFeatures>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:34
+msgid "Loop through all Placemark nodes and parse them."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:36
+msgid "This function is the core of the KML parsing code in ZOO."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:40 ../../api/zoo-format-kml.txt:153
+msgid ""
+"Given a KML node representing a point geometry, create a ZOO point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:42 ../../api/zoo-format-kml.txt:166
+msgid ""
+"Given a KML node representing a linestring geometry, create a ZOO linestring"
+" geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:44 ../../api/zoo-format-kml.txt:179
+msgid ""
+"Given a KML node representing a polygon geometry, create a ZOO polygon "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:46 ../../api/zoo-format-kml.txt:192
+msgid ""
+"Given a KML node representing a multigeometry, create a ZOO geometry "
+"collection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:50
+msgid "Parse ExtendedData from KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:53
+msgid ":ref:`createPlacemark <createPlacemark>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:54 ../../api/zoo-format-kml.txt:259
+msgid ""
+"Creates and returns a KML placemark node representing the given feature."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:56 ../../api/zoo-format-kml.txt:276
+msgid "Builds and returns a KML geometry node with the given geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:60 ../../api/zoo-format-kml.txt:294
+msgid "Given a ZOO point geometry, create a KML point."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:62 ../../api/zoo-format-kml.txt:307
+msgid "Given a ZOO multipoint geometry, create a KML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:64 ../../api/zoo-format-kml.txt:320
+msgid "Given a ZOO linestring geometry, create a KML linestring."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:66 ../../api/zoo-format-kml.txt:333
+msgid "Given a ZOO multilinestring geometry, create a KML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:68 ../../api/zoo-format-kml.txt:346
+msgid "Given a ZOO linearring geometry, create a KML linearring."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:70 ../../api/zoo-format-kml.txt:359
+msgid "Given a ZOO polygon geometry, create a KML polygon."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:72 ../../api/zoo-format-kml.txt:372
+msgid "Given a ZOO multipolygon geometry, create a KML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:74 ../../api/zoo-format-kml.txt:385
+msgid "Given a ZOO geometry collection, create a KML MultiGeometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:76 ../../api/zoo-format-kml.txt:402
+msgid ""
+"Builds and returns the KML coordinates node with the given geometry "
+"<coordinates>...</coordinates>"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:81
+msgid "kmlns"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:81
+msgid "``{String}`` KML Namespace to use. Defaults to 2.2 namespace."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:86
+msgid "foldersName"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:86
+msgid ""
+"``{String}`` Name of the folders. Default is \"ZOO export\".  If set to "
+"null, no name element will be created."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:91
+msgid "foldersDesc"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:91
+msgid ""
+"``{String}`` Description of the folders. Default is \"Exported on [date].\""
+"  If set to null, no description element will be created."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:96
+msgid "placemarksDesc"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:96
+msgid ""
+"``{String}`` Name of the placemarks. Default is \"No description "
+"available\"."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:101
+msgid ""
+"``{Boolean}`` Extract attributes from KML. Default is true.  Extracting "
+"styleUrls requires this to be set to true"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:124
+msgid "parseFeatures"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:119
+msgid ""
+"Loop through all Placemark nodes and parse them.  Will create a list of "
+"features"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:133
+msgid ""
+"This function is the core of the KML parsing code in ZOO.  It creates the "
+"geometries that are then attached to the returned feature, and calls "
+"parseAttributes() to get attribute data out."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:157
+msgid "``node {E4XElement}`` A KML Point node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:170
+msgid "``node {E4XElement}`` A KML LineString node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:183
+msgid "``node {E4XElement}`` A KML Polygon node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:200
+msgid "parseGeometry.multigeometry"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:196
+msgid "``node {E4XElement}`` A KML MultiGeometry node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:200
+msgid ""
+":ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>` A geometry "
+"collection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:233
+msgid "parseExtendedData"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:224
+msgid ""
+"Parse ExtendedData from KML.  Limited support for schemas/datatypes.  See "
+"http://code.google.com/apis/kml/documentation/kmlreference.html#extendeddata"
+" for more information on extendeddata."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:246
+msgid ""
+"``features`` :ref:`{Array(ZOO.Feature)} <api-zoo-feature>` An array of "
+"features."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:250
+msgid "``{String}`` A KML string."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:267
+msgid "createPlacemark"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:267 ../../api/zoo-format-kml.txt:284
+#: ../../api/zoo-format-kml.txt:410
+msgid "``{E4XElement}``"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:302
+msgid "``{E4XElement}`` A KML point node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:315 ../../api/zoo-format-kml.txt:341
+#: ../../api/zoo-format-kml.txt:380
+msgid "``{E4XElement}`` A KML GeometryCollection node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:328
+msgid "``{E4XElement}`` A KML linestring node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:354
+msgid "``{E4XElement}`` A KML linearring node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:367
+msgid "``{E4XElement}`` A KML polygon node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:376
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A "
+"multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:393
+msgid "buildGeometry.collection"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:389
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>` "
+"A geometry collection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:393
+msgid "``{E4XElement}`` A KML MultiGeometry node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:408
+msgid "*Return*"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:4 ../../api/zoo-format-wkt.txt:57
+msgid "ZOO.Format.WKT"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:6
+msgid "Class for reading and writing Well-Known Text."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:13 ../../api/zoo-format-wps.txt:13
+#: ../../api/zoo-string.txt:9
+msgid "Functions and Properties"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:21
+msgid ":ref:`ZOO.Format.WKT <ZOO.Format.WKT>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:22 ../../api/zoo-format-wkt.txt:49
+msgid "Create a new parser for WKT"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:24
+msgid ""
+"Deserialize a WKT string and return a vector feature or an array of vector "
+"features."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:26 ../../api/zoo-format-wkt.txt:85
+msgid "Serialize a feature or array of features into a WKT string."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:28 ../../api/zoo-format-wkt.txt:30
+msgid "Object with properties corresponding to the geometry types."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:29
+msgid ":ref:`parse <parse>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:31
+msgid ":ref:`parse.point <parse.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:32 ../../api/zoo-format-wkt.txt:110
+msgid "Return point feature given a point WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:33
+msgid ":ref:`parse.multipoint <parse.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:34 ../../api/zoo-format-wkt.txt:123
+msgid "Return a multipoint feature given a multipoint WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:35
+msgid ":ref:`parse.linestring <parse.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:36 ../../api/zoo-format-wkt.txt:136
+msgid "Return a linestring feature given a linestring WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:37
+msgid ":ref:`parse.multilinestring <parse.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:38 ../../api/zoo-format-wkt.txt:149
+msgid "Return a multilinestring feature given a multilinestring WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:39
+msgid ":ref:`parse.polygon <parse.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:40 ../../api/zoo-format-wkt.txt:162
+msgid "Return a polygon feature given a polygon WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:41
+msgid ":ref:`parse.multipolygon <parse.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:42 ../../api/zoo-format-wkt.txt:175
+msgid "Return a multipolygon feature given a multipolygon WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:43
+msgid ":ref:`parse.geometrycollection <parse.geometrycollection>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:44 ../../api/zoo-format-wkt.txt:188
+msgid "Return an array of features given a geometrycollection WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:53
+msgid ""
+"``options {Object}`` An optional object whose properties will be set on this"
+" instance"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:57
+msgid ":ref:`{ZOO.Format.WKT} <api-zoo-format-wkt>` A new WKT parser."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:66
+msgid ""
+"Deserialize a WKT string and return a vector feature or an array of vector "
+"features. Supports WKT for POINT, MULTIPOINT, LINESTRING, MULTILINESTRING, "
+"POLYGON, MULTIPOLYGON, and GEOMETRYCOLLECTION."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:72
+msgid "``wkt {String}`` A WKT string"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:76
+msgid ""
+"{<ZOO.Feature.Vector>|Array} A feature or array of features for "
+"GEOMETRYCOLLECTION WKT."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:89
+msgid ""
+"``features {<ZOO.Feature.Vector>|Array}`` A feature or array of features"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:93
+msgid "``{String}`` The WKT string representation of the input geometries"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:98
+msgid ""
+"Object with properties corresponding to the geometry types. Property values "
+"are functions that do the actual data extraction."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:105
+msgid "parse"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:104
+msgid ""
+"Object with properties corresponding to the geometry types. Property values "
+"are functions that do the actual parsing."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:118
+msgid "parse.point"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:114
+msgid "``str {String}`` A WKT fragment representing the point"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:118
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A point feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:131
+msgid "parse.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:127
+msgid "``str {String}`` A WKT fragment representing the multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:131
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A multipoint feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:144
+msgid "parse.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:140
+msgid "``str {String}`` A WKT fragment representing the linestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:144
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A linestring feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:157
+msgid "parse.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:153
+msgid "``str {String}`` A WKT fragment representing the multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:157
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A multilinestring feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:170
+msgid "parse.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:166
+msgid "``str {String}`` A WKT fragment representing the polygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:170
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A polygon feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:183
+msgid "parse.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:179
+msgid "``str {String}`` A WKT fragment representing the multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:183
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A multipolygon feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:195
+msgid "parse.geometrycollection"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:192
+msgid "``str {String}`` A WKT fragment representing the geometrycollection"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:196
+msgid "``{Array}`` An array of ZOO.Feature"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:4
+msgid "ZOO.Format.WPS"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:6
+msgid "Read/Write WPS."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:27
+msgid ":ref:`parseExecuteResponse <parseExecuteResponse>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:29
+msgid ":ref:`parseData <parseData>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:30 ../../api/zoo-format-wps.txt:81
+msgid "Object containing methods to analyse data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:31
+msgid ":ref:`parseData.complexdata <parseData.complexdata>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:32 ../../api/zoo-format-wps.txt:86
+msgid "Given an Object representing the WPS complex data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:33
+msgid ":ref:`parseData.literaldata <parseData.literaldata>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:34
+msgid "Given an Object representing the WPS literal data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:35
+msgid ":ref:`parseData.reference <parseData.reference>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:36 ../../api/zoo-format-wps.txt:112
+msgid "Given an Object representing the WPS reference response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:57
+msgid "``data {String}`` A WPS xml document"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:61 ../../api/zoo-format-wps.txt:76
+msgid "``{Object}`` Execute response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:76
+msgid "parseExecuteResponse"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:72
+msgid "``node {E4XElement}`` A WPS ExecuteResponse document"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:81
+msgid "parseData"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:94
+msgid "parseData.complexdata"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:90 ../../api/zoo-format-wps.txt:103
+#: ../../api/zoo-format-wps.txt:116
+msgid "``node {E4XElement}`` A WPS node."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:94
+msgid "``{Object}`` A WPS complex data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:107
+msgid "parseData.literaldata"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:99
+msgid "Given an Object representing the WPS literal data response.\\"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:107
+msgid "``{Object}`` A WPS literal data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:119
+msgid "parseData.reference"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:120
+msgid "``{Object}`` A WPS reference response."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:4 ../../api/zoo-geometry.txt:75
+msgid "ZOO.Geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:6
+msgid "A Geometry is a description of a geographic object."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:17
+msgid ":ref:`id <id>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:18
+msgid "{String} A unique identifier for this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:19
+msgid ":ref:`parent <parent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:20
+msgid ""
+"{ZOO.Geometry}This is set when a Geometry is added as component of another "
+"geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:22
+msgid "{ZOO.Bounds} The bounds of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:33
+msgid ":ref:`ZOO.Geometry <ZOO.Geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:34 ../../api/zoo-geometry.txt:75
+msgid "Creates a geometry object."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:39
+msgid ":ref:`extendBounds <extendBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:41
+msgid ":ref:`clearBounds <clearBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:42 ../../api/zoo-geometry.txt:120
+msgid "Nullify this components bounds and that of its parent as well."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:43
+msgid ":ref:`getBounds <getBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:44
+msgid "Get the bounds for this Geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:45 ../../api/zoo-geometry-collection.txt:53
+#: ../../api/zoo-geometry-point.txt:39
+msgid ":ref:`calculateBounds <calculateBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:46 ../../api/zoo-geometry.txt:143
+msgid "Recalculate the bounds for the geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:48 ../../api/zoo-geometry.txt:152
+msgid "Returns the Well-Known Text representation of a geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:49
+msgid ":ref:`ZOO.Geometry.fromWKT <ZOO.Geometry.fromWKT>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:50 ../../api/zoo-geometry.txt:165
+msgid "Generate a geometry given a Well-Known Text string."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:58
+msgid "id"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:58
+msgid "``{String}`` A unique identifier for this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:63
+msgid "parent"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:63
+msgid ""
+":ref:`{ZOO.Geometry} <api-zoo-geometry>` This is set when a Geometry is "
+"added as component of another geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:68
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` The bounds of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:84 ../../api/zoo-geometry-collection.txt:48
+#: ../../api/zoo-geometry-collection.txt:114
+msgid "Destroy this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:93
+msgid ""
+"Create a clone of this geometry.  Does not set any non-standard properties "
+"of the cloned geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:97
+msgid ""
+":ref:`{ZOO.Geometry} <api-zoo-geometry>` An exact clone of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:111
+msgid "extendBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:106
+msgid ""
+"Extend the existing bounds to include the new bounds.  If geometry's bounds "
+"is not yet set, then set a new Bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:111 ../../api/zoo-geometry.txt:134
+msgid "``newBounds`` :ref:`{ZOO.Bounds} <api-zoo-bounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:120
+msgid "clearBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:134
+msgid "getBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:129
+msgid ""
+"Get the bounds for this Geometry.  If bounds is not set, it is calculated "
+"again, this makes queries faster."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:143 ../../api/zoo-geometry-collection.txt:149
+#: ../../api/zoo-geometry-point.txt:103
+msgid "calculateBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:156
+msgid "``{String}`` Well-Known Text"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:172
+msgid "ZOO.Geometry.fromWKT"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:169
+msgid ""
+"``wkt {String}`` A string representing the geometry in Well-Known Text."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:173
+msgid ""
+":ref:`{ZOO.Geometry} <api-zoo-geometry>` A geometry of the appropriate "
+"class."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:4
+#: ../../api/zoo-geometry-collection.txt:105
+msgid "ZOO.Geometry.Collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:6
+msgid ""
+"A Collection is exactly what it sounds like: A collection of different "
+"Geometries. These are stored in the local parameter :ref:`components "
+"<components>` (which can be passed as a parameter to the constructor)."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:10
+msgid ""
+"As new geometries are added to the collection, they are NOT cloned.  When "
+"removing geometries, they need to be specified by reference (ie you have to "
+"pass in the exact geometry to be removed)."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:13
+msgid ""
+"The <getArea> and :ref:`getLength <getLength>` functions here merely iterate"
+" through the components, summing their respective areas and lengths."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:16
+msgid ""
+"Create a new instance with the :ref:`ZOO.Geometry.Collection "
+"<ZOO.Geometry.Collection>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:20
+#: ../../api/zoo-geometry-point.txt:10 ../../api/zoo-geometry-surface.txt:10
+msgid ":ref:`ZOO.Geometry <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:31
+msgid ":ref:`components <components>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:32
+msgid "{Array(ZOO.Geometry)} The component parts of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:33
+#: ../../api/zoo-geometry-curve.txt:23
+#: ../../api/zoo-geometry-linearring.txt:25
+#: ../../api/zoo-geometry-multipoint.txt:22
+msgid ":ref:`componentTypes <componentTypes>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:34
+#: ../../api/zoo-geometry-curve.txt:24
+#: ../../api/zoo-geometry-linearring.txt:26
+#: ../../api/zoo-geometry-multipoint.txt:23
+msgid ""
+"{Array(String)} An array of class names representing the types of components"
+" that the collection can include."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:45
+msgid ":ref:`ZOO.Geometry.Collection <ZOO.Geometry.Collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:46
+#: ../../api/zoo-geometry-collection.txt:101
+msgid "Creates a Geometry Collection -- a list of geoms."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:50
+#: ../../api/zoo-geometry-collection.txt:123
+msgid "Clone this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:51
+msgid ":ref:`getComponentsString <getComponentsString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:52
+#: ../../api/zoo-geometry-collection.txt:136
+msgid "Get a string representing the components for this collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:54
+#: ../../api/zoo-geometry-collection.txt:149
+msgid ""
+"Recalculate the bounds by iterating through the components and calling "
+"extendBounds() on each item."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:55
+#: ../../api/zoo-geometry-linearring.txt:39
+msgid ":ref:`addComponent <addComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:56
+msgid "Add a new component (geometry) to the collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:57
+msgid ":ref:`removeComponents <removeComponents>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:58
+msgid "Remove components from this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:59
+#: ../../api/zoo-geometry-linestring.txt:23
+msgid ":ref:`removeComponent <removeComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:60
+#: ../../api/zoo-geometry-collection.txt:190
+msgid "Remove a component from this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:61
+#: ../../api/zoo-geometry-curve.txt:37
+msgid ":ref:`getLength <getLength>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:62
+msgid "Calculate the length of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:63
+#: ../../api/zoo-geometry-linearring.txt:49
+#: ../../api/zoo-geometry-point.txt:49
+msgid ":ref:`getCentroid <getCentroid>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:64
+msgid "{ZOO.Geometry.Point} The centroid of the collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:65
+msgid ":ref:`getGeodesicLength <getGeodesicLength>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:66
+#: ../../api/zoo-geometry-collection.txt:227
+msgid ""
+"Calculate the approximate length of the geometry were it projected onto the "
+"earth."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:68
+#: ../../api/zoo-geometry-linearring.txt:42
+#: ../../api/zoo-geometry-point.txt:46
+msgid ""
+"Moves a geometry by the given displacement along positive x and y axes."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:69
+#: ../../api/zoo-geometry-linearring.txt:43
+#: ../../api/zoo-geometry-point.txt:47
+msgid ":ref:`rotate <rotate>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:70
+msgid "Rotate a geometry around some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:71
+#: ../../api/zoo-geometry-linearring.txt:45
+#: ../../api/zoo-geometry-point.txt:51
+msgid ":ref:`resize <resize>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:72
+#: ../../api/zoo-geometry-linearring.txt:46
+msgid "Resize a geometry relative to some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:74
+#: ../../api/zoo-geometry-point.txt:42
+msgid "Determine whether another geometry is equivalent to this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:75
+#: ../../api/zoo-geometry-linearring.txt:47
+#: ../../api/zoo-geometry-point.txt:55 ../../api/zoo-projection.txt:43
+msgid ":ref:`transform <transform>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:76
+#: ../../api/zoo-geometry-collection.txt:311
+#: ../../api/zoo-geometry-linearring.txt:48
+#: ../../api/zoo-geometry-linearring.txt:157
+msgid "Reproject the components geometry from source to dest."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:77
+#: ../../api/zoo-geometry-linestring.txt:25
+#: ../../api/zoo-geometry-point.txt:53
+msgid ":ref:`intersects <intersects>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:78
+#: ../../api/zoo-geometry-collection.txt:329
+#: ../../api/zoo-geometry-point.txt:54 ../../api/zoo-geometry-point.txt:202
+msgid "Determine if the input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:79
+#: ../../api/zoo-geometry-linestring.txt:35
+#: ../../api/zoo-geometry-point.txt:57
+msgid ":ref:`getVertices <getVertices>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:80
+#: ../../api/zoo-geometry-collection.txt:346
+#: ../../api/zoo-geometry-linestring.txt:36
+#: ../../api/zoo-geometry-linestring.txt:172
+#: ../../api/zoo-geometry-point.txt:58 ../../api/zoo-geometry-point.txt:237
+msgid "Return a list of all points in this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:88
+msgid "components"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:88
+msgid ""
+"{Array(:ref:`ZOO.Geometry <api-zoo-geometry>`)} The component parts of this "
+"geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:94
+#: ../../api/zoo-geometry-curve.txt:46
+#: ../../api/zoo-geometry-linearring.txt:64
+#: ../../api/zoo-geometry-multipoint.txt:47
+msgid "componentTypes"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:93
+#: ../../api/zoo-geometry-multipoint.txt:46
+msgid ""
+"``{Array(String)}`` An array of class names representing the types of "
+"components that the collection can include. A null value means the component"
+" types are not restricted."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:105
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry <api-zoo-geometry>`)} Optional "
+"array of geometries"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:127
+msgid ""
+":ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>` An exact "
+"clone of this collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:140
+msgid "getComponentsString"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:140
+msgid ""
+"``{String}`` A string representation of the components of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:168
+#: ../../api/zoo-geometry-linearring.txt:100
+msgid "addComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:158
+msgid ""
+"Add a new component (geometry) to the collection.  If this.componentTypes is"
+" set, then the component class name must be in the componentTypes array.  "
+"The bounds cache is reset."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:168
+msgid "``{Boolean}`` The component geometry was successfully added"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:181
+msgid "removeComponents"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:177
+msgid "Remove components from this geometry.\\"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:181
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry <api-zoo-geometry>`)} The "
+"components to be removed"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:194
+#: ../../api/zoo-geometry-linestring.txt:59
+msgid "removeComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:194
+msgid "``component`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:207
+#: ../../api/zoo-geometry-curve.txt:60
+msgid "getLength"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:203
+msgid "Calculate the length of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:207
+msgid "``{Float}`` The length of the geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:218
+#: ../../api/zoo-geometry-linearring.txt:177
+#: ../../api/zoo-geometry-point.txt:172
+msgid "getCentroid"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:218
+#: ../../api/zoo-geometry-point.txt:172
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The centroid of the "
+"collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:236
+msgid "getGeodesicLength"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:231
+#: ../../api/zoo-geometry-linearring.txt:204
+msgid ""
+"``projection`` :ref:`{ZOO.Projection} <api-zoo-projection>` The spatial "
+"reference system for the geometry coordinates.  If not provided, "
+"Geographic/WGS84 is assumed."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:236
+msgid "``{Float}`` The appoximate geodesic length of the geometry in meters."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:245
+#: ../../api/zoo-geometry-linearring.txt:109
+#: ../../api/zoo-geometry-point.txt:141
+msgid ""
+"Moves a geometry by the given displacement along positive x and y axes.  "
+"This modifies the position of the geometry and clears the cached bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:265
+#: ../../api/zoo-geometry-linearring.txt:129
+#: ../../api/zoo-geometry-point.txt:161
+msgid "rotate"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:260
+#: ../../api/zoo-geometry-linearring.txt:44
+#: ../../api/zoo-geometry-linearring.txt:124
+msgid "Rotate a geometry around some origin"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:284
+#: ../../api/zoo-geometry-linearring.txt:148
+#: ../../api/zoo-geometry-point.txt:193
+msgid "resize"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:274
+#: ../../api/zoo-geometry-linearring.txt:138
+msgid ""
+"Resize a geometry relative to some origin.  Use this method to apply a "
+"uniform scaling to a geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:284
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`  The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:293
+#: ../../api/zoo-geometry-point.txt:112
+msgid ""
+"Determine whether another geometry is equivalent to this one.  Geometries "
+"are considered equivalent if all components have the same coordinates."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:298
+msgid ""
+"``geom`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` The geometry to test."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:302
+#: ../../api/zoo-geometry-point.txt:121
+msgid "``{Boolean}`` The supplied geometry is equivalent to this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:320
+#: ../../api/zoo-geometry-linearring.txt:166
+#: ../../api/zoo-geometry-point.txt:228 ../../api/zoo-projection.txt:152
+msgid "transform"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:337
+#: ../../api/zoo-geometry-linestring.txt:79
+#: ../../api/zoo-geometry-point.txt:210
+msgid "intersects"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:333
+#: ../../api/zoo-geometry-point.txt:206
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` Any type of geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:337
+#: ../../api/zoo-geometry-point.txt:210
+msgid "``{Boolean}`` The input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:354
+#: ../../api/zoo-geometry-linestring.txt:179
+#: ../../api/zoo-geometry-point.txt:245
+msgid "getVertices"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:350
+#: ../../api/zoo-geometry-linestring.txt:176
+#: ../../api/zoo-geometry-point.txt:241
+msgid ""
+"``nodes {Boolean}`` For lines, only return vertices that are endpoints.  If "
+"false, for lines, only vertices that are not endpoints will be returned.  If"
+" not provided, all vertices will be returned."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:355
+#: ../../api/zoo-geometry-linestring.txt:180
+#: ../../api/zoo-geometry-point.txt:246
+msgid "``{Array}`` A list of all vertices in the geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:4 ../../api/zoo-geometry-curve.txt:52
+msgid "ZOO.Geometry.Curve"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:6
+msgid ""
+"A Curve is a MultiPoint, whose points are assumed to be connected.  To this "
+"end, we provide a \"getLength()\" function, which iterates through the "
+"points, summing the distances between them."
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:12
+msgid ":ref:`ZOO.Geometry.MultiPoint <api-zoo-geometry-multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:35
+msgid ":ref:`ZOO.Geometry.Curve <ZOO.Geometry.Curve>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:38
+msgid "{Float} The length of the curve"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:45
+#: ../../api/zoo-geometry-linearring.txt:63
+msgid ""
+"``{Array(String)}`` An array of class names representing the types of "
+"components that the collection can include.  A null value means the "
+"component types are not restricted."
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:56
+msgid "``point`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:68
+msgid "``{Float}`` The length of the curve"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:4
+#: ../../api/zoo-geometry-linearring.txt:78
+msgid "ZOO.Geometry.LinearRing"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:6
+msgid ""
+"A Linear Ring is a special LineString which is closed.  It closes itself "
+"automatically on every addPoint/removePoint by adding a copy of the first "
+"point as the last point."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:9
+msgid ""
+"Also, as it is the first in the line family to close itself, a getArea() "
+"function is defined to calculate the enclosed area of the linearRing"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:14
+msgid ":ref:`ZOO.Geometry.LineString <api-zoo-geometry-linestring>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:37
+msgid ":ref:`ZOO.Geometry.LinearRing <ZOO.Geometry.LinearRing>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:38
+msgid "Linear rings are constructed with an array of points."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:40
+msgid "Adds a point to geometry components."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:50
+msgid "{ZOO.Geometry.Point} The centroid of the ring"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:51
+#: ../../api/zoo-geometry-polygon.txt:23
+msgid ":ref:`getArea <getArea>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:53
+msgid ":ref:`getGeodesicArea <getGeodesicArea>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:54
+msgid ""
+"Calculate the approximate area of the polygon were it projected onto the "
+"earth."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:55
+#: ../../api/zoo-geometry-polygon.txt:25
+msgid ":ref:`containsPoint <containsPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:56
+msgid "Test if a point is inside a linear ring."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:71
+msgid ""
+"Linear rings are constructed with an array of points.  This array can "
+"represent a closed or open ring.  If the ring is open (the last point does "
+"not equal the first point), the constructor will close the ring.  If the "
+"ring is already closed (the last point does equal the first point), it will "
+"be left closed."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:78
+msgid ""
+"``points`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)} "
+"points"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:87
+msgid ""
+"Adds a point to geometry components.  If the point is to be added to the end"
+" of the components array and it is the same as the last point already in "
+"that array, the duplicate point is not added.  This has the effect of "
+"closing the ring if it is not already closed, and doing the right thing if "
+"it is already closed.  This behavior can be overridden by calling the method"
+" with a non-null index as the second argument."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:93
+msgid "*Parameter*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:100
+msgid "``{Boolean}`` Was the Point successfully added?"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:148
+msgid "``{ZOO.Geometry}`` The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:177
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The centroid of the "
+"ring"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:190
+#: ../../api/zoo-geometry-polygon.txt:51
+msgid "getArea"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:186
+msgid ""
+"The area is positive if the ring is oriented CW, otherwise it will be "
+"negative."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:190
+msgid "``{Float}`` The signed area for a ring."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:213
+msgid "getGeodesicArea"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:199
+msgid ""
+"Calculate the approximate area of the polygon were it projected onto the "
+"earth.  Note that this area will be positive if ring is oriented clockwise, "
+"otherwise it will be negative."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:206
+msgid "*Reference*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:208
+msgid ""
+"Robert.  G. Chamberlain and William H.  Duquette, \"Some Algorithms for "
+"Polygons on a Sphere\", JPL Publication 07-03, Jet Propulsion Laboratory, "
+"Pasadena, CA, June 2007 http://trs-new.jpl.nasa.gov/dspace/handle/2014/40409"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:213
+msgid ""
+"``{float}`` The approximate signed geodesic area of the polygon in square "
+"meters."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:230
+#: ../../api/zoo-geometry-polygon.txt:68
+msgid "containsPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:222
+msgid ""
+"Test if a point is inside a linear ring.  For the case where a point is "
+"coincident with a linear ring edge, returns 1.  Otherwise, returns boolean."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:231
+msgid ""
+"``{Boolean | Number}`` The point is inside the linear ring.  Returns 1 if "
+"the point is coincident with an edge.  Returns boolean otherwise."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:4
+#: ../../api/zoo-geometry-linestring.txt:45
+msgid "ZOO.Geometry.LineString"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:6
+msgid ""
+"A LineString is a Curve which, once two points have been added to it, can "
+"never be less than two points long."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:10
+msgid ":ref:`ZOO.Geometry.Curve <api-zoo-geometry-curve>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:21
+msgid ":ref:`ZOO.Geometry.LineString <ZOO.Geometry.LineString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:22
+#: ../../api/zoo-geometry-linestring.txt:41
+msgid "Create a new LineString geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:24
+msgid ""
+"Only allows removal of a point if there are three or more points in the "
+"linestring."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:26
+msgid "Test for instersection between two geometries."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:27
+msgid ":ref:`getSortedSegments <getSortedSegments>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:28
+msgid "{Array} An array of segment objects."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:29
+msgid ":ref:`splitWithSegment <splitWithSegment>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:30
+#: ../../api/zoo-geometry-linestring.txt:101
+msgid "Split this geometry with the given segment."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:31
+msgid ":ref:`split <split>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:32
+#: ../../api/zoo-geometry-linestring.txt:124
+msgid "Use this geometry (the source) to attempt to split a target geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:33
+msgid ":ref:`splitWith <splitWith>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:34
+#: ../../api/zoo-geometry-linestring.txt:148
+msgid "Split this geometry (the target) with the given geometry (the source)."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:45
+msgid ""
+"``points`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)} An "
+"array of points used to generate the linestring"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:54
+msgid ""
+"Only allows removal of a point if there are three or more points in the "
+"linestring. (otherwise the result would be just a single point)"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:59
+msgid ""
+"``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The point to "
+"be removed"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:68
+msgid ""
+"Test for instersection between two geometries.  This is a cheapo "
+"implementation of the Bently-Ottmann algorigithm.  It doesn't really keep "
+"track of a sweep line data structure. It is closer to the brute force "
+"method, except that segments are sorted and potential intersections are only"
+" calculated when bounding boxes intersect."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:79
+msgid "``{Boolean}`` The input geometry intersects this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:92
+msgid "getSortedSegments"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:90
+msgid ""
+"``{Array}`` An array of segment objects.  Segment objects have properties "
+"x1, y1, x2, and y2. The start point is represented by x1 and y1.  The end "
+"point is represented by x2 and y2. Start and end are ordered so that x1 < "
+"x2."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:115
+msgid "splitWithSegment"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:115
+msgid ""
+"``{Object}`` An object with lines and points properties.  If the given "
+"segment intersects this linestring, the lines array will reference "
+"geometries that result from the split.  The points array will contain all "
+"intersection points.  Intersection points are sorted along the segment (in "
+"order from x1,y1 to x2,y2)."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:139
+msgid "split"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:139
+#: ../../api/zoo-geometry-linestring.txt:163
+msgid ""
+"``{Array}`` A list of geometries (of this same type as the target) that "
+"result from splitting the target with the source geometry.  The source and "
+"target geometry will remain unmodified.  If no split results, null will be "
+"returned.  If mutual is true and a split results, return will be an array of"
+" two arrays - the first will be all geometries that result from splitting "
+"the source geometry and the second will be all geometries that result from "
+"splitting the target geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:163
+msgid "splitWith"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:4
+#: ../../api/zoo-geometry-multilinestring.txt:30
+msgid "ZOO.Geometry.MultiLineString"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:6
+msgid ""
+"A MultiLineString is a geometry with multiple ZOO.Geometry.LineString "
+"components."
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:10
+#: ../../api/zoo-geometry-multipoint.txt:11
+#: ../../api/zoo-geometry-multipolygon.txt:11
+#: ../../api/zoo-geometry-polygon.txt:10
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:21
+msgid ":ref:`ZOO.Geometry.MultiLineString <ZOO.Geometry.MultiLineString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:22
+#: ../../api/zoo-geometry-multilinestring.txt:27
+msgid "Constructor for a MultiLineString Geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:31
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry.LineString <api-zoo-geometry-"
+"linestring>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:4
+#: ../../api/zoo-geometry-multipoint.txt:63
+msgid "ZOO.Geometry.MultiPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:6
+msgid ""
+"MultiPoint is a collection of Points.  Create a new instance with the "
+":ref:`ZOO.Geometry.MultiPoint <ZOO.Geometry.MultiPoint>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:34
+msgid ":ref:`ZOO.Geometry.MultiPoint <ZOO.Geometry.MultiPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:35
+#: ../../api/zoo-geometry-multipoint.txt:54
+msgid "Create a new MultiPoint Geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:36
+msgid ":ref:`addPoint <addPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:37
+msgid "rapper for ZOO.Geometry.Collection.addComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:38
+msgid ":ref:`removePoint <removePoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:39
+msgid "Wrapper for ZOO.Geometry.Collection.removeComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:59
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:63
+msgid ":ref:`{ZOO.Geometry.MultPoint} <api-zoo-geometry-multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:77
+msgid "addPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:72
+msgid "Wrapper for :ref:`ZOO.Geometry.Collection.addComponent <addComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:89
+msgid "removePoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:86
+msgid ""
+"Wrapper for :ref:`ZOO.Geometry.Collection.removeComponent <removeComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:90
+msgid ""
+"``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` Point to be "
+"removed"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:4
+#: ../../api/zoo-geometry-multipolygon.txt:31
+msgid "ZOO.Geometry.MultiPolygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:6
+msgid ""
+"MultiPolygon is a geometry with multiple :ref:`ZOO.Geometry.Polygon <api-"
+"zoo-geometry-polygon>` components. Create a new instance with the "
+":ref:`ZOO.Geometry.MultiPolygon <ZOO.Geometry.MultiPolygon>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:22
+msgid ":ref:`ZOO.Geometry.MultiPolygon <ZOO.Geometry.MultiPolygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:23
+#: ../../api/zoo-geometry-multipolygon.txt:28
+msgid "Create a new MultiPolygon geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:32
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry.Polygon <api-zoo-geometry-"
+"polygon>`)} An array of polygons used to generate the MultiPolygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:4 ../../api/zoo-geometry-point.txt:83
+msgid "ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:6
+msgid "Point geometry class."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:21
+msgid ":ref:`x <x>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:22 ../../api/zoo-geometry-point.txt:24
+msgid "{float}"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:23
+msgid ":ref:`y <y>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:35
+msgid ":ref:`ZOO.Geometry.Point <ZOO.Geometry.Point>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:36 ../../api/zoo-geometry-point.txt:78
+msgid "Construct a point geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:38
+msgid "{ZOO.Geometry.Point} An exact clone of this ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:40 ../../api/zoo-geometry-point.txt:103
+msgid "Create a new Bounds based on the x/y"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:43
+msgid ":ref:`toShortString <toShortString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:44
+msgid "{String} Shortened String representation of Point object."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:48 ../../api/zoo-geometry-point.txt:156
+msgid "Rotate a point around another."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:50
+msgid "{ZOO.Geometry.Point} The centroid of the collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:52
+msgid "Resize a point relative to some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:56 ../../api/zoo-geometry-point.txt:219
+msgid "Translate the x,y properties of the point from source to dest."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:66
+msgid "x"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:66 ../../api/zoo-geometry-point.txt:71
+msgid "``{float}``"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:71
+msgid "y"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:94
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` An exact clone of this "
+"ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:117
+msgid ""
+"``geom`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The geometry "
+"to test."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:132
+msgid "toShortString"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:132
+msgid ""
+"``{String}`` Shortened String representation of Point object.  (ex.  <i>\"5,"
+" 42\"</i>)"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:181
+msgid ""
+"Resize a point relative to some origin.  For points, this has the effect of "
+"scaling a vector (from the origin to the point).  This method is more useful"
+" on geometry collection subclasses."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:193
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:4 ../../api/zoo-geometry-polygon.txt:38
+msgid "ZOO.Geometry.Polygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:6
+msgid ""
+"Polygon is a collection of :ref:`ZOO.Geometry.LinearRing <api-zoo-geometry-"
+"linearring>`."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:21
+msgid ":ref:`ZOO.Geometry.Polygon <ZOO.Geometry.Polygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:22
+msgid "Constructor for a Polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:24 ../../api/zoo-geometry-polygon.txt:47
+msgid ""
+"Calculated by subtracting the areas of the internal holes from the area of "
+"the outer hole."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:26
+msgid "Test if a point is inside a polygon."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:27
+msgid ":ref:`createRegularPolygon <createRegularPolygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:28
+msgid "Create a regular polygon around a radius."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:33
+msgid ""
+"Constructor for a Polygon geometry.  The first ring (*this.component[0]*) is"
+" the outer bounds of the polygon and all subsequent rings "
+"(*this.component[1-n]*) are internal holes."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:38
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry.LinearRing <api-zoo-geometry-"
+"linearring>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:51
+msgid "``{float}`` The area of the geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:60
+msgid ""
+"Test if a point is inside a polygon.  Points on a polygon edge are "
+"considered inside."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:68
+msgid ""
+"``{Boolean | Number}`` The point is inside the polygon.  Returns 1 if the "
+"point is on an edge.  Returns boolean otherwise."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:86
+msgid "createRegularPolygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:80
+msgid ""
+"Create a regular polygon around a radius.  Useful for creating circles and "
+"the like."
+msgstr ""
+
+#: ../../api/zoo-geometry-surface.txt:4
+msgid "ZOO.Geometry.Surface"
+msgstr ""
+
+#: ../../api/zoo-geometry-surface.txt:6
+msgid "Surface geometry class."
+msgstr ""
+
+#: ../../api/zoo-process.txt:4 ../../api/zoo-process.txt:68
+msgid "ZOO.Process"
+msgstr ""
+
+#: ../../api/zoo-process.txt:6
+msgid ""
+"Used to query OGC WPS process defined by its URL and its identifier.  Useful"
+" for chaining localhost process."
+msgstr ""
+
+#: ../../api/zoo-process.txt:21
+msgid ":ref:`url <url>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:22
+msgid ""
+"{String} The OGC's Web PRocessing Service URL, default is "
+"http://localhost/zoo."
+msgstr ""
+
+#: ../../api/zoo-process.txt:23
+msgid ":ref:`identifier <identifier>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:24
+msgid "{String} Process identifier in the OGC's Web Processing Service."
+msgstr ""
+
+#: ../../api/zoo-process.txt:25
+msgid ":ref:`ZOO.Process <ZOO.Process>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:26 ../../api/zoo-process.txt:63
+msgid "Create a new Process"
+msgstr ""
+
+#: ../../api/zoo-process.txt:27
+msgid ":ref:`Execute <Execute>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:28 ../../api/zoo-process.txt:77
+msgid "Query the OGC's Web PRocessing Servcie to Execute the process."
+msgstr ""
+
+#: ../../api/zoo-process.txt:29
+msgid ":ref:`buildInput <buildInput>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:30 ../../api/zoo-process.txt:90
+msgid "Object containing methods to build WPS inputs."
+msgstr ""
+
+#: ../../api/zoo-process.txt:31
+msgid ":ref:`buildInput.complex <buildInput.complex>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:32 ../../api/zoo-process.txt:95
+msgid "Given an E4XElement representing the WPS complex data input."
+msgstr ""
+
+#: ../../api/zoo-process.txt:33
+msgid ":ref:`buildInput.reference <buildInput.reference>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:34 ../../api/zoo-process.txt:109
+msgid "Given an E4XElement representing the WPS reference input."
+msgstr ""
+
+#: ../../api/zoo-process.txt:35
+msgid ":ref:`buildInput.literal <buildInput.literal>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:36 ../../api/zoo-process.txt:123
+msgid "Given an E4XElement representing the WPS literal data input."
+msgstr ""
+
+#: ../../api/zoo-process.txt:37
+msgid ":ref:`buildDataInputsNode <buildDataInputsNode>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:38 ../../api/zoo-process.txt:141
+msgid "Method to build the WPS DataInputs element."
+msgstr ""
+
+#: ../../api/zoo-process.txt:53
+msgid "url"
+msgstr ""
+
+#: ../../api/zoo-process.txt:53
+msgid ""
+"``{String}`` The OGC's Web PRocessing Service URL, default is "
+"http://localhost/zoo."
+msgstr ""
+
+#: ../../api/zoo-process.txt:58
+msgid "identifier"
+msgstr ""
+
+#: ../../api/zoo-process.txt:58
+msgid "``{String}`` Process identifier in the OGC's Web Processing Service."
+msgstr ""
+
+#: ../../api/zoo-process.txt:85
+msgid "Execute"
+msgstr ""
+
+#: ../../api/zoo-process.txt:81 ../../api/zoo-process.txt:145
+msgid "``inputs {Object}``"
+msgstr ""
+
+#: ../../api/zoo-process.txt:85
+msgid ""
+"``{String}`` The OGC's Web processing Service XML response.  The result "
+"needs to be interpreted."
+msgstr ""
+
+#: ../../api/zoo-process.txt:90
+msgid "buildInput"
+msgstr ""
+
+#: ../../api/zoo-process.txt:104
+msgid "buildInput.complex"
+msgstr ""
+
+#: ../../api/zoo-process.txt:104 ../../api/zoo-process.txt:118
+msgid "``{E4XElement}`` A WPS Input node."
+msgstr ""
+
+#: ../../api/zoo-process.txt:118
+msgid "buildInput.reference"
+msgstr ""
+
+#: ../../api/zoo-process.txt:132
+msgid "buildInput.literal"
+msgstr ""
+
+#: ../../api/zoo-process.txt:132
+msgid "``{E4XElement}`` The WPS Input node."
+msgstr ""
+
+#: ../../api/zoo-process.txt:148
+msgid "buildDataInputsNode"
+msgstr ""
+
+#: ../../api/zoo-process.txt:149
+msgid "``{E4XElement}`` The WPS DataInputs node for Execute query."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:4 ../../api/zoo-projection.txt:72
+msgid "ZOO.Projection"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:6
+msgid "Class for coordinate transforms between coordinate systems."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:17
+msgid ":ref:`proj <proj>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:18
+msgid "{Number} Proj4js.Proj instance."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:19
+msgid ":ref:`projCode <projCode>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:31
+msgid ":ref:`ZOO.Projection <ZOO.Projection>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:32 ../../api/zoo-projection.txt:63
+msgid ""
+"This class offers several methods for interacting with a wrapped zoo-pro4js "
+"projection object."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:33
+msgid ":ref:`getCode <getCode>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:34 ../../api/zoo-projection.txt:81
+msgid "Get the string SRS code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:35
+msgid ":ref:`getUnits <getUnits>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:36 ../../api/zoo-projection.txt:94
+msgid ""
+"Get the units string for the projection -- returns null if zoo-proj4js is "
+"not available."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:38 ../../api/zoo-projection.txt:107
+msgid "Convert projection to string (getCode wrapper)."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:40
+msgid "Test equality of two projection instances."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:42 ../../api/zoo-projection.txt:133
+msgid "Destroy projection object."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:44
+msgid "Transform a point coordinate from one projection to another."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:51
+msgid "proj"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:51
+msgid "``{Object}`` Proj4js.Proj instance."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:56
+msgid "projCode"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:72
+msgid ":ref:`{ZOO.Projection} <api-zoo-projection>` A projection object."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:85
+msgid "getCode"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:85
+msgid "``{String}`` The SRS code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:98
+msgid "getUnits"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:98
+msgid "``{String}`` The units abbreviation."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:111
+msgid "``{String}`` The projection code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:120
+msgid ""
+"Test equality of two projection instances.  Determines equality based soley "
+"on the projection code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:124
+msgid "``{Boolean}`` The two projections are equivalent."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:142
+msgid ""
+"Transform a point coordinate from one projection to another.  Note that the "
+"input point is transformed in place."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:153
+msgid ""
+"``point {object}`` A transformed coordinate.  The original point is "
+"modified."
+msgstr ""
+
+#: ../../api/zoo-request.txt:4
+msgid "ZOO.Request"
+msgstr ""
+
+#: ../../api/zoo-request.txt:6
+msgid ""
+"Contains convenience methods for working with ZOORequest which replace "
+"XMLHttpRequest."
+msgstr ""
+
+#: ../../api/zoo-request.txt:17
+msgid ":ref:`GET <GET>`"
+msgstr ""
+
+#: ../../api/zoo-request.txt:18 ../../api/zoo-request.txt:25
+msgid "Send an HTTP GET request."
+msgstr ""
+
+#: ../../api/zoo-request.txt:19
+msgid ":ref:`POST <POST>`"
+msgstr ""
+
+#: ../../api/zoo-request.txt:20 ../../api/zoo-request.txt:39
+msgid "Send an HTTP POST request."
+msgstr ""
+
+#: ../../api/zoo-request.txt:34
+msgid "GET"
+msgstr ""
+
+#: ../../api/zoo-request.txt:34 ../../api/zoo-request.txt:49
+msgid "``{String}`` Request result."
+msgstr ""
+
+#: ../../api/zoo-request.txt:48
+msgid "POST"
+msgstr ""
+
+#: ../../api/zoo-string.txt:4
+msgid "ZOO.String"
+msgstr ""
+
+#: ../../api/zoo-string.txt:6
+msgid "Contains convenience methods for string manipulation:"
+msgstr ""
+
+#: ../../api/zoo-string.txt:17
+msgid ":ref:`startsWith <startsWith>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:18 ../../api/zoo-string.txt:41
+msgid "Test whether a string starts with another string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:19
+msgid ":ref:`contains <contains>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:20 ../../api/zoo-string.txt:59
+msgid "Test whether a string contains another string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:21
+msgid ":ref:`trim <trim>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:22 ../../api/zoo-string.txt:77
+msgid "Removes leading and trailing whitespace characters from a string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:23
+msgid ":ref:`camelize <camelize>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:24
+msgid "Camel-case a hyphenated string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:25
+msgid ":ref:`tokenRegEx <tokenRegEx>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:26
+msgid "Used to find tokens in a string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:27
+msgid ":ref:`numberRegEx <numberRegEx>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:28 ../../api/zoo-string.txt:112
+msgid "Used to test strings as numbers."
+msgstr ""
+
+#: ../../api/zoo-string.txt:29
+msgid ":ref:`isNumeric <isNumeric>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:30 ../../api/zoo-string.txt:121
+msgid "Determine whether a string contains only a numeric value."
+msgstr ""
+
+#: ../../api/zoo-string.txt:31
+msgid ":ref:`numericIf <numericIf>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:32 ../../api/zoo-string.txt:143
+msgid "Converts a string that appears to be a numeric value into a number."
+msgstr ""
+
+#: ../../api/zoo-string.txt:50
+msgid "startsWith"
+msgstr ""
+
+#: ../../api/zoo-string.txt:50
+msgid "``{Boolean}`` The first string starts with the second."
+msgstr ""
+
+#: ../../api/zoo-string.txt:68
+msgid "contains"
+msgstr ""
+
+#: ../../api/zoo-string.txt:68
+msgid "``{Boolean}`` The first string contains the second."
+msgstr ""
+
+#: ../../api/zoo-string.txt:85
+msgid "trim"
+msgstr ""
+
+#: ../../api/zoo-string.txt:81
+msgid ""
+"``str {String}`` The (potentially) space-padded string. This string is not "
+"modified."
+msgstr ""
+
+#: ../../api/zoo-string.txt:85
+msgid ""
+"``{String}`` A trimmed version of the string with all leading and trailing "
+"spaces removed."
+msgstr ""
+
+#: ../../api/zoo-string.txt:102
+msgid "camelize"
+msgstr ""
+
+#: ../../api/zoo-string.txt:94
+msgid ""
+"Camel-case a hyphenated string. Ex. \"chicken-head\" becomes "
+"\"chickenHead\", and \"-chicken-head\" becomes \"ChickenHead\"."
+msgstr ""
+
+#: ../../api/zoo-string.txt:98
+msgid ""
+"``str {String}`` The string to be camelized.  The original is not modified."
+msgstr ""
+
+#: ../../api/zoo-string.txt:102
+msgid "``{String}`` The string, camelized"
+msgstr ""
+
+#: ../../api/zoo-string.txt:107
+msgid "tokenRegEx"
+msgstr ""
+
+#: ../../api/zoo-string.txt:107
+msgid ""
+"Used to find tokens in a string.  Examples: *${a}, ${a.b.c}, ${a-b}, ${5}*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:112
+msgid "numberRegEx"
+msgstr ""
+
+#: ../../api/zoo-string.txt:134
+msgid "isNumeric"
+msgstr ""
+
+#: ../../api/zoo-string.txt:123
+msgid "*Examples*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:134
+msgid "``{Boolean}`` String contains only a number."
+msgstr ""
+
+#: ../../api/zoo-string.txt:146
+msgid "numericIf"
+msgstr ""
+
+#: ../../api/zoo-string.txt:147
+msgid ""
+"``{Number|String}`` a Number if the passed value is a number, a String "
+"otherwise."
+msgstr ""

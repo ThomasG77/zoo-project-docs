@@ -1,1 +1,6 @@
+# SVN files
 .svn
+# Sphinx directory to build documentation
+_build/
+# Translations
+*.mo

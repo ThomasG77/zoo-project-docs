@@ -1,0 +1,719 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-23 23:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/debug.txt:4
+msgid "How To Debug ZOO Services"
+msgstr ""
+
+#: ../../services/debug.txt:6
+msgid "Luca Delucchi"
+msgstr ""
+
+#: ../../services/debug.txt:7
+msgid "$Date: 2013-03-27 00:06:12 +0100 (Wed, 27 Mar 2013) $"
+msgstr ""
+
+#: ../../services/debug.txt:9
+msgid ""
+"There are different ways to debug your services, the most used solutions are"
+" via web or via command line."
+msgstr ""
+
+#: ../../services/debug.txt:13
+msgid "Web"
+msgstr ""
+
+#: ../../services/debug.txt:15
+msgid ""
+"Using the web request you can see any problem in the log file of Apache."
+msgstr ""
+
+#: ../../services/debug.txt:17
+msgid ""
+"On Unix system the log file is usually in ``/var/log/apache2`` and the "
+"relevant file is ``error_log``. A simple way to read the file is to use the "
+"``tail`` command, it permits to see the update of the file for each request "
+"::"
+msgstr ""
+
+#: ../../services/debug.txt:23
+msgid ""
+"If the log is not clear enough you can add some more debug information to "
+"your code. You have to write to standard error."
+msgstr ""
+
+#: ../../services/debug.txt:27 ../../services/debug.txt:84
+#: ../../services/howtos.txt:28 ../../services/howtos.txt:43
+msgid "Python"
+msgstr ""
+
+#: ../../services/debug.txt:28
+msgid "Using Python, you can for example do this"
+msgstr ""
+
+#: ../../services/debug.txt:40 ../../services/debug.txt:95
+#: ../../services/howtos.txt:185
+msgid "Javascript"
+msgstr ""
+
+#: ../../services/debug.txt:42
+msgid "You can user ``alert`` to print a string to standard error:"
+msgstr ""
+
+#: ../../services/debug.txt:51
+msgid "If you try to pass an object it will only return ``[object Object]``"
+msgstr ""
+
+#: ../../services/debug.txt:54
+msgid "Command line"
+msgstr ""
+
+#: ../../services/debug.txt:56
+msgid ""
+"It is possible to use the ZOO kernel ``zoo_loader.cgi`` also from command "
+"line. This is really useful to debug in a deeper way your service:"
+msgstr ""
+
+#: ../../services/debug.txt:65
+msgid ""
+"Working this way you can use the standard debug system of the actual "
+"programming language used to develop your service."
+msgstr ""
+
+#: ../../services/debug.txt:69
+msgid "GDB"
+msgstr ""
+
+#: ../../services/debug.txt:70
+msgid ""
+"From command line you can use also the command line tool `GDB "
+"<http://www.gnu.org/software/gdb/>`_ to debug ``zoo_loader.cgi``, you have "
+"to run:"
+msgstr ""
+
+#: ../../services/debug.txt:80
+msgid ""
+"At this point you can ask help at the `ZOO mailing list "
+"<http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-discuss>`_ copying the "
+"result of the command."
+msgstr ""
+
+#: ../../services/debug.txt:85
+msgid ""
+"For Python, you can use ``pdb``, more info at "
+"http://docs.python.org/2/library/pdb.html"
+msgstr ""
+
+#: ../../services/debug.txt:97
+msgid ""
+"You can use ``alert`` also to print in the console, more info in the "
+":ref:`web_javascript` web section"
+msgstr ""
+
+#: ../../services/examples.txt:4
+msgid "Service Examples"
+msgstr ""
+
+#: ../../services/examples.txt:6 ../../services/zcfg-reference.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../services/examples.txt:7 ../../services/zcfg-reference.txt:7
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../services/examples.txt:9
+msgid ""
+"ZOO Services are quite easy to create once you have installed the ZOO Kernel"
+" and have chosen code (in the language of your choice) to turn into a ZOO "
+"service. Here are some HelloWorlds with links to their corresponding "
+"``.zcfg`` files."
+msgstr ""
+
+#: ../../services/examples.txt:0 ../../services/howtos.txt:0
+#: ../../services/zcfg-reference.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../services/examples.txt:18
+msgid "GDAL ZOO Service"
+msgstr ""
+
+#: ../../services/examples.txt:20
+msgid ""
+"The GDAL ZOO Service is based on  GDAL source code and copyright. This ZOO "
+"Service aims to provide some basic raster processing operations to your ZOO "
+"Kernel installation. Learn more and read documentation on the official `GDAL"
+" website <http://www.gdal.org/>`__."
+msgstr ""
+
+#: ../../services/examples.txt:25 ../../services/examples.txt:43
+msgid "Implemented functions"
+msgstr ""
+
+#: ../../services/examples.txt:29
+msgid "Gdal_Grid"
+msgstr ""
+
+#: ../../services/examples.txt:28
+msgid "creates regular grid from the scattered data"
+msgstr ""
+
+#: ../../services/examples.txt:33
+msgid "Gdal_Translate"
+msgstr ""
+
+#: ../../services/examples.txt:32
+msgid "converts raster data between different formats"
+msgstr ""
+
+#: ../../services/examples.txt:36
+msgid "OGR ZOO Service"
+msgstr ""
+
+#: ../../services/examples.txt:38
+msgid ""
+"The OGR ZOO Service is based on  OGR source code and copyright. This ZOO "
+"Service aims to provide some basic vector spatial operations to your ZOO "
+"Kernel installation. Learn more and read documentation on the official `OGR "
+"website <http://www.gdal.org/ogr/index.html>`__."
+msgstr ""
+
+#: ../../services/examples.txt:45
+msgid "Base_Vect_Ops"
+msgstr ""
+
+#: ../../services/howtos.txt:4
+msgid "How To Setup ZOO Services"
+msgstr ""
+
+#: ../../services/howtos.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
+msgstr ""
+
+#: ../../services/howtos.txt:7
+msgid "$Date: 2013-03-28 12:51:45 +0100 (Thu, 28 Mar 2013) $"
+msgstr ""
+
+#: ../../services/howtos.txt:9
+msgid ""
+"ZOO Services are quite easy to create once you have installed the ZOO Kernel"
+" and have chosen code (in the language of your choice) to turn into a ZOO "
+"service. Here are some HelloWorlds in Python, PHP, Java  and JavaScript with"
+" links to their corresponding ``.zcfg`` files."
+msgstr ""
+
+#: ../../services/howtos.txt:19
+msgid "Common informations"
+msgstr ""
+
+#: ../../services/howtos.txt:21
+msgid ""
+"The function of the process for each programming language take three "
+"arguments: the main configuration, inputs and outputs."
+msgstr ""
+
+#: ../../services/howtos.txt:24
+msgid ""
+"The service has to **return 3 if the process run successfully instead it "
+"return 4** if the process end with an error."
+msgstr ""
+
+#: ../../services/howtos.txt:30
+msgid ""
+"You'll find here information needed to deploy your own Python Services "
+"Provider."
+msgstr ""
+
+#: ../../services/howtos.txt:33
+msgid "Python ZCFG requirements"
+msgstr ""
+
+#: ../../services/howtos.txt:35
+msgid ""
+"For each Service provided by your ZOO Python Services Provider, the ZCFG "
+"File must be named the same as the Python module function name (also the "
+"case of characters is important)."
+msgstr ""
+
+#: ../../services/howtos.txt:39 ../../services/howtos.txt:201
+msgid "The ZCFG file should contain the following :"
+msgstr ""
+
+#: ../../services/howtos.txt:42 ../../services/howtos.txt:203
+msgid "serviceType"
+msgstr ""
+
+#: ../../services/howtos.txt:47 ../../services/howtos.txt:209
+msgid "serviceProvider"
+msgstr ""
+
+#: ../../services/howtos.txt:45
+msgid ""
+"The name of the Python module to use as a ZOO Service Provider. For "
+"instance, if your script, located in the same directory as your ZOO Kernel, "
+"was named ``my_module.py`` then you should use ``my_module`` (the Python "
+"module name) for the serviceProvider value in ZCFG file."
+msgstr ""
+
+#: ../../services/howtos.txt:50
+msgid "Python Data Structure used"
+msgstr ""
+
+#: ../../services/howtos.txt:51
+msgid ""
+"The three parameters of the function are passed to the Python module as "
+"dictionaries."
+msgstr ""
+
+#: ../../services/howtos.txt:53
+msgid "Following you'll find an example for each parameters"
+msgstr ""
+
+#: ../../services/howtos.txt:56
+msgid "Main configuration"
+msgstr ""
+
+#: ../../services/howtos.txt:57
+msgid ""
+"Main configuration contains several informations, some of them are really "
+"useful to develop your service. Following an example ::"
+msgstr ""
+
+#: ../../services/howtos.txt:101
+msgid "Inputs"
+msgstr ""
+
+#: ../../services/howtos.txt:102
+msgid "The inputs are somethings like this ::"
+msgstr ""
+
+#: ../../services/howtos.txt:113
+msgid ""
+"The access to the value you have to require for the ``value`` parameter, "
+"something like this ::"
+msgstr ""
+
+#: ../../services/howtos.txt:118
+msgid "Outputs"
+msgstr ""
+
+#: ../../services/howtos.txt:119
+msgid "The outputs data as a structure really similar to the inputs one ::"
+msgstr ""
+
+#: ../../services/howtos.txt:127
+msgid "There is no ``'value'`` parameter before you assign it ::"
+msgstr ""
+
+#: ../../services/howtos.txt:131
+msgid ""
+"The return statement has to be an integer: corresponding to the service "
+"status code."
+msgstr ""
+
+#: ../../services/howtos.txt:133
+msgid ""
+"To add a message for the wrong result you can add the massage to "
+"``conf[\"lenv\"][\"message\"]``, for example:"
+msgstr ""
+
+#: ../../services/howtos.txt:141
+msgid "Sample ZOO Python Services Provider"
+msgstr ""
+
+#: ../../services/howtos.txt:143
+msgid ""
+"The following code represents a simple ZOO Python Services Provider which "
+"provides only one Service, the HelloPy one."
+msgstr ""
+
+#: ../../services/howtos.txt:154
+msgid "PHP"
+msgstr ""
+
+#: ../../services/howtos.txt:166
+msgid "Java"
+msgstr ""
+
+#: ../../services/howtos.txt:188
+msgid "ZOO API"
+msgstr ""
+
+#: ../../services/howtos.txt:190
+msgid ""
+"If you need to use :ref:`ZOO API <api>` in your service, you have first to "
+"copy ``zoo-api.js`` and ``zoo-proj4js.js`` where your services are located "
+"(for example in Unix system probably in ``/usr/lib/cgi-bin/``"
+msgstr ""
+
+#: ../../services/howtos.txt:195
+msgid "Javascript ZCFG requirements"
+msgstr ""
+
+#: ../../services/howtos.txt:197
+msgid ""
+"For each Service provided by your ZOO Javascript Services Provider, the ZCFG"
+" File must be named the same as the Javascript function name (also the case "
+"of characters is important)."
+msgstr ""
+
+#: ../../services/howtos.txt:204
+msgid "JS"
+msgstr ""
+
+#: ../../services/howtos.txt:206
+msgid ""
+"The name of the JavaScript file to use as a ZOO Service Provider. For "
+"instance, if your script, located in the same directory as your ZOO Kernel, "
+"was named ``my_module.js`` then you should use ``my_module.js``."
+msgstr ""
+
+#: ../../services/howtos.txt:212
+msgid "Javascript Data Structure used"
+msgstr ""
+
+#: ../../services/howtos.txt:214
+msgid ""
+"The three parameters of the function are passed to the JavaScript function "
+"as Object."
+msgstr ""
+
+#: ../../services/howtos.txt:217
+msgid "Sample ZOO Javascript Services Provider"
+msgstr ""
+
+#: ../../services/index.txt:4
+msgid "ZOO Services Documentation"
+msgstr ""
+
+#: ../../services/index.txt:6
+msgid "The following sections will assist you with ZOO Services:"
+msgstr ""
+
+#: ../../services/introduction.txt:4
+msgid "Introduction"
+msgstr ""
+
+#: ../../services/introduction.txt:6
+msgid ""
+"ZOO Services are example Web services which work with the ZOO :ref:`Kernel "
+"<kernel-introduction>`. They are based on various existing Open Source "
+"libraries and tend to provide simple Web processing functions such as GIS "
+"format conversion, GIS file reprojection, basic spatial operations, basic "
+"raster operations..."
+msgstr ""
+
+#: ../../services/introduction.txt:11
+msgid ""
+"The available ZOO Services are under development and come without any "
+"warranty. They are based on existing code and prove that the :ref:`ZOO "
+"Kernel <kernel-introduction>` works with many different codes and languages "
+"(please have a look to the ZOO demos!). The ZOO Project team wants to "
+"encourage people to use the ZOO Services as a functional basis for Web "
+"processing, but above all to provide a source of inspiration to the "
+"community for creating new ZOO Services."
+msgstr ""
+
+#: ../../services/introduction.txt:18
+msgid "What is a ZOO Service?"
+msgstr ""
+
+#: ../../services/introduction.txt:20
+msgid "A ZOO Service is a couple composed of:"
+msgstr ""
+
+#: ../../services/introduction.txt:22
+msgid "The code you want to turn into a standardized Web service"
+msgstr ""
+
+#: ../../services/introduction.txt:23
+msgid "A configuration file (.zcfg) which describes this Web service"
+msgstr ""
+
+#: ../../services/introduction.txt:25
+msgid ""
+"Learn more on configuring ZOO services by reading the :ref:`.zcfg Reference "
+"<services-zcfg>`."
+msgstr ""
+
+#: ../../services/introduction.txt:28
+msgid "Example ZOO Services"
+msgstr ""
+
+#: ../../services/introduction.txt:30
+msgid "See the ZOO Services :ref:`examples page <services-examples>`."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:4
+msgid "ZCFG : the ZOO Service Configuration File"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:13
+msgid ""
+"The ZOO Service configuration file (.zcfg) describes the service and will be"
+" parsed by the ZOO Kernel. We will describe here what such a file contains. "
+"You can also take a look at the existing examples of ZCFG files in the "
+"``cgi-env`` directory of each services available in the `ZOO-Project SVN "
+"source tree <http://zoo-project.org/trac/browser/trunk/zoo-services>`__."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:18
+msgid "A ZOO Configuration file is divided into three distinct sections :"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:20
+msgid "Main Metadata information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:21
+msgid "List of Inputs metadata information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:22
+msgid "List of Outputs metadata information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:24
+msgid "The ZOO Service Configuration File is case sensitive."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:27
+msgid "Main Metadata Information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:29
+msgid ""
+"The fist part in a ZOO Configuration file contains the metadata information "
+"relative to the service. Note that the \"name of your service\" between "
+"brackets on the first line has to be the exact same name as the function you"
+" defined in your services provider code. In most cases, this name is also "
+"the name of the ZCFG file without the \"``.zcfg``\" extension."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:34
+msgid "You can see below a description of the main metadata information:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:52
+msgid "List of Inputs"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:54
+msgid ""
+"The list of inputs contains metadata information of each supported input, "
+"and they are grouped using a ``<DataInputs>`` node."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:56
+msgid "Each input is defined as :"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:58
+msgid "a name (between brackets as for the name of the service before)"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:59
+msgid ""
+"various medata properties (``Title``, ``Abstract``, ``minOccurs`` and "
+"``maxOccurs``)"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:60
+msgid "a Type Of Data node (:ref:`description <typeDataNodes>`)"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:62
+msgid "A typical list of inputs (``<DataInputs>``) look like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:82
+msgid "you can add ``<MetaData>`` node as in the main metadata information."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:85
+msgid "List of Outputs"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:87
+msgid ""
+"The list of outputs is very similar to a list of inputs except it is "
+"specified as a ``<DataOutputs>`` node."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:89
+msgid "A typical ``<DataOutputs>`` node looks like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:104
+msgid "Type Of Data Nodes"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:106
+msgid ""
+"In the beginning of this ZCFG introduction, we spoke about \"Type Of Data "
+"Nodes\" to describe the data type of inputs and outputs."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:108
+msgid "You can define your data as:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:110
+msgid ":ref:`LiteralData <LiteralData>`"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:111
+msgid ":ref:`BoundingBoxData <BoundingBoxData>`"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:112
+msgid ":ref:`ComplexData <ComplexData>`"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:114
+msgid ""
+"Except for ``LiteralData``, each *Type Of Data* node must have at least one "
+"``<Default>`` and one ``<Supported>`` node. Even if one of those are empty, "
+"it **has to be present** with an opening and closing tag on two different "
+"lines. So, something like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:124
+msgid ""
+"Otherwise, ZOO-Kernel won't be able to parse your ZCFG and will fail to "
+"process requests."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:129
+msgid "LiteralData node"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:131
+msgid "A ``<LiteralData>`` node contains:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:133
+msgid "one ``<Default>`` node,"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:134
+msgid ""
+"zero or more ``<Supported>`` nodes depending on the existence or the number "
+"of supported Units Of Measure (UOM), and"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:135
+msgid ""
+"a ``dataType`` property. The ``dataType`` property defines the type of "
+"literal data, such as a string, an interger and so on (consult `the complete"
+" list <http://www.w3.org/TR/xmlschema-2/#built-in-datatypes>`__ of supported"
+" data types)."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:138
+msgid ""
+"``<Default>`` and ``<Supported>`` nodes can contain the ``uom`` property to "
+"define which UOM has to be used for this input value."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:141
+msgid ""
+"For input ``<LiteralData>`` nodes, you can add the ``value`` property to the"
+" ``<Default>`` node to define a default value for this input. This means "
+"that, when your Service will be run, even if the input wasn't defined, this "
+"default value will be set as the current value for this input."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:145
+msgid ""
+"A typical ``<LiteralData>`` node, defining a ``float`` data type using "
+"meters or degrees for its UOM, looks like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:164
+msgid "BoundingBoxData node"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:166
+msgid "A ``<BoundingBoxData>`` node contains:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:168
+msgid ""
+"one ``<Default>`` node with a CRS property defining the default Coordinate "
+"Reference Systems (CRS), and"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:169
+msgid ""
+"one or more ``<Supported>`` nodes depending on the number of CRS your "
+"service supports (note that you can alternatively use a single "
+"``<Supported>`` node with a comma-separated list of supported CRS)."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:172
+msgid ""
+"A typical ``<BoundingBoxData>`` node, for two supported CRS (`EPSG:4326 "
+"<http://www.epsg-"
+"registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::4326>`__"
+" and `EPSG:3785 <http://www.epsg-"
+"registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::3785>`__),"
+" looks like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:194
+msgid "ComplexData node"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:196
+msgid "A ComplexData node contains:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:198
+msgid "a ``<Default>`` node and"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:199
+msgid ""
+"one or more ``<Supported>`` nodes depending on the number of supported "
+"formats. A format is made up of this set of properties : ``mimeType``, "
+"``encoding`` and optionaly ``schema``."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:202
+msgid ""
+"For output ComplexData nodes, you can add the ``extension`` property to "
+"define what extension to use to name the file when storing the result is "
+"required. Obviously, you'll have to add the ``extension`` property to each "
+"supported format (for the ``<Default>`` and ``<Supported>`` nodes)."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:206
+msgid ""
+"You can also add the ``asReference`` property to the ``<Default>`` node to "
+"define if the output should be stored on server side per default."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:209
+msgid ""
+"the client can always modify this behavior by setting ``asReference`` "
+"attribute to ``true`` or ``false`` for this output in the request "
+"``ResponseDocument`` parameter."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:212
+msgid ""
+"You can see below a sample ComplexData node for default ``application/json``"
+" and ``text/xml`` (encoded in UTF-8 or base64) mimeTypes support:"
+msgstr ""

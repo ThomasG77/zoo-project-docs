@@ -265,3 +265,7 @@ epub_identifier = 'http://zoo-project.org'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
+
+# To make internationalization work
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
