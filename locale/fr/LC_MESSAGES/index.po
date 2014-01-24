@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-23 23:51+0100\n"
-"PO-Revision-Date: 2014-01-24 00:45+0100\n"
+"PO-Revision-Date: 2014-01-24 18:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr "A propos de la documentation de ZOO"
 
 #: ../../index.txt:25
 msgid "ZOO Documentation is a collaborative process; once users contribute documentation through the ZOO Wiki, the Documentation Committee will then review the contributions to add them into the official docs.  The committee is currently composed of:"
-msgstr "La documentation ZOO est un processus collaboratif; une fois lque les utilisateurs ont contribué à la documentation via la Wiki de ZOO, le comité de documentation réexaminera les contributions pour les ajouter dans la documentation officiel.  Le comité est composé actuellement de:"
+msgstr "La documentation ZOO est un processus collaboratif; une fois que les utilisateurs ont contribué à la documentation via la Wiki de ZOO, le comité de documentation réexamine les contributions pour les ajouter dans la documentation officielle.  Le comité est composé actuellement de:"
 
 #: ../../index.txt:35
 msgid "A special thank to the ZOO-Project sponsors and knwoledge partners for their support."
@@ -82,7 +82,7 @@ msgstr "Un remerciement particulier aux sponsors du ZOO-Project et aux partenair
 
 #: ../../index.txt:37
 msgid "The committee would like to thank ``Venkatesh Raghavan`` for his help on promoting ZOO Workshop in many places."
-msgstr "Le commité souhaite remercier ``Venkatesh Raghavan`` pour son aide pour promouvoir le Workshop ZOO dans de nombreux lieux."
+msgstr "Le comité souhaite remercier ``Venkatesh Raghavan`` pour son aide pour promouvoir le Workshop ZOO dans de nombreux lieux."
 
 #: ../../index.txt:39
 msgid "The committee would like to thank ``Hirofumi Hayashi`` and ``Daisuke Yoshida`` for their help and japanese translation effort for the ZOO-Project Worshop 2010."
@@ -98,7 +98,7 @@ msgstr "Wiki ZOO"
 
 #: ../../index.txt:47
 msgid "Users wishing to contribute steps and documents should use the `ZOO Wiki <http://www.zoo-project.org/trac>`__."
-msgstr "Les utilisateurs souhaitant contribuer aux étapes et à la documentation doivent utiliser le`Wiki ZOO <http://www.zoo-project.org/trac>`__."
+msgstr "Les utilisateurs souhaitant contribuer aux étapes et à la documentation doivent utiliser le `Wiki ZOO <http://www.zoo-project.org/trac>`__."
 
 #: ../../index.txt:51
 msgid "Official Documentation"
@@ -106,5 +106,5 @@ msgstr "Documentation officielle"
 
 #: ../../index.txt:53
 msgid "This section contains the official ZOO Project documentation."
-msgstr "Cette section contient la documentation officiel du projet ZOO."
+msgstr "Cette section contient la documentation officielle du projet ZOO."
 
