@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2013/index.txt:5
+# 91b7b0f9aafb42f593abd3e8fd5dbfaa
+msgid "ZOO-Project: playing with building blocks to build pgRouting web application"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:7
+# 67dc25c4d88345caa93156be1c421c86
+msgid "Gérald Fenoy, Nicolas Bozon, Venkatesh Raghavan"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:8
+# 9b4e2666dd3f44c889bf9f63147d6777
+msgid "gerald.fenoy at geolabs.fr, nicolas.bozon at gmail.com, venka at osgeo.org"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:9
+# 5d1c4cc14b5b473e8a3bb8faa490ed2b
+msgid "$Date$"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:13
+# bccb8688300d485b85f5d21a0cb14a52
+msgid "FOSS4G 2013 Nottingham"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:21
+# 0d871e1accee4320adb3a468e8b82702
+msgid "FOSS4G-CEE 2013 Bucharest"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:29
+# 70aea21591b04bb8af12f3e8bcfcb6bf
+msgid "Sponsored By"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:48
+# 9d7ea083f20f4061851a72ab0b06aa2f
+msgid "Special thanks to our Knowledge Partners"
+msgstr ""
+
+#: ../../workshop/2013/index.txt:70
+# f98284d29eed4499b2ff99a7313c309b
+msgid "WorkShop table of content"
+msgstr ""
+

@@ -1,0 +1,40 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2010/index.txt:5
+msgid "Workshop: Practical Introduction to ZOO: The Open WPS Platform"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:7
+msgid "Nicolas Bozon, Gérald Fenoy"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:8
+msgid "$Date: 2011-12-07 14:19:47 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:12
+msgid "FOSS4G 2010 Osaka / Tokyo / Beijing"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:24
+msgid "Sponsored By"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:57
+msgid "Special Thanks To Our Knowledge Partners"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:99
+msgid "Workshop Table of Contents"
+msgstr ""

@@ -1,0 +1,843 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-geojson.txt:4
+#: ../../api/zoo-format-geojson.txt:122
+# 3cc9ca43364c47da8c28f9d84d8e7fc0
+# 3933f6753a4047ba80fbba98f7a95b02
+msgid "ZOO.Format.GeoJSON"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:6
+# 51a611e2d3ba4ea0ba2eb08caece6ebf
+msgid "Read and write GeoJSON."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:8
+# a09568f37b26479faba26e0f479ca8fb
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:10
+# 47dfa6e42fa24658a60ab9d1ceb52f31
+msgid ":ref:`ZOO.Format.JSON <api-zoo-format-json>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:13
+# 74bc1de2610d4e3d89434ccba79b0a8f
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:19
+#: ../../api/zoo-format-geojson.txt:39
+#: ../../api/zoo-format-geojson.txt:51
+#: ../../api/zoo-format-geojson.txt:79
+#: ../../api/zoo-format-geojson.txt:91
+# f09851b403d742a7b6c3558a42d47a4f
+# 91dcb055f2f3431e8dd440b0d19b992c
+# 533858b2995d40dd9e0404549b647ac7
+# c960dd51abc84027974de53c8ea0fb47
+# 96d47943fd754396b088e23ec63839a9
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:20
+#: ../../api/zoo-format-geojson.txt:40
+#: ../../api/zoo-format-geojson.txt:52
+#: ../../api/zoo-format-geojson.txt:80
+#: ../../api/zoo-format-geojson.txt:92
+# ebf7a308e78041e99376939cfbbcf2d3
+# 5835bfe50c104449b5f17b28730edc85
+# 467a321548aa4017a718b694369228a6
+# 07b07ab1da92400db55f45feabd2c9d7
+# 83c2c141ce4b428f858ab499951fca67
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:21
+# 0a5a750411cd4b769f9d15e297b5c14d
+msgid ":ref:`ZOO.Format.GeoJSON <ZOO.Format.GeoJSON>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:22
+#: ../../api/zoo-format-geojson.txt:117
+# 7220447149eb4bb8b767e80320c410b8
+# 1e51a8efc34949c5bdd9786bc4e232ec
+msgid "Create a new parser for GeoJSON."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:23
+# f22d9fbac6834ce5878b9afbd4a8c0b2
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:24
+#: ../../api/zoo-format-geojson.txt:131
+# 198fa3a4280147e69993bbf5132c8cdd
+# c17e501023594bf48a4d54f6946c20f1
+msgid "Deserialize a GeoJSON string."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:25
+# f5fbc80f819a461aace476c1754e5776
+msgid ":ref:`isValidType <isValidType>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:26
+#: ../../api/zoo-format-geojson.txt:153
+# 65f3f22d3a4d4a15825d841b820ad03b
+# fbfe6ae7dac245baa6f43c54eed1569d
+msgid "Check if a GeoJSON object is a valid representative of the given type."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:27
+# 99fa4a8377d74db195e376a283405f13
+msgid ":ref:`parseFeature <parseFeature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:28
+# a245b16de90b42aab4de41df60005364
+msgid "Convert a feature object from GeoJSON into an ZOO.Feature."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:29
+# 25dde60877a2481bb3207a68adca7e59
+msgid ":ref:`parseGeometry <parseGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:30
+# 0e8d5cf9d19643918c77e6266a20f908
+msgid "Convert a geometry object from GeoJSON into an ZOO.Geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:33
+# cd723ef2946e41b9b17c922d67dd9f52
+msgid "parseCoords Properties"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:41
+# b4f521db39c3463793f7ec3f165995c0
+msgid ":ref:`parseCoords <parseCoords>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:42
+# 447f342a9ec744628eb9e62bc700da7c
+msgid "Object with properties corresponding to the GeoJSON geometry types."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:45
+# 512c3a24facc4c9a9031e4b572a862d4
+msgid "parseCoords Functions"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:53
+# 228116873a9342babedb28089a161084
+msgid ":ref:`parseCoords.point <parseCoords.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:54
+# 75881191d6bf4e06af3e9e5a1f3ea85c
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.Point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:55
+# 1268fb5b14b44a10acd8e618bb5a072f
+msgid ":ref:`parseCoords.multipoint <parseCoords.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:56
+# 2857a57e1acc43e8913533b6a9f9190f
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.MultiPoint."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:57
+# 99abb3b826c74493b35ebdbde4db7bd0
+msgid ":ref:`parseCoords.linestring <parseCoords.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:58
+# 314ab11401524eef86d2a4393b0dd5d2
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.LineString."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:59
+# c5d0fbbbc18a46e9907a9b2a38cc4686
+msgid ":ref:`parseCoords.multilinestring <parseCoords.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:60
+# 8f600828efd644808cc57d9d0d45773d
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.MultiLineString."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:61
+# 5a7078996ed34323a76743948c454046
+msgid ":ref:`parseCoords.polygon <parseCoords.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:62
+#: ../../api/zoo-format-geojson.txt:66
+# a624d9132f2b4f7680fed0898130e64c
+# e7b20dc022fa41f2838e5cd3118206f2
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.Polygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:63
+# 450195ebc2444c3596c5f66067df7a11
+msgid ":ref:`parseCoords.multipolygon <parseCoords.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:64
+# 75459a96648347ba88fd3eb92d6ff304
+msgid "Convert a coordinate array from GeoJSON into an ZOO.Geometry.MultiPolygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:65
+# 9418318a544049739149c5e33a3efa00
+msgid ":ref:`parseCoords.box <parseCoords.box>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:67
+# 77ca9df3c32c4a82b97ae8ca7fd2d774
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:68
+#: ../../api/zoo-format-geojson.txt:301
+# 74949376b79e4da59cd74578baf31514
+# 394b9dbb8d1346609da2b64a2bf4449b
+msgid "Serialize a feature, geometry, array of features into a GeoJSON string."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:69
+# f478f6402e6642f485c0827dfb1a1dab
+msgid ":ref:`createCRSObject <createCRSObject>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:70
+#: ../../api/zoo-format-geojson.txt:319
+# 6e9613ccebf849308f4cb9e72f212590
+# aa1de8a8b2a94e3da8e6a7dfa4fadfb3
+msgid "Create the CRS object for an object."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:73
+# 7bf1412ed05f423ebe5506cd3c20e3aa
+msgid "extract Properties"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:81
+# 7e20bd331c864bc5a15e03fad1844abf
+msgid ":ref:`extract <extract>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:82
+# 1a6b9d792315438a88f36678798168c1
+msgid "Object with properties corresponding to the GeoJSON types."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:85
+# b8d1f6953d074b6f8ce364489f6172dc
+msgid "extract Functions"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:93
+# c7c9898f405f44df930476b0a45fca6d
+msgid ":ref:`extract.feature <extract.feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:94
+#: ../../api/zoo-format-geojson.txt:342
+# a6d71bcb3bfb415aac22da350e269ab1
+# 8d2f2e7d43e84f7a8b18bb2f98094d70
+msgid "Return a partial GeoJSON object representing a single feature."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:95
+# 7b22c627209946bd9757d7116ba1344d
+msgid ":ref:`extract.geometry <extract.geometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:96
+#: ../../api/zoo-format-geojson.txt:356
+# a3745159b1c14de290c1543fb05b2b9a
+# a033c2116488495e9c600467b9004cf3
+msgid "Return a GeoJSON object representing a single geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:97
+# 1a8322ad8b324fec9c4721edfab78665
+msgid ":ref:`extract.point <extract.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:98
+#: ../../api/zoo-format-geojson.txt:369
+# 123b94cc1a4c40f9919a4f5aedb07616
+# 7a66bc01da7b460aa0670936d3ddb173
+msgid "Return an array of coordinates from a point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:99
+# 8d6d00c23aa0409fb8bd19693f9337f2
+msgid ":ref:`extract.multipoint <extract.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:100
+#: ../../api/zoo-format-geojson.txt:382
+# b3309888c96f485fbc7fadd0e762d40d
+# 72aa2bd3385b4bdb9b9b2cad05b7d24d
+msgid "Return an array of coordinates from a multipoint."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:101
+# 0159d10a8f31411f90eaf5fc9ebc2849
+msgid ":ref:`extract.linestring <extract.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:102
+#: ../../api/zoo-format-geojson.txt:395
+# 60d96fd974044b2ca8def87e4d1f9fd9
+# 65ef480ad84a4c0caed0f2dbb2c979f8
+msgid "Return an array of coordinate arrays from a linestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:103
+# 5618541f84f54948bad3ef7b80f19e90
+msgid ":ref:`extract.multilinestring <extract.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:104
+#: ../../api/zoo-format-geojson.txt:408
+# a70531f8bf024ef1ae6f47db197ddd31
+# a22d115b170d480a87222b50aa6dff5f
+msgid "Return an array of linestring arrays from a linestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:105
+# f5ba86c59e184202a1b1e0d3818e0ba4
+msgid ":ref:`extract.polygon <extract.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:106
+#: ../../api/zoo-format-geojson.txt:421
+# 9d8076704655448d85c8eeb401f041d0
+# 07fec8fa43b0494b8767fcac2c787280
+msgid "Return an array of linear ring arrays from a polygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:107
+# 17c09233dfd94f49ba776a6ece90d4e7
+msgid ":ref:`extract.multipolygon <extract.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:108
+#: ../../api/zoo-format-geojson.txt:434
+# 57ad14a3858846faaad4a54547c78d5d
+# 0051810b266b4a89a677ee5904e1c753
+msgid "Return an array of polygon arrays from a multipolygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:109
+# 30c1d7a013144b3c8d62252e78c519f5
+msgid ":ref:`extract.collection <extract.collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:110
+#: ../../api/zoo-format-geojson.txt:447
+# d38d53a1533945b984aebf9c6cf74fc9
+# d48eeda3751942f2bd77e3d5a20aaa51
+msgid "Return an array of geometries from a geometry collection."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:112
+# 8ee5827f90174ed4bc3f1ea607712ec6
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:120
+#: ../../api/zoo-format-geojson.txt:133
+#: ../../api/zoo-format-geojson.txt:168
+#: ../../api/zoo-format-geojson.txt:185
+#: ../../api/zoo-format-geojson.txt:208
+#: ../../api/zoo-format-geojson.txt:221
+#: ../../api/zoo-format-geojson.txt:234
+#: ../../api/zoo-format-geojson.txt:247
+#: ../../api/zoo-format-geojson.txt:260
+#: ../../api/zoo-format-geojson.txt:273
+#: ../../api/zoo-format-geojson.txt:286
+#: ../../api/zoo-format-geojson.txt:303
+#: ../../api/zoo-format-geojson.txt:321
+#: ../../api/zoo-format-geojson.txt:345
+#: ../../api/zoo-format-geojson.txt:358
+#: ../../api/zoo-format-geojson.txt:371
+#: ../../api/zoo-format-geojson.txt:384
+#: ../../api/zoo-format-geojson.txt:397
+#: ../../api/zoo-format-geojson.txt:410
+#: ../../api/zoo-format-geojson.txt:423
+#: ../../api/zoo-format-geojson.txt:436
+#: ../../api/zoo-format-geojson.txt:449
+# b2323148b711461c8117f4235441f9dd
+# 96faa9b8f5b24195b1fc76712ca7d413
+# b6a74bd832a8411cbeec102029d24694
+# 2752cfe0943b47acb330b3a9380b4306
+# 3adae0920bd74bb8990948515c27afc6
+# fd3985e9751e4e92872ea452ed8065a8
+# 429c4f402f85447a963a2cc95705f385
+# bee3539e4cdb446ab6875c4fb25ef448
+# c8c63d7097a340738b8d2aad660e282b
+# 05a2bba1cd6844f5b4e5084c4dc9e118
+# dcd6f17b9b9b445f99d23311e18fddef
+# 0968db2e092b4fa981fbcfc224503a67
+# fc495d9a8bc04028bb4a45f9c90fe6db
+# f99f327c9cf940cd94e3c21b8da109fa
+# d8cfad5214084a6caa0616137b61c6e1
+# 9a2a5df258f944ec944a85416f05e54d
+# 5c1f69bb348848a0bbee22e39719c4c5
+# 9e60f9539d0d41468d109c1706263e89
+# 79df48b6670a4175bcdcc5fdb2fedfc6
+# 45caa44fd68d44e28a0bd914656d9fa9
+# ecb68782e199443abf8ad408149e782d
+# 3a706a184b324208b02833b417859284
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:122
+# 60980afde6154bdca745e1d52a2fb6ed
+msgid "``options {Object}`` An optional object whose properties will be set on this instance."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:144
+# 8a3f96ef036d44f9a9ef3ac978fc6a31
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:139
+#: ../../api/zoo-format-geojson.txt:155
+#: ../../api/zoo-format-geojson.txt:172
+#: ../../api/zoo-format-geojson.txt:189
+#: ../../api/zoo-format-geojson.txt:212
+#: ../../api/zoo-format-geojson.txt:225
+#: ../../api/zoo-format-geojson.txt:238
+#: ../../api/zoo-format-geojson.txt:251
+#: ../../api/zoo-format-geojson.txt:264
+#: ../../api/zoo-format-geojson.txt:277
+#: ../../api/zoo-format-geojson.txt:290
+#: ../../api/zoo-format-geojson.txt:308
+#: ../../api/zoo-format-geojson.txt:325
+#: ../../api/zoo-format-geojson.txt:349
+#: ../../api/zoo-format-geojson.txt:362
+#: ../../api/zoo-format-geojson.txt:375
+#: ../../api/zoo-format-geojson.txt:388
+#: ../../api/zoo-format-geojson.txt:401
+#: ../../api/zoo-format-geojson.txt:414
+#: ../../api/zoo-format-geojson.txt:427
+#: ../../api/zoo-format-geojson.txt:440
+#: ../../api/zoo-format-geojson.txt:453
+# c79b274705664159937d22b79f929def
+# 426277b013c24693aa92fed6e7580b83
+# a3c417f84ddf452ea84f47990a1fb297
+# 73f36e2ec325443da7e77f5fcbe47627
+# bead4a8e6a77418a969030a6c5d29a82
+# 6dc8625ac21041a787ca9ee777b9ff2f
+# 539d72aef6f44196be165ac5d013b913
+# c64966ef0c4342ff8582817036b3a5b3
+# c0fa2de379a3448cbfd7b734033e4e3d
+# b378c96736da41df888896f71a320cd1
+# 86b699e3a565453faaffd6dd17308cbb
+# 0ff09aacbe6745c0b4923013086f6daf
+# fc6e58d9f03d45b1bc296630f5f71d46
+# 16c997c3f47242319835779b20dbb9b6
+# 0f93c66b3a1649cc9b9646a7b07c421f
+# 0802e6d2b3f44caf8d00760525240d3c
+# 608d595836d647c9ba1ecd2d54b06de5
+# c7a7d130691d42c382b18ea7a947dd12
+# 6c6ca27ae1a348798438d955ebdfe479
+# 2fed46c1fe9145a18444fc59287d3840
+# 1faa4c1b678d481e966b7aac24970eba
+# 62d76f98ef4b4ec9855c671fbd751237
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:141
+# 3af19088dd5446679bdac12263c3e262
+msgid "``{Object}`` The return depends on the value of the type argument.  If type is \"FeatureCollection\" (the default), the return will be an array of :ref:`ZOO.Feature <api-zoo-feature>`.  If type is \"Geometry\", the input json must represent a single geometry, and the return will be an :ref:`ZOO.Geometry <api-zoo-geometry>`.  If type is \"Feature\", the input json must represent a single feature, and the return will be an :ref:`ZOO.Feature <api-zoo-feature>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:157
+# b89e4c47da16488cb7f7774fd09b436b
+msgid "isValidType"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:157
+# 4d1f42c0b65949b48cc759df88a6acba
+msgid "``{Boolean}`` The object is valid GeoJSON object of the given type."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:174
+# 7ab952c4a03a44f19f1a14d6a34baf4b
+msgid "parseFeature"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:166
+# aa3e966d3d2e47b18a4a0ab312accb2a
+msgid "Convert a feature object from GeoJSON into a :ref:`ZOO.Feature <api-zoo-feature>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:170
+#: ../../api/zoo-format-geojson.txt:187
+# e3b3b4d8720643b7a181b64a6abb9650
+# 5d9774e5772f492faf2e59e78ca2c184
+msgid "``obj {Object}`` An object created from a GeoJSON object"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:174
+# 687e04cf22884a40890b01685f7cdcf8
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A feature."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:191
+# 35615f9d83474a83bd574e57ec1f0bf1
+msgid "parseGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:183
+# 96f7257f94d940309519a6d660f6de9a
+msgid "Convert a geometry object from GeoJSON into a :ref:`ZOO.Geometry <api-zoo-geometry>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:191
+# 8bf831a65f5845079693ae6b55815aa4
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:193
+# 187c1280811943e594b4b6515a048c1f
+msgid "**parseCoords Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:199
+# da0fa454e12446d8a9e934529c7aca41
+msgid "parseCoords"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:198
+# 1abc58ba7d8f4087b669d0a706f22829
+msgid "Object with properties corresponding to the GeoJSON geometry types. Property values are functions that do the actual parsing."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:201
+# 260133b96c0141c89bba83d38fcf6af4
+msgid "**parseCoords Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:214
+# 7024cf6630bb4caf87b5bdcdf9784be0
+msgid "parseCoords.point"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:206
+# 30f9b37cf51b4b91aed073aa67f553d9
+msgid "Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:210
+#: ../../api/zoo-format-geojson.txt:223
+#: ../../api/zoo-format-geojson.txt:236
+#: ../../api/zoo-format-geojson.txt:249
+#: ../../api/zoo-format-geojson.txt:262
+#: ../../api/zoo-format-geojson.txt:275
+#: ../../api/zoo-format-geojson.txt:288
+# 5b364b0ecc434577b9a172d5f2f5afcb
+# 859c94f2604343ab99a409eeb71b78ca
+# bd110565365d4e03923b3c2cda2cb37a
+# 24841e6d25a5488bb5dc32553ec0b788
+# 5acbaacb084e462090725a75ff39f129
+# 68eb3c218b414670958dc4ca27262c4a
+# a4d0194a6b164de6ab3be18e38f04775
+msgid "``array {Object}`` The coordinates array from the GeoJSON fragment."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:214
+# 6279aae9757e4bdebad441c314912abd
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:227
+# 7eff6d686cfd4592899dc7b55420c015
+msgid "parseCoords.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:219
+# c6ea197a20904e2eabe48667d2df1df5
+msgid "Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.MultiPoint <api-zoo-geometry-multipoint>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:227
+# c62a6238f49c46328cb0dff10b4f39ab
+msgid ":ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-multipoint>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:240
+# 0bd789c782bd414cb2313ae930a348d7
+msgid "parseCoords.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:232
+# 2bc35d83f97c446b89c69d86c7dcb073
+msgid "Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.LineString <api-zoo-geometry-linestring>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:240
+# 29fe8475f3974ea2a489831bf8956c54
+msgid ":ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:253
+# 8cadd578f753472089e14d29983acca3
+msgid "parseCoords.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:245
+# 9f438f58b82943f79021c08d4ef5d43f
+msgid "Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.MultiLineString <api-zoo-geometry-multilinestring>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:253
+# e3f408aeb237460ea982f9cd61e09369
+msgid ":ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-multilinestring>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:266
+# 0a7dbf7fbfa345b08193d5543439f532
+msgid "parseCoords.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:258
+#: ../../api/zoo-format-geojson.txt:284
+# 0b8e34abcfb34a7ba52be9257245061b
+# 2dc7b0c8ad3c465c8ac393982cc1cd8d
+msgid "Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.Polygon <api-zoo-geometry-polygon>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:266
+#: ../../api/zoo-format-geojson.txt:292
+# 985ee611960b478c87ed855e8207bb31
+# 21b897d595154e88951ca2a98509d970
+msgid ":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:279
+# 8f89eb1ea27b44398a4437019f1a17cf
+msgid "parseCoords.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:271
+# 3d087e0877314290892bbac03e1c92d0
+msgid "Convert a coordinate array from GeoJSON into a :ref:`ZOO.Geometry.MultiPolygon <api-zoo-geometry-multipolygon>`."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:279
+# bbf55bff989c49788c51c497c6508cd5
+msgid ":ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-multipolygon>` A geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:292
+# a0764c6480984c468a35440234a6f922
+msgid "parseCoords.box"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:310
+# 39531d109d7248b38c3250c5d1003e70
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:310
+# 5ddedbb9d1394b62bf8f514ef9557554
+msgid "``{String}`` The GeoJSON string representation of the input geometry, features, or array of features."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:327
+# 8eac3ecac9f540f29168bbd171ebcffb
+msgid "createCRSObject"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:323
+# a8e4116241364da39b1a754b32fcd7bb
+msgid "``object`` :ref:`{ZOO.Feature} <api-zoo-feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:327
+# f190aff6e6f94fbe9d680596dfc78c19
+msgid "``{Object}`` An object which can be assigned to the crs property of a GeoJSON object."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:329
+# f647f908015b4d52bb1e7b996331acd9
+msgid "**extract Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:335
+# 151384d7f2ac43b28f5626cb2f2bba5c
+msgid "extract"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:334
+# 3946e96be42049e690b97aedc9dfd975
+msgid "Object with properties corresponding to the GeoJSON types. Property values are functions that do the actual value extraction."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:337
+# f8e959d04402409b905ed666a12dec80
+msgid "**extract Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:351
+# bb42ca4c85dc4ee59e7dd0448dfb5443
+msgid "extract.feature"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:347
+# 55ea30b6169c4a599d7fb4cc5aac74cb
+msgid "``feature`` :ref:`{ZOO.Feature} <api-zoo-feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:351
+# 0f7fd44e62aa46928cd363ce9e7ecd71
+msgid "``{Object}`` An object representing the point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:364
+# 7a307faa3ed74946a109edbbaf45aa13
+msgid "extract.geometry"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:360
+# 074b74c7f6444f118dc1dc578b6a3ba9
+msgid "``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:364
+# 28ade84173e44575b55bac039562d71c
+msgid "``{Object}`` An object representing the geometry."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:377
+# e927921c0b8c465daa274480eb4bb50a
+msgid "extract.point"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:373
+# 5cfc3eb687f844979fa3d7f18478529b
+msgid "``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:377
+# da2f15dbdfc0494bb28f9fe49e7bf3de
+msgid "``{Array}`` An array of coordinates representing the point."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:390
+# d438dc56c4f24d45bec0fc588d1b1e98
+msgid "extract.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:386
+# 72afa16b569f468bbc6a9f61a52bc29f
+msgid "``multipoint`` :ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:390
+# 1ec453ffe09b460d9aeef52f4dbac7d2
+msgid "``{Array}`` An array of point coordinate arrays representing the multipoint."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:403
+# f55b3a931dd24f46acdbbd21571334ad
+msgid "extract.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:399
+# 4fbdecb73982498fbed33c282d1b7ab3
+msgid "``linestring`` :ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:403
+# e41c9b4c2f0341419e2e007db05049e9
+msgid "``{Array}`` An array of coordinate arrays representing the linestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:416
+# e89a70cd997448c0b3beae5d9f8f26b3
+msgid "extract.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:412
+# cd8461f5509346da8d432d803f100304
+msgid "``multilinestring`` :ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:416
+# 46b5a94b3e2b40fcbd37cd1502106eaf
+msgid "``{Array}`` An array of linestring arrays representing the multilinestring."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:429
+# 68b698ad3bef4ab4ac8fac9287af084c
+msgid "extract.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:425
+# d82a8cbf5a0d47248d0907ccccac75be
+msgid "``polygon`` :ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:429
+# 805d267760c341a4a8ad5714d02a5cfe
+msgid "``{Array}`` An array of linear ring arrays representing the polygon."
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:442
+# 5f40dd70741243ae9ce55cf7f68d432e
+msgid "extract.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:438
+# ae611dae4a6548d2b0cb3e3c7d9ead43
+msgid "``multipolygon`` :ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:442
+# d28ef79e7c1c4b8ab0c183a088a731b3
+msgid "``{Array}`` An array of polygon arrays representing the multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:454
+# e9a8ec47cc6e4278bbc17cb4b1a4b735
+msgid "extract.collection"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:451
+# e322b2883b414689a5e99cb4891e0b48
+msgid "``collection`` :ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-geojson.txt:455
+# 4174ca8414df4cad91a6d101d523ffe7
+msgid "``{Array}`` An array of geometry objects representing the geometry collection."
+msgstr ""
+

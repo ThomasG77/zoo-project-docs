@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-string.txt:4
+# 48df7e9dce5d4190ad1d0f046ac5e765
+msgid "ZOO.String"
+msgstr ""
+
+#: ../../api/zoo-string.txt:6
+# d18eeff088a947d5b5f701b1053b7531
+msgid "Contains convenience methods for string manipulation:"
+msgstr ""
+
+#: ../../api/zoo-string.txt:9
+# c509b268f5854d6ea1ab929393622331
+msgid "Functions and Properties"
+msgstr ""
+
+#: ../../api/zoo-string.txt:15
+# f956cfca4e874af19be682a4d0959011
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-string.txt:16
+# 673546439f9f4b37996ee1c0e754fc34
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-string.txt:17
+# 4d21857166d643ffa6b3532e26fde174
+msgid ":ref:`startsWith <startsWith>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:18
+#: ../../api/zoo-string.txt:41
+# 4891e102c1114d77921689c730f641db
+# e463f16aaac247208b5432303559137d
+msgid "Test whether a string starts with another string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:19
+# f9b96b9e4f1245619a3c90015d4287db
+msgid ":ref:`contains <contains>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:20
+#: ../../api/zoo-string.txt:59
+# 5d115d04897a44f9a1a1d9e5526aee11
+# 286a4bc78105416b912d153931222e70
+msgid "Test whether a string contains another string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:21
+# a41ab7c475874caf8f1612e587d29985
+msgid ":ref:`trim <trim>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:22
+#: ../../api/zoo-string.txt:77
+# 846b4464129546a2ab0c91019e964967
+# d7e34b0ca7d44d52a7301eed0dfa4deb
+msgid "Removes leading and trailing whitespace characters from a string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:23
+# 89d71ca814584b539890800f7c29e394
+msgid ":ref:`camelize <camelize>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:24
+# b2c7940b1eb248f3a8bd5628dfebc1ef
+msgid "Camel-case a hyphenated string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:25
+# 26cd304028794fc59d91969ef5c84e32
+msgid ":ref:`tokenRegEx <tokenRegEx>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:26
+# 1052d83ce1d3467d84e2b1045288045e
+msgid "Used to find tokens in a string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:27
+# ac602cc605b8494f81cb507cf53d64a2
+msgid ":ref:`numberRegEx <numberRegEx>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:28
+#: ../../api/zoo-string.txt:112
+# 54e9c3a598584423b21e2c1e1883ce92
+# 205e9b0df95441a696b0b9bb1f288c56
+msgid "Used to test strings as numbers."
+msgstr ""
+
+#: ../../api/zoo-string.txt:29
+# 2632ca7a65394290beceb139afc4dde4
+msgid ":ref:`isNumeric <isNumeric>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:30
+#: ../../api/zoo-string.txt:121
+# 56aecc2e512e4c9aa6f2182451a0ec8f
+# c8f7be4423d5431fb60316e8a4647c0e
+msgid "Determine whether a string contains only a numeric value."
+msgstr ""
+
+#: ../../api/zoo-string.txt:31
+# 87600b38d4224cd8b83b2bd0c24b39bc
+msgid ":ref:`numericIf <numericIf>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:32
+#: ../../api/zoo-string.txt:143
+# 0b4e1b38c567485a97bca25c35333c44
+# 1ac1644ca83a401aa8fd9c0537799c0a
+msgid "Converts a string that appears to be a numeric value into a number."
+msgstr ""
+
+#: ../../api/zoo-string.txt:50
+# a681c4c8e2e54e4a94c4a8c03852f1fd
+msgid "startsWith"
+msgstr ""
+
+#: ../../api/zoo-string.txt:43
+#: ../../api/zoo-string.txt:61
+#: ../../api/zoo-string.txt:79
+#: ../../api/zoo-string.txt:96
+# fb13beb6313746998dd0664c12d1a937
+# e7abfd52a9584f24a358521ed1fa52f1
+# 70f460de7bfa4bb89c30d4f6ad5e83ce
+# b9f3a4504345457899516085ea13a658
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:48
+#: ../../api/zoo-string.txt:66
+#: ../../api/zoo-string.txt:83
+#: ../../api/zoo-string.txt:100
+#: ../../api/zoo-string.txt:132
+#: ../../api/zoo-string.txt:145
+# 901fb0da33b24d42830258451d0e92f2
+# 6321893937f04b4c9824f136a302f938
+# 270dc4012d034ceb92854e6177ec3dd5
+# a49a003d68534e72bd60f71b2d2359ae
+# 65adae924ef749929f37d4e5df39f37e
+# 18b533256d6c434da1b915ecc5ca2834
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:50
+# c4dc6b9a9283413b8ef2df8c9e765d20
+msgid "``{Boolean}`` The first string starts with the second."
+msgstr ""
+
+#: ../../api/zoo-string.txt:68
+# 90ae5c4167bd4cbba1de37812c4d026d
+msgid "contains"
+msgstr ""
+
+#: ../../api/zoo-string.txt:68
+# 3dd98859ea024c8caeff484a7d036366
+msgid "``{Boolean}`` The first string contains the second."
+msgstr ""
+
+#: ../../api/zoo-string.txt:85
+# 862de5a62949400698b9db2d0054bafe
+msgid "trim"
+msgstr ""
+
+#: ../../api/zoo-string.txt:81
+# 3ed8c7f95b7c4b03901beae4567f622c
+msgid "``str {String}`` The (potentially) space-padded string. This string is not modified."
+msgstr ""
+
+#: ../../api/zoo-string.txt:85
+# fa40b28338154ad9a5eb8e5807947c0d
+msgid "``{String}`` A trimmed version of the string with all leading and trailing spaces removed."
+msgstr ""
+
+#: ../../api/zoo-string.txt:102
+# b56caae1eec6485fb514e2bcb3db36ba
+msgid "camelize"
+msgstr ""
+
+#: ../../api/zoo-string.txt:94
+# 7e70a104d5814bd1b978c12144c366af
+msgid "Camel-case a hyphenated string. Ex. \"chicken-head\" becomes \"chickenHead\", and \"-chicken-head\" becomes \"ChickenHead\"."
+msgstr ""
+
+#: ../../api/zoo-string.txt:98
+# 643d72ce224c4963889847ccf4639cbf
+msgid "``str {String}`` The string to be camelized.  The original is not modified."
+msgstr ""
+
+#: ../../api/zoo-string.txt:102
+# b1a1c19271bf4838b353a6d7141a8abd
+msgid "``{String}`` The string, camelized"
+msgstr ""
+
+#: ../../api/zoo-string.txt:107
+# 9b425ec0a438404489d0191c04950e24
+msgid "tokenRegEx"
+msgstr ""
+
+#: ../../api/zoo-string.txt:107
+# edb96a768e7e46e68b9b659ce03d99e7
+msgid "Used to find tokens in a string.  Examples: *${a}, ${a.b.c}, ${a-b}, ${5}*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:112
+# ddbb4d8d640749ba8699e198d34562ac
+msgid "numberRegEx"
+msgstr ""
+
+#: ../../api/zoo-string.txt:134
+# 38cade2c58b84f6098ab81c00fb87ab2
+msgid "isNumeric"
+msgstr ""
+
+#: ../../api/zoo-string.txt:123
+# 34077f3ec9d2460c953af7c04eb6edd0
+msgid "*Examples*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:134
+# 98f987317d244de0b73dc9e0f1758954
+msgid "``{Boolean}`` String contains only a number."
+msgstr ""
+
+#: ../../api/zoo-string.txt:146
+# bda7aba3f29b4da9817fa1f3c593136f
+msgid "numericIf"
+msgstr ""
+
+#: ../../api/zoo-string.txt:147
+# 34a0a97954e143f5a32afe7818534024
+msgid "``{Number|String}`` a Number if the passed value is a number, a String otherwise."
+msgstr ""
+

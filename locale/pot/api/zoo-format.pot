@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format.txt:4
+#: ../../api/zoo-format.txt:100
+# c4f2230d56a641ebb33290b0764ee553
+# c2dc8c247f174c4fb89c51b38bec1d6b
+msgid "ZOO.Format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:6
+# 6e2a7b1fe9284d6b8f874398eb2566fe
+msgid "Base class for format reading/writing a variety of formats."
+msgstr ""
+
+#: ../../api/zoo-format.txt:9
+# 1a4a8621af494da0b8651d31de501364
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-format.txt:15
+#: ../../api/zoo-format.txt:35
+# 31a4b603abaa4d4f92e2a6ff864a568a
+# 389e8ba64281480dbaa2c2ac96445a53
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format.txt:16
+#: ../../api/zoo-format.txt:36
+# dc591063b5f54a998ce5eebf3998d377
+# 0da0eea1655d4e4b96a0b3c1aa6606df
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format.txt:17
+# dfd844cf3ffd465295e7dfe380862089
+msgid ":ref:`options <options>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:18
+# 9a9ae511757a4c8cb6e86842c65d9614
+msgid "{Object} A reference to options passed to the constructor."
+msgstr ""
+
+#: ../../api/zoo-format.txt:19
+# 2c4fce1b105b4858afab1f66179677a7
+msgid ":ref:`externalProjection <externalProjection>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:20
+#: ../../api/zoo-format.txt:22
+# 2b3ac85e65ab4afc9f3975e49ec091c7
+# 7e841946f2824d6b990e102ee0c422ce
+msgid "{ZOO.Projection} When passed a externalProjection and internalProjection, the format will reproject the geometries it reads or writes."
+msgstr ""
+
+#: ../../api/zoo-format.txt:21
+# 3264714ff92646b6b2c0676c1ec7254c
+msgid ":ref:`internalProjection <internalProjection>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:23
+#: ../../api/zoo-format.txt:43
+# ad99f5b30e0a455b8f857a036b6aa8ef
+# 9d26d682392a4145a66cbcb0692f9ed4
+msgid ":ref:`data <data>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:24
+#: ../../api/zoo-format.txt:44
+# ca56d8defffc474ebb9ffd0e0adf4408
+# a1be756b883741cca945967d6cba973d
+msgid "{Object} When keepData is true, this is the parsed string sent to read."
+msgstr ""
+
+#: ../../api/zoo-format.txt:25
+# 8bfeca95d7f0474c969ead0b2f272ee4
+msgid ":ref:`keepData <keepData>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:26
+# ad8e71f7a6374c6aba7ad035d653099c
+msgid "{Object} Maintain a reference (data) to the most recently read data."
+msgstr ""
+
+#: ../../api/zoo-format.txt:29
+# 2431bb9d0b7b4c80957f153d07fdfd5c
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-format.txt:37
+# 0458358a79e144138461964a53d4d7cd
+msgid ":ref:`ZOO.Format <ZOO.Format>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:38
+# 1e6181c2f9664f9a8c2a595b6d49fbd9
+msgid "Instances of this class are not useful."
+msgstr ""
+
+#: ../../api/zoo-format.txt:39
+# 43f256afa3a14b4a835013114835fbf6
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:40
+#: ../../api/zoo-format.txt:109
+# b546ad2211d54442b4889745b2ef6caa
+# cb4763e8a95749b3b438bd0d65a2dae2
+msgid "Clean up."
+msgstr ""
+
+#: ../../api/zoo-format.txt:41
+# 5d376c1efac34d15afc9e2356b1737d3
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:42
+#: ../../api/zoo-format.txt:118
+# b848a16a7609481c98518a9739772af0
+# f897f6c43869427ba0d9610d8e645f2a
+msgid "Read data from a string, and return an object whose type depends on the subclass."
+msgstr ""
+
+#: ../../api/zoo-format.txt:45
+# c29b078d6dd944e99021d59cb30d428b
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:46
+#: ../../api/zoo-format.txt:135
+# 6bde07e98bd24a48a5084c88877108a5
+# 952a7bc28e27456eb452f6fb585f399b
+msgid "Accept an object, and return a string."
+msgstr ""
+
+#: ../../api/zoo-format.txt:48
+# a54ca0aaaa394faaa1118e7848e9bc6e
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-format.txt:53
+# 69adb3898b9d407ab5885016796e8f90
+msgid "options"
+msgstr ""
+
+#: ../../api/zoo-format.txt:53
+# efc778b00d28473984b2e949424a23ea
+msgid "``{Object}`` A reference to options passed to the constructor."
+msgstr ""
+
+#: ../../api/zoo-format.txt:62
+# 3271e3a352eb41c2a8d8d1e65f0930ab
+msgid "externalProjection"
+msgstr ""
+
+#: ../../api/zoo-format.txt:58
+# 732e679c725f4b9ab1307b2fa9ec61f8
+msgid ":ref:`{ZOO.Projection} <api-zoo-projection>` When passed a externalProjection and internalProjection, the format will reproject the geometries it reads or writes. The externalProjection is the projection used by the content which is passed into read or which comes out of write.  In order to reproject, a projection transformation function for the specified projections must be available.  This support is provided via zoo-proj4js."
+msgstr ""
+
+#: ../../api/zoo-format.txt:71
+# 384e5ff974ee4e4a8863679c607f84d6
+msgid "internalProjection"
+msgstr ""
+
+#: ../../api/zoo-format.txt:67
+# a0704bd928ed4e4ebc642780255959ed
+msgid ":ref:`{ZOO.Projection} <api-zoo-projection>` When passed a externalProjection and internalProjection, the format will reproject the geometries it reads or writes. The internalProjection is the projection used by the geometries which are returned by read or which are passed into write.  In order to reproject, a projection transformation function for the specified projections must be available.  This support is provided via zoo-proj4js."
+msgstr ""
+
+#: ../../api/zoo-format.txt:76
+# 5b7d3ec4ec5c4cc08e5e3cd555896a6b
+msgid "data"
+msgstr ""
+
+#: ../../api/zoo-format.txt:76
+# 9a8dbaae0f254bc8a814204fb369d127
+msgid "``{Object}`` When :ref:`keepData <keepData>` is true, this is the parsed string sent to :ref:`read <read>`."
+msgstr ""
+
+#: ../../api/zoo-format.txt:81
+# e1c86d9741e7484585425f76fa155851
+msgid "keepData"
+msgstr ""
+
+#: ../../api/zoo-format.txt:81
+# 2a96f03da4454067a7580d131aefe930
+msgid "``{Object}`` Maintain a reference (:ref:`data <data>`) to the most recently read data.  Default is false."
+msgstr ""
+
+#: ../../api/zoo-format.txt:83
+# 614ff3c1ed9c4412b6a8afd483a6a61a
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-format.txt:88
+# 30687980676b48fab106002e4ebe34ac
+msgid "Instances of this class are not useful.  See one of the subclasses."
+msgstr ""
+
+#: ../../api/zoo-format.txt:90
+#: ../../api/zoo-format.txt:120
+#: ../../api/zoo-format.txt:137
+# 736b3b963b584ea58afc2455aea45df6
+# e33b3c27e586450f8ab2e0c333cb81b2
+# 9dc805ce6983412f986166a391ba0f6f
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:92
+# 9810175473e2475d9db85849f91624f8
+msgid "``options {Object}`` An optional object with properties to set on the format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:94
+# 91a6f45666c4488193de58aca0c2e731
+msgid "*Valid options*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:96
+# 547b4ca6eec048d6aa0c5ca4d9991719
+msgid "``keepData {Boolean}`` If true, upon read, the data property will be set to the parsed object (e.g. the json or xml object)."
+msgstr ""
+
+#: ../../api/zoo-format.txt:98
+#: ../../api/zoo-format.txt:124
+#: ../../api/zoo-format.txt:141
+# 7b5c028696da458fb5960b85111c9425
+# 865ef35bef354e86b580f9ba518304ea
+# abc51b4914b54a73872256ba3fecce76
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:100
+# 0e47d6f644264ef8bf2a09f342d8347b
+msgid "An instance of ZOO.Format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:109
+# 875e0ddd520b4183a6885b603540bff2
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-format.txt:126
+# 40a625cff2c5465888b7a55394aeb8f9
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format.txt:122
+# 56e9e0a3db484819b12be0a28955b93f
+msgid "``data {string}`` Data to read/parse."
+msgstr ""
+
+#: ../../api/zoo-format.txt:126
+# 5820ff9d04164954b31892c7e40e521e
+msgid "Depends on the subclass"
+msgstr ""
+
+#: ../../api/zoo-format.txt:142
+# 508423f7221348a6b74223a9f6f0fa55
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format.txt:139
+# 1e17a013787e47bf8c14509637a6ec10
+msgid "``object {Object}`` Object to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format.txt:143
+# e54b205a842443ea8c3bc066aeb4349b
+msgid "``{String}`` A string representation of the object."
+msgstr ""
+

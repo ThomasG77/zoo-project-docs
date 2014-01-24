@@ -1,0 +1,70 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-request.txt:4
+msgid "ZOO.Request"
+msgstr ""
+
+#: ../../api/zoo-request.txt:6
+msgid ""
+"Contains convenience methods for working with ZOORequest which replace "
+"XMLHttpRequest."
+msgstr ""
+
+#: ../../api/zoo-request.txt:9
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-request.txt:15
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-request.txt:16
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-request.txt:17
+msgid ":ref:`GET <GET>`"
+msgstr ""
+
+#: ../../api/zoo-request.txt:18 ../../api/zoo-request.txt:25
+msgid "Send an HTTP GET request."
+msgstr ""
+
+#: ../../api/zoo-request.txt:19
+msgid ":ref:`POST <POST>`"
+msgstr ""
+
+#: ../../api/zoo-request.txt:20 ../../api/zoo-request.txt:39
+msgid "Send an HTTP POST request."
+msgstr ""
+
+#: ../../api/zoo-request.txt:34
+msgid "GET"
+msgstr ""
+
+#: ../../api/zoo-request.txt:27 ../../api/zoo-request.txt:41
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-request.txt:32 ../../api/zoo-request.txt:47
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-request.txt:34 ../../api/zoo-request.txt:49
+msgid "``{String}`` Request result."
+msgstr ""
+
+#: ../../api/zoo-request.txt:48
+msgid "POST"
+msgstr ""

@@ -1,0 +1,126 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../kernel/install-opensuse.txt:4
+msgid "OpenSUSE"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:7
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:13
+msgid ""
+"Zoo-Kernel is maintained as a package in `OpenSUSE Build Service (OBS) "
+"<https://build.opensuse.org/package/show?package=zoo-"
+"kernel&project=Application%3AGeo>`__. This way, rpm's are provided for all "
+"versions of openSUSE Linux (11.2, 11.3, 11.4, Factory)."
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:17
+msgid "Stable Releases"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:19
+msgid "For installing Zoo-Kernel in openSUSE there are 3 ways available:"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:22
+msgid "One Click Installer"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:24
+msgid ""
+"One-click installer that can be found  `here "
+"<http://software.opensuse.org/search?q=zoo-"
+"kernel&baseproject=openSUSE%3A11.4&lang=en&exclude_debug=true>`__. For "
+"openSUSE 11.4 this is the direct `link "
+"<http://software.opensuse.org/ymp/Application:Geo/openSUSE_11.4/zoo-"
+"kernel.ymp?base=openSUSE%3A11.4&query=zoo-kernel>`__."
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:28
+msgid "Yast Software Manager using a GUI"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:30
+msgid ""
+"The `Application:Geo "
+"<http://download.opensuse.org/repositories/Application:/Geo/>`__ repository "
+"has to be added to the Software Repositories and then Zoo-kernel can be "
+"found in Software Management through search."
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:34
+msgid "Command line (as root for openSUSE 11.4)"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:43
+msgid "Unstable Version"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:45
+msgid ""
+"The latest development version of ZOO-Kernel can be found in OBS under the "
+"project `home:tzotsos "
+"<https://build.opensuse.org/project/show?project=home%3Atzotsos>`__. ZOO-"
+"Kernel packages are maintained and tested there before being released to the"
+" Application:Geo repository."
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:48
+msgid ""
+"Installation methods are identical as the stable version. Make sure to use "
+"`this <http://download.opensuse.org/repositories/home:/tzotsos/>`__ "
+"repository instead."
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:51
+msgid "Command line installation (as root for openSUSE 11.4)"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:60
+msgid ""
+"Additionally, there is the option of adding the zoo-wps-grass-bridge "
+"package. This option will automatically install grass7 (svn trunk)."
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:63
+msgid "Try the Installation"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:65
+msgid ""
+"http://localhost/cgi-"
+"bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=GetCapabilities&Version=1.0.0"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:66
+msgid ""
+"http://localhost/cgi-"
+"bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
+msgstr ""
+
+#: ../../kernel/install-opensuse.txt:67
+msgid ""
+"http://localhost/cgi-"
+"bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
+msgstr ""

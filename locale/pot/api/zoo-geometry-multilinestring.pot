@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-multilinestring.txt:4
+#: ../../api/zoo-geometry-multilinestring.txt:30
+# 45de659de54e4192aaabbcc2a6ff3d19
+# 61635ec360ae47b8947e44548645c586
+msgid "ZOO.Geometry.MultiLineString"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:6
+# d67f15d34a104636abd6d7c083c71cf0
+msgid "A MultiLineString is a geometry with multiple ZOO.Geometry.LineString components."
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:8
+# ead2c9dbc3b94037adf710c8013cb484
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:10
+# 7e2dcb28771e4495a741fe40613cf8ea
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:13
+# 3f5a6e750fc44dcabcac581750e1f382
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:19
+# 1ba40218ba11401db048d887cec027f4
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:20
+# bb2047886e884d9cb59e849bb9f92890
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:21
+# 16102e9e165d4b23a6bcc3a00240823b
+msgid ":ref:`ZOO.Geometry.MultiLineString <ZOO.Geometry.MultiLineString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:22
+#: ../../api/zoo-geometry-multilinestring.txt:27
+# d4736ef5eff14163bc30869a42f6277a
+# 02478fe524494b4ca0d2af61a75ca5de
+msgid "Constructor for a MultiLineString Geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:29
+# 9437fff28c9d49dcaedfb9fb349f7e39
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:31
+# 94d96554101b4c248ca0e5e27ec128ca
+msgid "``components`` {Array(:ref:`ZOO.Geometry.LineString <api-zoo-geometry-linestring>`)}"
+msgstr ""
+

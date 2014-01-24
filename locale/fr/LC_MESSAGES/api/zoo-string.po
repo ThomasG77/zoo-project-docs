@@ -1,0 +1,193 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-string.txt:4
+msgid "ZOO.String"
+msgstr ""
+
+#: ../../api/zoo-string.txt:6
+msgid "Contains convenience methods for string manipulation:"
+msgstr ""
+
+#: ../../api/zoo-string.txt:9
+msgid "Functions and Properties"
+msgstr ""
+
+#: ../../api/zoo-string.txt:15
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-string.txt:16
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-string.txt:17
+msgid ":ref:`startsWith <startsWith>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:18 ../../api/zoo-string.txt:41
+msgid "Test whether a string starts with another string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:19
+msgid ":ref:`contains <contains>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:20 ../../api/zoo-string.txt:59
+msgid "Test whether a string contains another string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:21
+msgid ":ref:`trim <trim>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:22 ../../api/zoo-string.txt:77
+msgid "Removes leading and trailing whitespace characters from a string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:23
+msgid ":ref:`camelize <camelize>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:24
+msgid "Camel-case a hyphenated string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:25
+msgid ":ref:`tokenRegEx <tokenRegEx>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:26
+msgid "Used to find tokens in a string."
+msgstr ""
+
+#: ../../api/zoo-string.txt:27
+msgid ":ref:`numberRegEx <numberRegEx>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:28 ../../api/zoo-string.txt:112
+msgid "Used to test strings as numbers."
+msgstr ""
+
+#: ../../api/zoo-string.txt:29
+msgid ":ref:`isNumeric <isNumeric>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:30 ../../api/zoo-string.txt:121
+msgid "Determine whether a string contains only a numeric value."
+msgstr ""
+
+#: ../../api/zoo-string.txt:31
+msgid ":ref:`numericIf <numericIf>`"
+msgstr ""
+
+#: ../../api/zoo-string.txt:32 ../../api/zoo-string.txt:143
+msgid "Converts a string that appears to be a numeric value into a number."
+msgstr ""
+
+#: ../../api/zoo-string.txt:50
+msgid "startsWith"
+msgstr ""
+
+#: ../../api/zoo-string.txt:43 ../../api/zoo-string.txt:61
+#: ../../api/zoo-string.txt:79 ../../api/zoo-string.txt:96
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:48 ../../api/zoo-string.txt:66
+#: ../../api/zoo-string.txt:83 ../../api/zoo-string.txt:100
+#: ../../api/zoo-string.txt:132 ../../api/zoo-string.txt:145
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:50
+msgid "``{Boolean}`` The first string starts with the second."
+msgstr ""
+
+#: ../../api/zoo-string.txt:68
+msgid "contains"
+msgstr ""
+
+#: ../../api/zoo-string.txt:68
+msgid "``{Boolean}`` The first string contains the second."
+msgstr ""
+
+#: ../../api/zoo-string.txt:85
+msgid "trim"
+msgstr ""
+
+#: ../../api/zoo-string.txt:81
+msgid ""
+"``str {String}`` The (potentially) space-padded string. This string is not "
+"modified."
+msgstr ""
+
+#: ../../api/zoo-string.txt:85
+msgid ""
+"``{String}`` A trimmed version of the string with all leading and trailing "
+"spaces removed."
+msgstr ""
+
+#: ../../api/zoo-string.txt:102
+msgid "camelize"
+msgstr ""
+
+#: ../../api/zoo-string.txt:94
+msgid ""
+"Camel-case a hyphenated string. Ex. \"chicken-head\" becomes "
+"\"chickenHead\", and \"-chicken-head\" becomes \"ChickenHead\"."
+msgstr ""
+
+#: ../../api/zoo-string.txt:98
+msgid ""
+"``str {String}`` The string to be camelized.  The original is not modified."
+msgstr ""
+
+#: ../../api/zoo-string.txt:102
+msgid "``{String}`` The string, camelized"
+msgstr ""
+
+#: ../../api/zoo-string.txt:107
+msgid "tokenRegEx"
+msgstr ""
+
+#: ../../api/zoo-string.txt:107
+msgid ""
+"Used to find tokens in a string.  Examples: *${a}, ${a.b.c}, ${a-b}, ${5}*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:112
+msgid "numberRegEx"
+msgstr ""
+
+#: ../../api/zoo-string.txt:134
+msgid "isNumeric"
+msgstr ""
+
+#: ../../api/zoo-string.txt:123
+msgid "*Examples*"
+msgstr ""
+
+#: ../../api/zoo-string.txt:134
+msgid "``{Boolean}`` String contains only a number."
+msgstr ""
+
+#: ../../api/zoo-string.txt:146
+msgid "numericIf"
+msgstr ""
+
+#: ../../api/zoo-string.txt:147
+msgid ""
+"``{Number|String}`` a Number if the passed value is a number, a String "
+"otherwise."
+msgstr ""

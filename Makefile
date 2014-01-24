@@ -122,7 +122,7 @@ man:
 	@echo "Build finished. The manual pages are in $(BUILDDIR)/man."
 
 gettext:
-	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
+	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) locale/pot
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
 

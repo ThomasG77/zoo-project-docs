@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry.txt:4
+#: ../../api/zoo-geometry.txt:75
+# afe7269cc3204df68f39a69e6d51bd5f
+# a22c0b79def346dabc4ddd108ed12f1c
+msgid "ZOO.Geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:6
+# baa5b55c62c54f73a3f0a0d9c7bfbd95
+msgid "A Geometry is a description of a geographic object."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:9
+# 0e9226f7d922439b844e5c29763bda2b
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:15
+#: ../../api/zoo-geometry.txt:31
+# 75684f78bae042e5b3563609d6f33d62
+# d530be01ea7341ffaee1a16a90eab92d
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:16
+#: ../../api/zoo-geometry.txt:32
+# 25f83121d1444548b0cb6702cc12db48
+# 18545a2072da4065a35f3e43248de786
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:17
+# 57e0ecaecc674d98a5ed169bfbbafb62
+msgid ":ref:`id <id>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:18
+# 82e88923b9334ae9864c4732050e6678
+msgid "{String} A unique identifier for this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:19
+# cb5c8db24dbc40b6ac5085e957e5cb9d
+msgid ":ref:`parent <parent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:20
+# acbe9bdda4ab4dee907b44096847efd8
+msgid "{ZOO.Geometry}This is set when a Geometry is added as component of another geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:21
+# a29a150d8e5549658929e2749b60c8c5
+msgid ":ref:`bounds <bounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:22
+# 8968995214b64075ac3dce563a8ce58c
+msgid "{ZOO.Bounds} The bounds of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:25
+# f76995a63ca64797a965eb07e1f44fca
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:33
+# e27a24f963eb4f9eab70bf25f8e9873d
+msgid ":ref:`ZOO.Geometry <ZOO.Geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:34
+#: ../../api/zoo-geometry.txt:75
+# 2b2af14502d6463aafa35ad0e9f16bb6
+# f45bbeff9730404d8a297bf0148c6e40
+msgid "Creates a geometry object."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:35
+# bd0069f723284c298dbb786b23e38f97
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:36
+# 90fba43fb4e44856aacacec71c16de99
+msgid "nullify references to prevent circular references and memory leaks"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:37
+# 01736d2e400e4139ad4f03cf57572be6
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:38
+# a187abb8a361421b9ff0c2cd2cf90ecb
+msgid "Create a clone of this vector feature."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:39
+# a387b397b0fb47beb22ede49d305518c
+msgid ":ref:`extendBounds <extendBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:40
+# a9ef3e7d26554e16945a3bc00855f7db
+msgid "Moves the feature and redraws it at its new location"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:41
+# 0aa757d9ce7c4d69bbd434227314d40a
+msgid ":ref:`clearBounds <clearBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:42
+#: ../../api/zoo-geometry.txt:120
+# 992208e6a5f64858978bc6d931781d64
+# d1544eb2d30241129caff5d0d4cc75c2
+msgid "Nullify this components bounds and that of its parent as well."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:43
+# c5ae8df4e5814bdda25f09b48e0ebbb5
+msgid ":ref:`getBounds <getBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:44
+# aa577b93899a44aa9ade8ffac92e3287
+msgid "Get the bounds for this Geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:45
+# c9b8574016a246738f025babce0f3fa2
+msgid ":ref:`calculateBounds <calculateBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:46
+#: ../../api/zoo-geometry.txt:143
+# e877e09b7a394953944d9a2002156d0f
+# fd7917821d3a4837b4cce99a40ea84bc
+msgid "Recalculate the bounds for the geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:47
+# 9acc7568dc8a474fa79578f5377b40f3
+msgid ":ref:`toString <toString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:48
+#: ../../api/zoo-geometry.txt:152
+# 1cbc5c6cb5ce45f083c6fe755cf50de7
+# 8430e2d5c9c0466ba32cf306d4c9feac
+msgid "Returns the Well-Known Text representation of a geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:49
+# f5fa0e845d92431a8e46d2f402830fba
+msgid ":ref:`ZOO.Geometry.fromWKT <ZOO.Geometry.fromWKT>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:50
+#: ../../api/zoo-geometry.txt:165
+# 581fe47d709642718f1b18f187722689
+# 1f2de90d3c5f434188540875b4e8f23f
+msgid "Generate a geometry given a Well-Known Text string."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:53
+# 7ca6d5cbd9aa4fcca9afbb06ddfba9f3
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:58
+# aa503aceb59b4de092c8e33e05f8ede8
+msgid "id"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:58
+# 33ef73298f4e41cd842c54ae3d97003f
+msgid "``{String}`` A unique identifier for this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:63
+# b2397c7bff104a70a79d111467f4902d
+msgid "parent"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:63
+# 9c01da936dd54784a978c72bfe2b37a7
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` This is set when a Geometry is added as component of another geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:68
+# b30c9d1000d54cd6a2e5cf2378db2aaa
+msgid "bounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:68
+# 5b42209b8dd84b37a98d1ef4b0c0a973
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` The bounds of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:70
+# 6693bfd105684294b7a8f226f1d28d02
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:84
+# da4433174b4c4e7ea9d642b6aa3f2d99
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:84
+# 8e4a494d14d3489f82de84e4d8949f12
+msgid "Destroy this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:97
+# 2429a84ea8d04e27a07cb3f1ce415660
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:93
+# e1a666af929a40a6b2a7d86c690280bd
+msgid "Create a clone of this geometry.  Does not set any non-standard properties of the cloned geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:95
+#: ../../api/zoo-geometry.txt:132
+#: ../../api/zoo-geometry.txt:154
+#: ../../api/zoo-geometry.txt:171
+# e745a44c310147a79d06b252b0a1b74e
+# 9788ab26afbf479a90b57c10d75bb482
+# 29c12a13af18455f951343911e606bce
+# 266943ac1f95410fa2ce71f275419af6
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:97
+# a5332c941e87490594f31107f82b507d
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` An exact clone of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:111
+# f4337cac54744f6eaeeffb4a71009184
+msgid "extendBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:106
+# 9e80cbb0a3cd40509a0322884b5f01f0
+msgid "Extend the existing bounds to include the new bounds.  If geometry's bounds is not yet set, then set a new Bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:109
+#: ../../api/zoo-geometry.txt:167
+# bbcf4902a66b424abc01e9ab9c184706
+# 5a5e60cf25b14da18f040d6519925afa
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:111
+#: ../../api/zoo-geometry.txt:134
+# 58824dd47eea4d8f9b1735a73511f396
+# d24ce7590beb45a09612e6a7df8343d5
+msgid "``newBounds`` :ref:`{ZOO.Bounds} <api-zoo-bounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:120
+# 19a1d693b1034cb0bfe23cd1c044ef2f
+msgid "clearBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:134
+# 5cf4a515625c4acab8668babfe478b99
+msgid "getBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:129
+# 87c9f5f448e245f795fbb44ddb34eadc
+msgid "Get the bounds for this Geometry.  If bounds is not set, it is calculated again, this makes queries faster."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:143
+# 8f7be9c441794d3886ef268f6fc5d35c
+msgid "calculateBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:156
+# 4ef4ab0655614ab984c07d26a6913f36
+msgid "toString"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:156
+# 6662e435903849a3ae3fade32d4e54fd
+msgid "``{String}`` Well-Known Text"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:172
+# b95411e731d0445fb45e63c3f95e3bdb
+msgid "ZOO.Geometry.fromWKT"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:169
+# a770bc3605384afa800335937ecc8f3d
+msgid "``wkt {String}`` A string representing the geometry in Well-Known Text."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:173
+# 7bea1698d58c417ca149704a36a3d8b6
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` A geometry of the appropriate class."
+msgstr ""
+

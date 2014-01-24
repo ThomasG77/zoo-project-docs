@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../community/developer.txt:4
+# 8b18baf40b0c45b381e4add503e725a2
+msgid "ZOO-Project Committer Guildlines"
+msgstr ""
+
+#: ../../community/developer.txt:6
+# f02996a106f647c1b66dd39ca04e2c99
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../community/developer.txt:7
+# d672b0b38e00400d8f6e7dbdf6e87451
+msgid "$Date: 2011-12-07 14:19:47 +0100 (Mer, 07 déc 2011) $"
+msgstr ""
+
+#: ../../community/developer.txt:0
+# 596efb780a0a424ca6fd3602ebba7e42
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../community/developer.txt:14
+# 72f6878eb29d459f9efc7762f4002782
+msgid "Election to SVN Commit Access"
+msgstr ""
+
+#: ../../community/developer.txt:16
+# 53fb6a72598b482e99ecc22cf4bfafb5
+msgid "Permission for SVN commit access shall be provided to new developers only if accepted by the ZOO-Project Project Steering Committee. A proposal should be written to the PSC for new committers and voted."
+msgstr ""
+
+#: ../../community/developer.txt:18
+# 4052b13ddd784aacbf2c702149403816
+msgid "Removal of SVN commit access should be handled by the same process."
+msgstr ""
+
+#: ../../community/developer.txt:20
+# c3f7cce793af4e888a03d29fe7c4d316
+msgid "The new committer should have demonstrated commitment to ZOO-Project and knowledge of the ZOO-Project source code and processes to the committee's satisfaction, usually by reporting bugs, submitting patches, and/or actively participating in the ZOO-Project mailing list(s)."
+msgstr ""
+
+#: ../../community/developer.txt:22
+# f34587d0991c408b9b98e9f36f07dd9f
+msgid "The new committer should also be prepared to support any new feature or changes that he/she commits to the ZOO-Project source tree in future releases, or to find someone to which to delegate responsibility for them if he/she stops being available to support the portions of code that he/she is responsible for."
+msgstr ""
+
+#: ../../community/developer.txt:24
+# 29b0361d0ea04f6db3029a56147fdbfc
+msgid "All committers should also be a member of the zoo-discuss mailing list so they can stay informed on policies, technical developments and release preparation."
+msgstr ""
+
+#: ../../community/developer.txt:26
+# 0833c00060c7471db34da0acd80532c8
+msgid "New commiters are responsible for having read, and understood this document."
+msgstr ""
+
+#: ../../community/developer.txt:30
+# 19080bcaf46e4504b18a2bf0ceeabe1b
+msgid "Committer Tracking"
+msgstr ""
+
+#: ../../community/developer.txt:32
+# 20690aa663fc4e5aad2e078bedef77aa
+msgid "A list of all project committers will be kept in the main zoo-project directory (called COMMITTERS) listing for each SVN committer:"
+msgstr ""
+
+#: ../../community/developer.txt:34
+# d0d9bc54351148a2b64dac8cdeff6dbf
+msgid "Userid: the id that will appear in the SVN logs for this person."
+msgstr ""
+
+#: ../../community/developer.txt:35
+# 0706c02e5bb5478f8e38efeb23678f68
+msgid "Full name: the users actual name."
+msgstr ""
+
+#: ../../community/developer.txt:36
+# 68fdc2a8a84b4b44887232511bb04a58
+msgid "Email address: A current email address at which the committer can be reached. It may be altered in normal ways to make it harder to auto-harvest."
+msgstr ""
+
+#: ../../community/developer.txt:39
+# 33281a82253b4d498b190e59f34193d0
+msgid "SVN Administrator"
+msgstr ""
+
+#: ../../community/developer.txt:41
+# 6f98d6cfb54842e6b606f0400d4a0695
+msgid "One member of the Project Steering Committee will be designed the SVN Administrator. That person will be responsible for giving SVN commit access to folks, updating the COMMITTERS file, and other SVN related management. That person will need login access on the SVN server of course."
+msgstr ""
+
+#: ../../community/developer.txt:43
+# 349d7ad714884c50bc466593c6361e60
+msgid "Initially Gérald Fenoy will be the SVN Adminstrator."
+msgstr ""
+
+#: ../../community/developer.txt:46
+# ab957809b2074164b22ae832bbf64ada
+msgid "SVN Commit Practices"
+msgstr ""
+
+#: ../../community/developer.txt:48
+# bcb47fb122854ba6bcc54f3b7ed62c26
+msgid "The following are considered good SVN commit practices for the ZOO-Project project."
+msgstr ""
+
+#: ../../community/developer.txt:50
+# 962c838f53c542ae940ba9ea70a1ed75
+msgid "Use meaningful descriptions for SVN commit log entries."
+msgstr ""
+
+#: ../../community/developer.txt:51
+# 28d17decced943ca9d0c25d5458be41f
+msgid "Add a bug reference like \"(#1234)\" at the end of SVN commit log entries when committing changes related to a ticket in Trac. The '#' character enables Trac to create a hyperlink from the changeset to the mentionned ticket."
+msgstr ""
+
+#: ../../community/developer.txt:52
+# b6e16454a24d451d9b52abae436c35c9
+msgid "After commiting changes related to a ticket in Trac, write the tree and revision in which it was fixed in the ticket description. Such as \"Fixed in trunk (r12345) and in branches/1.7 (r12346)\". The 'r' character enables Trac to create a hyperlink from the ticket to the changeset."
+msgstr ""
+
+#: ../../community/developer.txt:53
+# 89c734e794d34feebca1680698e53223
+msgid "Changes should not be committed in stable branches without a corresponding bug id. Any change worth pushing into the stable version is worth a bug entry."
+msgstr ""
+
+#: ../../community/developer.txt:54
+# 24c04ffbc29d42e6bcfbd53fde4168a9
+msgid "Never commit new features to a stable branch without permission of the PSC or release manager. Normally only fixes should go into stable branches."
+msgstr ""
+
+#: ../../community/developer.txt:55
+# e6b52d1c4517459a86af4d74570d04fb
+msgid "New features go in the main development trunk."
+msgstr ""
+
+#: ../../community/developer.txt:56
+# 647ce93176324117a67b16f2e27d9cb3
+msgid "Only bug fixes should be committed to the code during pre-release code freeze, without permission from the PSC or release manager."
+msgstr ""
+
+#: ../../community/developer.txt:57
+# f74d45182c684d238b2dc44b4627107d
+msgid "Significant changes to the main development version should be discussed on the zoo-discuss list before you make them, and larger changes will require a to be discussed and approved on zoo-psc list by the PSC."
+msgstr ""
+
+#: ../../community/developer.txt:58
+# c1e1a9377ade4a288ac89ed92749a620
+msgid "Do not create new branches without the approval of the PSC. Release managers are assumed to have permission to create a branch."
+msgstr ""
+
+#: ../../community/developer.txt:59
+# c248e60214af4c628bfbff87ae4c8b17
+msgid "All source code in SVN should be in Unix text format as opposed to DOS text mode."
+msgstr ""
+
+#: ../../community/developer.txt:60
+# c884dde2ef3c43538723bd840ccc1d17
+msgid "When committing new features or significant changes to existing source code, the committer should take reasonable measures to insure that the source code continues to build and work on the most commonly supported platforms (currently Linux and Windows), either by testing on those platforms directly, running Buildbot tests, or by getting help from other developers working on those platforms. If new files or library dependencies are added, then the configure.in, Makefile.in, Makefile.vc and related documentations should be kept up to date."
+msgstr ""
+
+#: ../../community/developer.txt:63
+# 1d6ddf5904b84430b51edde83152a7ee
+msgid "Legal"
+msgstr ""
+
+#: ../../community/developer.txt:65
+# 7408c080804b41a3b4521e9d50b23df2
+msgid "Committers are the front line gatekeepers to keep the code base clear of improperly contributed code. It is important to the ZOO-Project users, developers and the OSGeo foundation to avoid contributing any code to the project without it being clearly licensed under the project license."
+msgstr ""
+
+#: ../../community/developer.txt:67
+# 71e7020aa2c545bb8f36fbcdc9f668e8
+msgid "Generally speaking the key issues are that those providing code to be included in the repository understand that the code will be released under the MIT/X license, and that the person providing the code has the right to contribute the code. For the commiter themselves understanding about the license is hopefully clear. For other contributors, the commiter should verify the understanding unless the commiter is very comfortable that the contributor understands the license (for instance frequent contributors)."
+msgstr ""
+
+#: ../../community/developer.txt:69
+# f1d7c35f87eb44b2aa35e1524e78ca51
+msgid "If the contribution was developed on behalf of an employer (on work time, as part of a work project, etc) then it is important that an appropriate representative of the employer understand that the code will be contributed under the MIT/X license. The arrangement should be cleared with an authorized supervisor/manager, etc."
+msgstr ""
+
+#: ../../community/developer.txt:71
+# c3a2e2e46b2447c09cc5435008137754
+msgid "The code should be developed by the contributor, or the code should be from a source which can be rightfully contributed such as from the public domain, or from an open source project under a compatible license."
+msgstr ""
+
+#: ../../community/developer.txt:73
+# cbb41f97e29643f0ad6cd3804db5c234
+msgid "All unusual situations need to be discussed and/or documented."
+msgstr ""
+
+#: ../../community/developer.txt:75
+# c5dd0aa33b6d495ebddea711b6f01d19
+msgid "Committers should adhere to the following guidelines, and may be personally legally liable for improperly contributing code to the source repository:"
+msgstr ""
+
+#: ../../community/developer.txt:77
+# 1e901efbb11649a093aa5967330c3ba0
+msgid "Make sure the contributor (and possibly employer) is aware of the contribution terms."
+msgstr ""
+
+#: ../../community/developer.txt:78
+# 062809b775074b4895c317b045083482
+msgid "Code coming from a source other than the contributor (such as adapted from another project) should be clearly marked as to the original source, copyright holders, license terms and so forth. This information can be in the file headers, but should also be added to the project licensing file if not exactly matching normal project licensing (zoo-project/zoo-kernel/LICENSE)."
+msgstr ""
+
+#: ../../community/developer.txt:79
+# 1895c03a70e04efb91afb91ce0e2b9cb
+msgid "Existing copyright headers and license text should never be stripped from a file. If a copyright holder wishes to give up copyright they must do so in writing to the foundation before copyright messages are removed. If license terms are changed it has to be by agreement (written in email is ok) of the copyright holders."
+msgstr ""
+
+#: ../../community/developer.txt:80
+# c663facba7a642d483c2eaa80a9396e2
+msgid "Code with licenses requiring credit, or disclosure to users should be added to /trunk/zoo-project/zoo-kernel/LICENSE."
+msgstr ""
+
+#: ../../community/developer.txt:81
+# 2a83a6ef878c40dc8bbadb476c768634
+msgid "When substantial contributions are added to a file (such as substantial patches) the author/contributor should be added to the list of copyright holders for the file."
+msgstr ""
+
+#: ../../community/developer.txt:82
+# 603855e5f6f34a5892e07685f38042e6
+msgid "If there is uncertainty about whether a change it proper to contribute to the code base, please seek more information from the project steering committee, or the foundation legal counsel."
+msgstr ""
+
+#: ../../community/developer.txt:85
+# 1c6634b8180944a7b8a1f04ea81ce3c9
+msgid "Bootstrapping"
+msgstr ""
+
+#: ../../community/developer.txt:87
+# 5d82b053490941ffbe0f778b0fc85779
+msgid "The following existing commiters will be considered authorized ZOO-Project committers as long as they each review the commiter guidelines, and agree to adhere to them. The SVN administrator will be responsible for checking with each person."
+msgstr ""
+
+#: ../../community/developer.txt:89
+# ddbc8b3e7f9a4daebcc87893f453d436
+msgid "David SAGGIORATO (aka david)"
+msgstr ""
+
+#: ../../community/developer.txt:90
+# 200ea251e4de42f1bde0cea74e255141
+msgid "Gérald FENOY (aka djay)"
+msgstr ""
+
+#: ../../community/developer.txt:91
+# 86dec3ffa80c447fa98c89c9edb9b8c8
+msgid "Jeff MCKENNA (aka jmckenna)"
+msgstr ""
+
+#: ../../community/developer.txt:92
+# b50b5e60498149e4b05f497f0a4122c6
+msgid "Angelos TZOTSOS (aka kalxas)"
+msgstr ""
+
+#: ../../community/developer.txt:93
+# 90a628ba2bb948408dfe74a48da5c0e0
+msgid "Luca DELUCCHI (aka lucadelu)"
+msgstr ""
+
+#: ../../community/developer.txt:94
+# f0beed7055ec403c81273e042221f878
+msgid "Markus NETELER (aka neteler)"
+msgstr ""
+
+#: ../../community/developer.txt:95
+# fcb415b1622f4500bb6566db0130ea22
+msgid "Marco NEGRETTI (aka nmarco)"
+msgstr ""
+
+#: ../../community/developer.txt:96
+# 2a9970de200a428bade2e049e43e540b
+msgid "René-Luc D'HONT (aka reluc)"
+msgstr ""
+
+#: ../../community/developer.txt:97
+# c50b6adb18e64f2d8af00b26423e5fe6
+msgid "Trevor CLARKE (aka tclarke)"
+msgstr ""
+

@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-wps.txt:4
+# 3e580b175df0493eb780eecee0a4b623
+msgid "ZOO.Format.WPS"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:6
+# 9a62bf14ff504fa9830db9aa2817d0b1
+msgid "Read/Write WPS."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:8
+# 50a17233a7c24d92b17c028504d824e7
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:10
+# 3e0ea4942c8b4c6386b64bd476ca3aa3
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:13
+# 9a6c3f88058f461f81307ec452667ed0
+msgid "Functions and Properties"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:19
+# adf2d06ec3a54ceab3475db2b48309b8
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:20
+# b4117de81a9e4125a5f4ddeed9ed7262
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:21
+# ea48fc0c987e405e9c11e911a3f93b87
+msgid ":ref:`schemaLocation <schemaLocation>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:22
+# 24663d11b4bf4394b09c5f47b1f8255e
+msgid "{String} Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:23
+# 7b430fa5ab7a430f9db3c04591198aa1
+msgid ":ref:`namespaces <namespaces>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:24
+# 119120a78cab41ddb33cef83a843d470
+msgid "{Object} Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:25
+# 7a67cde53153426ab6fc2bb6da076cc2
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:27
+# d5d9d5b8454f486fb5e7df5f5364efa1
+msgid ":ref:`parseExecuteResponse <parseExecuteResponse>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:29
+# 7118fe33a22043758c3d39f1ee03cfeb
+msgid ":ref:`parseData <parseData>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:30
+#: ../../api/zoo-format-wps.txt:81
+# 638d13a5555142b6a9c50d4f5b20b4eb
+# 158f15f44fb541e985d49cc4457bc466
+msgid "Object containing methods to analyse data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:31
+# 26b2d2f716b346399c8a0a729c6192a9
+msgid ":ref:`parseData.complexdata <parseData.complexdata>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:32
+#: ../../api/zoo-format-wps.txt:86
+# d79338be2f5446e6960c35db162c8b6d
+# 7f2781defdeb4cf485badad48004874f
+msgid "Given an Object representing the WPS complex data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:33
+# c092ea05f6e5441299dd54f3d2e31ffd
+msgid ":ref:`parseData.literaldata <parseData.literaldata>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:34
+# 7ed890ad346d48a480212c5c575bc1fc
+msgid "Given an Object representing the WPS literal data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:35
+# ff0360fbc23a412298bf532209c267c8
+msgid ":ref:`parseData.reference <parseData.reference>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:36
+#: ../../api/zoo-format-wps.txt:112
+# 9a7dd0710c14428ba780c244ceed2359
+# f0b58c3c595748c9bb2207c51927bcfc
+msgid "Given an Object representing the WPS reference response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:41
+# aa29eb9684f748cc96c8b789e0683ba0
+msgid "schemaLocation"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:41
+# 4608e528608f430581ab8c642b4ae48a
+msgid "``{String}`` Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:46
+# bb78799e288c412897f91130a3aaf78b
+msgid "namespaces"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:46
+# a33012f9de91436e9d97998589ebf7f4
+msgid "``{Object}`` Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:61
+# 4cf6b3c028844bc28d4daa56288a8771
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:55
+#: ../../api/zoo-format-wps.txt:70
+#: ../../api/zoo-format-wps.txt:88
+#: ../../api/zoo-format-wps.txt:101
+#: ../../api/zoo-format-wps.txt:114
+# 021540612b4e48c1918a7d40368eb7f4
+# 295884651cd745f1a808855ad390615b
+# ec2a14d535db4c0ca77f23de9e40775b
+# 5b16b4f343034affb9694c170cb46824
+# 7db86a204cb8484c9a119fe13de9927a
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:57
+# 87b8bbdedc0943e8a2fdd56fcd4b8895
+msgid "``data {String}`` A WPS xml document"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:59
+#: ../../api/zoo-format-wps.txt:74
+#: ../../api/zoo-format-wps.txt:92
+#: ../../api/zoo-format-wps.txt:105
+#: ../../api/zoo-format-wps.txt:118
+# 6e657f7a67a34539b981bc9e08307743
+# 1d326f8532484ca99927a1bf8286a602
+# 27a696d1bdb244a0ad0e3b0a2154aea0
+# 04f5359ae53a4dd6a0bd5a94612f6fa5
+# f67ef7f7828547c68bef45bacce97c50
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:61
+#: ../../api/zoo-format-wps.txt:76
+# 1b54de440648412bbcc491159ebd7d56
+# ac428a52bf39408eb8980966830ff290
+msgid "``{Object}`` Execute response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:76
+# f0d18f8bb2f64d56b5d0674180751b60
+msgid "parseExecuteResponse"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:72
+# 7ce586720aa64205a7fe3b966c8dec42
+msgid "``node {E4XElement}`` A WPS ExecuteResponse document"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:81
+# 5805104647cf46d08ae3ef3f11179173
+msgid "parseData"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:94
+# 71eb3c445c984bdcb19d91d7be0e8d72
+msgid "parseData.complexdata"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:90
+#: ../../api/zoo-format-wps.txt:103
+#: ../../api/zoo-format-wps.txt:116
+# 203f7d3548a64a8f80836ce65bea79e9
+# 9d34768974d642e6aec413593037488a
+# b91bf9f937cc40f1b0551c2afbe57678
+msgid "``node {E4XElement}`` A WPS node."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:94
+# 028acbd11edc4fc58694c4ace6d77db4
+msgid "``{Object}`` A WPS complex data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:107
+# 6fe0504f933b4b4fa89dacdc998a70d1
+msgid "parseData.literaldata"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:99
+# b0a7200250e640efa4b7ca4832e2140f
+msgid "Given an Object representing the WPS literal data response.\\"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:107
+# 45b3922587ec4a3a89589aec22ccf5d7
+msgid "``{Object}`` A WPS literal data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:119
+# 5b71a88712ab47909d511c478fea4191
+msgid "parseData.reference"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:120
+# 2e2bcd0d3ce5419496d931795aab6409
+msgid "``{Object}`` A WPS reference response."
+msgstr ""
+

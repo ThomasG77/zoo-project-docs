@@ -1,0 +1,181 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-wps.txt:4
+msgid "ZOO.Format.WPS"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:6
+msgid "Read/Write WPS."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:10
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:13
+msgid "Functions and Properties"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:19
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:20
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:21
+msgid ":ref:`schemaLocation <schemaLocation>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:22
+msgid "{String} Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:23
+msgid ":ref:`namespaces <namespaces>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:24
+msgid "{Object} Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:25
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:27
+msgid ":ref:`parseExecuteResponse <parseExecuteResponse>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:29
+msgid ":ref:`parseData <parseData>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:30 ../../api/zoo-format-wps.txt:81
+msgid "Object containing methods to analyse data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:31
+msgid ":ref:`parseData.complexdata <parseData.complexdata>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:32 ../../api/zoo-format-wps.txt:86
+msgid "Given an Object representing the WPS complex data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:33
+msgid ":ref:`parseData.literaldata <parseData.literaldata>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:34
+msgid "Given an Object representing the WPS literal data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:35
+msgid ":ref:`parseData.reference <parseData.reference>`"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:36 ../../api/zoo-format-wps.txt:112
+msgid "Given an Object representing the WPS reference response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:41
+msgid "schemaLocation"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:41
+msgid "``{String}`` Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:46
+msgid "namespaces"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:46
+msgid "``{Object}`` Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:61
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:55 ../../api/zoo-format-wps.txt:70
+#: ../../api/zoo-format-wps.txt:88 ../../api/zoo-format-wps.txt:101
+#: ../../api/zoo-format-wps.txt:114
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:57
+msgid "``data {String}`` A WPS xml document"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:59 ../../api/zoo-format-wps.txt:74
+#: ../../api/zoo-format-wps.txt:92 ../../api/zoo-format-wps.txt:105
+#: ../../api/zoo-format-wps.txt:118
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:61 ../../api/zoo-format-wps.txt:76
+msgid "``{Object}`` Execute response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:76
+msgid "parseExecuteResponse"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:72
+msgid "``node {E4XElement}`` A WPS ExecuteResponse document"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:81
+msgid "parseData"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:94
+msgid "parseData.complexdata"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:90 ../../api/zoo-format-wps.txt:103
+#: ../../api/zoo-format-wps.txt:116
+msgid "``node {E4XElement}`` A WPS node."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:94
+msgid "``{Object}`` A WPS complex data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:107
+msgid "parseData.literaldata"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:99
+msgid "Given an Object representing the WPS literal data response.\\"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:107
+msgid "``{Object}`` A WPS literal data response."
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:119
+msgid "parseData.reference"
+msgstr ""
+
+#: ../../api/zoo-format-wps.txt:120
+msgid "``{Object}`` A WPS reference response."
+msgstr ""

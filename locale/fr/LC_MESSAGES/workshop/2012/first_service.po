@@ -1,0 +1,331 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2012/first_service.txt:5
+msgid "Creating your first ZOO Service"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:12
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:14
+msgid ""
+"In this part, you will create and publish from a simple ZOO Service named "
+"``Hello`` which will simply return a hello message containing the input "
+"value provided. It will be usefull to present in deeper details general "
+"concept on how ZOO-Kernel works and handles request."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:19
+msgid "Service and publication process overview"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:21
+msgid ""
+"Before starting developing a ZOO Service, you should remember that in ZOO-"
+"Project, a Service is a couple made of:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:24
+msgid ""
+"a metadata file: a ZOO Service Configuration File (ZCFG) containing metadata"
+" informations about a Service (providing informations about default / "
+"supported inputs and outputs for a Service)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:27
+msgid ""
+"a Services Provider: it depends on the programming language used, but for "
+"Python it is a module and for JavaScript a script file."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:30
+msgid ""
+"To publish your Service, which means make your ZOO Kernel aware of its "
+"presence, you should copy a ZCFG file in the directory where "
+"``zoo_loader.cgi`` is located (in this workshop, ``/usr/lib/cgi-bin``)."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:33
+msgid ""
+"only the ZCFG file is required  for the Service to be considerate as "
+"available. So if you don't get the Service Provider, obviously your Execute "
+"request will fail as we will discuss later."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:37
+msgid ""
+"Before publication, you should store your ongoing work, so you'll start by "
+"creating a directory to store the files of your Services Provider:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:44
+msgid ""
+"Once both the ZCFG and the Python module are both ready, you can publish "
+"simply by copying the corresponding files in the same directory as the ZOO-"
+"Kernel."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:48
+msgid "Creating your first ZCFG file"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:50
+msgid ""
+"You will start by creating the ZCFG file for the ``Hello`` Service. Edit the"
+" ``/home/user/zoo-ws-2012/src/zoo-project/zoo-services/ws_sp/Hello.zcfg`` "
+"file and add the following content:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:88
+msgid ""
+"the name of the ZCFG file and the name between braket (here ``[Hello]``) "
+"should be the same and correspond to the function name you will define in "
+"your Services provider."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:92
+msgid ""
+"As you can see in the ZOO Service Configuration File presented above it is "
+"divided into three distinct sections:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:94
+msgid "Main Metadata information (from line 2 to 8)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:95
+msgid "List of Inputs metadata information (from 9 line to 20)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:96
+msgid "List of Outputs metadata information (from line 21 to 36)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:98
+msgid ""
+"You can get more informations about ZCFG from `the reference documentation "
+"<http://zoo-project.org/docs/services/zcfg-reference.html>`__."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:101
+msgid ""
+"If you copy the ``Hello.zcfg`` file in the same directory as your ZOO Kernel"
+" then you will be able to request for DescribeProcess using the ``Hello`` "
+"``Identifier``. The ``Hello`` service should also be listed from "
+"Capabilities document."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:110
+msgid "Test requests"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:112
+msgid ""
+"In this section you will tests each WPS requests : GetCapabilities, "
+"DescribeProcess and Execute. Note that only GetCapabilities and "
+"DescribeProcess should work at this step."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:117
+msgid "Test the GetCapabilities request"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:119
+msgid "If you run the ``GetCapabilities`` request:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:125
+msgid ""
+"Now, you should find your Hello Service in a ``Process`` node in "
+"``ProcessOfferings``:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:137
+msgid "Test the DescribeProcess request"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:139
+msgid ""
+"You can access the ``ProcessDescription`` of the ``Hello`` service using the"
+" following ``DescribeProcess`` request:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:146
+msgid "You should get the following response:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:180
+msgid "Test the Execute request"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:182
+msgid ""
+"Obviously, you cannot run your Service because the Python file was not "
+"published yet. If you try the following ``Execute`` request:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:189
+msgid ""
+"You should get an ExceptionReport similar to the one provided in the "
+"following, which is normal behavior:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:201
+msgid "Implementing the Python Service"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:204
+msgid "General Principles"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:206
+msgid ""
+"The most important thing you must know when implementing a new ZOO-Services "
+"using the Python language is that the function corresponding to your Service"
+" returns an integer value representing the status of execution "
+"(``SERVICE_FAILED`` [#f1]_ or ``SERVICE_SUCCEEDED`` [#f2]_) and takes three "
+"arguments (`Python dictionaries "
+"<http://docs.python.org/tutorial/datastructures.html#dictionaries>`__):"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:213
+msgid ""
+"``conf`` : the main environment configuration (corresponding to the main.cfg"
+" content)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:214
+msgid ""
+"``inputs`` : the requested / default inputs (used to access input values)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:215
+msgid ""
+"``outputs`` : the requested / default outputs (used to store computation "
+"result)"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:217
+msgid ""
+"when your service return ``SERVICE_FAILED`` you can set "
+"``conf[\"lenv\"][\"message\"]`` to add a personalized message in the "
+"ExceptionReport returned by the ZOO Kernel in such case."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:221
+msgid ""
+"You get in the following a sample ``conf`` value based on the ``main.cfg`` "
+"file you saw `before <using_zoo_from_osgeolivevm.html#zoo-kernel-"
+"configuration>`__."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:261
+msgid ""
+"In the following you get a sample outputs value passed to a Python or a "
+"JavaScript Service:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:274
+msgid ""
+"the ``inRequest`` value is set internally by the ZOO-Kernel and can be    "
+"used to determine from the Service if the key was provided in the request."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:277
+msgid "The Hello Service"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:279
+msgid ""
+"You can copy and paste the following into the ``/home/user/zoo-ws-2012/src"
+"/zoo-project/zoo-services/ws_sp/cgi-env/test_service.py`` file."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:289
+msgid ""
+"Once you finish editing the file, you should copy it in the ``/usr/lib/cgi-"
+"bin`` directory:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:297
+msgid "Interracting with your service using Execute requests"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:299
+msgid "Now, you can request for Execute using the following basic url:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:305
+msgid ""
+"You can request the WPS Server to return a XML WPS Response containing the "
+"result of your computation, requesting for ResponseDocument or you can "
+"access the data directly requesting for RawDataOutput."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:309
+msgid "Sample request using the RawDataOutput parameter:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:315
+msgid "Sample request using the default ResponseDocument parameter:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:321
+msgid ""
+"When you are using ResponseDocument there is specific attribut you can use "
+"to ask the ZOO Kernel to store the result: ``asReference``. You can use the "
+"following example:"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:328
+msgid ""
+"When computation take long time, the client should request setting both "
+"``storeExecuteResponse`` and ``status`` parameter to true. This will make "
+"the ZOO Kernel directly return a response containing a ``statusLocation`` "
+"attribut which can be used to access the status of an ongoing service or the"
+" result when the process ended."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:338
+msgid "Conclusion"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:340
+msgid ""
+"Even if this first service was really simple it was useful to illustrate how"
+" the ZOO-Kernel fill ``conf``, ``inputs`` and ``outputs`` parameter prior to"
+" load and run your function service, how to write a ZCFG file, how to "
+"publish a Services Provider by placing the ZCFG and Python files in the same"
+" directory as the ZOO-Kernel, then how to interract with your service using "
+"both ``GetCapabilities``, ``DescribeProcess`` and ``Execute`` requesr. We "
+"will see in the `next section <ogr_base_vect_ops.html>`__ how to write "
+"similar requests using the XML syntax."
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:350
+msgid "Footnotes"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:351
+msgid "``SERVICE_FAILED=4``"
+msgstr ""
+
+#: ../../workshop/2012/first_service.txt:352
+msgid "``SERVICE_SUCCEEDED=3``"
+msgstr ""

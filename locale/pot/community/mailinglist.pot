@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../community/mailinglist.txt:4
+# 12268ca7ea734765b6be6001555ed959
+msgid "Mailing Lists"
+msgstr ""
+
+#: ../../community/mailinglist.txt:7
+# ce33bfa041ea4a0986b8a26fd86aaee7
+msgid "ZOO-Discuss"
+msgstr ""
+
+#: ../../community/mailinglist.txt:9
+# 5201631743684a029cb0278403305f88
+msgid "The ``zoo-discuss`` list is your main source of support for the ZOO-Project."
+msgstr ""
+
+#: ../../community/mailinglist.txt:11
+# d545d08bae3f4412a3cb5504ef334fb0
+msgid "**Subscribing to zoo-discuss**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:13
+# a05ec4cd075541e791a6f746e5e72fa7
+msgid "To subscribe to the zoo-discuss listserv visit http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-discuss. You can later change your subscription information or leave the list at this website."
+msgstr ""
+
+#: ../../community/mailinglist.txt:17
+# 84fcdcf013cd409da7706108b1115e2c
+msgid "**Submitting Questions to zoo-discuss**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:19
+# 77b146671d6a40e08a563718547ce1ec
+msgid "To submit questions to the zoo-discuss listserv, first join the list by following the subscription procedure above. Then post questions to the list by sending an email message to zoo-discuss@lists.osgeo.org."
+msgstr ""
+
+#: ../../community/mailinglist.txt:23
+# 226eaa82dd8a4655810dd57e96f8a2f7
+msgid "**Searching the Archives**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:25
+# 202a81eebdf04439bf0222163ded514a
+msgid "All zoo-discuss archives are located in http://lists.osgeo.org/pipermail/zoo-discuss/."
+msgstr ""
+

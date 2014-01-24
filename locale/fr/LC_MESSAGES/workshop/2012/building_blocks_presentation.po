@@ -1,0 +1,122 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2012/building_blocks_presentation.txt:5
+msgid "Presenting building blocks - Using OGR based Web Services"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:12
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:14
+msgid ""
+"In this section, you will use basic ZOO-Services : ``BufferPy``, "
+"``IntersectionPy`` and ``DifferencePy`` which use OGR Python module. The "
+"intended goal of this section is to present and interact with your new "
+"building blocks before chaining them in the next section."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:18
+msgid ""
+"First of all, you should use the following link to access a user interface "
+"to interact with your service : `http://localhost/zoows-demo/spatialtools-"
+"py.html <http://localhost/zoows-demo/spatialtools-py.html>`__"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:22
+msgid "Services Provider and configuration files"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:24
+msgid ""
+"First you may verify if the ZOO-Services are available from your current "
+"setup. You can take a look at the ``Buffer.zcfg``, ``Intersection.zcfg`` and"
+" ``DifferencePy.zcfg`` to get details about parameters. As you can see from "
+"the ZCFG files, you will use ZOO-Services provided by the ``foss4g_ws`` "
+"Python service provider. So if you want to modify the Python code you will "
+"have to edit this file. You are invited to use similar requests as you seen "
+"in previous sections to learn about each service."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:33
+msgid "The Buffer Service"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:35
+msgid ""
+"First click on a street then once the street is displayed in blue, click the"
+" 'Buffer' button on top, you should get similar result as displayed in the "
+"following."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:42
+msgid ""
+"Since version ZOO-Project 1.2.0, you can run automatically some basic tests "
+"to make sure that you wrote a correct ZCFG file and your service is "
+"validating."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:45
+msgid ""
+"the current testing is really simple and should be adapted to each Services "
+"Provider, mainly to define input names."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:48
+msgid "You can use the following command:"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:56
+msgid ""
+"During or after the test run, you can take a look inside the ``tmp`` "
+"directory which contains both the XML requests send to the ZOO Kernel "
+"(``*1.xml``) and the responses it gave (``output*.xml``)."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:61
+msgid "The Intersection Service"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:63
+msgid ""
+"Using the same client interface as before, once you get a Buffer, you can "
+"then select a street intersecting the Buffer geometry to compute "
+"intersection by clicking on the Intersection button."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:73
+msgid "The Difference Service"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:75
+msgid ""
+"Using the same instructions as for Intersetion, you can get the following "
+"result."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:83
+msgid "Conclusion"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:85
+msgid ""
+"Now you know this three services, and you get a simple interface to interact"
+" with your MapServer WFS and your ZOO-Project WPS Servers, you are ready to "
+"use the Services in a different way by chaining them using the ZOO-API to "
+"build more complexe and powerfull services."
+msgstr ""

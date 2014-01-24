@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo.txt:4
+# c862eedfc7c8469e82523879cf1ba0b1
+msgid "ZOO"
+msgstr ""
+
+#: ../../api/zoo.txt:6
+# d6e9d449fe6848eda182cddd21819ce4
+msgid "The following constants and functions are available for the ZOO class:"
+msgstr ""
+
+#: ../../api/zoo.txt:9
+# f0359e2723574c0ebbd5f6773efba3de
+msgid "Constants"
+msgstr ""
+
+#: ../../api/zoo.txt:15
+#: ../../api/zoo.txt:35
+# ded45071666c4b68974ec168bb8c76c5
+# 17cddb9a54a64027a8fceec8cb20b054
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo.txt:16
+#: ../../api/zoo.txt:36
+# e6827733f12a4d0b9ff454f6d9943d73
+# ef48efc2ee9b4880b4b63839f9fa119e
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo.txt:17
+# 4362bbf75346412eb8dab39f3adbcc24
+msgid ":ref:`SERVICE_ACCEPTED <service_accepted>`"
+msgstr ""
+
+#: ../../api/zoo.txt:18
+#: ../../api/zoo.txt:20
+#: ../../api/zoo.txt:22
+#: ../../api/zoo.txt:24
+#: ../../api/zoo.txt:26
+# 25c1ac4224094d5fbc6e68afec437130
+# dd87eb19b341454bb414759fffe2a729
+# 788442cbef21458bad2333d036081c10
+# 67da33011df540639a5025a7d25150c2
+# 8e9fcfeb287c47cd85b4a07b6fd0d984
+msgid "{Integer} used for"
+msgstr ""
+
+#: ../../api/zoo.txt:19
+# c4858eda96b44d8e97e84bbee78e89d8
+msgid ":ref:`SERVICE_STARTED <service_started>`"
+msgstr ""
+
+#: ../../api/zoo.txt:21
+# d01a351e347245e6b655d0bc46f292ed
+msgid ":ref:`SERVICE_PAUSED <service_paused>`"
+msgstr ""
+
+#: ../../api/zoo.txt:23
+# 1bbe138161694037b3d23c59addbfa09
+msgid ":ref:`SERVICE_SUCCEEDED <service_succeeded>`"
+msgstr ""
+
+#: ../../api/zoo.txt:25
+# ff7b4c4e64b24255938a63dc525d5c7e
+msgid ":ref:`SERVICE_FAILED <service_failed>`"
+msgstr ""
+
+#: ../../api/zoo.txt:29
+# e6cdeb920edd452085e0e7afc96f1f6b
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo.txt:37
+# 790dcbac6ccc4c96af0d60a92c8db8a7
+msgid ":ref:`removeItem <removeItem>`"
+msgstr ""
+
+#: ../../api/zoo.txt:38
+# 9b9f02b7d7b349e4aec61a618edb290a
+msgid "Remove an object from an array."
+msgstr ""
+
+#: ../../api/zoo.txt:39
+# 1f276350aa4043bf94c8eb7b343a0cd2
+msgid ":ref:`indexOf <indexOf>`"
+msgstr ""
+
+#: ../../api/zoo.txt:41
+# dc13122d400d47fc83f7d09a08fe4526
+msgid ":ref:`extend <extend>`"
+msgstr ""
+
+#: ../../api/zoo.txt:42
+# 4cc75578800549cd9f4262acb8a4879e
+msgid "Copy all properties of a source object to a destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:43
+# b100a5cf55a5422eb34e5ba10d6b45cf
+msgid ":ref:`rad <rad>`"
+msgstr ""
+
+#: ../../api/zoo.txt:45
+# 006f44ad4e9c43e9aa12e29fac71e95d
+msgid ":ref:`distVincenty <distVincenty>`"
+msgstr ""
+
+#: ../../api/zoo.txt:46
+#: ../../api/zoo.txt:158
+# 76d7e7904b5d4f8681adf30a83b76c3e
+# 59764b07b4dc40b4b1e1a1a64be378ae
+msgid "Given two objects representing points with geographic coordinates, this calculates the distance between those points on the surface of an ellipsoid."
+msgstr ""
+
+#: ../../api/zoo.txt:49
+# f60cff51321843e49087484834ff2273
+msgid ":ref:`Class <Class>`"
+msgstr ""
+
+#: ../../api/zoo.txt:50
+# d01cea1567d1444e8c219aee8580abaa
+msgid "Method used to create ZOO classes."
+msgstr ""
+
+#: ../../api/zoo.txt:51
+# c942060bcebc44dd80c4c0799153b920
+msgid ":ref:`UpdateStatus <UpdateStatus>`"
+msgstr ""
+
+#: ../../api/zoo.txt:52
+#: ../../api/zoo.txt:182
+# 7ddaa68297eb4f68b2c6d0eb6c54de1e
+# f915802a6a794f59930112800944858e
+msgid "Method used to update the status of the process"
+msgstr ""
+
+#: ../../api/zoo.txt:54
+# d27020efdaa64740b753aa9f69a5cdbe
+msgid "**Constants**"
+msgstr ""
+
+#: ../../api/zoo.txt:59
+# 787667088f9041d1a0a78c31dca24022
+msgid "SERVICE_ACCEPTED"
+msgstr ""
+
+#: ../../api/zoo.txt:59
+#: ../../api/zoo.txt:64
+#: ../../api/zoo.txt:69
+#: ../../api/zoo.txt:74
+#: ../../api/zoo.txt:79
+# 18a1f8520c36444784a742b39596f93f
+# e739d2038e0f4aa3ab3a13a2ac0b585f
+# bb13de4cc87e4845950dc6982ab67f8d
+# 32d04b9af2aa447e83be64cef9835976
+# 6903445a16ae45c8b596dce68f4ebd80
+msgid "``{Integer}`` used for"
+msgstr ""
+
+#: ../../api/zoo.txt:64
+# 9fdb83b1bbc64f988377e75cb3dbf944
+msgid "SERVICE_STARTED"
+msgstr ""
+
+#: ../../api/zoo.txt:69
+# bcb8f1f34bed4d89b8beef0ffc12bb05
+msgid "SERVICE_PAUSED"
+msgstr ""
+
+#: ../../api/zoo.txt:74
+# 70625ab002f140f7bf5b0e6e76b8e085
+msgid "SERVICE_SUCCEEDED"
+msgstr ""
+
+#: ../../api/zoo.txt:79
+# f243e1b08aa345808fd68cc92948c517
+msgid "SERVICE_FAILED"
+msgstr ""
+
+#: ../../api/zoo.txt:81
+# 8f7a8bbafea64412a795c773879306a3
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo.txt:99
+# 9c34e6faf2a44ff491932e2195c36d76
+msgid "removeItem"
+msgstr ""
+
+#: ../../api/zoo.txt:90
+# 6d2c0b0e305f451bad3d2f0fe5911e3e
+msgid "Remove an object from an array.  Iterates through the array to find the item, then removes it."
+msgstr ""
+
+#: ../../api/zoo.txt:92
+#: ../../api/zoo.txt:108
+#: ../../api/zoo.txt:127
+#: ../../api/zoo.txt:143
+#: ../../api/zoo.txt:184
+# 494c7ac9825a4557878a5d1dc29c8d2b
+# 8a91dcd34eb64c16b3670f6d80f21949
+# 6e179d67b1ea41f6b8b21663251a7ed5
+# 1a42a7088a1a483db4410489ea3adffe
+# 383098f3391f41958f1f389ea88d60fd
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo.txt:97
+#: ../../api/zoo.txt:113
+#: ../../api/zoo.txt:132
+#: ../../api/zoo.txt:147
+# f4aeb56ff0404ad9a0d236c14106dd7d
+# 452b095f9e8a4d57b6e3bcde59b1464b
+# 369daa3e91044e7f8c894f83646ed256
+# 775a4eff9d734f28bf1a9e2e6b2d6fe4
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo.txt:99
+# 5f70a81f306e4360a3adf0b343e35490
+msgid "``{Array}`` A reference to the array"
+msgstr ""
+
+#: ../../api/zoo.txt:115
+# 4193a4fae1484a81b3cff1de0656c72a
+msgid "indexOf"
+msgstr ""
+
+#: ../../api/zoo.txt:115
+# 0a46fd9ba0f240dda95032cfad315864
+msgid "``{Integer}`` The index at, which the first object was found in the array.  If not found, returns -1."
+msgstr ""
+
+#: ../../api/zoo.txt:134
+# 914a43a54c5d4d45b88799e5ad95a358
+msgid "extend"
+msgstr ""
+
+#: ../../api/zoo.txt:124
+# 341d6b69e2c84522bcfc1e665133a3ca
+msgid "Copy all properties of a source object to a destination object.  Modifies the passed in destination object. Any properties on the source object that are set to undefined will not be (re)set on the destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:134
+# ff3c039ae5f24d9b91e967e0ba518488
+msgid "``{Object}`` The destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:149
+# 7a12568775fd4eeb8a41dc0d927fa769
+msgid "rad"
+msgstr ""
+
+#: ../../api/zoo.txt:149
+# 878fd04342fa4251ad5d320a10232cff
+msgid "``{Float}``"
+msgstr ""
+
+#: ../../api/zoo.txt:164
+# f4bc7f5a0ad343929d9a364a11cc79f2
+msgid "distVincenty"
+msgstr ""
+
+#: ../../api/zoo.txt:161
+# 74e5461a13d34df6b749f2d26a01e4d3
+msgid "*Parameters:*"
+msgstr ""
+
+#: ../../api/zoo.txt:173
+# db515765f01a4853a85861f1ee44053b
+msgid "Class"
+msgstr ""
+
+#: ../../api/zoo.txt:173
+# 1de3374775564091992ce2c3005f7553
+msgid "Method used to create ZOO classes.  Includes support for multiple inheritance."
+msgstr ""
+
+#: ../../api/zoo.txt:187
+# c349db21375e45c1809548df0eb8063f
+msgid "UpdateStatus"
+msgstr ""
+

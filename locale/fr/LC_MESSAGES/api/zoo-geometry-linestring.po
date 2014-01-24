@@ -1,0 +1,242 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-linestring.txt:4
+#: ../../api/zoo-geometry-linestring.txt:45
+msgid "ZOO.Geometry.LineString"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:6
+msgid ""
+"A LineString is a Curve which, once two points have been added to it, can "
+"never be less than two points long."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:10
+msgid ":ref:`ZOO.Geometry.Curve <api-zoo-geometry-curve>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:13
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:19
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:20
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:21
+msgid ":ref:`ZOO.Geometry.LineString <ZOO.Geometry.LineString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:22
+#: ../../api/zoo-geometry-linestring.txt:41
+msgid "Create a new LineString geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:23
+msgid ":ref:`removeComponent <removeComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:24
+msgid ""
+"Only allows removal of a point if there are three or more points in the "
+"linestring."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:25
+msgid ":ref:`intersects <intersects>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:26
+msgid "Test for instersection between two geometries."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:27
+msgid ":ref:`getSortedSegments <getSortedSegments>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:28
+msgid "{Array} An array of segment objects."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:29
+msgid ":ref:`splitWithSegment <splitWithSegment>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:30
+#: ../../api/zoo-geometry-linestring.txt:101
+msgid "Split this geometry with the given segment."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:31
+msgid ":ref:`split <split>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:32
+#: ../../api/zoo-geometry-linestring.txt:124
+msgid "Use this geometry (the source) to attempt to split a target geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:33
+msgid ":ref:`splitWith <splitWith>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:34
+#: ../../api/zoo-geometry-linestring.txt:148
+msgid "Split this geometry (the target) with the given geometry (the source)."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:35
+msgid ":ref:`getVertices <getVertices>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:36
+#: ../../api/zoo-geometry-linestring.txt:172
+msgid "Return a list of all points in this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:43
+#: ../../api/zoo-geometry-linestring.txt:57
+#: ../../api/zoo-geometry-linestring.txt:73
+#: ../../api/zoo-geometry-linestring.txt:103
+#: ../../api/zoo-geometry-linestring.txt:126
+#: ../../api/zoo-geometry-linestring.txt:150
+#: ../../api/zoo-geometry-linestring.txt:174
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:45
+msgid ""
+"``points`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)} An "
+"array of points used to generate the linestring"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:59
+msgid "removeComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:54
+msgid ""
+"Only allows removal of a point if there are three or more points in the "
+"linestring. (otherwise the result would be just a single point)"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:59
+msgid ""
+"``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The point to "
+"be removed"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:79
+msgid "intersects"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:68
+msgid ""
+"Test for instersection between two geometries.  This is a cheapo "
+"implementation of the Bently-Ottmann algorigithm.  It doesn't really keep "
+"track of a sweep line data structure. It is closer to the brute force "
+"method, except that segments are sorted and potential intersections are only"
+" calculated when bounding boxes intersect."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:75
+msgid "``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:77
+#: ../../api/zoo-geometry-linestring.txt:88
+#: ../../api/zoo-geometry-linestring.txt:113
+#: ../../api/zoo-geometry-linestring.txt:137
+#: ../../api/zoo-geometry-linestring.txt:161
+#: ../../api/zoo-geometry-linestring.txt:178
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:79
+msgid "``{Boolean}`` The input geometry intersects this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:92
+msgid "getSortedSegments"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:90
+msgid ""
+"``{Array}`` An array of segment objects.  Segment objects have properties "
+"x1, y1, x2, and y2. The start point is represented by x1 and y1.  The end "
+"point is represented by x2 and y2. Start and end are ordered so that x1 < "
+"x2."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:115
+msgid "splitWithSegment"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:108
+#: ../../api/zoo-geometry-linestring.txt:131
+#: ../../api/zoo-geometry-linestring.txt:155
+msgid "*Valid options*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:115
+msgid ""
+"``{Object}`` An object with lines and points properties.  If the given "
+"segment intersects this linestring, the lines array will reference "
+"geometries that result from the split.  The points array will contain all "
+"intersection points.  Intersection points are sorted along the segment (in "
+"order from x1,y1 to x2,y2)."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:139
+msgid "split"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:139
+#: ../../api/zoo-geometry-linestring.txt:163
+msgid ""
+"``{Array}`` A list of geometries (of this same type as the target) that "
+"result from splitting the target with the source geometry.  The source and "
+"target geometry will remain unmodified.  If no split results, null will be "
+"returned.  If mutual is true and a split results, return will be an array of"
+" two arrays - the first will be all geometries that result from splitting "
+"the source geometry and the second will be all geometries that result from "
+"splitting the target geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:163
+msgid "splitWith"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:179
+msgid "getVertices"
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:176
+msgid ""
+"``nodes {Boolean}`` For lines, only return vertices that are endpoints.  If "
+"false, for lines, only vertices that are not endpoints will be returned.  If"
+" not provided, all vertices will be returned."
+msgstr ""
+
+#: ../../api/zoo-geometry-linestring.txt:180
+msgid "``{Array}`` A list of all vertices in the geometry."
+msgstr ""

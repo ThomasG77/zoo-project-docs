@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/examples.txt:4
+# 13d53c23d53544f8b2f475eaf2a7c992
+msgid "Service Examples"
+msgstr ""
+
+#: ../../services/examples.txt:6
+# aeb51b1d30a249359df3eabfce2666ce
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../services/examples.txt:7
+# e195a55385794db8a326480e6c76026a
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../services/examples.txt:9
+# 12266b078b9142419c68817266dd1d9e
+msgid "ZOO Services are quite easy to create once you have installed the ZOO Kernel and have chosen code (in the language of your choice) to turn into a ZOO service. Here are some HelloWorlds with links to their corresponding ``.zcfg`` files."
+msgstr ""
+
+#: ../../services/examples.txt:0
+# 30fd7a3cf4744650a2d50ffdf90cca86
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../services/examples.txt:18
+# 6a0b46e489f6490fbf22188e5d01cc2c
+msgid "GDAL ZOO Service"
+msgstr ""
+
+#: ../../services/examples.txt:20
+# 863fb8ab644a4662bd0ed99c5a80bfb4
+msgid "The GDAL ZOO Service is based on  GDAL source code and copyright. This ZOO Service aims to provide some basic raster processing operations to your ZOO Kernel installation. Learn more and read documentation on the official `GDAL website <http://www.gdal.org/>`__."
+msgstr ""
+
+#: ../../services/examples.txt:25
+#: ../../services/examples.txt:43
+# 91f98fa29358416f914dae2019b34eee
+# 9f359516af83476180c34430be04ccbb
+msgid "Implemented functions"
+msgstr ""
+
+#: ../../services/examples.txt:29
+# 0d351a26922f43e3b8bae9fb4bc23395
+msgid "Gdal_Grid"
+msgstr ""
+
+#: ../../services/examples.txt:28
+# 8076e46cf18a45d0acf78d9abb29f04d
+msgid "creates regular grid from the scattered data"
+msgstr ""
+
+#: ../../services/examples.txt:33
+# 8f5bd23a91a54a76875441126228ac5d
+msgid "Gdal_Translate"
+msgstr ""
+
+#: ../../services/examples.txt:32
+# 8299b696e3324508a770fb0d75f854f3
+msgid "converts raster data between different formats"
+msgstr ""
+
+#: ../../services/examples.txt:36
+# f6fab7283cce4ef3857840f0ecb2ac09
+msgid "OGR ZOO Service"
+msgstr ""
+
+#: ../../services/examples.txt:38
+# 9d0b0f01fcec4c81b7fc773fa89cfd14
+msgid "The OGR ZOO Service is based on  OGR source code and copyright. This ZOO Service aims to provide some basic vector spatial operations to your ZOO Kernel installation. Learn more and read documentation on the official `OGR website <http://www.gdal.org/ogr/index.html>`__."
+msgstr ""
+
+#: ../../services/examples.txt:45
+# df3539cd625a404bb35f380b4ade333d
+msgid "Base_Vect_Ops"
+msgstr ""
+

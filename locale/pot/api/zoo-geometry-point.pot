@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-point.txt:4
+#: ../../api/zoo-geometry-point.txt:83
+# 5ab83860d7444680841b8ac1ee59c6ef
+# b821c35799144ece872f46cd071f5c0b
+msgid "ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:6
+# 921187bdbf644b779ec066703d2c0792
+msgid "Point geometry class."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:8
+# 7220ceb9646c49b3b6d9dc6a6d78b44c
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:10
+# 6afa36ec7fa74542a30933713e0feb2a
+msgid ":ref:`ZOO.Geometry <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:13
+# 7a53a6b6c6884a6f9a7035171e00bece
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:19
+#: ../../api/zoo-geometry-point.txt:33
+# 25dc8fb7fb6e44ae9cb7d5daddd2e08f
+# bdea56a269da46d4997d65fafa15081a
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:20
+#: ../../api/zoo-geometry-point.txt:34
+# 0450917afa4242dabbc86aedcb9e7837
+# 11785c7ba22f4fc8a3588e0ccf1ba20b
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:21
+# dc9648bb8ec447c4924d709f71eda82f
+msgid ":ref:`x <x>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:22
+#: ../../api/zoo-geometry-point.txt:24
+# 36cd4031a5154e8296ecee75f0f00c77
+# acca570ec0be400b853ba6444df1f384
+msgid "{float}"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:23
+# 9a705596cbc74659a96fc047aa0948e7
+msgid ":ref:`y <y>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:27
+# b4dc9ed51c734000921b9542e5e9b0d1
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:35
+# 011a31dcbe4e4a71a85f90a49a760927
+msgid ":ref:`ZOO.Geometry.Point <ZOO.Geometry.Point>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:36
+#: ../../api/zoo-geometry-point.txt:78
+# 27f83bf319424601a08d9026c8c10617
+# 5d1356f955e9486d892b42496dd0ec9a
+msgid "Construct a point geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:37
+# e182b1d783034e8b9924de3531eb0efd
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:38
+# a6847c54122d479f951ac881d1b9680d
+msgid "{ZOO.Geometry.Point} An exact clone of this ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:39
+# 4fbddb5b410f44019860e977eaf410dc
+msgid ":ref:`calculateBounds <calculateBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:40
+#: ../../api/zoo-geometry-point.txt:103
+# b8901a6f602a4b84b824d0c546142f8a
+# 111431133d3d4ad7ba78187a3430dba0
+msgid "Create a new Bounds based on the x/y"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:41
+# 4856431bf72342e7bf3f1d102fedc174
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:42
+# 04656a13ab9f45b6b935eb014bd5bac9
+msgid "Determine whether another geometry is equivalent to this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:43
+# 4f2cb8c2aac14f7a8ad72b8fd2f70e95
+msgid ":ref:`toShortString <toShortString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:44
+# 7113af0763a144768eea6cc66971ec07
+msgid "{String} Shortened String representation of Point object."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:45
+# f3cf13a5073841c181fd0237527a351f
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:46
+# 43d49be83c5a49f49dc4fe0ad8a25978
+msgid "Moves a geometry by the given displacement along positive x and y axes."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:47
+# efb83e6c957146a1a1ee5d6e2566c09d
+msgid ":ref:`rotate <rotate>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:48
+#: ../../api/zoo-geometry-point.txt:156
+# 95b87a33f1244ed388339c0d02142354
+# c58921f21a344771b3aa0d26c6afa362
+msgid "Rotate a point around another."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:49
+# 7239024c7967405ba47f26e4231f8ae6
+msgid ":ref:`getCentroid <getCentroid>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:50
+# c82ce31ef3084be0bcbcc7f6213b5bb8
+msgid "{ZOO.Geometry.Point} The centroid of the collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:51
+# 068a87118f66405eafd48fbd5c442850
+msgid ":ref:`resize <resize>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:52
+# 7da72c321c024b008015107f7ae5839b
+msgid "Resize a point relative to some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:53
+# 421064d6bdbc4f529a546d09699aea45
+msgid ":ref:`intersects <intersects>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:54
+#: ../../api/zoo-geometry-point.txt:202
+# bbc9fdb2d6084b69acbf1a32452eec7b
+# da065400eb994b7892fd93a9a18c751b
+msgid "Determine if the input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:55
+# 22054805bc4d4f3396a5761cd5c1ddae
+msgid ":ref:`transform <transform>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:56
+#: ../../api/zoo-geometry-point.txt:219
+# 3e52daba34b845319578cfbe0de1f46e
+# e0f16d771e69422c96da959ec4825c26
+msgid "Translate the x,y properties of the point from source to dest."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:57
+# 0c694413d3c543a69dda4341e8bde4bc
+msgid ":ref:`getVertices <getVertices>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:58
+#: ../../api/zoo-geometry-point.txt:237
+# 587c6a98357b4ef3811b1b680a3215b2
+# 3cfaf356843645f5a58ec77ee44dcbbf
+msgid "Return a list of all points in this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:61
+# 2f47a3c39c2f40f2afe373bb6f03c29c
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:66
+# 414d3626046248929fc68ef3b1016165
+msgid "x"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:66
+#: ../../api/zoo-geometry-point.txt:71
+# 77e86ad9cdbe43cbaf074b1c6d2f0466
+# 82a89830768848019458a217fbd286af
+msgid "``{float}``"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:71
+# 92880c195ea747f9b4a67fe7b773bf40
+msgid "y"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:73
+# 11acd0df949f4ce798b65d19899dd0c9
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:80
+#: ../../api/zoo-geometry-point.txt:115
+#: ../../api/zoo-geometry-point.txt:144
+#: ../../api/zoo-geometry-point.txt:158
+#: ../../api/zoo-geometry-point.txt:185
+#: ../../api/zoo-geometry-point.txt:204
+#: ../../api/zoo-geometry-point.txt:221
+#: ../../api/zoo-geometry-point.txt:239
+# 4a3063a654684f7eac108d76133252c6
+# 05d113aa5e194d3ea1140cdc87f7a5ab
+# 04323fe7864e4f07ac7e466a8b7fda66
+# bb825cef493a4c59894cc16df88d2aec
+# cb8d7e6a1b574077b574359b35350588
+# d6fd470907874baf88bdeebca8c39794
+# decc469d024b4576aa782abb4d095dec
+# 147dfa12b86546b08b8cbb9eb381af64
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:94
+# f742631ed8b5486db8e0a1f818629dea
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:92
+#: ../../api/zoo-geometry-point.txt:119
+#: ../../api/zoo-geometry-point.txt:130
+#: ../../api/zoo-geometry-point.txt:170
+#: ../../api/zoo-geometry-point.txt:191
+#: ../../api/zoo-geometry-point.txt:208
+#: ../../api/zoo-geometry-point.txt:226
+#: ../../api/zoo-geometry-point.txt:244
+# cc59024237a9408c8b5b86d09e474567
+# 5433f6f13a654b60b7a89bb22bfee3ee
+# 68734fbeaec7463fbb38f2105c8c9f5e
+# 8ac40bd2c3eb4692b6bba86f273b4aa4
+# b110d7bd3c044a0e8007fee06d923fba
+# 3a246158b0e7495c868174eb97d71a3a
+# 9d351bd3cf3140f4a3332dfcc90efad2
+# ed6c81221324400297df1300a451f969
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:94
+# cce21b7c32f4464ab7fd6a2f10d32a35
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` An exact clone of this ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:103
+# 919dcee4ba9e475fb2cfa84c70c8388a
+msgid "calculateBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:121
+# 390d0a7182134af4bfa821e2011a0e5e
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:112
+# 09c6f16a434e42b0a8f17e985324862c
+msgid "Determine whether another geometry is equivalent to this one.  Geometries are considered equivalent if all components have the same coordinates."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:117
+# 4b4f248bc02f441fa15b0f7f382896bc
+msgid "``geom`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The geometry to test."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:121
+# 6869ed2d1eff4012b50697d21f7c6831
+msgid "``{Boolean}`` The supplied geometry is equivalent to this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:132
+# 5938419070f8462c96e9bf790264cfd9
+msgid "toShortString"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:132
+# cb56a90a6d4249838d272b2e7a6b0f3a
+msgid "``{String}`` Shortened String representation of Point object.  (ex.  <i>\"5, 42\"</i>)"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:147
+# 17963c709ed5497ebd0b0529ee2722f3
+msgid "move"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:141
+# a7d1be492bc0465f9f0e9a5cddd5d229
+msgid "Moves a geometry by the given displacement along positive x and y axes.  This modifies the position of the geometry and clears the cached bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:161
+# 910bb3a8feee4b069174a56ea991192f
+msgid "rotate"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:172
+# 79a74dd57aed4ded8fc78df487759936
+msgid "getCentroid"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:172
+# 992d7bc53fd24548b43a5caf2071da29
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The centroid of the collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:193
+# 9b8803e8993942c5afb3a88de25c7ba6
+msgid "resize"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:181
+# 594ec0fc5e9345adae0dfb3e21c51c7c
+msgid "Resize a point relative to some origin.  For points, this has the effect of scaling a vector (from the origin to the point).  This method is more useful on geometry collection subclasses."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:193
+# 2c771671f39c47818ef2ccc910e86080
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:210
+# 48d10959bb3f489f9650b790a1f2afd9
+msgid "intersects"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:206
+# 74b1c5a0a6984ed180537ea59d3a55d1
+msgid "``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` Any type of geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:210
+# 425a33e27baf42b1a03788ec18f22bb8
+msgid "``{Boolean}`` The input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:228
+# 9ba806255211483b837e34c606238e91
+msgid "transform"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:228
+# 1996b0fd8d104e1eb3d1e0459e1b190c
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:245
+# 8d4b73ed80344ec5ac600f5dcb12e16e
+msgid "getVertices"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:241
+# dcb844639bd14cc2b845c1c321ce01eb
+msgid "``nodes {Boolean}`` For lines, only return vertices that are endpoints.  If false, for lines, only vertices that are not endpoints will be returned.  If not provided, all vertices will be returned."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:246
+# 55208a242ac341f0b52ff5c812cc236a
+msgid "``{Array}`` A list of all vertices in the geometry."
+msgstr ""
+

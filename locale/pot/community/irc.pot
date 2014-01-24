@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../community/irc.txt:4
+# 5e66869c47e34be4811b68142d3447b4
+msgid "IRC Chat"
+msgstr ""
+
+#: ../../community/irc.txt:6
+# 03dedd74e1724954b4ef80fb9e1d95ae
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
+msgstr ""
+
+#: ../../community/irc.txt:7
+# 1f58928a1ec047bc946c85376ea810ed
+msgid "$Date: 2013-03-28 11:00:07 +0100 (Thu, 28 Mar 2013) $"
+msgstr ""
+
+#: ../../community/irc.txt:9
+# 218c39d3183a4951b1cb5210be8577a2
+msgid "Some of the development of the ZOO-Project is coordinated through IRC. This page describes how you log on to chat, ask questions, and hack around with the developers."
+msgstr ""
+
+#: ../../community/irc.txt:14
+# 6397a45845b34471b50a5ce7a962036f
+msgid "Server and Channel Information"
+msgstr ""
+
+#: ../../community/irc.txt:22
+# 4444106df16f48ed9ef9530f7cd42bc7
+msgid "Why IRC?"
+msgstr ""
+
+#: ../../community/irc.txt:24
+# d596d71673d445678194595c7282053c
+msgid "IRC is a primary medium where Open Source GIS hackers congregate, collaborate, and hack. It makes it easy to communicate things like compilation issues, where immediate, iterative feedback allows folks to make a lot of progress. Something that might take days of heavily-quoted emails through a mailinglist might only take fifteen minutes on IRC."
+msgstr ""
+
+#: ../../community/irc.txt:30
+# 7a0a88fc6bb3401d826636935bcc7c39
+msgid "IRC is a great way to coordinate on-line meetings. The ZOO PSC conducts their monthly meetings through IRC."
+msgstr ""
+
+#: ../../community/irc.txt:34
+# c086b3dde1c340b69ecc99582ad4a44a
+msgid "How do I join?"
+msgstr ""
+
+#: ../../community/irc.txt:36
+# b402891a2cbb4c28878c3e229308b059
+msgid "`Chatzilla <http://chatzilla.hacksrus.com/>`__ is probably the easiest way to get going. Chatzilla works with Mozilla or Firefox, and once you have it installed, you can log on to the channel by pointing your browser at::"
+msgstr ""
+
+#: ../../community/irc.txt:43
+# 8dbce5a39d904ae9a3f2b6b497eeab9a
+msgid "There are many other IRC clients available. `This page <http://tikiwiki.org/ConnectingToIrc>`__ provides a good listing for many different platforms."
+msgstr ""
+
+#: ../../community/irc.txt:47
+# 7dbcf206ffa64d32b1430f79c4a33eb0
+msgid "You can also connect to IRC directly in your Web browser without a client:"
+msgstr ""
+
+#: ../../community/irc.txt:49
+# 6b4e967dfc87415b80a619fbdf1b3505
+msgid "goto http://webchat.freenode.net/"
+msgstr ""
+
+#: ../../community/irc.txt:50
+# 97018dd1c1d24070a7b2c2545079f257
+msgid "enter a nickname (usually your first initial plus your last name)"
+msgstr ""
+
+#: ../../community/irc.txt:51
+# bdfaaee5dd914a3ba9c0ab58928829f3
+msgid "in \"Channels\" enter: zoo-project"
+msgstr ""
+
+#: ../../community/irc.txt:52
+# dffc7c93df3b461cae67994401ca72b1
+msgid "Connect!"
+msgstr ""
+
+#: ../../community/irc.txt:55
+# 61c28a680d3143ed8ab52fc271487abe
+msgid "IRC logs"
+msgstr ""
+
+#: ../../community/irc.txt:57
+# 63d67878ce9b40109ce77bb7db67e2a1
+msgid "It is possible to see the logs (history) of ZOO-Project IRC channel `here <http://svn.zoo-project.org/irc/>`_"
+msgstr ""
+

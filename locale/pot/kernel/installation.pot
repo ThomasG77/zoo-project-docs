@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../kernel/installation.txt:4
+# 277f8cecec2e4178b45e4eedfe55c4eb
+msgid "Installation"
+msgstr ""
+
+#: ../../kernel/installation.txt:6
+# 36799bea6c34407e89e02f1fb57df195
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../kernel/installation.txt:7
+# d197d63bedc240db88eb2d11ded6638d
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../kernel/installation.txt:9
+# 6a8af48f84dc415f872cddf325ef747c
+msgid "This page provides documentation on how to compile then install the ZOO Kernel on Unix, Windows, and Mac OS X platforms."
+msgstr ""
+

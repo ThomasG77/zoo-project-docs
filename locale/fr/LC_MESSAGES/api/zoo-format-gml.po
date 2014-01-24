@@ -1,0 +1,708 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-gml.txt:4 ../../api/zoo-format-gml.txt:132
+msgid "ZOO.Format.GML"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:6
+msgid "Read/Write GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:10
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:13
+msgid "Properties and Functions"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:19
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:20
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:21
+msgid ":ref:`schemaLocation <schemaLocation>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:22
+msgid "{String} Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:23
+msgid ":ref:`namespaces <namespaces>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:24
+msgid "{Object} Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:25
+msgid ":ref:`defaultPrefix <defaultPrefix>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:27
+msgid ":ref:`collectionName <collectionName>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:28
+msgid "{String} Name of featureCollection element."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:29
+msgid ":ref:`featureName <featureName>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:30
+msgid "{String} Element name for features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:31
+msgid ":ref:`geometryName <geometryName>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:32
+msgid "{String} Name of geometry element."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:33
+msgid ":ref:`xy <xy>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:34
+msgid ""
+"{Boolean} Order of the GML coordinate true:(x,y) or false:(y,x) Changing is "
+"not recommended, a new Format should be instantiated."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:35
+msgid ":ref:`extractAttributes <extractAttributes>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:36
+msgid "{Boolean} Could we extract attributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:37
+msgid ":ref:`ZOO.Format.GML <ZOO.Format.GML>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:38 ../../api/zoo-format-gml.txt:128
+msgid "Create a new parser for GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:39
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:40 ../../api/zoo-format-gml.txt:141
+msgid "Read data from a string, and return a list of features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:41
+msgid ":ref:`parseFeature <parseFeature>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:42
+msgid "This function is the core of the GML parsing code in ZOO."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:43
+msgid ":ref:`parseGeometry <parseGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:44 ../../api/zoo-format-gml.txt:173
+msgid ""
+"Properties of this object are the functions that parse geometries based on "
+"their type."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:45
+msgid ":ref:`parseGeometry.point <parseGeometry.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:46 ../../api/zoo-format-gml.txt:178
+msgid ""
+"Given a GML node representing a point geometry, create a ZOO point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:47
+msgid ":ref:`parseGeometry.multipoint <parseGeometry.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:48
+msgid ""
+"Given a GML node representing a point geometry, create a ZOO multipoint "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:49
+msgid ":ref:`parseGeometry.linestring <parseGeometry.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:50 ../../api/zoo-format-gml.txt:204
+msgid ""
+"Given a GML node representing a linestring geometry, create a ZOO linestring"
+" geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:51
+msgid ":ref:`parseGeometry.polygon <parseGeometry.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:52 ../../api/zoo-format-gml.txt:230
+msgid ""
+"Given a GML node representing a polygon geometry, create a ZOO polygon "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:53
+msgid ":ref:`parseGeometry.multigeometry <parseGeometry.multigeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:54
+msgid ""
+"Given a GML node representing a multigeometry, create a ZOO geometry "
+"collection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:55
+msgid ":ref:`parseAttributes <parseAttributes>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:57
+msgid ":ref:`parseExtendedData <parseExtendedData>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:58
+msgid "Parse ExtendedData from GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:59
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:60
+msgid "Accept Feature Collection, and return a string."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:61
+msgid ":ref:`createFeature <createFeature>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:62 ../../api/zoo-format-gml.txt:305
+msgid "Accept an ZOO.Feature, and build a GML node for it."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:63
+msgid ":ref:`buildGeometryNode <buildGeometryNode>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:64
+msgid "Builds and returns a GML geometry node with the given geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:65
+msgid ":ref:`buildGeometry <buildGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:66 ../../api/zoo-format-gml.txt:333
+msgid ""
+"Object containing methods to do the actual geometry node building based on "
+"geometry type."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:67
+msgid ":ref:`buildGeometry.point <buildGeometry.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:68 ../../api/zoo-format-gml.txt:338
+msgid "Given a ZOO point geometry, create a GML point."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:69
+msgid ":ref:`buildGeometry.multipoint <buildGeometry.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:70
+msgid "Given a ZOO multipoint geometry, create a GML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:71
+msgid ":ref:`buildGeometry.linestring <buildGeometry.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:72 ../../api/zoo-format-gml.txt:364
+msgid "Given a ZOO linestring geometry, create a GML linestring."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:73
+msgid ":ref:`buildGeometry.multilinestring <buildGeometry.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:74
+msgid "Given a ZOO multilinestring geometry, create a GML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:75
+msgid ":ref:`buildGeometry.linearring <buildGeometry.linearring>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:76 ../../api/zoo-format-gml.txt:390
+msgid "Given a ZOO linearring geometry, create a GML linearring."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:77
+msgid ":ref:`buildGeometry.polygon <buildGeometry.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:78
+msgid "Given a ZOO polygon geometry, create a GML polygon."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:79
+msgid ":ref:`buildGeometry.multipolygon <buildGeometry.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:80
+msgid "Given a ZOO multipolygon geometry, create a GML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:81
+msgid ":ref:`buildGeometry.collection <buildGeometry.collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:82
+msgid "Given a ZOO geometry collection, create a GML MultiGeometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:83
+msgid ":ref:`buildCoordinatesNode <buildCoordinatesNode>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:84 ../../api/zoo-format-gml.txt:433
+msgid "builds the coordinates XmlNode"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:89
+msgid "schemaLocation"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:89
+msgid "``{String}`` Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:94
+msgid "namespaces"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:94
+msgid "``{Object}`` Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:98
+msgid "defaultPrefix"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:103
+msgid "collectionName"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:103
+msgid "``{String}`` Name of featureCollection element."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:108
+msgid "featureName"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:108
+msgid "``{String}`` Element name for features. Default is \"sql_statement\"."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:113
+msgid "geometryName"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:113
+msgid "``{String}`` Name of geometry element. Defaults to \"geometryProperty\"."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:118
+msgid "xy"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:118
+msgid ""
+"``{Boolean}`` Order of the GML coordinate true:(x,y) or false:(y,x) Changing"
+" is not recommended, a new Format should be instantiated."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:123
+msgid "extractAttributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:123
+msgid "``{Boolean}`` Could we extract attributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:130 ../../api/zoo-format-gml.txt:143
+#: ../../api/zoo-format-gml.txt:162 ../../api/zoo-format-gml.txt:180
+#: ../../api/zoo-format-gml.txt:193 ../../api/zoo-format-gml.txt:206
+#: ../../api/zoo-format-gml.txt:219 ../../api/zoo-format-gml.txt:232
+#: ../../api/zoo-format-gml.txt:245 ../../api/zoo-format-gml.txt:258
+#: ../../api/zoo-format-gml.txt:273 ../../api/zoo-format-gml.txt:290
+#: ../../api/zoo-format-gml.txt:307 ../../api/zoo-format-gml.txt:322
+#: ../../api/zoo-format-gml.txt:340 ../../api/zoo-format-gml.txt:353
+#: ../../api/zoo-format-gml.txt:366 ../../api/zoo-format-gml.txt:379
+#: ../../api/zoo-format-gml.txt:392 ../../api/zoo-format-gml.txt:405
+#: ../../api/zoo-format-gml.txt:418 ../../api/zoo-format-gml.txt:439
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:132
+msgid ""
+"``options {Object}`` An optional object whose properties will be set on this"
+" instance."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:149
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:145
+msgid "``data {String}`` data to read/parse."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:147 ../../api/zoo-format-gml.txt:166
+#: ../../api/zoo-format-gml.txt:184 ../../api/zoo-format-gml.txt:197
+#: ../../api/zoo-format-gml.txt:210 ../../api/zoo-format-gml.txt:223
+#: ../../api/zoo-format-gml.txt:236 ../../api/zoo-format-gml.txt:249
+#: ../../api/zoo-format-gml.txt:262 ../../api/zoo-format-gml.txt:277
+#: ../../api/zoo-format-gml.txt:294 ../../api/zoo-format-gml.txt:311
+#: ../../api/zoo-format-gml.txt:326 ../../api/zoo-format-gml.txt:344
+#: ../../api/zoo-format-gml.txt:357 ../../api/zoo-format-gml.txt:370
+#: ../../api/zoo-format-gml.txt:383 ../../api/zoo-format-gml.txt:396
+#: ../../api/zoo-format-gml.txt:409 ../../api/zoo-format-gml.txt:422
+#: ../../api/zoo-format-gml.txt:443
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:149
+msgid ":ref:`{Array(ZOO.Feature)} <api-zoo-feature>` An array of features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:168
+msgid "parseFeature"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:158
+msgid ""
+"This function is the core of the GML parsing code in ZOO.  It creates the "
+"geometries that are then attached to the returned feature, and calls "
+"parseAttributes() to get attribute data out."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:164 ../../api/zoo-format-gml.txt:275
+msgid "``node {E4XElement}``"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:168
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A vector feature."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:173
+msgid "parseGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:186
+msgid "parseGeometry.point"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:182 ../../api/zoo-format-gml.txt:195
+#: ../../api/zoo-format-gml.txt:208 ../../api/zoo-format-gml.txt:221
+#: ../../api/zoo-format-gml.txt:234 ../../api/zoo-format-gml.txt:247
+#: ../../api/zoo-format-gml.txt:260
+msgid "``node {E4XElement}`` A GML node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:186
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:199
+msgid "parseGeometry.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:191
+msgid ""
+"Given a GML node representing a multipoint geometry, create a ZOO multipoint"
+" geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:199
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A multipoint geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:212
+msgid "parseGeometry.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:212
+msgid ""
+":ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` A linestring "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:225
+msgid "parseGeometry.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:217
+msgid ""
+"Given a GML node representing a multilinestring geometry, create a ZOO "
+"multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:225
+msgid ""
+":ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-multilinestring>` A "
+"multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:238
+msgid "parseGeometry.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:238 ../../api/zoo-format-gml.txt:264
+msgid ""
+":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:251
+msgid "parseGeometry.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:243
+msgid ""
+"Given a GML node representing a multipolygon geometry, create a ZOO "
+"multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:251
+msgid ""
+":ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-multipolygon>` A "
+"multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:264
+msgid "parseGeometry.envelope"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:256
+msgid ""
+"Given a GML node representing an envelope, create a ZOO polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:279
+msgid "parseAttributes"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:279
+msgid "``{Object}`` An attributes object."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:296
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:288
+msgid "Generate a GML document string given a list of features."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:292
+msgid ""
+"``features`` :ref:`{Array(ZOO.Feature)} <api-zoo-feature>` List of features "
+"to serialize into a string."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:296
+msgid "``{String}`` A string representing the GML document."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:313
+msgid "createFeature"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:309
+msgid ""
+"``feature`` :ref:`{ZOO.Feature} <api-zoo-feature>` The feature to be built "
+"as GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:313
+msgid "``{E4XElement}`` A node reprensting the feature in GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:328
+msgid "buildGeometryNode"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:324
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` The geometry to be "
+"built as GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:328
+msgid "``{E4XElement}`` A node reprensting the geometry in GML."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:333
+msgid "buildGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:346
+msgid "buildGeometry.point"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:342
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A point "
+"geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:346
+msgid "``{E4XElement}`` A GML point node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:359
+msgid "buildGeometry.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:351
+msgid "Given a ZOO multipoint geometry, create a GML multipoint."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:355
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-multipoint>` "
+"A multipoint geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:359
+msgid "``{E4XElement}`` A GML multipoint node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:372
+msgid "buildGeometry.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:368
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` "
+"A linestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:372
+msgid "``{E4XElement}`` A GML linestring node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:385
+msgid "buildGeometry.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:377
+msgid "Given a ZOO multilinestring geometry, create a GML multilinestring."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:381
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-"
+"multilinestring>` A multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:385
+msgid "``{E4XElement}`` A GML multilinestring node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:398
+msgid "buildGeometry.linearring"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:394
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.LinearRing} <api-zoo-geometry-linearring>` "
+"A linearring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:398
+msgid "``{E4XElement}`` A GML linearring node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:411
+msgid "buildGeometry.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:403
+msgid "Given an ZOO polygon geometry, create a GML polygon."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:407
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A "
+"polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:411
+msgid "``{E4XElement}`` A GML polygon node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:424
+msgid "buildGeometry.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:416
+msgid "Given a ZOO multipolygon geometry, create a GML multipolygon."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:420
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry.MultiPolygon} <api-zoo-geometry-"
+"multipolygon>` A multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:424
+msgid "``{E4XElement}`` A GML multipolygon node."
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:445
+msgid "buildCoordinatesNode"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:441
+msgid "``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-gml.txt:445
+msgid "``{E4XElement}`` created E4XElement"
+msgstr ""

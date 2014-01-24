@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2010/exercise.txt:4
+# 6dc76adb5e5e4e56a10a604c33a13ed8
+msgid "Exercise"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:6
+# 553fd2fea27744de9471a2b4e1eeb50c
+msgid "You know everything now about writting zcfg matadata files and get short pieces of code in ``service.c`` or ``ogr_service_provider.py`` depending if you choosen C or Python programming language respectively."
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:10
+# bf6cf2c23b674b94b0ac54efce5dc46f
+msgid "The goal of this exercise is to implement the following multiple geometries services :"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:12
+# 40536397e1194f3aa29113f6b1b11d38
+msgid "Intersection"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:13
+# ce4c7d0dbdba4f539476cfb3aa8b734a
+msgid "Union"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:14
+# 8c35ef3cbc544e2883de006af81fed26
+msgid "Difference"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:15
+# 7a07803f1ba7465c8c825b46d9d9dc33
+msgid "SymDifference"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:18
+# 157609e18d5a494cba36c8c885f6a149
+msgid "C version"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:20
+# 3d34316e57ef4f9492c85434da1317c5
+msgid "Your are now invited to edit the source.c file you have created during this workshop to add the multiple geometries, using the following OGR C-API functions :"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:23
+# ce93d12713aa43b0a00ad305e032f661
+msgid "`OGR_G_Intersection <http://www.gdal.org/ogr/ogr__api_8h.html#5a271b5c7b72994120e7a6bbc7e7e5cb>`__ (OGRGeometryH, OGRGeometryH)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:24
+# 7eeee973a984403e9d25f5a8b1a6ce57
+msgid "`OGR_G_Union <http://www.gdal.org/ogr/ogr__api_8h.html#5a271b5c7b72994120e7a6bbc7e7e5cb>`__ (OGRGeometryH, OGRGeometryH)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:25
+# b66c5012405e44739db0bd5e52532793
+msgid "`OGR_G_Difference <http://www.gdal.org/ogr/ogr__api_8h.html#497977bec6ecd9dade7a9694f776be64>`__ (OGRGeometryH, OGRGeometryH)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:26
+# 26aa5ce1bc35428cba9c547947f98c41
+msgid "`OGR_G_SymmetricDifference <http://www.gdal.org/ogr/ogr__api_8h.html#d6dacf495617a230c6f19950bc415f17>`__ (OGRGeometryH, OGRGeometryH)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:28
+# 158aa35701d94d21bb70f7fa7d9c98a5
+msgid "You can use the ``Boundary.zcfg`` file as example, rename the InputPolygon input to ``InputEntity1`` and add a similar input named ``IntputEntity2``. You are invited to update other values in the ZOO Metadata File to set the proper metadata informations."
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:34
+# 37f557cac89145749872533d2e0ecc71
+msgid "Python Version"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:36
+# df43fb56b64d497f8d8ef87230b302fe
+msgid "Your are invited to edit the ``ogr_ws_service_provider.py`` file you created during this workshop to add the multiple geometries using the following ``osgeo.ogr`` Geometry methods applied on the first Geometry instance :"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:40
+# a9b2881d1d2048d3a989bf4e677ae806
+msgid "Intersection(Geometry)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:41
+# 0228fe2cb68345af947e57c7544b37e6
+msgid "Union(Geometry)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:42
+# fc02684494cb489b916abb7a5998a5c6
+msgid "Difference(Geometry)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:43
+# 7608e6e59a6f4bcb86dbf115428809d8
+msgid "SymmetricDifference(Geometry)"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:45
+# 08824388b87f45c995d20732a987da69
+msgid "You can once again use the ``Boundary.zcfg`` file as example, rename the ``InputPolygon`` input to ``InputEntity1`` and add a similar input named ``IntputEntity2``. You are invited to update other values in the ZOO metadata file to set the proper metadata informations."
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:51
+# fe738f99868a427cac6f4e694e75c4b4
+msgid "Testing your services"
+msgstr ""
+
+#: ../../workshop/2010/exercise.txt:53
+# 947d831376974faea65ab5ed80498e96
+msgid "Once the multiple geometries Services are deployed on your local environment, please reload the ``zoo-ogr.html`` file created during the previous section from your browser and test your brand new ZOO Services."
+msgstr ""
+

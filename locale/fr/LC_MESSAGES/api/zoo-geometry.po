@@ -1,0 +1,255 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry.txt:4 ../../api/zoo-geometry.txt:75
+msgid "ZOO.Geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:6
+msgid "A Geometry is a description of a geographic object."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:9
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:15 ../../api/zoo-geometry.txt:31
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:16 ../../api/zoo-geometry.txt:32
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:17
+msgid ":ref:`id <id>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:18
+msgid "{String} A unique identifier for this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:19
+msgid ":ref:`parent <parent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:20
+msgid ""
+"{ZOO.Geometry}This is set when a Geometry is added as component of another "
+"geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:21
+msgid ":ref:`bounds <bounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:22
+msgid "{ZOO.Bounds} The bounds of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:25
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:33
+msgid ":ref:`ZOO.Geometry <ZOO.Geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:34 ../../api/zoo-geometry.txt:75
+msgid "Creates a geometry object."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:35
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:36
+msgid "nullify references to prevent circular references and memory leaks"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:37
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:38
+msgid "Create a clone of this vector feature."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:39
+msgid ":ref:`extendBounds <extendBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:40
+msgid "Moves the feature and redraws it at its new location"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:41
+msgid ":ref:`clearBounds <clearBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:42 ../../api/zoo-geometry.txt:120
+msgid "Nullify this components bounds and that of its parent as well."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:43
+msgid ":ref:`getBounds <getBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:44
+msgid "Get the bounds for this Geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:45
+msgid ":ref:`calculateBounds <calculateBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:46 ../../api/zoo-geometry.txt:143
+msgid "Recalculate the bounds for the geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:47
+msgid ":ref:`toString <toString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:48 ../../api/zoo-geometry.txt:152
+msgid "Returns the Well-Known Text representation of a geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:49
+msgid ":ref:`ZOO.Geometry.fromWKT <ZOO.Geometry.fromWKT>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:50 ../../api/zoo-geometry.txt:165
+msgid "Generate a geometry given a Well-Known Text string."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:53
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:58
+msgid "id"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:58
+msgid "``{String}`` A unique identifier for this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:63
+msgid "parent"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:63
+msgid ""
+":ref:`{ZOO.Geometry} <api-zoo-geometry>` This is set when a Geometry is "
+"added as component of another geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:68
+msgid "bounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:68
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` The bounds of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:70
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:84
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:84
+msgid "Destroy this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:97
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:93
+msgid ""
+"Create a clone of this geometry.  Does not set any non-standard properties "
+"of the cloned geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:95 ../../api/zoo-geometry.txt:132
+#: ../../api/zoo-geometry.txt:154 ../../api/zoo-geometry.txt:171
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:97
+msgid ""
+":ref:`{ZOO.Geometry} <api-zoo-geometry>` An exact clone of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:111
+msgid "extendBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:106
+msgid ""
+"Extend the existing bounds to include the new bounds.  If geometry's bounds "
+"is not yet set, then set a new Bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:109 ../../api/zoo-geometry.txt:167
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:111 ../../api/zoo-geometry.txt:134
+msgid "``newBounds`` :ref:`{ZOO.Bounds} <api-zoo-bounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:120
+msgid "clearBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:134
+msgid "getBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:129
+msgid ""
+"Get the bounds for this Geometry.  If bounds is not set, it is calculated "
+"again, this makes queries faster."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:143
+msgid "calculateBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:156
+msgid "toString"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:156
+msgid "``{String}`` Well-Known Text"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:172
+msgid "ZOO.Geometry.fromWKT"
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:169
+msgid ""
+"``wkt {String}`` A string representing the geometry in Well-Known Text."
+msgstr ""
+
+#: ../../api/zoo-geometry.txt:173
+msgid ""
+":ref:`{ZOO.Geometry} <api-zoo-geometry>` A geometry of the appropriate "
+"class."
+msgstr ""

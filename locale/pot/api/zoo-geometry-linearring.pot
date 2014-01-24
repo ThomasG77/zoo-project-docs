@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-linearring.txt:4
+#: ../../api/zoo-geometry-linearring.txt:78
+# c11a3628c95f4ac683974cd78c8f8268
+# 667e61ac470844579c9303e717816bee
+msgid "ZOO.Geometry.LinearRing"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:6
+# ccc7b1d3bf5b4165a4e59a7b93f16bd8
+msgid "A Linear Ring is a special LineString which is closed.  It closes itself automatically on every addPoint/removePoint by adding a copy of the first point as the last point."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:9
+# 7c54af9180a940a1ba4541a6dd99e0b7
+msgid "Also, as it is the first in the line family to close itself, a getArea() function is defined to calculate the enclosed area of the linearRing"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:12
+# 3a8d68f73e98469cad6e789d3328d01d
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:14
+# 1b71aa0ab8da40a58cd733d6d05b0cfd
+msgid ":ref:`ZOO.Geometry.LineString <api-zoo-geometry-linestring>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:17
+# 86b45c9a2c824e2481b4ba353cf578a8
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:23
+#: ../../api/zoo-geometry-linearring.txt:35
+# a9e80828f315407097ddc991d5a4effe
+# d1e1a11e32d84d4a9dee36147eda7172
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:24
+#: ../../api/zoo-geometry-linearring.txt:36
+# 947a1eaaf6224709a9ae9cc3984ca8e6
+# 0d8881f55f35493f8702b4eeb14fdd97
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:25
+# 9fe5285f802844ab871fde444368a7c0
+msgid ":ref:`componentTypes <componentTypes>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:26
+# 48f8ee44a2a043bc8e991b6855931f73
+msgid "{Array(String)} An array of class names representing the types of components that the collection can include."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:29
+# 6c2bdbfb1dd84612a71e5f090526c502
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:37
+# a558a34d10214fd8b92fdba0f4d051ef
+msgid ":ref:`ZOO.Geometry.LinearRing <ZOO.Geometry.LinearRing>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:38
+# 578ff981230243dbbcc95cf7f5eaa6e3
+msgid "Linear rings are constructed with an array of points."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:39
+# 54a96c3847794b6f9fb50614b4aabebe
+msgid ":ref:`addComponent <addComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:40
+# 399def791c3b44cbaea08906f8634135
+msgid "Adds a point to geometry components."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:41
+# ae24020197844c269a1d4aba2ef8b5d1
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:42
+# 4e1cec8e54954cdf92747206dc166ed8
+msgid "Moves a geometry by the given displacement along positive x and y axes."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:43
+# 9f4380816cc44d338d2ad88bcbe7b77b
+msgid ":ref:`rotate <rotate>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:44
+#: ../../api/zoo-geometry-linearring.txt:124
+# 4b4cd5ac7444493ea6152ca958314119
+# 720d514a64484bfeb40fe9e5e52d3b5b
+msgid "Rotate a geometry around some origin"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:45
+# 47483eebf6154b02ac23d2dc259065ec
+msgid ":ref:`resize <resize>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:46
+# 5410a806c754445d8ffa30636f086ae6
+msgid "Resize a geometry relative to some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:47
+# acb1ab63a15940e3b79c6cd4f8a1bf04
+msgid ":ref:`transform <transform>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:48
+#: ../../api/zoo-geometry-linearring.txt:157
+# edcc662f79664b26b3f79df35dd24e73
+# 46c5e77a6d1347e295489f32b6fb458e
+msgid "Reproject the components geometry from source to dest."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:49
+# 90b0d3c589d5459c88faf20ea1e9610e
+msgid ":ref:`getCentroid <getCentroid>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:50
+# c6ca4237813d47399c968dbf19ed6db1
+msgid "{ZOO.Geometry.Point} The centroid of the ring"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:51
+# a561f50585e24d789a4ee5178c8c1ef5
+msgid ":ref:`getArea <getArea>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:53
+# 2c6805e1cd2f4934bed9dd4a43670dad
+msgid ":ref:`getGeodesicArea <getGeodesicArea>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:54
+# 4a83b77efb6b4adbbe36d4bea2de28ee
+msgid "Calculate the approximate area of the polygon were it projected onto the earth."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:55
+# 2aaf9ed998da4442a94c1d95c25ee718
+msgid ":ref:`containsPoint <containsPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:56
+# f3835d0837f540f3af355f27e2b72773
+msgid "Test if a point is inside a linear ring."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:58
+# 661ae9a1285947b68f041909d1469057
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:64
+# ac4d9ed5f264428cb1e566f8107faf40
+msgid "componentTypes"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:63
+# 60d7baf5c85e4c109fba426fa508c1ad
+msgid "``{Array(String)}`` An array of class names representing the types of components that the collection can include.  A null value means the component types are not restricted."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:66
+# 4120ea51bfe34863a3083a18f5b88c8d
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:71
+# fa1f2a531b364418aec95d1a14aa0c33
+msgid "Linear rings are constructed with an array of points.  This array can represent a closed or open ring.  If the ring is open (the last point does not equal the first point), the constructor will close the ring.  If the ring is already closed (the last point does equal the first point), it will be left closed."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:76
+#: ../../api/zoo-geometry-linearring.txt:112
+#: ../../api/zoo-geometry-linearring.txt:126
+#: ../../api/zoo-geometry-linearring.txt:140
+#: ../../api/zoo-geometry-linearring.txt:159
+#: ../../api/zoo-geometry-linearring.txt:202
+#: ../../api/zoo-geometry-linearring.txt:225
+# 152bd17d75954190a55d23de27431841
+# d6c11974bc314660ae9ba3088b8764e5
+# cd9bfa19b85d45a59d0ae354bafc44da
+# ed685496fb0a446b8cdf0486709eefb9
+# 7c6fd0bbaf364082b20bdb0b05439a92
+# 216302bf8d0542c09aaf10e9114ea6d0
+# 9f747684c0c54ad7826cb6d63c1afaea
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:78
+# ffcb899936c243a5b01ca6cb0618d0ac
+msgid "``points`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)} points"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:100
+# 974f318615354c57be8850c57a5d549f
+msgid "addComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:87
+# 4095553a45b64b21a09fb21548742f1e
+msgid "Adds a point to geometry components.  If the point is to be added to the end of the components array and it is the same as the last point already in that array, the duplicate point is not added.  This has the effect of closing the ring if it is not already closed, and doing the right thing if it is already closed.  This behavior can be overridden by calling the method with a non-null index as the second argument."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:93
+# d6885eeed21543e5924c82a1883955e8
+msgid "*Parameter*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:98
+#: ../../api/zoo-geometry-linearring.txt:146
+#: ../../api/zoo-geometry-linearring.txt:164
+#: ../../api/zoo-geometry-linearring.txt:175
+#: ../../api/zoo-geometry-linearring.txt:188
+#: ../../api/zoo-geometry-linearring.txt:211
+#: ../../api/zoo-geometry-linearring.txt:229
+# 741ef62db0c245c1b92fd3079862d6bf
+# d4fae659081940fb840f4c085ebd1d0d
+# 1b83a777323e474e90e5a214a0679558
+# f01f7bc7a65f4433a0590272e72f0674
+# bbd8cb1e6e8e4c04ab46daa0486c6c68
+# 2e7d7da8779546428d56f9e0102635cb
+# 5b8efe90fc864395b788ff320da6db33
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:100
+# 0b65505738dc445a9c44e79c97fe6991
+msgid "``{Boolean}`` Was the Point successfully added?"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:115
+# 04235dad2dd444ad96e2ed5bb1fad6fd
+msgid "move"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:109
+# a2104d6329ef4336b9523906f22b8848
+msgid "Moves a geometry by the given displacement along positive x and y axes.  This modifies the position of the geometry and clears the cached bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:129
+# c8521da4cd5a46628ec8d71153888115
+msgid "rotate"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:148
+# 3caec3fba6df486f8acb8b0bc7f81936
+msgid "resize"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:138
+# 8a1d7674cc454c4cb2c62bc2cdeb3af6
+msgid "Resize a geometry relative to some origin.  Use this method to apply a uniform scaling to a geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:148
+# fe3910c852a84350910a99ef8c3c03d0
+msgid "``{ZOO.Geometry}`` The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:166
+# fade17df95654ef095b1339be8f3cf6b
+msgid "transform"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:166
+# c99450feb05a432cb29544680c5fa605
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:177
+# ec471eb2c45e475694662384a2d419e2
+msgid "getCentroid"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:177
+# 28867f956a054aebb852c5c9b8fb03f8
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The centroid of the ring"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:190
+# aeb4c426f9134c39bbc5ac0dc3aca90f
+msgid "getArea"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:186
+# c5454d7008a24467ba8c8ea09b6cfbe3
+msgid "The area is positive if the ring is oriented CW, otherwise it will be negative."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:190
+# 284099a02c29453e949a94ec7d76a622
+msgid "``{Float}`` The signed area for a ring."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:213
+# 71b57acbad8b4cf1b65b38676d42316b
+msgid "getGeodesicArea"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:199
+# af6acce62f474d5e87624a27bedbc023
+msgid "Calculate the approximate area of the polygon were it projected onto the earth.  Note that this area will be positive if ring is oriented clockwise, otherwise it will be negative."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:204
+# 1c90bb77747b4c6b8fa9d4b0daa9e04d
+msgid "``projection`` :ref:`{ZOO.Projection} <api-zoo-projection>` The spatial reference system for the geometry coordinates.  If not provided, Geographic/WGS84 is assumed."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:206
+# 124f9946662244d08c7850b944a12588
+msgid "*Reference*"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:208
+# c71a6d763c7248c281810fb798aa8df6
+msgid "Robert.  G. Chamberlain and William H.  Duquette, \"Some Algorithms for Polygons on a Sphere\", JPL Publication 07-03, Jet Propulsion Laboratory, Pasadena, CA, June 2007 http://trs-new.jpl.nasa.gov/dspace/handle/2014/40409"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:213
+# 8651982f62654860b10ad9b6a8a34dda
+msgid "``{float}`` The approximate signed geodesic area of the polygon in square meters."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:230
+# a1fa390c9c624d65a54a1e9c56c087b5
+msgid "containsPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:222
+# 6d6e884eef134adfadb960ff25ed838f
+msgid "Test if a point is inside a linear ring.  For the case where a point is coincident with a linear ring edge, returns 1.  Otherwise, returns boolean."
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:227
+# 44e6f6ed867445a1837808c111d42af8
+msgid "``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-linearring.txt:231
+# 3e88c6ed659e49d3871ae674ff3d92cd
+msgid "``{Boolean | Number}`` The point is inside the linear ring.  Returns 1 if the point is coincident with an edge.  Returns boolean otherwise."
+msgstr ""
+

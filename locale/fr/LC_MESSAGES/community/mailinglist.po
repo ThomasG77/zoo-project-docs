@@ -1,0 +1,57 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../community/mailinglist.txt:4
+msgid "Mailing Lists"
+msgstr ""
+
+#: ../../community/mailinglist.txt:7
+msgid "ZOO-Discuss"
+msgstr ""
+
+#: ../../community/mailinglist.txt:9
+msgid ""
+"The ``zoo-discuss`` list is your main source of support for the ZOO-Project."
+msgstr ""
+
+#: ../../community/mailinglist.txt:11
+msgid "**Subscribing to zoo-discuss**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:13
+msgid ""
+"To subscribe to the zoo-discuss listserv visit http://lists.osgeo.org/cgi-"
+"bin/mailman/listinfo/zoo-discuss. You can later change your subscription "
+"information or leave the list at this website."
+msgstr ""
+
+#: ../../community/mailinglist.txt:17
+msgid "**Submitting Questions to zoo-discuss**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:19
+msgid ""
+"To submit questions to the zoo-discuss listserv, first join the list by "
+"following the subscription procedure above. Then post questions to the list "
+"by sending an email message to zoo-discuss@lists.osgeo.org."
+msgstr ""
+
+#: ../../community/mailinglist.txt:23
+msgid "**Searching the Archives**"
+msgstr ""
+
+#: ../../community/mailinglist.txt:25
+msgid ""
+"All zoo-discuss archives are located in http://lists.osgeo.org/pipermail"
+"/zoo-discuss/."
+msgstr ""

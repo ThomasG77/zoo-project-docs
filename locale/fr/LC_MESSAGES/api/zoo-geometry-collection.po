@@ -1,0 +1,498 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-collection.txt:4
+#: ../../api/zoo-geometry-collection.txt:105
+msgid "ZOO.Geometry.Collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:6
+msgid ""
+"A Collection is exactly what it sounds like: A collection of different "
+"Geometries. These are stored in the local parameter :ref:`components "
+"<components>` (which can be passed as a parameter to the constructor)."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:10
+msgid ""
+"As new geometries are added to the collection, they are NOT cloned.  When "
+"removing geometries, they need to be specified by reference (ie you have to "
+"pass in the exact geometry to be removed)."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:13
+msgid ""
+"The <getArea> and :ref:`getLength <getLength>` functions here merely iterate"
+" through the components, summing their respective areas and lengths."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:16
+msgid ""
+"Create a new instance with the :ref:`ZOO.Geometry.Collection "
+"<ZOO.Geometry.Collection>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:18
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:20
+msgid ":ref:`ZOO.Geometry <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:23
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:29
+#: ../../api/zoo-geometry-collection.txt:43
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:30
+#: ../../api/zoo-geometry-collection.txt:44
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:31
+msgid ":ref:`components <components>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:32
+msgid "{Array(ZOO.Geometry)} The component parts of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:33
+msgid ":ref:`componentTypes <componentTypes>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:34
+msgid ""
+"{Array(String)} An array of class names representing the types of components"
+" that the collection can include."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:37
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:45
+msgid ":ref:`ZOO.Geometry.Collection <ZOO.Geometry.Collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:46
+#: ../../api/zoo-geometry-collection.txt:101
+msgid "Creates a Geometry Collection -- a list of geoms."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:47
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:48
+#: ../../api/zoo-geometry-collection.txt:114
+msgid "Destroy this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:49
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:50
+#: ../../api/zoo-geometry-collection.txt:123
+msgid "Clone this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:51
+msgid ":ref:`getComponentsString <getComponentsString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:52
+#: ../../api/zoo-geometry-collection.txt:136
+msgid "Get a string representing the components for this collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:53
+msgid ":ref:`calculateBounds <calculateBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:54
+#: ../../api/zoo-geometry-collection.txt:149
+msgid ""
+"Recalculate the bounds by iterating through the components and calling "
+"extendBounds() on each item."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:55
+msgid ":ref:`addComponent <addComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:56
+msgid "Add a new component (geometry) to the collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:57
+msgid ":ref:`removeComponents <removeComponents>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:58
+msgid "Remove components from this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:59
+msgid ":ref:`removeComponent <removeComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:60
+#: ../../api/zoo-geometry-collection.txt:190
+msgid "Remove a component from this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:61
+msgid ":ref:`getLength <getLength>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:62
+msgid "Calculate the length of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:63
+msgid ":ref:`getCentroid <getCentroid>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:64
+msgid "{ZOO.Geometry.Point} The centroid of the collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:65
+msgid ":ref:`getGeodesicLength <getGeodesicLength>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:66
+#: ../../api/zoo-geometry-collection.txt:227
+msgid ""
+"Calculate the approximate length of the geometry were it projected onto the "
+"earth."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:67
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:68
+msgid ""
+"Moves a geometry by the given displacement along positive x and y axes."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:69
+msgid ":ref:`rotate <rotate>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:70
+msgid "Rotate a geometry around some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:71
+msgid ":ref:`resize <resize>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:72
+msgid "Resize a geometry relative to some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:73
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:74
+msgid "Determine whether another geometry is equivalent to this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:75
+msgid ":ref:`transform <transform>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:76
+#: ../../api/zoo-geometry-collection.txt:311
+msgid "Reproject the components geometry from source to dest."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:77
+msgid ":ref:`intersects <intersects>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:78
+#: ../../api/zoo-geometry-collection.txt:329
+msgid "Determine if the input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:79
+msgid ":ref:`getVertices <getVertices>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:80
+#: ../../api/zoo-geometry-collection.txt:346
+msgid "Return a list of all points in this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:83
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:88
+msgid "components"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:88
+msgid ""
+"{Array(:ref:`ZOO.Geometry <api-zoo-geometry>`)} The component parts of this "
+"geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:94
+msgid "componentTypes"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:93
+msgid ""
+"``{Array(String)}`` An array of class names representing the types of "
+"components that the collection can include. A null value means the component"
+" types are not restricted."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:96
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:103
+#: ../../api/zoo-geometry-collection.txt:161
+#: ../../api/zoo-geometry-collection.txt:179
+#: ../../api/zoo-geometry-collection.txt:192
+#: ../../api/zoo-geometry-collection.txt:229
+#: ../../api/zoo-geometry-collection.txt:248
+#: ../../api/zoo-geometry-collection.txt:262
+#: ../../api/zoo-geometry-collection.txt:276
+#: ../../api/zoo-geometry-collection.txt:296
+#: ../../api/zoo-geometry-collection.txt:313
+#: ../../api/zoo-geometry-collection.txt:331
+#: ../../api/zoo-geometry-collection.txt:348
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:105
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry <api-zoo-geometry>`)} Optional "
+"array of geometries"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:112
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:127
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:125
+#: ../../api/zoo-geometry-collection.txt:138
+#: ../../api/zoo-geometry-collection.txt:166
+#: ../../api/zoo-geometry-collection.txt:205
+#: ../../api/zoo-geometry-collection.txt:216
+#: ../../api/zoo-geometry-collection.txt:234
+#: ../../api/zoo-geometry-collection.txt:282
+#: ../../api/zoo-geometry-collection.txt:300
+#: ../../api/zoo-geometry-collection.txt:318
+#: ../../api/zoo-geometry-collection.txt:335
+#: ../../api/zoo-geometry-collection.txt:353
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:127
+msgid ""
+":ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>` An exact "
+"clone of this collection."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:140
+msgid "getComponentsString"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:140
+msgid ""
+"``{String}`` A string representation of the components of this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:149
+msgid "calculateBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:168
+msgid "addComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:158
+msgid ""
+"Add a new component (geometry) to the collection.  If this.componentTypes is"
+" set, then the component class name must be in the componentTypes array.  "
+"The bounds cache is reset."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:168
+msgid "``{Boolean}`` The component geometry was successfully added"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:181
+msgid "removeComponents"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:177
+msgid "Remove components from this geometry.\\"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:181
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry <api-zoo-geometry>`)} The "
+"components to be removed"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:194
+msgid "removeComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:194
+msgid "``component`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:207
+msgid "getLength"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:203
+msgid "Calculate the length of this geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:207
+msgid "``{Float}`` The length of the geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:218
+msgid "getCentroid"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:218
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The centroid of the "
+"collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:236
+msgid "getGeodesicLength"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:231
+msgid ""
+"``projection`` :ref:`{ZOO.Projection} <api-zoo-projection>` The spatial "
+"reference system for the geometry coordinates.  If not provided, "
+"Geographic/WGS84 is assumed."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:236
+msgid "``{Float}`` The appoximate geodesic length of the geometry in meters."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:251
+msgid "move"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:245
+msgid ""
+"Moves a geometry by the given displacement along positive x and y axes.  "
+"This modifies the position of the geometry and clears the cached bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:265
+msgid "rotate"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:260
+msgid "Rotate a geometry around some origin"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:284
+msgid "resize"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:274
+msgid ""
+"Resize a geometry relative to some origin.  Use this method to apply a "
+"uniform scaling to a geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:284
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`  The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:302
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:293
+msgid ""
+"Determine whether another geometry is equivalent to this one.  Geometries "
+"are considered equivalent if all components have the same coordinates."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:298
+msgid ""
+"``geom`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` The geometry to test."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:302
+msgid "``{Boolean}`` The supplied geometry is equivalent to this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:320
+msgid "transform"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:320
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:337
+msgid "intersects"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:333
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` Any type of geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:337
+msgid "``{Boolean}`` The input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:354
+msgid "getVertices"
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:350
+msgid ""
+"``nodes {Boolean}`` For lines, only return vertices that are endpoints.  If "
+"false, for lines, only vertices that are not endpoints will be returned.  If"
+" not provided, all vertices will be returned."
+msgstr ""
+
+#: ../../api/zoo-geometry-collection.txt:355
+msgid "``{Array}`` A list of all vertices in the geometry."
+msgstr ""

@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-curve.txt:4
+#: ../../api/zoo-geometry-curve.txt:52
+# 2afddafeeb0d409c9308717cd5a09e19
+# c37d70367a704a6fabd859b587344eaa
+msgid "ZOO.Geometry.Curve"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:6
+# 7252a745c5b646fa9ce4d2e9fdc513a5
+msgid "A Curve is a MultiPoint, whose points are assumed to be connected.  To this end, we provide a \"getLength()\" function, which iterates through the points, summing the distances between them."
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:10
+# 31b542b101754476b5ca9a9fcda606d1
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:12
+# 3d244632e0e74431aaa3af4b6442ecba
+msgid ":ref:`ZOO.Geometry.MultiPoint <api-zoo-geometry-multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:15
+# 4d1fe4a1d35e4d82ba8ae856caf93fa1
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:21
+#: ../../api/zoo-geometry-curve.txt:33
+# c974da808aa145d48a4a24d12cfd9282
+# 8d18e817f20c4e789059ef3e27b8a555
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:22
+#: ../../api/zoo-geometry-curve.txt:34
+# 15a2c14c36af489ca62e380b2fa8df08
+# 34af2558bab545e9ab1a08f3da19237d
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:23
+# dba0079aa1494a388334433618f782af
+msgid ":ref:`componentTypes <componentTypes>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:24
+# 294dbfa8db6344c094efad8647a9688c
+msgid "{Array(String)} An array of class names representing the types of components that the collection can include."
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:27
+# 937cffa91c7f41e7b3d76ab098371522
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:35
+# cdba0df27ba84733be6f636707010608
+msgid ":ref:`ZOO.Geometry.Curve <ZOO.Geometry.Curve>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:37
+# 42bf581c20784418842684b74b552b66
+msgid ":ref:`getLength <getLength>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:38
+# a6682a7908164a788526b845f37e8658
+msgid "{Float} The length of the curve"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:40
+# 8913fa461bc54cbdb9eef41ffc94ece2
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:46
+# 3c5605a1b6944741abfa8299155278ea
+msgid "componentTypes"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:45
+# 25f6f45c5b9540eb9e8178d0024a3ed8
+msgid "``{Array(String)}`` An array of class names representing the types of components that the collection can include.  A null value means the component types are not restricted."
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:48
+# c2310d37bf804171b2733335ec34e188
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:54
+# 25a93ff9243e4fc2a1a4f2277c61aa09
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:56
+# 8557a403f0c7484e8d0ec28514d44260
+msgid "``point`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:60
+# 4e48095cad994d32b7d4ef15bc5afd0f
+msgid "getLength"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:66
+# 5b0cf1603f4c4204a5bbdf104039fc37
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-curve.txt:68
+# 417976b92968409c9cc06781ff3d2330
+msgid "``{Float}`` The length of the curve"
+msgstr ""
+

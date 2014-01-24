@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-multipolygon.txt:4
+#: ../../api/zoo-geometry-multipolygon.txt:31
+# 90b3fa73e3a049cc934e905d1a37615a
+# 617220babd394ba8b7b7f62008db8dda
+msgid "ZOO.Geometry.MultiPolygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:6
+# c83d4ddb5ef94da7acd564fc47aaa8be
+msgid "MultiPolygon is a geometry with multiple :ref:`ZOO.Geometry.Polygon <api-zoo-geometry-polygon>` components. Create a new instance with the :ref:`ZOO.Geometry.MultiPolygon <ZOO.Geometry.MultiPolygon>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:9
+# b6c9bd282763465a87dca9d11b2566e3
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:11
+# f0fc2d85245849f1879a9485afb6e200
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:14
+# 09d01534e5e8490f9f24c076cff48f0e
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:20
+# 0057ce9fed66491297ede8fc7b562f3b
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:21
+# 608f29b28ff1494bb830e16ed457172a
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:22
+# b4dd66988ea746f09459cbd10a5024b4
+msgid ":ref:`ZOO.Geometry.MultiPolygon <ZOO.Geometry.MultiPolygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:23
+#: ../../api/zoo-geometry-multipolygon.txt:28
+# b4f50eada0ed4074a0dd45327e2ca664
+# d9c9c51ae14c40648e70138e471649dd
+msgid "Create a new MultiPolygon geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:30
+# 233f677f107d425b86fc9f5b2f1bbdd3
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:32
+# 3e6602f19fde42179cf1d3ec0cb0340e
+msgid "``components`` {Array(:ref:`ZOO.Geometry.Polygon <api-zoo-geometry-polygon>`)} An array of polygons used to generate the MultiPolygon"
+msgstr ""
+

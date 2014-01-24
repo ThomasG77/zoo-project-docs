@@ -1,0 +1,63 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-multipolygon.txt:4
+#: ../../api/zoo-geometry-multipolygon.txt:31
+msgid "ZOO.Geometry.MultiPolygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:6
+msgid ""
+"MultiPolygon is a geometry with multiple :ref:`ZOO.Geometry.Polygon <api-"
+"zoo-geometry-polygon>` components. Create a new instance with the "
+":ref:`ZOO.Geometry.MultiPolygon <ZOO.Geometry.MultiPolygon>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:9
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:11
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:14
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:20
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:21
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:22
+msgid ":ref:`ZOO.Geometry.MultiPolygon <ZOO.Geometry.MultiPolygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:23
+#: ../../api/zoo-geometry-multipolygon.txt:28
+msgid "Create a new MultiPolygon geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:30
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipolygon.txt:32
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry.Polygon <api-zoo-geometry-"
+"polygon>`)} An array of polygons used to generate the MultiPolygon"
+msgstr ""

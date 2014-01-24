@@ -1,0 +1,223 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo.txt:4
+msgid "ZOO"
+msgstr ""
+
+#: ../../api/zoo.txt:6
+msgid "The following constants and functions are available for the ZOO class:"
+msgstr ""
+
+#: ../../api/zoo.txt:9
+msgid "Constants"
+msgstr ""
+
+#: ../../api/zoo.txt:15 ../../api/zoo.txt:35
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo.txt:16 ../../api/zoo.txt:36
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo.txt:17
+msgid ":ref:`SERVICE_ACCEPTED <service_accepted>`"
+msgstr ""
+
+#: ../../api/zoo.txt:18 ../../api/zoo.txt:20 ../../api/zoo.txt:22
+#: ../../api/zoo.txt:24 ../../api/zoo.txt:26
+msgid "{Integer} used for"
+msgstr ""
+
+#: ../../api/zoo.txt:19
+msgid ":ref:`SERVICE_STARTED <service_started>`"
+msgstr ""
+
+#: ../../api/zoo.txt:21
+msgid ":ref:`SERVICE_PAUSED <service_paused>`"
+msgstr ""
+
+#: ../../api/zoo.txt:23
+msgid ":ref:`SERVICE_SUCCEEDED <service_succeeded>`"
+msgstr ""
+
+#: ../../api/zoo.txt:25
+msgid ":ref:`SERVICE_FAILED <service_failed>`"
+msgstr ""
+
+#: ../../api/zoo.txt:29
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo.txt:37
+msgid ":ref:`removeItem <removeItem>`"
+msgstr ""
+
+#: ../../api/zoo.txt:38
+msgid "Remove an object from an array."
+msgstr ""
+
+#: ../../api/zoo.txt:39
+msgid ":ref:`indexOf <indexOf>`"
+msgstr ""
+
+#: ../../api/zoo.txt:41
+msgid ":ref:`extend <extend>`"
+msgstr ""
+
+#: ../../api/zoo.txt:42
+msgid "Copy all properties of a source object to a destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:43
+msgid ":ref:`rad <rad>`"
+msgstr ""
+
+#: ../../api/zoo.txt:45
+msgid ":ref:`distVincenty <distVincenty>`"
+msgstr ""
+
+#: ../../api/zoo.txt:46 ../../api/zoo.txt:158
+msgid ""
+"Given two objects representing points with geographic coordinates, this "
+"calculates the distance between those points on the surface of an ellipsoid."
+msgstr ""
+
+#: ../../api/zoo.txt:49
+msgid ":ref:`Class <Class>`"
+msgstr ""
+
+#: ../../api/zoo.txt:50
+msgid "Method used to create ZOO classes."
+msgstr ""
+
+#: ../../api/zoo.txt:51
+msgid ":ref:`UpdateStatus <UpdateStatus>`"
+msgstr ""
+
+#: ../../api/zoo.txt:52 ../../api/zoo.txt:182
+msgid "Method used to update the status of the process"
+msgstr ""
+
+#: ../../api/zoo.txt:54
+msgid "**Constants**"
+msgstr ""
+
+#: ../../api/zoo.txt:59
+msgid "SERVICE_ACCEPTED"
+msgstr ""
+
+#: ../../api/zoo.txt:59 ../../api/zoo.txt:64 ../../api/zoo.txt:69
+#: ../../api/zoo.txt:74 ../../api/zoo.txt:79
+msgid "``{Integer}`` used for"
+msgstr ""
+
+#: ../../api/zoo.txt:64
+msgid "SERVICE_STARTED"
+msgstr ""
+
+#: ../../api/zoo.txt:69
+msgid "SERVICE_PAUSED"
+msgstr ""
+
+#: ../../api/zoo.txt:74
+msgid "SERVICE_SUCCEEDED"
+msgstr ""
+
+#: ../../api/zoo.txt:79
+msgid "SERVICE_FAILED"
+msgstr ""
+
+#: ../../api/zoo.txt:81
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo.txt:99
+msgid "removeItem"
+msgstr ""
+
+#: ../../api/zoo.txt:90
+msgid ""
+"Remove an object from an array.  Iterates through the array to find the "
+"item, then removes it."
+msgstr ""
+
+#: ../../api/zoo.txt:92 ../../api/zoo.txt:108 ../../api/zoo.txt:127
+#: ../../api/zoo.txt:143 ../../api/zoo.txt:184
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo.txt:97 ../../api/zoo.txt:113 ../../api/zoo.txt:132
+#: ../../api/zoo.txt:147
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo.txt:99
+msgid "``{Array}`` A reference to the array"
+msgstr ""
+
+#: ../../api/zoo.txt:115
+msgid "indexOf"
+msgstr ""
+
+#: ../../api/zoo.txt:115
+msgid ""
+"``{Integer}`` The index at, which the first object was found in the array.  "
+"If not found, returns -1."
+msgstr ""
+
+#: ../../api/zoo.txt:134
+msgid "extend"
+msgstr ""
+
+#: ../../api/zoo.txt:124
+msgid ""
+"Copy all properties of a source object to a destination object.  Modifies "
+"the passed in destination object. Any properties on the source object that "
+"are set to undefined will not be (re)set on the destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:134
+msgid "``{Object}`` The destination object."
+msgstr ""
+
+#: ../../api/zoo.txt:149
+msgid "rad"
+msgstr ""
+
+#: ../../api/zoo.txt:149
+msgid "``{Float}``"
+msgstr ""
+
+#: ../../api/zoo.txt:164
+msgid "distVincenty"
+msgstr ""
+
+#: ../../api/zoo.txt:161
+msgid "*Parameters:*"
+msgstr ""
+
+#: ../../api/zoo.txt:173
+msgid "Class"
+msgstr ""
+
+#: ../../api/zoo.txt:173
+msgid ""
+"Method used to create ZOO classes.  Includes support for multiple "
+"inheritance."
+msgstr ""
+
+#: ../../api/zoo.txt:187
+msgid "UpdateStatus"
+msgstr ""

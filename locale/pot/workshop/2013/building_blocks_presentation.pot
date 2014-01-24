@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2013/building_blocks_presentation.txt:5
+# c11aa1c8d3544d28b787526e681bbc4a
+msgid "Building blocks presentation - Using OGR and PgRouting based Web Services"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:0
+# 852ca4e0ee8d41d3b62aef0ca16b3592
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:12
+# ca7888cb8a2d456b9609dbc7d7b8f48a
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:14
+# e2dbac52919240a8b1b593447e7c4ba9
+msgid "In this section, you will use basic ZOO-Services : ``Buffer``, ``Intersection`` and ``DifferencePy`` which use OGR and psycopg Python modules. The intended goal of this section is to present and interact with your new building blocks before chaining them in the next section."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:18
+# ab0dfed40f9f42efa58a6bc9cd825f11
+msgid "First of all, you should use the following links to access the user interfaces and interact with your services, the first one is used to access basic spatial-tools demo client interface and  the second to access the routing application :"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:22
+# 44edad4ea7044eed9a8944a24bd61bc0
+msgid "`http://localhost/zoows2013-demo/spatialtools-py.html <http://localhost/zoows2013-demo/spatialtools-py.html>`__"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:23
+# 3cb862b4018744a49693f1b535db7120
+msgid "`http://localhost/zoo-ws2013/ <http://localhost/zoo-ws2013/>`__"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:26
+# d1e588d9aa894554abf377e6d9b81b15
+msgid "Services Provider and configuration files"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:28
+# 22a483fc79024cd58bfd0a68e8b5d601
+msgid "First you may verify if the ZOO-Services are available from your current setup. You can take a look at the ``Buffer.zcfg``, ``Intersection.zcfg`` and ``DifferencePy.zcfg`` to get details about parameters. As you can see from the ZCFG files, you will use ZOO-Services provided by the ``service`` Python service provider. So if you want to modify the Python code you will have to edit the corresponding file (so ``service.py``). You are invited to use similar requests as the one used in previous sections to learn about each services individually."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:38
+# 36ee216bbfc14881bb779caa7e2ae234
+msgid "The Buffer Service"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:40
+# 669bb0d2ead64864b0cb4f3f3ba1d5a7
+msgid "First click on a street then once the street is displayed in blue, click the 'Buffer' button on top, you should get similar result as displayed in the following."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:47
+# 4219be04c4f645d68f571db66ec2221e
+msgid "Since version ZOO-Project 1.2.0, you can run automatically some basic tests to make sure that you wrote a correct ZCFG file and your service is validating."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:50
+# 80fca23ff19148078aeb409888653e9f
+msgid "the current testing is really simple and should be adapted to each Services Provider, mainly to define input names."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:53
+# ed84fcad89994975857f976703d4a753
+msgid "You can use the following command:"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:61
+# d75a324032f4401387ec45026f488324
+msgid "During or after the test run, you can take a look inside the ``tmp`` directory which contains both the XML requests send to the ZOO Kernel (``*1.xml``) and the responses it gave (``output*.xml``)."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:66
+# 74ad2a8c989e4835b5914ea027521fdf
+msgid "The Intersection Service"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:68
+# 8e5e7732df8c40a180301c02ccc1bfbb
+msgid "Using the same client interface as before, once you get a Buffer, you can then select a street intersecting the Buffer geometry to compute intersection by clicking on the Intersection button."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:78
+# 78b6d2464ad24d4c95a35db4021a5458
+msgid "The DifferencePy Service"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:80
+# d1265dcf773b47d2984dd7bc6d32d7e3
+msgid "Using the same instructions as for Intersetion, you can get the following result."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:88
+# 4c08abc05e6545be8cf444523b2e6355
+msgid "The Routing and Profile Services"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:90
+# b77f7e571014431ebec6ca24aa7170cf
+msgid "First click on the blue flag then place your starting point on the map, do the same with the red flag to get the shortest path computed by the dedicated service and then display its profile. Note that when you pass the mouse over the profile display then you will see its corresponding position displayed on the map. You can also click on a specific step in your path to get the corresponding line displayed."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:101
+# 791e50e09dde4101813dc4b3ad2dc287
+msgid "If you take a look in the file: ``/usr/lib/cgi-bin/routing/do.zcfg`` you may notice something new in the supported format which is reproduced here after."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:115
+# 348108528bee447680a95e3c7d2aea45
+msgid "The ``mimeType`` is defined as ``image/png`` and there is two new parameter which are both optional:"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:117
+# a0e20a1daef24f98b939e33b1087149c
+msgid "``useMapServer``: which make you able to inform the ZOO-Kernel that it have to use MapServer to publish your result as WMS / WFS or WCS (this last won't be used in this workshop) rather than simply storing the result as a file."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:121
+# 8bba0af9d1ed4a44a73773471d2c360b
+msgid "``msStyle``: which let you define your own MapServer ``STYLE`` block definition."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:123
+# 079a55c57d684435bcc140d8e637a528
+msgid "When you need to access a result many time or for different purpose accross other services then it is really useful to ask ZOO-Kernel to publish your result as WMS, WFS or WCS."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:127
+# 46f3e528275c433da5f550372145f012
+msgid "Note that no modification of the code of the do service was required to handle automatic pubilcation of the result as it is a vector format supported by OGR, only modification of the zcfg was required."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:131
+# 55ad1bead72a4e76a5f5963bc3b0564a
+msgid "This routing example is here to illustrate how easy it is to publish your result as WMS, WFS or WCS ressource. Indeed, when your routing service was called, ZOO-Kernel published the result as WMS and WFS ressources which was both used first for the UI purpose, the WMS to display the resulting path on the map, the WFS for displaying details about each steps. The WFS protocol is also used as the input value for the profile computation. So, the computation was run once and accessed three times for different purposes and from different clients."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:141
+# 1e3236480df04831b4b5ab8c351a7d78
+msgid "For more informations about the MapServer support, please refer to `the official  ZOO-Project Documentation <http://zoo-project.org/docs/kernel/mapserver.html>`_."
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:145
+# 730ab8d3baa94bc0a7248c75cb84daef
+msgid "Conclusion"
+msgstr ""
+
+#: ../../workshop/2013/building_blocks_presentation.txt:147
+# 3885a7d3be1c4a0db99d8ed35c8399d3
+msgid "Now you know this three services, and you get a simple interface to interact with your MapServer WFS and your ZOO-Project WPS Servers, you are ready to use the Services in a different way, by chaining them using the JavaScript ZOO-API to build more complexe and powerfull services."
+msgstr ""
+

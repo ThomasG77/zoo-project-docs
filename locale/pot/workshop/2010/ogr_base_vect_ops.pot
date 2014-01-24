@@ -1,0 +1,858 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:4
+# c5b0e7ad61c54d75ad39e2e7714683b7
+msgid "Creating OGR based Web Services"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:0
+# 4522fed2a9734646923cd1df33df24db
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:11
+# 1a635cce4c4f400cb7664864145351b6
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:13
+# dc665142c63b4620bd9ad70fdf83fba0
+msgid "In this part, we are going to create a ZOO ServicesProvider containing several Services based on the OGR C API or on the OGR Python module, which have also been placed in the ZOO installation on OSGeoLive. The intended goal is to use OGR and its GEOS based simple spatial functions as WPS Services."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:18
+# ed5921f324d545ea8454ca8862ae0839
+msgid "We will first start with the Boundary spatial function, which will be explained, codded and tested gradually as a ZOO Service. The same procedure will then be used to enable the Buffer, Centroid and Convex Hull functions. Once done, some multiple geometries processes such as Intersection, Union, Difference and Symetric Difference will be implemented through an `exercise <./exercise.html>`__ at the end of the workshop."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:24
+# 55e462c4c81948568dde4a68699cdf59
+msgid "As already said in the introduction, you have the choice to code your service in C or Python (or both!) during this workshop. Explanations will be based on the C part, but will be very helpful for those who will choose Python. Please decide according to your habits and preferences and tell your choice to the instructors. The results will be the same in both case."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:31
+# 67ba291f24374a589d4cdc0f053efa14
+msgid "Preparing ZOO metadata file"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:33
+# 2a8a2023a5874bbbb4d8dbf9e6d939d0
+msgid "A ZOO Service is a combination of a ZOO metadata file (``.zcfg``) and the runtime module for the corresponding implementation, which is commonly called ZOO Service Provider. We will first prepare a ``.zcfg`` file step-by-step. Please open your preferred text editor and edit a file named ``Boundary.zcfg`` in your ``/home/user/zoows/sources/zoo-services/ws_sp`` directory. First, you need to name the service between brackets at the top of the file, as the following"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:44
+# cc3310751f3a40aaa8a98be9312d41b4
+msgid "This name is very important, it is the name of the Service and so the name of the function defined in the Services Provider. A title and a brief abstract must then be added to inform clients on what the service can do:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:53
+# e69f5422380349fd9421eb9a6b893df5
+msgid "Such metadata informations will be returned by a GetCapabilities request."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:55
+# bcc7b59ddd44469ead08a181f7b3c647
+msgid "You can also add other specific informations like the ``processVersion``. You can set if your ZOO Service can store its results, by setting the ``storeSupported`` parameter to true or false. You can also decide if the function can be run as a background task and inform on its current status, according to the ``statusSupported`` value :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:66
+# cc3a099275974eb2bee421d0db6d0af3
+msgid "In the main section of the ZOO Service metadata file, you must also specify two important things:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:68
+# 4fc1872893f54f5bbc597199006ebacc
+msgid "``serviceProvider``, which is the name of the C shared library containing the Service function or the Python module name."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:69
+# e5636d2ea14a4245b1f29c824937fa5d
+msgid "``serviceType``, which defines the programming language to be used for the Service. (value can be C or Python depending on what language you have decided to use)"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:71
+# 5306233a64034e47a6e64cca91c0657a
+msgid "C ServicesProvider Example :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:78
+# 5b5514cedf8e4998be1f6e88a85f4bfd
+msgid "In this case you will get an ``ogr_ws_service_provider.zo`` shared library containing the Boundary function, placed in the same directory than ZOO Kernel."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:81
+# 7fd6d2fd9cad47c0b85e389896acbe2a
+msgid "Python ServicesProvider Example :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:88
+# fc2bd5a67e6c4f1c9515df7bdb0c9c8e
+msgid "In this case, you will get an ``ogr_ws_service_provider.py`` file containing the Python code of your Boundary function."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:90
+# 25c6310902d24b3eaed7b029d926c8fa
+msgid "In the main section you can also add any other metadata information, as the following:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:98
+# 0370884738e04f14b205823af6c00ccd
+msgid "The main metadata informations have been declared, so you can now define data input which will be used by the ZOO Service. You can define any input needed by the Service. Please note that you can request ZOO Kernel using more data input than defined in the ``.zcfg`` file without any problem, those values will be passed to your service without filtering. In the Boundary Service example, a single polygon will be used as input, the one on which to apply the Boundary function."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:105
+# dca0944753db4d93891fd816f2be033a
+msgid "The data input declarations are included in a DataInputs block. They use the same syntax as the Service itself and the input name is between brackets. You can also fill a title, an abstract and a MetaData section for the input. You must set values for the ``minOccurs`` and ``maxOccurs`` parameters, as they will inform ZOO Kernel which parameters are required to be able to run the Service function."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:123
+# 714582e5b8a3400a9972e57868eac3ab
+msgid "The metadata defines what type of data the Service supports. In the Boundary example, the input polygon can be provided as a GML file or as a JSON string. Next step is thus to define the default and supported input formats. Both formats should be declared in a LitteralData or ComplexData block depending on their types. For this first example we will use ComplexData blocks only."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:143
+# 982d898094b2401fbb15b799b8725771
+msgid "Then, the same metadata information must be defined for the output of the Service, inside a DataOutputs block, as the following:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:164
+# 5c518d9d1d044d638713811885806573
+msgid "A complete copy of this ``.zcfg`` file can be found at the following URL: http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env/Boundary.zcfg."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:167
+# de023933ff7c43f7a46d79067ba0f2c3
+msgid "Once the ZOO metadata file is modified, you have to copy it in the same directory than your ZOO Kernel (so in your case ``/usr/lib/cgi-bin``). Then you should be able to run the following request :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:171
+# fc6e5a54ea414dbebe8307225224e6cd
+msgid "http://localhost/zoo/?Request=DescribeProcess&Service=WPS&Identifier=Boundary&version=1.0.0"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:173
+# 8532a98380ec408c895959b454b3e11b
+msgid "The returned ProcessDescriptions XML document should look like the following :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:180
+# af7687a8613d4cfb8aa5a47bcfe4a360
+msgid "Please note that the GetCapabilities and DescribeProcess only need a ``.zcfg`` file to be completed. Simple, isn't it ? At this step, if you request ZOO Kernel for an Execute, you will get an ExceptionReport document as response, looking as the following :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:189
+# fc8ff7294c5e4b049ddbd619f8a9a0a8
+msgid "A similar error message will be returned if you try to run your Python Service :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:198
+# 32d67b31429243f3aac1ccfdc3936290
+msgid "Implementing single geometry services"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:200
+# 80d9e012a8b04a5fafa14bce82847a12
+msgid "In order to learn the Services Provider creation and deployement step-by-step, we will first focus on creating a very simple one dedicated to the Boundary function. Similar procedure will then be used for the Buffer, Centroid and ConvexHull implementation."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:204
+# 172281a263be4a929dc723ebb9a49d5f
+msgid "Your metadata is now ok, so you now must create the code of your Service. The most important thing you must be aware of when coding ZOO Services is that the function corresponding to your Service takes three parameters (internal maps datatype or `Python dictionaries  <http://docs.python.org/tutorial/datastructures.html#dictionaries>`__) and returns an integer value representing the status of execution (SERVICE_FAILED or SERVICE_SUCCEEDED):"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:210
+# c245df22bcac48f0b7f20bbe0b33b725
+msgid "``conf`` : The main environment configuration (corresponding to the ``main.cfg`` content)"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:211
+# 32d8fd23eb794a599752653f1f2c59fc
+msgid "``inputs`` : The requested / default inputs"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:212
+# 66d0cb40c0d24025bedf7a08e4f4f3f5
+msgid "``outputs`` : The requested / default outputs"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:215
+# 1e67ecb74cc14d25952b68b1991b1004
+msgid "Boundary"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:218
+#: ../../workshop/2010/ogr_base_vect_ops.txt:887
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1117
+# 4cc6fd65b4c949b7a983111892599146
+# 534cc86d9e414d5cab21b81c1a849863
+# 2a3479c4b77c4c5597dc27265e29aa54
+msgid "C Version"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:220
+# 450dd97fe52347c89c87fc762fac5e6f
+msgid "As explained before, ZOO Kernel will pass the parameters to your Service function in a specific datatype called maps. In order to code your Service in C language, you also need to learn how to access this datatype in read/write mode."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:224
+# 4ebb02850ff5416cbe612216673bc6fc
+msgid "The maps are simple map named linked list containing a name, a content map and a pointer to the next map in the list (or NULL if there is no more map in the list). Here is the datatype definition as you can find in the zoo-kernel/service.h file:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:236
+# 3eafac6f69b94e3b8c99ec888200adff
+msgid "The map included in the maps is also a simple linked list and is used to store Key Value Pair values. A map is thus a couple of name and value and a pointer to the next map in the list. Here is the datatype definition you can find in the zoo-kernel/service.h file:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:249
+# 7e9057cf30534a02bd845be7e1afbb3a
+msgid "As partially or fully filled datastructures will be passed by the ZOO Kernel to your Services, this means that you do not need to deal with maps creation but directly with existing map, in other words the content of each maps. The first function you need to know is getMapFromMaps (defined in the zoo-kernel/service.h file) which let you access to a specific map of a maps."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:255
+# 7d618cfc1935417d937d5515c0a0348f
+msgid "This function takes three parameters listed bellow:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:257
+# a0fb201478c44a939defbb3dd2f46a67
+msgid "``m`` : a maps pointer representing the maps used to search the specific map"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:258
+# 819fe28278a246899438ce77eeec4d35
+msgid "``name`` : a char* representing the name of the map you are searching for"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:259
+# fe7454ac3b2f4cb297bf8bbee4dc7052
+msgid "``key`` : a specific key in the map named name"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:261
+# b479852b60f348a78d11482c53701ed4
+msgid "For example, the following syntax will be used to access the InputPolygon value map of a maps named inputs, your C code should be:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:268
+# d6bffa88ba9a413a8e17e5b5bf877fcd
+msgid "Once you get the map, you can access the name or the value fields, using the following syntax :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:275
+# cd3ed299474145448d9ee82c88200755
+msgid "As you know how to read and access the map fields from a maps, you can now learn how to write in such a datastructure. This is done by using the simple setMapInMaps function once again defined in zoo-kernel/service.h. The setMapInMaps function takes four parameters :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:279
+# 742840f5311749da97e930e1a3ac96f4
+msgid "``m`` : a maps pointer you want to update,"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:280
+# 3d4ca918fa75475fa8baabd4f356faca
+msgid "``ns`` : the name of the maps you want you want to update,"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:281
+#: ../../workshop/2010/ogr_base_vect_ops.txt:301
+# f68d7ac294ac49b88b6d1f98b33bd503
+# e5a5150b49cd42aaab943eee06742917
+msgid "``n`` : the name of the map you want to add or update the value,"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:282
+# e6ada939c86f40eba0b016d73d2aca2c
+msgid "``v`` : the value you want to set for this map."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:284
+# cc2d086247e647f2a276a42b72dcaad8
+msgid "Here is an example of how to add or edit the values of some map in the Result maps from outputs :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:293
+# 45b26dc6df894575a6d76966776914b4
+msgid "Please note that the setMapInMaps function is able to create or update an existing map. Indeed, if a map called « value » allready exists, then its value will be updated automatically."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:296
+# 27877b04d9064d0d9aa03c19adba0306
+msgid "Even if you will mainly use map from maps during this workshop, you can also add or update values in a map directly using the addToMap function defined in zoo-kernel/service.h. The addToMap function take three paramters :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:300
+# 7086585f9c1a433db3f19f34e211f61b
+msgid "``m`` : a map pointer you want to update,"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:302
+# 48d3e3abd83c4be989157499da928f1d
+msgid "``v`` : the value you want to set in this map."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:304
+# 8b20dd8c904a466388fb67fdb81ed38b
+msgid "This datatype is really important cause it is used in every C based ZOO Services. It is also the same representation used in other languages but using their respectives datatypes. For Example in Python, the dictionaries datatype is used, so manipulation is much easier."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:308
+# c9407a57451c4fb7abcbcdb27b30e4db
+msgid "Here is an example of the correspoding maps datatype used in Python language (this is a summarized version of the main configaration maps):"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:328
+# d8ba6ecca1eb410bada34976d91967fe
+msgid "As you know how to deal with maps and map, you are ready to code the first ZOO Service by using the OGR Boundary function."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:330
+# 7c127359dd454d1088b7c4ca82db71fd
+msgid "As already said in introduction we will use the MapServer WFS server available on OSGeoLive, so full WFS Response will be used as inputs values. As we will use the simple OGR Geometry functions like  `OGR_G_GetBoundary <http://www.gdal.org/ogr/ogr__api_8h.html#a797af4266c02846d52b9cf3207ef958>`__, only the Geometry object will be used rather than a full WFS Response. The first thing to do is to write a function which will extract the geometry definition from the full WFS Response. We will call it createGeometryFromWFS."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:337
+# 4c75a2f0e27c484fabc2a69d8db8dd06
+msgid "Here is the code of such a function:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:377
+# f3f1f73671024813a3a412f87241fd2d
+msgid "The only thing we will focus on is the call to the errorException function used in the function body. This function is declared in the zoo-kernel/service_internal.h and defined in zoo-kernel/service_internal.c file. It takes three parameters as follow:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:381
+# 4e36ddf3bf324b1baa0f24a76cb61fcd
+msgid "the main environment maps,"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:382
+# dccacb4b665a49788e02e23e668f999d
+msgid "a char* representing the error message to display,"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:383
+# 44be5890a5c549b48f99400c7f3abeb2
+msgid "a char* representing the error code (as defined in the WPS specification – Table 62)."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:385
+# 840fe981e1274f04b2e7b130284149e6
+msgid "In other words, if the WFS response cannot be parsed properly, then you will return an ExceptionReport document informing the client that a problem occured."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:388
+# be2609218193407b9ea8ed09e35b6fe0
+msgid "The function to extract the geometry object from a WFS Response is written, so you can now start defining the Boundary Service. Here is the full code for the Boundary Service:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:428
+# 79c5fca2d2b04615998fc141a3667685
+msgid "As you can see in the code above, the mimeType of the data inputs passed to our Service is first checked:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:438
+# 8d9c9d5a7e54424299f589a33b8e3921
+msgid "Basically, if we get an input with a mimeType set to application/json, then we will use our ``OGR_G_CreateGeometryFromJson`` in other case, our ``createGeometryFromWFS`` local function."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:441
+# cea051d742c64a28ba97071e07a67086
+msgid "Please note that in some sense the data inputs are not really of the same kind. Indeed as we used directly ``OGR_G_CreateGeometryFromJson`` it means that the JSON string include only the geometry object and not the full GeoJSON string. Nevertheless, you can easily change this code to be able to use a full GeoJSON string, simply by creating a function which will extract the geometry object from the GeoJSON string (using the json-c library for instance, which is also used by the OGR GeoJSON Driver)."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:448
+# 0dcf635ac0ef4e1bbdb1488f71f8c4eb
+msgid "Once you can access the input geometry object, you can use the  ``OGR_G_GetBoundary`` function and store the result in the res geometry variable. Then, you only have to store the value in the right format : GeoJSON per default or GML as we declared it as a supported output format."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:452
+# b21a25aa75434d988f7b5c9db2039d34
+msgid "Please note that ZOO Kernel will give you pre-filled outputs values, so you will only have to fill the value for the key named value, even if in our example we override the mimeType using the text/plain value rather than the application/json (to show that we can also edit other fields of a map). Indeed, depending on the format requested by the client (or the default one) we will provide JSON or GML representation of the geometry."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:473
+# 8e82450bf9bc41a2bf3953e3a2876436
+msgid "The Boundary ZOO Service is now implemented and you need to compile it to produce a Shared Library. As you just used functions defined in service.h (``getMapFromMaps``, ``setMapInMaps`` and ``addToMap``), you must include this file in your C code. The same requirement is needed to be able to use the ``errorException`` function declared in ``zoo-kernel/service_internal.h``, you also must link your service object file to the ``zoo-kernel/service_internal.o`` in order to use ``errorException`` on runtime. You must then include the required files to access the libxml2 and OGR C-API."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:481
+# 95c105f7d1e04c03a1ff5520235f30b1
+msgid "For the need of the Shared Library, you have to put your code in a block declared as extern \"C\". The final Service code should be stored in a service.c file located in the root of the Services Provider directory (so in ``/home/zoows/sources/zoo-services/ws_sp``). It should look like this:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:498
+# 94c36fb5dda0488a92f7e4f69e92785e
+msgid "The full source code of your Service is now ready and you must produce the corresponding Service Shared Object by compiling the code as a Shared Library. This can be done using the following command:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:505
+# 2b72e5df97044bd6a22ca0889f596f89
+msgid "Please note that the ``CFLAGS`` and ``LDFLAGS`` environment variables values must be set before."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:507
+# 9215c18b39a840e2a7eb5a30101333f5
+msgid "The ``CFLAGS`` must contain all the requested paths to find included headers, so the path to the directories where the ``ogr_api.h``, ``libxml2`` directory, ``service.h`` and ``service_internal.h`` files are located. Thanks to the OSGeoLive environment, some of the provided tools can be used to retrieve those values : ``xml2-config`` and ``gdal-config``, both used with the ``--cflags`` argument. They will produce the desired paths for you."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:513
+# ecb8179f6155402b8fb6f4bb8af7da1e
+msgid "If you follow the instructions to create your ZOO Services Provider main directory in ``zoo-services``, then you should find the ZOO Kernel headers and source tree which is located in the ``../../zoo-kernel`` directory relatively to your current path (``/home/user/zoows/sources/zoo-services/ws_sp``). Note that you can also use a full path to the ``zoo-kernel`` directory but using relative path will let you move your sources tree somewhere else and keep your code compiling using exactly the same command line. So you must add a ``-I../../zoo-kernel`` to your ``CFLAGS`` to make the compiler able to find the ``service.h`` and ``service_internal.h`` files."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:521
+# bcbe74cc0f9a4c28831511a106350651
+msgid "The full ``CFLAGS`` definition should look like this:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:527
+# 7efb7965a41a461399601eafc853612b
+msgid "Once you get the included paths correctly set in your ``CFLAGS`` , it is time to concentrate on the library we have to link against (defined in the ``LDFLAGS`` environment variable). In order to link against the gdal and libxml2 libraries, you can use the same tools than above using the ``--libs`` argument rather than ``--cflags``. The full ``LDFLAGS`` definition must look like this :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:537
+# 72576b6e334c435d9a12ef744a8f01fb
+msgid "Let's now create a ``Makefile`` which will help you compiling your code over the time. Please write a short ``Makefile`` in the root of your ZOO Services Provider directory, containing the following lines:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:552
+# 24824cc1e595425490b2da2cd0190487
+msgid "Using this ``Makefile``, you should be able to run ``make`` from your ZOO Service Provider main directory and to get the resulting ``ogr_ws_service_provider.zo`` file located in the ``cgi-env`` directory."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:555
+# 5daadb0ca82747649c682c0f238b3c31
+msgid "The metadata file and the ZOO Service Shared Object are now both located in the ``cgi-env`` directory. In order to deploy your new ServicesProvider, you only have to copy the ZOO Service Shared Object and its corresponding metadata file in the directory where ZOO Kernel is located, so in ``/usr/lib/cgi-bin``. You must use a ``sudo`` command to achieve this task:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:564
+# 6c62da0e86d24431a2a93f7f43e6e75d
+msgid "You should now understand more clearly the meannings of the ZOO Service Provider source tree ! The ``cgi-env`` directory will let you deploy your new Services or Services Provider in an easy way , simply by copying the whole cgi-env content in your ``cgi-bin`` directory."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:568
+# eff2174e327d453098567bc9bbb51964
+msgid "Please note that you can add the following lines to your ``Makefile`` to be able to type ``make install`` directly and to get your new Services Provider available for use from ZOO Kernel:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:576
+# 41e150775cf745a7afcbef3a648f4b93
+msgid "Your ZOO Services Provider is now ready to use from an Execute request passed to ZOO Kernel."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:579
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1021
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1225
+# ff8ba959ad84407483efe1aceb47321d
+# 9c9b30d6f12540d793581b13a2e4ba2b
+# ea2de46b8f824da5bd6dbc97093b82ef
+msgid "Python Version"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:581
+# 1966c217943b4d1bb8cc2a80c4b39329
+msgid "For those using Python to implement their ZOO Services Provider, the full code to copy in ``ogr_ws_service_provider.py`` in ``cgi-env`` directory is shown bellow. Indeed, as Python is an interpreted language, you do not have to compile anything before deploying your service which makes the deployement step much easier:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:616
+# 9d9c01a476dc42b6bfbbe3bf484510d9
+msgid "We do not dicuss the functions body here as we already gave all the details before and the code was volontary made in a similar way."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:619
+# fedb3be3826c4c058aa588a227369860
+msgid "As done before, you only have to copy the ``cgi-env`` files into your ``cgi-bin`` directory:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:625
+# d64e3c20937044e5b6d39ddcc1984cfd
+msgid "A simple ``Makefile`` containing the install section can be written as the following :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:632
+# 8cfd345d039d46cf94b0426050908096
+msgid "Finally, simply run make install from the ZOO Services Provider main directory, in order to deploy your ZOO Service Provider."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:636
+# a09fc6809d89418683ff58510f7c00bb
+msgid "Testing the Service using Execute Request"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:638
+# 3688becd2eed49e8b1af318ca5a8b297
+msgid "**The simple and unreadable way**"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:640
+# 71f62edc12814b02b7c84ee29f93d091
+msgid "Everybody should now get his own copy of the OGR Boundary Service stored as a ZOO Services Provider called ``ogr_ws_service_provider`` and deployed in the ZOO Kernel tree, so the following Execute request can be used to test the Service:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:644
+# a3371b53a28d4b65b0f813c5a01c849a
+msgid "`link <http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192>`__"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:650
+# 188a4ccf6ff0437e8a5d2db3cf09d695
+msgid "As you can see in the url above, we use an URLEncoded WFS request to the MapServer WFS server available on OSGeoLive as a ``xlink:href`` key in the DataInputs KVP value, and set the ``InputPolygon`` value to Reference. The corresponding non encoded WFS request is as follow:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:658
+# 5b2f75b7c30145ca96a4f2baca6cc3d0
+msgid "Please note that you can add ``lineage=true`` to the previous request if you need to get information about the input values used to run your Service. Furthermore, you may need to store the ExecuteResponse document of your ZOO Service to re-use it later. In this case you must add ``storeExecuteResponse=true`` to the previous request. Note that is an important thing as the behavior of ZOO Kernel is not exactly the same than when running without this parameter settled to true. Indeed, in such a request, ZOO Kernel will give you an ExecuteResponse document which will contain the attribute statusLocation, which inform the client where the ongoing status or the final ExecuteResponse will be located."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:668
+# 9bbff5f8d39e4bc19c3e407c7ab95fb8
+msgid "Here is an example of what the ExecuteResponse would look like in case ``storeExecuteResponse`` was set to true in the request:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:675
+# e17030ccf9a3408ba37e9665edb60eb2
+msgid "Then, according to the statusLocation, you should get the ExecuteResponse as you get before using the previous request. Note that can be really useful to provide some caching system for a client application."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:679
+# b0e7cecd48ad4a55b5a2afc7bb728a0d
+msgid "You didn't specify any ResponseForm in the previous request, it is not requested and should return a ResponseDocument per default using the application/json mimeType as you defined in you zcfg file. Nevertheless, you can tell ZOO Kernel what kind of data you want to get in result of your query adding the attribute ``mimeType=text/xml`` to your ``ResponseDocument`` parameter. Adding this parameter to the previous request will give us the result as its GML representation :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:686
+# 1bd380b9985c483a8f20713fa560a1da
+msgid "`link <http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&ResponseDocument=Result@mimeType=text/xml>`__"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:692
+# 90031e82d1154c8d9e7b10286c98b940
+msgid "As defined by the WPS specifications, you can also ask for a ``RawDataOutput`` to get only the data without the full ``ResponseDocument``. To do that, you only have to replace the ``ResponseDocument`` of your request by ``RawDataOutput``, like in the following request :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:697
+# bb71d8289dc3492f849c252cea9f5fa3
+msgid "`link <http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&RawDataOutput=Result@mimeType=application/json>`__"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:703
+# 393d9236f1444484baf1c9d2608c5fc2
+msgid "Please note that we go back to the default mimeType to directly obtain the JSON string as we will use this kind of request to develop our client application in the next section of this workshop."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:707
+# 315d57fedfe6441c926eeebbb11298e2
+msgid "Now, you know how to ask ZOO Kernel to run service in background, ask for ``RawDataOutput`` specifying ``mimeType`` or any specific format to be returned by the Kernel. When you ask for ``ResponseDocument``, you can also specify to the ZOO Kernel that you want the result to be stored on the server side."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:712
+# 010e16f270e141a6aad27ba09324bab4
+msgid "To do such a thing, you have to set the attribute ``asReference`` as true and then the resulting ExecuteResponse will contain a Reference node including the href attribute to let you access the produced file. To be able to handle this, you have to add the extension parameter in your ``DataOutputs`` node in the corresponding ZCFG file."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:717
+# ac174d015bf74fe88382a2c1288a1081
+msgid "Here is a sample url which provide such a result:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:719
+# 892016f6076d45e0960789bc861f969f
+msgid "`link <http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&ResponseDocument=Result@mimeType=application/json@asReference=true>`__"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:725
+# 37e30a9d038e415c99394cdce91ede14
+msgid "You can see bellow what kind of result can be expected :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:732
+# 238bc2d64e0f4dd3b558e1db60b680bf
+msgid "**Simplification and readability of request**"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:734
+# 1bc0c23895fc4ac9ab06159d582e140b
+msgid "As you can see in the simple example we used since the begining of this workshop, it is sometimes hard to write the Execute requests using the GET method as it makes really long and complexe URLs. In the next requests examples, we will thus use the POST XML requests. First , here is the XML request corresponding to the previous Execute we used:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:762
+# 43b2832cbab04484a27e8c4eeaeeff98
+msgid "In order to let you easily run the XML requests, a simple HTML form called ``test_services.html`` is available in your ``/var/www`` directory. You can access it using the following link :  http://localhost/test_services.html."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:766
+# ae910543f6464d41887438a832f29092
+msgid "Please open this page in your browser, simply fill the XML request content into the textarea field and click the « run using XML Request » submit button. You will get exactly the same result as when running your Service using the GET request. The screenshot above show the HTML form including the request and the ExecuteResponse document displayed in the iframe at the bottom of the page:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:777
+# 504e079bce3e4856bd58afe17a77fe75
+msgid "The xlink:href value is used in the simplest way to deal with such data input. Obviously, you can also use a full JSON string of the geometry, as shown in the following XML Request example :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:805
+# 159eb6ffa8894191882bee44f9efaefa
+msgid "If everything went well, you should get the Boundary of the JSON geometry passed as argument, and so be sure that your Service support both GML and JSON as input data. Note that in the previous request, we added a ``mimeType`` attribute to the ``ComplexData`` node to specify that the input data is not in the default ``text/xml`` mimeType but passed as an ``application/json`` string directly. It is similar to add ``@mimeType=application/json`` as we discussed before."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:812
+# 9349b55266a44b60be91cfdea6ee4294
+msgid "**storeExecuteResponse parameter and GetStatus Service**"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:814
+# 4a8febac481f4600be78f9d0eae78372
+msgid "If you go in your local ``/home/user/zoows/sources/zoo-services/utils/status``, you'll find the code for a ServiceProvider which will provide the GetStatus service and the longProcess one. The last is a simple example to learn how to use the status variable from lenv section of the main configuration maps and the updateStatus function you have to call to take your status value into account. The main service provider is the GetStatus one, it is able to give you information about the current status value from a service running in background mode."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:822
+# 107b75af5ed54247ba4da22f42d5f0fb
+msgid "You have to know that the ZOO Kernel will detect the presence of the GetStatus service and if it is available it will then return the link the corresponding Execute request."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:825
+# 459db727c35c47cea492678403f1f675
+msgid "So now you will deploy the GetStatus and longProcess service on your local environment. As for each services, you shall be able to deploy the services simply by copying the cgi-env directory into your Apache ``cgi-bin`` directory. You can use the following command :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:833
+# 923a94bd24b14ecc8aecdfc456021c50
+msgid "For simple Services it is the right way to deploy Service Providers. But in this specific case you'll have also to add some special parameter in the main section of you main configuration file and to copy an xsl file used to replace on the fly in the ResponseDocument the percentCompleted attribute of the ProcessStarted node returned by the GetStatus service."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:838
+# 29e302dc720e4727b96c2b0e10f120cc
+msgid "So first edit you ``main.cfg`` file to add the following lines in your main section :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:845
+# 6c3f587ac02e4df2a9727b865b15339f
+msgid "Here you define the path where the service is able to find the xsl file, specified in the dataPath parameter. You also tell the ZOO Kernel that you want to use the rewriteUrl we defined in the previous section."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:849
+# 647ad348af4a4b77a6b89b50f069582e
+msgid "To finish your deployment, you'll have now to copy the xsl file in the defined dataPath directory. You can use the following command :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:856
+# ed18fb5cd6c145ebb8df5659110d0355
+msgid "Now, if you run the following request to run the service longProcess :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:858
+# 3ad6912561704a9cbed45b745e9b9318
+msgid "http://localhost/zoo/?request=Execute&service=WPS&version=1.0.0&Identifier=longProcess&DataInputs=&storeExecuteResponse=true"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:860
+# 227096e91c204725891051904b4cb86e
+msgid "You shall get the a XML document looking like the following:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:867
+# f1c755269a5c464d83dd580c44dbf14e
+msgid "If you poll the statusLocation url provider in the answer you'll then be able to view the evolution of the percentCompleted attribute value growing, like you can see in the following screenshot."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:875
+# 4b7f6f67fbe54d498f9103151adf2610
+msgid "This won't be used during this workshop but can be useful for really time consuming services."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:879
+# 1a0dc85baeaf4f42b2f332463fff702e
+msgid "Creating Services for other functions (ConvexHull and Centroid)"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:881
+# d48397ca00a8409b808897848c25340e
+msgid "As the Boundary sample service code is available, you can now easily add ConvexHull and Centroid functions as they take exactly the same number of arguments : Only one geometry. The details for implementing and deploying the ConvexHull Service are provided bellow, and we will let you do the same thing for the Centroid one."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:889
+# f349b5936b81411290136856159a284e
+msgid "Please add first the following code to the service.c source code :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:928
+# 606464d0b2e046b1a4a5a51adb0dcfe8
+msgid "This new code is exactly the same as for the Boundary Service. The only thing we modified is the line where the  `OGR_G_ConvexHull <http://www.gdal.org/ogr/ogr__api_8h.html#7a93026cfae8ee6ce25546dba1b2df7d>`__ function is called (rather than the OGR_G_GetBoundary you used before). It is better to not copy and paste the whole function and find a more generic way to define your new Services as the function body will be the same in every case. The following generic function is proposed to make things simpler:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:971
+# 90b3447385444f76a80a74633f4d2278
+msgid "Then, a function pointer called myFunc rather than the full function name can be used. This way we can re-implement our Boundary Service this way:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:980
+# 5cc198d2465a4559a903607dfc9bc12e
+msgid "Using this applyOne local function defined in the service.c source code, we can define other Services this way:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:992
+# f8ca75c7231b45df97f8afde0bbd314a
+msgid "The genericity of the applyOne function let you add two new Services in your ZOO Services Provider : ConvexHull and Centroid."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:994
+# 86dec92a0bc94276b617bf537d28e5b0
+msgid "Note that you should define MY_OGR_Centroid function before the Centroid one as  `OGR_G_Centroid <http://www.gdal.org/ogr/ogr__api_8h.html#23f5a19a81628af7f9cc59a37378cb2b>`__ don't return a geometry object but set the value to an already existing one and support only Polygon as input, so to ensure we use the ConvexHull for MultiPolygon. So please use the code bellow:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1009
+# 5c31b4e61c2546e8af992cbdeaaf3147
+msgid "To deploy your Services, you only have to copy the ``Boundary.zcfg`` metadata file from your cgi-env directory as ``ConvexHull.zcfg`` and ``Centroid.zcfg``. Then, you must rename the Service name on the first line to be able to run and test the Execute request in the same way you did before. You only have to set the Identifier value to ConvexHull or Centroid in your request depending on the Service you want to run."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1015
+# 26c1e557e89f4559930055a762a977fb
+msgid "Note here that the GetCapabilities and DescribeProcess requests will return odd results as we didn't modified any metadata informations, you can edit the ``.zcfg`` files to set correct values. By the way it can be used for testing purpose, as the input and output get the same name and default/supported formats."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1041
+# 04a325a372874f858e74e7a8f5027806
+msgid "Once again, you can easily copy and paste the function for Boundary and simply modify the line where the Geometry method was called. Nevertheless, as we did for the C language we will give you a simple way to get things more generic."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1045
+# 5c0d6409b0574abd8f59086bb1f590fe
+msgid "First of all, the first step which consists in extracting the InputPolygon Geometry as it will be used in the same way in each Service functions, so we will first create a function which will do that for us. The same thing can also be done for filling the output value, so we will define another function to do that automaticaly. Here is the code of this two functions (extractInputs and outputResult) :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1067
+# 6fb107b35f0640858affcbadacaffaee
+msgid "We can so minimize the code of the Boundary function to make it simplier using the following function definition :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1079
+# 5c2bb5e4cdee484796119db9679dfe62
+msgid "Then definition of the ConvexHull and Centroid Services can be achieved using the following code:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1101
+# 2a40086ef4a345eb94ad36f148eb231c
+msgid "Note, that in Python you also need to use ConvexHull to deal with MultiPolygons."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1103
+# 0b947d7368854b4cb9d2d73b48bd6edf
+msgid "You must now copy the ``Boundary.zcfg`` file as we explained for the C version in ``ConvexHull.zcfg`` and ``Centroid.zcfg`` respectively and then, use make install command to re-deploy and test your Services Provider."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1106
+# db20cd769a64405eb8b9e1fe8c124bb3
+msgid "Create the Buffer Service"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1108
+# d65e6ce269544874a29c854df1479b7d
+msgid "We can now work on the Buffer Service, which takes more arguments than the other ones. Indeed, the code is a bit different from the one used to implement the Boundary, ConvexHull and Centroid Services."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1111
+# 2d5510b227cc4f7e8af18d7206d74c55
+msgid "The Buffer service also takes an input geometry, but uses a BufferDistance parameter. It will also allow you to define LitteralData block as the BufferDistance will be simple integer value. The read access to such kind of input value is made using the same function as used before."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1119
+# f84e930be2a446aeb1b607be6531c4e8
+msgid "If you go back to the first Boundary Service source code, you should not find the following very complicated. Indeed, you simply have to add the access of the BufferDistance argument and modify the line whenthe  `OGR_G_Buffer <http://www.gdal.org/ogr/ogr__api_8h.html#1ca0bd5c0fcb4b1af3c3973e467b0ec0>`__ must be called (instead of OGR_G_GetBoundary). Here is the ful lcode :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1161
+# 5e84431199bb4d26a4e8b98166cf33e9
+msgid "The new code must be inserted in your service.c file and need to be recompiled and replace the older version of your ZOO Service Provider in the /usr/lib/cgi-bin/ directory. You must of course place the corresponding ZOO Metadata File in the same directory."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1165
+# a05bcc016eb44041861d6471f398b18f
+msgid "As we explained before, ZOO Kernel is permissive in the sense that you can pass more arguments than defined in you zcfg file, so let's try using a copy of the ``Boundary.zcfg`` file renamed as ``Buffer.zcfg`` and containing the Buffer identifier. Then, please test your service using an Execute request as you did before. You will obtain the buffer result in a ResponseDocument."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1171
+# 236892d32f334627afb203705a4e09ba
+msgid "You may have noted that the above code check if a BufferDistance input was passed to the service. If not, we will use 1 as the default value, which explains why you do not have to use one more input to your previous queries."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1175
+# 0fa1c06100c64d13ae18dc67b8f992ce
+msgid "You can change the BufferDistance value used by your Service to compute Buffer of your geometry by adding it to the DataInputs value in your request. Note that using KVP syntaxe, each DataInputs are separated by a semicolon."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1179
+# b8cd4d3601fd492bbe471056f908486e
+msgid "So, the previous request:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1185
+# 903105217a5f4153954e2a8eb087cc59
+msgid "Can now be rewritten this way :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1191
+# 46d7b0e2c72b469f93fb8156489df4b5
+msgid "Setting BufferDistance value to 2 would give you a different result, then don't pass any other parameter as we defined 1 as the default value in the source code."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1194
+# 51338416168d45bf89aa11f1e9c077df
+msgid "Here you can find the same query in XML format to use from the  http://localhost/test_services.html HTML form :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1227
+# 8f0c0e255384473990f65de1b5a70eeb
+msgid "As we already defined the utility functions createGeometryFromWFS and outputResult, the code is as simple as this:"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1244
+# 636f2fa87ef74123aeaebf4a27494deb
+msgid "We simply added the use of inputs[\"BufferDistance\"][\"value\"] as arguments of the Geometry instance Buffer method. Once you get this code added to your ogr_ws_service_provider.py file, simply copy it in the ZOO Kernel directory (or type make install from your ZOO Service Provider root directory). Note that you also need the ``Buffer.zcfg`` file detailled in the next section."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1250
+# 5b10f568018446fa9c211584da93cb0b
+msgid "The Buffer MetadataFile file"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1252
+# fe9a432fe7344f6f86638eef71cfc9ce
+msgid "You must add BufferDistance to the Service Metadata File to let clients know that this Service supports this parameter. To do this, please copy your orginal ``Boundary.zcfg`` file as ``Buffer.zcfg`` and add the following lines to the DataInputs block :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1274
+# 02df2f025e3e437e95fcfc8d92c4747d
+msgid "Note that as minOccurs is set to 0 which means that the input parameter is optional and don't have to be passed. You must know that ZOO Kernel will pass the default value to the Service function for an optional parameter with a default value set."
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1278
+# a0cf93c6f3a84c8490ff2755e478f890
+msgid "You can get a full copy of the ``Buffer.zcfg`` file here :"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1280
+# 1bf81b44530f40b8882d7ee3d7084ebe
+msgid "http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env/Buffer.zcfg"
+msgstr ""
+
+#: ../../workshop/2010/ogr_base_vect_ops.txt:1282
+# 131504f1bad545ea8ff807325490c701
+msgid "You can now ask ZOO Kernel for GetCapabilities, DescribeProcess and Execute for the Buffer Service."
+msgstr ""
+

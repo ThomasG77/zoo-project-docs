@@ -1,0 +1,57 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/examples.txt:4
+msgid "Examples"
+msgstr ""
+
+#: ../../api/examples.txt:6
+msgid ""
+"In this page you can find some small examples on how to use the JavaScript "
+"ZOO-API on the server side."
+msgstr ""
+
+#: ../../api/examples.txt:9
+msgid ""
+"ZOO-API contains many classes and functions. You can find the description "
+"list :ref:`here <api-classes>`."
+msgstr ""
+
+#: ../../api/examples.txt:12
+msgid "ZOO.Process example of use"
+msgstr ""
+
+#: ../../api/examples.txt:23
+msgid ""
+"In this really short example you can see how to create ``ZOO.Process`` class"
+" instance and call the Execute method on such an instance. Then you'll just "
+"need to return a JavaScript object containing the attributes result and "
+"outputs, which I'm sure you already know what is about. The first is about "
+"the status of the process (can be ``ZOO.SERVICE_SUCEEDED``, "
+"``ZOO.SERVICE_FAILED`` and so on), the last is obviously the resulting maps "
+"(take a look at the maps internal data structure used by ZOO Kernel in "
+"``service.h``)."
+msgstr ""
+
+#: ../../api/examples.txt:31
+msgid "ZOO.UpdateStatus"
+msgstr ""
+
+#: ../../api/examples.txt:50
+msgid ""
+"You can see in this sample code how to use the ``ZOOUpdateStatus`` function "
+"to update the current status of your running process. This information will "
+"be really helpfull when the ZOO Kernel will run your JavaScript Service in "
+"background mode (if the user set to ``true`` the ``storeExecuteResponse`` "
+"parameter in his request)."
+msgstr ""

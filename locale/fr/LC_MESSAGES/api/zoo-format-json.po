@@ -1,0 +1,417 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-json.txt:4 ../../api/zoo-format-json.txt:124
+msgid "ZOO.Format.JSON"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:6
+msgid "A parser to read/write JSON safely."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:10
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:13
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:19 ../../api/zoo-format-json.txt:39
+#: ../../api/zoo-format-json.txt:61 ../../api/zoo-format-json.txt:73
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:20 ../../api/zoo-format-json.txt:40
+#: ../../api/zoo-format-json.txt:62 ../../api/zoo-format-json.txt:74
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:21
+msgid ":ref:`indent <indent>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:22
+msgid ""
+"{String} For \"pretty\" printing, the indent string will be used once for "
+"each indentation level."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:23
+msgid ":ref:`space <space>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:24
+msgid ""
+"{String} For \"pretty\" printing, the space string will be used after the "
+"\":\" separating a name/value pair."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:25
+msgid ":ref:`newline <newline>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:26
+msgid ""
+"{String} For \"pretty\" printing, the newline string will be used at the end"
+" of each name/value pair or array item."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:27
+msgid ":ref:`level <level>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:28
+msgid ""
+"{Integer} For \"pretty\" printing, this is incremented/decremented during "
+"serialization."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:29
+msgid ":ref:`pretty <pretty>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:30
+msgid "{Boolean} Serialize with extra whitespace for structure."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:33
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:41
+msgid ":ref:`ZOO.Format.JSON <ZOO.Format.JSON>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:42 ../../api/zoo-format-json.txt:120
+msgid "Create a new parser for JSON."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:43
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:44 ../../api/zoo-format-json.txt:133
+msgid "Deserialize a json string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:45
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:46 ../../api/zoo-format-json.txt:151
+msgid "Serialize an object into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:47
+msgid ":ref:`writeIndent <writeIndent>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:48 ../../api/zoo-format-json.txt:169
+msgid "Output an indentation string depending on the indentation level."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:49
+msgid ":ref:`writeNewline <writeNewline>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:50 ../../api/zoo-format-json.txt:182
+msgid "Output a string representing a newline if in pretty printing mode."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:51
+msgid ":ref:`writeSpace <writeSpace>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:52 ../../api/zoo-format-json.txt:195
+msgid "Output a string representing a space if in pretty printing mode."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:55
+msgid "Serialize Properties"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:63
+msgid ":ref:`serialize <serialize>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:64
+msgid "Object with properties corresponding to the serializable data types."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:67
+msgid "Serialize Functions"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:75
+msgid ":ref:`serialize.object <serialize.object>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:76 ../../api/zoo-format-json.txt:214
+msgid "Transform an object into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:77
+msgid ":ref:`serialize.array <serialize.array>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:78 ../../api/zoo-format-json.txt:227
+msgid "Transform an array into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:79
+msgid ":ref:`serialize.string <serialize.string>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:80 ../../api/zoo-format-json.txt:240
+msgid "Transform a string into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:81
+msgid ":ref:`serialize.number <serialize.number>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:82 ../../api/zoo-format-json.txt:253
+msgid "Transform a number into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:83
+msgid ":ref:`serialize.boolean <serialize.boolean>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:84 ../../api/zoo-format-json.txt:266
+msgid "Transform a boolean into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:85
+msgid ":ref:`serialize.date <serialize.date>`"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:86 ../../api/zoo-format-json.txt:279
+msgid "Transform a date into a JSON string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:88
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:93
+msgid "indent"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:93
+msgid ""
+"``{String}`` For \"pretty\" printing, the indent string will be used once "
+"for each indentation level."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:98
+msgid "space"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:98
+msgid ""
+"``{String}`` For \"pretty\" printing, the space string will be used after "
+"the \":\" separating a name/value pair."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:103
+msgid "newline"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:103
+msgid ""
+"``{String}`` For \"pretty\" printing, the newline string will be used at the"
+" end of each name/value pair or array item."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:108
+msgid "level"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:108
+msgid ""
+"``{Integer}`` For \"pretty\" printing, this is incremented/decremented "
+"during serialization."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:113
+msgid "pretty"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:113
+msgid ""
+"``{Boolean}`` Serialize with extra whitespace for structure. This is set by "
+"the :ref:`write <write>` method."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:115
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:122 ../../api/zoo-format-json.txt:135
+#: ../../api/zoo-format-json.txt:153 ../../api/zoo-format-json.txt:216
+#: ../../api/zoo-format-json.txt:229 ../../api/zoo-format-json.txt:242
+#: ../../api/zoo-format-json.txt:255 ../../api/zoo-format-json.txt:268
+#: ../../api/zoo-format-json.txt:281
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:124
+msgid ""
+"``options {Object}`` An optional object whose properties will be set on this"
+" instance."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:142
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:140 ../../api/zoo-format-json.txt:158
+#: ../../api/zoo-format-json.txt:171 ../../api/zoo-format-json.txt:184
+#: ../../api/zoo-format-json.txt:197 ../../api/zoo-format-json.txt:220
+#: ../../api/zoo-format-json.txt:233 ../../api/zoo-format-json.txt:246
+#: ../../api/zoo-format-json.txt:259 ../../api/zoo-format-json.txt:272
+#: ../../api/zoo-format-json.txt:285
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:142
+msgid "``{Object}`` An object, array, string, or number."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:160
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:160
+msgid "``{String}`` The JSON string representation of the input value."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:173
+msgid "writeIndent"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:173
+msgid "``{String}`` An appropriate indentation string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:186
+msgid "writeNewline"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:186
+msgid "``{String}`` A string representing a new line."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:199
+msgid "writeSpace"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:199
+msgid "``{String}`` A space."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:201
+msgid "**Serialize Properties**"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:207
+msgid "serialize"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:206
+msgid ""
+"Object with properties corresponding to the serializable data types. "
+"Property values are functions that do the actual serializing."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:209
+msgid "**Serialize Functions**"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:222
+msgid "serialize.object"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:218
+msgid "``object {Object}`` The object to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:222
+msgid "``{String}`` A JSON string representing the object."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:235
+msgid "serialize.array"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:231
+msgid "``array {Array}`` The array to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:235
+msgid "``{String}`` A JSON string representing the array."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:248
+msgid "serialize.string"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:244
+msgid "``string {String}`` The string to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:248
+msgid "``{String}`` A JSON string representing the string."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:261
+msgid "serialize.number"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:257
+msgid "``number {Number}`` The number to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:261
+msgid "``{String}`` A JSON string representing the number."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:274
+msgid "serialize.boolean"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:270
+msgid "``bool {Boolean}`` The boolean to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:274
+msgid "``{String}`` A JSON string representing the boolean."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:286
+msgid "serialize.date"
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:283
+msgid "``date {Date}`` The date to be serialized."
+msgstr ""
+
+#: ../../api/zoo-format-json.txt:287
+msgid "``{String}`` A JSON string representing the date."
+msgstr ""

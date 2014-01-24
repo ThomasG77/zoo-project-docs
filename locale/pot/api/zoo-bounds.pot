@@ -1,0 +1,429 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-bounds.txt:4
+#: ../../api/zoo-bounds.txt:94
+# 656a6e54cd2b41699bcccc12f046e32b
+# 62cd95af966d4d1f99baf2aef8d851df
+msgid "ZOO.Bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:6
+# e1cba0d514f44f97ab62bfe8e7347d89
+msgid "Instances of this class represent bounding boxes."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:9
+# 9942089d41c847a88884a1308ac3921a
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:15
+#: ../../api/zoo-bounds.txt:33
+# 7ddbebf801e04f5f9dd5fc86dbd192ac
+# 49c0214071cb4065a1d564b74d2d9354
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:16
+#: ../../api/zoo-bounds.txt:34
+# 1bfcfcf92d894753bb481f5e328daed6
+# acc0c8c788a04b078b7c0d8f3c102e2d
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:17
+# 0dfa75d2e59c465688b070a9ff327fa6
+msgid ":ref:`left <left>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:18
+# cee9ef053b7f4ff99a01de5b0e5d8456
+msgid "{Number} Minimum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:19
+# 25386c51b8934448995d0fe2f664d820
+msgid ":ref:`bottom <bottom>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:20
+# 4f94ed0dbc004cd28ccb6a15cb485a2a
+msgid "{Number} Minimum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:21
+# 52e6142b0d61488bbacb0a423a2d3bf2
+msgid ":ref:`right <right>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:22
+# c102d81d26774a56aae526824c680042
+msgid "{Number} Maximum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:23
+# 9b401678a18c4f5a90d0344720530aeb
+msgid ":ref:`top <top>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:24
+# 41e49aa70dcf4471bcd23f55b94eace9
+msgid "{Number} Maximum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:27
+# d456983187d445ef9ae0e245b2f85138
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:35
+# 57abba44093c48959820e4f858efe26b
+msgid ":ref:`ZOO.Bounds <ZOO.Bounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:36
+#: ../../api/zoo-bounds.txt:87
+# 9502c7716aa84e469fd0dad2ce34cb8b
+# 2063b44d4b284b31be03f179a7126ee9
+msgid "Construct a new bounds object."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:37
+# a397aba84d0949d9870fe2e78ab7d69b
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:38
+#: ../../api/zoo-bounds.txt:103
+# 88dd4827c87845e987fcae8727ce6971
+# b965992b51a44dc381c11f7613ed53d0
+msgid "Create a cloned instance of this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:39
+# 6d28b232d34c4e0f8ff3e8aa164f7ee4
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:40
+#: ../../api/zoo-bounds.txt:116
+# 4dbcc229d6174d37911408c2e502b776
+# 120d095132bb4051adf1b894fed6d18f
+msgid "Test a two bounds for equivalence."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:41
+# 0a1e89936ea1482ebe1d3c33d3f87547
+msgid ":ref:`toString <toString>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:42
+# 350ac02b5b14406aa988224af931fb65
+msgid "{String} String representation of bounds object."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:43
+# dd90ac7211df47fabd95e408f89ad5b8
+msgid ":ref:`toBBOX <toBBOX>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:45
+# beafa65a67d54d5e8b56711d49d001c9
+msgid ":ref:`toGeometry <toGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:46
+#: ../../api/zoo-bounds.txt:160
+# fb1f6c543170461e98d0c0fe5ffa0724
+# eb422ac3629d4156b1346d2f67f2a09f
+msgid "Create a new polygon geometry based on this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:47
+# e16c39f6303146aeaf96d2e0e72cdd41
+msgid ":ref:`getWidth <getWidth>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:48
+# 01920d54c5634069b57215e3c7a542d5
+msgid "{Float} The width of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:49
+# 2ae32088aa0a4e0e97beb571359ee5d3
+msgid ":ref:`getHeight <getHeight>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:50
+# 436716df9a0a40cb97f42d26f5c6b6aa
+msgid "{Float} The height of the bounds (top minus bottom)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:51
+# 166735fafedf40f88128771e4751d3c6
+msgid ":ref:`add <add>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:53
+# 11fecaaec4694d709770945d231ab119
+msgid ":ref:`extend <extend>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:54
+# 4fb6fc2b58fd4d08909a1149c6d9015e
+msgid "Extend the bounds to include the point, lonlat, or bounds specified."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:55
+# c2c563e97da04752bdcbe26543b56379
+msgid ":ref:`intersectsBounds <intersectsBounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:56
+# c6a7a609580049619b58f5a0868df8f1
+msgid "Determine whether the target bounds intersects this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:57
+# 0eb4c642b2714b21b2bae749c45975af
+msgid ":ref:`containsBounds <containsBounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:58
+#: ../../api/zoo-bounds.txt:244
+# 603e2415b060468096ebaff6a4bdad4f
+# a210b7a26e9543208cc4b407fc114e46
+msgid "Determine whether the target bounds is contained within this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:60
+# 1c68c972f451416f8624e33938ab67e3
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:65
+# 23e2ffdf31374634b325b0d995a370ea
+msgid "left"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:65
+# bb9d75b0f2164003a02f81fa5ffc31c6
+msgid "``{Number}`` Minimum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:70
+# 1c9a433c6ee24181b3f4b220a9e5aeb2
+msgid "bottom"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:70
+# ee3b4613a7124801a66da1f785dd53a3
+msgid "``{Number}`` Minimum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:75
+# 985a49b93aff4ba78a1c7782c12c306d
+msgid "right"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:75
+# 8f7cf68ad92c4a559e5e35e5a413aa11
+msgid "``{Number}`` Maximum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:80
+# 64a7e54a9c07464cad70c1ae0ad71d47
+msgid "top"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:80
+# 7ef8663ee2324763b3d3ebda6d54fe45
+msgid "``{Number}`` Maximum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:82
+# 199428496604443dad34f266924729a0
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:89
+#: ../../api/zoo-bounds.txt:118
+#: ../../api/zoo-bounds.txt:145
+#: ../../api/zoo-bounds.txt:195
+#: ../../api/zoo-bounds.txt:214
+#: ../../api/zoo-bounds.txt:228
+#: ../../api/zoo-bounds.txt:246
+# a9d4ff7199e04f859cedf20f01361276
+# ff47e423dfe846dbbc063d86fcb4d263
+# 08568353a3a7445e9a14ebdea39516ad
+# dbe2d2a8016042f38856bc98d6cbe6f5
+# 9c79d5713e5441dd9aac525909e986b8
+# 1967d29af9054ee1b03a07c76a59dd3c
+# 33e35a8b6df94aa488e48efb517c1713
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:107
+# 4891d15eac0b43f78d08f0d223eccf2e
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:105
+#: ../../api/zoo-bounds.txt:122
+#: ../../api/zoo-bounds.txt:134
+#: ../../api/zoo-bounds.txt:149
+#: ../../api/zoo-bounds.txt:162
+#: ../../api/zoo-bounds.txt:173
+#: ../../api/zoo-bounds.txt:184
+#: ../../api/zoo-bounds.txt:200
+#: ../../api/zoo-bounds.txt:233
+#: ../../api/zoo-bounds.txt:252
+# 7f6bddd3716843c2b52e66fa8d401fa9
+# be37132b6e7e47388828696e1029ee7f
+# fbd51661425340689508b70a53cb141a
+# 7766b97c1c0e47d59e3ad0fcb0501450
+# 04170646e0274a589305d3b0ba0580df
+# c0b6f557474b4fbabee0f557f23fb1db
+# 851cf06ff6b94934ae03fe397afbac65
+# ce1100bff19c4e1e90ef67f087d1b9ec
+# 70252f3f063943379f7c9323e2c0f684
+# 8ffeb7d8b9b94386b7d49abfbfaafd2d
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:107
+# bc948fbb9f2a4dabb30ade421336cd02
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` A fresh copy of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:125
+# 28d044f12eab418ca7a1ad0ee27644a1
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:124
+# 2f950e00e700478db7522851ce1c708d
+msgid "``{Boolean}`` The passed-in bounds object has the same left, right, top, bottom components as this.  Note that if bounds passed in is null, returns false."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:136
+# 60e74f780321441591ed5436de14d2df
+msgid "toString"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:136
+# 7bd29b9accda41e39cb6f281845b58a3
+msgid "``{String}`` String representation of bounds object.  (ex. *<i>\"left-bottom=(5,42) right-top=(10,45)\"</i>*)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:151
+# 7c02e9f58a384e368f294f461f9f31f8
+msgid "toBBOX"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:147
+# bbaff9ee43524d1fb0599d22b3591ec1
+msgid "``decimal {Integer}`` How many significant digits in the bbox coords?  Default is 6"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:151
+# 25aa4685613c490981f6e9913957de52
+msgid "``{String}`` Simple String representation of bounds object.  (ex. *<i>\"5,42,10,45\"</i>*)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:164
+# 5f3ba5a7594e4a6da9fb6adf0cc9c3bd
+msgid "toGeometry"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:164
+# ed5064d2f39e45ce8bd4f460b2781d19
+msgid ":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A new polygon with the coordinates of this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:175
+# d5971d06106c48aa8c2bc8d2d889c965
+msgid "getWidth"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:175
+# 71f879c054ff431aac1c312528ddecca
+msgid "``{Float}`` The width of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:186
+# 4d163feb542f4bf2a6441211454621e3
+msgid "getHeight"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:186
+# d4d246428c3e4214ad081308cc63f138
+msgid "``{Float}`` The height of the bounds (top minus bottom)."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:202
+# 26792b2689b04c898bd9e8ea721e6414
+msgid "add"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:202
+# c1202dd88c6d46c9bbda369ba5549144
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` A new bounds whose coordinates are the same as this, but shifted by the passed-in x and y values."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:216
+# e4f1a21b3b744a239ebdd93393e8e75e
+msgid "extend"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:211
+# 3e75f76e5956443c837a943524ef7651
+msgid "Extend the bounds to include the point, lonlat, or bounds specified.  Note, this function assumes that left < right and bottom < top."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:216
+# 1a9b4e3b5e0941b691640f0efe4771b2
+msgid "``object {Object}`` Can be Point, or Bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:235
+# a9d71e0c68194771bdc3134608cac5cd
+msgid "intersectsBounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:225
+# 20c5788b7e474c87995963a848956fa7
+msgid "Determine whether the target bounds intersects this bounds.  Bounds are considered intersecting if any of their edges intersect or if one bounds contains the other."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:235
+# 872e54bf28f84d51b15b9afbf9ca4c94
+msgid "``{Boolean}`` The passed-in bounds object intersects this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:253
+# 086f6e5540d34d0fafccd040fac32997
+msgid "containsBounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:254
+# 67fda18831474c05a8e51ba7b35f5a1a
+msgid "``{Boolean}`` The passed-in bounds object is contained within this bounds."
+msgstr ""
+

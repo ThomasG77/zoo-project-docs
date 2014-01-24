@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.txt:4
+# 0858d50fec7c49d58b4a180db4e65605
+msgid "ZOO 1.3 Documentation"
+msgstr ""
+
+#: ../../index.txt:6
+# 39345856065145e8827848fc3fac4528
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../index.txt:7
+# 1bfa7e499793462b8b2febfddce5fa78
+msgid "$Date: 2013-09-27 10:21:57 +0200 (Fri, 27 Sep 2013) $"
+msgstr ""
+
+#: ../../index.txt:10
+#: ../../index.txt:0
+# 63b930d22c8b48c6bde4a059c642531d
+# 0bdfcf70687a420d9b7b632220a96d7b
+msgid "Quick Links"
+msgstr ""
+
+#: ../../index.txt:1
+# 1894767dc72246ff8b813ed4e813d5c1
+msgid ":ref:`kernel`"
+msgstr ""
+
+#: ../../index.txt:1
+# 6d066ef309884874b08a0532781b11b4
+msgid ":ref:`services`"
+msgstr ""
+
+#: ../../index.txt:1
+# 34e5185e0bf140c98fc80a92cc3701fd
+msgid ":ref:`api`"
+msgstr ""
+
+#: ../../index.txt:1
+# 28d0b62489714e95b872cee7694932de
+msgid ":ref:`kernel-installation`"
+msgstr ""
+
+#: ../../index.txt:1
+# b82df1a995ba412ab2c06db14dd8556a
+msgid ":ref:`community`"
+msgstr ""
+
+#: ../../index.txt:1
+# 1297a5af59b447178d23cebcc8096be4
+msgid "`Search mailing list <http://zoo-discuss.1049523.n5.nabble.com/>`__"
+msgstr ""
+
+#: ../../index.txt:1
+# 8625515b792540798a9e31c3adff7da1
+msgid ":ref:`documentation_development`"
+msgstr ""
+
+#: ../../index.txt:1
+# faf652928cc34d3fb5b77a72c45032e8
+msgid ":ref:`workshop-foss4g-japan-2010`"
+msgstr ""
+
+#: ../../index.txt:1
+# 57e8cbdd558c44a49fd9df2e3416cc25
+msgid ":ref:`workshop-foss4g-cee-2012`"
+msgstr ""
+
+#: ../../index.txt:19
+# 31e703a3acb547f58447794e20afad66
+msgid "The entire documentation is also available as a single `PDF document <./ZOOProject.pdf>`__ |image|  and `ePub document <./ZOOProject.epub>`__"
+msgstr ""
+
+#: ../../index.txt:23
+# f2e0d57a0ccd4c018df165fad7153937
+msgid "About ZOO Documentation"
+msgstr ""
+
+#: ../../index.txt:25
+# 169a7304cf964d71a740dcb0c61e1ad0
+msgid "ZOO Documentation is a collaborative process; once users contribute documentation through the ZOO Wiki, the Documentation Committee will then review the contributions to add them into the official docs.  The committee is currently composed of:"
+msgstr ""
+
+#: ../../index.txt:35
+# 196bac316e60457cb4200425f5d54f08
+msgid "A special thank to the ZOO-Project sponsors and knwoledge partners for their support."
+msgstr ""
+
+#: ../../index.txt:37
+# a0af1634d1444efb9a27448405d85338
+msgid "The committee would like to thank ``Venkatesh Raghavan`` for his help on promoting ZOO Workshop in many places."
+msgstr ""
+
+#: ../../index.txt:39
+# 5dc97e05f85a4f00b456288d7f3bd4c3
+msgid "The committee would like to thank ``Hirofumi Hayashi`` and ``Daisuke Yoshida`` for their help and japanese translation effort for the ZOO-Project Worshop 2010."
+msgstr ""
+
+#: ../../index.txt:41
+# 3f6b3091924f4edb8f7fb7c1037f725b
+msgid "The committee would also like to thank the early contributors to the documentation: ``Luca Delucchi``, ``René-Luc D'Hont``,  ``Angelos Tzotsos`` and ``Guillaume Sueur``."
+msgstr ""
+
+#: ../../index.txt:45
+# 319703754e994dd08be6b8d89a96811e
+msgid "ZOO Wiki"
+msgstr ""
+
+#: ../../index.txt:47
+# 288fa3abf0024e699b0ad4c0154f6461
+msgid "Users wishing to contribute steps and documents should use the `ZOO Wiki <http://www.zoo-project.org/trac>`__."
+msgstr ""
+
+#: ../../index.txt:51
+# 46e529d4450c4f578e6a9cce5d1e91d1
+msgid "Official Documentation"
+msgstr ""
+
+#: ../../index.txt:53
+# d3bb6b7b82ed4ff6858b3ccfb992ecb4
+msgid "This section contains the official ZOO Project documentation."
+msgstr ""
+

@@ -1,0 +1,287 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/zcfg-reference.txt:4
+msgid "ZCFG : the ZOO Service Configuration File"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:7
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:13
+msgid ""
+"The ZOO Service configuration file (.zcfg) describes the service and will be"
+" parsed by the ZOO Kernel. We will describe here what such a file contains. "
+"You can also take a look at the existing examples of ZCFG files in the "
+"``cgi-env`` directory of each services available in the `ZOO-Project SVN "
+"source tree <http://zoo-project.org/trac/browser/trunk/zoo-services>`__."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:18
+msgid "A ZOO Configuration file is divided into three distinct sections :"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:20
+msgid "Main Metadata information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:21
+msgid "List of Inputs metadata information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:22
+msgid "List of Outputs metadata information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:24
+msgid "The ZOO Service Configuration File is case sensitive."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:27
+msgid "Main Metadata Information"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:29
+msgid ""
+"The fist part in a ZOO Configuration file contains the metadata information "
+"relative to the service. Note that the \"name of your service\" between "
+"brackets on the first line has to be the exact same name as the function you"
+" defined in your services provider code. In most cases, this name is also "
+"the name of the ZCFG file without the \"``.zcfg``\" extension."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:34
+msgid "You can see below a description of the main metadata information:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:52
+msgid "List of Inputs"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:54
+msgid ""
+"The list of inputs contains metadata information of each supported input, "
+"and they are grouped using a ``<DataInputs>`` node."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:56
+msgid "Each input is defined as :"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:58
+msgid "a name (between brackets as for the name of the service before)"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:59
+msgid ""
+"various medata properties (``Title``, ``Abstract``, ``minOccurs`` and "
+"``maxOccurs``)"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:60
+msgid "a Type Of Data node (:ref:`description <typeDataNodes>`)"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:62
+msgid "A typical list of inputs (``<DataInputs>``) look like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:82
+msgid "you can add ``<MetaData>`` node as in the main metadata information."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:85
+msgid "List of Outputs"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:87
+msgid ""
+"The list of outputs is very similar to a list of inputs except it is "
+"specified as a ``<DataOutputs>`` node."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:89
+msgid "A typical ``<DataOutputs>`` node looks like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:104
+msgid "Type Of Data Nodes"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:106
+msgid ""
+"In the beginning of this ZCFG introduction, we spoke about \"Type Of Data "
+"Nodes\" to describe the data type of inputs and outputs."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:108
+msgid "You can define your data as:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:110
+msgid ":ref:`LiteralData <LiteralData>`"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:111
+msgid ":ref:`BoundingBoxData <BoundingBoxData>`"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:112
+msgid ":ref:`ComplexData <ComplexData>`"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:114
+msgid ""
+"Except for ``LiteralData``, each *Type Of Data* node must have at least one "
+"``<Default>`` and one ``<Supported>`` node. Even if one of those are empty, "
+"it **has to be present** with an opening and closing tag on two different "
+"lines. So, something like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:124
+msgid ""
+"Otherwise, ZOO-Kernel won't be able to parse your ZCFG and will fail to "
+"process requests."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:129
+msgid "LiteralData node"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:131
+msgid "A ``<LiteralData>`` node contains:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:133
+msgid "one ``<Default>`` node,"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:134
+msgid ""
+"zero or more ``<Supported>`` nodes depending on the existence or the number "
+"of supported Units Of Measure (UOM), and"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:135
+msgid ""
+"a ``dataType`` property. The ``dataType`` property defines the type of "
+"literal data, such as a string, an interger and so on (consult `the complete"
+" list <http://www.w3.org/TR/xmlschema-2/#built-in-datatypes>`__ of supported"
+" data types)."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:138
+msgid ""
+"``<Default>`` and ``<Supported>`` nodes can contain the ``uom`` property to "
+"define which UOM has to be used for this input value."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:141
+msgid ""
+"For input ``<LiteralData>`` nodes, you can add the ``value`` property to the"
+" ``<Default>`` node to define a default value for this input. This means "
+"that, when your Service will be run, even if the input wasn't defined, this "
+"default value will be set as the current value for this input."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:145
+msgid ""
+"A typical ``<LiteralData>`` node, defining a ``float`` data type using "
+"meters or degrees for its UOM, looks like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:164
+msgid "BoundingBoxData node"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:166
+msgid "A ``<BoundingBoxData>`` node contains:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:168
+msgid ""
+"one ``<Default>`` node with a CRS property defining the default Coordinate "
+"Reference Systems (CRS), and"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:169
+msgid ""
+"one or more ``<Supported>`` nodes depending on the number of CRS your "
+"service supports (note that you can alternatively use a single "
+"``<Supported>`` node with a comma-separated list of supported CRS)."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:172
+msgid ""
+"A typical ``<BoundingBoxData>`` node, for two supported CRS (`EPSG:4326 "
+"<http://www.epsg-"
+"registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::4326>`__"
+" and `EPSG:3785 <http://www.epsg-"
+"registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::3785>`__),"
+" looks like the following:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:194
+msgid "ComplexData node"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:196
+msgid "A ComplexData node contains:"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:198
+msgid "a ``<Default>`` node and"
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:199
+msgid ""
+"one or more ``<Supported>`` nodes depending on the number of supported "
+"formats. A format is made up of this set of properties : ``mimeType``, "
+"``encoding`` and optionaly ``schema``."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:202
+msgid ""
+"For output ComplexData nodes, you can add the ``extension`` property to "
+"define what extension to use to name the file when storing the result is "
+"required. Obviously, you'll have to add the ``extension`` property to each "
+"supported format (for the ``<Default>`` and ``<Supported>`` nodes)."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:206
+msgid ""
+"You can also add the ``asReference`` property to the ``<Default>`` node to "
+"define if the output should be stored on server side per default."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:209
+msgid ""
+"the client can always modify this behavior by setting ``asReference`` "
+"attribute to ``true`` or ``false`` for this output in the request "
+"``ResponseDocument`` parameter."
+msgstr ""
+
+#: ../../services/zcfg-reference.txt:212
+msgid ""
+"You can see below a sample ComplexData node for default ``application/json``"
+" and ``text/xml`` (encoded in UTF-8 or base64) mimeTypes support:"
+msgstr ""

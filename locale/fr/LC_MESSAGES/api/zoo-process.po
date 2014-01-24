@@ -1,0 +1,216 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-process.txt:4 ../../api/zoo-process.txt:68
+msgid "ZOO.Process"
+msgstr ""
+
+#: ../../api/zoo-process.txt:6
+msgid ""
+"Used to query OGC WPS process defined by its URL and its identifier.  Useful"
+" for chaining localhost process."
+msgstr ""
+
+#: ../../api/zoo-process.txt:9
+msgid "Properties and Functions"
+msgstr ""
+
+#: ../../api/zoo-process.txt:15
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-process.txt:16
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-process.txt:17
+msgid ":ref:`schemaLocation <schemaLocation>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:18
+msgid "{String} Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-process.txt:19
+msgid ":ref:`namespaces <namespaces>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:20
+msgid "{Object} Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-process.txt:21
+msgid ":ref:`url <url>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:22
+msgid ""
+"{String} The OGC's Web PRocessing Service URL, default is "
+"http://localhost/zoo."
+msgstr ""
+
+#: ../../api/zoo-process.txt:23
+msgid ":ref:`identifier <identifier>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:24
+msgid "{String} Process identifier in the OGC's Web Processing Service."
+msgstr ""
+
+#: ../../api/zoo-process.txt:25
+msgid ":ref:`ZOO.Process <ZOO.Process>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:26 ../../api/zoo-process.txt:63
+msgid "Create a new Process"
+msgstr ""
+
+#: ../../api/zoo-process.txt:27
+msgid ":ref:`Execute <Execute>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:28 ../../api/zoo-process.txt:77
+msgid "Query the OGC's Web PRocessing Servcie to Execute the process."
+msgstr ""
+
+#: ../../api/zoo-process.txt:29
+msgid ":ref:`buildInput <buildInput>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:30 ../../api/zoo-process.txt:90
+msgid "Object containing methods to build WPS inputs."
+msgstr ""
+
+#: ../../api/zoo-process.txt:31
+msgid ":ref:`buildInput.complex <buildInput.complex>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:32 ../../api/zoo-process.txt:95
+msgid "Given an E4XElement representing the WPS complex data input."
+msgstr ""
+
+#: ../../api/zoo-process.txt:33
+msgid ":ref:`buildInput.reference <buildInput.reference>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:34 ../../api/zoo-process.txt:109
+msgid "Given an E4XElement representing the WPS reference input."
+msgstr ""
+
+#: ../../api/zoo-process.txt:35
+msgid ":ref:`buildInput.literal <buildInput.literal>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:36 ../../api/zoo-process.txt:123
+msgid "Given an E4XElement representing the WPS literal data input."
+msgstr ""
+
+#: ../../api/zoo-process.txt:37
+msgid ":ref:`buildDataInputsNode <buildDataInputsNode>`"
+msgstr ""
+
+#: ../../api/zoo-process.txt:38 ../../api/zoo-process.txt:141
+msgid "Method to build the WPS DataInputs element."
+msgstr ""
+
+#: ../../api/zoo-process.txt:43
+msgid "schemaLocation"
+msgstr ""
+
+#: ../../api/zoo-process.txt:43
+msgid "``{String}`` Schema location for a particular minor version."
+msgstr ""
+
+#: ../../api/zoo-process.txt:48
+msgid "namespaces"
+msgstr ""
+
+#: ../../api/zoo-process.txt:48
+msgid "``{Object}`` Mapping of namespace aliases to namespace URIs."
+msgstr ""
+
+#: ../../api/zoo-process.txt:53
+msgid "url"
+msgstr ""
+
+#: ../../api/zoo-process.txt:53
+msgid ""
+"``{String}`` The OGC's Web PRocessing Service URL, default is "
+"http://localhost/zoo."
+msgstr ""
+
+#: ../../api/zoo-process.txt:58
+msgid "identifier"
+msgstr ""
+
+#: ../../api/zoo-process.txt:58
+msgid "``{String}`` Process identifier in the OGC's Web Processing Service."
+msgstr ""
+
+#: ../../api/zoo-process.txt:65 ../../api/zoo-process.txt:79
+#: ../../api/zoo-process.txt:97 ../../api/zoo-process.txt:111
+#: ../../api/zoo-process.txt:125 ../../api/zoo-process.txt:143
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-process.txt:85
+msgid "Execute"
+msgstr ""
+
+#: ../../api/zoo-process.txt:81 ../../api/zoo-process.txt:145
+msgid "``inputs {Object}``"
+msgstr ""
+
+#: ../../api/zoo-process.txt:83 ../../api/zoo-process.txt:102
+#: ../../api/zoo-process.txt:116 ../../api/zoo-process.txt:130
+#: ../../api/zoo-process.txt:147
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-process.txt:85
+msgid ""
+"``{String}`` The OGC's Web processing Service XML response.  The result "
+"needs to be interpreted."
+msgstr ""
+
+#: ../../api/zoo-process.txt:90
+msgid "buildInput"
+msgstr ""
+
+#: ../../api/zoo-process.txt:104
+msgid "buildInput.complex"
+msgstr ""
+
+#: ../../api/zoo-process.txt:104 ../../api/zoo-process.txt:118
+msgid "``{E4XElement}`` A WPS Input node."
+msgstr ""
+
+#: ../../api/zoo-process.txt:118
+msgid "buildInput.reference"
+msgstr ""
+
+#: ../../api/zoo-process.txt:132
+msgid "buildInput.literal"
+msgstr ""
+
+#: ../../api/zoo-process.txt:132
+msgid "``{E4XElement}`` The WPS Input node."
+msgstr ""
+
+#: ../../api/zoo-process.txt:148
+msgid "buildDataInputsNode"
+msgstr ""
+
+#: ../../api/zoo-process.txt:149
+msgid "``{E4XElement}`` The WPS DataInputs node for Execute query."
+msgstr ""

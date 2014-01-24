@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:4
+# f6c37aa3994941fbbbe79dcc2599c646
+msgid "Building a WPS client using OpenLayers"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:0
+# e9f27434a6e949a3942217132fa03613
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:10
+# 62982d77a91a4c5ca3f9452f511bda56
+msgid "The next step of our workshop is to connect to the OGR Services we have created from an OpenLayers map. This will allow to apply single or multiple geometries processes on user-selected polygons and to display the new generated geometries."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:15
+# 7640c7b211d445ffabde9378b93493d6
+msgid "Creating a simple map showing the dataset as WMS"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:17
+# 3be1b1ce96a84ec9b81dbfc0c32f0e3a
+msgid "OpenLayers is also included in OSGeoLive default distribution, so it is convenient to use it for our needs. Please open ``/var/www/zoo-ogr.html`` using your favorite text editor and paste the following HTML snippet:"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:38
+# ff0d741857a342d6945d166b4ae9af9a
+msgid "The following JavaScript code must then be added in a ``<script></script>`` section within the ``<head>`` one. This will setup a map showing the japanese regions data as WMS."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:72
+# c2b879f57655437aac82da073a334560
+msgid "Once done, please save your HTML file as ``zoo-ogr.html`` in your workshop directory, then copy it in ``/var/www`` and visualize it with your favorite Web browser using this link : ``http://localhost/zoo-ogr.html``. You should obtain a map centered on the Japan with the WMS layer activated."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:82
+# f97a7405a95b44ed940f40785fa7c943
+msgid "Fetching the data layer as WFS and adding selection controls"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:84
+# dfe4b46d0f084fc585c2499b0dbb3166
+msgid "Before accessing the displayed data via WFS, you first have to create new vector layers dedicated to host the several interactions we are going to create. Please add the following lines within the ``init()`` function, and do not forget to add the newly created layer in the map.addLayers method:"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:108
+# 1ddc9f806c7041dabf2c63337e23a040
+msgid "Then, you can now access the data by creating new controls to select polygons, as the following. Please note that ``OpenLayers.Protocol.WFS.fromWMSLayer`` is used to access geometries and that several state of selection are declared and append to the control variable."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:136
+# 4611250c8071419abf0f9f1d69589786
+msgid "Please save your HTML file again. You should now be able to select a polygon only by clicking on it. The selected polygon should appear in blue color."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:145
+# fa113cd9fa8247c18f1015e38892e5fe
+msgid "Calling the single geometry services from JavaScript"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:147
+# ec298d3762334ae69ac61b715212e92a
+msgid "Now that everything is setup, we can go on and call our OGR ZOO services with JavaScript. Please add the following lines after the ``init()`` function, which will call the single geometry processes. You can notice that we use a specific ``parseMapServerId`` function which let us remove the unecessary white space returned as fid value."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:193
+# 55f4cbd29b3b49c09d5231c8642cb22e
+msgid "Then, some specific buttons must be added in the HTML, in order to be able to call the different processes we just declared. You can add them on top of the map by writing the following lines before the ``<div id=\"map\"></div>``."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:218
+# 37faff2c805e43169292f72591b3cb50
+msgid "Save your HTML file again. You should now be able to select a polygon and to launch a Buffer, ConvexHull, Boundary or Centroid on it by clicking one of the button. The result of the process should appear as GeoJSON layer on the map, in orange color."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:228
+# 1570d91d11a443db93d01461e45b046f
+msgid "Calling the multiples geometries processes from JavaScript"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:230
+# 45eb0dee32d54d0ca21444ba410010fa
+msgid "Using the same technique, you can now write a function dedicated to the multiple geometries processes. Please add the following lines after the ``simpleProcessing()`` function, we will guide you during the exercise in section 5 on how to create such a function."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:285
+# 45d1e5593b784cfe8820cbd2eb59901d
+msgid "Note that this time we didn't use the GET method to request the ZOO Kernel but a XML POST. We did that because if you use the GET method you will get error due to the HTTP GET method limitation based on the length of your request. Using JSON string representing the geometry will make your request longer."
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:290
+# 7eef1374073c4acf9b34ec4942f78751
+msgid "Once you get the functions to call your multiple geometries processes, you' must add some buttons to fire the request call. Here is the HTML code to add to your current ``zoo-ogr.html`` file :"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:311
+# 25c6fff5af8342a2a28e5080e9fad73d
+msgid "Please reload the page. You should then be able to run your multiple geometries services and you should get results displayed in red as shown by the following screenshots :"
+msgstr ""
+
+#: ../../workshop/2010/building_wps_client_using_ol.txt:328
+# b705a5d9f23c46319cd64935103f8fdb
+msgid "It seems that something is missing in your Services Provider to get the same results … The multiple geometries Services ! This is what we are going to do together in the next section."
+msgstr ""
+

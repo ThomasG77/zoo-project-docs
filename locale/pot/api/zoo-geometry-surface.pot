@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-surface.txt:4
+# 34c495078b1c4e8bbd60d9fc4313a8f2
+msgid "ZOO.Geometry.Surface"
+msgstr ""
+
+#: ../../api/zoo-geometry-surface.txt:6
+# bc4e0e950cd0408dbab3ccb0d38f3725
+msgid "Surface geometry class."
+msgstr ""
+
+#: ../../api/zoo-geometry-surface.txt:8
+# 4cd7f4a7095b4576babc37b9a5fb793c
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-surface.txt:10
+# f26c197744644cb7be667e05c6b373ad
+msgid ":ref:`ZOO.Geometry <api-zoo-geometry>`"
+msgstr ""
+

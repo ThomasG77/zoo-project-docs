@@ -1,0 +1,235 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format.txt:4 ../../api/zoo-format.txt:100
+msgid "ZOO.Format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:6
+msgid "Base class for format reading/writing a variety of formats."
+msgstr ""
+
+#: ../../api/zoo-format.txt:9
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-format.txt:15 ../../api/zoo-format.txt:35
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format.txt:16 ../../api/zoo-format.txt:36
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format.txt:17
+msgid ":ref:`options <options>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:18
+msgid "{Object} A reference to options passed to the constructor."
+msgstr ""
+
+#: ../../api/zoo-format.txt:19
+msgid ":ref:`externalProjection <externalProjection>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:20 ../../api/zoo-format.txt:22
+msgid ""
+"{ZOO.Projection} When passed a externalProjection and internalProjection, "
+"the format will reproject the geometries it reads or writes."
+msgstr ""
+
+#: ../../api/zoo-format.txt:21
+msgid ":ref:`internalProjection <internalProjection>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:23 ../../api/zoo-format.txt:43
+msgid ":ref:`data <data>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:24 ../../api/zoo-format.txt:44
+msgid ""
+"{Object} When keepData is true, this is the parsed string sent to read."
+msgstr ""
+
+#: ../../api/zoo-format.txt:25
+msgid ":ref:`keepData <keepData>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:26
+msgid "{Object} Maintain a reference (data) to the most recently read data."
+msgstr ""
+
+#: ../../api/zoo-format.txt:29
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-format.txt:37
+msgid ":ref:`ZOO.Format <ZOO.Format>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:38
+msgid "Instances of this class are not useful."
+msgstr ""
+
+#: ../../api/zoo-format.txt:39
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:40 ../../api/zoo-format.txt:109
+msgid "Clean up."
+msgstr ""
+
+#: ../../api/zoo-format.txt:41
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:42 ../../api/zoo-format.txt:118
+msgid ""
+"Read data from a string, and return an object whose type depends on the "
+"subclass."
+msgstr ""
+
+#: ../../api/zoo-format.txt:45
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format.txt:46 ../../api/zoo-format.txt:135
+msgid "Accept an object, and return a string."
+msgstr ""
+
+#: ../../api/zoo-format.txt:48
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-format.txt:53
+msgid "options"
+msgstr ""
+
+#: ../../api/zoo-format.txt:53
+msgid "``{Object}`` A reference to options passed to the constructor."
+msgstr ""
+
+#: ../../api/zoo-format.txt:62
+msgid "externalProjection"
+msgstr ""
+
+#: ../../api/zoo-format.txt:58
+msgid ""
+":ref:`{ZOO.Projection} <api-zoo-projection>` When passed a "
+"externalProjection and internalProjection, the format will reproject the "
+"geometries it reads or writes. The externalProjection is the projection used"
+" by the content which is passed into read or which comes out of write.  In "
+"order to reproject, a projection transformation function for the specified "
+"projections must be available.  This support is provided via zoo-proj4js."
+msgstr ""
+
+#: ../../api/zoo-format.txt:71
+msgid "internalProjection"
+msgstr ""
+
+#: ../../api/zoo-format.txt:67
+msgid ""
+":ref:`{ZOO.Projection} <api-zoo-projection>` When passed a "
+"externalProjection and internalProjection, the format will reproject the "
+"geometries it reads or writes. The internalProjection is the projection used"
+" by the geometries which are returned by read or which are passed into "
+"write.  In order to reproject, a projection transformation function for the "
+"specified projections must be available.  This support is provided via zoo-"
+"proj4js."
+msgstr ""
+
+#: ../../api/zoo-format.txt:76
+msgid "data"
+msgstr ""
+
+#: ../../api/zoo-format.txt:76
+msgid ""
+"``{Object}`` When :ref:`keepData <keepData>` is true, this is the parsed "
+"string sent to :ref:`read <read>`."
+msgstr ""
+
+#: ../../api/zoo-format.txt:81
+msgid "keepData"
+msgstr ""
+
+#: ../../api/zoo-format.txt:81
+msgid ""
+"``{Object}`` Maintain a reference (:ref:`data <data>`) to the most recently "
+"read data.  Default is false."
+msgstr ""
+
+#: ../../api/zoo-format.txt:83
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-format.txt:88
+msgid "Instances of this class are not useful.  See one of the subclasses."
+msgstr ""
+
+#: ../../api/zoo-format.txt:90 ../../api/zoo-format.txt:120
+#: ../../api/zoo-format.txt:137
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:92
+msgid ""
+"``options {Object}`` An optional object with properties to set on the format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:94
+msgid "*Valid options*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:96
+msgid ""
+"``keepData {Boolean}`` If true, upon read, the data property will be set to "
+"the parsed object (e.g. the json or xml object)."
+msgstr ""
+
+#: ../../api/zoo-format.txt:98 ../../api/zoo-format.txt:124
+#: ../../api/zoo-format.txt:141
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format.txt:100
+msgid "An instance of ZOO.Format"
+msgstr ""
+
+#: ../../api/zoo-format.txt:109
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-format.txt:126
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format.txt:122
+msgid "``data {string}`` Data to read/parse."
+msgstr ""
+
+#: ../../api/zoo-format.txt:126
+msgid "Depends on the subclass"
+msgstr ""
+
+#: ../../api/zoo-format.txt:142
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format.txt:139
+msgid "``object {Object}`` Object to be serialized"
+msgstr ""
+
+#: ../../api/zoo-format.txt:143
+msgid "``{String}`` A string representation of the object."
+msgstr ""

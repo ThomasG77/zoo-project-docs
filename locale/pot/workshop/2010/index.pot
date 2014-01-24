@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2010/index.txt:5
+# 6268cf66d1054c7bb9b6e82a6b672e78
+msgid "Workshop: Practical Introduction to ZOO: The Open WPS Platform"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:7
+# b21840b817e0424cb247f7534ddaca2b
+msgid "Nicolas Bozon, Gérald Fenoy"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:8
+# d27136608b734e72b080da8c92140bb3
+msgid "$Date: 2011-12-07 14:19:47 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:12
+# 67f8f5d51e1049198719b84a9b8c9660
+msgid "FOSS4G 2010 Osaka / Tokyo / Beijing"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:24
+# d84cc463f84d4d40a00ca5f8717e48c2
+msgid "Sponsored By"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:57
+# 7733212014474ad59cd1fdac6d9179ab
+msgid "Special Thanks To Our Knowledge Partners"
+msgstr ""
+
+#: ../../workshop/2010/index.txt:99
+# c52450561e494c1caf8a85430bd3dde8
+msgid "Workshop Table of Contents"
+msgstr ""
+

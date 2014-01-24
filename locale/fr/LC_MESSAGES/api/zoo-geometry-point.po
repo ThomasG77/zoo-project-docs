@@ -1,0 +1,306 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-point.txt:4 ../../api/zoo-geometry-point.txt:83
+msgid "ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:6
+msgid "Point geometry class."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:10
+msgid ":ref:`ZOO.Geometry <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:13
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:19 ../../api/zoo-geometry-point.txt:33
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:20 ../../api/zoo-geometry-point.txt:34
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:21
+msgid ":ref:`x <x>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:22 ../../api/zoo-geometry-point.txt:24
+msgid "{float}"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:23
+msgid ":ref:`y <y>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:27
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:35
+msgid ":ref:`ZOO.Geometry.Point <ZOO.Geometry.Point>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:36 ../../api/zoo-geometry-point.txt:78
+msgid "Construct a point geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:37
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:38
+msgid "{ZOO.Geometry.Point} An exact clone of this ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:39
+msgid ":ref:`calculateBounds <calculateBounds>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:40 ../../api/zoo-geometry-point.txt:103
+msgid "Create a new Bounds based on the x/y"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:41
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:42
+msgid "Determine whether another geometry is equivalent to this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:43
+msgid ":ref:`toShortString <toShortString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:44
+msgid "{String} Shortened String representation of Point object."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:45
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:46
+msgid ""
+"Moves a geometry by the given displacement along positive x and y axes."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:47
+msgid ":ref:`rotate <rotate>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:48 ../../api/zoo-geometry-point.txt:156
+msgid "Rotate a point around another."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:49
+msgid ":ref:`getCentroid <getCentroid>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:50
+msgid "{ZOO.Geometry.Point} The centroid of the collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:51
+msgid ":ref:`resize <resize>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:52
+msgid "Resize a point relative to some origin."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:53
+msgid ":ref:`intersects <intersects>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:54 ../../api/zoo-geometry-point.txt:202
+msgid "Determine if the input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:55
+msgid ":ref:`transform <transform>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:56 ../../api/zoo-geometry-point.txt:219
+msgid "Translate the x,y properties of the point from source to dest."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:57
+msgid ":ref:`getVertices <getVertices>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:58 ../../api/zoo-geometry-point.txt:237
+msgid "Return a list of all points in this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:61
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:66
+msgid "x"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:66 ../../api/zoo-geometry-point.txt:71
+msgid "``{float}``"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:71
+msgid "y"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:73
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:80 ../../api/zoo-geometry-point.txt:115
+#: ../../api/zoo-geometry-point.txt:144 ../../api/zoo-geometry-point.txt:158
+#: ../../api/zoo-geometry-point.txt:185 ../../api/zoo-geometry-point.txt:204
+#: ../../api/zoo-geometry-point.txt:221 ../../api/zoo-geometry-point.txt:239
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:94
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:92 ../../api/zoo-geometry-point.txt:119
+#: ../../api/zoo-geometry-point.txt:130 ../../api/zoo-geometry-point.txt:170
+#: ../../api/zoo-geometry-point.txt:191 ../../api/zoo-geometry-point.txt:208
+#: ../../api/zoo-geometry-point.txt:226 ../../api/zoo-geometry-point.txt:244
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:94
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` An exact clone of this "
+"ZOO.Geometry.Point"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:103
+msgid "calculateBounds"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:121
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:112
+msgid ""
+"Determine whether another geometry is equivalent to this one.  Geometries "
+"are considered equivalent if all components have the same coordinates."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:117
+msgid ""
+"``geom`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The geometry "
+"to test."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:121
+msgid "``{Boolean}`` The supplied geometry is equivalent to this geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:132
+msgid "toShortString"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:132
+msgid ""
+"``{String}`` Shortened String representation of Point object.  (ex.  <i>\"5,"
+" 42\"</i>)"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:147
+msgid "move"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:141
+msgid ""
+"Moves a geometry by the given displacement along positive x and y axes.  "
+"This modifies the position of the geometry and clears the cached bounds."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:161
+msgid "rotate"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:172
+msgid "getCentroid"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:172
+msgid ""
+":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` The centroid of the "
+"collection"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:193
+msgid "resize"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:181
+msgid ""
+"Resize a point relative to some origin.  For points, this has the effect of "
+"scaling a vector (from the origin to the point).  This method is more useful"
+" on geometry collection subclasses."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:193
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>` The current geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:210
+msgid "intersects"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:206
+msgid ""
+"``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>` Any type of geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:210
+msgid "``{Boolean}`` The input geometry intersects this one."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:228
+msgid "transform"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:228
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:245
+msgid "getVertices"
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:241
+msgid ""
+"``nodes {Boolean}`` For lines, only return vertices that are endpoints.  If "
+"false, for lines, only vertices that are not endpoints will be returned.  If"
+" not provided, all vertices will be returned."
+msgstr ""
+
+#: ../../api/zoo-geometry-point.txt:246
+msgid "``{Array}`` A list of all vertices in the geometry."
+msgstr ""

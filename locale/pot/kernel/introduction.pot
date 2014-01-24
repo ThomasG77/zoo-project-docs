@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../kernel/introduction.txt:4
+# 09423b42931f4021a1b05b18c3be3eae
+msgid "Introduction"
+msgstr ""
+
+#: ../../kernel/introduction.txt:6
+# 0584845dbab74d33938c2db4e97fd215
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../kernel/introduction.txt:7
+# a080a448ec3541beb0cbb241a9c51312
+msgid "$Date: 2011-12-07 14:19:47 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../kernel/introduction.txt:9
+# 418ed1c07d884d80b738395ef0bbbdda
+msgid "ZOO Kernel is the heart of the ZOO. It is a powerful server-side C Kernel which makes it possible to manage and chain Web services, by loading dynamic libraries and handling them as on-demand Web services. The ZOO Kernel is written in the C language, but supports several common programming languages in order to connect to numerous libraries and models."
+msgstr ""
+
+#: ../../kernel/introduction.txt:15
+# 9948bad8e2614e6e87dba446aa6f89a5
+msgid "Using ZOO Kernel as a Web Processing Platform"
+msgstr ""
+
+#: ../../kernel/introduction.txt:17
+# 8c36e5479a504f62847ee2207795291c
+msgid "ZOO Kernel works with Apache and can communicate with cartographic engines and Web mapping clients. It simply adds the WPS support to your spatial data infrastructure and your Web mapping application!"
+msgstr ""
+
+#: ../../kernel/introduction.txt:22
+# 951c1520d9e54dc994fbab0d8823e835
+msgid "If you'd like some background on the WPS standard, head to: http://www.opengeospatial.org/standards/wps"
+msgstr ""
+
+#: ../../kernel/introduction.txt:25
+# f53cd697c79647029ba31114aa639068
+msgid "Supported Languages"
+msgstr ""
+
+#: ../../kernel/introduction.txt:27
+# 086557ae0ba74004b65cf33c37409bdf
+msgid "ZOO Kernel supports the following programming languages, and let's you use them to create new ZOO Services from new or existing code:"
+msgstr ""
+
+#: ../../kernel/introduction.txt:31
+# 277f827566c1472ebeac1a7e3c6cee00
+msgid "**Language**"
+msgstr ""
+
+#: ../../kernel/introduction.txt:31
+# 76bdcd1f278c452ea24b1cfe97fc2fec
+msgid "**ServiceProvider**"
+msgstr ""
+
+#: ../../kernel/introduction.txt:31
+# 62844dd1913e4363afc94c68695fa9ec
+msgid "**DataStructure**"
+msgstr ""
+
+#: ../../kernel/introduction.txt:31
+# 2bd983c0d59741ceb7e8718fd795353b
+msgid "**Return**"
+msgstr ""
+
+#: ../../kernel/introduction.txt:33
+# 7c73a9ac11544b519e1debf6fa3c479a
+msgid "C / C++"
+msgstr ""
+
+#: ../../kernel/introduction.txt:33
+#: ../../kernel/introduction.txt:34
+# 4ea01ade346c41d3a955a2e35cafe27d
+# 62a46beb89714316aec2fff7f10579fb
+msgid "Shared Library"
+msgstr ""
+
+#: ../../kernel/introduction.txt:33
+# 9163e990a63143d290bf39f4dd45b571
+msgid "maps* M"
+msgstr ""
+
+#: ../../kernel/introduction.txt:33
+#: ../../kernel/introduction.txt:34
+#: ../../kernel/introduction.txt:35
+#: ../../kernel/introduction.txt:36
+#: ../../kernel/introduction.txt:37
+#: ../../kernel/introduction.txt:38
+# 56cc82562ef64fc7bafe3f2507a48193
+# 2215796a85054131b36ac6300d6dfc11
+# c37d9185671b4579999fa64d5b69c76c
+# f813ac098354477b8bb7e196fad74289
+# 300590faa9dd4d16b233fc4eadae9952
+# b8eec9b69926424894a653bcaf8855e6
+msgid "integer"
+msgstr ""
+
+#: ../../kernel/introduction.txt:34
+# f85e045ce78e4a278913d682f7add00a
+msgid "Fortran"
+msgstr ""
+
+#: ../../kernel/introduction.txt:34
+# d9b5be98aaf940b4a4915d1a19b9b03c
+msgid "CHARACTER*(1024) M(10,30)"
+msgstr ""
+
+#: ../../kernel/introduction.txt:35
+# f7672214833346c3a03e79f2f8a7e6f3
+msgid "Java"
+msgstr ""
+
+#: ../../kernel/introduction.txt:35
+# 9ca78824e77a41559572aaee0b201521
+msgid "Class File"
+msgstr ""
+
+#: ../../kernel/introduction.txt:35
+# 99517321339b47a79a4b2d63b3265f6d
+msgid "`HashMap`_"
+msgstr ""
+
+#: ../../kernel/introduction.txt:36
+# f1b1e4bc87d44cf4a1cac8260dcd4621
+msgid "Python"
+msgstr ""
+
+#: ../../kernel/introduction.txt:36
+# b4bdb851a93e4625983d1121a3c90a27
+msgid "Module File"
+msgstr ""
+
+#: ../../kernel/introduction.txt:36
+# 474802482ee84d929975e4a0e49c79f5
+msgid "`dictionary`_"
+msgstr ""
+
+#: ../../kernel/introduction.txt:37
+# 8961c0755d1148c8b7da748cf096f02c
+msgid "PHP"
+msgstr ""
+
+#: ../../kernel/introduction.txt:37
+#: ../../kernel/introduction.txt:38
+# 56408835f54143829a658d487babd736
+# f0901da04b454d9089088ebb4e1288ee
+msgid "Script File"
+msgstr ""
+
+#: ../../kernel/introduction.txt:37
+# d4f7f900f89242c89a0f0d97e1c08cb7
+msgid "`Array`_"
+msgstr ""
+
+#: ../../kernel/introduction.txt:38
+# 54937a093db24868abfdce14c6875502
+msgid "Perl"
+msgstr ""
+
+#: ../../kernel/introduction.txt:39
+# 32cee041ce024e19a7591a682f812801
+msgid "JavaScript"
+msgstr ""
+
+#: ../../kernel/introduction.txt:39
+# 9dd2af4a332c4aebac49dda2d41e02e6
+msgid "Script file"
+msgstr ""
+
+#: ../../kernel/introduction.txt:39
+# dc7ad6132d114934aa357c83d758b877
+msgid "`Object`_ or Array"
+msgstr ""
+
+#: ../../kernel/introduction.txt:39
+# 8a6ab157ea424fe2b60a1dafaac20db6
+msgid "Array/Object"
+msgstr ""
+
+#: ../../kernel/introduction.txt:48
+# 10282c56e172404a9c1e0636f261ccb1
+msgid "ZOO Kernel is a WPS Espresso Machine"
+msgstr ""
+

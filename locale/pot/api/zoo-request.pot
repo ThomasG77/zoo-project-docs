@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-request.txt:4
+# 7f1befd86cf74b42b3bfad9e0efc2ea6
+msgid "ZOO.Request"
+msgstr ""
+
+#: ../../api/zoo-request.txt:6
+# 710d9a4b38044ae88672b94ca5e3c9be
+msgid "Contains convenience methods for working with ZOORequest which replace XMLHttpRequest."
+msgstr ""
+
+#: ../../api/zoo-request.txt:9
+# 40b27c80272247ee81a4d921e68939d3
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-request.txt:15
+# 86b55c422ce64c0296262b1f883c6928
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-request.txt:16
+# fda6f23afe5b4b7aa8009d51bbb759b0
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-request.txt:17
+# d86241656f6a4a29a8478b1a4c6b9713
+msgid ":ref:`GET <GET>`"
+msgstr ""
+
+#: ../../api/zoo-request.txt:18
+#: ../../api/zoo-request.txt:25
+# 22d5f15f1c6a4630a3edb26e07e5427e
+# 41f1549c233549e192bafd338696f856
+msgid "Send an HTTP GET request."
+msgstr ""
+
+#: ../../api/zoo-request.txt:19
+# 0ee5a051c9a049d5bc0e7ebb913c14f1
+msgid ":ref:`POST <POST>`"
+msgstr ""
+
+#: ../../api/zoo-request.txt:20
+#: ../../api/zoo-request.txt:39
+# 8d62ecc51803407daf198039e3504165
+# 31002df345a8489d945a5a5cdd03f8a5
+msgid "Send an HTTP POST request."
+msgstr ""
+
+#: ../../api/zoo-request.txt:34
+# 69265e8328d24eac902613483f7bfcf4
+msgid "GET"
+msgstr ""
+
+#: ../../api/zoo-request.txt:27
+#: ../../api/zoo-request.txt:41
+# d059457b6ec44139ad687df516080ad7
+# 444f741416c84a77acd3005f3eadc580
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-request.txt:32
+#: ../../api/zoo-request.txt:47
+# 1c601eddaf5542d693bf0c6b81db1740
+# 19a92d336084433d8d14e1a91703d42a
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-request.txt:34
+#: ../../api/zoo-request.txt:49
+# 9d90ac7de0224e5a9ac0f73c6b01cd1c
+# f124f47ec91942a39c9be0c9e2e9cbaa
+msgid "``{String}`` Request result."
+msgstr ""
+
+#: ../../api/zoo-request.txt:48
+# 3993b2d2b4f34b40a40f6b220229aa7d
+msgid "POST"
+msgstr ""
+

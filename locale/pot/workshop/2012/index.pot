@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2012/index.txt:5
+# 85095b2cf20040969712370be00b6c30
+msgid "Practical Introduction to ZOO-Project by playing with building blocks"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:7
+# 5498d38c166841008c3166709acb9acc
+msgid "Gérald Fenoy, Nicolas Bozon"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:8
+# cf6a227d231f4a4a940bdd525f09cad7
+msgid "gerald.fenoy at geolabs.fr, nicolas.bozon at gmail.com"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:9
+# b02b16cd347a4548b544e9ff367a962b
+msgid "$Date$"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:13
+# c9eacdb163084761ac76665ea2d06c5c
+msgid "FOSS4G 2012 Prague"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:19
+# 3f1274c3711f49c0bb47b0a284f155b2
+msgid "Sponsored By"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:38
+# d056efc5b54942f296b0b272c4b55578
+msgid "Special thanks to our Knowledge Partners"
+msgstr ""
+
+#: ../../workshop/2012/index.txt:60
+# 1da39b81563f43a998d849db187af55b
+msgid "WorkShop table of content"
+msgstr ""
+

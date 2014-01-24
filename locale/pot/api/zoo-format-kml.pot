@@ -1,0 +1,803 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-kml.txt:4
+#: ../../api/zoo-format-kml.txt:110
+# fabb3ce9053e484cb9ad032df04a4df6
+# 8517e11174e643a28ed5070f58073f74
+msgid "ZOO.Format.KML"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:6
+# 66d2f5a06997443385effa0d48165d5c
+msgid "Read/Write KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:8
+# 2efc6f69343b4ae3906fa65833d255d7
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:10
+# 8034384f92dd4bc29a5cd77238c242ca
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:13
+# bd6f78fbc56b42c2af7eec7cf38ebf0d
+msgid "Properties and Functions"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:19
+# 4c156f2fe42f4a1aa21480c5ebbeeeab
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:20
+# 0864f3f75a674dbe87883381bae7d328
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:21
+# 476c33a5f259472a9ec1424133638f04
+msgid ":ref:`kmlns <kmlns>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:22
+# a0f4e6774ecf47499be0b4c3bcd9678a
+msgid "{String} KML Namespace to use."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:23
+# 14eb6060c00548f294dd68d0265860e8
+msgid ":ref:`foldersName <foldersName>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:24
+# 4bc414c2edbe4f748662e106907e614f
+msgid "{String} Name of the folders."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:25
+# 34882a8bff0b4d32a52aabfbd46628cd
+msgid ":ref:`foldersDesc <foldersDesc>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:26
+# bf139662a0494b8a9ae63cfcf58a0fb1
+msgid "{String} Description of the folders."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:27
+# 2e4f2a4404894e64b2f617e5bf71f556
+msgid ":ref:`placemarksDesc <placemarksDesc>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:28
+# 544512163ceb4504af3dbbf71d8b0de4
+msgid "{String} Name of the placemarks."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:29
+# 52d16a146c284537b92e798cbb4c6b66
+msgid ":ref:`extractAttributes <extractAttributes>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:30
+# fd36287b8249406e86d4295713886b98
+msgid "{Boolean} Extract attributes from KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:31
+# 51e29abe91964099920d1bafad78efd6
+msgid ":ref:`ZOO.Format.KML <ZOO.Format.KML>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:32
+#: ../../api/zoo-format-kml.txt:106
+# 8391ca07b72742a9b86e3a1550997b2f
+# 60bf9b25a91a43279d23777c53681c83
+msgid "Create a new parser for KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:33
+# 48ed61b30b074545986bf5afe8de24a9
+msgid ":ref:`parseFeatures <parseFeatures>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:34
+# d72f65a08d144488a24404bac16082e4
+msgid "Loop through all Placemark nodes and parse them."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:35
+# e58c11a9a1ea4e84af75d97c67f71c08
+msgid ":ref:`parseFeature <parseFeature>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:36
+# 94cdc3ccdd0644feb8e67f9c16c51449
+msgid "This function is the core of the KML parsing code in ZOO."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:37
+# 353e376667d84e21b9a3a66091d23f4c
+msgid ":ref:`parseGeometry <parseGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:38
+#: ../../api/zoo-format-kml.txt:148
+# 8ac4aef3f32b41c6ad4d1123b9383157
+# 90a5c1b06c724d59b3226cdc364b33db
+msgid "Properties of this object are the functions that parse geometries based on their type."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:39
+# 2f41f85e29984e5998b0edd95b9cc7e1
+msgid ":ref:`parseGeometry.point <parseGeometry.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:40
+#: ../../api/zoo-format-kml.txt:153
+# 31c12a7a095f4c919d21878a840115fb
+# b9402aa998134d759c3bf0c9341a4dbf
+msgid "Given a KML node representing a point geometry, create a ZOO point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:41
+# 659764af22304a4c805f126ada6a7b60
+msgid ":ref:`parseGeometry.linestring <parseGeometry.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:42
+#: ../../api/zoo-format-kml.txt:166
+# 2d899f53146a49b9ae01ee40c4678615
+# 2c5ca48ccb5d4c7fab845a58fe784eba
+msgid "Given a KML node representing a linestring geometry, create a ZOO linestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:43
+# 619951e9eb004c5b99a60537750bb6a7
+msgid ":ref:`parseGeometry.polygon <parseGeometry.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:44
+#: ../../api/zoo-format-kml.txt:179
+# 7fd1d60942d842279e77ab08ab6daa6d
+# 83d87a31b2a841b99deffa698932c0af
+msgid "Given a KML node representing a polygon geometry, create a ZOO polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:45
+# 0c8a199af11a4d39bf0b13bbcafadec7
+msgid ":ref:`parseGeometry.multigeometry <parseGeometry.multigeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:46
+#: ../../api/zoo-format-kml.txt:192
+# 69cb594102b44c9ead0fc0630c55781e
+# 623ffd77debe4d85bad81be6dd31685f
+msgid "Given a KML node representing a multigeometry, create a ZOO geometry collection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:47
+# 79c39ba3263c40239ea07237316f9140
+msgid ":ref:`parseAttributes <parseAttributes>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:49
+# 87670b05f0354e869369dcc4390fb892
+msgid ":ref:`parseExtendedData <parseExtendedData>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:50
+# 687f9a91a75c4687bcdb6cd0dfe1ee0f
+msgid "Parse ExtendedData from KML."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:51
+# bfb1d9350e294b68a12829cc16106cee
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:52
+#: ../../api/zoo-format-kml.txt:242
+# f75c8738e1a1476496b30288b528c33f
+# 359c8b599ff6492da2ddcf680483d03a
+msgid "Accept Feature Collection, and return a string."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:53
+# 4f157579e28845dc8675fab96cb9d059
+msgid ":ref:`createPlacemark <createPlacemark>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:54
+#: ../../api/zoo-format-kml.txt:259
+# 5834f3eef7104119b71544a7a7c860e9
+# 0cc1a93db9ff4faab80d8d64a402821b
+msgid "Creates and returns a KML placemark node representing the given feature."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:55
+# 08eefc7f50e44a0aac02ae7360567560
+msgid ":ref:`buildGeometryNode <buildGeometryNode>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:56
+#: ../../api/zoo-format-kml.txt:276
+# b0c3aed2507a4bb5b20daa840d8cbb1e
+# 591d1010b89f428e9fbd193f8661873b
+msgid "Builds and returns a KML geometry node with the given geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:57
+# 96e58567a50a4b5c898f6765bf4e583f
+msgid ":ref:`buildGeometry <buildGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:58
+#: ../../api/zoo-format-kml.txt:289
+# a0c7761d3fd64648b4c0a2bf04823fca
+# 37ebc784d85d43fabac41734d7172078
+msgid "Object containing methods to do the actual geometry node building based on geometry type."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:59
+# e9a9336a25284918ad6fe01fc3df836d
+msgid ":ref:`buildGeometry.point <buildGeometry.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:60
+#: ../../api/zoo-format-kml.txt:294
+# c0e3c8f68c674e81823dbe658fca547a
+# 1a3121ca5ee242c58fab27a47eababc3
+msgid "Given a ZOO point geometry, create a KML point."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:61
+# c559ea8f95134c65a1ae8f6df409897f
+msgid ":ref:`buildGeometry.multipoint <buildGeometry.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:62
+#: ../../api/zoo-format-kml.txt:307
+# 3ffa2ee3aefc4f0a9320e0a08f3e3d99
+# a0469108f4eb497dad1656e6ddeb658c
+msgid "Given a ZOO multipoint geometry, create a KML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:63
+# d597a7e9ba174af2bc4ca9bdf83384c6
+msgid ":ref:`buildGeometry.linestring <buildGeometry.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:64
+#: ../../api/zoo-format-kml.txt:320
+# 00f7dbadfe614bf1b2f4529bd4c111ba
+# e1eb5e89a28a408ea10eb8dffd1da8d3
+msgid "Given a ZOO linestring geometry, create a KML linestring."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:65
+# 13dd5b14752f4399993052fd3a22be66
+msgid ":ref:`buildGeometry.multilinestring <buildGeometry.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:66
+#: ../../api/zoo-format-kml.txt:333
+# 50c3d005b7c04bf48d432d6064393b2d
+# 19a4b943b661471d9092313347a8ecff
+msgid "Given a ZOO multilinestring geometry, create a KML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:67
+# d875316917c543c7a513ab6ff2aac823
+msgid ":ref:`buildGeometry.linearring <buildGeometry.linearring>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:68
+#: ../../api/zoo-format-kml.txt:346
+# d22fa97ce006471fb3a9b9baa7a76f02
+# 8eecff00bb7a404dbb3f401e923abc6b
+msgid "Given a ZOO linearring geometry, create a KML linearring."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:69
+# 7254d337e01240799c8e3c26190706e1
+msgid ":ref:`buildGeometry.polygon <buildGeometry.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:70
+#: ../../api/zoo-format-kml.txt:359
+# 4641d7c1c73b4622abe31f0f12ee1665
+# 5b8f5236a6be4c7c82ba9762b287248e
+msgid "Given a ZOO polygon geometry, create a KML polygon."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:71
+# 41cff482ab634a05be1f16c833c3be9a
+msgid ":ref:`buildGeometry.multipolygon <buildGeometry.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:72
+#: ../../api/zoo-format-kml.txt:372
+# 155a308e200d45b2a80dfd651e185a3a
+# dbaa4cf24e2e4f8194d5b1a294144dbd
+msgid "Given a ZOO multipolygon geometry, create a KML GeometryCollection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:73
+# f77f14d950964fa2b139485d5eb80ea4
+msgid ":ref:`buildGeometry.collection <buildGeometry.collection>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:74
+#: ../../api/zoo-format-kml.txt:385
+# e0ff8ac104ee45468b4a14da408b7e98
+# c2a0333727dd4e678665d2f8709f621c
+msgid "Given a ZOO geometry collection, create a KML MultiGeometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:75
+# 6aa25bf7c2b04f57adf7b1840180ec55
+msgid ":ref:`buildCoordinatesNode <buildCoordinatesNode>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:76
+#: ../../api/zoo-format-kml.txt:402
+# 803aa10fe07f4536ac5f4634f53e21ab
+# 40608a47501c404b92703a196397d0b6
+msgid "Builds and returns the KML coordinates node with the given geometry <coordinates>...</coordinates>"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:81
+# f87829c04cbd46a285c082ea0da7b278
+msgid "kmlns"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:81
+# 27f58ddf68304fd8a7c90f7da08f3fb6
+msgid "``{String}`` KML Namespace to use. Defaults to 2.2 namespace."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:86
+# adce027cddcf4b38926929c04342aeb4
+msgid "foldersName"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:86
+# 2becb0cb61794a16a9cdfba883b56538
+msgid "``{String}`` Name of the folders. Default is \"ZOO export\".  If set to null, no name element will be created."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:91
+# 1a19eec5083e4108ba01dfafac72edd4
+msgid "foldersDesc"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:91
+# 2d3b0de2baa149c5bc6c86885788a8cc
+msgid "``{String}`` Description of the folders. Default is \"Exported on [date].\"  If set to null, no description element will be created."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:96
+# aee5cc427a0b4bf69dec305a19cb3aaf
+msgid "placemarksDesc"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:96
+# 1f9c8cdbd07d4e6abde3cbc2e19074ad
+msgid "``{String}`` Name of the placemarks. Default is \"No description available\"."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:101
+# d8e5fa9c30274ab4b9d0da0e9981ef9f
+msgid "extractAttributes"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:101
+# 9b3d2db61b3740428b909874e22f8073
+msgid "``{Boolean}`` Extract attributes from KML. Default is true.  Extracting styleUrls requires this to be set to true"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:108
+#: ../../api/zoo-format-kml.txt:121
+#: ../../api/zoo-format-kml.txt:137
+#: ../../api/zoo-format-kml.txt:155
+#: ../../api/zoo-format-kml.txt:168
+#: ../../api/zoo-format-kml.txt:181
+#: ../../api/zoo-format-kml.txt:194
+#: ../../api/zoo-format-kml.txt:209
+#: ../../api/zoo-format-kml.txt:227
+#: ../../api/zoo-format-kml.txt:244
+#: ../../api/zoo-format-kml.txt:261
+#: ../../api/zoo-format-kml.txt:278
+#: ../../api/zoo-format-kml.txt:296
+#: ../../api/zoo-format-kml.txt:309
+#: ../../api/zoo-format-kml.txt:322
+#: ../../api/zoo-format-kml.txt:335
+#: ../../api/zoo-format-kml.txt:348
+#: ../../api/zoo-format-kml.txt:361
+#: ../../api/zoo-format-kml.txt:374
+#: ../../api/zoo-format-kml.txt:387
+#: ../../api/zoo-format-kml.txt:404
+# 48f3f66b7f0c49afadfcadf84993ff52
+# fa688231f55d47bca6e976763197e6bc
+# c99eb6209c4a4dddaf43764ddcb36212
+# 3d2a1de17cb94ad4a5a7b4a8022357c8
+# 72e4ad497a46409694aeb09f0a87cedb
+# 8972aa89d17f4f2cb970c8dcdc477e46
+# ec9562f4cdc14d238a17effef1ef7555
+# 0661d1e804bf49a8856dea40cdbf327d
+# 53cdbb8ca09141a3a50b879ece9ab4e4
+# 52e39a3a78f14b879143df56a79adec9
+# 607acd0f1d7747db907609899bf5ce12
+# 6dc993801afb4f74b53a2b98b51666a8
+# 06a2453e783a453480ca1375e7e7369e
+# 0801db984e754691b69b287d77431e6a
+# 97af74560cba4051833862e8233d8773
+# 019fc23d159e4a27a931f2ff8eb6bffa
+# 2d72061bbf5f4c829b6754aec466bc1a
+# 54bf4c984bd14b89b79ec2305a4c0f40
+# 18d0e898d12a4dc780afe9c6478891f5
+# 77f6eadaa0e840c792ce29145f5b9106
+# 5eacc981569942f0a4bde425ac47df59
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:110
+# 43593af4081d4287b002b071e2ec2379
+msgid "``options {Object}`` An optional object whose properties will be set on this instance."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:124
+# 84df4027179246d7a7e59aaf18d3a37b
+msgid "parseFeatures"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:119
+# e2af1e4c817f4db289c22fd8522650cd
+msgid "Loop through all Placemark nodes and parse them.  Will create a list of features"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:143
+# 9b18430ec1e04860a04c6da636fe089e
+msgid "parseFeature"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:133
+# cdbf3bb985de4624a6a516c8cf0d82c4
+msgid "This function is the core of the KML parsing code in ZOO.  It creates the geometries that are then attached to the returned feature, and calls parseAttributes() to get attribute data out."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:139
+#: ../../api/zoo-format-kml.txt:211
+#: ../../api/zoo-format-kml.txt:229
+# 8c3b962348ae4ed4ab20e242c28de4e2
+# f08354d537b44fffb0a2be0c666a7255
+# b889fdf0a16f4fc9be8c98cc2c8f7da9
+msgid "``node {E4XElement}``"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:141
+#: ../../api/zoo-format-kml.txt:159
+#: ../../api/zoo-format-kml.txt:172
+#: ../../api/zoo-format-kml.txt:185
+#: ../../api/zoo-format-kml.txt:198
+#: ../../api/zoo-format-kml.txt:213
+#: ../../api/zoo-format-kml.txt:231
+#: ../../api/zoo-format-kml.txt:248
+#: ../../api/zoo-format-kml.txt:265
+#: ../../api/zoo-format-kml.txt:282
+#: ../../api/zoo-format-kml.txt:300
+#: ../../api/zoo-format-kml.txt:313
+#: ../../api/zoo-format-kml.txt:326
+#: ../../api/zoo-format-kml.txt:339
+#: ../../api/zoo-format-kml.txt:352
+#: ../../api/zoo-format-kml.txt:365
+#: ../../api/zoo-format-kml.txt:378
+#: ../../api/zoo-format-kml.txt:391
+# ace7298e0cbf4d66843d8ae7197405f7
+# fc24ef00216c49b69ac8e3c227d4f0eb
+# 86b86054c2e24a5283202d8c41c76259
+# 6cbe8ec7f29346998eaa85e0b85239dd
+# 9ada20dc65c24ce48978bf7bea1eba37
+# bee5218529fe45aabff89d92c672ecdc
+# 2eaf976539b647159eedf883262a1cb6
+# 89567042b0304a7cafd9d9414e36dece
+# b6665a9403994129b42b92bd31a0e38a
+# c6f5d933515b4ec9999fea644b678678
+# cb01aaa0a8dc4ef9ae12c79f4f9f8492
+# 9e4066c192694edbb5336a296a0409e0
+# 24e77ac01876433e9e1ab13378910d60
+# 6fc172782da14e12acf462a725904db7
+# 7ddb044feea6459f8d997c80999ce467
+# 1debbff32c0d422fa2809d2334c1cb78
+# 1a17bd72c027447986d5f517d2f85c41
+# dcd0ce1cc3ca4ab5913be08b44505237
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:143
+# cfb795205b414d378686cc220e45e67b
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A vector feature."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:148
+# c1d66db97fda4adb9f9fce240767e17f
+msgid "parseGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:161
+# d89f20234bff46928d51df8e7d5ba052
+msgid "parseGeometry.point"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:157
+# 7d05f50ec273466584e6dd61e5e4e969
+msgid "``node {E4XElement}`` A KML Point node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:161
+# 780f9121eb1e4d52b053b6f273bd166f
+msgid ":ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:174
+# b117d610f0434745b8079abb2c1a358d
+msgid "parseGeometry.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:170
+# 18f51fae8be54e8487cd7b03cfc54c9f
+msgid "``node {E4XElement}`` A KML LineString node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:174
+# a3768932e2bc4701992bba1a8208ba78
+msgid ":ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` A linestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:187
+# 5bf3be67a1b74d91ac70fcb5848deb5b
+msgid "parseGeometry.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:183
+# 988cb90bb00c45bbbcbca98de6009bcc
+msgid "``node {E4XElement}`` A KML Polygon node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:187
+# c37ac2affb09408883b1d952da234bcf
+msgid ":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:200
+# fac2e06a457e4e52a132c79fea6ea1bd
+msgid "parseGeometry.multigeometry"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:196
+# 9acb6e0c2fe34504bbcc5175240bc2f1
+msgid "``node {E4XElement}`` A KML MultiGeometry node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:200
+# c6b5e40dd59246dc8538c81bb86121f0
+msgid ":ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>` A geometry collection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:215
+# 363c67d86fb74934be0fa1d98969c0b9
+msgid "parseAttributes"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:215
+#: ../../api/zoo-format-kml.txt:233
+# f2ba01f43c9b479b8379097d8c8ac536
+# caf69239bf30416aa25b6049179e4918
+msgid "``{Object}`` An attributes object."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:233
+# 744fb33f0b584fd1b00c540e4e32461e
+msgid "parseExtendedData"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:224
+# 6b2e8379d48d4bf78279ea6037729399
+msgid "Parse ExtendedData from KML.  Limited support for schemas/datatypes.  See http://code.google.com/apis/kml/documentation/kmlreference.html#extendeddata for more information on extendeddata."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:250
+# dfb86fc0312c4d10909e37705131bfc3
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:246
+# 6a512265791647c4be8abf3873a87c0e
+msgid "``features`` :ref:`{Array(ZOO.Feature)} <api-zoo-feature>` An array of features."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:250
+# 26b02a2d6c7d487f9b733343df1b1620
+msgid "``{String}`` A KML string."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:267
+# 541cf4d89a95457993dffbba23a2b1b0
+msgid "createPlacemark"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:263
+# 208c595cd7b34d3b9b466dea25689d21
+msgid "``feature`` :ref:`{ZOO.Feature} <api-zoo-feature>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:267
+#: ../../api/zoo-format-kml.txt:284
+#: ../../api/zoo-format-kml.txt:410
+# d8df867c36b5473bab37e1d94f571b03
+# 9b7e0139a0844e0fa8c4aa48e9e770b8
+# fd420a8e333b42818a45505cfe0d3198
+msgid "``{E4XElement}``"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:284
+# ffa027ad68154d7e8a6fbd2db03a18f0
+msgid "buildGeometryNode"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:280
+#: ../../api/zoo-format-kml.txt:406
+# 325445d19528426893ce780134722ab0
+# 057364283dfa4bb79c1e14e9026cb55f
+msgid "``geometry`` :ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:289
+# db45370532444874898875c0a664836b
+msgid "buildGeometry"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:302
+# 3704f20d37494cff82b4bfc09ccb242c
+msgid "buildGeometry.point"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:298
+# a194acb814bf44d5b572acec7d8d9647
+msgid "``geometry`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A point geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:302
+# 60b1e3e1ceab4d599b5feaaf9ca7939b
+msgid "``{E4XElement}`` A KML point node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:315
+# 9f39c3740dc04b40a919fcc639f424ba
+msgid "buildGeometry.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:311
+# 365a6c99be0d4f97bbd9a40789c46e10
+msgid "``geometry`` :ref:`{ZOO.Geometry.MultiPoint} <api-zoo-geometry-multipoint>` A multipoint geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:315
+#: ../../api/zoo-format-kml.txt:341
+#: ../../api/zoo-format-kml.txt:380
+# 40ea612cbf944d01933f9c5f99ba9ab9
+# f04b1513d17e42a989cefc17d27b5098
+# ab9e5252eacb4d0a870056833851337a
+msgid "``{E4XElement}`` A KML GeometryCollection node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:328
+# 6c7c8e7d43d04d0eb62de0de98bdd079
+msgid "buildGeometry.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:324
+# 594d1180af8f44eca3a45c23c2db0996
+msgid "``geometry`` :ref:`{ZOO.Geometry.LineString} <api-zoo-geometry-linestring>` A linestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:328
+# abf2769774b24f56aec852dc4707fc24
+msgid "``{E4XElement}`` A KML linestring node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:341
+# a85311c93e314b6cb7af6214fe6c91f4
+msgid "buildGeometry.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:337
+# a461e67d2f184e8b8c8f89a1b6937b6f
+msgid "``geometry`` :ref:`{ZOO.Geometry.MultiLineString} <api-zoo-geometry-multilinestring>` A multilinestring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:354
+# 4504c3ee90574bfabe80ce4c29a1945f
+msgid "buildGeometry.linearring"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:350
+# a526b455fafc44468a646b527a6e0c21
+msgid "``geometry`` :ref:`{ZOO.Geometry.LinearRing} <api-zoo-geometry-linearring>` A linearring geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:354
+# b91c0d1903544720bd56807a6810aad4
+msgid "``{E4XElement}`` A KML linearring node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:367
+# 100bba35d4814dbbbb726364c1887abe
+msgid "buildGeometry.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:363
+# e1a0ad48327942b795c2237b06506ccd
+msgid "``geometry`` :ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:367
+# d5e0152560e54e138192ab66afe23616
+msgid "``{E4XElement}`` A KML polygon node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:380
+# cfee9f3ad57a447e9c6ff31644bf9541
+msgid "buildGeometry.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:376
+# 5bb4d5b8513a47808a88d8c1f494fcb8
+msgid "``geometry`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` A multipolygon geometry."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:393
+# 0c9f97b3ad8f468ea048fec9323a2d95
+msgid "buildGeometry.collection"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:389
+# 9af3f86b627c4794ba980cb01a5f8c6a
+msgid "``geometry`` :ref:`{ZOO.Geometry.Collection} <api-zoo-geometry-collection>` A geometry collection."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:393
+# 6a36c6a842fd4a568dcd2243f27b5312
+msgid "``{E4XElement}`` A KML MultiGeometry node."
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:411
+# fdc88c14818c4dbfb28114f111e049ab
+msgid "buildCoordinatesNode"
+msgstr ""
+
+#: ../../api/zoo-format-kml.txt:408
+# 572bc4bcfee941a3b80608ee805acf0d
+msgid "*Return*"
+msgstr ""
+

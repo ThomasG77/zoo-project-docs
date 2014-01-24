@@ -1,0 +1,224 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/howtos.txt:4
+msgid "How To Setup ZOO Services"
+msgstr ""
+
+#: ../../services/howtos.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
+msgstr ""
+
+#: ../../services/howtos.txt:7
+msgid "$Date: 2013-03-28 12:51:45 +0100 (Thu, 28 Mar 2013) $"
+msgstr ""
+
+#: ../../services/howtos.txt:9
+msgid ""
+"ZOO Services are quite easy to create once you have installed the ZOO Kernel"
+" and have chosen code (in the language of your choice) to turn into a ZOO "
+"service. Here are some HelloWorlds in Python, PHP, Java  and JavaScript with"
+" links to their corresponding ``.zcfg`` files."
+msgstr ""
+
+#: ../../services/howtos.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../services/howtos.txt:19
+msgid "Common informations"
+msgstr ""
+
+#: ../../services/howtos.txt:21
+msgid ""
+"The function of the process for each programming language take three "
+"arguments: the main configuration, inputs and outputs."
+msgstr ""
+
+#: ../../services/howtos.txt:24
+msgid ""
+"The service has to **return 3 if the process run successfully instead it "
+"return 4** if the process end with an error."
+msgstr ""
+
+#: ../../services/howtos.txt:28 ../../services/howtos.txt:43
+msgid "Python"
+msgstr ""
+
+#: ../../services/howtos.txt:30
+msgid ""
+"You'll find here information needed to deploy your own Python Services "
+"Provider."
+msgstr ""
+
+#: ../../services/howtos.txt:33
+msgid "Python ZCFG requirements"
+msgstr ""
+
+#: ../../services/howtos.txt:35
+msgid ""
+"For each Service provided by your ZOO Python Services Provider, the ZCFG "
+"File must be named the same as the Python module function name (also the "
+"case of characters is important)."
+msgstr ""
+
+#: ../../services/howtos.txt:39 ../../services/howtos.txt:201
+msgid "The ZCFG file should contain the following :"
+msgstr ""
+
+#: ../../services/howtos.txt:42 ../../services/howtos.txt:203
+msgid "serviceType"
+msgstr ""
+
+#: ../../services/howtos.txt:47 ../../services/howtos.txt:209
+msgid "serviceProvider"
+msgstr ""
+
+#: ../../services/howtos.txt:45
+msgid ""
+"The name of the Python module to use as a ZOO Service Provider. For "
+"instance, if your script, located in the same directory as your ZOO Kernel, "
+"was named ``my_module.py`` then you should use ``my_module`` (the Python "
+"module name) for the serviceProvider value in ZCFG file."
+msgstr ""
+
+#: ../../services/howtos.txt:50
+msgid "Python Data Structure used"
+msgstr ""
+
+#: ../../services/howtos.txt:51
+msgid ""
+"The three parameters of the function are passed to the Python module as "
+"dictionaries."
+msgstr ""
+
+#: ../../services/howtos.txt:53
+msgid "Following you'll find an example for each parameters"
+msgstr ""
+
+#: ../../services/howtos.txt:56
+msgid "Main configuration"
+msgstr ""
+
+#: ../../services/howtos.txt:57
+msgid ""
+"Main configuration contains several informations, some of them are really "
+"useful to develop your service. Following an example ::"
+msgstr ""
+
+#: ../../services/howtos.txt:101
+msgid "Inputs"
+msgstr ""
+
+#: ../../services/howtos.txt:102
+msgid "The inputs are somethings like this ::"
+msgstr ""
+
+#: ../../services/howtos.txt:113
+msgid ""
+"The access to the value you have to require for the ``value`` parameter, "
+"something like this ::"
+msgstr ""
+
+#: ../../services/howtos.txt:118
+msgid "Outputs"
+msgstr ""
+
+#: ../../services/howtos.txt:119
+msgid "The outputs data as a structure really similar to the inputs one ::"
+msgstr ""
+
+#: ../../services/howtos.txt:127
+msgid "There is no ``'value'`` parameter before you assign it ::"
+msgstr ""
+
+#: ../../services/howtos.txt:131
+msgid ""
+"The return statement has to be an integer: corresponding to the service "
+"status code."
+msgstr ""
+
+#: ../../services/howtos.txt:133
+msgid ""
+"To add a message for the wrong result you can add the massage to "
+"``conf[\"lenv\"][\"message\"]``, for example:"
+msgstr ""
+
+#: ../../services/howtos.txt:141
+msgid "Sample ZOO Python Services Provider"
+msgstr ""
+
+#: ../../services/howtos.txt:143
+msgid ""
+"The following code represents a simple ZOO Python Services Provider which "
+"provides only one Service, the HelloPy one."
+msgstr ""
+
+#: ../../services/howtos.txt:154
+msgid "PHP"
+msgstr ""
+
+#: ../../services/howtos.txt:166
+msgid "Java"
+msgstr ""
+
+#: ../../services/howtos.txt:185
+msgid "Javascript"
+msgstr ""
+
+#: ../../services/howtos.txt:188
+msgid "ZOO API"
+msgstr ""
+
+#: ../../services/howtos.txt:190
+msgid ""
+"If you need to use :ref:`ZOO API <api>` in your service, you have first to "
+"copy ``zoo-api.js`` and ``zoo-proj4js.js`` where your services are located "
+"(for example in Unix system probably in ``/usr/lib/cgi-bin/``"
+msgstr ""
+
+#: ../../services/howtos.txt:195
+msgid "Javascript ZCFG requirements"
+msgstr ""
+
+#: ../../services/howtos.txt:197
+msgid ""
+"For each Service provided by your ZOO Javascript Services Provider, the ZCFG"
+" File must be named the same as the Javascript function name (also the case "
+"of characters is important)."
+msgstr ""
+
+#: ../../services/howtos.txt:204
+msgid "JS"
+msgstr ""
+
+#: ../../services/howtos.txt:206
+msgid ""
+"The name of the JavaScript file to use as a ZOO Service Provider. For "
+"instance, if your script, located in the same directory as your ZOO Kernel, "
+"was named ``my_module.js`` then you should use ``my_module.js``."
+msgstr ""
+
+#: ../../services/howtos.txt:212
+msgid "Javascript Data Structure used"
+msgstr ""
+
+#: ../../services/howtos.txt:214
+msgid ""
+"The three parameters of the function are passed to the JavaScript function "
+"as Object."
+msgstr ""
+
+#: ../../services/howtos.txt:217
+msgid "Sample ZOO Javascript Services Provider"
+msgstr ""

@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/howtos.txt:4
+# f9c19258bb28468e956d210c3bf83918
+msgid "How To Setup ZOO Services"
+msgstr ""
+
+#: ../../services/howtos.txt:6
+# d0b2788607074eac96e4aa206b2cc51b
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
+msgstr ""
+
+#: ../../services/howtos.txt:7
+# 9b6c3e82d7a24082bd2e7bb3a153a968
+msgid "$Date: 2013-03-28 12:51:45 +0100 (Thu, 28 Mar 2013) $"
+msgstr ""
+
+#: ../../services/howtos.txt:9
+# afa04b08df904f67bc321e8cad8f177d
+msgid "ZOO Services are quite easy to create once you have installed the ZOO Kernel and have chosen code (in the language of your choice) to turn into a ZOO service. Here are some HelloWorlds in Python, PHP, Java  and JavaScript with links to their corresponding ``.zcfg`` files."
+msgstr ""
+
+#: ../../services/howtos.txt:0
+# 0b72af638e584ae4bd4b555929cee201
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../services/howtos.txt:19
+# 7669d5f0f2e145a9ba7d5e2dd730f0d6
+msgid "Common informations"
+msgstr ""
+
+#: ../../services/howtos.txt:21
+# f6776ce7312c458d8dd326257918f494
+msgid "The function of the process for each programming language take three arguments: the main configuration, inputs and outputs."
+msgstr ""
+
+#: ../../services/howtos.txt:24
+# 56fe4bfdb5db4f9e87f44e2c738474f8
+msgid "The service has to **return 3 if the process run successfully instead it return 4** if the process end with an error."
+msgstr ""
+
+#: ../../services/howtos.txt:28
+#: ../../services/howtos.txt:43
+# d33614261c54498990a79706baf5fcf7
+# 52d807deb08e481682281869641d681e
+msgid "Python"
+msgstr ""
+
+#: ../../services/howtos.txt:30
+# 2fd86f3136bb47cb9d2d4ee7196ef983
+msgid "You'll find here information needed to deploy your own Python Services Provider."
+msgstr ""
+
+#: ../../services/howtos.txt:33
+# 4aa7c9dde34d410cb14ccd395cd165de
+msgid "Python ZCFG requirements"
+msgstr ""
+
+#: ../../services/howtos.txt:35
+# 1e2e584a8a7c43c0b9b9385710a601fc
+msgid "For each Service provided by your ZOO Python Services Provider, the ZCFG File must be named the same as the Python module function name (also the case of characters is important)."
+msgstr ""
+
+#: ../../services/howtos.txt:39
+#: ../../services/howtos.txt:201
+# 9f26b5c3e86f49a2b97268eac61a8263
+# dadc611ef85f417d9678e5f47d249659
+msgid "The ZCFG file should contain the following :"
+msgstr ""
+
+#: ../../services/howtos.txt:42
+#: ../../services/howtos.txt:203
+# ec61969ba0ec44dca895d112a81194b8
+# 2d01b4a9d71c4bacafc1efb4a451231f
+msgid "serviceType"
+msgstr ""
+
+#: ../../services/howtos.txt:47
+#: ../../services/howtos.txt:209
+# 4c021bd467fa4eeaab38b1c6fe318fd3
+# 398fd0d69999483999e192e5b1264190
+msgid "serviceProvider"
+msgstr ""
+
+#: ../../services/howtos.txt:45
+# 5bc54059d9824eb1831f51a72b8f265d
+msgid "The name of the Python module to use as a ZOO Service Provider. For instance, if your script, located in the same directory as your ZOO Kernel, was named ``my_module.py`` then you should use ``my_module`` (the Python module name) for the serviceProvider value in ZCFG file."
+msgstr ""
+
+#: ../../services/howtos.txt:50
+# f1f3530e205443108afaa5f312076e5a
+msgid "Python Data Structure used"
+msgstr ""
+
+#: ../../services/howtos.txt:51
+# defad07886284a079fd9e2eb57192585
+msgid "The three parameters of the function are passed to the Python module as dictionaries."
+msgstr ""
+
+#: ../../services/howtos.txt:53
+# 6333d71405b94a879527a36c64bb8fa8
+msgid "Following you'll find an example for each parameters"
+msgstr ""
+
+#: ../../services/howtos.txt:56
+# 9da49c062dcb4431bdab61f6a0412e71
+msgid "Main configuration"
+msgstr ""
+
+#: ../../services/howtos.txt:57
+# 4f35f00b3cc04cfbb1e6bed8e9961212
+msgid "Main configuration contains several informations, some of them are really useful to develop your service. Following an example ::"
+msgstr ""
+
+#: ../../services/howtos.txt:101
+# 067e511b03804d65b33ba674e7646283
+msgid "Inputs"
+msgstr ""
+
+#: ../../services/howtos.txt:102
+# 0436d51bbd31432dbddbf688cdab7e9a
+msgid "The inputs are somethings like this ::"
+msgstr ""
+
+#: ../../services/howtos.txt:113
+# a6356b68609b4cb896796378a39a3ea5
+msgid "The access to the value you have to require for the ``value`` parameter, something like this ::"
+msgstr ""
+
+#: ../../services/howtos.txt:118
+# 28b1ffd2c72b49d3b6531236e829386d
+msgid "Outputs"
+msgstr ""
+
+#: ../../services/howtos.txt:119
+# c6f84a9865724ebba714a11394e6123f
+msgid "The outputs data as a structure really similar to the inputs one ::"
+msgstr ""
+
+#: ../../services/howtos.txt:127
+# 62b0ef24257f40a0a9fd52298c87641a
+msgid "There is no ``'value'`` parameter before you assign it ::"
+msgstr ""
+
+#: ../../services/howtos.txt:131
+# 63c01b9cab9b47b09f6f3caed2ccca9c
+msgid "The return statement has to be an integer: corresponding to the service status code."
+msgstr ""
+
+#: ../../services/howtos.txt:133
+# 255802ae91f244928e61e6c5db5c54c0
+msgid "To add a message for the wrong result you can add the massage to ``conf[\"lenv\"][\"message\"]``, for example:"
+msgstr ""
+
+#: ../../services/howtos.txt:141
+# 72ee42c34ebc432cae473317c4acd613
+msgid "Sample ZOO Python Services Provider"
+msgstr ""
+
+#: ../../services/howtos.txt:143
+# 817d527ff8a645898aad00646163b12e
+msgid "The following code represents a simple ZOO Python Services Provider which provides only one Service, the HelloPy one."
+msgstr ""
+
+#: ../../services/howtos.txt:154
+# f954eddf42ed464eabbb31ca54f982fe
+msgid "PHP"
+msgstr ""
+
+#: ../../services/howtos.txt:166
+# 711cd3a583b743d8bee227e3c8c09010
+msgid "Java"
+msgstr ""
+
+#: ../../services/howtos.txt:185
+# c888078cd2d44d218ba011fce77ba7fe
+msgid "Javascript"
+msgstr ""
+
+#: ../../services/howtos.txt:188
+# 4e5fafd07f2e4447b1e87f38101172f7
+msgid "ZOO API"
+msgstr ""
+
+#: ../../services/howtos.txt:190
+# 834be05a6be04abb9da5bba94e3dc434
+msgid "If you need to use :ref:`ZOO API <api>` in your service, you have first to copy ``zoo-api.js`` and ``zoo-proj4js.js`` where your services are located (for example in Unix system probably in ``/usr/lib/cgi-bin/``"
+msgstr ""
+
+#: ../../services/howtos.txt:195
+# 35cfb20f7ac9493d841f59fdb036d5c9
+msgid "Javascript ZCFG requirements"
+msgstr ""
+
+#: ../../services/howtos.txt:197
+# f16ad453e4134268807edadb59923118
+msgid "For each Service provided by your ZOO Javascript Services Provider, the ZCFG File must be named the same as the Javascript function name (also the case of characters is important)."
+msgstr ""
+
+#: ../../services/howtos.txt:204
+# 98fe1e83ccb84050a572ecd62eec4798
+msgid "JS"
+msgstr ""
+
+#: ../../services/howtos.txt:206
+# 815566fe193143829dec61f33bb58313
+msgid "The name of the JavaScript file to use as a ZOO Service Provider. For instance, if your script, located in the same directory as your ZOO Kernel, was named ``my_module.js`` then you should use ``my_module.js``."
+msgstr ""
+
+#: ../../services/howtos.txt:212
+# 3d79c396a731438a95479a793615a289
+msgid "Javascript Data Structure used"
+msgstr ""
+
+#: ../../services/howtos.txt:214
+# 0852480b6123439c931c83b0022a7da6
+msgid "The three parameters of the function are passed to the JavaScript function as Object."
+msgstr ""
+
+#: ../../services/howtos.txt:217
+# 86624a5ddc8d449dadc5685c5f0a8736
+msgid "Sample ZOO Javascript Services Provider"
+msgstr ""
+

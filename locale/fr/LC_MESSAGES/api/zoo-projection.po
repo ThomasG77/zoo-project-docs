@@ -1,0 +1,208 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-projection.txt:4 ../../api/zoo-projection.txt:72
+msgid "ZOO.Projection"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:6
+msgid "Class for coordinate transforms between coordinate systems."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:9
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:15 ../../api/zoo-projection.txt:29
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:16 ../../api/zoo-projection.txt:30
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:17
+msgid ":ref:`proj <proj>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:18
+msgid "{Number} Proj4js.Proj instance."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:19
+msgid ":ref:`projCode <projCode>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:20
+msgid "{String}"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:23
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:31
+msgid ":ref:`ZOO.Projection <ZOO.Projection>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:32 ../../api/zoo-projection.txt:63
+msgid ""
+"This class offers several methods for interacting with a wrapped zoo-pro4js "
+"projection object."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:33
+msgid ":ref:`getCode <getCode>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:34 ../../api/zoo-projection.txt:81
+msgid "Get the string SRS code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:35
+msgid ":ref:`getUnits <getUnits>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:36 ../../api/zoo-projection.txt:94
+msgid ""
+"Get the units string for the projection -- returns null if zoo-proj4js is "
+"not available."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:37
+msgid ":ref:`toString <toString>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:38 ../../api/zoo-projection.txt:107
+msgid "Convert projection to string (getCode wrapper)."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:39
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:40
+msgid "Test equality of two projection instances."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:41
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:42 ../../api/zoo-projection.txt:133
+msgid "Destroy projection object."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:43
+msgid ":ref:`transform <transform>`"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:44
+msgid "Transform a point coordinate from one projection to another."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:46
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:51
+msgid "proj"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:51
+msgid "``{Object}`` Proj4js.Proj instance."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:56
+msgid "projCode"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:56
+msgid "``{String}``"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:58
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:65 ../../api/zoo-projection.txt:145
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:70 ../../api/zoo-projection.txt:83
+#: ../../api/zoo-projection.txt:96 ../../api/zoo-projection.txt:109
+#: ../../api/zoo-projection.txt:122 ../../api/zoo-projection.txt:151
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:72
+msgid ":ref:`{ZOO.Projection} <api-zoo-projection>` A projection object."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:85
+msgid "getCode"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:85
+msgid "``{String}`` The SRS code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:98
+msgid "getUnits"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:98
+msgid "``{String}`` The units abbreviation."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:111
+msgid "toString"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:111
+msgid "``{String}`` The projection code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:124
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:120
+msgid ""
+"Test equality of two projection instances.  Determines equality based soley "
+"on the projection code."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:124
+msgid "``{Boolean}`` The two projections are equivalent."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:133
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:152
+msgid "transform"
+msgstr ""
+
+#: ../../api/zoo-projection.txt:142
+msgid ""
+"Transform a point coordinate from one projection to another.  Note that the "
+"input point is transformed in place."
+msgstr ""
+
+#: ../../api/zoo-projection.txt:153
+msgid ""
+"``point {object}`` A transformed coordinate.  The original point is "
+"modified."
+msgstr ""

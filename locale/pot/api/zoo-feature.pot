@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-feature.txt:4
+#: ../../api/zoo-feature.txt:80
+# a4540a2fa18e4481b0f204092c4ffa80
+# 6eb0431cfb9a4413b9378e3715f3db97
+msgid "ZOO.Feature"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:6
+# 095de22b62324951ba104392600780fa
+msgid "Vector features use the ZOO.Geometry classes as geometry description."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:9
+# 69fec09618534d088af467f86669b6fb
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:15
+#: ../../api/zoo-feature.txt:33
+# 3ae7ca4ac33c43369fafbcb40a5a6b80
+# 951978dad00c4648a0e97c7d5178cfa7
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:16
+#: ../../api/zoo-feature.txt:34
+# b2a9bd02411549ae97c303a7e0dd08ae
+# dd28db647cf74a6cae93a386e09e732d
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:17
+# 59c983b428c24ab794ca8add6b5fb4e4
+msgid ":ref:`fid <fid>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:18
+# 240b878f7c8740a18587c2b07f65dca7
+msgid "{String}"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:19
+# b4c1640e83754d669cd72745bfa3e634
+msgid ":ref:`geometry <geometry>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:20
+# e6506137a4de494c9f9991dee74d7008
+msgid "{ZOO.Geometry}"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:21
+# db742d87eeeb4f69a54ea2dc8c851993
+msgid ":ref:`attributes <attributes>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:22
+# eaa3bc38366f481e8d5da389acd372d4
+msgid "{Object} This object holds arbitrary properties that describe the feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:23
+# 5da876c2231042d8b5155cfa7cb9260f
+msgid ":ref:`bounds <bounds>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:24
+# 408fd40c3cc14ab185529951cbd9c46e
+msgid "{ZOO.Bounds} The box bounding that feature's geometry, that property can be set by an ZOO.Format object when deserializing the feature, so in most cases it represents an information set by the server."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:27
+# 725d9fb885ce4714923d43b771158b9f
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:35
+# c99ea1f978ce486bb773b44f181f7e91
+msgid ":ref:`ZOO.Feature <ZOO.Feature>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:36
+#: ../../api/zoo-feature.txt:74
+# 40f3cc58cd9c4716a779938184145e72
+# 8aa058d1989d43cfbfe4ede8b5c1c978
+msgid "Create a vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:37
+# bc6cf46312a24cdc81c38ab0d2bdccf2
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:38
+#: ../../api/zoo-feature.txt:89
+# 8d5cb58178864274a191a59d5c7943ae
+# b62f85a6ef3b4169a48d2fb2d22bd770
+msgid "nullify references to prevent circular references and memory leaks"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:39
+# 74a4193a1c6c4b27bfa574537b0c909c
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:40
+# 0b803c80fa994390b05f6c4f0bdcb8b5
+msgid "Create a clone of this vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:41
+# b6651a903cbe4b6fbd8526d60e647290
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:42
+#: ../../api/zoo-feature.txt:107
+# 45b79e36454a4a8eadead8dd60d55426
+# e88fbc72d7754f8a93cd58a9248ec5de
+msgid "Moves the feature and redraws it at its new location"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:45
+# c532967fe89a45b58a51aa03cf5b7407
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:50
+# dfbe4f51bc884610ad63b569b8e37790
+msgid "fid"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:50
+# 0b0874b5222e43efb427f7fe41e65ed2
+msgid "``{String}``"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:55
+# 5e6feeddbeb841ba8b775d2baf846d59
+msgid "geometry"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:55
+# 0e9c3537985642929146e76b64022899
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:60
+# 74cc539e6f42414fb16d2fd9d76eac67
+msgid "attributes"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:60
+# 0ba3fa7a42094af7b55c63e96a4d94b3
+msgid "``{Object}`` This object holds arbitrary properties that describe the feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:67
+# 865cd3a61695497782d04d6e90f69310
+msgid "bounds"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:65
+# 0ca7014e0ad747bca4cd5032d1946f43
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` The box bounding that feature's geometry, that property can be set by an ZOO.Format object when deserializing the feature, so in most cases it represents an information set by the server."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:69
+# 74dffec3fc4a4f738da4e7434b2192f2
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:77
+# 6c00f2195d3f4849ace270b8d09fecf7
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:89
+# ce3d1f8af4264736804a68419d483f5f
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:102
+# d83af5c13df94232b41cb4edc9f3b0d7
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:98
+# bebec9440914491b9f8e5db03951bcb5
+msgid "Create a clone of this vector feature.  Does not set any non-standard properties."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:100
+# 199c7104b51b4821b10c1a28c7cce42f
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:102
+# 69b43ab0e70f40569e3d7baa73033889
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` An exact clone of this vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:106
+# 88268799a4914d629eae215672921c55
+msgid "move"
+msgstr ""
+

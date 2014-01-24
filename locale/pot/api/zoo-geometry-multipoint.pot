@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-multipoint.txt:4
+#: ../../api/zoo-geometry-multipoint.txt:63
+# 3709af9db5a243388cff25b08d191ed1
+# c866e687f20d4819807c9ce15779b12b
+msgid "ZOO.Geometry.MultiPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:6
+# 1d8433d0086f41328d854f795483f0bc
+msgid "MultiPoint is a collection of Points.  Create a new instance with the :ref:`ZOO.Geometry.MultiPoint <ZOO.Geometry.MultiPoint>` constructor."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:9
+# 3d2f8e21667346ffa0c2940164d58aa5
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:11
+# 2b11e493d6784374bdbd77398ff2576f
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:14
+# e2bda131ddea41b8bfd8a6cb8b2bd49d
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:20
+#: ../../api/zoo-geometry-multipoint.txt:32
+# 525c7cdcec814b0db0bb510e9739caf1
+# fcbb834da958452d9a6debb8407050c9
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:21
+#: ../../api/zoo-geometry-multipoint.txt:33
+# 66932cdfb2874b859a8a8af4690c742b
+# c3403a461ef743e495b5edb3b504775e
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:22
+# 498b7ae2b8584486ba05d89ce7844821
+msgid ":ref:`componentTypes <componentTypes>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:23
+# db910b6f2b9c422690c9dfc509f6946c
+msgid "{Array(String)} An array of class names representing the types of components that the collection can include."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:26
+# d29dd2fbf186467588b639c76f823c2f
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:34
+# 345e545f5065476e8986e6c0bd31d5e3
+msgid ":ref:`ZOO.Geometry.MultiPoint <ZOO.Geometry.MultiPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:35
+#: ../../api/zoo-geometry-multipoint.txt:54
+# 963a0d11cd564cee805cc663795b2095
+# 22c6ded0b2c14f58a2230009b81ce710
+msgid "Create a new MultiPoint Geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:36
+# df69f0ec524d4f04acfe36bcfd839a86
+msgid ":ref:`addPoint <addPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:37
+# 5349bd40798b43738927cc2becab0ce9
+msgid "rapper for ZOO.Geometry.Collection.addComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:38
+# 462f3f9c26e841b199d4362112200d7c
+msgid ":ref:`removePoint <removePoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:39
+# f5e41aa52f394cb48b4a7774ca0eb7bc
+msgid "Wrapper for ZOO.Geometry.Collection.removeComponent"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:41
+# c8c431d5db1a4ebf94613c03b8e9dcd6
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:47
+# 10ce6c8e9526457d87920ea274820c65
+msgid "componentTypes"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:46
+# e8437f9d7e8d427987c66819c2e5173d
+msgid "``{Array(String)}`` An array of class names representing the types of components that the collection can include. A null value means the component types are not restricted."
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:49
+# cf536625f1f3430a889c1980c5369683
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:57
+#: ../../api/zoo-geometry-multipoint.txt:74
+#: ../../api/zoo-geometry-multipoint.txt:88
+# fcbc65e05965488aa95cc15fa41c90a6
+# cf7be8bcd0ef4e0da7a135aa555d5ada
+# ad5785082ab24b56bc24a8c1804915f5
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:59
+# bc0bf7eaf0f445129e3ec73d16a986e1
+msgid "``components`` {Array(:ref:`ZOO.Geometry.Point <api-zoo-geometry-point>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:61
+# 7223ddad616d4561bbb6233938ab593c
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:63
+# d57cb820ec104658ad45a3a284f1a651
+msgid ":ref:`{ZOO.Geometry.MultPoint} <api-zoo-geometry-multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:77
+# 8c30251e85dc41d4b5d77b59d16502ce
+msgid "addPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:72
+# 0be11f02c5104b2298c76f3b4af82c19
+msgid "Wrapper for :ref:`ZOO.Geometry.Collection.addComponent <addComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:89
+# eeed255da0cf43d1ab9c53c94f4bd1ff
+msgid "removePoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:86
+# 774b2e761e67410f8cb0264f2a15dbc3
+msgid "Wrapper for :ref:`ZOO.Geometry.Collection.removeComponent <removeComponent>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multipoint.txt:90
+# 9692ec60bb9a4a1daa3748e0a2ef6aa7
+msgid "``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>` Point to be removed"
+msgstr ""
+

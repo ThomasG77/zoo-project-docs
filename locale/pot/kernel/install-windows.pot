@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../kernel/install-windows.txt:4
+# eaf058b1e7554bc58ff3b3a67cf14077
+msgid "Windows"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:6
+# cd9a7c0a1c7d4a90982637cce6cc4768
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:7
+# b36e32a709d344ae834b8537f9d363b7
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:0
+# f3d7a259670f4d0f91056cd404c63ab4
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:14
+# 87a7f1bc95224f9895cc6e82530b2cda
+msgid "Using OSGeo4W"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:17
+# 5407bfc035974cb097ab7074ce519686
+msgid "Install OSGeo4W"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:19
+# d72c3209400a4b4096a1c7b109399258
+msgid "Download the OSGeo4W installer from  http://trac.osgeo.org/osgeo4w/, and install it with all the dependencies needed by your services (GDAL/OGR for example). The following libs are required: FastCGI, libxml, Python, cURL."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:23
+# be86526b3313474184631eb17f2aa9a8
+msgid "Install other tools and libraries"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:25
+# e6e59ce94d2645cea4c8aa67fb9311b4
+msgid "After installing OSGeo4W on your platform you'll need more GNU tools and libraries. `This package <http://www.zoo-project.org/dl/tool-win32.zip>`__ contains full dependencies required to compile on WIN32 platform and this one contains `full runtime dependencies to place <http://www.zoo-project.org/dl/zoo-runtime.zip>`__ in your c:\\OSGeo4W\\bin."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:30
+# 76ef0caeb545497fb3b9accbe8be9d7a
+msgid "Download and Install ZOO Kernel"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:32
+# bf79f7c6a08742f7bdb0cdec8a022e4a
+msgid "Download the `binary version <http://www.zoo-project.org/dl/zoo_loader.cgi>`__  of the ZOO Kernel for WIN32 then place it in the ``C:\\OSGeo4W\\bin`` directory. Don't forget to place a ``main.cfg`` file in the same directory, you can use a modified copy of `this file <http://www.zoo-project.org/trac/browser/trunk/zoo-kernel/main.cfg>`__."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:37
+# 110dad300ca045038ff922492037f5af
+msgid "Deploy ZOO Services Providers"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:39
+# f7e4e12dab3447ad84a417bdeccf534e
+msgid "Your can use the binary version of the OGR Services Provider available from `here <http://www.zoo-project.org/dl/zoo-services-win32.zip>`__. Then place the two libraries with their respective .zcfg files in your local ``C:\\OSGeo4W\\bin`` directory."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:43
+# 987805d75d83409fb0ca07623abf2a10
+msgid "Testing"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:45
+# 45adf120e9bd49c5a329453e879f4828
+msgid "Now you should be able to query your local ZOO Kernel."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:48
+# 23450bfab347490181fa001822daaaf1
+msgid "Compiling Using Your Own Libraries"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:51
+# c0687d71c1bc41e7961ac7ae7b9d26cf
+msgid "You must be sure to perform the :ref:`prerequisite steps <kernel-installation-prereq>` before compiling the ZOO Kernel."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:53
+# cbef0ff977814fd199e60574ce543efd
+msgid "The following steps are for use with the Microsoft Visual Studio compiler (and tested with MSVC 2008)."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:55
+# 7688240a1d4f4a618789728ba4559d7a
+msgid "Make sure the gnuwin32 tools ``bison.exe`` and ``flex.exe`` are found in your path.  You can download the GNUwin32 tools `here <http://www.zoo-project.org/dl/tool-win32.zip>`__."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:57
+# cd4133086bd444679f50e9f03a56070a
+msgid "Modify the file ``zoo-project\\zoo-kernel\\nmake.opt`` to point to your local libraries.  You can find a modified nmake.opt that points to local libs `here <http://www.zoo-project.org/trac/attachment/ticket/27/nmake.opt>`__. You can also find a modified ``zoo-project\\zoo-kernel\\makefile.vc`` file `here <http://www.zoo-project.org/trac/attachment/ticket/27/makefile.vc>`__."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:60
+# f9ac87dde36340438e2950a977dd97d8
+msgid "Execute:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:66
+# 1ce0b925466d4b3084da567a0cc0fefb
+msgid "A file ``zoo_loader.cgi`` should be created.  Note that if another file named ``zoo_loader.cgi.manifest`` is also created, you will have to run another command:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:73
+# 49008bc7f57e43edaa3f707acfa71747
+msgid "Copy the files ``zoo_loader.cgi`` and ``main.cfg`` into your cgi-bin directory."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:75
+# db1dbabec04c4344a33db02e224f07bf
+msgid "Using the command prompt, test the zoo-kernel by executing the following command:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:81
+# 38ff93da98084dbf87716b025f6c2160
+msgid "which should display a message such as:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:95
+# a24e7afc20c54a63add6e929d05ad27e
+msgid "Edit the file ``cgi-bin/main.cfg`` so that it contains values describing your WPS service.  An example of such a file running on Windows is:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:130
+# d6550dabe29a4e82ab7786a1aaab52e8
+msgid "Open a web browser window, and execute a GetCapababilites request on your WPS service: http://localhost/cgi-bin/zoo_loader.cgi?request=GetCapabilities&service=WPS"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:132
+# cdd6db0611e443628c6cce8103c5f8e0
+msgid "The response should be displayed in your browser, such as:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:152
+# 74051ef5d2fc41e5aaad7ff0934a48ca
+msgid "Optionally Compile Individual Services"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:154
+# 9e7507a5f2f940c0b3c89362e3e813bd
+msgid "An example could be the ``OGR base-vect-ops`` provider in the ``zoo-project\\zoo-services\\ogr\\base-vect-ops`` directory."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:156
+# 11e5d652d0104f3fb84dce138b5164a6
+msgid "Edit the makefile.vc located in that directory, and execute:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:162
+# d7edcd9900624e5b8d42ae3e48351491
+msgid "Inside that same directory, the file ``cgi-env\\ogr_service.zo`` should be created."
+msgstr ""
+
+#: ../../kernel/install-windows.txt:164
+# c1eb2bcbf9764569bec7e617e3f89371
+msgid "Copy all of the files inside ``zoo-services\\ogr\\base-vect-ops\\cgi-env`` into your cgi-bin directory"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:166
+# 657e8c53f91c480ba1fab03688c26cca
+msgid "Test this service provider through the following URL:"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:168
+# d2b7d29c793e4a9882a2d9e800098f34
+msgid "http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Buffer&DataInputs=BufferDistance=1@datatype=interger;InputPolygon=Reference@xlink:href=http%3A%2F%2Fwww.zoo-project.org%3A8082%2Fgeoserver%2Fows%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dtopp%3Astates%26SRS%3DEPSG%3A4326%26FeatureID%3Dstates.15"
+msgstr ""
+
+#: ../../kernel/install-windows.txt:170
+# 91aaf8e8244d412f9a93247ac1200e81
+msgid "The response displayed in your browser should contain:"
+msgstr ""
+

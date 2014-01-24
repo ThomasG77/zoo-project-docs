@@ -1,0 +1,119 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/debug.txt:4
+msgid "How To Debug ZOO Services"
+msgstr ""
+
+#: ../../services/debug.txt:6
+msgid "Luca Delucchi"
+msgstr ""
+
+#: ../../services/debug.txt:7
+msgid "$Date: 2013-03-27 00:06:12 +0100 (Wed, 27 Mar 2013) $"
+msgstr ""
+
+#: ../../services/debug.txt:9
+msgid ""
+"There are different ways to debug your services, the most used solutions are"
+" via web or via command line."
+msgstr ""
+
+#: ../../services/debug.txt:13
+msgid "Web"
+msgstr ""
+
+#: ../../services/debug.txt:15
+msgid ""
+"Using the web request you can see any problem in the log file of Apache."
+msgstr ""
+
+#: ../../services/debug.txt:17
+msgid ""
+"On Unix system the log file is usually in ``/var/log/apache2`` and the "
+"relevant file is ``error_log``. A simple way to read the file is to use the "
+"``tail`` command, it permits to see the update of the file for each request "
+"::"
+msgstr ""
+
+#: ../../services/debug.txt:23
+msgid ""
+"If the log is not clear enough you can add some more debug information to "
+"your code. You have to write to standard error."
+msgstr ""
+
+#: ../../services/debug.txt:27 ../../services/debug.txt:84
+msgid "Python"
+msgstr ""
+
+#: ../../services/debug.txt:28
+msgid "Using Python, you can for example do this"
+msgstr ""
+
+#: ../../services/debug.txt:40 ../../services/debug.txt:95
+msgid "Javascript"
+msgstr ""
+
+#: ../../services/debug.txt:42
+msgid "You can user ``alert`` to print a string to standard error:"
+msgstr ""
+
+#: ../../services/debug.txt:51
+msgid "If you try to pass an object it will only return ``[object Object]``"
+msgstr ""
+
+#: ../../services/debug.txt:54
+msgid "Command line"
+msgstr ""
+
+#: ../../services/debug.txt:56
+msgid ""
+"It is possible to use the ZOO kernel ``zoo_loader.cgi`` also from command "
+"line. This is really useful to debug in a deeper way your service:"
+msgstr ""
+
+#: ../../services/debug.txt:65
+msgid ""
+"Working this way you can use the standard debug system of the actual "
+"programming language used to develop your service."
+msgstr ""
+
+#: ../../services/debug.txt:69
+msgid "GDB"
+msgstr ""
+
+#: ../../services/debug.txt:70
+msgid ""
+"From command line you can use also the command line tool `GDB "
+"<http://www.gnu.org/software/gdb/>`_ to debug ``zoo_loader.cgi``, you have "
+"to run:"
+msgstr ""
+
+#: ../../services/debug.txt:80
+msgid ""
+"At this point you can ask help at the `ZOO mailing list "
+"<http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-discuss>`_ copying the "
+"result of the command."
+msgstr ""
+
+#: ../../services/debug.txt:85
+msgid ""
+"For Python, you can use ``pdb``, more info at "
+"http://docs.python.org/2/library/pdb.html"
+msgstr ""
+
+#: ../../services/debug.txt:97
+msgid ""
+"You can use ``alert`` also to print in the console, more info in the "
+":ref:`web_javascript` web section"
+msgstr ""

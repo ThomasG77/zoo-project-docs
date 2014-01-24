@@ -1,0 +1,389 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2013/js_services_chaining.txt:5
+msgid "Playing with buildign blocks - Creating JavaScript Web Services"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:12
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:15
+msgid ""
+"This section illustrate how you can use JavaScript on the server-side to "
+"chain services together to build new ones. You will create a ZOO Services "
+"Provider using the services you seen before and the WFS server using the "
+"ZOO-API. The final goal is to query all POIs included in a buffer around a "
+"feature and to highlight them using a mask around this buffer. The following"
+" screenshot show you the expected result:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:26
+msgid "For the routing interface result should look like this:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:32
+msgid ""
+"You can decompose the result above in two different ones: the mask around "
+"the buffer and the points included in the buffer. So you will create two "
+"different Services: one called ``BufferMask`` and another one called "
+"``BufferRequest``."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:36
+msgid ""
+"But before implementing any JavaScript Service, you will get an overview of "
+"how to use ZOO-API from your ZOO-Project installation in the next section."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:39
+msgid ""
+"As before, you first create a new directory to store files for your new "
+"Services Provider:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:48
+msgid "ZOO-API Overview"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:50
+msgid ""
+"ZOO-API and ZOO-Kernel JavaScript support make you able to run services "
+"implemented in JavaScript on the server side. JavaScript is a popular "
+"programing language but mostly used on the client side. Let say from a "
+"browser, but here it is a bit different."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:55
+msgid ""
+"To support JavaScript language ZOO-Kernel use the `SpiderMonkey "
+"<https://developer.mozilla.org/en/SpiderMonkey>`__ API to create a "
+"javascript runtime environment from which it will load your JS file then "
+"extract the function corresponding to the service to run it using the "
+"prefilled parameters. The JavaScript runtime environment created by the ZOO-"
+"Kernel depend on your setup. If you placed the ``ZOO-api.js`` and ``ZOO-"
+"proj4js.js`` in the same directory as your ZOO-Kernel it means that your "
+"environment will contains ZOO-API and Proj4js will be loaded before your "
+"service. In such case you can access to the Classes defined in the "
+"JavaScript ZOO-API to manipulate geographic data, for more informations "
+"please refer to the `ZOO-API Documentation <http://zoo-"
+"project.org/docs/api/index.html>`__."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:66
+msgid ""
+"Even if it can be useful to run JavaScript on the server side, you should "
+"remember that some basic JavaScript functions you are familiar with does not"
+" exist or get a different behavior. For instance the simple ``alert`` "
+"function will display messages in apache error logs rather than in a window "
+"when used from a browser. The ``alert`` function can be used as follow:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:76
+msgid ""
+"There is no XMLHttpRequest available in the JavaScript evironement your "
+"service will run into. Hopefully, the ZOO-Kernel expose a C function to the "
+"JavaScript world named: ``JSRequest``. This function make you able from your"
+" JavaScript services to call other WPS services (locally or remotelly) or "
+"other kind OGC services such as WFS. When you are using the ZOO-API it is "
+"possible to call Services using a ``ZOO.Process`` instance [#f3]_, to parse "
+"WPS Responses using ``ZOO.Format.WPS`` (cf. `ref <http://zoo-"
+"project.org/docs/api/zoo-process.html>`__)."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:85
+msgid ""
+"As for Python services you already seen in previous sections, the functions "
+"corresponding to a Service should take three arguments: ``conf``, ``inputs``"
+" and ``outputs`` [#f4]_. Nevertheless, as the ZOO-Kernel is not able to "
+"access the values modified [#f5]_ by the Service code, rather than returning"
+" an integer as in Python, here you'll need to return both the integer value "
+"representing the Status of your Service in a JavaScript Object and the "
+"resulting ``outputs`` values as an Object [#f6]_. You can see in the "
+"following an example of a JavaScript Service code:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:105
+msgid ""
+"Before starting to implement the Services we will need to get our final "
+"BufferRequest service, let start with a simplier one."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:109
+msgid "The Mask Service"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:111
+msgid ""
+"In this section you will learn how to create your first JavaScript service "
+"which will simply return a rectangular mask around a selected feature. To "
+"build this mask you will use the Buffer service to create a buffer big "
+"enough around a selected geometry to cover a significant part of your map. "
+"You can see the expected result in the following screenshot:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:121
+msgid ""
+"As before, you will first start by writting the ZCFG, then you will write "
+"the JavaScript source code and finish by publishing your Services Provider."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:125
+#: ../../workshop/2013/js_services_chaining.txt:280
+#: ../../workshop/2013/js_services_chaining.txt:405
+msgid "The ZCFG"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:127
+msgid ""
+"Open the file named ``~/zoo-ws2013/jschains/cgi-env/Mask.zcfg`` with your "
+"favorite text editor and add the following content:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:166
+msgid ""
+"Here you simply define one default ``ComplexData`` for both ``inputData`` "
+"and ``Result``: a GML and a GeoJSON respectively [#f7]_."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:170
+#: ../../workshop/2013/js_services_chaining.txt:325
+msgid "The JavaScript service"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:172
+msgid ""
+"As you will have to request the Buffer service many times from your service,"
+" you will first define a ``Buffer`` function as follow. It uses the "
+"``ZOO.Process`` to request the Buffer service you seen in the previous "
+"section."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:176
+msgid ""
+"Open a file named ``~/zoo-ws2013/jschains/cgi-env/foss4gws.js`` and add the "
+"following content:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:207
+msgid ""
+"From line 12 to 15, you give a GeoJSON string (created from ``inputData``) "
+"for InputPolygon and, on line 14, you set the BufferDistance value to "
+"``bDist``. On line 16, you define Result as a ResponseDocument, so you'll "
+"have to parse the WPS response using the ZOO.Format.WPS, on line 21."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:212
+msgid ""
+"On line 17, you create a `ZOO.Process <http://zoo-project.org/docs/api/zoo-"
+"process.html#zoo-process>`__ instance providing the ZOO-Kernel url and the "
+"Service name. Then, on line 18, you run the request passing inputs and "
+"outputs previously defined (from line 12 to 15)."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:217
+msgid ""
+"Now, you get your ``Buffer`` function, it is time to create your first "
+"JavaScript service. So, edit your ``foss4gws.js`` file you created before "
+"and add the following content:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:253
+#: ../../workshop/2013/js_services_chaining.txt:386
+#: ../../workshop/2013/js_services_chaining.txt:510
+msgid "Publish and use your Service"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:255
+msgid ""
+"Now you get both your ZCFG and your service code ready, you need to deploy "
+"your new Services Provider using the following command:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:262
+msgid ""
+"Now you are ready to use your JavaScript service by loading the following "
+"`url <http://localhost/zoows2013-demo/spatialtools.html>`__, click on a "
+"street then click on the \"Mask\" button."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:267
+msgid "BufferMask Service"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:269
+msgid ""
+"In this section you will implement a simple JavaScript service which will be"
+" able create a hole in the mask you created in `previous section <#mask-"
+"service>`__. This service will be used to highlight the buffer zone around a"
+" selected fature. You get a preview of the expected result in the following "
+"screenshot:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:282
+msgid ""
+"Open the file named ``~/zoo-ws2013/jschains/cgi-env/BufferMask.zcfg`` with "
+"your favorite text editor and copy / paste the following content:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:321
+msgid ""
+"This ZCFG is similar to the previous one. Please, refer to comments in the "
+"`previous section <#the-zcfg>`__ for more informations."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:327
+msgid ""
+"In this Service you will use same source code (until line 19) you used in "
+"the `previous section <#the-javascript-service>`__. Indeed, you should "
+"compute the Mask as you did before then compute Buffer for creating a hole "
+"in the mask (on line 22) to run the Difference service (from line 25 to 40)."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:388
+#: ../../workshop/2013/js_services_chaining.txt:512
+msgid ""
+"Now, you can publish your service as you did `before <#publish-your-"
+"service>`__. To use your service, please use the following `url "
+"<http://localhost/zoows2013-demo/spatialtools.html>`__."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:393
+msgid "BufferRequest service"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:395
+msgid ""
+"In this section, you will create a new Service: ``BufferRequest`` which will"
+" request POIs included in the Buffer around a selected feature [#f8]_. You "
+"will use the ``poi`` layer served as WFS through your local mapserver "
+"installation. You can see in the following screenshot the expected result:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:407
+msgid ""
+"Open the file named ``~/zoo-ws2013/jschains/cgi-env/BufferRequest.zcfg`` "
+"with your favorite text editor and copy / paste the following content:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:448
+msgid "The JavaScript code"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:450
+msgid ""
+"As in the previous Service, you will compute a buffer around the input "
+"feature. But then you will request POIs available in the Buffer extent using"
+" a WFS request to use them to run ``Intersection`` service using the initial"
+" Buffer. The WFS request is useful to limit the number of points to use when"
+" requesting the ``Intersection`` Service."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:504
+msgid ""
+"to take advantage of the ZOO-Kernel cache system, you directly use the WFS "
+"request  as ``xlink:href`` rather than value for ``InputEntity2`` (from line"
+" 31 to 34) and use ``text/xml`` ``mimeType`` (on line 40). Indeed, the ZOO-"
+"API doesn't use the internal cache mechanisms."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:516
+msgid ""
+"You can click on \"Buffer Request and Mask\"  to get the same result as "
+"presented in  `the initial screenshot <#introduction>`__."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:521
+msgid "Add Union into the chain"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:523
+msgid ""
+"As you can see in the following screenshot, when using the Buffer service "
+"using a feature collection containing more than one geometry, the result is "
+"made of multiple geometries. So, running Buffer service on the routing "
+"interface will result in multiple buffer:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:532
+msgid ""
+"So, to get the same result as you got when selecting a single road, you "
+"should use Union of geometry (input or the one outputed by the ``Buffer`` "
+"Service). As you are using the JavaScript ZOO-API, you can simply update the"
+" ``Buffer`` JavaScript function you defined earlier, to first call the Union"
+" of each geometry avaible in a feature collection prior to request (or after"
+" requesting) the Buffer Service. Hopefully, there is already this Python "
+"Service available, its name is ``UnionOne1``, so you just need to add it in "
+"your Service chain."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:541
+msgid "Here is the final code for the Buffer JavaScript function:"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:577
+msgid "Conclusion"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:579
+msgid ""
+"After understanding how basic Geometric Operation Services works, here you "
+"built step by step new JavaScript services which reuse the previous ones and"
+" combine them in different ways. This was achieved using the ZOO-API, "
+"composed by C functions exposed by the ZOO-Kernel to the JavaScript services"
+" runtime environement and the JS files which can be optionally installed."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:582
+msgid "Footnotes"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:583
+msgid ""
+"The ``ZOO.Process`` class uses ``JSRequest`` (cf. `ref <http://zoo-"
+"project.org/docs/api/zoo-format-wps.html>`__). You will get example of use "
+"`later  <#the-javascript-service>`__."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:586
+msgid ""
+"So ``conf``, ``inputs`` and ``outputs`` are simple JavaScript objects, "
+"similar to the Python dictionaries used in the `previous section "
+"<ogr_base_vect_ops.html>`__."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:588
+msgid "Such as ``conf``, ``inputs`` and ``outputs``."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:589
+msgid ""
+"You can also return a conf Object if you get any informations updated from "
+"your JavaScript service (such as cookie for instance)"
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:590
+msgid ""
+"Using one of the available ``ZOO.formats`` you are also able to support "
+"various ``ComplexData`` for both input and output of the service. To "
+"simplify the presentation here, you will use only this default ones."
+msgstr ""
+
+#: ../../workshop/2013/js_services_chaining.txt:593
+msgid "So in the hole you created in the previous section."
+msgstr ""

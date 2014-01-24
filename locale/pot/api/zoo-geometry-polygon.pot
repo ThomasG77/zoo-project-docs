@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-polygon.txt:4
+#: ../../api/zoo-geometry-polygon.txt:38
+# 5d9cff14036c44fab82646874c268c1a
+# a955c115f01b47998d90a17707f8fe8f
+msgid "ZOO.Geometry.Polygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:6
+# 5aecd0724f71461d8095557f02f4c1b6
+msgid "Polygon is a collection of :ref:`ZOO.Geometry.LinearRing <api-zoo-geometry-linearring>`."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:8
+# 04e1f2e62daa4bde81df19ff6b1e5329
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:10
+# c7e8b46c125e42da9bf6a1ee0a858a8f
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:13
+# 3e8e51cdb4604714bbde364bcde009ba
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:19
+# 72c7c6dad6d041379d047d8e7578b7aa
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:20
+# 330410a1c86c4fb2b0da89175b66a8a1
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:21
+# 1d4ca6e1405943d48962b58a4704fe59
+msgid ":ref:`ZOO.Geometry.Polygon <ZOO.Geometry.Polygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:22
+# 8c8ece0fc032415dbca4ce290bb2f2f6
+msgid "Constructor for a Polygon geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:23
+# 88c2dd62499e4961b45547acab35b741
+msgid ":ref:`getArea <getArea>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:24
+#: ../../api/zoo-geometry-polygon.txt:47
+# 2eaf6cc3a45a426cad3ccab69267e4a1
+# c1b72b8fcef443de85336cb9b92e3e4c
+msgid "Calculated by subtracting the areas of the internal holes from the area of the outer hole."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:25
+# 66b69de2c20e4e3c96aa9d58d11fd9eb
+msgid ":ref:`containsPoint <containsPoint>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:26
+# 1261b2f6f8d24e1eb1b5e453d7600549
+msgid "Test if a point is inside a polygon."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:27
+# 4f1c3832485f42479a27d3cfb7163caa
+msgid ":ref:`createRegularPolygon <createRegularPolygon>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:28
+# 6ea08b78da414bce86a736b1b9419696
+msgid "Create a regular polygon around a radius."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:33
+# 91a57800606847b9947f13a6fd2271ed
+msgid "Constructor for a Polygon geometry.  The first ring (*this.component[0]*) is the outer bounds of the polygon and all subsequent rings (*this.component[1-n]*) are internal holes."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:36
+#: ../../api/zoo-geometry-polygon.txt:62
+#: ../../api/zoo-geometry-polygon.txt:82
+# 34d873396f754d5ea152c78855d15df4
+# 04dcb2c0fb5d4e5b9342f1be78cd994d
+# 0facac39d062405e995a6d039250ef32
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:38
+# c8e5ccd4428a44cdab022358de055ec1
+msgid "``components`` {Array(:ref:`ZOO.Geometry.LinearRing <api-zoo-geometry-linearring>`)}"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:51
+# 51449b9926f44d5d9d0d441be94b0d64
+msgid "getArea"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:49
+#: ../../api/zoo-geometry-polygon.txt:66
+# 40e7a07a4144499290a04f212ed3cf94
+# c84e0b5cfc73453293fb4c869558ddfc
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:51
+# ebb04f5cce354ef6b3542818f3823832
+msgid "``{float}`` The area of the geometry"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:68
+# f1c93a2347f0446aa940b817e2f35903
+msgid "containsPoint"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:60
+# d87770bfb135492aa8d6c98dc5eacd54
+msgid "Test if a point is inside a polygon.  Points on a polygon edge are considered inside."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:64
+# bca96603b37b4cff8e8136900758623a
+msgid "``point`` :ref:`{ZOO.Geometry.Point} <api-zoo-geometry-point>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:68
+# abc0692e5c68431bbe67ae98aa61b434
+msgid "``{Boolean | Number}`` The point is inside the polygon.  Returns 1 if the point is on an edge.  Returns boolean otherwise."
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:86
+# 6fbe9008b9a8443f8180d89cd296d91c
+msgid "createRegularPolygon"
+msgstr ""
+
+#: ../../api/zoo-geometry-polygon.txt:80
+# 958bc7578b724c91af950330d2ae7670
+msgid "Create a regular polygon around a radius.  Useful for creating circles and the like."
+msgstr ""
+

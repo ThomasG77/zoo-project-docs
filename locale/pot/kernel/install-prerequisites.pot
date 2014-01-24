@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../kernel/install-prerequisites.txt:4
+#: ../../kernel/install-prerequisites.txt:35
+# 7521c885a90f4671934ab8c481722761
+# f791d0f9a4e94f678f6b8c881944070a
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:6
+# 8408e2cbf94544b689c4a51a17e3b49a
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:7
+# f37a284f101d4c85918d454814b5da89
+msgid "$Date: 2013-03-28 10:26:04 +0100 (Thu, 28 Mar 2013) $"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:0
+# 661dfe95b0c04f1699bcf705f7fdec93
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:14
+# a2614ec6000546b7b261a946481f2b81
+msgid "Obtaining the ZOO Kernel Source"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:18
+# 6327e23d39db433d974ffca0a00f36a7
+msgid "Use the following command to get the ZOO Kernel source code through Subversion:"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:24
+# e9b2d797a1cc4469b45817d41a0ba4b3
+msgid "For users which get a developer account, use the following:"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:31
+# d43097fa8c2749a3b94e3cac73e9c47a
+msgid "The first line of the instruction above defines a specific tunnel to access the svn server through the SSH protocol. Indeed, the ZOO SVN server listens on the 1046 (1024+22) port rather than the default one (22)."
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:37
+# 2e3f33b4838646159fcc181347e91a08
+msgid "The following libraries are required on your system before you can install the ZOO Kernel:"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:39
+# b8ef049617a04522a3a918dba5fdf0d3
+msgid "autoconf (  http://www.gnu.org/software/autoconf/ )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:40
+# 7baf77b075744d1a91d0a8a409c3a8b1
+msgid "cgic (  http://www.boutell.com/cgic )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:41
+# bd40797bd8f54bd3ac84436c37e4fd1d
+msgid "cURL (  http://curl.haxx.se )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:42
+# e7977ae3c84f4f529a88caef0bd6d1f4
+msgid "FastCGI (  http://www.fastcgi.com )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:43
+# 3b232528b22145f982152a74ed0c069a
+msgid "Flex & Bison (  http://flex.sourceforge.net/  http://www.gnu.org/software/bison/ )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:44
+# 699ff201af6145d9aa7e7b7d05a18677
+msgid "libxml2 (  http://xmlsoft.org )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:45
+# fdfb5ec23c9b4aaabece09c9ddaaf26f
+msgid "OpenSSL (  http://www.openssl.org )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:46
+# ddfa10e2172641a180439bf1aea4cc28
+msgid "Python (  http://www.python.org )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:48
+# 4f42576ad0e74d84b9b3c86d50723e2b
+msgid "Optional libraries include:"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:50
+# ec4f77ec24d0446e95983640d4b57ecd
+msgid "MapServer (optional for WMS, WFS and WCS output) ( http://mapserver.org )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:51
+# 711fc5eb889e4ce0917de00ea78be44b
+msgid "PHP Embedded (optional) (  http://www.php.net )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:52
+# aae72036ce6c43e4a05b46d0c72cfb66
+msgid "Java SDK (optional) (  http://java.sun.com )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:53
+# 08496b1aacaa4e9eaf241bb43932a66f
+msgid "SpiderMonkey (optional) (  http://www.mozilla.org/js/spidermonkey/ )"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:56
+# 271c0fda53884c05a50bfeccd255cb7b
+msgid "Compile libcgic"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:58
+# a59d10f2812b4beb82814a8b610dac3c
+msgid "The first step is to compile libcgic from the ``zoo-project/thirds`` directory. For such a task, please use the following command:"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:66
+# f34c95a11f234622a8cdcc5af3197572
+msgid "Make sure that a ``libcgic.a`` is created in your ``zoo-project/thirds/cgic206`` directory. If yes, then you can go to the next step."
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:69
+# 7159ea2ef67e44b19a95628b7d12c3df
+msgid "On Windows, rather than using the make command, please use:"
+msgstr ""
+
+#: ../../kernel/install-prerequisites.txt:76
+# 552b2f2e51934df7aff4d8c07775b6c6
+msgid "If you don't compile libcgic first, and try to compile the ZOO Kernel, you will get an error such as *cannot find -lcgic*"
+msgstr ""
+

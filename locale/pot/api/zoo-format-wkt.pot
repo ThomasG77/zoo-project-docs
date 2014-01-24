@@ -1,0 +1,406 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-format-wkt.txt:4
+#: ../../api/zoo-format-wkt.txt:57
+# 5de24b9ec0644ae6a169ef1bea985cf5
+# 1972f6fc54aa42849797ea623c57f6eb
+msgid "ZOO.Format.WKT"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:6
+# cf3b3b82a0994c8992e97e27c29b7cbd
+msgid "Class for reading and writing Well-Known Text."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:8
+# b233de16bc9f4f13abc48a8b0190bb8c
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:10
+# 11a462ddfb944e349043fe2edf51d4a9
+msgid ":ref:`ZOO.Format <api-zoo-format>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:13
+# 22c91076bcc34f57bddad086513a9449
+msgid "Functions and Properties"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:19
+# a8d849db740d4d1f8122da4967c1ad14
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:20
+# e6df3aecf466411488f4a9fdc67a7a1c
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:21
+# c710f03945454979a382cc7a76c3eac7
+msgid ":ref:`ZOO.Format.WKT <ZOO.Format.WKT>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:22
+#: ../../api/zoo-format-wkt.txt:49
+# 841ecd7070d841d590c3e92914bab8fc
+# 51d7ceb17162436ca4f79d062bca3424
+msgid "Create a new parser for WKT"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:23
+# 4e1be85922e94e26b1f8e8941815551f
+msgid ":ref:`read <read>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:24
+# 54dd76c4adab4e66bb4380daabf460b7
+msgid "Deserialize a WKT string and return a vector feature or an array of vector features."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:25
+# eb5ca321cf2e436982d587beddfb43dd
+msgid ":ref:`write <write>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:26
+#: ../../api/zoo-format-wkt.txt:85
+# 69ffeab2208d47e9b50a7e7c23fdda4c
+# 1f24d257d8b34c0db5321a5516ff984a
+msgid "Serialize a feature or array of features into a WKT string."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:27
+# 913ddf212b2f40efa453b830c74ce1e8
+msgid ":ref:`extract <extract>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:28
+#: ../../api/zoo-format-wkt.txt:30
+# debf470b0c4740239abd207e850e9f53
+# 44d444e874eb42b69ce0e1031c9a1d03
+msgid "Object with properties corresponding to the geometry types."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:29
+# a4f7d3371e09482cbee2fdd97ff67e63
+msgid ":ref:`parse <parse>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:31
+# e3c7f1b308514efc9ef0686e42234ef0
+msgid ":ref:`parse.point <parse.point>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:32
+#: ../../api/zoo-format-wkt.txt:110
+# afffe820760c4b51992d998613500958
+# 58e055a2fced494f904f316644dca683
+msgid "Return point feature given a point WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:33
+# b5fd083b2a794e4f87ab50e3f9270caf
+msgid ":ref:`parse.multipoint <parse.multipoint>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:34
+#: ../../api/zoo-format-wkt.txt:123
+# 7152852815e74ef2a2fac4502db41735
+# 0c3f1a92c7cd4a34802359d53af53fcc
+msgid "Return a multipoint feature given a multipoint WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:35
+# a286c679e7b94ef681024c7b7341a52a
+msgid ":ref:`parse.linestring <parse.linestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:36
+#: ../../api/zoo-format-wkt.txt:136
+# 18fd0fa4e0d04a6aa80ee650dc285819
+# 3d455850677c4d79bf935dfde69daa4c
+msgid "Return a linestring feature given a linestring WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:37
+# 81dd3077ec5347c8bd591bd5debd4f41
+msgid ":ref:`parse.multilinestring <parse.multilinestring>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:38
+#: ../../api/zoo-format-wkt.txt:149
+# cd478c3c68b743b1b4fe4aac54e88921
+# 31bbbfc8806e4c069d04408d753af808
+msgid "Return a multilinestring feature given a multilinestring WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:39
+# c11259ecdf2946cd9a35ee674b269a6e
+msgid ":ref:`parse.polygon <parse.polygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:40
+#: ../../api/zoo-format-wkt.txt:162
+# d47b87649667400986ba07f489f3ac01
+# b9cbf1058c694fa48c3da10a657def81
+msgid "Return a polygon feature given a polygon WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:41
+# 103ee5e668fa4711816c01174f037b23
+msgid ":ref:`parse.multipolygon <parse.multipolygon>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:42
+#: ../../api/zoo-format-wkt.txt:175
+# f9b2c0396b134a9288cbf7084bbe0650
+# 0e73faab0784474d8f5c0e2423e33cb3
+msgid "Return a multipolygon feature given a multipolygon WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:43
+# d1bf64af991842429e01d3023a751dcb
+msgid ":ref:`parse.geometrycollection <parse.geometrycollection>`"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:44
+#: ../../api/zoo-format-wkt.txt:188
+# c62f03f587a34c09abc542f325979dbb
+# 74fdff8ac0d846d5a2f2bd5941d16892
+msgid "Return an array of features given a geometrycollection WKT fragment."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:51
+#: ../../api/zoo-format-wkt.txt:70
+#: ../../api/zoo-format-wkt.txt:87
+#: ../../api/zoo-format-wkt.txt:112
+#: ../../api/zoo-format-wkt.txt:125
+#: ../../api/zoo-format-wkt.txt:138
+#: ../../api/zoo-format-wkt.txt:151
+#: ../../api/zoo-format-wkt.txt:164
+#: ../../api/zoo-format-wkt.txt:177
+#: ../../api/zoo-format-wkt.txt:190
+# 924e8e03c9ca4d6e91e35c0b41814b20
+# de3cb3e95a9445598c4ce42c4d3ee1d4
+# 7273cf9dc0ac4a0d9fed3601f078fad5
+# 5ea101d6f75341728e4c512e56dcc37e
+# f9f304649fdc4f24943f1035898500f3
+# 0a99fc7eeb7c4b519d173ac38c82df8b
+# b3588f442abd494cbc44c2db71008911
+# 2d054a8653d4436784d38db101df883a
+# 89d6bd49e5e24607814f6a2eb9680f71
+# ead9918c798a43ee9edf3c7c0f72cc0a
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:53
+# e91ee9d3d2cf45d593063870a88da727
+msgid "``options {Object}`` An optional object whose properties will be set on this instance"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:55
+#: ../../api/zoo-format-wkt.txt:74
+#: ../../api/zoo-format-wkt.txt:91
+#: ../../api/zoo-format-wkt.txt:116
+#: ../../api/zoo-format-wkt.txt:129
+#: ../../api/zoo-format-wkt.txt:142
+#: ../../api/zoo-format-wkt.txt:155
+#: ../../api/zoo-format-wkt.txt:168
+#: ../../api/zoo-format-wkt.txt:181
+#: ../../api/zoo-format-wkt.txt:194
+# 3c93a7365071480fa579f74d560df19f
+# ffb8242adbcb4f5b91a5f445ccb7f358
+# 0dd01b78d4a54baf944084754ae35ffd
+# 15cc2d70e8d34e9eae366a258b30ba68
+# 225f0d1aeab148c7ae715ef49632f612
+# 2fb2a3fdfabf4e94b4590944c34530bc
+# 18dda36986e34a8ba680aa339238c934
+# 78035a9f337a46148ffe89040023feaa
+# 42cd51510a214c5f842faeadf188f8f4
+# b9e787a1ecfd4f1a9ef5f15e39153319
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:57
+# 8f35e0beab9b496db272b8eddf178b49
+msgid ":ref:`{ZOO.Format.WKT} <api-zoo-format-wkt>` A new WKT parser."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:76
+# 009802c65c9649b49bf30434a9c80cb4
+msgid "read"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:66
+# 035d8682b72c49f9ada345d0222d7c0f
+msgid "Deserialize a WKT string and return a vector feature or an array of vector features. Supports WKT for POINT, MULTIPOINT, LINESTRING, MULTILINESTRING, POLYGON, MULTIPOLYGON, and GEOMETRYCOLLECTION."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:72
+# 16df4295e0cd410ea659e34a389e7602
+msgid "``wkt {String}`` A WKT string"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:76
+# c7035b1f0af747cb9a1a3633b9809db1
+msgid "{<ZOO.Feature.Vector>|Array} A feature or array of features for GEOMETRYCOLLECTION WKT."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:93
+# 2d68a5a5efec4162a0df9b28e565e0dd
+msgid "write"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:89
+# 336fad99146d40a5bec015306fd33e47
+msgid "``features {<ZOO.Feature.Vector>|Array}`` A feature or array of features"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:93
+# 91e579564ac34e87b52bd67c5dc8e74b
+msgid "``{String}`` The WKT string representation of the input geometries"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:99
+# 364bdb5bd69540f09fcf5944c490c7fc
+msgid "extract"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:98
+# 9b038ce3177a464faf52fd8629b3e6b3
+msgid "Object with properties corresponding to the geometry types. Property values are functions that do the actual data extraction."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:105
+# d4e70f620d9543f189ce3ff0b70f5bf8
+msgid "parse"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:104
+# 2fea0dde3d8546758703247e29216567
+msgid "Object with properties corresponding to the geometry types. Property values are functions that do the actual parsing."
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:118
+# 9bb285b1665f4dc898818c4fee6a2a29
+msgid "parse.point"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:114
+# 0181a575aff042f28352c28fd5d1b468
+msgid "``str {String}`` A WKT fragment representing the point"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:118
+# 67f50b7ec2274b9ab38eeee4bebd8c2b
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A point feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:131
+# 96513b7790104a94a1269855e0aedfc1
+msgid "parse.multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:127
+# 227e63d5e71744b4a30ebde5cf9f7b58
+msgid "``str {String}`` A WKT fragment representing the multipoint"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:131
+# 06ad8d22a28d4535a5d5ce570fc2e0ad
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A multipoint feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:144
+# df0282633a8a49df8840649814cbbb76
+msgid "parse.linestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:140
+# a4e5a8d3876940259a58d11a69168fb4
+msgid "``str {String}`` A WKT fragment representing the linestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:144
+# 06f81b8659db484a8cbadbe23a474dde
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A linestring feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:157
+# 69543f11a1a94008b6d7c427cdf75ebd
+msgid "parse.multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:153
+# 0242da1ee9da47b188bc4a87e3f1555d
+msgid "``str {String}`` A WKT fragment representing the multilinestring"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:157
+# 5e78de08ef794170a1f98bd2a016f807
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A multilinestring feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:170
+# ebf2cd1f90de46a0a027f674dc4b93dc
+msgid "parse.polygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:166
+# 00f36e7fbe6c4abea29bf565ac724d71
+msgid "``str {String}`` A WKT fragment representing the polygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:170
+# d51f55e29de74915bb60b87cfdbe20c5
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A polygon feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:183
+# 066bf20faad94a369819a770f8eff552
+msgid "parse.multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:179
+# a9446590563346819fa30d0a73ff5a2c
+msgid "``str {String}`` A WKT fragment representing the multipolygon"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:183
+# e44ac4a74de94990a11c7a8b92956cd0
+msgid ":ref:`{ZOO.Feature} <api-zoo-feature>` A multipolygon feature"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:195
+# 367c3243fe82404b988601597742d284
+msgid "parse.geometrycollection"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:192
+# f0fa4b4d14b94e6fa99fc05b16a0c8a9
+msgid "``str {String}`` A WKT fragment representing the geometrycollection"
+msgstr ""
+
+#: ../../api/zoo-format-wkt.txt:196
+# e1af2d117e14441fa382ee103353c673
+msgid "``{Array}`` An array of ZOO.Feature"
+msgstr ""
+

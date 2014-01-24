@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2012/introduction.txt:5
+# 34c98ab20636491295bf50bde4153a32
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:0
+# 71d3aca8d5994b31abd237a68571e5db
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:12
+# 396a33aa75a24c079c344b0694bde5c0
+msgid "What is ZOO ?"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:14
+# cc17e36cdf29457991fa9841cf58ad04
+msgid "ZOO-Project is a WPS (Web Processing Service) open source project released under a `MIT/X-11 <http://zoo-project.org/trac/wiki/Licence>`__ style license. It provides an OGC WPS compliant developer-friendly framework to create and chain WPS Web services. ZOO is made of three parts:"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:16
+# b6fe54c75fab4050b28f33313352c33b
+msgid "`ZOO Kernel <http://zoo-project.org/docs/kernel/index.html#kernel>`__ : A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:17
+# 485d83d716a64b1eaf6ff27642f5eefb
+msgid "`ZOO Services <http://zoo-project.org/docs/services/index.html#services>`__ : A growing suite of example Web Services based on various open source libraries."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:18
+# 945cf713ede4406fa568fbff8cc12c4c
+msgid "`ZOO API <http://zoo-project.org/docs/api/index.html#api>`__ : A server-side JavaScript API able to call and chain the ZOO Services, which makes the development and chaining processes easier and faster."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:20
+# 453310fc624e49cca700acccf4626dec
+msgid "ZOO was designed to make the service creation and deployment easy, by providing a powerful system able to understand and execute WPS compliant queries. It supports seven programming languages, thus allowing you to create Web Services using the one you prefer. It also lets you use an existing code and to turn it as a WPS Service. The current supported programming languages are the following:"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:23
+# 3e683805b2f145f0880b4c39a93fd8d2
+msgid "C/C++"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:24
+# 604255113d714f83818998e4c68f9508
+msgid "Python"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:25
+# 7c09d50e21d64bbdb5497292011b6ef4
+msgid "Perl"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:26
+# 380d3a9d6b994626b3546d7afbc98256
+msgid "Java"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:27
+# 2a016bf1314a4807b0fc5f5ee90e4764
+msgid "Fortran"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:28
+# 61844333fa604723b4a28d547b48440a
+msgid "PHP"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:29
+# e7f6241d9b42438988ac4e602288d20a
+msgid "JavaScript"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:31
+# c2d48588044146c899344c1a6f8ff386
+msgid "More information on the project is available on the  `ZOO Project official website <http://www.zoo-project.org/>`__ ."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:34
+# 14a45dd6105c4a7daabd7a71c255db5f
+msgid "How does ZOO works ?"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:36
+# 41092616e0d74680a72e248562a3622c
+msgid "ZOO is based on a C Kernel which is the ZOO-Project core system (aka ZOO-Kernel). The latter is able to dynamically load libraries and to handle them as on-demand Web services."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:38
+# cffc6bfcd4ef444d9a2f6fda46b4e6bb
+msgid "A ZOO-Service is a link composed of a ZOO metadata file (.zcfg) and the code for the corresponding implementation. The metadata file describes all the available functions that can be called using a WPS Execute Request, as well as the desired input/output. Services contain the algorithms and functions, and can be implemented using any of the supported languages."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:40
+# 74351bd212cb4a4c9c1d834f7ed9d738
+msgid "ZOO-Kernel works as CGI through Apache and can communicate with cartographic engines and Web mapping clients. It simply adds the WPS support to your spatial data infrastructure and your webmapping applications. It can use every GDAL/OGR supported formats as input data and create suitable vector or raster output for your cartographic engine and/or your web-mapping client application."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:43
+# 14c5b0ef07144ee2b406e606b7e0957e
+msgid "What are we going to do in this workshop?"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:45
+# ff4034b4feea4a30b4c6940f092bb9fc
+msgid "Participants will then learn how to use ZOO Kernel and how to create ZOO Services using the OSGeo Live 5.5 A pre-compiled ZOO 1.3-dev package is provided inside OSGeoLive, so participants won't have to compile and install it manually. Configuration file and basic ways to run ZOO Kernel and ZOO Service will be presented. Participants will be then invited to start programming their own service using Python language. Some ZOO Services will be presented and individually tested inside a ready-to-use OpenLayers application. Finally, this services will be chained using the server-side Javascript ZOO API."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:47
+# 91166b2001d14df3a60b6394b2862aef
+msgid "The whole workshop is organized step-by-step and numerous code snippets are available along with their respective explanations. The instructors will check the ZOO Kernel functioning on each machine and will assist you while coding. Technical questions are of course welcome during the workshop."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:50
+# 4ad9a9689ccc44df9f3b2734ac08523b
+msgid "Usefull tips for reading"
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:56
+# a66d8bd33eee40c098d729b1d89f2e92
+msgid "This is a warning message."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:58
+# 126b61d32c924f20814274c8cb8e7057
+msgid "This is an important note."
+msgstr ""
+
+#: ../../workshop/2012/introduction.txt:60
+# 6e00102d618b433f95afd36ee2e7249a
+msgid "**Let's go !**"
+msgstr ""
+

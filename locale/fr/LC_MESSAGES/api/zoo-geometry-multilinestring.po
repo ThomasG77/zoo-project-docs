@@ -1,0 +1,62 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-geometry-multilinestring.txt:4
+#: ../../api/zoo-geometry-multilinestring.txt:30
+msgid "ZOO.Geometry.MultiLineString"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:6
+msgid ""
+"A MultiLineString is a geometry with multiple ZOO.Geometry.LineString "
+"components."
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:8
+msgid "Inherits from"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:10
+msgid ":ref:`ZOO.Geometry.Collection <api-zoo-geometry-collection>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:13
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:19
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:20
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:21
+msgid ":ref:`ZOO.Geometry.MultiLineString <ZOO.Geometry.MultiLineString>`"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:22
+#: ../../api/zoo-geometry-multilinestring.txt:27
+msgid "Constructor for a MultiLineString Geometry."
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:29
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-geometry-multilinestring.txt:31
+msgid ""
+"``components`` {Array(:ref:`ZOO.Geometry.LineString <api-zoo-geometry-"
+"linestring>`)}"
+msgstr ""

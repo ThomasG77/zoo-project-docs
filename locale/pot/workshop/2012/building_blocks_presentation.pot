@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../workshop/2012/building_blocks_presentation.txt:5
+# 04906ffb8ccf42818f2884a7bf28a963
+msgid "Presenting building blocks - Using OGR based Web Services"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:0
+# 87bbba369ffc4922882d226b1e11d7ad
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:12
+# 4db485e74dc347f1bc1ee53e0ecc93c9
+msgid "Introduction"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:14
+# 13a6c3626095492e8c2f91a34faee96c
+msgid "In this section, you will use basic ZOO-Services : ``BufferPy``, ``IntersectionPy`` and ``DifferencePy`` which use OGR Python module. The intended goal of this section is to present and interact with your new building blocks before chaining them in the next section."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:18
+# 45d18ac885dd42f1a1e02b5d1610f8d2
+msgid "First of all, you should use the following link to access a user interface to interact with your service : `http://localhost/zoows-demo/spatialtools-py.html <http://localhost/zoows-demo/spatialtools-py.html>`__"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:22
+# 8cbe3b967a4b40dfab25cde763df0127
+msgid "Services Provider and configuration files"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:24
+# 1cb5e5b62fae4315a1ca4964f88da9f2
+msgid "First you may verify if the ZOO-Services are available from your current setup. You can take a look at the ``Buffer.zcfg``, ``Intersection.zcfg`` and ``DifferencePy.zcfg`` to get details about parameters. As you can see from the ZCFG files, you will use ZOO-Services provided by the ``foss4g_ws`` Python service provider. So if you want to modify the Python code you will have to edit this file. You are invited to use similar requests as you seen in previous sections to learn about each service."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:33
+# d21991effe104499810242b82f74b8ab
+msgid "The Buffer Service"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:35
+# f1e13c2df8194c11b780bc0e947cd49a
+msgid "First click on a street then once the street is displayed in blue, click the 'Buffer' button on top, you should get similar result as displayed in the following."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:42
+# e670ef8d1a0e49ef9ad439be7177f01d
+msgid "Since version ZOO-Project 1.2.0, you can run automatically some basic tests to make sure that you wrote a correct ZCFG file and your service is validating."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:45
+# 34e24102fce84da5a8fa26b55c69a163
+msgid "the current testing is really simple and should be adapted to each Services Provider, mainly to define input names."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:48
+# ed8aba3188024b0ea64c2d9efcecaf1d
+msgid "You can use the following command:"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:56
+# 26bea01a10c247d291807fa4061fff27
+msgid "During or after the test run, you can take a look inside the ``tmp`` directory which contains both the XML requests send to the ZOO Kernel (``*1.xml``) and the responses it gave (``output*.xml``)."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:61
+# 45db529dac244cf7b750edd23a6162c5
+msgid "The Intersection Service"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:63
+# 95680a6fea09482cb07306c33cfa6556
+msgid "Using the same client interface as before, once you get a Buffer, you can then select a street intersecting the Buffer geometry to compute intersection by clicking on the Intersection button."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:73
+# 08a1c9e56932414090cb0aa1d3711627
+msgid "The Difference Service"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:75
+# 84e91bbb46fa4278947a7445b9e22213
+msgid "Using the same instructions as for Intersetion, you can get the following result."
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:83
+# 55c6028e5b844e8a981ec53f352fc19d
+msgid "Conclusion"
+msgstr ""
+
+#: ../../workshop/2012/building_blocks_presentation.txt:85
+# 7f565041a7e34e61b5770c6c68b8641d
+msgid "Now you know this three services, and you get a simple interface to interact with your MapServer WFS and your ZOO-Project WPS Servers, you are ready to use the Services in a different way by chaining them using the ZOO-API to build more complexe and powerfull services."
+msgstr ""
+

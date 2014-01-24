@@ -1,0 +1,330 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-bounds.txt:4 ../../api/zoo-bounds.txt:94
+msgid "ZOO.Bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:6
+msgid "Instances of this class represent bounding boxes."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:9
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:15 ../../api/zoo-bounds.txt:33
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:16 ../../api/zoo-bounds.txt:34
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:17
+msgid ":ref:`left <left>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:18
+msgid "{Number} Minimum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:19
+msgid ":ref:`bottom <bottom>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:20
+msgid "{Number} Minimum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:21
+msgid ":ref:`right <right>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:22
+msgid "{Number} Maximum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:23
+msgid ":ref:`top <top>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:24
+msgid "{Number} Maximum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:27
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:35
+msgid ":ref:`ZOO.Bounds <ZOO.Bounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:36 ../../api/zoo-bounds.txt:87
+msgid "Construct a new bounds object."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:37
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:38 ../../api/zoo-bounds.txt:103
+msgid "Create a cloned instance of this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:39
+msgid ":ref:`equals <equals>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:40 ../../api/zoo-bounds.txt:116
+msgid "Test a two bounds for equivalence."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:41
+msgid ":ref:`toString <toString>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:42
+msgid "{String} String representation of bounds object."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:43
+msgid ":ref:`toBBOX <toBBOX>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:45
+msgid ":ref:`toGeometry <toGeometry>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:46 ../../api/zoo-bounds.txt:160
+msgid "Create a new polygon geometry based on this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:47
+msgid ":ref:`getWidth <getWidth>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:48
+msgid "{Float} The width of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:49
+msgid ":ref:`getHeight <getHeight>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:50
+msgid "{Float} The height of the bounds (top minus bottom)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:51
+msgid ":ref:`add <add>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:53
+msgid ":ref:`extend <extend>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:54
+msgid "Extend the bounds to include the point, lonlat, or bounds specified."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:55
+msgid ":ref:`intersectsBounds <intersectsBounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:56
+msgid "Determine whether the target bounds intersects this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:57
+msgid ":ref:`containsBounds <containsBounds>`"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:58 ../../api/zoo-bounds.txt:244
+msgid "Determine whether the target bounds is contained within this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:60
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:65
+msgid "left"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:65
+msgid "``{Number}`` Minimum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:70
+msgid "bottom"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:70
+msgid "``{Number}`` Minimum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:75
+msgid "right"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:75
+msgid "``{Number}`` Maximum horizontal coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:80
+msgid "top"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:80
+msgid "``{Number}`` Maximum vertical coordinate."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:82
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:89 ../../api/zoo-bounds.txt:118
+#: ../../api/zoo-bounds.txt:145 ../../api/zoo-bounds.txt:195
+#: ../../api/zoo-bounds.txt:214 ../../api/zoo-bounds.txt:228
+#: ../../api/zoo-bounds.txt:246
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:107
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:105 ../../api/zoo-bounds.txt:122
+#: ../../api/zoo-bounds.txt:134 ../../api/zoo-bounds.txt:149
+#: ../../api/zoo-bounds.txt:162 ../../api/zoo-bounds.txt:173
+#: ../../api/zoo-bounds.txt:184 ../../api/zoo-bounds.txt:200
+#: ../../api/zoo-bounds.txt:233 ../../api/zoo-bounds.txt:252
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:107
+msgid ":ref:`{ZOO.Bounds} <api-zoo-bounds>` A fresh copy of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:125
+msgid "equals"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:124
+msgid ""
+"``{Boolean}`` The passed-in bounds object has the same left, right, top, "
+"bottom components as this.  Note that if bounds passed in is null, returns "
+"false."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:136
+msgid "toString"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:136
+msgid ""
+"``{String}`` String representation of bounds object.  (ex. *<i>\"left-"
+"bottom=(5,42) right-top=(10,45)\"</i>*)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:151
+msgid "toBBOX"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:147
+msgid ""
+"``decimal {Integer}`` How many significant digits in the bbox coords?  "
+"Default is 6"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:151
+msgid ""
+"``{String}`` Simple String representation of bounds object.  (ex. "
+"*<i>\"5,42,10,45\"</i>*)"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:164
+msgid "toGeometry"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:164
+msgid ""
+":ref:`{ZOO.Geometry.Polygon} <api-zoo-geometry-polygon>` A new polygon with "
+"the coordinates of this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:175
+msgid "getWidth"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:175
+msgid "``{Float}`` The width of the bounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:186
+msgid "getHeight"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:186
+msgid "``{Float}`` The height of the bounds (top minus bottom)."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:202
+msgid "add"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:202
+msgid ""
+":ref:`{ZOO.Bounds} <api-zoo-bounds>` A new bounds whose coordinates are the "
+"same as this, but shifted by the passed-in x and y values."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:216
+msgid "extend"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:211
+msgid ""
+"Extend the bounds to include the point, lonlat, or bounds specified.  Note, "
+"this function assumes that left < right and bottom < top."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:216
+msgid "``object {Object}`` Can be Point, or Bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:235
+msgid "intersectsBounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:225
+msgid ""
+"Determine whether the target bounds intersects this bounds.  Bounds are "
+"considered intersecting if any of their edges intersect or if one bounds "
+"contains the other."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:235
+msgid "``{Boolean}`` The passed-in bounds object intersects this bounds."
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:253
+msgid "containsBounds"
+msgstr ""
+
+#: ../../api/zoo-bounds.txt:254
+msgid ""
+"``{Boolean}`` The passed-in bounds object is contained within this bounds."
+msgstr ""

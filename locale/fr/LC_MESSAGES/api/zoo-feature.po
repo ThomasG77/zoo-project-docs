@@ -1,0 +1,182 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/zoo-feature.txt:4 ../../api/zoo-feature.txt:80
+msgid "ZOO.Feature"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:6
+msgid "Vector features use the ZOO.Geometry classes as geometry description."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:9
+msgid "Properties"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:15 ../../api/zoo-feature.txt:33
+msgid "NAME"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:16 ../../api/zoo-feature.txt:34
+msgid "DESCRIPTION"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:17
+msgid ":ref:`fid <fid>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:18
+msgid "{String}"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:19
+msgid ":ref:`geometry <geometry>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:20
+msgid "{ZOO.Geometry}"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:21
+msgid ":ref:`attributes <attributes>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:22
+msgid ""
+"{Object} This object holds arbitrary properties that describe the feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:23
+msgid ":ref:`bounds <bounds>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:24
+msgid ""
+"{ZOO.Bounds} The box bounding that feature's geometry, that property can be "
+"set by an ZOO.Format object when deserializing the feature, so in most cases"
+" it represents an information set by the server."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:27
+msgid "Functions"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:35
+msgid ":ref:`ZOO.Feature <ZOO.Feature>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:36 ../../api/zoo-feature.txt:74
+msgid "Create a vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:37
+msgid ":ref:`destroy <destroy>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:38 ../../api/zoo-feature.txt:89
+msgid "nullify references to prevent circular references and memory leaks"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:39
+msgid ":ref:`clone <clone>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:40
+msgid "Create a clone of this vector feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:41
+msgid ":ref:`move <move>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:42 ../../api/zoo-feature.txt:107
+msgid "Moves the feature and redraws it at its new location"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:45
+msgid "**Properties**"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:50
+msgid "fid"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:50
+msgid "``{String}``"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:55
+msgid "geometry"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:55
+msgid ":ref:`{ZOO.Geometry} <api-zoo-geometry>`"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:60
+msgid "attributes"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:60
+msgid ""
+"``{Object}`` This object holds arbitrary properties that describe the "
+"feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:67
+msgid "bounds"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:65
+msgid ""
+":ref:`{ZOO.Bounds} <api-zoo-bounds>` The box bounding that feature's "
+"geometry, that property can be set by an ZOO.Format object when "
+"deserializing the feature, so in most cases it represents an information set"
+" by the server."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:69
+msgid "**Functions**"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:77
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:89
+msgid "destroy"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:102
+msgid "clone"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:98
+msgid ""
+"Create a clone of this vector feature.  Does not set any non-standard "
+"properties."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:100
+msgid "*Returns*"
+msgstr ""
+
+#: ../../api/zoo-feature.txt:102
+msgid ""
+":ref:`{ZOO.Feature} <api-zoo-feature>` An exact clone of this vector "
+"feature."
+msgstr ""
+
+#: ../../api/zoo-feature.txt:106
+msgid "move"
+msgstr ""

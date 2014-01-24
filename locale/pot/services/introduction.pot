@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../services/introduction.txt:4
+# 2d7c881ef6e74fb6931e4e4cbff1bf89
+msgid "Introduction"
+msgstr ""
+
+#: ../../services/introduction.txt:6
+# 315ef45c8d0943198ad2dd1509132f8f
+msgid "ZOO Services are example Web services which work with the ZOO :ref:`Kernel <kernel-introduction>`. They are based on various existing Open Source libraries and tend to provide simple Web processing functions such as GIS format conversion, GIS file reprojection, basic spatial operations, basic raster operations..."
+msgstr ""
+
+#: ../../services/introduction.txt:11
+# 1cd344cf8a5c43c099eb1cbfc59b6fdf
+msgid "The available ZOO Services are under development and come without any warranty. They are based on existing code and prove that the :ref:`ZOO Kernel <kernel-introduction>` works with many different codes and languages (please have a look to the ZOO demos!). The ZOO Project team wants to encourage people to use the ZOO Services as a functional basis for Web processing, but above all to provide a source of inspiration to the community for creating new ZOO Services."
+msgstr ""
+
+#: ../../services/introduction.txt:18
+# fc1840701e4e4ff4b7cd4425cf72a791
+msgid "What is a ZOO Service?"
+msgstr ""
+
+#: ../../services/introduction.txt:20
+# fb2820982b7e47f6bbd8911f279216be
+msgid "A ZOO Service is a couple composed of:"
+msgstr ""
+
+#: ../../services/introduction.txt:22
+# d775b4049b2641288adce796fd2d8f22
+msgid "The code you want to turn into a standardized Web service"
+msgstr ""
+
+#: ../../services/introduction.txt:23
+# 54a64933ff9e4e1896c1348a1fbc9f01
+msgid "A configuration file (.zcfg) which describes this Web service"
+msgstr ""
+
+#: ../../services/introduction.txt:25
+# 1f1b08a914d34368b9550459c417c624
+msgid "Learn more on configuring ZOO services by reading the :ref:`.zcfg Reference <services-zcfg>`."
+msgstr ""
+
+#: ../../services/introduction.txt:28
+# 3492d4fdfa3746cfbe99f04506b75cd6
+msgid "Example ZOO Services"
+msgstr ""
+
+#: ../../services/introduction.txt:30
+# 7174591f97804eb98cf1afb92135049d
+msgid "See the ZOO Services :ref:`examples page <services-examples>`."
+msgstr ""
+

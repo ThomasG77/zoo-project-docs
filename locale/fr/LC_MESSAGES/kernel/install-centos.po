@@ -1,0 +1,128 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../kernel/install-centos.txt:4
+msgid "CentOS"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:6
+msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:7
+msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:0
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:14
+msgid ""
+"This documentation was created thanks to Guillaume Sueur from Neogeo "
+"Technologies which took time to test installing the ZOO-Kernel on a CentOS "
+"5.5 environment."
+msgstr ""
+
+#: ../../kernel/install-centos.txt:18
+msgid "Requirements"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:20
+msgid ""
+"Install some standard tools to be able to run ZOO-Kernel on your platform :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:34
+msgid "Compile then install FastCGI library from source"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:46
+msgid "Compile then install the autoconf tools :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:56
+msgid "Compile then install the flex tool :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:67
+msgid ""
+"Using the curl provided in the CentOS distribution will produce a ZOO-Kernel"
+" unable to run any Service. Indeed, some segmentation faults occur when "
+"trying to run ``Execute`` requests on the ZOO-Kernel, compiling the ZOO-"
+"Kernel setting ``USE_GDB`` flag in the ``CFLAGS`` of your ``Makefile`` will "
+"let you run ZOO-Kernel from gdb and be able to get more information on what "
+"is going wrong with your ZOO-Kernel. Doing this we can figure out that code "
+"on `line 173 <http://zoo-project.org/trac/browser/trunk/zoo-"
+"kernel/ulinet.c#L173>`__ and `line 175 <http://zoo-"
+"project.org/trac/browser/trunk/zoo-kernel/ulinet.c#L175>`__ have to be "
+"commented in the ``ulinet.c`` file to get a ZOO-Kernel working using the "
+"curl available in CentOS (curl version 7.15.5). If you don't apply the "
+"modification, you will get an error from a gdb session pointing segfault in "
+"``Curl_cookie_clearall``."
+msgstr ""
+
+#: ../../kernel/install-centos.txt:77
+msgid "You can optionally compile then install curl from source :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:88
+msgid "Compile then install Python :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:99
+msgid "Compile then install your own GDAL library :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:110
+msgid ""
+"Install the Sun JAVA SDK into ``/usr/share`` then use the following command "
+"to ensure that the ``libjvm.so`` will be found at runtime from any context."
+msgstr ""
+
+#: ../../kernel/install-centos.txt:119
+msgid "Compile ZOO-Kernel and ZOO-Services"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:121
+msgid "Compile then install ZOO-Kernel and your first ZOO-Services."
+msgstr ""
+
+#: ../../kernel/install-centos.txt:123
+msgid ""
+"First of all, compile the cgic library providen in the SVN source tree:"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:131
+msgid "Compile then install ZOO-Kernel."
+msgstr ""
+
+#: ../../kernel/install-centos.txt:141
+msgid ""
+"Compile then deploy your first ZOO-ServicesProviders (simple HelloPy, line 1"
+" and 2, and the OGR base-vect-ops ServiceProvider, line 3 to 6):"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:153
+msgid ""
+"To ensure that the ``libjvm.so`` will be found from apache, please restart "
+"it :"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:160
+msgid "Testing your ZOO-Kernel"
+msgstr ""
+
+#: ../../kernel/install-centos.txt:162
+msgid "Test your ZOO-Kernel from command line:"
+msgstr ""

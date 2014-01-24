@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011, Nicolas Bozon, Gérald Fenoy, Jeff McKenna
+# This file is distributed under the same license as the ZOO Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOO Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-24 19:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../tutorial/environment.txt:4
+# b7966ff5d3d84005958f9cb9ea040161
+msgid "Using ZOO from an OSGeoLive virtual machine"
+msgstr ""
+
+#: ../../tutorial/environment.txt:7
+# 3ee28f519ff44657b2a2edd2cadbf159
+msgid "Development Environment Description"
+msgstr ""
+
+#: ../../tutorial/environment.txt:9
+# a9fcae803d344ffc92218684ed9b2ff3
+msgid "`OSGeoLive <http://live.osgeo.org/>`__ is a live DVD and virtual machine based on `Xubuntu <http://www.xubuntu.org/>`__  that allows you to try a wide variety of open source geospatial software without installing anything. It is composed entirely of free software and include ZOO 1.0 this year, for testing purpose."
+msgstr ""
+
+#: ../../tutorial/environment.txt:14
+# 77d2d4184d4e4188ac604e48f3072aed
+msgid "As already said in introduction, an OSGeoLive virtual machine image disk has been installed on your computer, allowing you to use ZOO Kernel in a development environment directly. Using a virtual machine image disk seems to be the simplest way to use ZOO Kernel and to develop ZOO Services locally, as we can ensure that everything requested for compile C Services and run Python Services is available and ready to use. Every ZOO related material and source code have been placed in */home/user/zoows* directory. We will work inside it during this workshop. As the binary version of ZOO Kernel is already compiled and stored in */home/user/zoows/sources/zoo-kernel*, you only have to copy two important files inside the */usr/lib/cgi-bin directory*: *zoo_loader.cgi* and the *main.cfg* in order to make ZOO Kernel available, using the following commands:"
+msgstr ""
+
+#: ../../tutorial/environment.txt:30
+# 9f8a240656da4167af31e51ffec3967b
+msgid "Please note that we will talk about ZOO Kernel or zoo_loader.cgi script without any distinction during this workshop."
+msgstr ""
+
+#: ../../tutorial/environment.txt:33
+# 288944baa36e4a32a2d6bc9ef65e9c7b
+msgid "The *main.cfg* file contains metadata informations about the identification and provider but also some important settings. The file is composed of various sections, namely *main*, *identification* and *provider* per default. Obviously, you are free to add new sections to the files if you need them for a specific Service. Nevertheless, you have to know that the env section name is used in a specific way. It lets you define environment variables that your Service requires during its runtime. For instance, if your Service requires to access to a X server running on framebuffer, you can add *DISPLAY=:1* line in your env section to take this specificity into account."
+msgstr ""
+
+#: ../../tutorial/environment.txt:42
+# 13c238c56698475ea663f409ef87b64b
+msgid "Please have a look to this file. Three important parameters are commented below:"
+msgstr ""
+
+#: ../../tutorial/environment.txt:45
+# bd9f0e6723c744d4954f9b5e97bbd158
+msgid "serverAddress"
+msgstr ""
+
+#: ../../tutorial/environment.txt:45
+# dea57d4e09534a90b3f342747ab7b45a
+msgid "The url to access to the ZOO Kernel"
+msgstr ""
+
+#: ../../tutorial/environment.txt:48
+# 42296d9149f34fa6854c8e39a2be1c70
+msgid "tmpPath"
+msgstr ""
+
+#: ../../tutorial/environment.txt:48
+# bd51e91e7dae40d3a2fb7af1aaebb0a7
+msgid "The full path to store temporary files"
+msgstr ""
+
+#: ../../tutorial/environment.txt:51
+# aea79429c5b0492982d27f6dd8ce3bcb
+msgid "tmpUrl"
+msgstr ""
+
+#: ../../tutorial/environment.txt:51
+# 78cadc8747ff4c5b896e512f5951722e
+msgid "The url path relative to serverAddress to access temporary directory."
+msgstr ""
+
+#: ../../tutorial/environment.txt:53
+# e5e370cdd7804ed58c3568ca147212ac
+msgid "The values of the *main.cfg* file used from the running virtual machine are the following:"
+msgstr ""
+
+#: ../../tutorial/environment.txt:61
+# aa08e666e37441069e378dfc407c2917
+msgid "You could have noticed that the *tmpUrl* is a relative url from *serverAddress*, so it must be a directory. Even if ZOO Kernel can be used with the full url of the zoo_loader.cgi script, for  better readability and fully functional ZOO Kernel, you have to modify the default Apache configuration in order to be able to use the http://localhost/zoo/ url directly."
+msgstr ""
+
+#: ../../tutorial/environment.txt:67
+# 0f48a586e57442b08e0c9b469ce20f7c
+msgid "First, please create a zoo directory in the existing */var/www* which is used by Apache as the DirectoryIndex. Then, please edit the */etc/apache2/sites-available/default* configuration file and add the following lines after the Directory block related to */var/www* directory :"
+msgstr ""
+
+#: ../../tutorial/environment.txt:80
+# 7662848229b84e1cb86ce848a27f81d7
+msgid "Now create a small *.htaccess* file in the */var/www/zoo* containing the following lines:"
+msgstr ""
+
+#: ../../tutorial/environment.txt:88
+# 01ec9da0af444536bd7a7fe1150f8d07
+msgid "For this last file to be taken into account by Apache, you must activate the rewrite Apache module by copying a load file as bellow :"
+msgstr ""
+
+#: ../../tutorial/environment.txt:95
+# fcfa30f9d973461fac7b3ebad9894da8
+msgid "Now you should be able to access the ZOO Kernel using a simplified by restarting your Apache Web server :"
+msgstr ""
+
+#: ../../tutorial/environment.txt:102
+# a66fb1b254cf4f92b20523c69ee1527b
+msgid "Two other softwares form the OSGeoLive environment will be used during this workshop. Geoserver will first be used to provide WFS input data for the ZOO Services we are going to develop. The Geoserver sample dataset (United States polygons) will be passed to our service during section 3. So please start the Geoserver using the corresponding launcher in the Servers folder, as illustrated in the following screenshot :"
+msgstr ""
+
+#: ../../tutorial/environment.txt:108
+# 6a7b8ccf629c4288b4365faa75073caa
+msgid "OpenLayers library is also available on the OSGeoLive virtual machine image disk, and it will be used during section 4, for building a simple WPS client application able to query the newly developed ZOO Services."
+msgstr ""
+
+#: ../../tutorial/environment.txt:112
+# a8006bc745bb47bfb815766c9e993360
+msgid "As we planned to use OGR C-API and Python module of the GDAL library, we will need the corresponding header files, libraries and associated files. Hopefully everything was already available per default and so ready to use on the OSGeoLive packaging."
+msgstr ""
+
