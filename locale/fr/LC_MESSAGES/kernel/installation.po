@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: 2014-01-25 14:42+0100\n"
+"PO-Revision-Date: 2014-01-25 14:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,5 +25,5 @@ msgstr "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
 
 #: ../../kernel/installation.txt:9
 msgid "This page provides documentation on how to compile then install the ZOO Kernel on Unix, Windows, and Mac OS X platforms."
-msgstr "Cette page fournit la documentation sur la manière de compiler puis installer le Kernel ZOO sous les plates-formes Unix, Windows et Mac OS X."
+msgstr "Cette page fournit la documentation sur la manière de compiler puis d'installer le Kernel ZOO sous les plates-formes Unix, Windows et Mac OS X."
 
