@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-25 02:59+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,116 +13,93 @@ msgstr ""
 
 #: ../../kernel/install-centos.txt:4
 msgid "CentOS"
-msgstr ""
+msgstr "CentOS"
 
 #: ../../kernel/install-centos.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
 
 #: ../../kernel/install-centos.txt:7
 msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
-msgstr ""
+msgstr "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
 
 #: ../../kernel/install-centos.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../kernel/install-centos.txt:14
-msgid ""
-"This documentation was created thanks to Guillaume Sueur from Neogeo "
-"Technologies which took time to test installing the ZOO-Kernel on a CentOS "
-"5.5 environment."
-msgstr ""
+msgid "This documentation was created thanks to Guillaume Sueur from Neogeo Technologies which took time to test installing the ZOO-Kernel on a CentOS 5.5 environment."
+msgstr "Cette documentation a été créée grâce à Guillaume Sueur de Neogeo Technologies qui a pris le temps de tester l'installation du ZOO-Kernel sur un environnement CentOS 5.5."
 
 #: ../../kernel/install-centos.txt:18
 msgid "Requirements"
-msgstr ""
+msgstr "Prérequis"
 
 #: ../../kernel/install-centos.txt:20
-msgid ""
-"Install some standard tools to be able to run ZOO-Kernel on your platform :"
-msgstr ""
+msgid "Install some standard tools to be able to run ZOO-Kernel on your platform :"
+msgstr "Installez quelques outils standards pour être capable de faire fonctionner le ZOO-Kernel sur votre plateforme :"
 
 #: ../../kernel/install-centos.txt:34
 msgid "Compile then install FastCGI library from source"
-msgstr ""
+msgstr "Compilez puis installez la bibliothèque FastCGI depuis les sources"
 
 #: ../../kernel/install-centos.txt:46
 msgid "Compile then install the autoconf tools :"
-msgstr ""
+msgstr "Compilez puis installez les outils autoconf :"
 
 #: ../../kernel/install-centos.txt:56
 msgid "Compile then install the flex tool :"
-msgstr ""
+msgstr "Compilez puis installez l'outil flex :"
 
 #: ../../kernel/install-centos.txt:67
-msgid ""
-"Using the curl provided in the CentOS distribution will produce a ZOO-Kernel"
-" unable to run any Service. Indeed, some segmentation faults occur when "
-"trying to run ``Execute`` requests on the ZOO-Kernel, compiling the ZOO-"
-"Kernel setting ``USE_GDB`` flag in the ``CFLAGS`` of your ``Makefile`` will "
-"let you run ZOO-Kernel from gdb and be able to get more information on what "
-"is going wrong with your ZOO-Kernel. Doing this we can figure out that code "
-"on `line 173 <http://zoo-project.org/trac/browser/trunk/zoo-"
-"kernel/ulinet.c#L173>`__ and `line 175 <http://zoo-"
-"project.org/trac/browser/trunk/zoo-kernel/ulinet.c#L175>`__ have to be "
-"commented in the ``ulinet.c`` file to get a ZOO-Kernel working using the "
-"curl available in CentOS (curl version 7.15.5). If you don't apply the "
-"modification, you will get an error from a gdb session pointing segfault in "
-"``Curl_cookie_clearall``."
-msgstr ""
+msgid "Using the curl provided in the CentOS distribution will produce a ZOO-Kernel unable to run any Service. Indeed, some segmentation faults occur when trying to run ``Execute`` requests on the ZOO-Kernel, compiling the ZOO-Kernel setting ``USE_GDB`` flag in the ``CFLAGS`` of your ``Makefile`` will let you run ZOO-Kernel from gdb and be able to get more information on what is going wrong with your ZOO-Kernel. Doing this we can figure out that code on `line 173 <http://zoo-project.org/trac/browser/trunk/zoo-kernel/ulinet.c#L173>`__ and `line 175 <http://zoo-project.org/trac/browser/trunk/zoo-kernel/ulinet.c#L175>`__ have to be commented in the ``ulinet.c`` file to get a ZOO-Kernel working using the curl available in CentOS (curl version 7.15.5). If you don't apply the modification, you will get an error from a gdb session pointing segfault in ``Curl_cookie_clearall``."
+msgstr "L'utilisation du curl fournit par la distribution CentOS produira un ZOO-Kernel incapable de faire fonctionner n'importe quel service. En effet, des erreurs de segmentation ont lieu quand on essaye de lancer des requêtes ``Execute`` sur le ZOO-Kernel. La compilation du ZOO-Kernel en configurant le flag ``USE_GDB`` dans les ``CFLAGS`` de votre ``Makefile`` vous permettra de lancer votre ZOO-Kernel depuis gdb et d'être capable d'avoir plus d'informations sur ce qui ne fonctionne pas correctement avec votre ZOO-Kernel. En faisant cela, nous pouvons déduire que le code sur la `ligne 173 <http://zoo-project.org/trac/browser/trunk/zoo-kernel/ulinet.c#L173>`__ et la `ligne 175 <http://zoo-project.org/trac/browser/trunk/zoo-kernel/ulinet.c#L175>`__ doit être commenté dans le fichier ``ulinet.c`` pour avoir un ZOO-Kernel fonctionnel en utilsant le curl disponible dans CentOS (curl version 7.15.5). Si vous n'appliquez pas la modification, vous aurez une erreur depuis la session  gdb pointant une segfault dans ``Curl_cookie_clearall``."
 
 #: ../../kernel/install-centos.txt:77
 msgid "You can optionally compile then install curl from source :"
-msgstr ""
+msgstr "Vous pouvez optionnellement compiler et installer curl depuis les sources:"
 
 #: ../../kernel/install-centos.txt:88
 msgid "Compile then install Python :"
-msgstr ""
+msgstr "Compilez puis installez Python :"
 
 #: ../../kernel/install-centos.txt:99
 msgid "Compile then install your own GDAL library :"
-msgstr ""
+msgstr "Compilez puis installez votre propre bibliothèque GDAL :"
 
 #: ../../kernel/install-centos.txt:110
-msgid ""
-"Install the Sun JAVA SDK into ``/usr/share`` then use the following command "
-"to ensure that the ``libjvm.so`` will be found at runtime from any context."
-msgstr ""
+msgid "Install the Sun JAVA SDK into ``/usr/share`` then use the following command to ensure that the ``libjvm.so`` will be found at runtime from any context."
+msgstr "Installez le SDK JAVA Sun dans ``/usr/share`` puis utilisez la commande suivante pour vous assurez que ``libjvm.so`` sera trouvé à l'exécution depuis n'importe quel contexte."
 
 #: ../../kernel/install-centos.txt:119
 msgid "Compile ZOO-Kernel and ZOO-Services"
-msgstr ""
+msgstr "Compiler le ZOO-Kernel et les ZOO-Services"
 
 #: ../../kernel/install-centos.txt:121
 msgid "Compile then install ZOO-Kernel and your first ZOO-Services."
-msgstr ""
+msgstr "Compilez puis installez le ZOO-Kernel votre premier ZOO-Services."
 
 #: ../../kernel/install-centos.txt:123
-msgid ""
-"First of all, compile the cgic library providen in the SVN source tree:"
-msgstr ""
+msgid "First of all, compile the cgic library providen in the SVN source tree:"
+msgstr "En tout premier, compilez la bibliothèque cgic fournie dans l'arborescence des sources SVN:"
 
 #: ../../kernel/install-centos.txt:131
 msgid "Compile then install ZOO-Kernel."
-msgstr ""
+msgstr "Compilez puis installez le ZOO-Kernel."
 
 #: ../../kernel/install-centos.txt:141
-msgid ""
-"Compile then deploy your first ZOO-ServicesProviders (simple HelloPy, line 1"
-" and 2, and the OGR base-vect-ops ServiceProvider, line 3 to 6):"
-msgstr ""
+msgid "Compile then deploy your first ZOO-ServicesProviders (simple HelloPy, line 1 and 2, and the OGR base-vect-ops ServiceProvider, line 3 to 6):"
+msgstr "Compilez puis déployez votre premier ZOO-ServicesProviders (un simple HelloPy, lignes 1 et 2, et le ServiceProvider OGR base-vect-ops, lignes 3 à 6):"
 
 #: ../../kernel/install-centos.txt:153
-msgid ""
-"To ensure that the ``libjvm.so`` will be found from apache, please restart "
-"it :"
-msgstr ""
+msgid "To ensure that the ``libjvm.so`` will be found from apache, please restart it :"
+msgstr "Pour vous assurez que ``libjvm.so`` sera trouvé depuis apache, merci de le redémarrer :"
 
 #: ../../kernel/install-centos.txt:160
 msgid "Testing your ZOO-Kernel"
-msgstr ""
+msgstr "Tester votre ZOO-Kernel"
 
 #: ../../kernel/install-centos.txt:162
 msgid "Test your ZOO-Kernel from command line:"
-msgstr ""
+msgstr "Testez votre ZOO-Kernel en ligne de commande:"
+
