@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-25 02:19+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,260 +13,185 @@ msgstr ""
 
 #: ../../kernel/install-unix.txt:4
 msgid "Unix"
-msgstr ""
+msgstr "Unix"
 
 #: ../../kernel/install-unix.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
 
 #: ../../kernel/install-unix.txt:7
 msgid "$Date: 2013-03-28 15:10:57 +0100 (Thu, 28 Mar 2013) $"
-msgstr ""
+msgstr "$Date: 2013-03-28 15:10:57 +0100 (Thu, 28 Mar 2013) $"
 
 #: ../../kernel/install-unix.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../kernel/install-unix.txt:14
-msgid ""
-"You must be sure to perform the :ref:`prerequisite steps <kernel-"
-"installation-prereq>` before following this page."
-msgstr ""
+msgid "You must be sure to perform the :ref:`prerequisite steps <kernel-installation-prereq>` before following this page."
+msgstr "Vous devez vous assurer d'avoir effectuer les :ref:`étapes de prérequis <kernel-installation-prereq>` avant de suivre cette page."
 
 #: ../../kernel/install-unix.txt:17
 msgid "For the impatient"
-msgstr ""
+msgstr "Pour les impatients"
 
 #: ../../kernel/install-unix.txt:19
-msgid ""
-"To build the ``zoo_loader.cgi`` CGI program with the default options, cd to "
-"the directory where you extracted the ZOO Kernel source code package and use"
-" the following commands:"
-msgstr ""
+msgid "To build the ``zoo_loader.cgi`` CGI program with the default options, cd to the directory where you extracted the ZOO Kernel source code package and use the following commands:"
+msgstr "Pour générer le programme CGI ``zoo_loader.cgi``avec les options par défaut, faites un cd vers le répertoire où vous avez extrait le paquet du code source du Kernel ZOO et utilisez les commandes suivantes:"
 
 #: ../../kernel/install-unix.txt:29
-msgid ""
-"Unless something went wrong, you should have executables in the current "
-"directory for the ``zoo_loader.cgi`` CGI program. You can copy the "
-"``zoo_loader.cgi`` program and the ``main.cfg`` file to your HTTP server's "
-"CGI directory and start using it."
-msgstr ""
+msgid "Unless something went wrong, you should have executables in the current directory for the ``zoo_loader.cgi`` CGI program. You can copy the ``zoo_loader.cgi`` program and the ``main.cfg`` file to your HTTP server's CGI directory and start using it."
+msgstr "A moins que quelque chose se soit mal passé, vous devriez avoir des exécutables dans le répertoire courant pour le programme CGI ``zoo_loader.cgi``. Vous pouvez copier le programme ``zoo_loader.cgi`` et le fichier ``main.cfg`` dans le répertoire CGI de votre serveur HTTP et commencer à l'utiliser."
 
 #: ../../kernel/install-unix.txt:33
-msgid ""
-"At this step your ZOO-Kernel should work. Nevertheless, don't forget to "
-"correct the main.cfg settings to set ``tmpPath`` and ``tmpUrl`` to fit your "
-"web server configuration."
-msgstr ""
+msgid "At this step your ZOO-Kernel should work. Nevertheless, don't forget to correct the main.cfg settings to set ``tmpPath`` and ``tmpUrl`` to fit your web server configuration."
+msgstr "A cette étape, votre ZOO-Kernel devrait fonctionner. Malgré tout, n'oubliez pas de corriger la configuration de main.cfg pour définir ``tmpPath`` et ``tmpUrl`` afin qu'ils soient adaptés à la configuration de votre serveur web."
 
 #: ../../kernel/install-unix.txt:37
 msgid "Configure Options"
-msgstr ""
+msgstr "Options de configure"
 
 #: ../../kernel/install-unix.txt:39
-msgid ""
-"Here is the list of available options as returned by *./configure --help*:"
-msgstr ""
+msgid "Here is the list of available options as returned by *./configure --help*:"
+msgstr "Voici la liste des options disponibles, identique à celle retournée par *./configure --help*:"
 
 #: ../../kernel/install-unix.txt:62
 msgid "All the options are described in more details below."
-msgstr ""
+msgstr "Toutes les options sont décrites avec plus de détails ci-dessous."
 
 #: ../../kernel/install-unix.txt:65
 msgid "(Required) GDAL Support"
-msgstr ""
+msgstr "(Requis) Support GDAL"
 
 #: ../../kernel/install-unix.txt:67
-msgid ""
-"If your gdal-config program is not found in your PATH then you can use the "
-"``--with-gdal-config`` option to specify its location. For instance, let's "
-"suppose that your gdal-config was installed in /usr/local/bin and this "
-"directory is not in your PATH, then you can use the following command:"
-msgstr ""
+msgid "If your gdal-config program is not found in your PATH then you can use the ``--with-gdal-config`` option to specify its location. For instance, let's suppose that your gdal-config was installed in /usr/local/bin and this directory is not in your PATH, then you can use the following command:"
+msgstr "Si votre programme gdal-config n'est pas trouvé dans votre PATH alors vous pouvez utiliser l'option ``--with-gdal-config`` pour spécifier son emplacement. Par exemple, supposons que votre gdal-config soit installé dans /usr/local/bin et que ce répertoire ne soit pas dans votre PATH, alors vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:77
 msgid "(Required) XML2 Support"
-msgstr ""
+msgstr "(Requis) Support XML2"
 
 #: ../../kernel/install-unix.txt:79
-msgid ""
-"If your xml2-config program is not found in your PATH then you can use the "
-"``--with-xml2config`` option to specify its location. For instance, let's "
-"suppose that your xml2-config was installed in /usr/local/bin and this "
-"directory is not in your PATH, then you can use the following command:"
-msgstr ""
+msgid "If your xml2-config program is not found in your PATH then you can use the ``--with-xml2config`` option to specify its location. For instance, let's suppose that your xml2-config was installed in /usr/local/bin and this directory is not in your PATH, then you can use the following command:"
+msgstr "Si votre programme xml2-config n'est pas trouvé dans votre PATH alors vous pouvez utiliser l'option ``--with-xml2config`` pour spécifier son emplacement. Par exemple, supposons que votre xml2-config soit installé dans /usr/local/bin et que ce répertoire ne soit pas dans votre PATH, alors vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:89
 msgid "(Optional) MapServer Support"
-msgstr ""
+msgstr "(Optionnel) Support MapServer"
 
 #: ../../kernel/install-unix.txt:91
-msgid ""
-"If you want to activate the WMS, WFS and WCS outputs using MapServer then "
-"you will have to use the ``--with-mapserver`` option. You have to set the "
-"path to your ``mapserver-config`` locate in the source code of MapServer as "
-"following command:"
-msgstr ""
+msgid "If you want to activate the WMS, WFS and WCS outputs using MapServer then you will have to use the ``--with-mapserver`` option. You have to set the path to your ``mapserver-config`` locate in the source code of MapServer as following command:"
+msgstr "Si vous voulez activer les sorties WMS, WFS et WCS utilisant MapServer, alors vous devrez utiliser l'option ``--with-mapserver``. Vous devez définir le chemin vers  vers votre emplacement de ``mapserver-config``dans le code source de MapServer comme dans la commande suivante:"
 
 #: ../../kernel/install-unix.txt:100
 msgid "(Optional) Python Support"
-msgstr ""
+msgstr "(Optionnel) Support Python"
 
 #: ../../kernel/install-unix.txt:102
-msgid ""
-"If you want to activate Python support for the ZOO Kernel then you will have"
-" to use the ``--with-python`` option. If your python-config program is found"
-" in your PATH then you don't have to specify the path where Python was "
-"installed, such as:"
-msgstr ""
+msgid "If you want to activate Python support for the ZOO Kernel then you will have to use the ``--with-python`` option. If your python-config program is found in your PATH then you don't have to specify the path where Python was installed, such as:"
+msgstr "Si vous souhaitez activer le support de Python pour le Kernel ZOO alors vous devrez utiliser l'option ``--with-python``. Si votre programme python-config est trouvé dans votre PATH alors vous n'avez pas à spécifier le chemin où Python a été installé, comme ceci:"
 
 #: ../../kernel/install-unix.txt:110
 msgid "This assumes that python-config is found in your PATH."
-msgstr ""
+msgstr "Cela suppose que python-config est trouvé dans votre PATH."
 
 #: ../../kernel/install-unix.txt:112
-msgid ""
-"In the case that your python-config is not found in your PATH, then you can "
-"specify the Python installation directory you are using. For instance, let's"
-" suppose that you installed Python in /usr/local, then you can use the "
-"following command:"
-msgstr ""
+msgid "In the case that your python-config is not found in your PATH, then you can specify the Python installation directory you are using. For instance, let's suppose that you installed Python in /usr/local, then you can use the following command:"
+msgstr "Dans le cas où votre python-config n'est pas trouvé dans votre PATH, alors vous pouvez spécifier le répertoire d'installation Python que vous utilisez. Par exemple, supposons que vous avez installé Python dans /usr/local, alors vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:120
 msgid "This assumes that /usr/local/bin/python-config exists."
-msgstr ""
+msgstr "Cela suppose que /usr/local/bin/python-config existe."
 
 #: ../../kernel/install-unix.txt:123
 msgid "(Optional) Python Version"
-msgstr ""
+msgstr "(Optionnel) Version de Python"
 
 #: ../../kernel/install-unix.txt:125
-msgid ""
-"If you want use a specific version of Python you will have to use the "
-"``--with-pyvers`` option. You can specify a Python version as:"
-msgstr ""
+msgid "If you want use a specific version of Python you will have to use the ``--with-pyvers`` option. You can specify a Python version as:"
+msgstr "Si vous souhaitez utiliser une version spécifique de Python, vous devrez utiliser l'option ``--with-pyvers``. Vous pouvez spécifier une version de Python comme:"
 
 #: ../../kernel/install-unix.txt:134
 msgid "(Optional) PHP Support"
-msgstr ""
+msgstr "(Optionnel) Support PHP"
 
 #: ../../kernel/install-unix.txt:136
-msgid ""
-"To be able to activate PHP support for the ZOO Kernel you'll need to get a "
-"local PHP Embedded installation; for more information about the required "
-"configure options when compiling PHP you can refer to this page :"
-msgstr ""
+msgid "To be able to activate PHP support for the ZOO Kernel you'll need to get a local PHP Embedded installation; for more information about the required configure options when compiling PHP you can refer to this page :"
+msgstr "Pour être capable d'activer le support PHP pour le Kernel ZOO, vous devrez avoir une installation de PHP encapsulé en local ; pour plus d'informations sur les options de configure requises lors de la compilation PHP, vous pouvez vous référer à cette page :"
 
 #: ../../kernel/install-unix.txt:140
 msgid "http://zoo-project.org/trac/wiki/ZooKernel/Embed/PHP"
-msgstr ""
+msgstr "http://zoo-project.org/trac/wiki/ZooKernel/Embed/PHP"
 
 #: ../../kernel/install-unix.txt:142
-msgid ""
-"If you want to activate the PHP support for the ZOO Kernel then you will "
-"have to use the ``--with-php`` option. If your php-config program is found "
-"in your PATH then you don't have to specify the path where PHP was "
-"installed, then you can use the following commnd:"
-msgstr ""
+msgid "If you want to activate the PHP support for the ZOO Kernel then you will have to use the ``--with-php`` option. If your php-config program is found in your PATH then you don't have to specify the path where PHP was installed, then you can use the following commnd:"
+msgstr "Si vous souhaitez activer le support de PHP pour le Kernel ZOO alors vous devrez utiliser l'option ``--with-php``. Si votre programme php-config est trouvé dans votre PATH alors vous n'avez pas à spécifier le chemin où PHP a été installé. Vous pouvez alors utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:150
 msgid "This assumes that php-config is found in your PATH."
-msgstr ""
+msgstr "Cela suppose que php-config est trouvé dans votre PATH."
 
 #: ../../kernel/install-unix.txt:152
-msgid ""
-"In the case that your php-config is not found in your PATH, then you can "
-"specify the PHP installation directory you are using. For instance, let's "
-"suppose that you installed PHP in /usr/local, then you can use the following"
-" command:"
-msgstr ""
+msgid "In the case that your php-config is not found in your PATH, then you can specify the PHP installation directory you are using. For instance, let's suppose that you installed PHP in /usr/local, then you can use the following command:"
+msgstr "Dans le cas où votre php-config n'est pas trouvé dans votre PATH, alors vous pouvez spécifier le répertoire d'installation PHP que vous utilisez. Par exemple, supposons que vous avez installé PHP dans /usr/local, alors vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:160
 msgid "This assumes that /usr/local/bin/php-config exists."
-msgstr ""
+msgstr "Cela suppose que /usr/local/bin/php-config existe."
 
 #: ../../kernel/install-unix.txt:163
 msgid "(Optional) Perl Support"
-msgstr ""
+msgstr "(Optionnel) Support Perl"
 
 #: ../../kernel/install-unix.txt:165
-msgid ""
-"If you want to activate Perl support for the ZOO Kernel then you will have "
-"to use the ``--with-perl`` option. If you do not set any value to this "
-"option, then the perl program will be searched in your PATH. So in such a "
-"case, you can use the following command:"
-msgstr ""
+msgid "If you want to activate Perl support for the ZOO Kernel then you will have to use the ``--with-perl`` option. If you do not set any value to this option, then the perl program will be searched in your PATH. So in such a case, you can use the following command:"
+msgstr "Si vous souhaitez activer le support de Perl pour le Kernel ZOO alors vous devrez utiliser l'option ``--with-perl``. Si vous ne définissez aucune valeur pour cette option, alors le programme perl sera cherché dans votre PATH.  Ainsi dans un cas comme celui-ci, vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:173
 msgid "This assumes that perl is found in your PATH."
-msgstr ""
+msgstr "Cela suppose que perl est trouvé dans votre PATH."
 
 #: ../../kernel/install-unix.txt:175
-msgid ""
-"In the other case, for custom Perl installations, you can set the "
-"installation directory. For instance, let's suppose that you installed Perl "
-"in /usr/local and /usr/local/bin is not in your PATH, then you can use the "
-"following command:"
-msgstr ""
+msgid "In the other case, for custom Perl installations, you can set the installation directory. For instance, let's suppose that you installed Perl in /usr/local and /usr/local/bin is not in your PATH, then you can use the following command:"
+msgstr "Dans l'autre cas, pour des installations personnalisées de Perl, vous pouvez définir le répertoire d'installation. Par exemple, supposons que vous avez installé Perl dans /usr/local et que /usr/local/bin n'est pas dans votre PATH, alors vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:183
 msgid "This assumes that /usr/local/bin/perl exists."
-msgstr ""
+msgstr "Cela suppose que /usr/local/bin/perl existe."
 
 #: ../../kernel/install-unix.txt:186
 msgid "(Optional) Java Support"
-msgstr ""
+msgstr "(Optionnel) Support Java"
 
 #: ../../kernel/install-unix.txt:188
-msgid ""
-"If you want to activate Java support for the ZOO Kernel then you will have "
-"to use the ``--with-java`` option and set the installation path of your Java"
-" SDK. For instance, let's suppose that your Java SDK was installed in the "
-"/usr/lib/jvm/java-6-sun-1.6.0.22/ directory, then you can use the following "
-"command:"
-msgstr ""
+msgid "If you want to activate Java support for the ZOO Kernel then you will have to use the ``--with-java`` option and set the installation path of your Java SDK. For instance, let's suppose that your Java SDK was installed in the /usr/lib/jvm/java-6-sun-1.6.0.22/ directory, then you can use the following command:"
+msgstr "Si vous souhaitez activer le support de Java pour le Kernel ZOO alors vous devrez utiliser l'option ``--with-java`` et définir le chemin d'installation de votre SDK Java. Par exemple, supposons que votre SDK Java soit installé  dans le répertoire /usr/lib/jvm/java-6-sun-1.6.0.22/, alors vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:197
-msgid ""
-"This assumes that the include/linux and jre/lib/i386/client/ subdirectories "
-"exist in /usr/lib/jvm/java-6-sun-1.6.0.22/, include/linux contains the jni.h"
-" headers file and jre/lib/i386/client/ contains the libjvm.so file."
-msgstr ""
+msgid "This assumes that the include/linux and jre/lib/i386/client/ subdirectories exist in /usr/lib/jvm/java-6-sun-1.6.0.22/, include/linux contains the jni.h headers file and jre/lib/i386/client/ contains the libjvm.so file."
+msgstr "Cela suppose que les sous-répertoires include/linux et jre/lib/i386/client/ existent dans /usr/lib/jvm/java-6-sun-1.6.0.22/, que include/linux contient le fichier d'en-tête jni.h et que jre/lib/i386/client/ contient le fichier libjvm.so."
 
 #: ../../kernel/install-unix.txt:202
-msgid ""
-"With Mac OS X you only have to set ``macos`` as the value for the ``--with-"
-"java`` option to activate Java support. For example:"
-msgstr ""
+msgid "With Mac OS X you only have to set ``macos`` as the value for the ``--with-java`` option to activate Java support. For example:"
+msgstr "Avec Mac OS X, vous avez seulement à définir ``macos`` comme la valeur pour l'option ``--with-java`` pour activer le support de Java. Par exemple:"
 
 #: ../../kernel/install-unix.txt:210
 msgid "(Optional) JavaScript Support"
-msgstr ""
+msgstr "(Optionnel) Support JavaScript"
 
 #: ../../kernel/install-unix.txt:212
-msgid ""
-"If you want to activate JavaScript support for the ZOO Kernel then you will "
-"have to use the ``--with-js`` option. If you are using a \"Debian-like\" "
-"GNU/Linux distribution then dpkg will be used to detect if the required "
-"packages are installed and you don't have to specify anything here, so you "
-"can use the following command:"
-msgstr ""
+msgid "If you want to activate JavaScript support for the ZOO Kernel then you will have to use the ``--with-js`` option. If you are using a \"Debian-like\" GNU/Linux distribution then dpkg will be used to detect if the required packages are installed and you don't have to specify anything here, so you can use the following command:"
+msgstr "Si vous souhaitez activer le support de JavaScript pour le Kernel ZOO alors vous devrez utiliser l'option ``--with-js``. Si vous utilisez  une distribution GNU/Linux \"Debian-like\" (basé sur le système de paquets deb) alors dpkg sera utilisé pour détecter si les paquets requis sont installés et que vous n'avez rien à spécifier ici, ainso vous pouvez utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:221
-msgid ""
-"This assumes that js_api.h and libmozjs.so are found in default directories."
-msgstr ""
+msgid "This assumes that js_api.h and libmozjs.so are found in default directories."
+msgstr "Cela suppose que js_api.h et libmozjs.so soient trouvés dans les répertoires par défaut."
 
 #: ../../kernel/install-unix.txt:223
-msgid ""
-"If you have a custom installation of SpiderMonkey or you are not using a "
-"Debian packaging system, then you'll have to specify the directory where you"
-" installed it. For instance, let's suppose that you installed your "
-"SpiderMonkey in /usr, then you'll have to use the following command:"
-msgstr ""
+msgid "If you have a custom installation of SpiderMonkey or you are not using a Debian packaging system, then you'll have to specify the directory where you installed it. For instance, let's suppose that you installed your SpiderMonkey in /usr, then you'll have to use the following command:"
+msgstr "Si vous avez une installation personnalisée de SpiderMonkey ou que vous n'utilisez pas un système de paquets basé sur Debian, alors vous devrez spécifier le répertoire où vous l'avez installé. Par exemple, supposons que vous avez installé votre SpiderMonkey dans /usr, alors vous aurez à utiliser la commande suivante:"
 
 #: ../../kernel/install-unix.txt:232
-msgid ""
-"This assumes that the /usr/include/js exists and contains the js_api.h "
-"headers file and /usr/lib contains libmozjs.so file."
-msgstr ""
+msgid "This assumes that the /usr/include/js exists and contains the js_api.h headers file and /usr/lib contains libmozjs.so file."
+msgstr "Cela suppose que /usr/include/js existe et contient le fichiers d'en-tête js_api.h et que /usr/lib contient le fichier libmozjs.so."
+
