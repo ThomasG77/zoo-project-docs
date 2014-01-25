@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-25 20:05+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,244 +13,206 @@ msgstr ""
 
 #: ../../kernel/install-debian.txt:4
 msgid "Debian / Ubuntu"
-msgstr ""
+msgstr "Debian / Ubuntu"
 
 #: ../../kernel/install-debian.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
 
 #: ../../kernel/install-debian.txt:7
 msgid "$Date: 2013-06-21 18:55:49 +0200 (Fri, 21 Jun 2013) $"
-msgstr ""
+msgstr "$Date: 2013-06-21 18:55:49 +0200 (Fri, 21 Jun 2013) $"
 
 #: ../../kernel/install-debian.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../kernel/install-debian.txt:14
-msgid ""
-"An Ubuntu 10.4 with ZOO virtual image is available at http://www.zoo-"
-"project.org/Ubuntu10.4_ZOO.zip (root: ZOO.test)"
-msgstr ""
+msgid "An Ubuntu 10.4 with ZOO virtual image is available at http://www.zoo-project.org/Ubuntu10.4_ZOO.zip (root: ZOO.test)"
+msgstr "Une image virtuelle Ubuntu 10.4 incluant ZOO est disponible sur http://www.zoo-project.org/Ubuntu10.4_ZOO.zip (root: ZOO.test)"
 
 #: ../../kernel/install-debian.txt:18
 msgid "Ubuntu 12.04 dependencies"
-msgstr ""
+msgstr "Dépendances Ubuntu 12.04"
 
 #: ../../kernel/install-debian.txt:20
 msgid "install default dependencies"
-msgstr ""
+msgstr "installez les dépendances par défaut"
 
 #: ../../kernel/install-debian.txt:26
 msgid "add ubuntugis repository to obtain the newer GIS libraries"
-msgstr ""
+msgstr "ajoutez le dépôt ubuntugis pour obtenir les bibliothèques SIG les plus récentes"
 
 #: ../../kernel/install-debian.txt:34
 msgid "install geographic library"
-msgstr ""
+msgstr "installez une bibliothèque géographique"
 
 #: ../../kernel/install-debian.txt:40
 msgid "download ZOO  source"
-msgstr ""
+msgstr "téléchargez les sources de ZOO"
 
 #: ../../kernel/install-debian.txt:43
 msgid "Debian 7.0 dependencies"
-msgstr ""
+msgstr "Dépendances Debian 7.0"
 
 #: ../../kernel/install-debian.txt:45
 msgid "install dependencies"
-msgstr ""
+msgstr "installez les dépendances"
 
 #: ../../kernel/install-debian.txt:53
 msgid "Installation Workflow"
-msgstr ""
+msgstr "Workflow d'installation"
 
 #: ../../kernel/install-debian.txt:55
-msgid ""
-"In the following lines you will find ``as administrator user`` note, on "
-"Ubuntu you have to add ``sudo`` at the beginning of line, on Debian you can "
-"use ``su -c COMMAND``)"
-msgstr ""
+msgid "In the following lines you will find ``as administrator user`` note, on Ubuntu you have to add ``sudo`` at the beginning of line, on Debian you can use ``su -c COMMAND``)"
+msgstr "Dans les lignes suivantes, vous trouverez une note ``en tant qu'utilisateur administrateur``. Sur Ubuntu, vous devrez ajouter ``sudo`` au début de la ligne, sur Debian, vous pouvez utiliser  ``su -c COMMAND``)"
 
 #: ../../kernel/install-debian.txt:63
 msgid "install cgic from packages"
-msgstr ""
+msgstr "installez cgic depuis les paquets"
 
-#: ../../kernel/install-debian.txt:69 ../../kernel/install-debian.txt:99
+#: ../../kernel/install-debian.txt:69
+#: ../../kernel/install-debian.txt:99
 msgid "compile"
-msgstr ""
+msgstr "compilez"
 
 #: ../../kernel/install-debian.txt:75
-msgid ""
-"if you want use Mapserver (optional) for WMS, WFS and WCS output read "
-":ref:`mapserver`"
-msgstr ""
+msgid "if you want use Mapserver (optional) for WMS, WFS and WCS output read :ref:`mapserver`"
+msgstr "Si vous voulez utiliser Mapserver (optionnel) pour des sorties WMS, WFS et WCS, lisez :ref:`mapserver`"
 
 #: ../../kernel/install-debian.txt:77
 msgid "go to kernel path"
-msgstr ""
+msgstr "allez au chemin du kernel"
 
 #: ../../kernel/install-debian.txt:83
 msgid "create configure file"
-msgstr ""
+msgstr "créez le fichier configure"
 
 #: ../../kernel/install-debian.txt:89
 msgid "run configure"
-msgstr ""
+msgstr "lancez configure"
 
 #: ../../kernel/install-debian.txt:95
-msgid ""
-"For PHP, you must make sure to compile PHP with `--enable-embed <http://www"
-".zoo-"
-"project.org/trac/wiki/ZooKernel/Embed/PHP#ConfigureandInstallPHPEmbedlibrary>`__."
-msgstr ""
+msgid "For PHP, you must make sure to compile PHP with `--enable-embed <http://www.zoo-project.org/trac/wiki/ZooKernel/Embed/PHP#ConfigureandInstallPHPEmbedlibrary>`__."
+msgstr "Pour PHP, vous devez vous assurer d'avoir compilé PHP avec `--enable-embed <http://www.zoo-project.org/trac/wiki/ZooKernel/Embed/PHP#ConfigureandInstallPHPEmbedlibrary>`__."
 
 #: ../../kernel/install-debian.txt:97
-msgid ""
-"To use MapServer add the option ``--with-"
-"mapserver=/path/to/mapserver/source``"
-msgstr ""
+msgid "To use MapServer add the option ``--with-mapserver=/path/to/mapserver/source``"
+msgstr "Pour utiliser MapServer, ajoutez l'option ``--with-mapserver=/path/to/mapserver/source``"
 
 #: ../../kernel/install-debian.txt:105
 msgid "copy necessary files into your cgi-bin (as administrator user)"
-msgstr ""
+msgstr "copiez les fichiers nécessaires dans votre cgi-bin (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:113
-msgid ""
-"install ZOO ServiceProvider, in this case we try Python service (as "
-"administrator user)"
-msgstr ""
+msgid "install ZOO ServiceProvider, in this case we try Python service (as administrator user)"
+msgstr "installez le ServiceProvider ZOO, dans ce cas, nous essayons le service Python (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:120
 msgid "change some information in the main.cfg (as administrator user)"
-msgstr ""
+msgstr "changez quelques informations dans le main.cfg (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:128
 msgid "try the installation"
-msgstr ""
+msgstr "essayer l'installation"
 
 #: ../../kernel/install-debian.txt:130
-msgid ""
-"http://127.0.0.1/cgi-"
-"bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=GetCapabilities&Version=1.0.0"
-msgstr ""
+msgid "http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=GetCapabilities&Version=1.0.0"
+msgstr "http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=GetCapabilities&Version=1.0.0"
 
 #: ../../kernel/install-debian.txt:131
-msgid ""
-"http://127.0.0.1/cgi-"
-"bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
-msgstr ""
+msgid "http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
+msgstr "http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
 
 #: ../../kernel/install-debian.txt:132
-msgid ""
-"http://127.0.0.1/cgi-"
-"bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
-msgstr ""
+msgid "http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
+msgstr "http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&metapath=&Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
 
 #: ../../kernel/install-debian.txt:135
-msgid ""
-"If you have some problem in the execute request using Python service, add "
-"the following to ``main.cfg``:"
-msgstr ""
+msgid "If you have some problem in the execute request using Python service, add the following to ``main.cfg``:"
+msgstr "Si vous avez des problèmes dans la requête execute utilisant le service Python, ajoutez ce qui suit à ``main.cfg``:"
 
 #: ../../kernel/install-debian.txt:144
 msgid "Rewrite rule configuration"
-msgstr ""
+msgstr "Réécrire la configuration des règles"
 
 #: ../../kernel/install-debian.txt:146
-msgid ""
-"for better readability and fully functional ZOO Kernel, you have to modify "
-"the default Apache configuration in order to be able to use the "
-"http://localhost/zoo/ url directly. Run (as administrator user)"
-msgstr ""
+msgid "for better readability and fully functional ZOO Kernel, you have to modify the default Apache configuration in order to be able to use the http://localhost/zoo/ url directly. Run (as administrator user)"
+msgstr "pour une meilleure lisibilité et un Kernel ZOO pleinement fonctionnel, vous devez modifier la configuration par défaut de Apache afin d'être capable d'utiliser l'url http://localhost/zoo/ directement. Lancez (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:155
-msgid ""
-"first, please create a ``zoo`` directory in ``/var/www/`` which is used by "
-"Apache as the DocumentRoot (as administrator user)"
-msgstr ""
+msgid "first, please create a ``zoo`` directory in ``/var/www/`` which is used by Apache as the DocumentRoot (as administrator user)"
+msgstr "d'abord, merci de créer un répertoire ``zoo`` dans ``/var/www/`` qui est utilisé par Apache en  tant que DocumentRoot (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:162
-msgid ""
-"Then, please edit the ``/etc/apache2/sites-available/default`` configuration"
-" file and add the following lines after the Directory block related to "
-"/var/www directory (as administrator user)"
-msgstr ""
+msgid "Then, please edit the ``/etc/apache2/sites-available/default`` configuration file and add the following lines after the Directory block related to /var/www directory (as administrator user)"
+msgstr "Ensuite, merci d'éditer le fichier de configuration ``/etc/apache2/sites-available/default`` et d'ajouter les lignes suivantes après le bloc Directory relatif au répertoire /var/www directory (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:174
-msgid ""
-"now create a small .htaccess file in the ``/var/www/zoo`` containing the "
-"following lines (as administrator user)"
-msgstr ""
+msgid "now create a small .htaccess file in the ``/var/www/zoo`` containing the following lines (as administrator user)"
+msgstr "maintenant, créez  un petit fichier .htaccess dans le ``/var/www/zoo`` contenant les lignes suivantes (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:184
-msgid ""
-"for this last file to be taken into account by Apache, you must activate the"
-" rewrite Apache module by copying a load file as bellow (as administrator "
-"user)"
-msgstr ""
+msgid "for this last file to be taken into account by Apache, you must activate the rewrite Apache module by copying a load file as bellow (as administrator user)"
+msgstr "pour que le dernier fichier soit pris en compte par Apache, vous devez activer le module Apache de réécriture en copiant un fichier de chargement comme ci-dessous (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:191
 msgid "or using the a2enmod tool this way (as administrator user)"
-msgstr ""
+msgstr "ou en utilisant l'outil a2enmod de cette manière (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:197
-msgid ""
-"now you should be able to access the ZOO Kernel using a simplified by "
-"restarting your Apache Web server (as administrator user)"
-msgstr ""
+msgid "now you should be able to access the ZOO Kernel using a simplified by restarting your Apache Web server (as administrator user)"
+msgstr "maintenant, vous devriez être capable d'accéder au Kernel ZOO utilisant un script simplifié en redémarrant votre serveur Web Apache (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:201
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../kernel/install-debian.txt:201
 msgid "/etc/init.d/apache2 restart"
-msgstr ""
+msgstr "/etc/init.d/apache2 restart"
 
 #: ../../kernel/install-debian.txt:203
 msgid "now you can try:"
-msgstr ""
+msgstr "maintenant vous pouvez essayer:"
 
 #: ../../kernel/install-debian.txt:205
-msgid ""
-"http://localhost/zoo/?Service=WPS&Request=GetCapabilities&Version=1.0.0"
-msgstr ""
+msgid "http://localhost/zoo/?Service=WPS&Request=GetCapabilities&Version=1.0.0"
+msgstr "http://localhost/zoo/?Service=WPS&Request=GetCapabilities&Version=1.0.0"
 
 #: ../../kernel/install-debian.txt:206
-msgid ""
-"http://localhost/zoo/?Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
-msgstr ""
+msgid "http://localhost/zoo/?Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
+msgstr "http://localhost/zoo/?Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy"
 
 #: ../../kernel/install-debian.txt:207
-msgid ""
-"http://localhost/zoo/?Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
-msgstr ""
+msgid "http://localhost/zoo/?Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
+msgstr "http://localhost/zoo/?Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=myname"
 
 #: ../../kernel/install-debian.txt:212
 msgid "Compile MapServer"
-msgstr ""
+msgstr "Compiler MapServer"
 
 #: ../../kernel/install-debian.txt:214
 msgid "install MapServer dependencies (as administrator user)"
-msgstr ""
+msgstr "installez les dépendances MapServer (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:220
 msgid "extract MapServer from git repository"
-msgstr ""
+msgstr "extrayez MapServer depuis le dépôt git"
 
 #: ../../kernel/install-debian.txt:229
 msgid "now compile MapServer"
-msgstr ""
+msgstr "maintenant compilez MapServer"
 
 #: ../../kernel/install-debian.txt:236
 msgid "now install MapServer (as administrator user)"
-msgstr ""
+msgstr "maintenant installez MapServer (en tant qu'utilisateur administrateur)"
 
 #: ../../kernel/install-debian.txt:242
 msgid "now add path to libraries path (as administrator user)"
-msgstr ""
+msgstr "maintenant, ajoutez le chemin au chemin des bibliothèques (en tant qu'administrateur)"
 
 #: ../../kernel/install-debian.txt:249
 msgid "run as administrator"
-msgstr ""
+msgstr "lancez en tant qu'administrateur"
+
