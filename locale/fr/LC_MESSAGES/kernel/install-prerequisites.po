@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-24 20:10+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,125 +14,109 @@ msgstr ""
 #: ../../kernel/install-prerequisites.txt:4
 #: ../../kernel/install-prerequisites.txt:35
 msgid "Prerequisites"
-msgstr ""
+msgstr "Prérequis"
 
 #: ../../kernel/install-prerequisites.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
 
 #: ../../kernel/install-prerequisites.txt:7
 msgid "$Date: 2013-03-28 10:26:04 +0100 (Thu, 28 Mar 2013) $"
-msgstr ""
+msgstr "$Date: 2013-03-28 10:26:04 +0100 (Thu, 28 Mar 2013) $"
 
 #: ../../kernel/install-prerequisites.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../kernel/install-prerequisites.txt:14
 msgid "Obtaining the ZOO Kernel Source"
-msgstr ""
+msgstr "Obtenir les sources du Kernel ZOO"
 
 #: ../../kernel/install-prerequisites.txt:18
-msgid ""
-"Use the following command to get the ZOO Kernel source code through "
-"Subversion:"
-msgstr ""
+msgid "Use the following command to get the ZOO Kernel source code through Subversion:"
+msgstr "Utilisez la commande suivante pour obtenir le code source du Kernel ZOO via Subversion:"
 
 #: ../../kernel/install-prerequisites.txt:24
 msgid "For users which get a developer account, use the following:"
-msgstr ""
+msgstr "Pour les utilisateurs qui ont un compte développeur, utilisez ce qui suit:"
 
 #: ../../kernel/install-prerequisites.txt:31
-msgid ""
-"The first line of the instruction above defines a specific tunnel to access "
-"the svn server through the SSH protocol. Indeed, the ZOO SVN server listens "
-"on the 1046 (1024+22) port rather than the default one (22)."
-msgstr ""
+msgid "The first line of the instruction above defines a specific tunnel to access the svn server through the SSH protocol. Indeed, the ZOO SVN server listens on the 1046 (1024+22) port rather than the default one (22)."
+msgstr "La première line d'instruction ci-dessus définit un tunnel spécifique pour accéder au serveur svn via le protocole SSH. En effet, le serveur SVN ZOO écoute sur le port 1046 (1024+22) plutôt que sur celui par défaut (22)."
 
 #: ../../kernel/install-prerequisites.txt:37
-msgid ""
-"The following libraries are required on your system before you can install "
-"the ZOO Kernel:"
-msgstr ""
+msgid "The following libraries are required on your system before you can install the ZOO Kernel:"
+msgstr "Les bibliothèques suivantes sont requises sur votre système avant que pouviez installer le Kernel ZOO:"
 
 #: ../../kernel/install-prerequisites.txt:39
 msgid "autoconf (  http://www.gnu.org/software/autoconf/ )"
-msgstr ""
+msgstr "autoconf (  http://www.gnu.org/software/autoconf/ )"
 
 #: ../../kernel/install-prerequisites.txt:40
 msgid "cgic (  http://www.boutell.com/cgic )"
-msgstr ""
+msgstr "cgic (  http://www.boutell.com/cgic )"
 
 #: ../../kernel/install-prerequisites.txt:41
 msgid "cURL (  http://curl.haxx.se )"
-msgstr ""
+msgstr "cURL (  http://curl.haxx.se )"
 
 #: ../../kernel/install-prerequisites.txt:42
 msgid "FastCGI (  http://www.fastcgi.com )"
-msgstr ""
+msgstr "FastCGI (  http://www.fastcgi.com )"
 
 #: ../../kernel/install-prerequisites.txt:43
-msgid ""
-"Flex & Bison (  http://flex.sourceforge.net/  "
-"http://www.gnu.org/software/bison/ )"
-msgstr ""
+msgid "Flex & Bison (  http://flex.sourceforge.net/  http://www.gnu.org/software/bison/ )"
+msgstr "Flex & Bison (  http://flex.sourceforge.net/  http://www.gnu.org/software/bison/ )"
 
 #: ../../kernel/install-prerequisites.txt:44
 msgid "libxml2 (  http://xmlsoft.org )"
-msgstr ""
+msgstr "libxml2 (  http://xmlsoft.org )"
 
 #: ../../kernel/install-prerequisites.txt:45
 msgid "OpenSSL (  http://www.openssl.org )"
-msgstr ""
+msgstr "OpenSSL (  http://www.openssl.org )"
 
 #: ../../kernel/install-prerequisites.txt:46
 msgid "Python (  http://www.python.org )"
-msgstr ""
+msgstr "Python (  http://www.python.org )"
 
 #: ../../kernel/install-prerequisites.txt:48
 msgid "Optional libraries include:"
-msgstr ""
+msgstr "Les bibliothèques optionnelles recouvrent:"
 
 #: ../../kernel/install-prerequisites.txt:50
-msgid ""
-"MapServer (optional for WMS, WFS and WCS output) ( http://mapserver.org )"
-msgstr ""
+msgid "MapServer (optional for WMS, WFS and WCS output) ( http://mapserver.org )"
+msgstr "MapServer (optionnel pour les sorties WMS, WFS et WCS) ( http://mapserver.org )"
 
 #: ../../kernel/install-prerequisites.txt:51
 msgid "PHP Embedded (optional) (  http://www.php.net )"
-msgstr ""
+msgstr "PHP encapsulé (optionnel) (  http://www.php.net )"
 
 #: ../../kernel/install-prerequisites.txt:52
 msgid "Java SDK (optional) (  http://java.sun.com )"
-msgstr ""
+msgstr "SDK Java (optionnel) (  http://java.sun.com )"
 
 #: ../../kernel/install-prerequisites.txt:53
 msgid "SpiderMonkey (optional) (  http://www.mozilla.org/js/spidermonkey/ )"
-msgstr ""
+msgstr "SpiderMonkey (optionnel) (  http://www.mozilla.org/js/spidermonkey/ )"
 
 #: ../../kernel/install-prerequisites.txt:56
 msgid "Compile libcgic"
-msgstr ""
+msgstr "Compiler libcgic"
 
 #: ../../kernel/install-prerequisites.txt:58
-msgid ""
-"The first step is to compile libcgic from the ``zoo-project/thirds`` "
-"directory. For such a task, please use the following command:"
-msgstr ""
+msgid "The first step is to compile libcgic from the ``zoo-project/thirds`` directory. For such a task, please use the following command:"
+msgstr "La première étape est de compiler libcgic depuis le répertoire ``zoo-project/thirds``. Pour cette tâche, merci d'utiliser la commande suivante:"
 
 #: ../../kernel/install-prerequisites.txt:66
-msgid ""
-"Make sure that a ``libcgic.a`` is created in your ``zoo-"
-"project/thirds/cgic206`` directory. If yes, then you can go to the next "
-"step."
-msgstr ""
+msgid "Make sure that a ``libcgic.a`` is created in your ``zoo-project/thirds/cgic206`` directory. If yes, then you can go to the next step."
+msgstr "Assurez-vous que ``libcgic.a`` est créé dans votre répertoire ``zoo-project/thirds/cgic206``. Si oui, alors vous pouvez passer à l'étape suivante."
 
 #: ../../kernel/install-prerequisites.txt:69
 msgid "On Windows, rather than using the make command, please use:"
-msgstr ""
+msgstr "Sous Windows, plutôt que d'utiliser la commande make, merci d'utiliser:"
 
 #: ../../kernel/install-prerequisites.txt:76
-msgid ""
-"If you don't compile libcgic first, and try to compile the ZOO Kernel, you "
-"will get an error such as *cannot find -lcgic*"
-msgstr ""
+msgid "If you don't compile libcgic first, and try to compile the ZOO Kernel, you will get an error such as *cannot find -lcgic*"
+msgstr "Si vous ne compilez pas libcgic en premier et essayez de compiler le Kernel ZOO, vous aurez une erreur du type *cannot find -lcgic*"
+
