@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-25 14:37+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,150 +13,144 @@ msgstr ""
 
 #: ../../kernel/introduction.txt:4
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../kernel/introduction.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
 
 #: ../../kernel/introduction.txt:7
 msgid "$Date: 2011-12-07 14:19:47 +0100 (Wed, 07 Dec 2011) $"
-msgstr ""
+msgstr "$Date: 2011-12-07 14:19:47 +0100 (Wed, 07 Dec 2011) $"
 
 #: ../../kernel/introduction.txt:9
-msgid ""
-"ZOO Kernel is the heart of the ZOO. It is a powerful server-side C Kernel "
-"which makes it possible to manage and chain Web services, by loading dynamic"
-" libraries and handling them as on-demand Web services. The ZOO Kernel is "
-"written in the C language, but supports several common programming languages"
-" in order to connect to numerous libraries and models."
-msgstr ""
+msgid "ZOO Kernel is the heart of the ZOO. It is a powerful server-side C Kernel which makes it possible to manage and chain Web services, by loading dynamic libraries and handling them as on-demand Web services. The ZOO Kernel is written in the C language, but supports several common programming languages in order to connect to numerous libraries and models."
+msgstr "Le Kernel ZOO est le coeur de ZOO. C'est un puissant noyau en C côté serveur qui donne la possibilité de gérer et chaîner des services Web, en chargeant des bibliothèques dynamiques et en les gérant comme des services Web à la demande. Le Kernel ZOO Kernel est écrit en langage C, mais il supporte plusieurs langages de programmation courants afin de pouvoir connecter de nombreuses bibliothèques et modèles."
 
 #: ../../kernel/introduction.txt:15
 msgid "Using ZOO Kernel as a Web Processing Platform"
-msgstr ""
+msgstr "Utiliser le Kernel ZOO comme une plateforme de traitement web (Web Processing Platform ou WPS)"
 
 #: ../../kernel/introduction.txt:17
-msgid ""
-"ZOO Kernel works with Apache and can communicate with cartographic engines "
-"and Web mapping clients. It simply adds the WPS support to your spatial data"
-" infrastructure and your Web mapping application!"
-msgstr ""
+msgid "ZOO Kernel works with Apache and can communicate with cartographic engines and Web mapping clients. It simply adds the WPS support to your spatial data infrastructure and your Web mapping application!"
+msgstr "Le Kernel ZOO fonctionne avec Apache et peut communiquer avec des moteurs cartographiques et des clients de cartographie Web. Il ajoute simplement le support du WPS à votre infrastructure de données spatiales et à votre application de cartographie en ligne!"
 
 #: ../../kernel/introduction.txt:22
-msgid ""
-"If you'd like some background on the WPS standard, head to: "
-"http://www.opengeospatial.org/standards/wps"
-msgstr ""
+msgid "If you'd like some background on the WPS standard, head to: http://www.opengeospatial.org/standards/wps"
+msgstr "If ySi vous souhaitez des renseignements génréaux sur le standard WPS, allez à: http://www.opengeospatial.org/standards/wps"
 
 #: ../../kernel/introduction.txt:25
 msgid "Supported Languages"
-msgstr ""
+msgstr "Langages supportés"
 
 #: ../../kernel/introduction.txt:27
-msgid ""
-"ZOO Kernel supports the following programming languages, and let's you use "
-"them to create new ZOO Services from new or existing code:"
-msgstr ""
+msgid "ZOO Kernel supports the following programming languages, and let's you use them to create new ZOO Services from new or existing code:"
+msgstr "Le Kernel ZOO supporte les langages de programmation suivants, et vous laisse les utiliser pour créer des nouveaux services ZOO depuis du nouveau code ou du code existant:"
 
 #: ../../kernel/introduction.txt:31
 msgid "**Language**"
-msgstr ""
+msgstr "**Langage**"
 
 #: ../../kernel/introduction.txt:31
 msgid "**ServiceProvider**"
-msgstr ""
+msgstr "**ServiceProvider**"
 
 #: ../../kernel/introduction.txt:31
 msgid "**DataStructure**"
-msgstr ""
+msgstr "**Structure de données**"
 
 #: ../../kernel/introduction.txt:31
 msgid "**Return**"
-msgstr ""
+msgstr "**Retourne**"
 
 #: ../../kernel/introduction.txt:33
 msgid "C / C++"
-msgstr ""
+msgstr "C / C++"
 
-#: ../../kernel/introduction.txt:33 ../../kernel/introduction.txt:34
+#: ../../kernel/introduction.txt:33
+#: ../../kernel/introduction.txt:34
 msgid "Shared Library"
-msgstr ""
+msgstr "Biliothèque partagée"
 
 #: ../../kernel/introduction.txt:33
 msgid "maps* M"
-msgstr ""
+msgstr "maps* M"
 
-#: ../../kernel/introduction.txt:33 ../../kernel/introduction.txt:34
-#: ../../kernel/introduction.txt:35 ../../kernel/introduction.txt:36
-#: ../../kernel/introduction.txt:37 ../../kernel/introduction.txt:38
+#: ../../kernel/introduction.txt:33
+#: ../../kernel/introduction.txt:34
+#: ../../kernel/introduction.txt:35
+#: ../../kernel/introduction.txt:36
+#: ../../kernel/introduction.txt:37
+#: ../../kernel/introduction.txt:38
 msgid "integer"
-msgstr ""
+msgstr "integer"
 
 #: ../../kernel/introduction.txt:34
 msgid "Fortran"
-msgstr ""
+msgstr "Fortran"
 
 #: ../../kernel/introduction.txt:34
 msgid "CHARACTER*(1024) M(10,30)"
-msgstr ""
+msgstr "CHARACTER*(1024) M(10,30)"
 
 #: ../../kernel/introduction.txt:35
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: ../../kernel/introduction.txt:35
 msgid "Class File"
-msgstr ""
+msgstr "Fichier de classe"
 
 #: ../../kernel/introduction.txt:35
 msgid "`HashMap`_"
-msgstr ""
+msgstr "`HashMap`_"
 
 #: ../../kernel/introduction.txt:36
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../kernel/introduction.txt:36
 msgid "Module File"
-msgstr ""
+msgstr "Fichier de module"
 
 #: ../../kernel/introduction.txt:36
 msgid "`dictionary`_"
-msgstr ""
+msgstr "`dictionnaire <dictionary_>`_"
 
 #: ../../kernel/introduction.txt:37
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
-#: ../../kernel/introduction.txt:37 ../../kernel/introduction.txt:38
+#: ../../kernel/introduction.txt:37
+#: ../../kernel/introduction.txt:38
 msgid "Script File"
-msgstr ""
+msgstr "Fichier de script"
 
 #: ../../kernel/introduction.txt:37
 msgid "`Array`_"
-msgstr ""
+msgstr "`Array`_"
 
 #: ../../kernel/introduction.txt:38
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #: ../../kernel/introduction.txt:39
 msgid "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: ../../kernel/introduction.txt:39
 msgid "Script file"
-msgstr ""
+msgstr "Fichier de script"
 
 #: ../../kernel/introduction.txt:39
 msgid "`Object`_ or Array"
-msgstr ""
+msgstr "`Object`_ ou Array"
 
 #: ../../kernel/introduction.txt:39
 msgid "Array/Object"
-msgstr ""
+msgstr "Array/Object"
 
 #: ../../kernel/introduction.txt:48
 msgid "ZOO Kernel is a WPS Espresso Machine"
-msgstr ""
+msgstr "Le Kernel ZOO est une machine à café WPS"
+
