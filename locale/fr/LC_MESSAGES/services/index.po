@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: 2014-01-25 23:23+0100\n"
+"PO-Revision-Date: 2014-01-26 03:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,5 +17,5 @@ msgstr "Documentation de services ZOO"
 
 #: ../../services/index.txt:6
 msgid "The following sections will assist you with ZOO Services:"
-msgstr "Les sections suivantes vous assisterons avec les services ZOO:"
+msgstr "Les sections suivantes vous assisteront avec les services ZOO:"
 
