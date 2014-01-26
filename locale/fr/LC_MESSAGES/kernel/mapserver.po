@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-26 02:49+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,342 +13,233 @@ msgstr ""
 
 #: ../../kernel/mapserver.txt:4
 msgid "How To Use the Internal MapServer W*S support"
-msgstr ""
+msgstr "Comment utiliser le support W*S MapServer interne"
 
 #: ../../kernel/mapserver.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
 
 #: ../../kernel/mapserver.txt:7
 msgid "$Date$"
-msgstr ""
+msgstr "$Date$"
 
 #: ../../kernel/mapserver.txt:9
-msgid ""
-"The key idea of the MapServer W*S support implementation is that it doesn't "
-"require to change a single line of the service source code to activate the "
-"automatic publication of your result as WMS/WFS or WCS ressource. You simply"
-" need to modify the ``zcfg`` file corresponding to your service to make it "
-"working."
-msgstr ""
+msgid "The key idea of the MapServer W*S support implementation is that it doesn't require to change a single line of the service source code to activate the automatic publication of your result as WMS/WFS or WCS ressource. You simply need to modify the ``zcfg`` file corresponding to your service to make it working."
+msgstr "L'idée clé de l'implémentation du support W*S MapServer est qu'elle ne nécessite pas de changer une seule ligne du code source du service pour activer la publication automatique de votre résultat en tant que ressource WMS/WFS ou WCS. Vous avez simplement besoin de modifier le fichier ``zcfg`` correspondant à votre service pour le faire fonctionner."
 
 #: ../../kernel/mapserver.txt:15
-msgid ""
-"Here is an overview of the way to install the MapServer W*S support, the "
-"configuration required and the internal mechanisms."
-msgstr ""
+msgid "Here is an overview of the way to install the MapServer W*S support, the configuration required and the internal mechanisms."
+msgstr "Vous trouverez ici un aperçu de la manière d' installer le support W*S MapServer, la configuration requise et les mécanismes internes."
 
 #: ../../kernel/mapserver.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../kernel/mapserver.txt:23
 msgid "How to make it working ?"
-msgstr ""
+msgstr "Comment le faire fonctionner ?"
 
 #: ../../kernel/mapserver.txt:26
 msgid "Requirement"
-msgstr ""
+msgstr "Prérequis"
 
 #: ../../kernel/mapserver.txt:28
 msgid "last ZOO-Kernel trunk version"
-msgstr ""
+msgstr "version trunk du dernier ZOO-Kernel"
 
 #: ../../kernel/mapserver.txt:29
 msgid "MapServer version >= 6.0.1"
-msgstr ""
+msgstr "Version de MapServer >= 6.0.1"
 
 #: ../../kernel/mapserver.txt:32
 msgid "Installation steps"
-msgstr ""
+msgstr "Etapes d'installation"
 
 #: ../../kernel/mapserver.txt:34
-msgid ""
-"First download lastest zoo-kernel directory available on the svn, do that "
-"from the directory of your previous checkout (so where zoo-api, zoo-services"
-" and zoo-kernel directories are available), we will use ``<PREV_SVN_CO>`` "
-"here for this directory:"
-msgstr ""
+msgid "First download lastest zoo-kernel directory available on the svn, do that from the directory of your previous checkout (so where zoo-api, zoo-services and zoo-kernel directories are available), we will use ``<PREV_SVN_CO>`` here for this directory:"
+msgstr "En premier, téléchargez le dernier répertoire zoo-kernel disponible sur le svn. Faites ça depuis le répertoire de votre précédent checkout (où les répertoires zoo-api, zoo-services et zoo-kernel sont disponibles), nous utiliserons ``<PREV_SVN_CO>`` ici pour ce répertoire:"
 
 #: ../../kernel/mapserver.txt:41
-msgid ""
-"Uncompress the MapServer archive (ie. ``mapserver-6.0.1.tar.bz2``) into "
-"``/tmp/zoo-ms-src``, then compile MapServer using the following command:"
-msgstr ""
+msgid "Uncompress the MapServer archive (ie. ``mapserver-6.0.1.tar.bz2``) into ``/tmp/zoo-ms-src``, then compile MapServer using the following command:"
+msgstr "Décompressez l'archive MapServer (c'est à dire ``mapserver-6.0.1.tar.bz2``) dans ``/tmp/zoo-ms-src``, puis compilez MapServer en utilisant la commande suivante:"
 
 #: ../../kernel/mapserver.txt:53
-msgid ""
-"Autotools was updated to add the ``--with-mapserver`` configure option. From"
-" your ZOO-Project SVN trunk directory, compile the ZOO-Kernel using the "
-"following command:"
-msgstr ""
+msgid "Autotools was updated to add the ``--with-mapserver`` configure option. From your ZOO-Project SVN trunk directory, compile the ZOO-Kernel using the following command:"
+msgstr "Autotools a été mis à jour pour ajouter l'option configure ``--with-mapserver``. Depuis le répertoire trunk SVN de votre ZOO-Project, compilez le ZOO-Kernel en utilisant la commande suivante:"
 
 #: ../../kernel/mapserver.txt:64
 msgid "Configuration steps"
-msgstr ""
+msgstr "Etapes de configuration"
 
 #: ../../kernel/mapserver.txt:67
 msgid "Main configuration file"
-msgstr ""
+msgstr "Fichier de configuration principal"
 
 #: ../../kernel/mapserver.txt:70
 msgid "Add the following content to your ``/usr/lib/cgi-bin/main.cfg`` file"
-msgstr ""
+msgstr "Ajoutez le contenu suivant à votre fichier ``/usr/lib/cgi-bin/main.cfg``"
 
 #: ../../kernel/mapserver.txt:70
 msgid "in the ``[main]`` section:"
-msgstr ""
+msgstr "dans la section ``[main]``:"
 
 #: ../../kernel/mapserver.txt:77
-msgid ""
-"The ``dataPath`` directory should exists and be writable by apache user. In "
-"this directory, a ``symbols.sym`` file have to be present, containing the "
-"following:"
-msgstr ""
+msgid "The ``dataPath`` directory should exists and be writable by apache user. In this directory, a ``symbols.sym`` file have to be present, containing the following:"
+msgstr "Le répertoire ``dataPath`` doit exister et être disponible en écriture pour l'utilisateur apache. Dans ce répertoire, un fichier ``symbols.sym`` doit être présent, contenant ce qui suit:"
 
 #: ../../kernel/mapserver.txt:92
-msgid ""
-"Only one symbol definition is required with any name, used for WMS service "
-"output."
-msgstr ""
+msgid "Only one symbol definition is required with any name, used for WMS service output."
+msgstr "Une seule définition de symbole est requise avec n'importe quel nom, utilisé pour la sortie du service WMS."
 
 #: ../../kernel/mapserver.txt:94
-msgid ""
-"Now, your ZOO-Kernel get the MapServer support ready to be used. Note that "
-"if you don't add the ``mapserverAddress`` then it imply the ZOO-Kernel will "
-"segfault (checking ``NULL`` value should correct this behavior)."
-msgstr ""
+msgid "Now, your ZOO-Kernel get the MapServer support ready to be used. Note that if you don't add the ``mapserverAddress`` then it imply the ZOO-Kernel will segfault (checking ``NULL`` value should correct this behavior)."
+msgstr "Maintenant, votre ZOO-Kernel a le support de MapServer prêt à être utilisé. Notez que si vous n'ajoutez pas ``mapserverAddress`` alors cela impliquera une erreur de segmentation du ZOO-Kernel (la vérification de la valeur ``NULL`` devrait corriger ce comportement)."
 
 #: ../../kernel/mapserver.txt:96
-msgid ""
-"Here you can optionally add a ``msOgcVersion`` parameter to specify which "
-"version of the OGC WebService you want to use for each services. For "
-"example, if you want to force to version 1.0.0, you can set the following in"
-" the ``[main]`` section of your ``main.cfg`` file:"
-msgstr ""
+msgid "Here you can optionally add a ``msOgcVersion`` parameter to specify which version of the OGC WebService you want to use for each services. For example, if you want to force to version 1.0.0, you can set the following in the ``[main]`` section of your ``main.cfg`` file:"
+msgstr "Ici vous pouvez optionnellement ajouter un paramètre ``msOgcVersion`` pour spécifier quelle version du WebService OGC vous voulez utiliser pour chaque service. Par exemple, si vous voulez forcer la version 1.0.0, vous pouvez définir ce qui suit dans la section ``[main]`` de votre fichier ``main.cfg``:"
 
 #: ../../kernel/mapserver.txt:103
 msgid "Service configuration file"
-msgstr ""
+msgstr "Fichier de configuration de service"
 
 #: ../../kernel/mapserver.txt:105
-msgid ""
-"To activate MapServer WebServices output for a service, you have to add a "
-"specific parameter in the ``<Default>`` or ``<Supported>`` block: "
-"``useMapserver``. This can take the value true or should not appear. If "
-"true, it means that the output result is an OGR / GDAL compatible datasource"
-" and you want it to be outputted as an OGC web server instance "
-"(WMS/WFS/WCS)."
-msgstr ""
+msgid "To activate MapServer WebServices output for a service, you have to add a specific parameter in the ``<Default>`` or ``<Supported>`` block: ``useMapserver``. This can take the value true or should not appear. If true, it means that the output result is an OGR / GDAL compatible datasource and you want it to be outputted as an OGC web server instance (WMS/WFS/WCS)."
+msgstr "Pour activer les sorties des WebServices MapServer pour un service, vous devez ajouter un paramètre spécifique dans le bloc ``<Default>`` ou ``<Supported>``: ``useMapserver``. Cela peut prendre la valeur true ou ne doit pas apparaître. Si true, cela signifie que le résultat en sortie est un source de données compatible OGR / GDAL et que vous voulez qu'elle soit mise à disposition comme une instance de serveur web OGC (WMS/WFS/WCS)."
 
 #: ../../kernel/mapserver.txt:107
-msgid ""
-"You get an optional parameter, to use a custom MapServer style block (used "
-"for vector datasource only): msStyle. For example:"
-msgstr ""
+msgid "You get an optional parameter, to use a custom MapServer style block (used for vector datasource only): msStyle. For example:"
+msgstr "Vous obtenez un paramètre optionnel, pour utiliser un bloc de style MapServer personnalisé (utilisé pour les sources de données vecteur seulement): msStyle. Par exemple:"
 
 #: ../../kernel/mapserver.txt:113
-msgid ""
-"You get the same optional parameter ``msOgcVersion`` as for the "
-"``main.cfg``. This will specify that this is the specific protocol version "
-"the service want to use (so you may set also locally to service rather than "
-"globally)."
-msgstr ""
+msgid "You get the same optional parameter ``msOgcVersion`` as for the ``main.cfg``. This will specify that this is the specific protocol version the service want to use (so you may set also locally to service rather than globally)."
+msgstr "Vous avez le même paramètre optionnel ``msOgcVersion`` comme pour le ``main.cfg``. Il spécifiera que c'est la version du protocole spécifique que le service veut utiliser (ainsi, vous pourrez peut être aussi définir localement le service plutôt que globalement)."
 
 #: ../../kernel/mapserver.txt:115
-msgid ""
-"When you add useMapserver option to an output ``<Default>`` or "
-"``<Supported>`` block, then you have to know what are the sensible mimeType:"
-msgstr ""
+msgid "When you add useMapserver option to an output ``<Default>`` or ``<Supported>`` block, then you have to know what are the sensible mimeType:"
+msgstr "Quand vous ajoutez l'option useMapserver à un bloc de sortie ``<Default>`` ou ``<Supported>``, alors vous devez savoir quels sont les mimeType sensibles:"
 
 #: ../../kernel/mapserver.txt:117
-msgid ""
-"text/xml: will imply that the output data will be accessible through a WFS "
-"GetFeature request (default protocol version 1.1.0)"
-msgstr ""
+msgid "text/xml: will imply that the output data will be accessible through a WFS GetFeature request (default protocol version 1.1.0)"
+msgstr "text/xml: implique que la donnée en sortie sera accessible via une requête GetFeature WFS (le protocole par défaut est la version 1.1.0)"
 
 #: ../../kernel/mapserver.txt:118
-msgid ""
-"image/tiff: will imply that the output data will be accessible through a WCS"
-" GetCoverage request (default protocol version 2.0.0)"
-msgstr ""
+msgid "image/tiff: will imply that the output data will be accessible through a WCS GetCoverage request (default protocol version 2.0.0)"
+msgstr "image/tiff: implique que la donnée en sortie sera accessible via une requête GetCoverage WCS (le protocole par défaut est la version 2.0.0)"
 
 #: ../../kernel/mapserver.txt:119
-msgid ""
-"any other mimeType coupled with useMapserver option: will imply that the "
-"output data will be accessible trhough a WMS GetMap request (you have to "
-"limit yourself to what your MapServer installation support, GetCapabilities?"
-" request give information of supported output mimeType) (default protocol "
-"version 1.3.0)"
-msgstr ""
+msgid "any other mimeType coupled with useMapserver option: will imply that the output data will be accessible trhough a WMS GetMap request (you have to limit yourself to what your MapServer installation support, GetCapabilities? request give information of supported output mimeType) (default protocol version 1.3.0)"
+msgstr "n'importe quel autre type de mimeType couplé avec l'option useMapserver: implique que la donnée en sortie sera accessible via une requête GetMap WMS (vous avez à vous limiter à ce que votre installation MapServer supporte, un requête GetCapabilities renvoie l'information sur les mimeType supportés en sortie) (le protocole par défaut est la version 1.3.0)"
 
 #: ../../kernel/mapserver.txt:122
 msgid "How does it work ?"
-msgstr ""
+msgstr "Comment cela fonctionne-t-il ?"
 
 #: ../../kernel/mapserver.txt:124
-msgid ""
-"Whatever your service return as default output ``mimeType``, this one will "
-"be used when one output including the ``useMapserver`` option was found."
-msgstr ""
+msgid "Whatever your service return as default output ``mimeType``, this one will be used when one output including the ``useMapserver`` option was found."
+msgstr "Quoi que votre service retourne comme sortie ``mimeType`` par défaut, celui-ci sera utilisé quand une sortie incluant l'option ``useMapserver`` a été trouvée."
 
 #: ../../kernel/mapserver.txt:126
-msgid ""
-"So if you get the following ``<Default>`` and ``<Supported>`` blocks in the "
-"ZOO Configuration File of your service:"
-msgstr ""
+msgid "So if you get the following ``<Default>`` and ``<Supported>`` blocks in the ZOO Configuration File of your service:"
+msgstr "Ainsi si vous avez les blocs suivants ``<Default>`` et ``<Supported>`` dans le fichier de configuration ZOO de votre service:"
 
 #: ../../kernel/mapserver.txt:140
-msgid ""
-"It means that per default, your service return GML 3.1 Feature. When the "
-"client request for ``mimeType=image/png``, then the ZOO-Kernel will detect "
-"that this ``mimeType`` get the ``useMapServer`` option set to true so it "
-"will:"
-msgstr ""
+msgid "It means that per default, your service return GML 3.1 Feature. When the client request for ``mimeType=image/png``, then the ZOO-Kernel will detect that this ``mimeType`` get the ``useMapServer`` option set to true so it will:"
+msgstr "Cela signifie que par défaut, votre service retourne des objets GML 3.1. Quand le client demande un ``mimeType=image/png``, alors le ZOO-Kernel détectera que ce ``mimeType`` a l'option ``useMapServer`` définie à true, ainsi il:"
 
 #: ../../kernel/mapserver.txt:142
-msgid ""
-"execute the service using the ``<Default>`` block definition (this should be"
-" understandable by GDAL/OGR)"
-msgstr ""
+msgid "execute the service using the ``<Default>`` block definition (this should be understandable by GDAL/OGR)"
+msgstr "exécutera le service utilisant la définition du bloc ``<Default>`` (cela doit être compréhensible pour GDAL/OGR)"
 
 #: ../../kernel/mapserver.txt:144
-msgid ""
-"store the result of the service on disk (in the ``[main]`` > ``dataPath`` "
-"directory)"
-msgstr ""
+msgid "store the result of the service on disk (in the ``[main]`` > ``dataPath`` directory)"
+msgstr "stockera le résultat du service sur le disque (dans  ``[main]`` > répertoire ``dataPath``)"
 
 #: ../../kernel/mapserver.txt:146
-msgid ""
-"write a Mapfile (in the ``[main]`` > ``dataPath`` directory) using the "
-"MapServer C-API to setup both WMS and WFS services."
-msgstr ""
+msgid "write a Mapfile (in the ``[main]`` > ``dataPath`` directory) using the MapServer C-API to setup both WMS and WFS services."
+msgstr "écrira un Mapfile (dans le ``[main]`` > répertoire ``dataPath``) utilisant API C de MapServer pour configurer à la fois les services WMS et WFS."
 
 #: ../../kernel/mapserver.txt:148
-msgid ""
-"even if you don't ask for this, the resulting Mapfile includes both "
-"configuration for WMS and WFS in case of Vector datasource."
-msgstr ""
+msgid "even if you don't ask for this, the resulting Mapfile includes both configuration for WMS and WFS in case of Vector datasource."
+msgstr "même si vous ne demandez pas cela, le Mapfile résultant inclue à la fois la configuration pour le WMS et le WFS dans le cas des sources de données vecteur."
 
 #: ../../kernel/mapserver.txt:150
-msgid ""
-"If your service output a raster file, then the behavior is quite the same "
-"except that the ZOO-Kernel will setup both WMS and WCS services for the "
-"result of the service. Here you cannot define your own style. Nevertheless, "
-"when one band raster is returned then the ZOO-Kernel can use its own default"
-" style definitions to classify the raster using equivalent intervals (you "
-"can easily see that in the outputed Mapfile), this classification is "
-"specific to WMS protocol. You should add a ``msClassify`` parameter and set "
-"it to ``true`` in your output ComplexData ``<Default>`` or ``<Supported>`` "
-"node to activate this classification. Special note for client implementers"
-msgstr ""
+msgid "If your service output a raster file, then the behavior is quite the same except that the ZOO-Kernel will setup both WMS and WCS services for the result of the service. Here you cannot define your own style. Nevertheless, when one band raster is returned then the ZOO-Kernel can use its own default style definitions to classify the raster using equivalent intervals (you can easily see that in the outputed Mapfile), this classification is specific to WMS protocol. You should add a ``msClassify`` parameter and set it to ``true`` in your output ComplexData ``<Default>`` or ``<Supported>`` node to activate this classification. Special note for client implementers"
+msgstr "Si votre sortie de service renvoie un fichier raster, alors le comportement est assez similaire excepté que le ZOO-Kernel configurera à la fois les services WMS et WCS pour le résultat du service. Ici vous ne pouvez définir votre propre style. Cependant, quand une bande raster est retournée alors le  ZOO-Kernel peut utiliser ses propres définitions par défaut pour classifier le raster en utilisant des intervalles équivalents (vous pouvez facilement voir cela dans le Mapfile produit), cette classification est spécifique au protocole WMS. Vous devriez ajouter un paramètre ``msClassify`` et le définir à ``true`` dans votre noeud ComplexData de sortie ``<Default>`` ou ``<Supported>`` pour activer cette classification. Note spéciale  pour les implémentations clientes"
 
 #: ../../kernel/mapserver.txt:153
-msgid ""
-"Note that depending on the request, the ZOO-Kernel can return a location "
-"header."
-msgstr ""
+msgid "Note that depending on the request, the ZOO-Kernel can return a location header."
+msgstr "Notez qu'en fonction de la requête, le ZOO-Kernel peut retourner un en-tête d'emplacement."
 
 #: ../../kernel/mapserver.txt:155
 msgid "Differente request types:"
-msgstr ""
+msgstr "Différents types de requêtes:"
 
 #: ../../kernel/mapserver.txt:157
-msgid ""
-"ResponseDocument=XXXX@asReference=true - in this case, the Kernel will "
-"return the GetMap/GetFeature/GetCoverage request in KVP in the href of the "
-"result."
-msgstr ""
+msgid "ResponseDocument=XXXX@asReference=true - in this case, the Kernel will return the GetMap/GetFeature/GetCoverage request in KVP in the href of the result."
+msgstr "ResponseDocument=XXXX@asReference=true - dans ce cas, le Kernel retournera la requête GetMap/GetFeature/GetCoverage sous forme KVP dans le href du résultat."
 
 #: ../../kernel/mapserver.txt:158
-msgid ""
-"ResponseDocument=XXXX@asReference=false - in this case, the Kernel will "
-"return the result he get using the GetMap/GetFeature/GetCoverage request in "
-"KVP used for the href in previous case."
-msgstr ""
+msgid "ResponseDocument=XXXX@asReference=false - in this case, the Kernel will return the result he get using the GetMap/GetFeature/GetCoverage request in KVP used for the href in previous case."
+msgstr "ResponseDocument=XXXX@asReference=false - dans ce cas, le Kernel retournera le résultat qu'il obtiendra en utilisant la requête GetMap/GetFeature/GetCoverage sous forme KVP utilisée pour le href dans le cas précédent."
 
 #: ../../kernel/mapserver.txt:159
-msgid ""
-"RawDataOutput=XXXX@asReference=true/false - in this case, the Kernel will "
-"return the GetMap/GetFeature/GetCoverage request in KVP in the specific "
-"location header, which imply that the browser should follow and request "
-"MapServer directly."
-msgstr ""
+msgid "RawDataOutput=XXXX@asReference=true/false - in this case, the Kernel will return the GetMap/GetFeature/GetCoverage request in KVP in the specific location header, which imply that the browser should follow and request MapServer directly."
+msgstr "RawDataOutput=XXXX@asReference=true/false - dans ce cas, le Kernel retournera la requête GetMap/GetFeature/GetCoverage sous forme KVP dans l'en-tête d'emplacement spécifique, qui implique que le navigateur doive suivre et interroger MapServer directement."
 
 #: ../../kernel/mapserver.txt:162
 msgid "Simple sample use cases"
-msgstr ""
+msgstr "Cas d'utilisations exemples simples"
 
 #: ../../kernel/mapserver.txt:164
-msgid ""
-"Consider the existing BufferPy service from zoo-services/ogr-base-vect-ops-"
-"py. Set the following content to your local BufferPy.zcfg file in the Result"
-" output definition, then copy it to /usr/lib/cgi-bin/:"
-msgstr ""
+msgid "Consider the existing BufferPy service from zoo-services/ogr-base-vect-ops-py. Set the following content to your local BufferPy.zcfg file in the Result output definition, then copy it to /usr/lib/cgi-bin/:"
+msgstr "Considérez le service existant BufferPy de zoo-services/ogr-base-vect-ops-py. Définissez le contenu suivant vers votre fichier BufferPy.zcfg local  dans la définition de sortie Result, ensuite copiez-le dans /usr/lib/cgi-bin/:"
 
 #: ../../kernel/mapserver.txt:193
-msgid ""
-"This modifications make your service ready to return result as WMS GetMap or"
-" WFS GetFeature requests. Note that some bug occurs locally using the "
-"application/vnd.google-earth.kmz output. Raster"
-msgstr ""
+msgid "This modifications make your service ready to return result as WMS GetMap or WFS GetFeature requests. Note that some bug occurs locally using the application/vnd.google-earth.kmz output. Raster"
+msgstr "Ces modifications rendent votre service prêt pour retourner les résultats comme requêtes GetMap WMS ou GetFeature WFS. Notez que certains bugs ont lieu localement en utilisant la sortie application/vnd.google-earth.kmz."
 
 #: ../../kernel/mapserver.txt:196
-msgid ""
-"Using the following simple service code we get a service capable to output "
-"any kind of internet files (useful for testing this functionality):"
-msgstr ""
+msgid "Using the following simple service code we get a service capable to output any kind of internet files (useful for testing this functionality):"
+msgstr "En utilisant le code de service simple suivant, nous obtenons un service capable de produire en sortie n'importe quel type de fichiers internet (utile pour tester cette fonctionnalité):"
 
 #: ../../kernel/mapserver.txt:205
-msgid ""
-"Define the ``[Result]`` output in your ``HelloPy.zcfg`` file with the "
-"following ComplexData block content:"
-msgstr ""
+msgid "Define the ``[Result]`` output in your ``HelloPy.zcfg`` file with the following ComplexData block content:"
+msgstr "Définissez la sortie ``[Result]`` dans votre fichier ``HelloPy.zcfg`` avec le contenu du bloc ComplexData suivant:"
 
 #: ../../kernel/mapserver.txt:222
-msgid ""
-"It means that the default output ``mimeType`` is ``image/png``, so a WMS "
-"GetMap request will be returned, or the resulting ``image/tiff`` will be "
-"returned as WCS GetCoverage request."
-msgstr ""
+msgid "It means that the default output ``mimeType`` is ``image/png``, so a WMS GetMap request will be returned, or the resulting ``image/tiff`` will be returned as WCS GetCoverage request."
+msgstr "Cela signifie que ``mimeType`` en sortie par défaut est ``image/png``, ainsi une requête GetMap WMS sera retournée, ou l'``image/tiff`` résultante sera retournée comme une requête GetCoverage WCS."
 
 #: ../../kernel/mapserver.txt:224
-msgid ""
-"With this simple service you can test the new capabilities to output result "
-"as WebServices for each mimeTypes. Note, that you'll probably get wrong "
-"``mimeType``, as the default was set to ``image/png``."
-msgstr ""
+msgid "With this simple service you can test the new capabilities to output result as WebServices for each mimeTypes. Note, that you'll probably get wrong ``mimeType``, as the default was set to ``image/png``."
+msgstr "Avec ce simple service, vous pouvez tester les nouvelles capacités à produire un résultat comme un WebServices pour chacun des mimeTypes. Notez, que que vous aurez probablement un ``mimeType`` faux, comme celui par défaut a été défini à ``image/png``."
 
 #: ../../kernel/mapserver.txt:226
-msgid ""
-"There is a support for Zipped ShapeFile but I doubt it is really useful. "
-"Anyway, as it is present you can test it easily by passing a zip file in "
-"``xlink:href`` for the ``a`` value of the ``HelloPy`` service."
-msgstr ""
+msgid "There is a support for Zipped ShapeFile but I doubt it is really useful. Anyway, as it is present you can test it easily by passing a zip file in ``xlink:href`` for the ``a`` value of the ``HelloPy`` service."
+msgstr "Il y a un support pour les ShapeFiles zippés mais je doute qu'il soit vraiment utile. De toute façon, comme il est présent vous pouvez le tester facilement en passant un fichier zip dans ``xlink:href`` pour la valeur ``a`` du service ``HelloPy``."
 
 #: ../../kernel/mapserver.txt:232
 msgid "Testings"
-msgstr ""
+msgstr "Essais"
 
 #: ../../kernel/mapserver.txt:234
-msgid ""
-"Using the simple ``HelloPy`` service code, you can use the following urls, "
-"note it supposes that you get an available http://localhost/data/data.zip "
-"file containing a ShapeFile and a http://localhost/data/demo.tif:"
-msgstr ""
+msgid "Using the simple ``HelloPy`` service code, you can use the following urls, note it supposes that you get an available http://localhost/data/data.zip file containing a ShapeFile and a http://localhost/data/demo.tif:"
+msgstr "En utilisant le code de service ``HelloPy`` simple, vous pouvez utiliser les urls suivantes, notez que cela suppose que vous ayez un fichier http://localhost/data/data.zip disponible contenant un ShapeFile et un http://localhost/data/demo.tif:"
 
 #: ../../kernel/mapserver.txt:237
 msgid "Test 1: Accessing a remote Zipped Shapefile as WFS GetFeatures Request"
-msgstr ""
+msgstr "Test 1: Accéder à un Shapefile distant zippé en tant que requête GetFeatures WFS"
 
 #: ../../kernel/mapserver.txt:244
 msgid "Test 2: Accessing a remote Zipped Shapefile as WMS GetMap Request"
-msgstr ""
+msgstr "Test 2: Accéder à un Shapefile distant zippé en tant que requête GetMap WMS"
 
 #: ../../kernel/mapserver.txt:251
 msgid "Test 3: Accessing a remote tiff as WMS GetMap Request:"
-msgstr ""
+msgstr "Test 3: Accéder à un tiff distant en tant que requête GetMap WMS:"
 
 #: ../../kernel/mapserver.txt:258
 msgid "Test 4: Accessing a remote tiff as WCS GetMap Request:"
-msgstr ""
+msgstr "Test 4: Accéder à un tiff distant en tant que requête GetMap WCS:"
+
