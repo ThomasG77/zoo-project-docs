@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: 2014-01-27 03:32+0100\n"
+"PO-Revision-Date: 2014-01-27 03:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "$Date: 2013-03-28 12:51:45 +0100 (Thu, 28 Mar 2013) $"
 
 #: ../../services/howtos.txt:9
 msgid "ZOO Services are quite easy to create once you have installed the ZOO Kernel and have chosen code (in the language of your choice) to turn into a ZOO service. Here are some HelloWorlds in Python, PHP, Java  and JavaScript with links to their corresponding ``.zcfg`` files."
-msgstr "Les services ZOO sont très faciles à créer une fois que vous avez installé le Kernel ZOO et avez choisi le code (dans le langage de votre choix) à transformer pour produire un service de ZOO. Essayez avec cette orthographe : Here are some HelloWorlds in Python, PHP, Java and JavaScript with links to their corresponding ``.z cfg`` files.Voici quelques HelloWorld en Python, PHP, Java et JavaScript avec les liens vers leurs fichiers ``.zcfg`` correspondants."
+msgstr "Les services ZOO sont très faciles à créer une fois que vous avez installé le Kernel ZOO et avez choisi le code (dans le langage de votre choix) à transformer pour produire un service ZOO. Voici quelques HelloWorld en Python, PHP, Java et JavaScript avec les liens vers leurs fichiers ``.zcfg`` correspondants."
 
 #: ../../services/howtos.txt:0
 msgid "Table of Contents"
