@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-27 03:32+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,212 +13,177 @@ msgstr ""
 
 #: ../../services/howtos.txt:4
 msgid "How To Setup ZOO Services"
-msgstr ""
+msgstr "Comment configurer des services ZOO"
 
 #: ../../services/howtos.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi"
 
 #: ../../services/howtos.txt:7
 msgid "$Date: 2013-03-28 12:51:45 +0100 (Thu, 28 Mar 2013) $"
-msgstr ""
+msgstr "$Date: 2013-03-28 12:51:45 +0100 (Thu, 28 Mar 2013) $"
 
 #: ../../services/howtos.txt:9
-msgid ""
-"ZOO Services are quite easy to create once you have installed the ZOO Kernel"
-" and have chosen code (in the language of your choice) to turn into a ZOO "
-"service. Here are some HelloWorlds in Python, PHP, Java  and JavaScript with"
-" links to their corresponding ``.zcfg`` files."
-msgstr ""
+msgid "ZOO Services are quite easy to create once you have installed the ZOO Kernel and have chosen code (in the language of your choice) to turn into a ZOO service. Here are some HelloWorlds in Python, PHP, Java  and JavaScript with links to their corresponding ``.zcfg`` files."
+msgstr "Les services ZOO sont très faciles à créer une fois que vous avez installé le Kernel ZOO et avez choisi le code (dans le langage de votre choix) à transformer pour produire un service de ZOO. Essayez avec cette orthographe : Here are some HelloWorlds in Python, PHP, Java and JavaScript with links to their corresponding ``.z cfg`` files.Voici quelques HelloWorld en Python, PHP, Java et JavaScript avec les liens vers leurs fichiers ``.zcfg`` correspondants."
 
 #: ../../services/howtos.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../services/howtos.txt:19
 msgid "Common informations"
-msgstr ""
+msgstr "Informations communes"
 
 #: ../../services/howtos.txt:21
-msgid ""
-"The function of the process for each programming language take three "
-"arguments: the main configuration, inputs and outputs."
-msgstr ""
+msgid "The function of the process for each programming language take three arguments: the main configuration, inputs and outputs."
+msgstr "La fonction du traitement pour chaque langage de programmation prend trois arguments: la configuration principale, les entrées et sorties."
 
 #: ../../services/howtos.txt:24
-msgid ""
-"The service has to **return 3 if the process run successfully instead it "
-"return 4** if the process end with an error."
-msgstr ""
+msgid "The service has to **return 3 if the process run successfully instead it return 4** if the process end with an error."
+msgstr "Le service doit **retourner 3 si le traitement se passe avec succès et sinon il retourne 4** si le traitement se termine avec une erreur."
 
-#: ../../services/howtos.txt:28 ../../services/howtos.txt:43
+#: ../../services/howtos.txt:28
+#: ../../services/howtos.txt:43
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../services/howtos.txt:30
-msgid ""
-"You'll find here information needed to deploy your own Python Services "
-"Provider."
-msgstr ""
+msgid "You'll find here information needed to deploy your own Python Services Provider."
+msgstr "Vous trouverez ici les informations nécessaires pour déployer votre propre fournisseur de services Python."
 
 #: ../../services/howtos.txt:33
 msgid "Python ZCFG requirements"
-msgstr ""
+msgstr "Prérquis ZCFG Python"
 
 #: ../../services/howtos.txt:35
-msgid ""
-"For each Service provided by your ZOO Python Services Provider, the ZCFG "
-"File must be named the same as the Python module function name (also the "
-"case of characters is important)."
-msgstr ""
+msgid "For each Service provided by your ZOO Python Services Provider, the ZCFG File must be named the same as the Python module function name (also the case of characters is important)."
+msgstr "Pour chaque service fourni par votre fournisseur de services ZOO Python, le fichier ZCFG doit être nommé avec le même nom que celui de la fonction Python (la casse des caractères est importante également)."
 
-#: ../../services/howtos.txt:39 ../../services/howtos.txt:201
+#: ../../services/howtos.txt:39
+#: ../../services/howtos.txt:201
 msgid "The ZCFG file should contain the following :"
-msgstr ""
+msgstr "Le fichier ZCFG devrait contenir ce qui suit :"
 
-#: ../../services/howtos.txt:42 ../../services/howtos.txt:203
+#: ../../services/howtos.txt:42
+#: ../../services/howtos.txt:203
 msgid "serviceType"
-msgstr ""
+msgstr "serviceType"
 
-#: ../../services/howtos.txt:47 ../../services/howtos.txt:209
+#: ../../services/howtos.txt:47
+#: ../../services/howtos.txt:209
 msgid "serviceProvider"
-msgstr ""
+msgstr "serviceProvider"
 
 #: ../../services/howtos.txt:45
-msgid ""
-"The name of the Python module to use as a ZOO Service Provider. For "
-"instance, if your script, located in the same directory as your ZOO Kernel, "
-"was named ``my_module.py`` then you should use ``my_module`` (the Python "
-"module name) for the serviceProvider value in ZCFG file."
-msgstr ""
+msgid "The name of the Python module to use as a ZOO Service Provider. For instance, if your script, located in the same directory as your ZOO Kernel, was named ``my_module.py`` then you should use ``my_module`` (the Python module name) for the serviceProvider value in ZCFG file."
+msgstr "Le nom du module Python à utiliser comme un fournisseur de services ZOO. Par exemple, si votre script, situé dans le même répertoire que votre ZOO Kernel, a été nommé ``my_module.py`` alors vous devriez utiliser ``my_module`` (le nom du module Python) pour la valeur de serviceProvider dans le fichier ZCFG."
 
 #: ../../services/howtos.txt:50
 msgid "Python Data Structure used"
-msgstr ""
+msgstr "Structure de données Python utilisée"
 
 #: ../../services/howtos.txt:51
-msgid ""
-"The three parameters of the function are passed to the Python module as "
-"dictionaries."
-msgstr ""
+msgid "The three parameters of the function are passed to the Python module as dictionaries."
+msgstr "Les trois paramètres de la fonction sont passés au module Python en tant que dictionnaires."
 
 #: ../../services/howtos.txt:53
 msgid "Following you'll find an example for each parameters"
-msgstr ""
+msgstr "Après, vous trouverez un exemple pour chacun des paramètres"
 
 #: ../../services/howtos.txt:56
 msgid "Main configuration"
-msgstr ""
+msgstr "Configuration principale"
 
 #: ../../services/howtos.txt:57
-msgid ""
-"Main configuration contains several informations, some of them are really "
-"useful to develop your service. Following an example ::"
-msgstr ""
+msgid "Main configuration contains several informations, some of them are really useful to develop your service. Following an example ::"
+msgstr "La configuration principale contient plusieurs informations, certaines d'entre elles sont vraiment utiles pour développer votre service. A la suite par exemple ::"
 
 #: ../../services/howtos.txt:101
 msgid "Inputs"
-msgstr ""
+msgstr "Entrées"
 
 #: ../../services/howtos.txt:102
 msgid "The inputs are somethings like this ::"
-msgstr ""
+msgstr "Les entrées sont quelque chose comme ça ::"
 
 #: ../../services/howtos.txt:113
-msgid ""
-"The access to the value you have to require for the ``value`` parameter, "
-"something like this ::"
-msgstr ""
+msgid "The access to the value you have to require for the ``value`` parameter, something like this ::"
+msgstr "L'accès à la valeur que vous avez à demander pour le paramètre ``value``, doit ressembler à quelque chose comme ceci ::"
 
 #: ../../services/howtos.txt:118
 msgid "Outputs"
-msgstr ""
+msgstr "Sorties"
 
 #: ../../services/howtos.txt:119
 msgid "The outputs data as a structure really similar to the inputs one ::"
-msgstr ""
+msgstr "La donnée de sorties a une structure très similaire à celle en entrée ::"
 
 #: ../../services/howtos.txt:127
 msgid "There is no ``'value'`` parameter before you assign it ::"
-msgstr ""
+msgstr "Il n'y a pas de paramètre ``'value'`` avant que vous ne l'assignez ::"
 
 #: ../../services/howtos.txt:131
-msgid ""
-"The return statement has to be an integer: corresponding to the service "
-"status code."
-msgstr ""
+msgid "The return statement has to be an integer: corresponding to the service status code."
+msgstr "La déclaration de retour doit être un entier correspondant au code d'état de service."
 
 #: ../../services/howtos.txt:133
-msgid ""
-"To add a message for the wrong result you can add the massage to "
-"``conf[\"lenv\"][\"message\"]``, for example:"
-msgstr ""
+msgid "To add a message for the wrong result you can add the massage to ``conf[\"lenv\"][\"message\"]``, for example:"
+msgstr "Pour ajouter un message pour le mauvais résultat, vous pouvez ajouter le message ``conf[\"lenv\"][\"message\"]``, par exemple:"
 
 #: ../../services/howtos.txt:141
 msgid "Sample ZOO Python Services Provider"
-msgstr ""
+msgstr "Fournisseur de service Python ZOO exemple"
 
 #: ../../services/howtos.txt:143
-msgid ""
-"The following code represents a simple ZOO Python Services Provider which "
-"provides only one Service, the HelloPy one."
-msgstr ""
+msgid "The following code represents a simple ZOO Python Services Provider which provides only one Service, the HelloPy one."
+msgstr "Le code suivant représente un fournisseur de services Python ZOO simple qui fournit un seul service, celui de HelloPy."
 
 #: ../../services/howtos.txt:154
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: ../../services/howtos.txt:166
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: ../../services/howtos.txt:185
 msgid "Javascript"
-msgstr ""
+msgstr "Javascript"
 
 #: ../../services/howtos.txt:188
 msgid "ZOO API"
-msgstr ""
+msgstr "API ZOO"
 
 #: ../../services/howtos.txt:190
-msgid ""
-"If you need to use :ref:`ZOO API <api>` in your service, you have first to "
-"copy ``zoo-api.js`` and ``zoo-proj4js.js`` where your services are located "
-"(for example in Unix system probably in ``/usr/lib/cgi-bin/``"
-msgstr ""
+msgid "If you need to use :ref:`ZOO API <api>` in your service, you have first to copy ``zoo-api.js`` and ``zoo-proj4js.js`` where your services are located (for example in Unix system probably in ``/usr/lib/cgi-bin/``"
+msgstr "Si vous avez besoin d'utiliser :ref:`l'API ZOO <api>` dans votre service, vous devez d'abord copier ``zoo-api.js`` et ``zoo-proj4js.js`` où les vos services sont situés (par exemple dans un système Unix system probablement dans ``/usr/lib/cgi-bin/``)"
 
 #: ../../services/howtos.txt:195
 msgid "Javascript ZCFG requirements"
-msgstr ""
+msgstr "Prérquis ZCFG Javascript"
 
 #: ../../services/howtos.txt:197
-msgid ""
-"For each Service provided by your ZOO Javascript Services Provider, the ZCFG"
-" File must be named the same as the Javascript function name (also the case "
-"of characters is important)."
-msgstr ""
+msgid "For each Service provided by your ZOO Javascript Services Provider, the ZCFG File must be named the same as the Javascript function name (also the case of characters is important)."
+msgstr "Pour chaque service fourni par votre fournisseur de services ZOO Javascript, le fichier ZCFG doit être nommé avec le même nom que celui de la fonction Javascript (la casse des caractères est importante également)."
 
 #: ../../services/howtos.txt:204
 msgid "JS"
-msgstr ""
+msgstr "JS"
 
 #: ../../services/howtos.txt:206
-msgid ""
-"The name of the JavaScript file to use as a ZOO Service Provider. For "
-"instance, if your script, located in the same directory as your ZOO Kernel, "
-"was named ``my_module.js`` then you should use ``my_module.js``."
-msgstr ""
+msgid "The name of the JavaScript file to use as a ZOO Service Provider. For instance, if your script, located in the same directory as your ZOO Kernel, was named ``my_module.js`` then you should use ``my_module.js``."
+msgstr "Le nom du fichier JavaScript à utiliser comme fournisseur de services ZOO. Par exemple, si votre script, situé dans le même répertoire que votre ZOO Kernel, a été nommé ``my_module.js`` alors vous devriez utiliser ``my_module.js``."
 
 #: ../../services/howtos.txt:212
 msgid "Javascript Data Structure used"
-msgstr ""
+msgstr "Structure de données Javascript utilisée"
 
 #: ../../services/howtos.txt:214
-msgid ""
-"The three parameters of the function are passed to the JavaScript function "
-"as Object."
-msgstr ""
+msgid "The three parameters of the function are passed to the JavaScript function as Object."
+msgstr "Les trois paramètres de la fonction sont passés à la fonction JavaScript en tant qu'objet."
 
 #: ../../services/howtos.txt:217
 msgid "Sample ZOO Javascript Services Provider"
-msgstr ""
+msgstr "Fournisseur de service Javascript ZOO exemple"
+
