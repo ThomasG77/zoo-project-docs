@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-01-27 02:34+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,275 +13,213 @@ msgstr ""
 
 #: ../../services/zcfg-reference.txt:4
 msgid "ZCFG : the ZOO Service Configuration File"
-msgstr ""
+msgstr "ZCFG : le fichier de configuration de service ZOO"
 
 #: ../../services/zcfg-reference.txt:6
 msgid "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
-msgstr ""
+msgstr "Nicolas Bozon, Gérald Fenoy, Jeff McKenna"
 
 #: ../../services/zcfg-reference.txt:7
 msgid "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
-msgstr ""
+msgstr "$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $"
 
 #: ../../services/zcfg-reference.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../services/zcfg-reference.txt:13
-msgid ""
-"The ZOO Service configuration file (.zcfg) describes the service and will be"
-" parsed by the ZOO Kernel. We will describe here what such a file contains. "
-"You can also take a look at the existing examples of ZCFG files in the "
-"``cgi-env`` directory of each services available in the `ZOO-Project SVN "
-"source tree <http://zoo-project.org/trac/browser/trunk/zoo-services>`__."
-msgstr ""
+msgid "The ZOO Service configuration file (.zcfg) describes the service and will be parsed by the ZOO Kernel. We will describe here what such a file contains. You can also take a look at the existing examples of ZCFG files in the ``cgi-env`` directory of each services available in the `ZOO-Project SVN source tree <http://zoo-project.org/trac/browser/trunk/zoo-services>`__."
+msgstr "Le fichier de configuration de service ZOO (.zcfg) deécrit le service et sera parsé par le Kernel ZOO. Nous décrirons ici ce qu'un tel fichier contient. Vous pouvez aussi jeter un oeil aux exemples existants de fichiers ZCFG dans le répertoire ``cgi-env`` de chaque service disponible dans `l'arborescence des sources SVN du projet ZOO <http://zoo-project.org/trac/browser/trunk/zoo-services>`__."
 
 #: ../../services/zcfg-reference.txt:18
 msgid "A ZOO Configuration file is divided into three distinct sections :"
-msgstr ""
+msgstr "Un fichier de configuration ZOO est divisé en trois sections distinctes :"
 
 #: ../../services/zcfg-reference.txt:20
 msgid "Main Metadata information"
-msgstr ""
+msgstr "Information de métadonnée principale"
 
 #: ../../services/zcfg-reference.txt:21
 msgid "List of Inputs metadata information"
-msgstr ""
+msgstr "Liste des Information de métadonnée en entrées "
 
 #: ../../services/zcfg-reference.txt:22
 msgid "List of Outputs metadata information"
-msgstr ""
+msgstr "Liste des Information de métadonnée en sorties"
 
 #: ../../services/zcfg-reference.txt:24
 msgid "The ZOO Service Configuration File is case sensitive."
-msgstr ""
+msgstr "Le fichier de configuration de service ZOO est sensible à la casse."
 
 #: ../../services/zcfg-reference.txt:27
 msgid "Main Metadata Information"
-msgstr ""
+msgstr "Information de métadonnée principale"
 
 #: ../../services/zcfg-reference.txt:29
-msgid ""
-"The fist part in a ZOO Configuration file contains the metadata information "
-"relative to the service. Note that the \"name of your service\" between "
-"brackets on the first line has to be the exact same name as the function you"
-" defined in your services provider code. In most cases, this name is also "
-"the name of the ZCFG file without the \"``.zcfg``\" extension."
-msgstr ""
+msgid "The fist part in a ZOO Configuration file contains the metadata information relative to the service. Note that the \"name of your service\" between brackets on the first line has to be the exact same name as the function you defined in your services provider code. In most cases, this name is also the name of the ZCFG file without the \"``.zcfg``\" extension."
+msgstr "La première partie d'un fichier de configuration ZOO contient l'information de métadonnée relative au service. Notez que le \"name of your service\" entre crochets sur la première ligne doit avoir un nom exactement le même  que celui de la fonction que vous avez défini dans votre code de fournisseur de services. Dans la plupart des cas, ce nom est aussi le nom du fichier ZCFG sans l'extension \"``.zcfg``\"."
 
 #: ../../services/zcfg-reference.txt:34
 msgid "You can see below a description of the main metadata information:"
-msgstr ""
+msgstr "Vous pouvez voir ci-dessous une description de l'information de métadonnée principale:"
 
 #: ../../services/zcfg-reference.txt:52
 msgid "List of Inputs"
-msgstr ""
+msgstr "Liste des entrées"
 
 #: ../../services/zcfg-reference.txt:54
-msgid ""
-"The list of inputs contains metadata information of each supported input, "
-"and they are grouped using a ``<DataInputs>`` node."
-msgstr ""
+msgid "The list of inputs contains metadata information of each supported input, and they are grouped using a ``<DataInputs>`` node."
+msgstr "La liste des entrées contient l'informations de métadonnée de chaque entrée supportée, et elles sont groupées en utilisant un noeud ``<DataInputs>``."
 
 #: ../../services/zcfg-reference.txt:56
 msgid "Each input is defined as :"
-msgstr ""
+msgstr "Chaque entrée est définie comme :"
 
 #: ../../services/zcfg-reference.txt:58
 msgid "a name (between brackets as for the name of the service before)"
-msgstr ""
+msgstr "un nom (entre crochets comme pour le nom du service avant)"
 
 #: ../../services/zcfg-reference.txt:59
-msgid ""
-"various medata properties (``Title``, ``Abstract``, ``minOccurs`` and "
-"``maxOccurs``)"
-msgstr ""
+msgid "various medata properties (``Title``, ``Abstract``, ``minOccurs`` and ``maxOccurs``)"
+msgstr "diverse propriétés de métadonnée (``Title``, ``Abstract``, ``minOccurs`` et ``maxOccurs``)"
 
 #: ../../services/zcfg-reference.txt:60
 msgid "a Type Of Data node (:ref:`description <typeDataNodes>`)"
-msgstr ""
+msgstr "un type de noeud de donnée (:ref:`description <typeDataNodes>`)"
 
 #: ../../services/zcfg-reference.txt:62
 msgid "A typical list of inputs (``<DataInputs>``) look like the following:"
-msgstr ""
+msgstr "Une liste d'entrées typique (``<DataInputs>``) ressemble à ce qui suit:"
 
 #: ../../services/zcfg-reference.txt:82
 msgid "you can add ``<MetaData>`` node as in the main metadata information."
-msgstr ""
+msgstr "vous pouvez ajouter un noeud ``<MetaData>`` comme dans l'information de métadonnée principale."
 
 #: ../../services/zcfg-reference.txt:85
 msgid "List of Outputs"
-msgstr ""
+msgstr "Liste des sorties"
 
 #: ../../services/zcfg-reference.txt:87
-msgid ""
-"The list of outputs is very similar to a list of inputs except it is "
-"specified as a ``<DataOutputs>`` node."
-msgstr ""
+msgid "The list of outputs is very similar to a list of inputs except it is specified as a ``<DataOutputs>`` node."
+msgstr "TLa liste des sorties est très similaire à un liste d'entrées exceptée qu'elle est spécifiée comme un noeud ``<DataOutputs>``."
 
 #: ../../services/zcfg-reference.txt:89
 msgid "A typical ``<DataOutputs>`` node looks like the following:"
-msgstr ""
+msgstr "Un noeud ``<DataOutputs>``typique ressemble à ce qui suit:"
 
 #: ../../services/zcfg-reference.txt:104
 msgid "Type Of Data Nodes"
-msgstr ""
+msgstr "Type de noeud de données"
 
 #: ../../services/zcfg-reference.txt:106
-msgid ""
-"In the beginning of this ZCFG introduction, we spoke about \"Type Of Data "
-"Nodes\" to describe the data type of inputs and outputs."
-msgstr ""
+msgid "In the beginning of this ZCFG introduction, we spoke about \"Type Of Data Nodes\" to describe the data type of inputs and outputs."
+msgstr "Au début de cette introduction sur les ZCFG, nous avons parlé du  \"Type de noeud de données\" pour décrire le type de données des entrées et des sorties."
 
 #: ../../services/zcfg-reference.txt:108
 msgid "You can define your data as:"
-msgstr ""
+msgstr "Vous pouvez définir votre donnée comme:"
 
 #: ../../services/zcfg-reference.txt:110
 msgid ":ref:`LiteralData <LiteralData>`"
-msgstr ""
+msgstr ":ref:`LiteralData <LiteralData>`"
 
 #: ../../services/zcfg-reference.txt:111
 msgid ":ref:`BoundingBoxData <BoundingBoxData>`"
-msgstr ""
+msgstr ":ref:`BoundingBoxData <BoundingBoxData>`"
 
 #: ../../services/zcfg-reference.txt:112
 msgid ":ref:`ComplexData <ComplexData>`"
-msgstr ""
+msgstr ":ref:`ComplexData <ComplexData>`"
 
 #: ../../services/zcfg-reference.txt:114
-msgid ""
-"Except for ``LiteralData``, each *Type Of Data* node must have at least one "
-"``<Default>`` and one ``<Supported>`` node. Even if one of those are empty, "
-"it **has to be present** with an opening and closing tag on two different "
-"lines. So, something like the following:"
-msgstr ""
+msgid "Except for ``LiteralData``, each *Type Of Data* node must have at least one ``<Default>`` and one ``<Supported>`` node. Even if one of those are empty, it **has to be present** with an opening and closing tag on two different lines. So, something like the following:"
+msgstr "Excepté pour ``LiteralData``, chaque noeud du *type de donnée* doit avoir au moins un noeud ``<Default>`` et un noeud ``<Supported>``. Même si l'un d'eux est vide, il **doit être présent** avec un tag ouvrant et fermant sur deux différentes lignes. Donc, quelque chose comme ce qui suit:"
 
 #: ../../services/zcfg-reference.txt:124
-msgid ""
-"Otherwise, ZOO-Kernel won't be able to parse your ZCFG and will fail to "
-"process requests."
-msgstr ""
+msgid "Otherwise, ZOO-Kernel won't be able to parse your ZCFG and will fail to process requests."
+msgstr "Autrement, le ZOO-Kernel ne sera pas capable de parser votre ZCFG et échouera à traiter les requêtes."
 
 #: ../../services/zcfg-reference.txt:129
 msgid "LiteralData node"
-msgstr ""
+msgstr "Noeud LiteralData"
 
 #: ../../services/zcfg-reference.txt:131
 msgid "A ``<LiteralData>`` node contains:"
-msgstr ""
+msgstr "Un noeud ``<LiteralData>`` contient:"
 
 #: ../../services/zcfg-reference.txt:133
 msgid "one ``<Default>`` node,"
-msgstr ""
+msgstr "une noeud ``<Default>``,"
 
 #: ../../services/zcfg-reference.txt:134
-msgid ""
-"zero or more ``<Supported>`` nodes depending on the existence or the number "
-"of supported Units Of Measure (UOM), and"
-msgstr ""
+msgid "zero or more ``<Supported>`` nodes depending on the existence or the number of supported Units Of Measure (UOM), and"
+msgstr "zéro noeud ``<Supported>`` ou plus en fonction de l'existence ou du nombre d'unités de mesures (UOM), et"
 
 #: ../../services/zcfg-reference.txt:135
-msgid ""
-"a ``dataType`` property. The ``dataType`` property defines the type of "
-"literal data, such as a string, an interger and so on (consult `the complete"
-" list <http://www.w3.org/TR/xmlschema-2/#built-in-datatypes>`__ of supported"
-" data types)."
-msgstr ""
+msgid "a ``dataType`` property. The ``dataType`` property defines the type of literal data, such as a string, an interger and so on (consult `the complete list <http://www.w3.org/TR/xmlschema-2/#built-in-datatypes>`__ of supported data types)."
+msgstr "de la propriété ``dataType``. La propriété ``dataType`` définit le type de la donnée litérale, comme une chaîne, un entier et ainsi de suite (consultez `la liste complète <http://www.w3.org/TR/xmlschema-2/#built-in-datatypes>`__ des types de données supportées)."
 
 #: ../../services/zcfg-reference.txt:138
-msgid ""
-"``<Default>`` and ``<Supported>`` nodes can contain the ``uom`` property to "
-"define which UOM has to be used for this input value."
-msgstr ""
+msgid "``<Default>`` and ``<Supported>`` nodes can contain the ``uom`` property to define which UOM has to be used for this input value."
+msgstr "Les noeuds ``<Default>`` et ``<Supported>`` peuvent contenir la propriété ``uom``pour définir quel UOM (Unité de mesure) doit être utilisée pour cette valeur en entrée."
 
 #: ../../services/zcfg-reference.txt:141
-msgid ""
-"For input ``<LiteralData>`` nodes, you can add the ``value`` property to the"
-" ``<Default>`` node to define a default value for this input. This means "
-"that, when your Service will be run, even if the input wasn't defined, this "
-"default value will be set as the current value for this input."
-msgstr ""
+msgid "For input ``<LiteralData>`` nodes, you can add the ``value`` property to the ``<Default>`` node to define a default value for this input. This means that, when your Service will be run, even if the input wasn't defined, this default value will be set as the current value for this input."
+msgstr "Pour des noeuds ``<LiteralData>`` en entrée, vous pouvez ajouter la propriété ``value`` au noeud ``<Default>`` pour définir une valeur par défaut pour cette entrée. Cela signifie que, quand votre service sera lancé, même si l'entrée n'a pas été définie, cette valeur par défaut sera définie comme la valeur courante pour cette entrée."
 
 #: ../../services/zcfg-reference.txt:145
-msgid ""
-"A typical ``<LiteralData>`` node, defining a ``float`` data type using "
-"meters or degrees for its UOM, looks like the following:"
-msgstr ""
+msgid "A typical ``<LiteralData>`` node, defining a ``float`` data type using meters or degrees for its UOM, looks like the following:"
+msgstr "Un noeud ``<LiteralData>`` typique, définissant un type de donnée ``float``en utilisant des mètres ou des degrés pour ses UOM, ressemble à ce qui suit:"
 
 #: ../../services/zcfg-reference.txt:164
 msgid "BoundingBoxData node"
-msgstr ""
+msgstr "Noeud BoundingBoxData"
 
 #: ../../services/zcfg-reference.txt:166
 msgid "A ``<BoundingBoxData>`` node contains:"
-msgstr ""
+msgstr "Un noeud ``<BoundingBoxData>`` contient:"
 
 #: ../../services/zcfg-reference.txt:168
-msgid ""
-"one ``<Default>`` node with a CRS property defining the default Coordinate "
-"Reference Systems (CRS), and"
-msgstr ""
+msgid "one ``<Default>`` node with a CRS property defining the default Coordinate Reference Systems (CRS), and"
+msgstr "un noeud ``<Default>`` avec une propriété CRS définissant le système de référence de coordonnées par défaut (CRS), et"
 
 #: ../../services/zcfg-reference.txt:169
-msgid ""
-"one or more ``<Supported>`` nodes depending on the number of CRS your "
-"service supports (note that you can alternatively use a single "
-"``<Supported>`` node with a comma-separated list of supported CRS)."
-msgstr ""
+msgid "one or more ``<Supported>`` nodes depending on the number of CRS your service supports (note that you can alternatively use a single ``<Supported>`` node with a comma-separated list of supported CRS)."
+msgstr "un noeud ``<Supported>`` ou plus en fonction du nombre de CRS que votre service supporte (notez que vous pouvez alternativement utiliser un seul noeud ``<Supported>`` avec une liste séparée par des virgules des CRS supportés)."
 
 #: ../../services/zcfg-reference.txt:172
-msgid ""
-"A typical ``<BoundingBoxData>`` node, for two supported CRS (`EPSG:4326 "
-"<http://www.epsg-"
-"registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::4326>`__"
-" and `EPSG:3785 <http://www.epsg-"
-"registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::3785>`__),"
-" looks like the following:"
-msgstr ""
+msgid "A typical ``<BoundingBoxData>`` node, for two supported CRS (`EPSG:4326 <http://www.epsg-registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::4326>`__ and `EPSG:3785 <http://www.epsg-registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::3785>`__), looks like the following:"
+msgstr "Un noeud ``<BoundingBoxData>`` typique, pour deux CRS supportés (`EPSG:4326 <http://www.epsg-registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::4326>`__ et `EPSG:3785 <http://www.epsg-registry.org/indicio/query?request=GetRepositoryItem&id=urn:ogc:def:crs:EPSG::3785>`__), ressemble à ce qui suit:"
 
 #: ../../services/zcfg-reference.txt:194
 msgid "ComplexData node"
-msgstr ""
+msgstr "Noeud ComplexData"
 
 #: ../../services/zcfg-reference.txt:196
 msgid "A ComplexData node contains:"
-msgstr ""
+msgstr "Un noeud ComplexData contient:"
 
 #: ../../services/zcfg-reference.txt:198
 msgid "a ``<Default>`` node and"
-msgstr ""
+msgstr "un noeud ``<Default>`` et"
 
 #: ../../services/zcfg-reference.txt:199
-msgid ""
-"one or more ``<Supported>`` nodes depending on the number of supported "
-"formats. A format is made up of this set of properties : ``mimeType``, "
-"``encoding`` and optionaly ``schema``."
-msgstr ""
+msgid "one or more ``<Supported>`` nodes depending on the number of supported formats. A format is made up of this set of properties : ``mimeType``, ``encoding`` and optionaly ``schema``."
+msgstr "un ou plusieurs noeuds ``<Supported>`` en fonction du nombre de formats supportés. Un format est Un format est constitué de ce jeu de propriétés: ``mimeType``, ``encoding`` et optionnellement ``schema``."
 
 #: ../../services/zcfg-reference.txt:202
-msgid ""
-"For output ComplexData nodes, you can add the ``extension`` property to "
-"define what extension to use to name the file when storing the result is "
-"required. Obviously, you'll have to add the ``extension`` property to each "
-"supported format (for the ``<Default>`` and ``<Supported>`` nodes)."
-msgstr ""
+msgid "For output ComplexData nodes, you can add the ``extension`` property to define what extension to use to name the file when storing the result is required. Obviously, you'll have to add the ``extension`` property to each supported format (for the ``<Default>`` and ``<Supported>`` nodes)."
+msgstr "Pour des noeuds ComplexData en sortie, vous pouvez ajouter la propriété ``extension`` pour définir quelle extension à utiliser pour nommer le fichier quand le stockage du résultat est requis. Evidemment, vous devrez ajouter la propriété ``extension`` à chacun des formats supportés (pour les noeuds ``<Default>`` et ``<Supported>``)."
 
 #: ../../services/zcfg-reference.txt:206
-msgid ""
-"You can also add the ``asReference`` property to the ``<Default>`` node to "
-"define if the output should be stored on server side per default."
-msgstr ""
+msgid "You can also add the ``asReference`` property to the ``<Default>`` node to define if the output should be stored on server side per default."
+msgstr "Vous pouvez aussi ajouter la propriété ``asReference`` au noeud ``<Default>`` pour définir si la sortie doit être stockée sur la partie serveur par défaut."
 
 #: ../../services/zcfg-reference.txt:209
-msgid ""
-"the client can always modify this behavior by setting ``asReference`` "
-"attribute to ``true`` or ``false`` for this output in the request "
-"``ResponseDocument`` parameter."
-msgstr ""
+msgid "the client can always modify this behavior by setting ``asReference`` attribute to ``true`` or ``false`` for this output in the request ``ResponseDocument`` parameter."
+msgstr "la client peut toujours modifier le comportement en configurant l'attribut ``asReference`` à ``true`` ou ``false`` pour cette sortie dans le paramètre ``ResponseDocument`` de la requête."
 
 #: ../../services/zcfg-reference.txt:212
-msgid ""
-"You can see below a sample ComplexData node for default ``application/json``"
-" and ``text/xml`` (encoded in UTF-8 or base64) mimeTypes support:"
-msgstr ""
+msgid "You can see below a sample ComplexData node for default ``application/json`` and ``text/xml`` (encoded in UTF-8 or base64) mimeTypes support:"
+msgstr "Vous pouvez voir ci-dessous un exemple de noeud ComplexData pour le support des mimeTypes par défaut ``application/json`` et ``text/xml`` (encodé en UTF-8 ou base64):"
+
