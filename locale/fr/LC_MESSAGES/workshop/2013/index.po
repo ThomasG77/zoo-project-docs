@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../workshop/2013/index.txt:5
 msgid "ZOO-Project: playing with building blocks to build pgRouting web application"
-msgstr ""
+msgstr "ZOO-Project: jouer avec des blocs de construction pour construire une application web pgRouting"
 
 #: ../../workshop/2013/index.txt:7
 msgid "Gérald Fenoy, Nicolas Bozon, Venkatesh Raghavan"
