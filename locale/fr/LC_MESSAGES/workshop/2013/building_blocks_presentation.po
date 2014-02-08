@@ -4,205 +4,134 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-02-08 22:58+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:5
-msgid ""
-"Building blocks presentation - Using OGR and PgRouting based Web Services"
-msgstr ""
+msgid "Building blocks presentation - Using OGR and PgRouting based Web Services"
+msgstr "Présentation des blocs de construction - Utiliser des Services Web basés sur OGR et PgRouting"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:12
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:14
-msgid ""
-"In this section, you will use basic ZOO-Services : ``Buffer``, "
-"``Intersection`` and ``DifferencePy`` which use OGR and psycopg Python "
-"modules. The intended goal of this section is to present and interact with "
-"your new building blocks before chaining them in the next section."
-msgstr ""
+msgid "In this section, you will use basic ZOO-Services : ``Buffer``, ``Intersection`` and ``DifferencePy`` which use OGR and psycopg Python modules. The intended goal of this section is to present and interact with your new building blocks before chaining them in the next section."
+msgstr "Dans cette section, vous allez utiliser des ZOO-Services basiques: ``Buffer``, ``Intersection`` et ``DifferencePy`` qui utilisent OGR et des modules psycopg Python. Le but visé de cette section est de présenter et d'interagir avec vos nouveaux blocs de construction avant de les chaîner dans la section suivante."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:18
-msgid ""
-"First of all, you should use the following links to access the user "
-"interfaces and interact with your services, the first one is used to access "
-"basic spatial-tools demo client interface and  the second to access the "
-"routing application :"
-msgstr ""
+msgid "First of all, you should use the following links to access the user interfaces and interact with your services, the first one is used to access basic spatial-tools demo client interface and  the second to access the routing application :"
+msgstr "Tout d'abord, vous devez utiliser les liens suivants pour accéder aux interfaces utilisateur et interagir avec vos services, le premier est utilisé pour accéder à l'interface cliente de démonstration avec outils spatiaux basiques et la seconde pour accéder à l'application de routage :"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:22
-msgid ""
-"`http://localhost/zoows2013-demo/spatialtools-py.html "
-"<http://localhost/zoows2013-demo/spatialtools-py.html>`__"
-msgstr ""
+msgid "`http://localhost/zoows2013-demo/spatialtools-py.html <http://localhost/zoows2013-demo/spatialtools-py.html>`__"
+msgstr "`http://localhost/zoows2013-demo/spatialtools-py.html <http://localhost/zoows2013-demo/spatialtools-py.html>`__"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:23
 msgid "`http://localhost/zoo-ws2013/ <http://localhost/zoo-ws2013/>`__"
-msgstr ""
+msgstr "`http://localhost/zoo-ws2013/ <http://localhost/zoo-ws2013/>`__"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:26
 msgid "Services Provider and configuration files"
-msgstr ""
+msgstr "Forunisseur de services et fichiers de configuration"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:28
-msgid ""
-"First you may verify if the ZOO-Services are available from your current "
-"setup. You can take a look at the ``Buffer.zcfg``, ``Intersection.zcfg`` and"
-" ``DifferencePy.zcfg`` to get details about parameters. As you can see from "
-"the ZCFG files, you will use ZOO-Services provided by the ``service`` Python"
-" service provider. So if you want to modify the Python code you will have to"
-" edit the corresponding file (so ``service.py``). You are invited to use "
-"similar requests as the one used in previous sections to learn about each "
-"services individually."
-msgstr ""
+msgid "First you may verify if the ZOO-Services are available from your current setup. You can take a look at the ``Buffer.zcfg``, ``Intersection.zcfg`` and ``DifferencePy.zcfg`` to get details about parameters. As you can see from the ZCFG files, you will use ZOO-Services provided by the ``service`` Python service provider. So if you want to modify the Python code you will have to edit the corresponding file (so ``service.py``). You are invited to use similar requests as the one used in previous sections to learn about each services individually."
+msgstr "D'abord, vous pouvez vérifier si les ZOO-Services sont disponibles à partir de votre configuration actuelle. Vous pouvez jeter un oeil à ``Buffer.zcfg``, ``Intersection.zcfg`` et ``DifferencePy.zcfg`` pour obtenir des détails sur les paramètres. Comme vous pouvez le voir depuis les fichiers ZCFG, vous allez utiliser les ZOO-services fournis par le fournisseur de services Python ``service``. Donc, si vous voulez modifier le code Python, vous devrez modifier le fichier correspondant (c'est à dire ``service.py``). Vous êtes invités à utiliser des requêtes similaires à celle utilisée dans les sections précédentes pour en apprendre davantage sur chacun des services individuellement."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:38
 msgid "The Buffer Service"
-msgstr ""
+msgstr "Le service Buffer (de tampon)"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:40
-msgid ""
-"First click on a street then once the street is displayed in blue, click the"
-" 'Buffer' button on top, you should get similar result as displayed in the "
-"following."
-msgstr ""
+msgid "First click on a street then once the street is displayed in blue, click the 'Buffer' button on top, you should get similar result as displayed in the following."
+msgstr "Cliquez d'abord sur une rue, puis une fois que la rue est affichée en bleu, cliquez sur le bouton 'Buffer' au dessus, vous devriez obtenir un résultat similaire à celui affiché dans ce qui suit."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:47
-msgid ""
-"Since version ZOO-Project 1.2.0, you can run automatically some basic tests "
-"to make sure that you wrote a correct ZCFG file and your service is "
-"validating."
-msgstr ""
+msgid "Since version ZOO-Project 1.2.0, you can run automatically some basic tests to make sure that you wrote a correct ZCFG file and your service is validating."
+msgstr "Depuis la version 1.2.0 du ZOO-projet, vous pouvez exécuter automatiquement quelques tests basiques pour s'assurer que vous avez écrit un fichier ZCFG correct et que votre service est validé."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:50
-msgid ""
-"the current testing is really simple and should be adapted to each Services "
-"Provider, mainly to define input names."
-msgstr ""
+msgid "the current testing is really simple and should be adapted to each Services Provider, mainly to define input names."
+msgstr "le test actuel est vraiment simple et doit être adapté à chaque fournisseur de services, principalement pour définir les noms en entrée."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:53
 msgid "You can use the following command:"
-msgstr ""
+msgstr "Vous pouvez utiliser la commande suivante :"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:61
-msgid ""
-"During or after the test run, you can take a look inside the ``tmp`` "
-"directory which contains both the XML requests send to the ZOO Kernel "
-"(``*1.xml``) and the responses it gave (``output*.xml``)."
-msgstr ""
+msgid "During or after the test run, you can take a look inside the ``tmp`` directory which contains both the XML requests send to the ZOO Kernel (``*1.xml``) and the responses it gave (``output*.xml``)."
+msgstr "Pendant ou après l'exécution du test, vous pouvez jeter un oeil à l'intérieur du répertoire ``tmp`` qui contient à la fois les demandes XML envoyées au Kernel ZOO et les réponses qu'il a renvoyé (``output*.xml``)."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:66
 msgid "The Intersection Service"
-msgstr ""
+msgstr "Le service d'Intersection"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:68
-msgid ""
-"Using the same client interface as before, once you get a Buffer, you can "
-"then select a street intersecting the Buffer geometry to compute "
-"intersection by clicking on the Intersection button."
-msgstr ""
+msgid "Using the same client interface as before, once you get a Buffer, you can then select a street intersecting the Buffer geometry to compute intersection by clicking on the Intersection button."
+msgstr "En utilisant la même interface cliente que précédemment, une fois que vous avez un tampon, vous pouvez sélectionner une rue intersectant la géométrie tampon pour calculer l'intersection en cliquant sur le bouton Intersection."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:78
 msgid "The DifferencePy Service"
-msgstr ""
+msgstr "Le service DifferencePy"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:80
-msgid ""
-"Using the same instructions as for Intersetion, you can get the following "
-"result."
-msgstr ""
+msgid "Using the same instructions as for Intersetion, you can get the following result."
+msgstr "En utilisant les mêmes instructions que pour Intersection, vous pouvez obtenir le résultat suivant."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:88
 msgid "The Routing and Profile Services"
-msgstr ""
+msgstr "Le routage et les services de profil"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:90
-msgid ""
-"First click on the blue flag then place your starting point on the map, do "
-"the same with the red flag to get the shortest path computed by the "
-"dedicated service and then display its profile. Note that when you pass the "
-"mouse over the profile display then you will see its corresponding position "
-"displayed on the map. You can also click on a specific step in your path to "
-"get the corresponding line displayed."
-msgstr ""
+msgid "First click on the blue flag then place your starting point on the map, do the same with the red flag to get the shortest path computed by the dedicated service and then display its profile. Note that when you pass the mouse over the profile display then you will see its corresponding position displayed on the map. You can also click on a specific step in your path to get the corresponding line displayed."
+msgstr "D'abord cliquez sur le drapeau bleu puis placez votre point de départ sur ​​la carte, faire la même chose avec le drapeau rouge pour obtenir le plus court chemin calculé par le service dédié et afficher son profil. Notez que lorsque vous passez la souris sur l'écran du profil, vous verrez sa position correspondante affichée sur la carte. Vous pouvez également cliquer sur une étape spécifique dans votre chemin pour obtenir la ligne correspondante affichée."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:101
-msgid ""
-"If you take a look in the file: ``/usr/lib/cgi-bin/routing/do.zcfg`` you may"
-" notice something new in the supported format which is reproduced here "
-"after."
-msgstr ""
+msgid "If you take a look in the file: ``/usr/lib/cgi-bin/routing/do.zcfg`` you may notice something new in the supported format which is reproduced here after."
+msgstr "Si vous jetez un oeil dans le fichier: ``/usr/lib/cgi-bin/routing/do.zcfg`` vous remarquerez peut-être quelque chose de nouveau dans le format supporté qui est reproduit ci-après."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:115
-msgid ""
-"The ``mimeType`` is defined as ``image/png`` and there is two new parameter "
-"which are both optional:"
-msgstr ""
+msgid "The ``mimeType`` is defined as ``image/png`` and there is two new parameter which are both optional:"
+msgstr "Le ``mimeType`` est défini comme ``image/png`` et il ya deux nouveaux paramètres, qui sont tous deux optionnels:"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:117
-msgid ""
-"``useMapServer``: which make you able to inform the ZOO-Kernel that it have "
-"to use MapServer to publish your result as WMS / WFS or WCS (this last won't"
-" be used in this workshop) rather than simply storing the result as a file."
-msgstr ""
+msgid "``useMapServer``: which make you able to inform the ZOO-Kernel that it have to use MapServer to publish your result as WMS / WFS or WCS (this last won't be used in this workshop) rather than simply storing the result as a file."
+msgstr "``useMapServer``: qui vous rend capable d'informer le ZOO-Kernel qu'il a à utiliser MapServer pour publier votre résultat comme WMS / WFS ou WCS (ce dernier ne sera pas utilisé dans ce workshop) plutôt que de simplement stocker le résultat comme un fichier."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:121
-msgid ""
-"``msStyle``: which let you define your own MapServer ``STYLE`` block "
-"definition."
-msgstr ""
+msgid "``msStyle``: which let you define your own MapServer ``STYLE`` block definition."
+msgstr "``msStyle``: qui vous laisse définir votre propre définition de bloc ``STYLE`` MapServer."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:123
-msgid ""
-"When you need to access a result many time or for different purpose accross "
-"other services then it is really useful to ask ZOO-Kernel to publish your "
-"result as WMS, WFS or WCS."
-msgstr ""
+msgid "When you need to access a result many time or for different purpose accross other services then it is really useful to ask ZOO-Kernel to publish your result as WMS, WFS or WCS."
+msgstr "Lorsque vous avez besoin d'accéder à un résultat de noùmbreuses fois ou à des fins différentes en fonction d'autres services alors il est vraiment utile de demander au ZOO-Kernel de publier votre résultat comme WMS, WFS ou WCS."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:127
-msgid ""
-"Note that no modification of the code of the do service was required to "
-"handle automatic pubilcation of the result as it is a vector format "
-"supported by OGR, only modification of the zcfg was required."
-msgstr ""
+msgid "Note that no modification of the code of the do service was required to handle automatic pubilcation of the result as it is a vector format supported by OGR, only modification of the zcfg was required."
+msgstr "Notez qu'aucune modification du code du service do a été nécessaire pour gérer la publication automatique du résultat car c'est un format vectoriel supporté par OGR, seule la modification du zcfg était nécessaire."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:131
-msgid ""
-"This routing example is here to illustrate how easy it is to publish your "
-"result as WMS, WFS or WCS ressource. Indeed, when your routing service was "
-"called, ZOO-Kernel published the result as WMS and WFS ressources which was "
-"both used first for the UI purpose, the WMS to display the resulting path on"
-" the map, the WFS for displaying details about each steps. The WFS protocol "
-"is also used as the input value for the profile computation. So, the "
-"computation was run once and accessed three times for different purposes and"
-" from different clients."
-msgstr ""
+msgid "This routing example is here to illustrate how easy it is to publish your result as WMS, WFS or WCS ressource. Indeed, when your routing service was called, ZOO-Kernel published the result as WMS and WFS ressources which was both used first for the UI purpose, the WMS to display the resulting path on the map, the WFS for displaying details about each steps. The WFS protocol is also used as the input value for the profile computation. So, the computation was run once and accessed three times for different purposes and from different clients."
+msgstr "Cet exemple de routage est ici pour illustrer comme il est facile de publier votre résultat comme ressource WMS, WFS ou WCS. En effet, lorsque votre service de routage a été appelé, le ZOO-Kernel a publié le résultat comme ressources WMS et WFS qui a été utilisé à la fois dans l'interface graphique pour que le WMS affiche la trajectoire résultante sur la carte, que le WFS affiche plus de détails sur chacune des étapes. Le protocole WFS est également utilisé comme valeur d'entrée pour le calcul du profil. Ainsi, le calcul a été exécuté une fois et accédé trois fois pour différents buts et depuis différents clients."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:141
-msgid ""
-"For more informations about the MapServer support, please refer to `the "
-"official  ZOO-Project Documentation <http://zoo-"
-"project.org/docs/kernel/mapserver.html>`_."
-msgstr ""
+msgid "For more informations about the MapServer support, please refer to `the official  ZOO-Project Documentation <http://zoo-project.org/docs/kernel/mapserver.html>`_."
+msgstr "Pour plus d'informations sur le support MapServer, merci de vous référer à `la documentation ZOO-Project officielle <http://zoo-project.org/docs/kernel/mapserver.html>`_."
 
 #: ../../workshop/2013/building_blocks_presentation.txt:145
 msgid "Conclusion"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../workshop/2013/building_blocks_presentation.txt:147
-msgid ""
-"Now you know this three services, and you get a simple interface to interact"
-" with your MapServer WFS and your ZOO-Project WPS Servers, you are ready to "
-"use the Services in a different way, by chaining them using the JavaScript "
-"ZOO-API to build more complexe and powerfull services."
-msgstr ""
+msgid "Now you know this three services, and you get a simple interface to interact with your MapServer WFS and your ZOO-Project WPS Servers, you are ready to use the Services in a different way, by chaining them using the JavaScript ZOO-API to build more complexe and powerfull services."
+msgstr "Maintenant, vous connaissez ces trois services, et vous avez une interface simple pour interagir avec votre WFS MapServer et vos serveurs WPS ZOO-projet, vous êtes prêts à utiliser les services d'une manière différente, en les chaînant en utilisant la ZOO-API JavaScript pour construire des services plus complexes et plus puissants."
+
