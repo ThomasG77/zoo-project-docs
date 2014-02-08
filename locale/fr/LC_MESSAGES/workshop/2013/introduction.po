@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: 2014-02-08 01:18+0100\n"
+"PO-Revision-Date: 2014-02-08 01:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,7 @@ msgstr "JavaScript"
 
 #: ../../workshop/2013/introduction.txt:31
 msgid "More information on the project is available on the  `ZOO Project official website <http://www.zoo-project.org/>`__ ."
-msgstr "Plus d'informations sur le projet sont disponibles sur le `site officel du projet ZOO <http://www.zoo-project.org/>`__ ."
+msgstr "Plus d'informations sur le projet sont disponibles sur le `site officiel du projet ZOO <http://www.zoo-project.org/>`__ ."
 
 #: ../../workshop/2013/introduction.txt:34
 msgid "How does ZOO works ?"
@@ -89,7 +89,7 @@ msgstr "Un service ZOO est un lien composé d’un fichier de métadonnées (.zc
 
 #: ../../workshop/2013/introduction.txt:40
 msgid "ZOO-Kernel works as CGI through Apache and can communicate with cartographic engines and Web mapping clients. It simply adds the WPS support to your spatial data infrastructure and your webmapping applications. It can use every GDAL/OGR supported formats as input data and create suitable vector or raster output for your cartographic engine and/or your web-mapping client application."
-msgstr "Le ZOO-Kernel fonctionne en tant qu'application CGI via Apache et peut communiquer avec les moteurs cartographiques et les clients de cartographie Web. Il ajoute simplement le support du WPS à votre infrastructure de données spatiales et vos applications de webmapping. Il peut utiliser tous les formats supportés par GDAL/OGR comme données en entrée et créer des sorties vecteur ou raster pour votre moteur cartographique et/ou votre application cliente de cartographie Web."
+msgstr "Le ZOO-Kernel fonctionne en tant qu'application CGI via Apache et peut communiquer avec les moteurs cartographiques et les clients de cartographie Web. Il ajoute simplement le support du WPS à votre infrastructure de données spatiales et à vos applications de webmapping. Il peut utiliser tous les formats supportés par GDAL/OGR comme données en entrée et créer des sorties vecteur ou raster pour votre moteur cartographique et/ou votre application cliente de cartographie Web."
 
 #: ../../workshop/2013/introduction.txt:43
 msgid "What are we going to do in this workshop?"
@@ -97,7 +97,7 @@ msgstr "Qu'est ce que nous allons faire dans ce workshop?"
 
 #: ../../workshop/2013/introduction.txt:45
 msgid "You will learn how to use ZOO Kernel and how to create ZOO Services using the OSGeo Live 7.0. Despite a pre-compiled ZOO 1.3-dev package is provided inside OSGeoLive, some optional supports are not available in the default setup. So you will be invited to download and uncompress a tarbal containing binary versions of ZOO-Kernel, so there is no need to compile anything, simple steps to install ZOO-Kernel will be introduced. Configuration file and basic ways to run ZOO Kernel and ZOO Service will be presented. Then you will be invited to start programming your own simple service using Python language. Some ZOO Services will be presented and individually tested inside a ready-to-use OpenLayers application. Finally, this services will be chained using the server-side Javascript ZOO API."
-msgstr "Vous apprendrez comment utiliser le Kernel ZOO et comment créer des Services ZOO utilisant l'OSGeo Live 7.0. Bien qu'un paquet ZOO 1.3-dev pré-compilé soit fourni dans l'OSGeoLive, certains supports optionnels ne sont pas disponibles dans la configuration par défaut. Ainsi, vous êtes invités à télécharger et décompresser un tarbal contenant des versions binaires du ZOO-Kernel. Il n'y a donc pas besoin de compiler quoi que ce soit, des étapes simples pour installer le ZOO-Kernel seront fournies. Le fichier de configuration et des méthodes de base pour exécuter le Kernel Zoo et les services ZOO seront présentés. Ensuite, vous serez invités à commencer la programmation de votre propre service simple en utilisant le langage Python. Certains services ZOO seront présentés et testés individuellement dans une application OpenLayers prêtes à utiliser. Enfin, ces services seront chaînés à l'aide de l'API ZOO Javascript côté serveur."
+msgstr "Vous apprendrez comment utiliser le Kernel ZOO et comment créer des Services ZOO utilisant l'OSGeo Live 7.0. Bien qu'un paquet ZOO 1.3-dev pré-compilé soit fourni dans l'OSGeoLive, certains supports optionnels ne sont pas disponibles dans la configuration par défaut. Ainsi, vous êtes invités à télécharger et décompresser un tarbal contenant des versions binaires du ZOO-Kernel. Il n'y a donc pas besoin de compiler quoi que ce soit. Des étapes simples pour installer le ZOO-Kernel seront fournies. Le fichier de configuration et des méthodes de base pour exécuter le Kernel Zoo et les services ZOO seront présentés. Ensuite, vous serez invités à commencer la programmation de votre propre service simple en utilisant le langage Python. Certains services ZOO seront présentés et testés individuellement dans une application OpenLayers prêtes à utiliser. Enfin, ces services seront chaînés à l'aide de l'API ZOO Javascript côté serveur."
 
 #: ../../workshop/2013/introduction.txt:47
 msgid "The whole workshop is organized step-by-step and numerous code snippets are available. The instructors will check the ZOO-Kernel is functioning on each machine and will assist you while coding. Technical questions are of course welcome during the workshop."

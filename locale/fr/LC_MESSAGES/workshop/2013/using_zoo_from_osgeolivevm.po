@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-02-08 18:58+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,310 +13,209 @@ msgstr ""
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:5
 msgid "Configuration and ZOO-Kernel use"
-msgstr ""
+msgstr "Configuration et utilisation du ZOO-Kernel"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matières"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:12
 msgid "ZOO-Project Installation"
-msgstr ""
+msgstr "Installation du ZOO-Project"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:14
-msgid ""
-"To be able to follow the current material, you will have to download and "
-"uncompress an archive containing the dataset, ZOO-Kernel and required "
-"services. It was made available specifically for this workshop and is "
-"available at : http://www.zoo-project.org/dl/ws2013-1.tar.bz2."
-msgstr ""
+msgid "To be able to follow the current material, you will have to download and uncompress an archive containing the dataset, ZOO-Kernel and required services. It was made available specifically for this workshop and is available at : http://www.zoo-project.org/dl/ws2013-1.tar.bz2."
+msgstr "Pour être capable de suivre le matériel courant, vous devrez télécharger et décompresser une archive contenant l'ensemble de données, le ZOO-Kernel et les services requis. Il a été mis à la disposition spécifiquement pour ce workshop et est disponible à l'adresse: http://www.zoo-project.org/dl/ws2013-1.tar.bz2."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:19
-msgid ""
-"You should use the following commands to download then uncompress the "
-"archive and get it extracted with correct privileges:"
-msgstr ""
+msgid "You should use the following commands to download then uncompress the archive and get it extracted with correct privileges:"
+msgstr "Vous devez utiliser les commandes suivantes pour télécharger puis décompresser l'archive et l'obtenir extraite avec les bons privilèges:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:29
 msgid "ZOO-Kernel Configuration"
-msgstr ""
+msgstr "Configuration du ZOO-Kernel"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:31
-msgid ""
-"As already said in introduction, an OSGeoLive has been booted on your "
-"computer, allowing you to use ZOO-Kernel in a development environment "
-"directly."
-msgstr ""
+msgid "As already said in introduction, an OSGeoLive has been booted on your computer, allowing you to use ZOO-Kernel in a development environment directly."
+msgstr "Comme déjà dit dans l'introduction, l'OSGeoLive a été démarré sur votre ordinateur, vous permettant d'utiliser le ZOO-Kernel directement dans un environnement de développement."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:33
-msgid ""
-"we will use ZOO-Kernel or ``zoo_loader.cgi`` script without any distinction "
-"in this document."
-msgstr ""
+msgid "we will use ZOO-Kernel or ``zoo_loader.cgi`` script without any distinction in this document."
+msgstr "nous allons utiliser les noms ZOO-Kernel ou  script ``zoo_loader.cgi`` sans aucune distinction dans ce document."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:36
-msgid ""
-"General ZOO-Kernel settings are set in the ``main.cfg`` file located in the "
-"same directory as the ZOO-Kernel, so in ``/usr/lib/cgi-bin/``. You can see a"
-" typical ``main.cfg`` content in the following:"
-msgstr ""
+msgid "General ZOO-Kernel settings are set in the ``main.cfg`` file located in the same directory as the ZOO-Kernel, so in ``/usr/lib/cgi-bin/``. You can see a typical ``main.cfg`` content in the following:"
+msgstr "Les paramètres généraux du ZOO-Kernel sont définis dans le fichier ``main.cfg`` situé dans le même répertoire que le ZOO-Kernel, donc dans ``/usr/lib/cgi-bin/``. Vous pouvez voir un contenu ``main.cfg`` typique dans ce qui suit:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:77
-msgid ""
-"The ``main.cfg`` file contains metadata informations about the "
-"identification and provider but also some important settings. The file is "
-"composed of various sections, namely ``[main]``, ``[identification]`` and "
-"``[provider]`` per default."
-msgstr ""
+msgid "The ``main.cfg`` file contains metadata informations about the identification and provider but also some important settings. The file is composed of various sections, namely ``[main]``, ``[identification]`` and ``[provider]`` per default."
+msgstr "Le fichier ``main.cfg`` contient les informations de métadonnées à propos de l'identification et du fournisseur mais aussi des paramètres importants. Le fichier est composé de différentes sections, à savoir ``[main]``, ``[identification]`` et ``[provider]`` par défaut."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:92
 msgid "From the ``[main]`` section settings are as follow:"
-msgstr ""
+msgstr "Depuis ``[main]`` les paramètres de section sont les suivants:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:80
-msgid ""
-"``lang``: the supported languages separated by a coma (the first is the "
-"default one),"
-msgstr ""
+msgid "``lang``: the supported languages separated by a coma (the first is the default one),"
+msgstr "``lang``: les langages supportés, séparés par une virgule (le premier est celui par défaut),"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:81
 msgid "``version``: the supported WPS version,"
-msgstr ""
+msgstr "``version``: la version du WPS supportée,"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:82
 msgid "``encoding``: the default encoding of WPS Responses,"
-msgstr ""
+msgstr "``encoding``: l'encodage par défaut des réponses WPS,"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:83
 msgid "``serverAddress``: the url to access your ZOO-Kernel instance,"
-msgstr ""
+msgstr "``serverAddress``: l'url pour accéder à votre instance du ZOO-Kernel,"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:84
-msgid ""
-"``dataPath``: the path to store data files (when MapServer support was "
-"activated, this directory is used to store mapfiles and data)."
-msgstr ""
+msgid "``dataPath``: the path to store data files (when MapServer support was activated, this directory is used to store mapfiles and data)."
+msgstr "``dataPath``: le chemin pour stocker les fichiers de données (quand le support de MapServer est activé, ce répertoire est utilisé pour stocker les mapfiles et les données)."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:86
-msgid ""
-"``tmpPath``: the path to store temporary files (such as ExecuteResponse when"
-" storeExecuteResponse was set to true),"
-msgstr ""
+msgid "``tmpPath``: the path to store temporary files (such as ExecuteResponse when storeExecuteResponse was set to true),"
+msgstr "``tmpPath``: le chemin pour stocker les  fichiers temporaires (comme une ExecuteResponse quand storeExecuteResponse a été défini à true),"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:88
-msgid ""
-"``tmpUrl``: a url relative to ``serverAddress`` to access the temporary "
-"file,"
-msgstr ""
+msgid "``tmpUrl``: a url relative to ``serverAddress`` to access the temporary file,"
+msgstr "``tmpUrl``: une url relative au ``serverAddress`` pour accéder au fichier temporaire,"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:89
-msgid ""
-"``cacheDir``: the path to store cached request files [#f1]_ (optional),"
-msgstr ""
+msgid "``cacheDir``: the path to store cached request files [#f1]_ (optional),"
+msgstr "``cacheDir``: le chemin pour stocker les fichiers de requête mis en cache [#f1]_ (optionnel),"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:90
 msgid "``mapservAddress``: your local MapServer address (optional),"
-msgstr ""
+msgstr "``mapservAddress``: votre adresse locale de MapServer (optionnel),"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:91
-msgid ""
-"``msOgcVersion``: the version for all supported OGC Web Services output "
-"[#f2]_ (optional)."
-msgstr ""
+msgid "``msOgcVersion``: the version for all supported OGC Web Services output [#f2]_ (optional)."
+msgstr "``msOgcVersion``: la version pour toutes les sorties des services Web OGC supportées [#f2]_ (optionnel)."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:94
-msgid ""
-"The ``[identification]`` and ``[provider]`` section are specific to OGC "
-"metadata and should be set [#f3]_."
-msgstr ""
+msgid "The ``[identification]`` and ``[provider]`` section are specific to OGC metadata and should be set [#f3]_."
+msgstr "les sections ``[identification]`` et ``[provider]`` sont spécifiques à la métadonnée OGC et devraient être définies [#f3]_."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:97
-msgid ""
-"Obviously, you are free to add new sections to this file if you need more. "
-"Nevertheless, you have to know that there is some specific names you should "
-"use only for specific needs: ``[headers]``, ``[mapserver]``, ``[env]``, "
-"``[lenv]`` and ``[senv]``."
-msgstr ""
+msgid "Obviously, you are free to add new sections to this file if you need more. Nevertheless, you have to know that there is some specific names you should use only for specific needs: ``[headers]``, ``[mapserver]``, ``[env]``, ``[lenv]`` and ``[senv]``."
+msgstr "De toute évidence, vous êtes libres d'ajouter de nouvelles sections à ce fichier si vous avez besoin de plus. Néanmoins, vous devez savoir qu'il y a quelques noms spécifiques, que vous devez utiliser seulement pour des besoins spécifiques: ``[headers]``, ``[mapserver]``, ``[env]``, ``[lenv]`` et ``[senv]``."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:101
-msgid ""
-"``[senv]`` and ``[lenv]`` are used / produced on runtime internaly by the "
-"ZOO-Kernel and should be defined only from the Service code."
-msgstr ""
+msgid "``[senv]`` and ``[lenv]`` are used / produced on runtime internaly by the ZOO-Kernel and should be defined only from the Service code."
+msgstr "``[senv]`` et ``[lenv]`` sont utilisés / produits à l'exécution en interne par le ZOO-Kernel et doivent être défini seulement par le code de Service."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:103
-msgid ""
-"The ``headers`` section is used to define your own HTTP Response headers. "
-"You may take a look at headers returned by web site such as http://www.zoo-"
-"project.org by using curl command line tool for instance and notice the "
-"specific heder ``X-Powered-By: Zoo-Project@Trac``."
-msgstr ""
+msgid "The ``headers`` section is used to define your own HTTP Response headers. You may take a look at headers returned by web site such as http://www.zoo-project.org by using curl command line tool for instance and notice the specific heder ``X-Powered-By: Zoo-Project@Trac``."
+msgstr "La section ``headers`` est utilisée pour définir vos propres en-têtes de réponse HTTP. Vous pouvez jeter un oeil aux en-têtes retournés un site web tel que http://www.zoo-project.org en utilisant l'outil en ligne de commande curl, par exemple, et vous verrez un en-tête spécifique ``X-Powered-By: Zoo-Project@Trac``."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:108
-msgid ""
-"There is no reason to define basic headers such as ``Content-Type`` or "
-"``encoding`` as they will be overwritten at runtime by the ZOO-Kernel."
-msgstr ""
+msgid "There is no reason to define basic headers such as ``Content-Type`` or ``encoding`` as they will be overwritten at runtime by the ZOO-Kernel."
+msgstr "Il n'ya aucune raison de définir des en-têtes de base tels que ``Content-Type`` ou ``encoding`` comme ils seront remplacés à l'exécution par le ZOO-Kernel."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:112
-msgid ""
-"The ``mapserver`` section is used to store specific mapserver configuration "
-"parameter such as PROJ_LIB and GDAL_DATA or any other you want to be set to "
-"make your MapServer working."
-msgstr ""
+msgid "The ``mapserver`` section is used to store specific mapserver configuration parameter such as PROJ_LIB and GDAL_DATA or any other you want to be set to make your MapServer working."
+msgstr "La section ``mapserver`` est utilisée pour stocker des paramètres de configuration mapserver spécifiques comme PROJ_LIB et GDAL_DATA ou n'importe quel autre que vous vouliez définir pour faire fonctionner votre MapServer."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:116
 msgid "the ``mapserver`` section is mainly used on WIN32 platform"
-msgstr ""
+msgstr "la section ``mapserver`` est principalement utilisée sur les plates-formes WIN32"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:119
-msgid ""
-"The ``env`` section is used to store specific environment variables you want"
-" to be set prior to load your Services Provider and run your Service. A "
-"typical example, is when your Service requires to access to a X server "
-"running on framebuffer, then you will have to set the ``DISPLAY`` "
-"environnement variable, in this case you would add ``DISPLAY=:1`` line in "
-"your ``[env]`` section."
-msgstr ""
+msgid "The ``env`` section is used to store specific environment variables you want to be set prior to load your Services Provider and run your Service. A typical example, is when your Service requires to access to a X server running on framebuffer, then you will have to set the ``DISPLAY`` environnement variable, in this case you would add ``DISPLAY=:1`` line in your ``[env]`` section."
+msgstr "La section ``env`` est utilisé pour stocker les variables d'environnement spécifiques que vous souhaitez mettre en avant pour charger votre fournisseur de services et pour exécuter votre service. Un exemple typique, c'est quand votre service nécessite d'accéder à un serveur X fonctionnant sur ​​framebuffer, alors vous aurez à définir la variable d'environnement ``DISPLAY``, dans ce cas, vous devez ajouter la ligne ``DISPLAY=:1`` dans votre section ``[env]``."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:125
-msgid ""
-"The ``lenv`` is used to store runtime informations automatically set by the "
-"ZOO-Kernel before running your service and can be accesses / updated from "
-"it:"
-msgstr ""
+msgid "The ``lenv`` is used to store runtime informations automatically set by the ZOO-Kernel before running your service and can be accesses / updated from it:"
+msgstr "Le ``lenv`` est utilisé pour stocker les informations d'exécution automatiquement définies par le ZOO-Kernel avant de lancer votre service et peut être accéder/mis à jour depuis ceci:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:127
 msgid "``sid``: the service unique identifier,"
-msgstr ""
+msgstr "``sid``: l'identifiant de service unique,"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:128
-msgid ""
-"``status``: the current progress value (value between 0 and 100, percent),"
-msgstr ""
+msgid "``status``: the current progress value (value between 0 and 100, percent),"
+msgstr "``status``: la valeur de progression courante (valeur entre 0 et 100, pourcents),"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:129
 msgid "``cwd``: the current working directory of the ZOO-Kernel,"
-msgstr ""
+msgstr "``cwd``: le répertoire de travail courant du ZOO-Kernel,"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:130
-msgid ""
-"``message``: an error message when returning ``SERVICE_FAILED`` (optional),"
-msgstr ""
+msgid "``message``: an error message when returning ``SERVICE_FAILED`` (optional),"
+msgstr "``message``: un message d'erreur quand ``SERVICE_FAILED`` est retourné (optionnel),"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:131
-msgid ""
-"``cookie``: the cookie your service want to return to the client (for "
-"authentication purpose or tracking)."
-msgstr ""
+msgid "``cookie``: the cookie your service want to return to the client (for authentication purpose or tracking)."
+msgstr "``cookie``: le cookie que votre service veut retourner au client (à des fins de suivi ou d'authentification)."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:134
-msgid ""
-"The ``senv`` is used to store session informations on the server side. You "
-"can then access them automatically from service if the server is requested "
-"using a valid cookie (as defined in ``lenv > cookie``). The ZOO-Kernel will "
-"store on disk the values set in the ``senv`` maps, then load it and "
-"dynamically add its content to the one available in the ``main.cfg``. The "
-"``senv`` section should contain at least:"
-msgstr ""
+msgid "The ``senv`` is used to store session informations on the server side. You can then access them automatically from service if the server is requested using a valid cookie (as defined in ``lenv > cookie``). The ZOO-Kernel will store on disk the values set in the ``senv`` maps, then load it and dynamically add its content to the one available in the ``main.cfg``. The ``senv`` section should contain at least:"
+msgstr "Le ``senv`` est utilisé pour stocker les informations de session côté serveur. Vous pouvez ainsi y accéder automatiquement depuis le service si le serveur est interrogé en utilisant un cookie valide (comme défini dans ``lenv > cookie``). Le ZOO-Kernel stockera sur le disque les valeurs définies dans la liste clé-valeur ``senv``, puis les chargera et ajoutera dynamiquement leur contenu à celui disponible dans le ``main.cfg``. La section ``senv`` devrait contenir au moins:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:142
-msgid ""
-"``XXX``: the session unique identifier where ``XXX`` is the name included in"
-" the"
-msgstr ""
+msgid "``XXX``: the session unique identifier where ``XXX`` is the name included in the"
+msgstr "``XXX``: l'identifiant de session unique où ``XXX`` est le nom inclut dans le"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:142
 msgid "returned cookie."
-msgstr ""
+msgstr " cookie retourné."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:146
-msgid ""
-"For instance, if you get the following in your Service source code [#f4]_ :"
-msgstr ""
+msgid "For instance, if you get the following in your Service source code [#f4]_ :"
+msgstr "Par exemple, si vous avec ce qui suit dans votre code source de Service [#f4]_ :"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:153
-msgid ""
-"That means that the ZOO-Kernel will create a file ``sess_XXX1000000.cfg`` in"
-" the ``cacheDir`` and return the specified cookie to the client. Each time "
-"the client will request the ZOO-Kernel using the Cookie, it will "
-"automatically load the value stored before running your service. You can "
-"then easilly access this informations from your service source code. This "
-"functionality won't be used in the following presentation."
-msgstr ""
+msgid "That means that the ZOO-Kernel will create a file ``sess_XXX1000000.cfg`` in the ``cacheDir`` and return the specified cookie to the client. Each time the client will request the ZOO-Kernel using the Cookie, it will automatically load the value stored before running your service. You can then easilly access this informations from your service source code. This functionality won't be used in the following presentation."
+msgstr "Cela signifie que le ZOO-Kernel créera un fichier ``sess_XXX1000000.cfg`` dans le ``cacheDir`` et retournera le cookie spécifié au client. Chaque fois que le client interrogera le ZOO-Kernel en utilisant le cookie, il chargera automatiquement la valeur stockée avant d'exécuter votre service. Vous pouvez ensuite accéder facilement  à ces informations à partir de votre code source de service. Cette fonctionnalité ne sera pas utilisée dans la présentation suivante."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:160
 msgid "Testing the ZOO installation with GetCapabilities"
-msgstr ""
+msgstr "Tester votre installation de ZOO avec le GetCapabilities"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:163
-msgid ""
-"You can request ZOO-Kernel using the following link from your Internet "
-"browser:"
-msgstr ""
+msgid "You can request ZOO-Kernel using the following link from your Internet browser:"
+msgstr "Vous pouvez interroger le ZOO-Kernel en utilisant le lien suivant depuis votre navigateur Internet:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:165
-msgid ""
-"http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS"
-msgstr ""
+msgid "http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS"
+msgstr "http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:167
-msgid ""
-"You should get a valid Capabilities XML document, looking like the following"
-" :"
-msgstr ""
+msgid "You should get a valid Capabilities XML document, looking like the following :"
+msgstr "Vous devriez obtenir un document XML de \"Capabilities\" valide, ressemblant à ce qui suit :"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:173
-msgid ""
-"Please note that some Process node are returned in the ProcessOfferings "
-"section, as somes are available already on OSGeoLive DVD. You can also run a"
-" GetCapabilities request from the command line, using the following command:"
-msgstr ""
+msgid "Please note that some Process node are returned in the ProcessOfferings section, as somes are available already on OSGeoLive DVD. You can also run a GetCapabilities request from the command line, using the following command:"
+msgstr "Merci de noter que certaines noeuds de processus sont retournés dans la section ProcessOfferings, comme certains sont déjà disponibles sur le DVD OSGeoLive. Vous pouvez également exécuter une requête GetCapabilities depuis la ligne de commande, en utilisant la commande suivante:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:180
-msgid ""
-"The same result as in your browser will be returned, as shown in the "
-"following screenshot:"
-msgstr ""
+msgid "The same result as in your browser will be returned, as shown in the following screenshot:"
+msgstr "Le même résultat que dans votre navigateur sera retourné, comme montré dans la capture d'écran suivante:"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:186
-msgid ""
-"Invoking ZOO Kernel from command line can be helpful during development "
-"process of new Services."
-msgstr ""
+msgid "Invoking ZOO Kernel from command line can be helpful during development process of new Services."
+msgstr "Invoquer le Kernel ZOO depuis la ligne de commande peut être utile pendant le processus de développement de nouveaux services."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:189
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes de bas de page"
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:190
-msgid ""
-"when you use GET requests passed through ``xlink:href`` the ZOO-Kernel will "
-"execute the request only once, the first time you will ask for this "
-"ressource and it will store on disk the result. The next time you will need "
-"the same feature, the cached file will be used which make your process "
-"running faster. If ``cachedir`` was not specified in the ``main.cfg`` then "
-"``tmpPath`` value will be used."
-msgstr ""
+msgid "when you use GET requests passed through ``xlink:href`` the ZOO-Kernel will execute the request only once, the first time you will ask for this ressource and it will store on disk the result. The next time you will need the same feature, the cached file will be used which make your process running faster. If ``cachedir`` was not specified in the ``main.cfg`` then ``tmpPath`` value will be used."
+msgstr "lorsque vous utilisez les requêtes GET passées via ``xlink:href``, le ZOO Kernel-exécutera la demande une seule fois, la première fois, vous demanderez cette ressource et elle stockera sur le disque le résultat. La prochaine fois que vous aurez besoin de la même fonction, le fichier de cache sera utilisé pour exécuter votre processus plus vite. Si ``cachedir`` n'a pas été précisé dans ``main.cfg`` alors la valeur de ``tmpPath`` sera utilisée."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:195
-msgid ""
-"since version 1.3dev, when MapServer is activated, your service can "
-"automatically return a WMS, WFS or WCS request to expose your data. Your can"
-" set here the specific version number you want to use to request your local "
-"MapServer setup. It depends mostly on the client capability to deal with "
-"specific OGC Web Services version."
-msgstr ""
+msgid "since version 1.3dev, when MapServer is activated, your service can automatically return a WMS, WFS or WCS request to expose your data. Your can set here the specific version number you want to use to request your local MapServer setup. It depends mostly on the client capability to deal with specific OGC Web Services version."
+msgstr "depuis la version 1.3-dev, quand MapServer est activée, votre service peut automatiquement retourner une requête WMS, WFS ou WCS pour exposer vos données. Vous pouvez définir ici le numéro de version spécifique que vous souhaitez utiliser pour interroger la configuration de votre MapServer local. Il dépend surtout de la capacité du client à gérer la version spécifique des services Web OGC."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:199
-msgid ""
-"since version 1.3dev, when MapServer is activated, the same metadata will be"
-" used for setting metadata for OGC Web Services."
-msgstr ""
+msgid "since version 1.3dev, when MapServer is activated, the same metadata will be used for setting metadata for OGC Web Services."
+msgstr "depuis la version 1.3dev, quand MapServer est activé, les mêmes métadonnées seront utilisées pour définir les métadonnées pour les services Web OGC."
 
 #: ../../workshop/2013/using_zoo_from_osgeolivevm.txt:201
-msgid ""
-"If you're not familiar with ZOO-Project, you can `pass "
-"<using_zoo_from_osgeolivevm#testing-the-zoo-installation-with-"
-"getcapabilities>`__  this part and come to it after the next section."
-msgstr ""
+msgid "If you're not familiar with ZOO-Project, you can `pass <using_zoo_from_osgeolivevm#testing-the-zoo-installation-with-getcapabilities>`__  this part and come to it after the next section."
+msgstr "Si vous n'êtes pas familier avec le ZOO-projet, vous pouvez `passer <using_zoo_from_osgeolivevm#testing-the-zoo-installation-with-getcapabilities>`__ cette partie et y revenir après la section suivante."
+
