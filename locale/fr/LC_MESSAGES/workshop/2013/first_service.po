@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-02-08 21:52+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,344 +13,237 @@ msgstr ""
 
 #: ../../workshop/2013/first_service.txt:5
 msgid "Creating your first ZOO Service"
-msgstr ""
+msgstr "Créer votre premier service ZOO"
 
 #: ../../workshop/2013/first_service.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table des matères"
 
 #: ../../workshop/2013/first_service.txt:12
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../workshop/2013/first_service.txt:14
-msgid ""
-"In this part, you will create and publish from a simple ZOO Service named "
-"``Hello`` which will simply return a hello message containing the input "
-"value provided. It will be usefull to present in deeper details general "
-"concept on how ZOO-Kernel works and handles request."
-msgstr ""
+msgid "In this part, you will create and publish from a simple ZOO Service named ``Hello`` which will simply return a hello message containing the input value provided. It will be usefull to present in deeper details general concept on how ZOO-Kernel works and handles request."
+msgstr "Dans cette partie, vous allez créer et publier un service ZOO simple appelé ``Hello`` qui retournera simplement un message hello contenant la valeur d'entrée fournie. Il sera utile de présenter plus en détails le concept général sur la manière pour le ZOO-Kernel de fonctionner et traiter les demandes."
 
 #: ../../workshop/2013/first_service.txt:19
 msgid "Service and publication process overview"
-msgstr ""
+msgstr "Service et vue d'ensemble du processus de publication"
 
 #: ../../workshop/2013/first_service.txt:21
-msgid ""
-"Before starting developing a ZOO Service, you should remember that in ZOO-"
-"Project, a Service is a couple made of:"
-msgstr ""
+msgid "Before starting developing a ZOO Service, you should remember that in ZOO-Project, a Service is a couple made of:"
+msgstr "Avant de commencer à développer un service ZOO, vous devriez vous rappeler que dans le ZOO-projet, un service est un couple composé de:"
 
 #: ../../workshop/2013/first_service.txt:24
-msgid ""
-"a metadata file: a ZOO Service Configuration File (ZCFG) containing metadata"
-" informations about a Service (providing informations about default / "
-"supported inputs and outputs for a Service)"
-msgstr ""
+msgid "a metadata file: a ZOO Service Configuration File (ZCFG) containing metadata informations about a Service (providing informations about default / supported inputs and outputs for a Service)"
+msgstr "un fichier de métadonnées: un fichier de configuration de service ZOO (ZCFG) contenant des informations de métadonnées sur un service (fournissant des informations sur les entrées et sorties par défaut / supportées pour un service)"
 
 #: ../../workshop/2013/first_service.txt:27
-msgid ""
-"a Services Provider: it depends on the programming language used, but for "
-"Python it is a module and for JavaScript a script file."
-msgstr ""
+msgid "a Services Provider: it depends on the programming language used, but for Python it is a module and for JavaScript a script file."
+msgstr "un fournisseur de services: il dépend du langage de programmation utilisé, mais pour Python c'est un module et pour JavaScript un fichier de script."
 
 #: ../../workshop/2013/first_service.txt:30
-msgid ""
-"To publish your Service, which means make your ZOO Kernel aware of its "
-"presence, you should copy a ZCFG file in the directory where "
-"``zoo_loader.cgi`` is located (in this workshop, ``/usr/lib/cgi-bin``)."
-msgstr ""
+msgid "To publish your Service, which means make your ZOO Kernel aware of its presence, you should copy a ZCFG file in the directory where ``zoo_loader.cgi`` is located (in this workshop, ``/usr/lib/cgi-bin``)."
+msgstr "Pour publier votre service, ce qui signifie rendre votre Kernel ZOO conscient de sa présence, vous devez copier un fichier ZCFG dans le répertoire où ``zoo_loader.cgi`` est situé (dans ce workshop, ``/usr/lib/cgi-bin``)."
 
 #: ../../workshop/2013/first_service.txt:33
-msgid ""
-"only the ZCFG file is required  for the Service to be considerate as "
-"available. So if you don't get the Service Provider, obviously your Execute "
-"request will fail as we will discuss later."
-msgstr ""
+msgid "only the ZCFG file is required  for the Service to be considerate as available. So if you don't get the Service Provider, obviously your Execute request will fail as we will discuss later."
+msgstr "seul le fichier ZCFG est requis pour le service pour être considéré comme disponible. Donc, si vous n'avez pas le fournisseur de services, évidemment, votre requête Execute échouera comme nous le verrons plus tard."
 
 #: ../../workshop/2013/first_service.txt:37
-msgid ""
-"Before publication, you should store your ongoing work, so you'll start by "
-"creating a directory to store the files of your Services Provider:"
-msgstr ""
+msgid "Before publication, you should store your ongoing work, so you'll start by creating a directory to store the files of your Services Provider:"
+msgstr "Avant la publication, vous devriez stocker votre travail en cours, ainsi, vous aurez donc commencer par créer un répertoire pour stocker les fichiers de votre fournisseur de services:"
 
 #: ../../workshop/2013/first_service.txt:44
-msgid ""
-"Once the ZCFG and the Python module are both ready, you can publish simply "
-"by copying the corresponding files in the same directory as the ZOO-Kernel."
-msgstr ""
+msgid "Once the ZCFG and the Python module are both ready, you can publish simply by copying the corresponding files in the same directory as the ZOO-Kernel."
+msgstr "Une fois que le ZCFG et le module Python sont tous deux prêts, vous pouvez publier simplement en copiant les fichiers correspondants dans le même répertoire que le ZOO-Kernel."
 
 #: ../../workshop/2013/first_service.txt:48
 msgid "Creating your first ZCFG file"
-msgstr ""
+msgstr "Créez votre premier fichier ZCFG"
 
 #: ../../workshop/2013/first_service.txt:50
-msgid ""
-"You will start by creating the ZCFG file for the ``Hello`` Service. Edit the"
-" ``/home/user/zoo-ws2013/ws_sp/cgi-env/Hello.zcfg`` file and add the "
-"following content:"
-msgstr ""
+msgid "You will start by creating the ZCFG file for the ``Hello`` Service. Edit the ``/home/user/zoo-ws2013/ws_sp/cgi-env/Hello.zcfg`` file and add the following content:"
+msgstr "Vous allez commencer par créer le fichier ZCFG pour le service ``Hello``. Modifier le fichier ``/home/user/zoo-ws2013/ws_sp/cgi-env/Hello.zcfg`` et ajouter le contenu suivant:"
 
 #: ../../workshop/2013/first_service.txt:86
-msgid ""
-"the name of the ZCFG file and the name between braket (here ``[Hello]``) "
-"should be the same and correspond to the function name you will define in "
-"your Services provider."
-msgstr ""
+msgid "the name of the ZCFG file and the name between braket (here ``[Hello]``) should be the same and correspond to the function name you will define in your Services provider."
+msgstr "le nom du fichier ZCFG et le nom entre crochets (ici ``[Hello]``) doivent être les mêmes et correspondre au nom de la fonction que vous allez définir dans votre fournisseur de services."
 
 #: ../../workshop/2013/first_service.txt:90
-msgid ""
-"As you can see in the ZOO Service Configuration File presented above it is "
-"divided into three distinct sections:"
-msgstr ""
+msgid "As you can see in the ZOO Service Configuration File presented above it is divided into three distinct sections:"
+msgstr "Comme vous pouvez le voir dans le fichier de configuration du service ZOO présenté ci-dessus, il est divisé en trois sections distinctes:"
 
 #: ../../workshop/2013/first_service.txt:92
 msgid "Main Metadata information (from line 2 to 8)"
-msgstr ""
+msgstr "Information de métadonnée principale (de la ligne 2 à 8)"
 
 #: ../../workshop/2013/first_service.txt:93
 msgid "List of Inputs metadata information (from 9 line to 19)"
-msgstr ""
+msgstr "Liste des Informations de métadonnée en entrée (de la ligne 9 à 19)"
 
 #: ../../workshop/2013/first_service.txt:94
 msgid "List of Outputs metadata information (from line 20 to 28)"
-msgstr ""
+msgstr "Liste des Informations de métadonnée en sortie (de la ligne 20 à 28)"
 
 #: ../../workshop/2013/first_service.txt:96
-msgid ""
-"You can get more informations about ZCFG from `the reference documentation "
-"<http://zoo-project.org/docs/services/zcfg-reference.html>`__."
-msgstr ""
+msgid "You can get more informations about ZCFG from `the reference documentation <http://zoo-project.org/docs/services/zcfg-reference.html>`__."
+msgstr "Vous pouvez obtenir plus d'informations sur le ZCFG depuis `la documentation de référence <http://zoo-project.org/docs/services/zcfg-reference.html>`__."
 
 #: ../../workshop/2013/first_service.txt:99
-msgid ""
-"If you copy the ``Hello.zcfg`` file in the same directory as your ZOO Kernel"
-" then you will be able to request for DescribeProcess using the ``Hello`` "
-"``Identifier``. The ``Hello`` service should also be listed from "
-"Capabilities document."
-msgstr ""
+msgid "If you copy the ``Hello.zcfg`` file in the same directory as your ZOO Kernel then you will be able to request for DescribeProcess using the ``Hello`` ``Identifier``. The ``Hello`` service should also be listed from Capabilities document."
+msgstr "Si vous copiez le fichier ``Hello.zcfg`` dans le même répertoire que votre Kernel ZOO alors vous serez en mesure d'interroger DescribeProcess en utilisant l'``Identifier`` de ``Hello``. Le service ``Hello`` devrait également être listé dans le document de \"Capabilities\"."
 
 #: ../../workshop/2013/first_service.txt:108
 msgid "Test requests"
-msgstr ""
+msgstr "Tester les requêtes"
 
 #: ../../workshop/2013/first_service.txt:110
-msgid ""
-"In this section you will tests each WPS requests : GetCapabilities, "
-"DescribeProcess and Execute. Note that only GetCapabilities and "
-"DescribeProcess should work at this step."
-msgstr ""
+msgid "In this section you will tests each WPS requests : GetCapabilities, DescribeProcess and Execute. Note that only GetCapabilities and DescribeProcess should work at this step."
+msgstr "Dans cette section, vous testerez chaque requête WPS: GetCapabilities, DescribeProcess et Execute. Notez que seuls les GetCapabilities et DescribeProcess devraient fonctionner à cette étape."
 
 #: ../../workshop/2013/first_service.txt:115
 msgid "Test the GetCapabilities request"
-msgstr ""
+msgstr "Tester la requête GetCapabilities"
 
 #: ../../workshop/2013/first_service.txt:117
 msgid "If you run the ``GetCapabilities`` request:"
-msgstr ""
+msgstr "Si vous lancez la requête ``GetCapabilities``:"
 
 #: ../../workshop/2013/first_service.txt:123
-msgid ""
-"Now, you should find your Hello Service in a ``Process`` node in "
-"``ProcessOfferings``:"
-msgstr ""
+msgid "Now, you should find your Hello Service in a ``Process`` node in ``ProcessOfferings``:"
+msgstr "Maintenant, vous devriez trouver votre service dans un noeud ``Process`` dans ``ProcessOfferings``:"
 
 #: ../../workshop/2013/first_service.txt:135
 msgid "Test the DescribeProcess request"
-msgstr ""
+msgstr "Tester la requête DescribeProcess"
 
 #: ../../workshop/2013/first_service.txt:137
-msgid ""
-"You can access the ``ProcessDescription`` of the ``Hello`` service using the"
-" following ``DescribeProcess`` request:"
-msgstr ""
+msgid "You can access the ``ProcessDescription`` of the ``Hello`` service using the following ``DescribeProcess`` request:"
+msgstr "Vous pouvez accéder à ``ProcessDescription`` du service ``Hello`` en utilisant la requête ``DescribeProcess`` suivante:"
 
 #: ../../workshop/2013/first_service.txt:144
 msgid "You should get the following response:"
-msgstr ""
+msgstr "Vous devriez avoir la réponse suivante:"
 
 #: ../../workshop/2013/first_service.txt:178
 msgid "Test the Execute request"
-msgstr ""
+msgstr "Tester la requête  Execute"
 
 #: ../../workshop/2013/first_service.txt:180
-msgid ""
-"Obviously, you cannot run your Service because the Python file was not "
-"published yet. If you try the following ``Execute`` request:"
-msgstr ""
+msgid "Obviously, you cannot run your Service because the Python file was not published yet. If you try the following ``Execute`` request:"
+msgstr "Évidemment, vous ne pouvez pas exécuter votre service car le fichier Python n'a pas encore été publié. Si vous essayez la requête ``Execute`` suivante:"
 
 #: ../../workshop/2013/first_service.txt:187
-msgid ""
-"You should get an ExceptionReport similar to the one provided in the "
-"following, which is normal behavior:"
-msgstr ""
+msgid "You should get an ExceptionReport similar to the one provided in the following, which is normal behavior:"
+msgstr "Vous devriez obtenir un ExceptionReport similaire à celui fournit par la suite, ce qui est un comportement normal:"
 
 #: ../../workshop/2013/first_service.txt:199
 msgid "Implementing the Python Service"
-msgstr ""
+msgstr "Implémentez le Service Python"
 
 #: ../../workshop/2013/first_service.txt:202
 msgid "General Principles"
-msgstr ""
+msgstr "Principes généraux"
 
 #: ../../workshop/2013/first_service.txt:204
-msgid ""
-"The most important thing you must know when implementing a new ZOO-Services "
-"using the Python language is that the function corresponding to your Service"
-" returns an integer value representing the status of execution "
-"(``SERVICE_FAILED`` [#f1]_ or ``SERVICE_SUCCEEDED`` [#f2]_) and takes three "
-"arguments (`Python dictionaries "
-"<http://docs.python.org/tutorial/datastructures.html#dictionaries>`__):"
-msgstr ""
+msgid "The most important thing you must know when implementing a new ZOO-Services using the Python language is that the function corresponding to your Service returns an integer value representing the status of execution (``SERVICE_FAILED`` [#f1]_ or ``SERVICE_SUCCEEDED`` [#f2]_) and takes three arguments (`Python dictionaries <http://docs.python.org/tutorial/datastructures.html#dictionaries>`__):"
+msgstr "La chose la plus importante que vous devez savoir quand vous implémentez un nouveau ZOO-Services en utilisant le langage Python est que la fonction correspondant à votre service retourne une valeur entière qui représente l'état d'exécution (``SERVICE_FAILED`` [#f1]_ ou ``SERVICE_SUCCEEDED`` [#f2]_) et prend trois arguments (`dictionnaires Python <http://docs.python.org/tutorial/datastructures.html#dictionaries>`__):"
 
 #: ../../workshop/2013/first_service.txt:211
-msgid ""
-"``conf`` : the main environment configuration (corresponding to the main.cfg"
-" content)"
-msgstr ""
+msgid "``conf`` : the main environment configuration (corresponding to the main.cfg content)"
+msgstr "``conf`` : la configuration de l'environnement principal (correspondant au contenu de main.cfg)"
 
 #: ../../workshop/2013/first_service.txt:212
-msgid ""
-"``inputs`` : the requested / default inputs (used to access input values)"
-msgstr ""
+msgid "``inputs`` : the requested / default inputs (used to access input values)"
+msgstr "``inputs`` : les entrées demandées / par défaut (utilisées pour accéder aux valeurs d'entrée)"
 
 #: ../../workshop/2013/first_service.txt:213
-msgid ""
-"``outputs`` : the requested / default outputs (used to store computation "
-"result)"
-msgstr ""
+msgid "``outputs`` : the requested / default outputs (used to store computation result)"
+msgstr "``outputs`` : les sorties demandées / par défaut (utilisées pour stocker le résultat de traitement)"
 
 #: ../../workshop/2013/first_service.txt:215
-msgid ""
-"when your service return ``SERVICE_FAILED`` you can set "
-"``conf[\"lenv\"][\"message\"]`` to add a personalized message in the "
-"ExceptionReport returned by the ZOO Kernel in such case."
-msgstr ""
+msgid "when your service return ``SERVICE_FAILED`` you can set ``conf[\"lenv\"][\"message\"]`` to add a personalized message in the ExceptionReport returned by the ZOO Kernel in such case."
+msgstr "quand votre service retourne ``SERVICE_FAILED`` vous pouvez définir ``conf[\"lenv\"][\"message\"]`` pour ajouter un message personnalisé dans l'ExceptionReport retourné par le Kernel ZOO dans ce cas."
 
 #: ../../workshop/2013/first_service.txt:219
-msgid ""
-"You get in the following a sample ``conf`` value based on the ``main.cfg`` "
-"file you saw `before <using_zoo_from_osgeolivevm.html#zoo-kernel-"
-"configuration>`__."
-msgstr ""
+msgid "You get in the following a sample ``conf`` value based on the ``main.cfg`` file you saw `before <using_zoo_from_osgeolivevm.html#zoo-kernel-configuration>`__."
+msgstr "Vous obtenez dans ce qui suit une valeur ``conf`` exemple basée sur le fichier ``main.cfg`` que vous avez vu `avant <using_zoo_from_osgeolivevm.html#zoo-kernel-configuration>`__."
 
 #: ../../workshop/2013/first_service.txt:259
-msgid ""
-"In the following you get a sample outputs value passed to a Python or a "
-"JavaScript Service:"
-msgstr ""
+msgid "In the following you get a sample outputs value passed to a Python or a JavaScript Service:"
+msgstr "Dans ce qui suit, vous obtenez une valeur de sortie exemple passée à un service Python ou JavaScript:"
 
 #: ../../workshop/2013/first_service.txt:272
-msgid ""
-"the ``inRequest`` value is set internally by the ZOO-Kernel and can be    "
-"used to determine from the Service if the key was provided in the request."
-msgstr ""
+msgid "the ``inRequest`` value is set internally by the ZOO-Kernel and can be    used to determine from the Service if the key was provided in the request."
+msgstr "la valeur ``inRequest`` est définie en interne par le ZOO-Kernel et peut être utilisée pour déterminer depuis le service si la clé a été fournie dans la requête."
 
 #: ../../workshop/2013/first_service.txt:274
-msgid ""
-"ZOO-Project provide a ZOO-API which was originally only available for "
-"JavaScript services, but thanks to the work of the ZOO-Project community, "
-"now you have also access to a ZOO-API when using the Python language. Thanks"
-" to the Python ZOO-API you don't have to remember anymore the value of "
-"SERVICE_SUCCEDED and SERVICE_FAILED, you have the capability to translate "
-"any string from your Python service by calling the ``_`` function (ie: "
-"``zoo._('My string to translate')``) or to update the current status of a "
-"running service by using the ``update_status`` function the same way you use"
-" it from JavaScript or C services."
-msgstr ""
+msgid "ZOO-Project provide a ZOO-API which was originally only available for JavaScript services, but thanks to the work of the ZOO-Project community, now you have also access to a ZOO-API when using the Python language. Thanks to the Python ZOO-API you don't have to remember anymore the value of SERVICE_SUCCEDED and SERVICE_FAILED, you have the capability to translate any string from your Python service by calling the ``_`` function (ie: ``zoo._('My string to translate')``) or to update the current status of a running service by using the ``update_status`` function the same way you use it from JavaScript or C services."
+msgstr "Le ZOO-projet fournit une ZOO-API qui était à l'origine uniquement disponible pour les services de JavaScript, mais grâce au travail de la communauté ZOO-projet, maintenant vous avez aussi accès à une ZOO-API utilisant le langage Python. Grâce à la ZOO-API Python, vous n'avez plus à retenir la valeur de SERVICE_SUCCEDED et SERVICE_FAILED, vous avez la capacité de traduire n'importe quelle chaîne depuis votre service Python en appelant la fonction ``_`` (ex: ``zoo._('Ma chaine a traduire')``) ou de mettre à jour le statut actuel d'un service en cours d'exécution, en utilisant la fonction ``update_status`` de la même manière que vous l'utilisez depuis des services C ou JavaScript."
 
 #: ../../workshop/2013/first_service.txt:286
 msgid "The Hello Service"
-msgstr ""
+msgstr "Le Service Hello"
 
 #: ../../workshop/2013/first_service.txt:288
-msgid ""
-"You can copy and paste the following into the ``/home/user/zoo-ws2013/ws_sp"
-"/cgi-env/test_service.py`` file."
-msgstr ""
+msgid "You can copy and paste the following into the ``/home/user/zoo-ws2013/ws_sp/cgi-env/test_service.py`` file."
+msgstr "Vous pouvez copier et coller ce qui suit dans le fichier ``/home/user/zoo-ws2013/ws_sp/cgi-env/test_service.py``."
 
 #: ../../workshop/2013/first_service.txt:299
-msgid ""
-"Once you finish editing the file, you should copy it in the ``/usr/lib/cgi-"
-"bin`` directory:"
-msgstr ""
+msgid "Once you finish editing the file, you should copy it in the ``/usr/lib/cgi-bin`` directory:"
+msgstr "Une fois que vous aurez fini l'édition du fichier, vous devriez le copier dans le répertoire ``/usr/lib/cgi-bin``:"
 
 #: ../../workshop/2013/first_service.txt:307
 msgid "Interracting with your service using Execute requests"
-msgstr ""
+msgstr "Interragir avec votre service en utilisant des requêtes Execute"
 
 #: ../../workshop/2013/first_service.txt:309
 msgid "Now, you can request for Execute using the following basic url:"
-msgstr ""
+msgstr "Maintenant, vous pouvez interroger Execute en utilisant l'url de base suivante:"
 
 #: ../../workshop/2013/first_service.txt:315
-msgid ""
-"You can request the WPS Server to return a XML WPS Response containing the "
-"result of your computation, requesting for ResponseDocument or you can "
-"access the data directly requesting for RawDataOutput."
-msgstr ""
+msgid "You can request the WPS Server to return a XML WPS Response containing the result of your computation, requesting for ResponseDocument or you can access the data directly requesting for RawDataOutput."
+msgstr "Vous pouvez interroger le serveur WPS pour retourner une réponse WPS XML contenant le résultat de votre calcul, demandant ResponseDocument ou vous pouvez accéder aux données directement depuis RawDataOutput."
 
 #: ../../workshop/2013/first_service.txt:319
 msgid "Sample request using the RawDataOutput parameter:"
-msgstr ""
+msgstr "Requête example utilisant le paramètre RawDataOutput:"
 
 #: ../../workshop/2013/first_service.txt:325
 msgid "Sample request using the default ResponseDocument parameter:"
-msgstr ""
+msgstr "Requête example utilisant le paramètre par défaut ResponseDocument:"
 
 #: ../../workshop/2013/first_service.txt:331
-msgid ""
-"When you are using ResponseDocument there is specific attribut you can use "
-"to ask the ZOO Kernel to store the result: ``asReference``. You can use the "
-"following example:"
-msgstr ""
+msgid "When you are using ResponseDocument there is specific attribut you can use to ask the ZOO Kernel to store the result: ``asReference``. You can use the following example:"
+msgstr "Lorsque vous utilisez ResponseDocument, il y a un attribut spécifique que vous pouvez utiliser pour demander au Kernel ZOO de stocker le résultat: ``asReference``. Vous pouvez utiliser l'exemple suivant:"
 
 #: ../../workshop/2013/first_service.txt:338
-msgid ""
-"When computation take long time, the client should request the execution of "
-"a Service by setting both ``storeExecuteResponse`` and ``status`` parameter "
-"to true to force asynchronous execution. This will make the ZOO-Kernel "
-"return, without waiting for the Service execution completion but after "
-"starting another ZOO-Kernel process responsible of the Service execution, a "
-"ResponseDocument containing a ``statusLocation`` attribute which can be used"
-" to access the status of an ongoing service or the result when the process "
-"ended [#f3]_."
-msgstr ""
+msgid "When computation take long time, the client should request the execution of a Service by setting both ``storeExecuteResponse`` and ``status`` parameter to true to force asynchronous execution. This will make the ZOO-Kernel return, without waiting for the Service execution completion but after starting another ZOO-Kernel process responsible of the Service execution, a ResponseDocument containing a ``statusLocation`` attribute which can be used to access the status of an ongoing service or the result when the process ended [#f3]_."
+msgstr "Lorsque le traitement prend du temps, le client doit demander l'exécution d'un service en mettant à la fois les paramètres ``storeExecuteResponse`` et ``status`` à true pour forcer une exécution asynchrone. Cela fera retourner au ZOO-Kernel, sans attendre l'achèvement de l'exécution du service, mais après le début d'un autre processus ZOO-Kernel responsable de l'exécution du service, un ResponseDocument contenant un attribut ``statusLocation`` qui peut être utilisé pour accéder au statut d'un service en cours ou le résultat lorsque le processus a pris fin [# f3] _."
 
 #: ../../workshop/2013/first_service.txt:352
 msgid "Conclusion"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../workshop/2013/first_service.txt:354
-msgid ""
-"Even if this first service was really simple it was useful to illustrate how"
-" the ZOO-Kernel fill ``conf``, ``inputs`` and ``outputs`` parameter prior to"
-" load and run your function service, how to write a ZCFG file, how to "
-"publish a Services Provider by placing the ZCFG and Python files in the same"
-" directory as the ZOO-Kernel, then how to interract with your service using "
-"both ``GetCapabilities``, ``DescribeProcess`` and ``Execute`` requesr. We "
-"will see in the `next section <building_blocks_presentation.html>`__ how to "
-"write similar requests using the XML syntax."
-msgstr ""
+msgid "Even if this first service was really simple it was useful to illustrate how the ZOO-Kernel fill ``conf``, ``inputs`` and ``outputs`` parameter prior to load and run your function service, how to write a ZCFG file, how to publish a Services Provider by placing the ZCFG and Python files in the same directory as the ZOO-Kernel, then how to interract with your service using both ``GetCapabilities``, ``DescribeProcess`` and ``Execute`` requesr. We will see in the `next section <building_blocks_presentation.html>`__ how to write similar requests using the XML syntax."
+msgstr "Même si ce premier service était vraiment simple, il était utile pour illustrer comment le ZOO-Kernel remplit les paramètres ``conf``, ``inputs`` et ``outputs`` avant pour charger et exécuter votre service de fonction, comment écrire un fichier ZCFG, comment publier un fournisseur de services en plaçant le ZCFG et les fichiers Python dans le même répertoire que le ZOO-Kernel, ensuite comment interragir avec votre service en utilisant à la fois les requêtes ``DescribeProcess`` et ``Execute``. Nous verrons dans la `section suivante  <building_blocks_presentation.html>`__ comment écrire des requêtes similaires en utilisant la syntaxe XML."
 
 #: ../../workshop/2013/first_service.txt:364
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes de pied de page"
 
 #: ../../workshop/2013/first_service.txt:365
 msgid "``SERVICE_FAILED=4``"
-msgstr ""
+msgstr "``SERVICE_FAILED=4``"
 
 #: ../../workshop/2013/first_service.txt:366
 msgid "``SERVICE_SUCCEEDED=3``"
-msgstr ""
+msgstr "``SERVICE_SUCCEEDED=3``"
 
 #: ../../workshop/2013/first_service.txt:367
-msgid ""
-"To get on-going status url in ``statusLocation``, you'll need to setup the "
-"`utils/status <http://www.zoo-project.org/trac/browser/trunk/zoo-project"
-"/zoo-services/utils/status>`_ Service. If you don't get this service "
-"available, the ZOO-Kernel will simply give the url to a flat XML file stored"
-" on the server which will contain, at the end of the execution, the result "
-"of the Service execution."
-msgstr ""
+msgid "To get on-going status url in ``statusLocation``, you'll need to setup the `utils/status <http://www.zoo-project.org/trac/browser/trunk/zoo-project/zoo-services/utils/status>`_ Service. If you don't get this service available, the ZOO-Kernel will simply give the url to a flat XML file stored on the server which will contain, at the end of the execution, the result of the Service execution."
+msgstr "Pour obtenir l'url de statut en cours dans ``statusLocation``, vous aurez besoin d'installer le service `utils/status <http://www.zoo-project.org/trac/browser/trunk/zoo-project/zoo-services/utils/status>`_. Si vous n'avez pas ce service disponible, le ZOO-Kernel donnera simplement l'URL d'un fichier XML plat stockée sur le serveur qui contiendra, à la fin de l'exécution, le résultat de l'exécution du service."
+
