@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Presenting building blocks - Using OGR based Web Services &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../../index.html" />
+    <link rel="up" title="Practical Introduction to ZOO-Project by playing with building blocks" href="index.html" />
+    <link rel="next" title="Playing with buildign blocks - Creating JavaScript Web Services" href="js_services_chaining.html" />
+    <link rel="prev" title="Creating your first ZOO Service" href="first_service.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../../en/index.html">English</a></li>
+      <li><a href="../../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="js_services_chaining.html" title="Playing with buildign blocks - Creating JavaScript Web Services"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="first_service.html" title="Creating your first ZOO Service"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Practical Introduction to ZOO-Project by playing with building blocks</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="presenting-building-blocks-using-ogr-based-web-services">
+<span id="ogr-base-vect-ops"></span><h1><a class="toc-backref" href="#table-of-contents">Presenting building blocks - Using OGR based Web Services</a><a class="headerlink" href="#presenting-building-blocks-using-ogr-based-web-services" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#presenting-building-blocks-using-ogr-based-web-services" id="id1">Presenting building blocks - Using OGR based Web Services</a><ul>
+<li><a class="reference internal" href="#introduction" id="id2">Introduction</a></li>
+<li><a class="reference internal" href="#services-provider-and-configuration-files" id="id3">Services Provider and configuration files</a></li>
+<li><a class="reference internal" href="#the-buffer-service" id="id4">The Buffer Service</a></li>
+<li><a class="reference internal" href="#the-intersection-service" id="id5">The Intersection Service</a></li>
+<li><a class="reference internal" href="#the-difference-service" id="id6">The Difference Service</a></li>
+<li><a class="reference internal" href="#conclusion" id="id7">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#table-of-contents">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In this section, you will use basic ZOO-Services : <tt class="docutils literal"><span class="pre">BufferPy</span></tt>,
+<tt class="docutils literal"><span class="pre">IntersectionPy</span></tt> and <tt class="docutils literal"><span class="pre">DifferencePy</span></tt> which use OGR Python module.
+The intended goal of this section is to present and interact with your new building blocks before chaining them in the next section.</p>
+<p>First of all, you should use the following link to access a user interface to interact with your service :
+<a class="reference external" href="http://localhost/zoows-demo/spatialtools-py.html">http://localhost/zoows-demo/spatialtools-py.html</a></p>
+</div>
+<div class="section" id="services-provider-and-configuration-files">
+<h2><a class="toc-backref" href="#table-of-contents">Services Provider and configuration files</a><a class="headerlink" href="#services-provider-and-configuration-files" title="Permalink to this headline">¶</a></h2>
+<p>First you may verify if the ZOO-Services are available from your current setup.
+You can take a look at the <tt class="docutils literal"><span class="pre">Buffer.zcfg</span></tt>, <tt class="docutils literal"><span class="pre">Intersection.zcfg</span></tt> and
+<tt class="docutils literal"><span class="pre">DifferencePy.zcfg</span></tt> to get details about parameters.
+As you can see from the ZCFG files, you will use ZOO-Services provided by the
+<tt class="docutils literal"><span class="pre">foss4g_ws</span></tt> Python service provider. So if you want to modify the Python code
+you will have to edit this file.
+You are invited to use similar requests as you seen in previous sections to learn about each service.</p>
+</div>
+<div class="section" id="the-buffer-service">
+<h2><a class="toc-backref" href="#table-of-contents">The Buffer Service</a><a class="headerlink" href="#the-buffer-service" title="Permalink to this headline">¶</a></h2>
+<p>First click on a street then once the street is displayed in blue, click the
+&#8216;Buffer&#8217; button on top, you should get similar result as displayed in the following.</p>
+<a class="reference internal image-reference" href="../../_images/Buffer_Level_15.png"><img alt="../../_images/Buffer_Level_15.png" class="align-center" src="../../_images/Buffer_Level_15.png" style="width: 650px;" /></a>
+<p>Since version ZOO-Project 1.2.0, you can run automatically some basic tests to
+make sure that you wrote a correct ZCFG file and your service is validating.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">the current testing is really simple and should be adapted to each Services
+Provider, mainly to define input names.</p>
+</div>
+<p>You can use the following command:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nb">cd</span> /home/user/zoo/testing
+./run.sh http://localhost/cgi-bin/zoo_loader.cgi Buffer
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">During or after the test run, you can take a look inside the <tt class="docutils literal"><span class="pre">tmp</span></tt> directory
+which contains both the XML requests send to the ZOO Kernel (<tt class="docutils literal"><span class="pre">*1.xml</span></tt>) and the
+responses it gave (<tt class="docutils literal"><span class="pre">output*.xml</span></tt>).</p>
+</div>
+</div>
+<div class="section" id="the-intersection-service">
+<h2><a class="toc-backref" href="#table-of-contents">The Intersection Service</a><a class="headerlink" href="#the-intersection-service" title="Permalink to this headline">¶</a></h2>
+<p>Using the same client interface as before, once you get a Buffer, you can then
+select a street intersecting the Buffer geometry to compute intersection by clicking on the Intersection button.</p>
+<a class="reference internal image-reference" href="../../_images/Intersection_Level_15.png"><img alt="../../_images/Intersection_Level_15.png" class="align-center" src="../../_images/Intersection_Level_15.png" style="width: 650px;" /></a>
+</div>
+<div class="section" id="the-difference-service">
+<h2><a class="toc-backref" href="#table-of-contents">The Difference Service</a><a class="headerlink" href="#the-difference-service" title="Permalink to this headline">¶</a></h2>
+<p>Using the same instructions as for Intersetion, you can get the following result.</p>
+<a class="reference internal image-reference" href="../../_images/Difference_Level_15.png"><img alt="../../_images/Difference_Level_15.png" class="align-center" src="../../_images/Difference_Level_15.png" style="width: 650px;" /></a>
+</div>
+<div class="section" id="conclusion">
+<h2><a class="toc-backref" href="#table-of-contents">Conclusion</a><a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Now you know this three services, and you get a simple interface to interact
+with your MapServer WFS and your ZOO-Project WPS Servers, you are ready to use
+the Services in a different way by chaining them using the ZOO-API to build
+more complexe and powerfull services.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">ZOO Kernel Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/index.html">ZOO Services Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2010/index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Practical Introduction to ZOO-Project by playing with building blocks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#foss4g-2012-prague">FOSS4G 2012 Prague</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#sponsored-by">Sponsored By</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#special-thanks-to-our-knowledge-partners">Special thanks to our Knowledge Partners</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#workshop-table-of-content">WorkShop table of content</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using_zoo_from_osgeolivevm.html">Configuration and ZOO-Kernel use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first_service.html">Creating your first ZOO Service</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Presenting building blocks - Using OGR based Web Services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="js_services_chaining.html">Playing with buildign blocks - Creating JavaScript Web Services</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2013/index.html">ZOO-Project: playing with building blocks to build pgRouting web application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../community/index.html">ZOO Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/documentation.html">Documentation Development Guide</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

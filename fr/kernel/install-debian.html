@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Debian / Ubuntu &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../index.html" />
+    <link rel="up" title="Installation" href="installation.html" />
+    <link rel="next" title="Windows" href="install-windows.html" />
+    <link rel="prev" title="CentOS" href="install-centos.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../en/index.html">English</a></li>
+      <li><a href="../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="install-windows.html" title="Windows"
+             accesskey="N">suivant</a> |</li>
+        <li class="right" >
+          <a href="install-centos.html" title="CentOS"
+             accesskey="P">précédent</a> |</li>
+        <li><a href="../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" >Documentation du Kernel ZOO</a> &raquo;</li>
+          <li><a href="installation.html" accesskey="U">Installation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="debian-ubuntu">
+<span id="kernel-installation-debian"></span><h1><a class="toc-backref" href="#table-of-contents">Debian / Ubuntu</a><a class="headerlink" href="#debian-ubuntu" title="Lien permanent vers ce titre">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Nicolas Bozon, Gérald Fenoy, Jeff McKenna, Luca Delucchi</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Last Updated:</th><td class="field-body">$Date: 2013-06-21 18:55:49 +0200 (Fri, 21 Jun 2013) $</td>
+</tr>
+</tbody>
+</table>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table des matières</p>
+<ul class="simple">
+<li><a class="reference internal" href="#debian-ubuntu" id="id1">Debian / Ubuntu</a><ul>
+<li><a class="reference internal" href="#ubuntu-12-04-dependencies" id="id2">Dépendances Ubuntu 12.04</a></li>
+<li><a class="reference internal" href="#debian-7-0-dependencies" id="id3">Dépendances Debian 7.0</a></li>
+<li><a class="reference internal" href="#installation-workflow" id="id4">Workflow d&#8217;installation</a></li>
+<li><a class="reference internal" href="#rewrite-rule-configuration" id="id5">Réécrire la configuration des règles</a></li>
+<li><a class="reference internal" href="#compile-mapserver" id="id6">Compiler MapServer</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Une image virtuelle Ubuntu 10.4 incluant ZOO est disponible sur <a class="reference external" href="http://www.zoo-project.org/Ubuntu10.4_ZOO.zip">http://www.zoo-project.org/Ubuntu10.4_ZOO.zip</a> (root: ZOO.test)</p>
+</div>
+<div class="section" id="ubuntu-12-04-dependencies">
+<h2><a class="toc-backref" href="#table-of-contents">Dépendances Ubuntu 12.04</a><a class="headerlink" href="#ubuntu-12-04-dependencies" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p class="first">installez les dépendances par défaut</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>sudo apt-get install flex bison libfcgi-dev libxml2 libxml2-dev curl openssl autoconf apache2 python-software-properties subversion libmozjs185-dev python-dev build-essential</pre>
+</div>
+<ul class="simple">
+<li><p class="first">ajoutez le dépôt ubuntugis pour obtenir les bibliothèques SIG les plus récentes</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>sudo add-apt-repository ppa:ubuntugis/ppa
+sudo apt-get update</pre>
+</div>
+<ul class="simple">
+<li><p class="first">installez une bibliothèque géographique</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>sudo apt-get install libgdal1-dev</pre>
+</div>
+<ul class="simple">
+<li><p class="first">téléchargez les sources de ZOO</p>
+</li>
+</ul>
+</div>
+<div class="section" id="debian-7-0-dependencies">
+<h2><a class="toc-backref" href="#table-of-contents">Dépendances Debian 7.0</a><a class="headerlink" href="#debian-7-0-dependencies" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p class="first">installez les dépendances</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>apt-get install flex bison libfcgi-dev libxml2 libxml2-dev curl openssl autoconf apache2 python-software-properties subversion python-dev libgdal1-dev build-essential libmozjs185-dev</pre>
+</div>
+</div>
+<div class="section" id="installation-workflow">
+<h2><a class="toc-backref" href="#table-of-contents">Workflow d&#8217;installation</a><a class="headerlink" href="#installation-workflow" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Dans les lignes suivantes, vous trouverez une note <tt class="docutils literal"><span class="pre">en</span> <span class="pre">tant</span> <span class="pre">qu'utilisateur</span> <span class="pre">administrateur</span></tt>. Sur Ubuntu, vous devrez ajouter <tt class="docutils literal"><span class="pre">sudo</span></tt> au début de la ligne, sur Debian, vous pouvez utiliser  <tt class="docutils literal"><span class="pre">su</span> <span class="pre">-c</span> <span class="pre">COMMAND</span></tt>)</p>
+</div>
+<div class="highlight-python"><pre>svn checkout http://svn.zoo-project.org/svn/trunk zoo-project</pre>
+</div>
+<ul class="simple">
+<li><p class="first">installez cgic depuis les paquets</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>cd zoo-project/thirds/cgic206/</pre>
+</div>
+<ul class="simple">
+<li><p class="first">compilez</p>
+</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">make</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p class="first">Si vous voulez utiliser Mapserver (optionnel) pour des sorties WMS, WFS et WCS, lisez <a class="reference internal" href="#mapserver"><em>Compiler MapServer</em></a></p>
+</li>
+<li><p class="first">allez au chemin du kernel</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>cd ../../zoo-project/zoo-kernel/</pre>
+</div>
+<ul class="simple">
+<li><p class="first">créez le fichier configure</p>
+</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">autoconf</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p class="first">lancez configure</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>./configure --with-js --with-python</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pour PHP, vous devez vous assurer d&#8217;avoir compilé PHP avec <a class="reference external" href="http://www.zoo-project.org/trac/wiki/ZooKernel/Embed/PHP#ConfigureandInstallPHPEmbedlibrary">&#8211;enable-embed</a>.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pour utiliser MapServer, ajoutez l&#8217;option <tt class="docutils literal"><span class="pre">--with-mapserver=/path/to/mapserver/source</span></tt></p>
+</div>
+<ul class="simple">
+<li><p class="first">compilez</p>
+</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">make</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p class="first">copiez les fichiers nécessaires dans votre cgi-bin (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>cp main.cfg /usr/lib/cgi-bin
+cp zoo_loader.cgi /usr/lib/cgi-bin</pre>
+</div>
+<ul class="simple">
+<li><p class="first">installez le ServiceProvider ZOO, dans ce cas, nous essayons le service Python (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>cp ../zoo-services/hello-py/cgi-env/*.zcfg /usr/lib/cgi-bin
+cp ../zoo-services/hello-py/*.py /usr/lib/cgi-bin/</pre>
+</div>
+<ul class="simple">
+<li><p class="first">changez quelques informations dans le main.cfg (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>nano /usr/lib/cgi-bin/main.cfg
+- serverAddress = http://127.0.0.1</pre>
+</div>
+<ul class="simple">
+<li><p class="first">essayer l&#8217;installation</p>
+<ul>
+<li><a class="reference external" href="http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&amp;metapath=&amp;Service=WPS&amp;Request=GetCapabilities&amp;Version=1.0.0">http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&amp;metapath=&amp;Service=WPS&amp;Request=GetCapabilities&amp;Version=1.0.0</a></li>
+<li><a class="reference external" href="http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&amp;metapath=&amp;Service=WPS&amp;Request=DescribeProcess&amp;Version=1.0.0&amp;Identifier=HelloPy">http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&amp;metapath=&amp;Service=WPS&amp;Request=DescribeProcess&amp;Version=1.0.0&amp;Identifier=HelloPy</a></li>
+<li><a class="reference external" href="http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&amp;metapath=&amp;Service=WPS&amp;Request=Execute&amp;Version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=myname">http://127.0.0.1/cgi-bin/zoo_loader.cgi?ServiceProvider=&amp;metapath=&amp;Service=WPS&amp;Request=Execute&amp;Version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=myname</a></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Si vous avez des problèmes dans la requête execute utilisant le service Python, ajoutez ce qui suit à <tt class="docutils literal"><span class="pre">main.cfg</span></tt>:</p>
+<div class="last highlight-python"><pre>[env]
+PYTHONPATH=&lt;YOUR_PYTHONPATH&gt;</pre>
+</div>
+</div>
+</div>
+<div class="section" id="rewrite-rule-configuration">
+<h2><a class="toc-backref" href="#table-of-contents">Réécrire la configuration des règles</a><a class="headerlink" href="#rewrite-rule-configuration" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p class="first">pour une meilleure lisibilité et un Kernel ZOO pleinement fonctionnel, vous devez modifier la configuration par défaut de Apache afin d&#8217;être capable d&#8217;utiliser l&#8217;url <a class="reference external" href="http://localhost/zoo/">http://localhost/zoo/</a> directement. Lancez (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>nano /usr/lib/cgi-bin/main.cfg
+- serverAddress = http://localhost/zoo</pre>
+</div>
+<ul class="simple">
+<li><p class="first">d&#8217;abord, merci de créer un répertoire <tt class="docutils literal"><span class="pre">zoo</span></tt> dans <tt class="docutils literal"><span class="pre">/var/www/</span></tt> qui est utilisé par Apache en  tant que DocumentRoot (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">mkdir</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">zoo</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p class="first">Ensuite, merci d&#8217;éditer le fichier de configuration <tt class="docutils literal"><span class="pre">/etc/apache2/sites-available/default</span></tt> et d&#8217;ajouter les lignes suivantes après le bloc Directory relatif au répertoire /var/www directory (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>&lt;Directory /var/www/zoo/&gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    allow from all
+&lt;/Directory&gt;</pre>
+</div>
+<ul class="simple">
+<li><p class="first">maintenant, créez  un petit fichier .htaccess dans le <tt class="docutils literal"><span class="pre">/var/www/zoo</span></tt> contenant les lignes suivantes (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>RewriteEngine on
+RewriteRule call/(.*)/(.*) /cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=$1&amp;DataInputs=sid=$2&amp;RawDataOutput=Result [L,QSA]
+RewriteRule (.*)/(.*) /cgi-bin/zoo_loader.cgi?metapath=$1 [L,QSA]
+RewriteRule (.*) /cgi-bin/zoo_loader.cgi [L,QSA]</pre>
+</div>
+<ul class="simple">
+<li><p class="first">pour que le dernier fichier soit pris en compte par Apache, vous devez activer le module Apache de réécriture en copiant un fichier de chargement comme ci-dessous (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>cp /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/</pre>
+</div>
+<ul class="simple">
+<li><p class="first">ou en utilisant l&#8217;outil a2enmod de cette manière (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>a2enmod rewrite</pre>
+</div>
+<ul class="simple">
+<li><p class="first">maintenant, vous devriez être capable d&#8217;accéder au Kernel ZOO utilisant un script simplifié en redémarrant votre serveur Web Apache (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<dl class="docutils">
+<dt>::</dt>
+<dd>/etc/init.d/apache2 restart</dd>
+</dl>
+<ul class="simple">
+<li><p class="first">maintenant vous pouvez essayer:</p>
+<ul>
+<li><a class="reference external" href="http://localhost/zoo/?Service=WPS&amp;Request=GetCapabilities&amp;Version=1.0.0">http://localhost/zoo/?Service=WPS&amp;Request=GetCapabilities&amp;Version=1.0.0</a></li>
+<li><a class="reference external" href="http://localhost/zoo/?Service=WPS&amp;Request=DescribeProcess&amp;Version=1.0.0&amp;Identifier=HelloPy">http://localhost/zoo/?Service=WPS&amp;Request=DescribeProcess&amp;Version=1.0.0&amp;Identifier=HelloPy</a></li>
+<li><a class="reference external" href="http://localhost/zoo/?Service=WPS&amp;Request=Execute&amp;Version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=myname">http://localhost/zoo/?Service=WPS&amp;Request=Execute&amp;Version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=myname</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="compile-mapserver">
+<span id="mapserver"></span><h2><a class="toc-backref" href="#table-of-contents">Compiler MapServer</a><a class="headerlink" href="#compile-mapserver" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p class="first">installez les dépendances MapServer (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>apt-get install git libfreetype6-dev libproj-dev libkml-dev libcairo-dev libxml2-dev libgd2-xpm-dev libxslt1-dev</pre>
+</div>
+<ul class="simple">
+<li><p class="first">extrayez MapServer depuis le dépôt git</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>git clone https://github.com/mapserver/mapserver.git
+cd mapserver
+git checkout branch-6-2
+git pull</pre>
+</div>
+<ul class="simple">
+<li><p class="first">maintenant compilez MapServer</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>./configure --with-ogr --with-gdal --with-wfsclient --with-wmsclient --with-tiff --with-jpeg --with-gd --with-wcs --with-sos --with-xml2-config --with-wfs --with-fastcgi --with-proj --with-cairo --with-kml=yes --with-xslt --with-threads --with-geos
+make</pre>
+</div>
+<ul class="simple">
+<li><p class="first">maintenant installez MapServer (en tant qu&#8217;utilisateur administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>make install</pre>
+</div>
+<ul class="simple">
+<li><p class="first">maintenant, ajoutez le chemin au chemin des bibliothèques (en tant qu&#8217;administrateur)</p>
+</li>
+</ul>
+<div class="highlight-python"><pre>nano /etc/ld.so.conf.d/mapserver.conf
+- /usr/local/lib/</pre>
+</div>
+<ul class="simple">
+<li><p class="first">lancez en tant qu&#8217;administrateur</p>
+</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">ldconfig</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table des Matières</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Documentation du Kernel ZOO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="installation.html">Installation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="install-prerequisites.html">Prérequis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-unix.html">Unix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-opensuse.html">OpenSUSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-centos.html">CentOS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Debian / Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-windows.html">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-mac.html">Mac OS X</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mapserver.html">Comment utiliser le support W*S MapServer interne</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../services/index.html">Documentation de services ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2010/index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2012/index.html">Practical Introduction to ZOO-Project by playing with building blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2013/index.html">ZOO-Project: jouer avec des blocs de construction pour construire une application web pgRouting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Communauté ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/documentation.html">Guide de développement de la documentation</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Recherche rapide</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Saisissez un mot clef ou un nom de module, classe ou fonction.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

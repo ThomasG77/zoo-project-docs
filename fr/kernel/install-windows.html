@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Windows &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../index.html" />
+    <link rel="up" title="Installation" href="installation.html" />
+    <link rel="next" title="Mac OS X" href="install-mac.html" />
+    <link rel="prev" title="Debian / Ubuntu" href="install-debian.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../en/index.html">English</a></li>
+      <li><a href="../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="install-mac.html" title="Mac OS X"
+             accesskey="N">suivant</a> |</li>
+        <li class="right" >
+          <a href="install-debian.html" title="Debian / Ubuntu"
+             accesskey="P">précédent</a> |</li>
+        <li><a href="../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" >Documentation du Kernel ZOO</a> &raquo;</li>
+          <li><a href="installation.html" accesskey="U">Installation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="windows">
+<span id="kernel-installation-windows"></span><h1><a class="toc-backref" href="#table-of-contents">Windows</a><a class="headerlink" href="#windows" title="Lien permanent vers ce titre">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Nicolas Bozon, Gérald Fenoy, Jeff McKenna</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Last Updated:</th><td class="field-body">$Date: 2011-12-07 14:44:57 +0100 (Wed, 07 Dec 2011) $</td>
+</tr>
+</tbody>
+</table>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table des matières</p>
+<ul class="simple">
+<li><a class="reference internal" href="#windows" id="id1">Windows</a><ul>
+<li><a class="reference internal" href="#using-osgeo4w" id="id2">Utiliser OSGeo4W</a></li>
+<li><a class="reference internal" href="#compiling-using-your-own-libraries" id="id3">Compiler en utilisant vos propres bibliothèques</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="using-osgeo4w">
+<h2><a class="toc-backref" href="#table-of-contents">Utiliser OSGeo4W</a><a class="headerlink" href="#using-osgeo4w" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="install-osgeo4w">
+<h3>Installer OSGeo4W<a class="headerlink" href="#install-osgeo4w" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Téléchargez l&#8217;installateur OSGeo4W depuis <a class="reference external" href="http://trac.osgeo.org/osgeo4w/">http://trac.osgeo.org/osgeo4w/</a>, et l&#8217;installer avec toutes les dépendances nécessaires à vos services (GDAL/OGR par exemple). Les bibliothèques suivantes sont requises: FastCGI, libxml, Python, cURL.</p>
+</div>
+<div class="section" id="install-other-tools-and-libraries">
+<h3>Installer les autres outils et bibliothèques<a class="headerlink" href="#install-other-tools-and-libraries" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Après l&#8217;installation de OSGeo4W sur votre plate-forme, vous aurez besoin de plus d&#8217;outils et bibliothèques GNU. <a class="reference external" href="http://www.zoo-project.org/dl/tool-win32.zip">Ce paquet</a> contient toutes les dépendances requises pour compiler sur les plates-formes WIN32 et celui-ci contient toutes <a class="reference external" href="http://www.zoo-project.org/dl/zoo-runtime.zip">les dépendances pour l&#8217;exécution à placer</a> dans votre c:OSGeo4Wbin.</p>
+</div>
+<div class="section" id="download-and-install-zoo-kernel">
+<h3>Télécharger et installer le Kernel ZOO<a class="headerlink" href="#download-and-install-zoo-kernel" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Téléchargez <a class="reference external" href="http://www.zoo-project.org/dl/zoo_loader.cgi">la version binaire</a>  du Kernel ZOO pour WIN32 ensuite placez-la dans le répertoire <tt class="docutils literal"><span class="pre">C:\OSGeo4W\bin</span></tt>. N&#8217;oubliez pas de placer un fichier <tt class="docutils literal"><span class="pre">main.cfg</span></tt> dans le même répertoire, vous pouvez utiliser une copie modifiée de <a class="reference external" href="http://www.zoo-project.org/trac/browser/trunk/zoo-kernel/main.cfg">ce fichier</a>.</p>
+</div>
+<div class="section" id="deploy-zoo-services-providers">
+<h3>Déployer les fournisseurs de services ZOO<a class="headerlink" href="#deploy-zoo-services-providers" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Vous pouvez utiliser la version binaire du fournisseur de services OGR disponible depuis <a class="reference external" href="http://www.zoo-project.org/dl/zoo-services-win32.zip">ici</a>. Ensuite, placez les deux bibliothèques avec leurs fichiers .zcfg respectifs dans votre répertoire <tt class="docutils literal"><span class="pre">C:\OSGeo4W\bin</span></tt> local.</p>
+</div>
+<div class="section" id="testing">
+<h3>Tester<a class="headerlink" href="#testing" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Maintenant, vous devriez être capable de faire une requête vers votre Kernel ZOO local.</p>
+</div>
+</div>
+<div class="section" id="compiling-using-your-own-libraries">
+<h2><a class="toc-backref" href="#table-of-contents">Compiler en utilisant vos propres bibliothèques</a><a class="headerlink" href="#compiling-using-your-own-libraries" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">vous devez être sûr d&#8217;avoir effectué les <a class="reference internal" href="install-prerequisites.html#kernel-installation-prereq"><em>étapes de prérequis</em></a> avant la compilation du Kernel ZOO.</p>
+</div>
+<p>Les étapes suivantes sont pour être utiliser avec le compilateur Visual Studio de Microsoft (et testé avec MSVC 2008).</p>
+<ol class="arabic">
+<li><p class="first">Assurez-vous que les outils gnuwin32 <tt class="docutils literal"><span class="pre">bison.exe</span></tt> et <tt class="docutils literal"><span class="pre">flex.exe</span></tt> sont trouvés dans le chemin.  Vous pouvez télécharger les outils GNUwin32 <a class="reference external" href="http://www.zoo-project.org/dl/tool-win32.zip">ici</a>.</p>
+</li>
+<li><p class="first">Modifiez le fichier <tt class="docutils literal"><span class="pre">zoo-project\zoo-kernel\nmake.opt</span></tt> to point to your local libraries.  You can find a modified nmake.opt that points to local libs <a class="reference external" href="http://www.zoo-project.org/trac/attachment/ticket/27/nmake.opt">here</a>. You can also find a modified <tt class="docutils literal"><span class="pre">zoo-project\zoo-kernel\makefile.vc</span></tt> file <a class="reference external" href="http://www.zoo-project.org/trac/attachment/ticket/27/makefile.vc">here</a>.</p>
+</li>
+<li><p class="first">Exécutez:</p>
+<div class="highlight-python"><pre>nmake /f makefile.vc</pre>
+</div>
+</li>
+<li><p class="first">Un fichier <tt class="docutils literal"><span class="pre">zoo_loader.cgi</span></tt> devrait être créé.  Notez que si un autre fichier nommé <tt class="docutils literal"><span class="pre">zoo_loader.cgi.manifest</span></tt> est aussi créé, vous aurez à lancer une autre commande:</p>
+<div class="highlight-python"><pre>nmake /f makefile.vc embed-manifest</pre>
+</div>
+</li>
+<li><p class="first">Copiez les fichiers <tt class="docutils literal"><span class="pre">zoo_loader.cgi</span></tt> et <tt class="docutils literal"><span class="pre">main.cfg</span></tt> dans votre répertoire cgi-bin.</p>
+</li>
+<li><p class="first">En utilisant l&#8217;invite de commande, testez le zoo-kernel en exécutant la commande suivante:</p>
+<div class="highlight-python"><pre>D:\ms4w\Apache\cgi-bin&gt; zoo_loader.cgi</pre>
+</div>
+<p>qui devrait afficher un message tel que:</p>
+<div class="highlight-python"><pre>Content-Type: text/xml; charset=utf-8
+Status: 200 OK
+
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ows:ExceptionReport xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/ows/1.1 http://schemas.opengis.net/ows/1.1.0/owsExceptionReport.xsd" xml:lang="en-US" version="1.1.0"&gt;
+  &lt;ows:Exception exceptionCode="MissingParameterValue"&gt;
+    &lt;ows:ExceptionText&gt;Parameter &amp;lt;request&amp;gt; was not specified&lt;/ows:ExceptionText&gt;
+  &lt;/ows:Exception&gt;
+&lt;/ows:ExceptionReport&gt;</pre>
+</div>
+</li>
+<li><p class="first">Editez le fichier <tt class="docutils literal"><span class="pre">cgi-bin/main.cfg</span></tt> afin qu&#8217;il contienne les valeurs décrivant votre service WPS.  Un exemple d&#8217;un fichier tel que cela fonctionnant sur Windows est:</p>
+<div class="highlight-python"><pre>[main]
+encoding = utf-8
+version = 1.0.0
+serverAddress = http://localhost/
+lang = en-CA
+tmpPath=/ms4w/tmp/ms_tmp/
+tmpUrl = /ms_tmp/
+
+[identification]
+title = The Zoo WPS Development Server
+abstract = Development version of ZooWPS. See http://www.zoo-project.org
+fees = None
+accessConstraints = none
+keywords = WPS,GIS,buffer
+
+[provider]
+providerName=Gateway Geomatics
+providerSite=http://www.gatewaygeomatics.com
+individualName=Jeff McKenna
+positionName=Director
+role=Dev
+adressDeliveryPoint=1101 Blue Rocks Road
+addressCity=Lunenburg
+addressAdministrativeArea=False
+addressPostalCode=B0J 2C0
+addressCountry=ca
+addressElectronicMailAddress=info@gatewaygeomatics.com
+phoneVoice=False
+phoneFacsimile=False</pre>
+</div>
+</li>
+<li><p class="first">Ouvrez une fenêtre de navigateur web, et exécutez une requête GetCapababilites sur votre service WPS: <a class="reference external" href="http://localhost/cgi-bin/zoo_loader.cgi?request=GetCapabilities&amp;service=WPS">http://localhost/cgi-bin/zoo_loader.cgi?request=GetCapabilities&amp;service=WPS</a></p>
+<p>La réponse devrait être affichée dans votre navigateur, comme:</p>
+<div class="highlight-python"><pre>&lt;wps:Capabilities xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 http://schemas.opengis.net/wps/1.0.0/wpsGetCapabilities_response.xsd" service="WPS" xml:lang="en-US" version="1.0.0"&gt;
+&lt;ows:ServiceIdentification&gt;
+  &lt;ows:Title&gt;The Zoo WPS Development Server&lt;/ows:Title&gt;
+  &lt;ows:Abstract&gt;
+    Development version of ZooWPS. See http://www.zoo-project.org
+  &lt;/ows:Abstract&gt;
+  &lt;ows:Keywords&gt;
+    &lt;ows:Keyword&gt;WPS&lt;/ows:Keyword&gt;
+    &lt;ows:Keyword&gt;GIS&lt;/ows:Keyword&gt;
+    &lt;ows:Keyword&gt;buffer&lt;/ows:Keyword&gt;
+  &lt;/ows:Keywords&gt;
+  &lt;ows:ServiceType&gt;WPS&lt;/ows:ServiceType&gt;
+  &lt;ows:ServiceTypeVersion&gt;1.0.0&lt;/ows:ServiceTypeVersion&gt;
+  ...</pre>
+</div>
+</li>
+</ol>
+<div class="section" id="optionally-compile-individual-services">
+<h3>Compiler optionnellement les services de manière individuelle<a class="headerlink" href="#optionally-compile-individual-services" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Un exemple pourrait être le fournisseur <tt class="docutils literal"><span class="pre">OGR</span> <span class="pre">base-vect-ops</span></tt> dans le répertoire <tt class="docutils literal"><span class="pre">zoo-project\zoo-services\ogr\base-vect-ops</span></tt>.</p>
+<ol class="arabic">
+<li><p class="first">Editez le makefile.vc situé dans ce répertoire, et exécutez:</p>
+<div class="highlight-python"><pre>nmake /f makefile.vc</pre>
+</div>
+<p>A l&#8217;intérieur du même répertoire, le fichier <tt class="docutils literal"><span class="pre">cgi-env\ogr_service.zo</span></tt> devrait être créé.</p>
+</li>
+<li><p class="first">Copiez tous les fichiers dedans <tt class="docutils literal"><span class="pre">zoo-services\ogr\base-vect-ops\cgi-env</span></tt> dans votre répertoire cgi-bin</p>
+</li>
+<li><p class="first">Testez ce fournisseur de service via l&#8217;URL suivante:</p>
+<p><a class="reference external" href="http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=Buffer&amp;DataInputs=BufferDistance=1&#64;datatype=interger;InputPolygon=Reference&#64;xlink:href=http%3A%2F%2Fwww.zoo-project.org%3A8082%2Fgeoserver%2Fows%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dtopp%3Astates%26SRS%3DEPSG%3A4326%26FeatureID%3Dstates.15">http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=Buffer&amp;DataInputs=BufferDistance=1&#64;datatype=interger;InputPolygon=Reference&#64;xlink:href=http%3A%2F%2Fwww.zoo-project.org%3A8082%2Fgeoserver%2Fows%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dtopp%3Astates%26SRS%3DEPSG%3A4326%26FeatureID%3Dstates.15</a></p>
+<p>La réponse affichée dans votre navigateur doit contenir:</p>
+<div class="highlight-python"><pre>&lt;wps:ProcessSucceeded&gt;Service "Buffer" run successfully.&lt;/wps:ProcessSucceeded&gt;</pre>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table des Matières</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Documentation du Kernel ZOO</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="installation.html">Installation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="install-prerequisites.html">Prérequis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-unix.html">Unix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-opensuse.html">OpenSUSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-centos.html">CentOS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-debian.html">Debian / Ubuntu</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-mac.html">Mac OS X</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mapserver.html">Comment utiliser le support W*S MapServer interne</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../services/index.html">Documentation de services ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2010/index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2012/index.html">Practical Introduction to ZOO-Project by playing with building blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2013/index.html">ZOO-Project: jouer avec des blocs de construction pour construire une application web pgRouting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Communauté ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/documentation.html">Guide de développement de la documentation</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Recherche rapide</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Saisissez un mot clef ou un nom de module, classe ou fonction.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

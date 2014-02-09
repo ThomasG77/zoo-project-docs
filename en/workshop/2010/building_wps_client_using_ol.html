@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Building a WPS client using OpenLayers &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../../index.html" />
+    <link rel="up" title="Workshop: Practical Introduction to ZOO: The Open WPS Platform" href="index.html" />
+    <link rel="next" title="Exercise" href="exercise.html" />
+    <link rel="prev" title="Creating OGR based Web Services" href="ogr_base_vect_ops.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../../en/index.html">English</a></li>
+      <li><a href="../../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="exercise.html" title="Exercise"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ogr_base_vect_ops.html" title="Creating OGR based Web Services"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="building-a-wps-client-using-openlayers">
+<span id="building-wps-client-using-ol"></span><h1><a class="toc-backref" href="#table-of-contents">Building a WPS client using OpenLayers</a><a class="headerlink" href="#building-a-wps-client-using-openlayers" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#building-a-wps-client-using-openlayers" id="id1">Building a WPS client using OpenLayers</a><ul>
+<li><a class="reference internal" href="#creating-a-simple-map-showing-the-dataset-as-wms" id="id2">Creating a simple map showing the dataset as WMS</a></li>
+<li><a class="reference internal" href="#fetching-the-data-layer-as-wfs-and-adding-selection-controls" id="id3">Fetching the data layer as WFS and adding selection controls</a></li>
+<li><a class="reference internal" href="#calling-the-single-geometry-services-from-javascript" id="id4">Calling the single geometry services from JavaScript</a></li>
+<li><a class="reference internal" href="#calling-the-multiples-geometries-processes-from-javascript" id="id5">Calling the multiples geometries processes from JavaScript</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The next step of our workshop is to connect to the OGR Services we have created
+from an OpenLayers map. This will allow to apply single or multiple geometries
+processes on user-selected polygons and to display the new generated geometries.</p>
+<div class="section" id="creating-a-simple-map-showing-the-dataset-as-wms">
+<h2><a class="toc-backref" href="#table-of-contents">Creating a simple map showing the dataset as WMS</a><a class="headerlink" href="#creating-a-simple-map-showing-the-dataset-as-wms" title="Permalink to this headline">¶</a></h2>
+<p>OpenLayers is also included in OSGeoLive default distribution, so it is convenient
+to use it for our needs. Please open <tt class="docutils literal"><span class="pre">/var/www/zoo-ogr.html</span></tt> using your favorite
+text editor and paste the following HTML snippet:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;EN&quot;</span> <span class="na">lang=</span><span class="s">&quot;EN&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=UTF-8&quot;</span> <span class="na">http-equiv=</span><span class="s">&quot;content-type&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;title&gt;</span>ZOO WPS Client example<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+  <span class="nf">#map</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">700px</span><span class="p">;</span><span class="k">height</span><span class="o">:</span><span class="m">600px</span><span class="p">;}</span>
+  <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/openlayers/theme/default/style.css&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;/openlayers/lib/OpenLayers.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+ <span class="nt">&lt;/head&gt;</span>
+ <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&quot;init()&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;map&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+ <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<p>The following JavaScript code must then be added in a <tt class="docutils literal"><span class="pre">&lt;script&gt;&lt;/script&gt;</span></tt> section within the
+<tt class="docutils literal"><span class="pre">&lt;head&gt;</span></tt> one. This will setup a map showing the japanese regions data as WMS.</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">map</span><span class="p">,</span> <span class="nx">layer</span><span class="p">,</span> <span class="nx">select</span><span class="p">,</span> <span class="nx">hover</span><span class="p">,</span> <span class="nx">multi</span><span class="p">,</span> <span class="nx">control</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">typename</span><span class="o">=</span><span class="s2">&quot;regions&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">main_url</span><span class="o">=</span><span class="s2">&quot;http://localhost/cgi-bin/mapserv?map=/var/www/wfs.map&quot;</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">init</span><span class="p">(){</span>
+  <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">controls</span><span class="o">:</span> <span class="cp">[</span>
+      <span class="nb">new</span> <span class="nx">OpenLayers.Control.PanZoom</span><span class="p">(),</span>
+      <span class="nb">new</span> <span class="nx">OpenLayers.Control.Permalink</span><span class="p">(),</span>
+      <span class="nb">new</span> <span class="nx">OpenLayers.Control.Navigation</span><span class="p">()</span>
+    <span class="cp">]</span>
+  <span class="p">});</span>
+  <span class="nx">layer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Layer</span><span class="p">.</span><span class="nx">WMS</span><span class="p">(</span><span class="nx">typename</span><span class="p">,</span><span class="nx">main_url</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">layers</span><span class="o">:</span> <span class="s1">&#39;regions&#39;</span><span class="p">,</span>
+        <span class="nx">transparent</span><span class="o">:</span> <span class="s1">&#39;true&#39;</span><span class="p">,</span>
+        <span class="nx">format</span><span class="o">:</span> <span class="s1">&#39;image/png&#39;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nx">isBaseLayer</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">visibility</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">buffer</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nx">singleTile</span><span class="o">:</span> <span class="kc">true</span>
+      <span class="p">}</span>
+<span class="p">);</span>
+  <span class="nx">map</span><span class="p">.</span><span class="nx">addLayers</span><span class="p">(</span><span class="cp">[</span><span class="nx">layer</span><span class="cp">]</span><span class="p">);</span>
+  <span class="nx">map</span><span class="p">.</span><span class="nx">setCenter</span><span class="p">(</span><span class="k">new</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">LonLat</span><span class="p">(</span><span class="mi">138</span><span class="p">,</span><span class="mf">33.5</span><span class="p">),</span><span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Once done, please save your HTML file as <tt class="docutils literal"><span class="pre">zoo-ogr.html</span></tt> in your workshop directory,
+then copy it in <tt class="docutils literal"><span class="pre">/var/www</span></tt> and visualize it with your favorite Web browser using this link :
+<tt class="docutils literal"><span class="pre">http://localhost/zoo-ogr.html</span></tt>. You should obtain a map centered on the Japan with the WMS layer activated.</p>
+<a class="reference internal image-reference" href="../../_images/OL-JP-1.png"><img alt="../../_images/OL-JP-1.png" class="align-center" src="../../_images/OL-JP-1.png" style="width: 356px; height: 280px;" /></a>
+</div>
+<div class="section" id="fetching-the-data-layer-as-wfs-and-adding-selection-controls">
+<h2><a class="toc-backref" href="#table-of-contents">Fetching the data layer as WFS and adding selection controls</a><a class="headerlink" href="#fetching-the-data-layer-as-wfs-and-adding-selection-controls" title="Permalink to this headline">¶</a></h2>
+<p>Before accessing the displayed data via WFS, you first have to create new vector layers
+dedicated to host the several interactions we are going to create. Please add the following
+lines within the <tt class="docutils literal"><span class="pre">init()</span></tt> function, and do not forget to add the newly created layer in
+the map.addLayers method:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">select</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n">Vector</span><span class="p">(</span><span class="s">&quot;Selection&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nl">styleMap:</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Style</span><span class="p">(</span><span class="n">OpenLayers</span><span class="p">.</span><span class="n">Feature</span><span class="p">.</span><span class="n">Vector</span><span class="p">.</span><span class="n">style</span><span class="p">[</span><span class="s">&quot;select&quot;</span><span class="p">])</span>
+<span class="p">});</span>
+
+<span class="n">hover</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n">Vector</span><span class="p">(</span><span class="s">&quot;Hover&quot;</span><span class="p">);</span>
+<span class="n">multi</span> <span class="o">=</span> <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Layer</span><span class="p">.</span><span class="n">Vector</span><span class="p">(</span><span class="s">&quot;Multi&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="n">styleMap</span><span class="o">:</span>
+  <span class="n">new</span> <span class="n">OpenLayers</span><span class="p">.</span><span class="n">Style</span><span class="p">({</span>
+    <span class="nl">fillColor:</span><span class="s">&quot;red&quot;</span><span class="p">,</span>
+    <span class="nl">fillOpacity:</span><span class="mf">0.4</span><span class="p">,</span>
+    <span class="nl">strokeColor:</span><span class="s">&quot;red&quot;</span><span class="p">,</span>
+    <span class="nl">strokeOpacity:</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nl">strokeWidth:</span><span class="mi">2</span>
+  <span class="p">})</span>
+<span class="p">});</span>
+
+<span class="n">map</span><span class="p">.</span><span class="n">addLayers</span><span class="p">([</span><span class="n">layer</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">hover</span><span class="p">,</span> <span class="n">multi</span><span class="p">]);</span>
+</pre></div>
+</div>
+<p>Then, you can now access the data by creating new controls to select polygons, as the
+following. Please note that <tt class="docutils literal"><span class="pre">OpenLayers.Protocol.WFS.fromWMSLayer</span></tt> is used to access
+geometries and that several state of selection are declared and append to the control variable.</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">protocol</span> <span class="o">=</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Protocol</span><span class="p">.</span><span class="nx">WFS</span><span class="p">.</span><span class="nx">fromWMSLayer</span><span class="p">(</span><span class="nx">layer</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">featurePrefix</span><span class="o">:</span> <span class="s1">&#39;ms&#39;</span><span class="p">,</span>
+        <span class="nx">geometryName</span><span class="o">:</span> <span class="s1">&#39;msGeometry&#39;</span><span class="p">,</span>
+        <span class="nx">featureType</span><span class="o">:</span> <span class="nx">typename</span>
+<span class="p">});</span>
+
+<span class="nx">control</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Control</span><span class="p">.</span><span class="nx">GetFeature</span><span class="p">({</span>
+        <span class="nx">protocol</span><span class="o">:</span> <span class="nx">protocol</span><span class="p">,</span>
+        <span class="nx">box</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nx">hover</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nx">multipleKey</span><span class="o">:</span> <span class="s2">&quot;shiftKey&quot;</span><span class="p">,</span>
+        <span class="nx">toggleKey</span><span class="o">:</span> <span class="s2">&quot;ctrlKey&quot;</span>
+<span class="p">});</span>
+<span class="nx">control</span><span class="p">.</span><span class="nx">events</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s2">&quot;featureselected&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">select</span><span class="p">.</span><span class="nx">addFeatures</span><span class="p">(</span><span class="cp">[</span><span class="nx">e.feature</span><span class="cp">]</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">control</span><span class="p">.</span><span class="nx">events</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s2">&quot;featureunselected&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">select</span><span class="p">.</span><span class="nx">removeFeatures</span><span class="p">(</span><span class="cp">[</span><span class="nx">e.feature</span><span class="cp">]</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">map</span><span class="p">.</span><span class="nx">addControl</span><span class="p">(</span><span class="nx">control</span><span class="p">);</span>
+<span class="nx">control</span><span class="p">.</span><span class="nx">activate</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Please save your HTML file again. You should now be able to select a polygon only by
+clicking on it. The selected polygon should appear in blue color.</p>
+<a class="reference internal image-reference" href="../../_images/OL-JP-2.png"><img alt="../../_images/OL-JP-2.png" class="align-center" src="../../_images/OL-JP-2.png" style="width: 356px; height: 280px;" /></a>
+</div>
+<div class="section" id="calling-the-single-geometry-services-from-javascript">
+<h2><a class="toc-backref" href="#table-of-contents">Calling the single geometry services from JavaScript</a><a class="headerlink" href="#calling-the-single-geometry-services-from-javascript" title="Permalink to this headline">¶</a></h2>
+<p>Now that everything is setup, we can go on and call our OGR ZOO services with JavaScript.
+Please add the following lines after the <tt class="docutils literal"><span class="pre">init()</span></tt> function, which will call the single
+geometry processes. You can notice that we use a specific <tt class="docutils literal"><span class="pre">parseMapServerId</span></tt> function
+which let us remove the unecessary white space returned as fid value.</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="kd">function</span> <span class="nx">parseMapServerId</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">sf</span><span class="o">=</span><span class="nx">arguments</span><span class="cp">[</span><span class="mi">0</span><span class="cp">]</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">sf</span><span class="cp">[</span><span class="mi">0</span><span class="cp">]</span><span class="o">+</span><span class="s2">&quot;.&quot;</span><span class="o">+</span><span class="nx">sf</span><span class="cp">[</span><span class="mi">1</span><span class="cp">]</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/ /g</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">simpleProcessing</span><span class="p">(</span><span class="nx">aProcess</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">select</span><span class="p">.</span><span class="nx">features</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;No feature selected!&quot;</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">multi</span><span class="p">.</span><span class="nx">features</span><span class="p">.</span><span class="nx">length</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nx">multi</span><span class="p">.</span><span class="nx">removeFeatures</span><span class="p">(</span><span class="nx">multi</span><span class="p">.</span><span class="nx">features</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;&#39;</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">aProcess</span> <span class="o">==</span> <span class="s1">&#39;Buffer&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">dist</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;bufferDist&#39;</span><span class="p">)</span><span class="o">?</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;bufferDist&#39;</span><span class="p">).</span><span class="nx">value</span><span class="o">:</span><span class="s1">&#39;1&#39;</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">dist</span><span class="p">))</span> <span class="k">return</span> <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Distance is not a Number!&quot;</span><span class="p">);</span>
+    <span class="nx">url</span><span class="o">+=</span><span class="s1">&#39;Identifier=Buffer&amp;DataInputs=BufferDistance=&#39;</span><span class="o">+</span><span class="nx">dist</span><span class="o">+</span><span class="s1">&#39;@datatype=interger;InputPolygon=Reference@xlink:href=&#39;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span>
+    <span class="nx">url</span> <span class="o">+=</span> <span class="s1">&#39;Identifier=&#39;</span><span class="o">+</span><span class="nx">aProcess</span><span class="o">+</span><span class="s1">&#39;&amp;DataInputs=InputPolygon=Reference@xlink:href=&#39;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">xlink</span> <span class="o">=</span> <span class="nx">control</span><span class="p">.</span><span class="nx">protocol</span><span class="p">.</span><span class="nx">url</span> <span class="o">+</span><span class="s2">&quot;&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=1.0.0&quot;</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;&amp;typename=&#39;</span><span class="o">+</span><span class="nx">control</span><span class="p">.</span><span class="nx">protocol</span><span class="p">.</span><span class="nx">featurePrefix</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;:&#39;</span><span class="o">+</span><span class="nx">control</span><span class="p">.</span><span class="nx">protocol</span><span class="p">.</span><span class="nx">featureType</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;&amp;SRS=&#39;</span><span class="o">+</span><span class="nx">control</span><span class="p">.</span><span class="nx">protocol</span><span class="p">.</span><span class="nx">srsName</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;&amp;FeatureID=&#39;</span><span class="o">+</span><span class="nx">parseMapServerId</span><span class="p">(</span><span class="nx">select</span><span class="p">.</span><span class="nx">features</span><span class="cp">[</span><span class="mi">0</span><span class="cp">]</span><span class="p">.</span><span class="nx">fid</span><span class="p">);</span>
+  <span class="nx">url</span> <span class="o">+=</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">xlink</span><span class="p">);</span>
+  <span class="nx">url</span> <span class="o">+=</span> <span class="s1">&#39;&amp;RawDataOutput=Result@mimeType=application/json&#39;</span><span class="p">;</span>
+
+  <span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Request</span><span class="p">.</span><span class="nx">XMLHttpRequest</span><span class="p">();</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="nx">url</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Request</span><span class="p">.</span><span class="nx">XMLHttpRequest</span><span class="p">.</span><span class="nx">DONE</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">GeoJSON</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OpenLayers</span><span class="p">.</span><span class="nx">Format</span><span class="p">.</span><span class="nx">GeoJSON</span><span class="p">();</span>
+      <span class="kd">var</span> <span class="nx">features</span> <span class="o">=</span> <span class="nx">GeoJSON</span><span class="p">.</span><span class="nx">read</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
+      <span class="nx">hover</span><span class="p">.</span><span class="nx">removeFeatures</span><span class="p">(</span><span class="nx">hover</span><span class="p">.</span><span class="nx">features</span><span class="p">);</span>
+      <span class="nx">hover</span><span class="p">.</span><span class="nx">addFeatures</span><span class="p">(</span><span class="nx">features</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Then, some specific buttons must be added in the HTML, in order to be able to call
+the different processes we just declared. You can add them on top of the map by writing
+the following lines before the <tt class="docutils literal"><span class="pre">&lt;div</span> <span class="pre">id=&quot;map&quot;&gt;&lt;/div&gt;</span></tt>.</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;float: right;padding-left: 5px;&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;h3&gt;</span>Single geometry processing<span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;ul&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;simpleProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;Buffer&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;bufferDist&quot;</span> <span class="na">value=</span><span class="s">&quot;1&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;simpleProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;ConvexHull&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;simpleProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;Boundary&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;simpleProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;Centroid&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/li&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+<p>Save your HTML file again. You should now be able to select a polygon and to launch a Buffer,
+ConvexHull, Boundary or Centroid on it by clicking one of the button. The result of the
+process should appear as GeoJSON layer on the map, in orange color.</p>
+<a class="reference internal image-reference" href="../../_images/OL-JP-3.png"><img alt="../../_images/OL-JP-3.png" class="align-center" src="../../_images/OL-JP-3.png" style="width: 536px; height: 270px;" /></a>
+</div>
+<div class="section" id="calling-the-multiples-geometries-processes-from-javascript">
+<h2><a class="toc-backref" href="#table-of-contents">Calling the multiples geometries processes from JavaScript</a><a class="headerlink" href="#calling-the-multiples-geometries-processes-from-javascript" title="Permalink to this headline">¶</a></h2>
+<p>Using the same technique, you can now write a function dedicated to the multiple geometries
+processes. Please add the following lines after the <tt class="docutils literal"><span class="pre">simpleProcessing()</span></tt> function, we will
+guide you during the exercise in section 5 on how to create such a function.</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nx">function</span> <span class="nx">multiProcessing</span><span class="p">(</span><span class="nx">aProcess</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">select</span><span class="bp">.</span><span class="nx">features.length</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">hover.features.length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;No feature created!&quot;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;/cgi-bin/zoo_loader.cgi&#39;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="n">xlink</span> <span class="o">=</span> <span class="nx">control.protocol.url</span> <span class="o">+</span><span class="s2">&quot;&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=1.0.0&quot;</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;&amp;typename=&#39;</span><span class="o">+</span><span class="nx">control.protocol.featurePrefix</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;:&#39;</span><span class="o">+</span><span class="nx">control.protocol.featureType</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;&amp;SRS=&#39;</span><span class="o">+</span><span class="nx">control.protocol.srsName</span><span class="p">;</span>
+  <span class="nx">xlink</span> <span class="o">+=</span> <span class="s1">&#39;&amp;FeatureID=&#39;</span><span class="o">+</span><span class="nx">parseMapServerId</span><span class="p">(</span><span class="k">select</span><span class="bp">.</span><span class="nb">features</span><span class="err">[</span><span class="mi">0</span><span class="cp">]</span>.fid);
+  var GeoJSON = new OpenLayers.Format.GeoJSON();
+  try {
+    var params = &#39;<span class="nt">&lt;wps:Execute</span> <span class="na">service=</span><span class="s">&quot;WPS&quot;</span> <span class="na">version=</span><span class="s">&quot;1.0.0&quot;</span> <span class="na">xmlns:wps=</span><span class="s">&quot;http://www.opengis.net/wps/1.0.0&quot;</span> <span class="na">xmlns:ows=</span><span class="s">&quot;http://www.opengis.net/ows/1.1&quot;</span> <span class="na">xmlns:xlink=</span><span class="s">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://www.opengis.net/wps/1.0.0/../wpsExecute_request.xsd&quot;</span><span class="nt">&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;ows:Identifier&gt;</span>&#39;+aProcess+&#39;<span class="nt">&lt;/ows:Identifier&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:DataInputs&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:Input&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;ows:Identifier&gt;</span>InputEntity1<span class="nt">&lt;/ows:Identifier&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:Reference</span> <span class="na">xlink:href=</span><span class="s">&quot;&#39;+xlink.replace(/&amp;/gi,&#39;&amp;amp;&#39;)+&#39;&quot;</span><span class="nt">/&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:Input&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:Input&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;ows:Identifier&gt;</span>InputEntity2<span class="nt">&lt;/ows:Identifier&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:Data&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:ComplexData</span> <span class="na">mimeType=</span><span class="s">&quot;application/json&quot;</span><span class="nt">&gt;</span> &#39;+GeoJSON.write(hover.features<span class="cp">[</span><span class="mi">0</span><span class="cp">]</span>.geometry)+&#39; <span class="nt">&lt;/wps:ComplexData&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:Data&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:Input&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:DataInputs&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:ResponseForm&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;wps:RawDataOutput&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;ows:Identifier&gt;</span>Result<span class="nt">&lt;/ows:Identifier&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:RawDataOutput&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:ResponseForm&gt;</span>&#39;;
+    params += &#39;<span class="nt">&lt;/wps:Execute&gt;</span>&#39;;
+  } catch(e) {
+    alert(e);
+    return false;
+  }
+  var request = new OpenLayers.Request.XMLHttpRequest();
+  request.open(&#39;POST&#39;,url,true);
+  request.setRequestHeader(&#39;Content-Type&#39;,&#39;text/xml&#39;);
+  request.onreadystatechange = function() {
+    if(request.readyState == OpenLayers.Request.XMLHttpRequest.DONE) {
+      var GeoJSON = new OpenLayers.Format.GeoJSON();
+      var features = GeoJSON.read(request.responseText);
+      multi.removeFeatures(multi.features);
+      multi.addFeatures(features);
+    }
+  }
+  request.send(params);
+}
+</pre></div>
+</div>
+<p>Note that this time we didn&#8217;t use the GET method to request the ZOO Kernel but a XML POST.
+We did that because if you use the GET method you will get error due to the HTTP GET method
+limitation based on the length of your request. Using JSON string representing the geometry
+will make your request longer.</p>
+<p>Once you get the functions to call your multiple geometries processes, you&#8217; must add some
+buttons to fire the request call. Here is the HTML code to add to your current <tt class="docutils literal"><span class="pre">zoo-ogr.html</span></tt> file :</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nt">&lt;h3&gt;</span>Multiple geometries processing<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;multiProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;Union&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;multiProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;Difference&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;multiProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;SymDifference&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;multiProcessing(this.value);&quot;</span> <span class="na">value=</span><span class="s">&quot;Intersection&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
+</div>
+<p>Please reload the page. You should then be able to run your multiple geometries services and
+you should get results displayed in red as shown by the following screenshots :</p>
+<a class="reference internal image-reference" href="../../_images/OL-JP-4.png"><img alt="../../_images/OL-JP-4.png" src="../../_images/OL-JP-4.png" style="width: 406px; height: 140px;" /></a>
+<a class="reference internal image-reference" href="../../_images/OL-JP-5.png"><img alt="../../_images/OL-JP-5.png" src="../../_images/OL-JP-5.png" style="width: 406px; height: 140px;" /></a>
+<a class="reference internal image-reference" href="../../_images/OL-JP-6.png"><img alt="../../_images/OL-JP-6.png" src="../../_images/OL-JP-6.png" style="width: 406px; height: 140px;" /></a>
+<a class="reference internal image-reference" href="../../_images/OL-JP-7.png"><img alt="../../_images/OL-JP-7.png" src="../../_images/OL-JP-7.png" style="width: 406px; height: 140px;" /></a>
+<p>It seems that something is missing in your Services Provider to get the same results …
+The multiple geometries Services ! This is what we are going to do together in the next section.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">ZOO Kernel Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/index.html">ZOO Services Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#foss4g-2010-osaka-tokyo-beijing">FOSS4G 2010 Osaka / Tokyo / Beijing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#sponsored-by">Sponsored By</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#special-thanks-to-our-knowledge-partners">Special Thanks To Our Knowledge Partners</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#workshop-table-of-contents">Workshop Table of Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using_zoo_from_osgeolivevm.html">Using ZOO from an OSGeoLive virtual machine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ogr_base_vect_ops.html">Creating OGR based Web Services</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Building a WPS client using OpenLayers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercise.html">Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2012/index.html">Practical Introduction to ZOO-Project by playing with building blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2013/index.html">ZOO-Project: playing with building blocks to build pgRouting web application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../community/index.html">ZOO Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/documentation.html">Documentation Development Guide</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

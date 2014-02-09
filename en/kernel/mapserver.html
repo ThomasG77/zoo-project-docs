@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>How To Use the Internal MapServer W*S support &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../index.html" />
+    <link rel="up" title="ZOO Kernel Documentation" href="index.html" />
+    <link rel="next" title="ZOO Services Documentation" href="../services/index.html" />
+    <link rel="prev" title="Mac OS X" href="install-mac.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../en/index.html">English</a></li>
+      <li><a href="../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../services/index.html" title="ZOO Services Documentation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="install-mac.html" title="Mac OS X"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ZOO Kernel Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="how-to-use-the-internal-mapserver-w-s-support">
+<span id="kernel-mapserver"></span><h1><a class="toc-backref" href="#table-of-contents">How To Use the Internal MapServer W*S support</a><a class="headerlink" href="#how-to-use-the-internal-mapserver-w-s-support" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Nicolas Bozon, Gérald Fenoy, Jeff McKenna</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Last Updated:</th><td class="field-body">$Date$</td>
+</tr>
+</tbody>
+</table>
+<p>The key idea of the MapServer W*S support implementation is that it
+doesn&#8217;t require to change a single line of the service source code to
+activate the automatic publication of your result as WMS/WFS or WCS
+ressource. You simply need to modify the <tt class="docutils literal"><span class="pre">zcfg</span></tt> file corresponding
+to your service to make it working.</p>
+<p>Here is an overview of the way to install the MapServer W*S support, the
+configuration required and the internal mechanisms.</p>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#how-to-use-the-internal-mapserver-w-s-support" id="id1">How To Use the Internal MapServer W*S support</a><ul>
+<li><a class="reference internal" href="#how-to-make-it-working" id="id2">How to make it working ?</a><ul>
+<li><a class="reference internal" href="#requirement" id="id3">Requirement</a></li>
+<li><a class="reference internal" href="#installation-steps" id="id4">Installation steps</a></li>
+<li><a class="reference internal" href="#configuration-steps" id="id5">Configuration steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-does-it-work" id="id6">How does it work ?</a></li>
+<li><a class="reference internal" href="#simple-sample-use-cases" id="id7">Simple sample use cases</a><ul>
+<li><a class="reference internal" href="#testings" id="id8">Testings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="how-to-make-it-working">
+<h2><a class="toc-backref" href="#table-of-contents">How to make it working ?</a><a class="headerlink" href="#how-to-make-it-working" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="requirement">
+<h3><a class="toc-backref" href="#table-of-contents">Requirement</a><a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>last ZOO-Kernel trunk version</li>
+<li>MapServer version &gt;= 6.0.1</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="installation-steps">
+<h3><a class="toc-backref" href="#table-of-contents">Installation steps</a><a class="headerlink" href="#installation-steps" title="Permalink to this headline">¶</a></h3>
+<p>First download lastest zoo-kernel directory available on the svn, do that from the directory of your previous checkout (so where zoo-api, zoo-services and zoo-kernel directories are available), we will use <tt class="docutils literal"><span class="pre">&lt;PREV_SVN_CO&gt;</span></tt> here for this directory:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nx">cd</span> <span class="o">&lt;</span><span class="nx">PREV_SVN_CO</span><span class="o">&gt;</span>
+<span class="nx">svn</span> <span class="nx">checkout</span> <span class="nx">http</span><span class="p">:</span><span class="c1">//svn.zoo-project.org/svn/trunk/zoo-kernel zoo-kernel-ms</span>
+</pre></div>
+</div>
+<p>Uncompress the MapServer archive (ie. <tt class="docutils literal"><span class="pre">mapserver-6.0.1.tar.bz2</span></tt>) into <tt class="docutils literal"><span class="pre">/tmp/zoo-ms-src</span></tt>, then compile MapServer using the following command:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">zoo</span><span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">src</span><span class="o">/</span><span class="n">mapserver</span><span class="o">-</span><span class="mf">6.0.1</span>
+<span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">ogr</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gdal</span><span class="o">-</span><span class="n">config</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">gdal</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gdal</span><span class="o">-</span><span class="n">config</span> \
+               <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">proj</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">curl</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">sos</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">wfsclient</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">wmsclient</span> \
+               <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">wcs</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">wfs</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">postgis</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">kml</span><span class="o">=</span><span class="n">yes</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">geos</span> \
+               <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">xml</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">xslt</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">threads</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">cairo</span>
+<span class="n">make</span>
+<span class="n">cp</span> <span class="n">mapserv</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">cgi</span><span class="o">-</span><span class="n">bin</span>
+</pre></div>
+</div>
+<p>Autotools was updated to add the <tt class="docutils literal"><span class="pre">--with-mapserver</span></tt> configure option. From your ZOO-Project SVN trunk directory, compile the ZOO-Kernel using the following command:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">cd</span> <span class="n">zoo</span><span class="o">-</span><span class="n">kernel</span><span class="o">-</span><span class="n">ms</span>
+<span class="n">autoconf</span>
+<span class="p">.</span><span class="o">/</span><span class="n">configure</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">python</span> <span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mapserver</span><span class="o">=/</span><span class="n">tmp</span><span class="o">/</span><span class="n">zoo</span><span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">src</span><span class="o">/</span><span class="n">mapserver</span><span class="o">-</span><span class="mf">6.0.1</span>
+<span class="n">make</span>
+<span class="n">cp</span> <span class="n">zoo_loader</span><span class="p">.</span><span class="n">cgi</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">cgi</span><span class="o">-</span><span class="n">bin</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration-steps">
+<h3><a class="toc-backref" href="#table-of-contents">Configuration steps</a><a class="headerlink" href="#configuration-steps" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="main-configuration-file">
+<h4>Main configuration file<a class="headerlink" href="#main-configuration-file" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>Add the following content to your <tt class="docutils literal"><span class="pre">/usr/lib/cgi-bin/main.cfg</span></tt> file</dt>
+<dd>in the <tt class="docutils literal"><span class="pre">[main]</span></tt> section:</dd>
+</dl>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">dataPath</span> <span class="o">=</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
+<span class="n">mapserverAddress</span><span class="o">=</span><span class="n">http</span><span class="o">:</span><span class="c1">//localhost/cgi-bin/mapserv</span>
+</pre></div>
+</div>
+<p>The <tt class="docutils literal"><span class="pre">dataPath</span></tt> directory should exists and be writable by apache user. In this directory, a <tt class="docutils literal"><span class="pre">symbols.sym</span></tt> file have to be present, containing the following:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">SYMBOLSET</span>
+<span class="n">SYMBOL</span>
+  <span class="n">NAME</span> <span class="s">&quot;circle&quot;</span>
+  <span class="n">TYPE</span> <span class="n">ellipse</span>
+  <span class="n">FILLED</span> <span class="nb">true</span>
+  <span class="n">POINTS</span>
+    <span class="mi">1</span> <span class="mi">1</span>
+  <span class="n">END</span>
+<span class="n">END</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p>Only one symbol definition is required with any name, used for WMS service output.</p>
+<p>Now, your ZOO-Kernel get the MapServer support ready to be used. Note that if you don&#8217;t add the <tt class="docutils literal"><span class="pre">mapserverAddress</span></tt> then it imply the ZOO-Kernel will segfault (checking <tt class="docutils literal"><span class="pre">NULL</span></tt> value should correct this behavior).</p>
+<p>Here you can optionally add a <tt class="docutils literal"><span class="pre">msOgcVersion</span></tt> parameter to specify which version of the OGC WebService you want to use for each services. For example, if you want to force to version 1.0.0, you can set the following in the <tt class="docutils literal"><span class="pre">[main]</span></tt> section of your <tt class="docutils literal"><span class="pre">main.cfg</span></tt> file:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">msOgcVersion</span><span class="o">=</span><span class="mf">1.0.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="service-configuration-file">
+<h4>Service configuration file<a class="headerlink" href="#service-configuration-file" title="Permalink to this headline">¶</a></h4>
+<p>To activate MapServer WebServices output for a service, you have to add a specific parameter in the <tt class="docutils literal"><span class="pre">&lt;Default&gt;</span></tt> or <tt class="docutils literal"><span class="pre">&lt;Supported&gt;</span></tt> block: <tt class="docutils literal"><span class="pre">useMapserver</span></tt>. This can take the value true or should not appear. If true, it means that the output result is an OGR / GDAL compatible datasource and you want it to be outputted as an OGC web server instance (WMS/WFS/WCS).</p>
+<p>You get an optional parameter, to use a custom MapServer style block (used for vector datasource only): msStyle. For example:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">msStyle</span> <span class="o">=</span> <span class="n">STYLE</span> <span class="n">COLOR</span> <span class="mi">125</span> <span class="mi">0</span> <span class="mi">105</span> <span class="n">OUTLINECOLOR</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="n">WIDTH</span> <span class="mi">3</span> <span class="n">END</span>
+</pre></div>
+</div>
+<p>You get the same optional parameter <tt class="docutils literal"><span class="pre">msOgcVersion</span></tt> as for the <tt class="docutils literal"><span class="pre">main.cfg</span></tt>. This will specify that this is the specific protocol version the service want to use (so you may set also locally to service rather than globally).</p>
+<p>When you add useMapserver option to an output <tt class="docutils literal"><span class="pre">&lt;Default&gt;</span></tt> or <tt class="docutils literal"><span class="pre">&lt;Supported&gt;</span></tt> block, then you have to know what are the sensible mimeType:</p>
+<blockquote>
+<div><ul class="simple">
+<li>text/xml: will imply that the output data will be accessible through a WFS GetFeature request (default protocol version 1.1.0)</li>
+<li>image/tiff: will imply that the output data will be accessible through a WCS GetCoverage request (default protocol version 2.0.0)</li>
+<li>any other mimeType coupled with useMapserver option: will imply that the output data will be accessible trhough a WMS GetMap request (you have to limit yourself to what your MapServer installation support, GetCapabilities? request give information of supported output mimeType) (default protocol version 1.3.0)</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="how-does-it-work">
+<h2><a class="toc-backref" href="#table-of-contents">How does it work ?</a><a class="headerlink" href="#how-does-it-work" title="Permalink to this headline">¶</a></h2>
+<p>Whatever your service return as default output <tt class="docutils literal"><span class="pre">mimeType</span></tt>, this one will be used when one output including the <tt class="docutils literal"><span class="pre">useMapserver</span></tt> option was found.</p>
+<p>So if you get the following <tt class="docutils literal"><span class="pre">&lt;Default&gt;</span></tt> and <tt class="docutils literal"><span class="pre">&lt;Supported&gt;</span></tt> blocks in the ZOO Configuration File of your service:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nt">&lt;Default&gt;</span>
+ mimeType = text/xml
+ encoding = UTF-8
+ schema = http://schemas.opengis.net/gml/3.1.0/base/feature.xsd
+<span class="nt">&lt;/Default&gt;</span>
+<span class="nt">&lt;Supported&gt;</span>
+ mimeType = image/png
+ useMapserver = true
+<span class="nt">&lt;/Supported&gt;</span>
+</pre></div>
+</div>
+<p>It means that per default, your service return GML 3.1 Feature. When the client request for <tt class="docutils literal"><span class="pre">mimeType=image/png</span></tt>, then the ZOO-Kernel will detect that this <tt class="docutils literal"><span class="pre">mimeType</span></tt> get the <tt class="docutils literal"><span class="pre">useMapServer</span></tt> option set to true so it will:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>execute the service using the <tt class="docutils literal"><span class="pre">&lt;Default&gt;</span></tt> block definition (this should be understandable by GDAL/OGR)</li>
+<li>store the result of the service on disk (in the <tt class="docutils literal"><span class="pre">[main]</span></tt> &gt; <tt class="docutils literal"><span class="pre">dataPath</span></tt> directory)</li>
+<li>write a Mapfile (in the <tt class="docutils literal"><span class="pre">[main]</span></tt> &gt; <tt class="docutils literal"><span class="pre">dataPath</span></tt> directory) using the MapServer C-API to setup both WMS and WFS services.</li>
+</ol>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">even if you don&#8217;t ask for this, the resulting Mapfile includes both configuration for WMS and WFS in case of Vector datasource.</p>
+</div>
+<p>If your service output a raster file, then the behavior is quite the same except that the ZOO-Kernel will setup both WMS and WCS services for the result of the service. Here you cannot define your own style. Nevertheless, when one band raster is returned then the ZOO-Kernel can use its own default style definitions to classify the raster using equivalent intervals (you can easily see that in the outputed Mapfile), this classification is specific to WMS protocol. You should add a <tt class="docutils literal"><span class="pre">msClassify</span></tt> parameter and set it to <tt class="docutils literal"><span class="pre">true</span></tt> in your output ComplexData <tt class="docutils literal"><span class="pre">&lt;Default&gt;</span></tt> or <tt class="docutils literal"><span class="pre">&lt;Supported&gt;</span></tt> node to activate this classification.
+Special note for client implementers</p>
+<p>Note that depending on the request, the ZOO-Kernel can return a location header.</p>
+<p>Differente request types:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="mailto:ResponseDocument=XXXX&#37;&#52;&#48;asReference=true">ResponseDocument=XXXX<span>&#64;</span>asReference=true</a> - in this case, the Kernel will return the GetMap/GetFeature/GetCoverage request in KVP in the href of the result.</li>
+<li><a class="reference external" href="mailto:ResponseDocument=XXXX&#37;&#52;&#48;asReference=false">ResponseDocument=XXXX<span>&#64;</span>asReference=false</a> - in this case, the Kernel will return the result he get using the GetMap/GetFeature/GetCoverage request in KVP used for the href in previous case.</li>
+<li><a class="reference external" href="mailto:RawDataOutput=XXXX&#37;&#52;&#48;asReference=true/false">RawDataOutput=XXXX<span>&#64;</span>asReference=true/false</a> - in this case, the Kernel will return the GetMap/GetFeature/GetCoverage request in KVP in the specific location header, which imply that the browser should follow and request MapServer directly.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="simple-sample-use-cases">
+<h2><a class="toc-backref" href="#table-of-contents">Simple sample use cases</a><a class="headerlink" href="#simple-sample-use-cases" title="Permalink to this headline">¶</a></h2>
+<p>Consider the existing BufferPy service from zoo-services/ogr-base-vect-ops-py. Set the following content to your local BufferPy.zcfg file in the Result output definition, then copy it to /usr/lib/cgi-bin/:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nt">&lt;Default&gt;</span>
+ mimeType = text/xml
+ encoding = UTF-8
+ schema = http://schemas.opengis.net/gml/3.1.0/base/feature.xsd
+ useMapserver = true
+<span class="nt">&lt;/Default&gt;</span>
+<span class="nt">&lt;Supported&gt;</span>
+ mimeType = image/png
+ useMapserver = true
+ asReference = true
+ msStyle = STYLE COLOR 125 0 105 OUTLINECOLOR 0 0 0 WIDTH 3 END
+<span class="nt">&lt;/Supported&gt;</span>
+<span class="nt">&lt;Supported&gt;</span>
+ mimeType = image/tif
+ useMapserver = true
+ asReference = true
+ msStyle = STYLE COLOR 125 0 105 OUTLINECOLOR 0 0 0 WIDTH 3 END
+<span class="nt">&lt;/Supported&gt;</span>
+<span class="nt">&lt;Supported&gt;</span>
+ mimeType = application/vnd.google-earth.kmz
+ useMapserver = true
+ asReference = true
+ msStyle = STYLE COLOR 125 0 105 OUTLINECOLOR 0 0 0 WIDTH 3 END
+<span class="nt">&lt;/Supported&gt;</span>
+</pre></div>
+</div>
+<p>This modifications make your service ready to return result as WMS GetMap or WFS GetFeature requests. Note that some bug occurs locally using the application/vnd.google-earth.kmz output.
+Raster</p>
+<p>Using the following simple service code we get a service capable to output any kind of internet files (useful for testing this functionality):</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">import</span> <span class="n">zoo</span>
+<span class="n">def</span> <span class="n">HelloPy</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="n">inputs</span><span class="p">,</span><span class="n">outputs</span><span class="p">)</span><span class="o">:</span>
+        <span class="n">outputs</span><span class="p">[</span><span class="s">&quot;Result&quot;</span><span class="p">][</span><span class="s">&quot;value&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">inputs</span><span class="p">[</span><span class="s">&quot;a&quot;</span><span class="p">][</span><span class="s">&quot;value&quot;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">zoo</span><span class="p">.</span><span class="n">SERVICE_SUCCEEDED</span>
+</pre></div>
+</div>
+<p>Define the <tt class="docutils literal"><span class="pre">[Result]</span></tt> output in your <tt class="docutils literal"><span class="pre">HelloPy.zcfg</span></tt> file with the following ComplexData block content:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nt">&lt;Default&gt;</span>
+ mimeType = image/png
+ useMapServer = true
+<span class="nt">&lt;/Default&gt;</span>
+<span class="nt">&lt;Supported&gt;</span>
+ mimeType = image/tiff
+ useMapServer = true
+<span class="nt">&lt;/Supported&gt;</span>
+<span class="nt">&lt;Supported&gt;</span>
+ mimeType = text/xml
+ useMapServer = true
+<span class="nt">&lt;/Supported&gt;</span>
+</pre></div>
+</div>
+<p>It means that the default output <tt class="docutils literal"><span class="pre">mimeType</span></tt> is <tt class="docutils literal"><span class="pre">image/png</span></tt>, so a WMS GetMap request will be returned, or the resulting <tt class="docutils literal"><span class="pre">image/tiff</span></tt> will be returned as WCS GetCoverage request.</p>
+<p>With this simple service you can test the new capabilities to output result as WebServices for each mimeTypes. Note, that you&#8217;ll probably get wrong <tt class="docutils literal"><span class="pre">mimeType</span></tt>, as the default was set to <tt class="docutils literal"><span class="pre">image/png</span></tt>.</p>
+<p>There is a support for Zipped ShapeFile but I doubt it is really
+useful. Anyway, as it is present you can test it easily by passing a
+zip file in <tt class="docutils literal"><span class="pre">xlink:href</span></tt> for the <tt class="docutils literal"><span class="pre">a</span></tt> value of the <tt class="docutils literal"><span class="pre">HelloPy</span></tt>
+service.</p>
+<div class="section" id="testings">
+<h3><a class="toc-backref" href="#table-of-contents">Testings</a><a class="headerlink" href="#testings" title="Permalink to this headline">¶</a></h3>
+<p>Using the simple <tt class="docutils literal"><span class="pre">HelloPy</span></tt> service code, you can use the following urls, note it supposes that you get an available <a class="reference external" href="http://localhost/data/data.zip">http://localhost/data/data.zip</a> file containing a ShapeFile and a <a class="reference external" href="http://localhost/data/demo.tif">http://localhost/data/demo.tif</a>:</p>
+<div class="section" id="test-1-accessing-a-remote-zipped-shapefile-as-wfs-getfeatures-request">
+<h4>Test 1: Accessing a remote Zipped Shapefile as WFS GetFeatures Request<a class="headerlink" href="#test-1-accessing-a-remote-zipped-shapefile-as-wfs-getfeatures-request" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nl">http:</span><span class="c1">//localhost/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=Reference@xlink:href=http://localhost/data/data.zip&amp;ResponseDocument=Result@asReference=true@mimetype=text/xml</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-2-accessing-a-remote-zipped-shapefile-as-wms-getmap-request">
+<h4>Test 2: Accessing a remote Zipped Shapefile as WMS GetMap Request<a class="headerlink" href="#test-2-accessing-a-remote-zipped-shapefile-as-wms-getmap-request" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nl">http:</span><span class="c1">//localhost/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=Reference@xlink:href=http://localhost/data/data.zip&amp;ResponseDocument=Result@asReference=true@mimetype=image/png</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-3-accessing-a-remote-tiff-as-wms-getmap-request">
+<h4>Test 3: Accessing a remote tiff as WMS GetMap Request:<a class="headerlink" href="#test-3-accessing-a-remote-tiff-as-wms-getmap-request" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nl">http:</span><span class="c1">//localhost/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=Reference@xlink:href=http://localhost/data/data.tiff&amp;ResponseDocument=Result@asReference=true@mimetype=image/png</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-4-accessing-a-remote-tiff-as-wcs-getmap-request">
+<h4>Test 4: Accessing a remote tiff as WCS GetMap Request:<a class="headerlink" href="#test-4-accessing-a-remote-tiff-as-wcs-getmap-request" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-guess"><div class="highlight"><pre><span class="nl">http:</span><span class="c1">//localhost/cgi-bin/zoo_loader.cgi?request=Execute&amp;service=WPS&amp;version=1.0.0&amp;Identifier=HelloPy&amp;DataInputs=a=Reference@xlink:href=http://localhost/data/data.tiff&amp;ResponseDocument=Result@asReference=true@mimetype=image/tiff</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ZOO Kernel Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">How To Use the Internal MapServer W*S support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-make-it-working">How to make it working ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-does-it-work">How does it work ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#simple-sample-use-cases">Simple sample use cases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../services/index.html">ZOO Services Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2010/index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2012/index.html">Practical Introduction to ZOO-Project by playing with building blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2013/index.html">ZOO-Project: playing with building blocks to build pgRouting web application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">ZOO Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/documentation.html">Documentation Development Guide</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

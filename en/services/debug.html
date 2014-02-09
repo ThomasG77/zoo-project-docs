@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>How To Debug ZOO Services &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../index.html" />
+    <link rel="up" title="ZOO Services Documentation" href="index.html" />
+    <link rel="next" title="Service Examples" href="examples.html" />
+    <link rel="prev" title="How To Setup ZOO Services" href="howtos.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../en/index.html">English</a></li>
+      <li><a href="../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="examples.html" title="Service Examples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="howtos.html" title="How To Setup ZOO Services"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ZOO Services Documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="how-to-debug-zoo-services">
+<span id="services-debug"></span><h1>How To Debug ZOO Services<a class="headerlink" href="#how-to-debug-zoo-services" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Luca Delucchi</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Last Updated:</th><td class="field-body">$Date: 2013-03-27 00:06:12 +0100 (Wed, 27 Mar 2013) $</td>
+</tr>
+</tbody>
+</table>
+<p>There are different ways to debug your services, the most used solutions are via web
+or via command line.</p>
+<div class="section" id="web">
+<h2>Web<a class="headerlink" href="#web" title="Permalink to this headline">¶</a></h2>
+<p>Using the web request you can see any problem in the log file of Apache.</p>
+<p>On Unix system the log file is usually in <tt class="docutils literal"><span class="pre">/var/log/apache2</span></tt> and the relevant file
+is <tt class="docutils literal"><span class="pre">error_log</span></tt>. A simple way to read the file is to use the <tt class="docutils literal"><span class="pre">tail</span></tt> command,
+it permits to see the update of the file for each request</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">tail</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">error_log</span>
+</pre></div>
+</div>
+<p>If the log is not clear enough you can add some more debug information to your code. You have to write
+to standard error.</p>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<p>Using Python, you can for example do this</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c">#add this line when you want see an own message</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;My message&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="javascript">
+<span id="web-javascript"></span><h3>Javascript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
+<p>You can user <tt class="docutils literal"><span class="pre">alert</span></tt> to print a string to standard error:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add this line when you want see an own message</span>
+<span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;My message&#39;</span><span class="p">)</span>
+<span class="c1">// you can debug value of inputs, outputs or conf</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">inputs</span><span class="p">[</span><span class="s2">&quot;S&quot;</span><span class="p">][</span><span class="s2">&quot;value&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you try to pass an object it will only return <tt class="docutils literal"><span class="pre">[object</span> <span class="pre">Object]</span></tt></p>
+</div>
+</div>
+</div>
+<div class="section" id="command-line">
+<h2>Command line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to use the ZOO kernel <tt class="docutils literal"><span class="pre">zoo_loader.cgi</span></tt> also from command line.
+This is really useful to debug in a deeper way your service:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># in order to use it you have to copy test_service.py and HelloPy.zcfg from</span>
+<span class="c"># the example services</span>
+./zoo_loader.cgi <span class="s2">&quot;service=wps&amp;version=1.0.0&amp;request=execute&amp;identifier=HelloPy&amp;datainputs=a=your name&amp;responsedocument=Result&quot;</span>
+</pre></div>
+</div>
+<p>Working this way you can use the standard debug system of the actual programming language used
+to develop your service.</p>
+<div class="section" id="gdb">
+<h3>GDB<a class="headerlink" href="#gdb" title="Permalink to this headline">¶</a></h3>
+<p>From command line you can use also the command line tool <a class="reference external" href="http://www.gnu.org/software/gdb/">GDB</a>
+to debug <tt class="docutils literal"><span class="pre">zoo_loader.cgi</span></tt>, you have to run:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># launch zoo_loader.cgi from gdb</span>
+gdb zoo_loader.cgi
+<span class="c"># now run your request</span>
+run <span class="s2">&quot;service=wps&amp;version=1.0.0&amp;request=execute&amp;identifier=HelloPy&amp;datainputs=a=your name&amp;responsedocument=Result&quot;</span>
+</pre></div>
+</div>
+<p>At this point you can ask help at the <a class="reference external" href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-discuss">ZOO mailing list</a>
+copying the result of the command.</p>
+</div>
+<div class="section" id="id2">
+<h3>Python<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>For Python, you can use <tt class="docutils literal"><span class="pre">pdb</span></tt>, more info at <a class="reference external" href="http://docs.python.org/2/library/pdb.html">http://docs.python.org/2/library/pdb.html</a></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pdb</span>
+
+<span class="c"># add this line when you want investigate your code in more detail</span>
+<span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Javascript<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>You can use <tt class="docutils literal"><span class="pre">alert</span></tt> also to print in the console, more info in the <a class="reference internal" href="#web-javascript"><em>Javascript</em></a> web section</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../kernel/index.html">ZOO Kernel Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ZOO Services Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zcfg-reference.html">ZCFG : the ZOO Service Configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howtos.html">How To Setup ZOO Services</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">How To Debug ZOO Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#web">Web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#command-line">Command line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Service Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2010/index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2012/index.html">Practical Introduction to ZOO-Project by playing with building blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workshop/2013/index.html">ZOO-Project: playing with building blocks to build pgRouting web application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">ZOO Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/documentation.html">Documentation Development Guide</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

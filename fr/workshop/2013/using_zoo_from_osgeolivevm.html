@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuration et utilisation du ZOO-Kernel &mdash; ZOO Project 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="top" title="ZOO Project 1.3 documentation" href="../../index.html" />
+    <link rel="up" title="ZOO-Project: jouer avec des blocs de construction pour construire une application web pgRouting" href="index.html" />
+    <link rel="next" title="Créer votre premier service ZOO" href="first_service.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul.topnav li a").hover(function() {
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+</script>
+
+     
+
+  </head>
+  <body>
+<!-- Begin Header -->
+<div id="wrapper">
+  	<div id="myheader">
+    	<div class="hleft">
+    	  <h1 class="title">Open WPS Platform</h1>
+    	</div>
+    	<div class="hright">
+    	</div>
+  	</div>
+</div>
+<ul class="topnav">
+  <li><a href="http://www.zoo-project.org/">Home</a></li>
+  <li><a href="#">ZOO Project</a>
+       <ul class="subnav">
+
+         <li><a href="/site/ZooWebSite/ZooProject/About">About</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Tribe">ZOO Tribe</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Events">Events</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Photos">Photos</a></li>
+         <li><a href="/site/ZooWebSite/ZooProject/Contact">Contacts</a></li>
+       </ul>
+
+  </li>
+  <li>
+    <a href="#">Components</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/ZooKernel">ZOO Kernel</a></li>
+      <li><a href="/site/ZooWebSite/ZooServices">ZOO Services</a></li>
+      <li><a href="/site/ZooWebsite/ZooApi">ZOO API</a></li>
+
+    </ul>
+  </li>
+  <li><a href="/site/Downloads">Download</a></li>
+  <li><a href="#">Docs</a>
+    <ul class="subnav">
+      <li><a href="../../../en/index.html">English</a></li>
+      <li><a href="../../../fr/index.html">Français</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Demos</a>
+    <ul class="subnav">
+      <li><a href="/site/ZooWebSite/Demo/SpatialTools">ZOO Spatial Tools</a></li>
+
+      <li><a href="/site/ZooWebSite/Demo/CGAL">ZOO CGAL Vor</a></li>
+      <li><a href="/site/ZooWebSite/Demo/WFS-T">ZOO Mapserver WFS-T</a></li>
+      <li><a href="/site/ZooWebSite/Demo/GdalProfile">ZOO Elevation Profile</a></li>
+      <li><a href="/site/ZooWebSite/Demo/FormTools">ZOO Form tools</a></li>
+    </ul>
+  </li>
+  <li><a href="/trac">Trac</a></li>
+</ul>
+<!-- End Header -->
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="first_service.html" title="Créer votre premier service ZOO"
+             accesskey="N">suivant</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">précédent</a> |</li>
+        <li><a href="../../index.html">ZOO Docs</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">ZOO-Project: jouer avec des blocs de construction pour construire une application web pgRouting</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="configuration-and-zoo-kernel-use">
+<span id="using-zoo-from-osgeolivevm"></span><h1><a class="toc-backref" href="#table-of-contents">Configuration et utilisation du ZOO-Kernel</a><a class="headerlink" href="#configuration-and-zoo-kernel-use" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table des matières</p>
+<ul class="simple">
+<li><a class="reference internal" href="#configuration-and-zoo-kernel-use" id="id5">Configuration et utilisation du ZOO-Kernel</a><ul>
+<li><a class="reference internal" href="#zoo-project-installation" id="id6">Installation du ZOO-Project</a></li>
+<li><a class="reference internal" href="#zoo-kernel-configuration" id="id7">Configuration du ZOO-Kernel</a></li>
+<li><a class="reference internal" href="#testing-the-zoo-installation-with-getcapabilities" id="id8">Tester votre installation de ZOO avec le GetCapabilities</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="zoo-project-installation">
+<h2><a class="toc-backref" href="#table-of-contents">Installation du ZOO-Project</a><a class="headerlink" href="#zoo-project-installation" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour être capable de suivre le matériel courant, vous devrez télécharger et décompresser une archive contenant l&#8217;ensemble de données, le ZOO-Kernel et les services requis. Il a été mis à la disposition spécifiquement pour ce workshop et est disponible à l&#8217;adresse: <a class="reference external" href="http://www.zoo-project.org/dl/ws2013-1.tar.bz2">http://www.zoo-project.org/dl/ws2013-1.tar.bz2</a>.</p>
+<p>Vous devez utiliser les commandes suivantes pour télécharger puis décompresser l&#8217;archive et l&#8217;obtenir extraite avec les bons privilèges:</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.zoo-project.org/dl/ws2013-1.tar.bz2</span>
+<span class="n">sudo</span> <span class="n">tar</span> <span class="o">-</span><span class="n">xvjpf</span> <span class="n">ws2013</span><span class="o">-</span><span class="mf">1.</span><span class="n">tar</span><span class="p">.</span><span class="n">bz2</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span>
+<span class="n">psql</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">ws2013</span><span class="p">.</span><span class="n">sql</span> <span class="n">pgrouting</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="zoo-kernel-configuration">
+<h2><a class="toc-backref" href="#table-of-contents">Configuration du ZOO-Kernel</a><a class="headerlink" href="#zoo-kernel-configuration" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Comme déjà dit dans l&#8217;introduction, l&#8217;OSGeoLive a été démarré sur votre ordinateur, vous permettant d&#8217;utiliser le ZOO-Kernel directement dans un environnement de développement.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">nous allons utiliser les noms ZOO-Kernel ou  script <tt class="docutils literal"><span class="pre">zoo_loader.cgi</span></tt> sans aucune distinction dans ce document.</p>
+</div>
+<p>Les paramètres généraux du ZOO-Kernel sont définis dans le fichier <tt class="docutils literal"><span class="pre">main.cfg</span></tt> situé dans le même répertoire que le ZOO-Kernel, donc dans <tt class="docutils literal"><span class="pre">/usr/lib/cgi-bin/</span></tt>. Vous pouvez voir un contenu <tt class="docutils literal"><span class="pre">main.cfg</span></tt> typique dans ce qui suit:</p>
+<div class="highlight-guess"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">[main]</span>
+<span class="na">lang</span><span class="o">=</span><span class="s">en-US,fr-FR,ja-JP</span>
+<span class="na">version</span><span class="o">=</span><span class="s">1.0.0</span>
+<span class="na">encoding</span><span class="o">=</span><span class="s">utf-8</span>
+<span class="na">serverAddress</span><span class="o">=</span><span class="s">http://localhost/zoo/</span>
+<span class="na">dataPath</span><span class="o">=</span><span class="s">/var/www/data</span>
+<span class="na">tmpPath</span><span class="o">=</span><span class="s">/var/www/tmp</span>
+<span class="na">tmpUrl</span><span class="o">=</span><span class="s">../tmp</span>
+<span class="na">cacheDir</span><span class="o">=</span><span class="s">/var/www/cache/</span>
+<span class="na">mapserverAddress</span><span class="o">=</span><span class="s">http://localhost/cgi-bin/mapserv</span>
+<span class="na">msOgcVersion</span><span class="o">=</span><span class="s">1.0.0</span>
+
+<span class="k">[identification]</span>
+<span class="na">title</span><span class="o">=</span><span class="s">The ZOO-Project WPS Server FOSS4G 2013 Nottingham Workshop</span>
+<span class="na">keywords</span><span class="o">=</span><span class="s">WPS,GIS,buffer</span>
+<span class="na">abstract</span><span class="o">=</span><span class="s">ZOO-Project platform 2013 .See http://www.zoo-project.org for more informations</span>
+<span class="na">accessConstraints</span><span class="o">=</span><span class="s">none</span>
+<span class="na">fees</span><span class="o">=</span><span class="s">None</span>
+
+<span class="k">[provider]</span>
+<span class="na">positionName</span><span class="o">=</span><span class="s">Developer</span>
+<span class="na">providerName</span><span class="o">=</span><span class="s">ZOO-Project</span>
+<span class="na">addressAdministrativeArea</span><span class="o">=</span><span class="s">Lattes</span>
+<span class="na">addressDeliveryPoint</span><span class="o">=</span><span class="s">1280 Av. des Platanes</span>
+<span class="na">addressCountry</span><span class="o">=</span><span class="s">fr</span>
+<span class="na">phoneVoice</span><span class="o">=</span><span class="s">+33670082539</span>
+<span class="na">addressPostalCode</span><span class="o">=</span><span class="s">34970</span>
+<span class="na">role</span><span class="o">=</span><span class="s">Dev</span>
+<span class="na">providerSite</span><span class="o">=</span><span class="s">http://www.zoo-project.org</span>
+<span class="na">phoneFacsimile</span><span class="o">=</span><span class="s">False</span>
+<span class="na">addressElectronicMailAddress</span><span class="o">=</span><span class="s">gerald.fenoy@geolabs.fr</span>
+<span class="na">addressCity</span><span class="o">=</span><span class="s">Lattes</span>
+<span class="na">individualName</span><span class="o">=</span><span class="s">Gérald FENOY</span>
+</pre></div>
+</td></tr></table></div>
+<p>Le fichier <tt class="docutils literal"><span class="pre">main.cfg</span></tt> contient les informations de métadonnées à propos de l&#8217;identification et du fournisseur mais aussi des paramètres importants. Le fichier est composé de différentes sections, à savoir <tt class="docutils literal"><span class="pre">[main]</span></tt>, <tt class="docutils literal"><span class="pre">[identification]</span></tt> et <tt class="docutils literal"><span class="pre">[provider]</span></tt> par défaut.</p>
+<dl class="docutils">
+<dt>Depuis <tt class="docutils literal"><span class="pre">[main]</span></tt> les paramètres de section sont les suivants:</dt>
+<dd><ul class="first last simple">
+<li><p class="first"><tt class="docutils literal"><span class="pre">lang</span></tt>: les langages supportés, séparés par une virgule (le premier est celui par défaut),</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">version</span></tt>: la version du WPS supportée,</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">encoding</span></tt>: l&#8217;encodage par défaut des réponses WPS,</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">serverAddress</span></tt>: l&#8217;url pour accéder à votre instance du ZOO-Kernel,</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">dataPath</span></tt>: le chemin pour stocker les fichiers de données (quand le support de MapServer est activé, ce répertoire est utilisé pour stocker les mapfiles et les données).</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">tmpPath</span></tt>: le chemin pour stocker les  fichiers temporaires (comme une ExecuteResponse quand storeExecuteResponse a été défini à true),</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">tmpUrl</span></tt>: une url relative au <tt class="docutils literal"><span class="pre">serverAddress</span></tt> pour accéder au fichier temporaire,</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">cacheDir</span></tt>: le chemin pour stocker les fichiers de requête mis en cache <a class="footnote-reference" href="#f1" id="id1">[1]</a> (optionnel),</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">mapservAddress</span></tt>: votre adresse locale de MapServer (optionnel),</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">msOgcVersion</span></tt>: la version pour toutes les sorties des services Web OGC supportées <a class="footnote-reference" href="#f2" id="id2">[2]</a> (optionnel).</p>
+</li>
+</ul>
+</dd>
+</dl>
+<p>les sections <tt class="docutils literal"><span class="pre">[identification]</span></tt> et <tt class="docutils literal"><span class="pre">[provider]</span></tt> sont spécifiques à la métadonnée OGC et devraient être définies <a class="footnote-reference" href="#f3" id="id3">[3]</a>.</p>
+<p>De toute évidence, vous êtes libres d&#8217;ajouter de nouvelles sections à ce fichier si vous avez besoin de plus. Néanmoins, vous devez savoir qu&#8217;il y a quelques noms spécifiques, que vous devez utiliser seulement pour des besoins spécifiques: <tt class="docutils literal"><span class="pre">[headers]</span></tt>, <tt class="docutils literal"><span class="pre">[mapserver]</span></tt>, <tt class="docutils literal"><span class="pre">[env]</span></tt>, <tt class="docutils literal"><span class="pre">[lenv]</span></tt> et <tt class="docutils literal"><span class="pre">[senv]</span></tt>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><tt class="docutils literal"><span class="pre">[senv]</span></tt> et <tt class="docutils literal"><span class="pre">[lenv]</span></tt> sont utilisés / produits à l&#8217;exécution en interne par le ZOO-Kernel et doivent être défini seulement par le code de Service.</p>
+</div>
+<p>La section <tt class="docutils literal"><span class="pre">headers</span></tt> est utilisée pour définir vos propres en-têtes de réponse HTTP. Vous pouvez jeter un oeil aux en-têtes retournés un site web tel que <a class="reference external" href="http://www.zoo-project.org">http://www.zoo-project.org</a> en utilisant l&#8217;outil en ligne de commande curl, par exemple, et vous verrez un en-tête spécifique <tt class="docutils literal"><span class="pre">X-Powered-By:</span> <span class="pre">Zoo-Project&#64;Trac</span></tt>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Il n&#8217;ya aucune raison de définir des en-têtes de base tels que <tt class="docutils literal"><span class="pre">Content-Type</span></tt> ou <tt class="docutils literal"><span class="pre">encoding</span></tt> comme ils seront remplacés à l&#8217;exécution par le ZOO-Kernel.</p>
+</div>
+<p>La section <tt class="docutils literal"><span class="pre">mapserver</span></tt> est utilisée pour stocker des paramètres de configuration mapserver spécifiques comme PROJ_LIB et GDAL_DATA ou n&#8217;importe quel autre que vous vouliez définir pour faire fonctionner votre MapServer.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">la section <tt class="docutils literal"><span class="pre">mapserver</span></tt> est principalement utilisée sur les plates-formes WIN32</p>
+</div>
+<p>La section <tt class="docutils literal"><span class="pre">env</span></tt> est utilisé pour stocker les variables d&#8217;environnement spécifiques que vous souhaitez mettre en avant pour charger votre fournisseur de services et pour exécuter votre service. Un exemple typique, c&#8217;est quand votre service nécessite d&#8217;accéder à un serveur X fonctionnant sur ​​framebuffer, alors vous aurez à définir la variable d&#8217;environnement <tt class="docutils literal"><span class="pre">DISPLAY</span></tt>, dans ce cas, vous devez ajouter la ligne <tt class="docutils literal"><span class="pre">DISPLAY=:1</span></tt> dans votre section <tt class="docutils literal"><span class="pre">[env]</span></tt>.</p>
+<p>Le <tt class="docutils literal"><span class="pre">lenv</span></tt> est utilisé pour stocker les informations d&#8217;exécution automatiquement définies par le ZOO-Kernel avant de lancer votre service et peut être accéder/mis à jour depuis ceci:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p class="first"><tt class="docutils literal"><span class="pre">sid</span></tt>: l&#8217;identifiant de service unique,</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">status</span></tt>: la valeur de progression courante (valeur entre 0 et 100, pourcents),</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">cwd</span></tt>: le répertoire de travail courant du ZOO-Kernel,</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">message</span></tt>: un message d&#8217;erreur quand <tt class="docutils literal"><span class="pre">SERVICE_FAILED</span></tt> est retourné (optionnel),</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">cookie</span></tt>: le cookie que votre service veut retourner au client (à des fins de suivi ou d&#8217;authentification).</p>
+</li>
+</ul>
+</div></blockquote>
+<p>Le <tt class="docutils literal"><span class="pre">senv</span></tt> est utilisé pour stocker les informations de session côté serveur. Vous pouvez ainsi y accéder automatiquement depuis le service si le serveur est interrogé en utilisant un cookie valide (comme défini dans <tt class="docutils literal"><span class="pre">lenv</span> <span class="pre">&gt;</span> <span class="pre">cookie</span></tt>). Le ZOO-Kernel stockera sur le disque les valeurs définies dans la liste clé-valeur <tt class="docutils literal"><span class="pre">senv</span></tt>, puis les chargera et ajoutera dynamiquement leur contenu à celui disponible dans le <tt class="docutils literal"><span class="pre">main.cfg</span></tt>. La section <tt class="docutils literal"><span class="pre">senv</span></tt> devrait contenir au moins:</p>
+<blockquote>
+<div><ul>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal"><span class="pre">XXX</span></tt>: l&#8217;identifiant de session unique où <tt class="docutils literal"><span class="pre">XXX</span></tt> est le nom inclut dans le</dt>
+<dd><p class="first last">returned cookie.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p id="cookie-example">Par exemple, si vous avec ce qui suit dans votre code source de Service <a class="footnote-reference" href="#f4" id="id4">[4]</a> :</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">conf</span><span class="p">[</span><span class="s">&quot;lenv&quot;</span><span class="p">][</span><span class="s">&quot;cookie&quot;</span><span class="p">]</span><span class="o">=</span><span class="s">&quot;XXX=XXX1000000; path=/&quot;</span>
+<span class="n">conf</span><span class="p">[</span><span class="s">&quot;senv&quot;</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;XXX&quot;</span><span class="p">:</span> <span class="s">&quot;XXX1000000&quot;</span><span class="p">,</span><span class="s">&quot;login&quot;</span><span class="p">:</span> <span class="s">&quot;demoUser&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Cela signifie que le ZOO-Kernel créera un fichier <tt class="docutils literal"><span class="pre">sess_XXX1000000.cfg</span></tt> dans le <tt class="docutils literal"><span class="pre">cacheDir</span></tt> et retournera le cookie spécifié au client. Chaque fois que le client interrogera le ZOO-Kernel en utilisant le cookie, il chargera automatiquement la valeur stockée avant d&#8217;exécuter votre service. Vous pouvez ensuite accéder facilement  à ces informations à partir de votre code source de service. Cette fonctionnalité ne sera pas utilisée dans la présentation suivante.</p>
+</div>
+<div class="section" id="testing-the-zoo-installation-with-getcapabilities">
+<h2><a class="toc-backref" href="#table-of-contents">Tester votre installation de ZOO avec le GetCapabilities</a><a class="headerlink" href="#testing-the-zoo-installation-with-getcapabilities" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Vous pouvez interroger le ZOO-Kernel en utilisant le lien suivant depuis votre navigateur Internet:</p>
+<p><a class="reference external" href="http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&amp;Service=WPS">http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&amp;Service=WPS</a></p>
+<p>Vous devriez obtenir un document XML de &#8220;Capabilities&#8221; valide, ressemblant à ce qui suit :</p>
+<a class="reference internal image-reference" href="../../_images/GC1.png"><img alt="../../_images/GC1.png" class="align-center" src="../../_images/GC1.png" style="width: 650px;" /></a>
+<p>Merci de noter que certaines noeuds de processus sont retournés dans la section ProcessOfferings, comme certains sont déjà disponibles sur le DVD OSGeoLive. Vous pouvez également exécuter une requête GetCapabilities depuis la ligne de commande, en utilisant la commande suivante:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nb">cd</span> /usr/lib/cgi-bin
+./zoo_loader.cgi “request<span class="o">=</span>GetCapabilities&amp;service<span class="o">=</span>WPS”
+</pre></div>
+</div>
+<p>Le même résultat que dans votre navigateur sera retourné, comme montré dans la capture d&#8217;écran suivante:</p>
+<a class="reference internal image-reference" href="../../_images/GC_CL1.png"><img alt="../../_images/GC_CL1.png" class="align-center" src="../../_images/GC_CL1.png" style="width: 450px;" /></a>
+<p>Invoquer le Kernel ZOO depuis la ligne de commande peut être utile pendant le processus de développement de nouveaux services.</p>
+<p class="rubric">Notes de bas de page</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><p class="first last">lorsque vous utilisez les requêtes GET passées via <tt class="docutils literal"><span class="pre">xlink:href</span></tt>, le ZOO Kernel-exécutera la demande une seule fois, la première fois, vous demanderez cette ressource et elle stockera sur le disque le résultat. La prochaine fois que vous aurez besoin de la même fonction, le fichier de cache sera utilisé pour exécuter votre processus plus vite. Si <tt class="docutils literal"><span class="pre">cachedir</span></tt> n&#8217;a pas été précisé dans <tt class="docutils literal"><span class="pre">main.cfg</span></tt> alors la valeur de <tt class="docutils literal"><span class="pre">tmpPath</span></tt> sera utilisée.</p>
+</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><p class="first last">depuis la version 1.3-dev, quand MapServer est activée, votre service peut automatiquement retourner une requête WMS, WFS ou WCS pour exposer vos données. Vous pouvez définir ici le numéro de version spécifique que vous souhaitez utiliser pour interroger la configuration de votre MapServer local. Il dépend surtout de la capacité du client à gérer la version spécifique des services Web OGC.</p>
+</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td><p class="first last">depuis la version 1.3dev, quand MapServer est activé, les mêmes métadonnées seront utilisées pour définir les métadonnées pour les services Web OGC.</p>
+</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[4]</a></td><td><p class="first last">Si vous n&#8217;êtes pas familier avec le ZOO-projet, vous pouvez <a class="reference external" href="using_zoo_from_osgeolivevm#testing-the-zoo-installation-with-getcapabilities">passer</a> cette partie et y revenir après la section suivante.</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Table des Matières</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../kernel/index.html">Documentation du Kernel ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../services/index.html">Documentation de services ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">ZOO API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2010/index.html">Workshop: Practical Introduction to ZOO: The Open WPS Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2012/index.html">Practical Introduction to ZOO-Project by playing with building blocks</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ZOO-Project: jouer avec des blocs de construction pour construire une application web pgRouting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#foss4g-2013-nottingham">FOSS4G 2013 Nottingham</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#foss4g-cee-2013-bucharest">FOSS4G-CEE 2013 Bucharest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#sponsored-by">Sponsorisé par</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#special-thanks-to-our-knowledge-partners">Merci à nos partenaires de connaissance</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#workshop-table-of-content">Tables des matières du workshop</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Configuration et utilisation du ZOO-Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first_service.html">Créer votre premier service ZOO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="building_blocks_presentation.html">Présentation des blocs de construction - Utiliser des Services Web basés sur OGR et PgRouting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="js_services_chaining.html">Jouer avec les blocs de construction - Créer des Services Web JavaScript</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../community/index.html">Communauté ZOO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/documentation.html">Guide de développement de la documentation</a></li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Recherche rapide</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Saisissez un mot clef ou un nom de module, classe ou fonction.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<!-- Begin Footer -->
+<div id="footer">
+<div>
+
+<div>
+  <div class="menuContainer">
+    <div class="menuItemList">
+      <a href="../../index.html" shape="rect">Home</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">ZOO Project</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/About" shape="rect">About</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Tribe" shape="rect">ZOO Tribe</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Events" shape="rect">Events</a>
+      <br/>
+
+      <a href="/site/ZooWebSite/ZooProject/Photos" shape="rect">Photos</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooProject/Contact" shape="rect">Contacts</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Components</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/ZooKernel" shape="rect">ZOO Kernel</a>
+      <br/>
+      <a href="/site/ZooWebSite/ZooServices" shape="rect">ZOO Services</a>
+      <br/>
+      <a href="/site/ZooWebsite/ZooApi" shape="rect">ZOO API</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="../../dl/index.html" shape="rect">Download</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Docs</a>
+
+      <br/>
+      <a href="../../doc/en/index.html" shape="rect">English version</a>
+      <br/>
+      <a href="../../doc/fr/index.html" shape="rect">version française</a>
+      <br/>
+
+    </div>
+    <div class="menuItemList">
+      <a href="#" shape="rect">Demos</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/SpatialTools" shape="rect">ZOO Spatial Tools</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/WFS-T" shape="rect">ZOO Mapserver WFS-T</a>
+
+      <br/>
+      <a href="/site/ZooWebSite/Demo/GdalProfile" shape="rect">ZOO Elevation Profile</a>
+      <br/>
+      <a href="/site/ZooWebSite/Demo/FormTools" shape="rect">ZOO Form tools</a>
+      <br/>
+    </div>
+    <div class="menuItemList">
+      <a href="/trac" shape="rect">Trac</a>
+
+      <br/>
+    </div>
+  </div>
+  <br style="clear:both"/>
+</div>
+</div>
+<p>
+&copy; Copyright 2011 - <a class="ext-link" href="http://www.zoo-project.org" shape="rect"><span class="icon"> </span>ZOO Project</a> - All Rights Reserved. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b3.
+</p>
+</div>
+<!-- End Footer -->
+    
+    <div class="footer">
+    </div>
+
+  </body>
+</html>
