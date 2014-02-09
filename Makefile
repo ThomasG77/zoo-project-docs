@@ -47,7 +47,7 @@ html:
 		$(SPHINXBUILD) -b html -D language=$$lang $(ALLSPHINXOPTS) $(BUILDDIR)/html/$$lang;\
 	done
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/."
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
@@ -55,9 +55,12 @@ dirhtml:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
 
 singlehtml:
-	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
+	@for lang in $(LANGUAGES);\
+	do \
+		$(SPHINXBUILD) -b singlehtml -D language=$$lang $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml/$$lang;\
+	done
 	@echo
-	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
+	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml/."
 
 pickle:
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) $(BUILDDIR)/pickle
@@ -99,16 +102,21 @@ epub:
 	@echo "Build finished. The epub file is in $(BUILDDIR)/epub."
 
 latex:
-	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	@for lang in $(LANGUAGES);\
+	do \
+		$(SPHINXBUILD) -b latex -D language=$$lang $(ALLSPHINXOPTS) $(BUILDDIR)/latex/$$lang;\
+	done
 	@echo
 	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
 	@echo "Run \`make' in that directory to run these through (pdf)latex" \
 	      "(use \`make latexpdf' here to do that automatically)."
 
 latexpdf:
-	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
-	@echo "Running LaTeX files through pdflatex..."
-	make -C $(BUILDDIR)/latex all-pdf
+	@for lang in $(LANGUAGES);\
+	do \
+		$(SPHINXBUILD) -b latex -D language=$$lang $(ALLSPHINXOPTS) $(BUILDDIR)/latex/$$lang;\
+		make -C $(BUILDDIR)/latex/$$lang all-pdf;\
+	done
 	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
 
 text:
