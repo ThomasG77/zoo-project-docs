@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-02-09 01:16+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,377 +13,231 @@ msgstr ""
 
 #: ../../workshop/2013/js_services_chaining.txt:5
 msgid "Playing with buildign blocks - Creating JavaScript Web Services"
-msgstr ""
+msgstr "Jouer avec les blocs de construction - Créer des Services Web JavaScript"
 
 #: ../../workshop/2013/js_services_chaining.txt:0
 msgid "Table of Contents"
-msgstr ""
+msgstr "Table of Contents"
 
 #: ../../workshop/2013/js_services_chaining.txt:12
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../workshop/2013/js_services_chaining.txt:15
-msgid ""
-"This section illustrate how you can use JavaScript on the server-side to "
-"chain services together to build new ones. You will create a ZOO Services "
-"Provider using the services you seen before and the WFS server using the "
-"ZOO-API. The final goal is to query all POIs included in a buffer around a "
-"feature and to highlight them using a mask around this buffer. The following"
-" screenshot show you the expected result:"
-msgstr ""
+msgid "This section illustrate how you can use JavaScript on the server-side to chain services together to build new ones. You will create a ZOO Services Provider using the services you seen before and the WFS server using the ZOO-API. The final goal is to query all POIs included in a buffer around a feature and to highlight them using a mask around this buffer. The following screenshot show you the expected result:"
+msgstr "Cette section illustre comment vous pouvez utiliser JavaScript côté serveur pour chaîner les services ensemble pour en construire de nouveaux. Vous allez créer un fournisseur de services ZOO utilisant les services que vous avez vu auparavant et le serveur WFS utilisant la ZOO-API. L'objectif final est d'interroger tous les POI inclus dans un tampon autour d'un objet et de les mettre en avant en utilisant un masque autour de ce tampon. La capture d'écran ci-dessous vous montre le résultat attendu:"
 
 #: ../../workshop/2013/js_services_chaining.txt:26
 msgid "For the routing interface result should look like this:"
-msgstr ""
+msgstr "Pour l'interface de routage, le résultat devrait ressembler à ceci:"
 
 #: ../../workshop/2013/js_services_chaining.txt:32
-msgid ""
-"You can decompose the result above in two different ones: the mask around "
-"the buffer and the points included in the buffer. So you will create two "
-"different Services: one called ``BufferMask`` and another one called "
-"``BufferRequest``."
-msgstr ""
+msgid "You can decompose the result above in two different ones: the mask around the buffer and the points included in the buffer. So you will create two different Services: one called ``BufferMask`` and another one called ``BufferRequest``."
+msgstr "Vous pouvez décomposer le résultat ci-dessus dans deux différents: le masque autour du tampon et les points inclus dans le tampon. Donc, vous allez créer deux services différents: l'un appelé ``BufferMask`` et l'autre appelée ``BufferRequest``."
 
 #: ../../workshop/2013/js_services_chaining.txt:36
-msgid ""
-"But before implementing any JavaScript Service, you will get an overview of "
-"how to use ZOO-API from your ZOO-Project installation in the next section."
-msgstr ""
+msgid "But before implementing any JavaScript Service, you will get an overview of how to use ZOO-API from your ZOO-Project installation in the next section."
+msgstr "Mais avant d'implémenter tout service JavaScript, vous allez avoir un aperçu de la façon d'utiliser la ZOO API depuis votre installation ZOO-projet dans la section suivante."
 
 #: ../../workshop/2013/js_services_chaining.txt:39
-msgid ""
-"As before, you first create a new directory to store files for your new "
-"Services Provider:"
-msgstr ""
+msgid "As before, you first create a new directory to store files for your new Services Provider:"
+msgstr "Comme précédemment, vous créez en premier un nouveau répertoire pour stocker les fichiers de votre nouveau fournisseur de services:"
 
 #: ../../workshop/2013/js_services_chaining.txt:48
 msgid "ZOO-API Overview"
-msgstr ""
+msgstr "Aperçu de la ZOO-API"
 
 #: ../../workshop/2013/js_services_chaining.txt:50
-msgid ""
-"ZOO-API and ZOO-Kernel JavaScript support make you able to run services "
-"implemented in JavaScript on the server side. JavaScript is a popular "
-"programing language but mostly used on the client side. Let say from a "
-"browser, but here it is a bit different."
-msgstr ""
+msgid "ZOO-API and ZOO-Kernel JavaScript support make you able to run services implemented in JavaScript on the server side. JavaScript is a popular programing language but mostly used on the client side. Let say from a browser, but here it is a bit different."
+msgstr "Le support JavaScript de la ZOO-API et du ZOO-Kernel vous rend capable d'exécuter des services implémentés en JavaScript côté serveur. Le JavaScript est un langage de programmation populaire, mais la plupart du temps utilisé côté client. Disons à partir d'un navigateur, mais ici c'est un peu différent."
 
 #: ../../workshop/2013/js_services_chaining.txt:55
-msgid ""
-"To support JavaScript language ZOO-Kernel use the `SpiderMonkey "
-"<https://developer.mozilla.org/en/SpiderMonkey>`__ API to create a "
-"javascript runtime environment from which it will load your JS file then "
-"extract the function corresponding to the service to run it using the "
-"prefilled parameters. The JavaScript runtime environment created by the ZOO-"
-"Kernel depend on your setup. If you placed the ``ZOO-api.js`` and ``ZOO-"
-"proj4js.js`` in the same directory as your ZOO-Kernel it means that your "
-"environment will contains ZOO-API and Proj4js will be loaded before your "
-"service. In such case you can access to the Classes defined in the "
-"JavaScript ZOO-API to manipulate geographic data, for more informations "
-"please refer to the `ZOO-API Documentation <http://zoo-"
-"project.org/docs/api/index.html>`__."
-msgstr ""
+msgid "To support JavaScript language ZOO-Kernel use the `SpiderMonkey <https://developer.mozilla.org/en/SpiderMonkey>`__ API to create a javascript runtime environment from which it will load your JS file then extract the function corresponding to the service to run it using the prefilled parameters. The JavaScript runtime environment created by the ZOO-Kernel depend on your setup. If you placed the ``ZOO-api.js`` and ``ZOO-proj4js.js`` in the same directory as your ZOO-Kernel it means that your environment will contains ZOO-API and Proj4js will be loaded before your service. In such case you can access to the Classes defined in the JavaScript ZOO-API to manipulate geographic data, for more informations please refer to the `ZOO-API Documentation <http://zoo-project.org/docs/api/index.html>`__."
+msgstr "Pour supporter le langage JavaScript, le ZOO-Kernel utilise l'API `SpiderMonkey <https://developer.mozilla.org/en/SpiderMonkey>`__ pour créer un environnement d'exécution javascript à partir duquel il va charger votre fichier JS puis extraire la fonction correspondante au service à exécuter à l'aide des paramètres pré-remplis. L'environnement d'exécution JavaScript créé par le ZOO-Kernel dépend de votre configuration. Si vous avez placé ``ZOO-api.js`` et ``ZOO-proj4js.js`` dans le même répertoire que votre ZOO-Kernel, cela signifie que votre environnement contient la ZOO-API et que Proj4js sera chargé avant votre service. Dans ce cas, vous pouvez accéder aux classes définies dans la ZOO-API JavaScript pour manipuler des données géographiques. Pour plus d'informations, merci de vous référer à la `Documentation de la ZOO-API <http://zoo-project.org/docs/api/index.html>`__."
 
 #: ../../workshop/2013/js_services_chaining.txt:66
-msgid ""
-"Even if it can be useful to run JavaScript on the server side, you should "
-"remember that some basic JavaScript functions you are familiar with does not"
-" exist or get a different behavior. For instance the simple ``alert`` "
-"function will display messages in apache error logs rather than in a window "
-"when used from a browser. The ``alert`` function can be used as follow:"
-msgstr ""
+msgid "Even if it can be useful to run JavaScript on the server side, you should remember that some basic JavaScript functions you are familiar with does not exist or get a different behavior. For instance the simple ``alert`` function will display messages in apache error logs rather than in a window when used from a browser. The ``alert`` function can be used as follow:"
+msgstr "Même si elle peut être utile pour exécuter le JavaScript côté serveur, vous devriez vous rappeler que certaines fonctions de base JavaScript dont vous êtes familier n'existent pas ou ont un comportement différent. Par exemple, la simple fonction ``alert`` affichera des messages dans les journaux d'erreurs Apache plutôt que dans une fenêtre lorsqu'il est utilisé depuis un navigateur. La fonction ``alert`` peut être utilisée comme suit:"
 
 #: ../../workshop/2013/js_services_chaining.txt:76
-msgid ""
-"There is no XMLHttpRequest available in the JavaScript evironement your "
-"service will run into. Hopefully, the ZOO-Kernel expose a C function to the "
-"JavaScript world named: ``JSRequest``. This function make you able from your"
-" JavaScript services to call other WPS services (locally or remotelly) or "
-"other kind OGC services such as WFS. When you are using the ZOO-API it is "
-"possible to call Services using a ``ZOO.Process`` instance [#f3]_, to parse "
-"WPS Responses using ``ZOO.Format.WPS`` (cf. `ref <http://zoo-"
-"project.org/docs/api/zoo-process.html>`__)."
-msgstr ""
+msgid "There is no XMLHttpRequest available in the JavaScript evironement your service will run into. Hopefully, the ZOO-Kernel expose a C function to the JavaScript world named: ``JSRequest``. This function make you able from your JavaScript services to call other WPS services (locally or remotelly) or other kind OGC services such as WFS. When you are using the ZOO-API it is possible to call Services using a ``ZOO.Process`` instance [#f3]_, to parse WPS Responses using ``ZOO.Format.WPS`` (cf. `ref <http://zoo-project.org/docs/api/zoo-process.html>`__)."
+msgstr "Il n'y a pas de XMLHttpRequest disponible dans l'environnement JavaScript où votre service s'exécute. Heureusement, le ZOO-Kernel expose une fonction C au monde JavaScript nommée: ``JSRequest``. Cette fonction vous rend capable depuis vos services JavaScript d'appeler d'autres services WPS (localement ou distants) ou d'autres types de services OGC tels que le WFS. Lorsque vous utilisez la ZOO-API, il est possible d'appeler des services en utilisant une instance ``ZOO.Process`` [#f3]_, pour parser les réponses WPS utilisant ``ZOO.Format.WPS`` (cf. `ref <http://zoo-project.org/docs/api/zoo-process.html>`__)."
 
 #: ../../workshop/2013/js_services_chaining.txt:85
-msgid ""
-"As for Python services you already seen in previous sections, the functions "
-"corresponding to a Service should take three arguments: ``conf``, ``inputs``"
-" and ``outputs`` [#f4]_. Nevertheless, as the ZOO-Kernel is not able to "
-"access the values modified [#f5]_ by the Service code, rather than returning"
-" an integer as in Python, here you'll need to return both the integer value "
-"representing the Status of your Service in a JavaScript Object and the "
-"resulting ``outputs`` values as an Object [#f6]_. You can see in the "
-"following an example of a JavaScript Service code:"
-msgstr ""
+msgid "As for Python services you already seen in previous sections, the functions corresponding to a Service should take three arguments: ``conf``, ``inputs`` and ``outputs`` [#f4]_. Nevertheless, as the ZOO-Kernel is not able to access the values modified [#f5]_ by the Service code, rather than returning an integer as in Python, here you'll need to return both the integer value representing the Status of your Service in a JavaScript Object and the resulting ``outputs`` values as an Object [#f6]_. You can see in the following an example of a JavaScript Service code:"
+msgstr "Quant aux services de Python que vous avez déjà vu dans les sections précédentes, les fonctions correspondantes à un service doivent prendre trois arguments: ``conf``, ``inputs`` et ``outputs`` [#f4]_. Néanmoins, comme le ZOO-Kernel n'est pas en mesure d'accéder aux valeurs modifiées [#f5]_ par le code de service, plutôt que de retourner un entier comme en Python, ici vous devez retourner à la fois la valeur de nombre entier représentant le statut de votre service dans un objet JavaScript et les valeurs ``outputs`` résultantes comme un objet [#f6]_. Vous pouvez voir dans ce qui suit un exemple de code de service JavaScript:"
 
 #: ../../workshop/2013/js_services_chaining.txt:105
-msgid ""
-"Before starting to implement the Services we will need to get our final "
-"BufferRequest service, let start with a simplier one."
-msgstr ""
+msgid "Before starting to implement the Services we will need to get our final BufferRequest service, let start with a simplier one."
+msgstr "Avant de commencer à implémenter les services dont nous aurons besoin pour obtenir notre service BufferRequest final, commençons avec un plus simple."
 
 #: ../../workshop/2013/js_services_chaining.txt:109
 msgid "The Mask Service"
-msgstr ""
+msgstr "Le service Mask"
 
 #: ../../workshop/2013/js_services_chaining.txt:111
-msgid ""
-"In this section you will learn how to create your first JavaScript service "
-"which will simply return a rectangular mask around a selected feature. To "
-"build this mask you will use the Buffer service to create a buffer big "
-"enough around a selected geometry to cover a significant part of your map. "
-"You can see the expected result in the following screenshot:"
-msgstr ""
+msgid "In this section you will learn how to create your first JavaScript service which will simply return a rectangular mask around a selected feature. To build this mask you will use the Buffer service to create a buffer big enough around a selected geometry to cover a significant part of your map. You can see the expected result in the following screenshot:"
+msgstr "Dans cette section, vous apprendrez comment créer votre premier service JavaScript qui renvoie simplement un masque rectangulaire autour d'un objet sélectionné. Pour construire ce masque, vous utiliserez le service Buffer pour créer une zone tampon assez grande autour d'une géométrie sélectionnée pour couvrir une part importante de votre carte. Vous pouvez voir le résultat attendu dans la capture d'écran suivante:"
 
 #: ../../workshop/2013/js_services_chaining.txt:121
-msgid ""
-"As before, you will first start by writting the ZCFG, then you will write "
-"the JavaScript source code and finish by publishing your Services Provider."
-msgstr ""
+msgid "As before, you will first start by writting the ZCFG, then you will write the JavaScript source code and finish by publishing your Services Provider."
+msgstr "Comme précédemment, vous allez d'abord commencer en écrivant un ZCFG,  ensuite vous écrirez le code source JavaScript et finirez par publier votre fournisseur de services."
 
 #: ../../workshop/2013/js_services_chaining.txt:125
 #: ../../workshop/2013/js_services_chaining.txt:280
 #: ../../workshop/2013/js_services_chaining.txt:405
 msgid "The ZCFG"
-msgstr ""
+msgstr "Le ZCFG"
 
 #: ../../workshop/2013/js_services_chaining.txt:127
-msgid ""
-"Open the file named ``~/zoo-ws2013/jschains/cgi-env/Mask.zcfg`` with your "
-"favorite text editor and add the following content:"
-msgstr ""
+msgid "Open the file named ``~/zoo-ws2013/jschains/cgi-env/Mask.zcfg`` with your favorite text editor and add the following content:"
+msgstr "Ouvrez le fichier nommé ``~/zoo-ws2013/jschains/cgi-env/Mask.zcfg`` avec votre éditeur de texte favori et ajoutez le contenu suivant:"
 
 #: ../../workshop/2013/js_services_chaining.txt:166
-msgid ""
-"Here you simply define one default ``ComplexData`` for both ``inputData`` "
-"and ``Result``: a GML and a GeoJSON respectively [#f7]_."
-msgstr ""
+msgid "Here you simply define one default ``ComplexData`` for both ``inputData`` and ``Result``: a GML and a GeoJSON respectively [#f7]_."
+msgstr "Ici, vous définissez simplement une ``ComplexData``par défaut, à la fois pour ``inputData`` et ``Result``: un GML et un GeoJSON respectivement [#f7]_."
 
 #: ../../workshop/2013/js_services_chaining.txt:170
 #: ../../workshop/2013/js_services_chaining.txt:325
 msgid "The JavaScript service"
-msgstr ""
+msgstr "Le service JavaScript"
 
 #: ../../workshop/2013/js_services_chaining.txt:172
-msgid ""
-"As you will have to request the Buffer service many times from your service,"
-" you will first define a ``Buffer`` function as follow. It uses the "
-"``ZOO.Process`` to request the Buffer service you seen in the previous "
-"section."
-msgstr ""
+msgid "As you will have to request the Buffer service many times from your service, you will first define a ``Buffer`` function as follow. It uses the ``ZOO.Process`` to request the Buffer service you seen in the previous section."
+msgstr "Comme vous aurez à interroger le service Buffer de nombreuses fois depuis votre service, vous devrez d'abord définir une fonction ``Buffer`` comme suit. Il utilise le ``ZOO.Process`` pour interroger le service Buffer que vous avez vu dans la section précédente."
 
 #: ../../workshop/2013/js_services_chaining.txt:176
-msgid ""
-"Open a file named ``~/zoo-ws2013/jschains/cgi-env/foss4gws.js`` and add the "
-"following content:"
-msgstr ""
+msgid "Open a file named ``~/zoo-ws2013/jschains/cgi-env/foss4gws.js`` and add the following content:"
+msgstr "Ouvrez un fichier nommé ``~/zoo-ws2013/jschains/cgi-env/foss4gws.js`` et ajoutez le contenu suivant:"
 
 #: ../../workshop/2013/js_services_chaining.txt:207
-msgid ""
-"From line 12 to 15, you give a GeoJSON string (created from ``inputData``) "
-"for InputPolygon and, on line 14, you set the BufferDistance value to "
-"``bDist``. On line 16, you define Result as a ResponseDocument, so you'll "
-"have to parse the WPS response using the ZOO.Format.WPS, on line 21."
-msgstr ""
+msgid "From line 12 to 15, you give a GeoJSON string (created from ``inputData``) for InputPolygon and, on line 14, you set the BufferDistance value to ``bDist``. On line 16, you define Result as a ResponseDocument, so you'll have to parse the WPS response using the ZOO.Format.WPS, on line 21."
+msgstr "Des lignes 12 à 15, vous donnez une chaîne GeoJSON (créé à partir de ``inputData``) pour InputPolygon et, sur la ligne 14, vous définissez la valeur de BufferDistance à ``bDist``. Sur la ligne 16, vous définissez Result comme un ResponseDocument, ainsi vous aurez à parser la réponse WPS utilisant le ZOO.Format.WPS, sur la ligne 21."
 
 #: ../../workshop/2013/js_services_chaining.txt:212
-msgid ""
-"On line 17, you create a `ZOO.Process <http://zoo-project.org/docs/api/zoo-"
-"process.html#zoo-process>`__ instance providing the ZOO-Kernel url and the "
-"Service name. Then, on line 18, you run the request passing inputs and "
-"outputs previously defined (from line 12 to 15)."
-msgstr ""
+msgid "On line 17, you create a `ZOO.Process <http://zoo-project.org/docs/api/zoo-process.html#zoo-process>`__ instance providing the ZOO-Kernel url and the Service name. Then, on line 18, you run the request passing inputs and outputs previously defined (from line 12 to 15)."
+msgstr "Sur la ligne 17, vous créez une instance `ZOO.Process <http://zoo-project.org/docs/api/zoo-process.html#zoo-process>`__ fournissant l'url  du ZOO-Kernel et le nom du service. Puis, à la ligne 18, vous exécutez les requêtes passant les entrées et sorties définies précédemment (des lignes 12 à 15)."
 
 #: ../../workshop/2013/js_services_chaining.txt:217
-msgid ""
-"Now, you get your ``Buffer`` function, it is time to create your first "
-"JavaScript service. So, edit your ``foss4gws.js`` file you created before "
-"and add the following content:"
-msgstr ""
+msgid "Now, you get your ``Buffer`` function, it is time to create your first JavaScript service. So, edit your ``foss4gws.js`` file you created before and add the following content:"
+msgstr "Maintenant, vous avez votre fonction ``Buffer``, il est temps de créer votre premier service JavaScript. Donc, éditer votre fichier ``foss4gws.js`` créé avant et ajoutez le contenu suivant:"
 
 #: ../../workshop/2013/js_services_chaining.txt:253
 #: ../../workshop/2013/js_services_chaining.txt:386
 #: ../../workshop/2013/js_services_chaining.txt:510
 msgid "Publish and use your Service"
-msgstr ""
+msgstr "Publier et utiliser votre service"
 
 #: ../../workshop/2013/js_services_chaining.txt:255
-msgid ""
-"Now you get both your ZCFG and your service code ready, you need to deploy "
-"your new Services Provider using the following command:"
-msgstr ""
+msgid "Now you get both your ZCFG and your service code ready, you need to deploy your new Services Provider using the following command:"
+msgstr "Maintenant vous avez à la fois votre ZCFG et votre code de service prêt, vous devez déployer votre nouveau fournisseur de services en utilisant la commande suivante:"
 
 #: ../../workshop/2013/js_services_chaining.txt:262
-msgid ""
-"Now you are ready to use your JavaScript service by loading the following "
-"`url <http://localhost/zoows2013-demo/spatialtools.html>`__, click on a "
-"street then click on the \"Mask\" button."
-msgstr ""
+msgid "Now you are ready to use your JavaScript service by loading the following `url <http://localhost/zoows2013-demo/spatialtools.html>`__, click on a street then click on the \"Mask\" button."
+msgstr "Maintenant, vous êtes prêt à utiliser votre service JavaScript en chargeant l`url <http://localhost/zoows2013-demo/spatialtools.html>`__ suivante, cliquez sur une rue, puis cliquez sur le bouton \"Mask\"."
 
 #: ../../workshop/2013/js_services_chaining.txt:267
 msgid "BufferMask Service"
-msgstr ""
+msgstr "Service BufferMask"
 
 #: ../../workshop/2013/js_services_chaining.txt:269
-msgid ""
-"In this section you will implement a simple JavaScript service which will be"
-" able create a hole in the mask you created in `previous section <#mask-"
-"service>`__. This service will be used to highlight the buffer zone around a"
-" selected fature. You get a preview of the expected result in the following "
-"screenshot:"
-msgstr ""
+msgid "In this section you will implement a simple JavaScript service which will be able create a hole in the mask you created in `previous section <#mask-service>`__. This service will be used to highlight the buffer zone around a selected fature. You get a preview of the expected result in the following screenshot:"
+msgstr "Dans cette section, vous implémenterez un service simple JavaScript qui sera capable de créer un trou dans le masque que vous avez créé dans la `section précédente <#mask-service>`__. Ce service sera utilisé pour mettre en évidence la zone tampon autour d'un objet sélectionné. Vous avez un aperçu du résultat attendu dans la capture d'écran suivante:"
 
 #: ../../workshop/2013/js_services_chaining.txt:282
-msgid ""
-"Open the file named ``~/zoo-ws2013/jschains/cgi-env/BufferMask.zcfg`` with "
-"your favorite text editor and copy / paste the following content:"
-msgstr ""
+msgid "Open the file named ``~/zoo-ws2013/jschains/cgi-env/BufferMask.zcfg`` with your favorite text editor and copy / paste the following content:"
+msgstr "Ouvrez le fichier nommé ``~/zoo-ws2013/jschains/cgi-env/BufferMask.zcfg`` avec votre éditeur de texte favori et copiez / collez le contenu suivant:"
 
 #: ../../workshop/2013/js_services_chaining.txt:321
-msgid ""
-"This ZCFG is similar to the previous one. Please, refer to comments in the "
-"`previous section <#the-zcfg>`__ for more informations."
-msgstr ""
+msgid "This ZCFG is similar to the previous one. Please, refer to comments in the `previous section <#the-zcfg>`__ for more informations."
+msgstr "Ce ZCFG est similaire au précédent. Merci de vous référer aux commentaires de la `section précédente <#the-zcfg>`__ pour plus d'informations."
 
 #: ../../workshop/2013/js_services_chaining.txt:327
-msgid ""
-"In this Service you will use same source code (until line 19) you used in "
-"the `previous section <#the-javascript-service>`__. Indeed, you should "
-"compute the Mask as you did before then compute Buffer for creating a hole "
-"in the mask (on line 22) to run the Difference service (from line 25 to 40)."
-msgstr ""
+msgid "In this Service you will use same source code (until line 19) you used in the `previous section <#the-javascript-service>`__. Indeed, you should compute the Mask as you did before then compute Buffer for creating a hole in the mask (on line 22) to run the Difference service (from line 25 to 40)."
+msgstr "Dans ce service, vous utiliserez le même code source (jusqu'à la ligne 19) que vous avez utilisé dans la section précédente <#the-javascript-service>`__. En effet, vous devez calculer le masque (Mask) comme vous l'avez fait avant puis calculer le tampon (Buffer) pour créer un trou dans le masque (à la ligne 22) pour exécuter le service Difference (des lignes 25 à 40)."
 
 #: ../../workshop/2013/js_services_chaining.txt:388
 #: ../../workshop/2013/js_services_chaining.txt:512
-msgid ""
-"Now, you can publish your service as you did `before <#publish-your-"
-"service>`__. To use your service, please use the following `url "
-"<http://localhost/zoows2013-demo/spatialtools.html>`__."
-msgstr ""
+msgid "Now, you can publish your service as you did `before <#publish-your-service>`__. To use your service, please use the following `url <http://localhost/zoows2013-demo/spatialtools.html>`__."
+msgstr "Maintenant, vous pouvez publier votre service comme vous l'avez fait `avant <#publish-your-service>`__. Pour utiliser votre service, merci d'utiliser `l'url <http://localhost/zoows2013-demo/spatialtools.html>`__ suivante."
 
 #: ../../workshop/2013/js_services_chaining.txt:393
 msgid "BufferRequest service"
-msgstr ""
+msgstr "Service BufferRequest"
 
 #: ../../workshop/2013/js_services_chaining.txt:395
-msgid ""
-"In this section, you will create a new Service: ``BufferRequest`` which will"
-" request POIs included in the Buffer around a selected feature [#f8]_. You "
-"will use the ``poi`` layer served as WFS through your local mapserver "
-"installation. You can see in the following screenshot the expected result:"
-msgstr ""
+msgid "In this section, you will create a new Service: ``BufferRequest`` which will request POIs included in the Buffer around a selected feature [#f8]_. You will use the ``poi`` layer served as WFS through your local mapserver installation. You can see in the following screenshot the expected result:"
+msgstr "Dans cette section, vous allez créer un nouveau service: ``BufferRequest`` qui interrogera les POIs inclus dans le tampon (Buffer) autour d'un objet sélectionné [#f8]_. Vous allez utiliser la couche ``poi`` servie comme WFS par votre installation locale de MapServer. Vous pouvez voir dans la capture d'écran suivante, le résultat attendu:"
 
 #: ../../workshop/2013/js_services_chaining.txt:407
-msgid ""
-"Open the file named ``~/zoo-ws2013/jschains/cgi-env/BufferRequest.zcfg`` "
-"with your favorite text editor and copy / paste the following content:"
-msgstr ""
+msgid "Open the file named ``~/zoo-ws2013/jschains/cgi-env/BufferRequest.zcfg`` with your favorite text editor and copy / paste the following content:"
+msgstr "Ouvrez le fichier nommé ``~/zoo-ws2013/jschains/cgi-env/BufferRequest.zcfg`` avec votre éditeur de texte favori et copiez / collez le contenu suivant:"
 
 #: ../../workshop/2013/js_services_chaining.txt:448
 msgid "The JavaScript code"
-msgstr ""
+msgstr "Le code JavaScript"
 
 #: ../../workshop/2013/js_services_chaining.txt:450
-msgid ""
-"As in the previous Service, you will compute a buffer around the input "
-"feature. But then you will request POIs available in the Buffer extent using"
-" a WFS request to use them to run ``Intersection`` service using the initial"
-" Buffer. The WFS request is useful to limit the number of points to use when"
-" requesting the ``Intersection`` Service."
-msgstr ""
+msgid "As in the previous Service, you will compute a buffer around the input feature. But then you will request POIs available in the Buffer extent using a WFS request to use them to run ``Intersection`` service using the initial Buffer. The WFS request is useful to limit the number of points to use when requesting the ``Intersection`` Service."
+msgstr "Comme dans le service précédent, vous allez calculer un tampon autour de l'objet en entrée. Mais ensuite vous allez interroger les POI disponibles dans l'étendue du tampon en utilisant une requête WFS pour les utiliser afin d'exécuter un service ``Intersection`` en utilisant le tampon initial. La requête WFS est utile pour limiter le nombre de points à utiliser quand vous interrogez le service ``Intersection``."
 
 #: ../../workshop/2013/js_services_chaining.txt:504
-msgid ""
-"to take advantage of the ZOO-Kernel cache system, you directly use the WFS "
-"request  as ``xlink:href`` rather than value for ``InputEntity2`` (from line"
-" 31 to 34) and use ``text/xml`` ``mimeType`` (on line 40). Indeed, the ZOO-"
-"API doesn't use the internal cache mechanisms."
-msgstr ""
+msgid "to take advantage of the ZOO-Kernel cache system, you directly use the WFS request  as ``xlink:href`` rather than value for ``InputEntity2`` (from line 31 to 34) and use ``text/xml`` ``mimeType`` (on line 40). Indeed, the ZOO-API doesn't use the internal cache mechanisms."
+msgstr "pour tirer avantage du système de cache du ZOO-Kernel, vous utilisez directement la requête WFS comme ``xlink:href`` plutôt que la valeur pour ``InputEntity2`` (des lignes 31 à 34) et utilisez le ``mimeType`` ``text/xml`` (à la ligne 40). En effet, la ZOO-API n'utilise pas les mécanismes de cache interne."
 
 #: ../../workshop/2013/js_services_chaining.txt:516
-msgid ""
-"You can click on \"Buffer Request and Mask\"  to get the same result as "
-"presented in  `the initial screenshot <#introduction>`__."
-msgstr ""
+msgid "You can click on \"Buffer Request and Mask\"  to get the same result as presented in  `the initial screenshot <#introduction>`__."
+msgstr "Vous pouvez cliquer sur \"Buffer Request and Mask\"  pour obtenir le même résultat que celui présenté dans `la capture d'écran initiale <#introduction>`__."
 
 #: ../../workshop/2013/js_services_chaining.txt:521
 msgid "Add Union into the chain"
-msgstr ""
+msgstr "Ajouter Union dans la chaîne"
 
 #: ../../workshop/2013/js_services_chaining.txt:523
-msgid ""
-"As you can see in the following screenshot, when using the Buffer service "
-"using a feature collection containing more than one geometry, the result is "
-"made of multiple geometries. So, running Buffer service on the routing "
-"interface will result in multiple buffer:"
-msgstr ""
+msgid "As you can see in the following screenshot, when using the Buffer service using a feature collection containing more than one geometry, the result is made of multiple geometries. So, running Buffer service on the routing interface will result in multiple buffer:"
+msgstr "Comme vous pouvez le voir dans la capture d'écran suivante, lors de l'utilisation du service Buffer en utilisant une collection d'objets contenant plus d'une géométrie, le résultat est composé de plusieurs géométries. Ainsi, l'exécution d'un service Buffer sur l'interface de routage se traduira par un tampon multiple:"
 
 #: ../../workshop/2013/js_services_chaining.txt:532
-msgid ""
-"So, to get the same result as you got when selecting a single road, you "
-"should use Union of geometry (input or the one outputed by the ``Buffer`` "
-"Service). As you are using the JavaScript ZOO-API, you can simply update the"
-" ``Buffer`` JavaScript function you defined earlier, to first call the Union"
-" of each geometry avaible in a feature collection prior to request (or after"
-" requesting) the Buffer Service. Hopefully, there is already this Python "
-"Service available, its name is ``UnionOne1``, so you just need to add it in "
-"your Service chain."
-msgstr ""
+msgid "So, to get the same result as you got when selecting a single road, you should use Union of geometry (input or the one outputed by the ``Buffer`` Service). As you are using the JavaScript ZOO-API, you can simply update the ``Buffer`` JavaScript function you defined earlier, to first call the Union of each geometry avaible in a feature collection prior to request (or after requesting) the Buffer Service. Hopefully, there is already this Python Service available, its name is ``UnionOne1``, so you just need to add it in your Service chain."
+msgstr "Donc, pour obtenir le même résultat que celui que vous avez obtenu lors de la sélection d'une seule route, vous devez utiliser une Union de géométrie (entrée ou celle retournée par le service ``Buffer``). Comme vous utilisez la ZOO-API JavaScript, vous pouvez simplement mettre à jour la fonction JavaScript ``Buffer`` que vous avez défini plus tôt, pour appeler d'abord l'Union de chaque géométrie disponible, dans une collection d'objets avant d'interroger (ou après avoir interrogé) le service Buffer. Heureusement, il ya déjà ce service Python disponible, son nom est ``UnionOne1``, ainsi vous avez juste besoin de l'ajouter dans votre chaîne de service."
 
 #: ../../workshop/2013/js_services_chaining.txt:541
 msgid "Here is the final code for the Buffer JavaScript function:"
-msgstr ""
+msgstr "Voici le code final pour la fonction JavaScript de Buffer:"
 
 #: ../../workshop/2013/js_services_chaining.txt:577
 msgid "Conclusion"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../workshop/2013/js_services_chaining.txt:579
-msgid ""
-"After understanding how basic Geometric Operation Services works, here you "
-"built step by step new JavaScript services which reuse the previous ones and"
-" combine them in different ways. This was achieved using the ZOO-API, "
-"composed by C functions exposed by the ZOO-Kernel to the JavaScript services"
-" runtime environement and the JS files which can be optionally installed."
-msgstr ""
+msgid "After understanding how basic Geometric Operation Services works, here you built step by step new JavaScript services which reuse the previous ones and combine them in different ways. This was achieved using the ZOO-API, composed by C functions exposed by the ZOO-Kernel to the JavaScript services runtime environement and the JS files which can be optionally installed."
+msgstr "Après avoir compris comment les services d'opérations géométriques basiques fonctionnent, ici vous allez construire étape par étape de nouveaux services JavaScript qui réutilisent les précédents et les combinent de différentes façons. Ceci a été réalisé en utilisant la ZOO-API, composée par des fonctions C exposés par le ZOO-Kernel à l'environnement des services d'exécution JavaScript et des fichiers JS qui peuvent être installés en option."
 
 #: ../../workshop/2013/js_services_chaining.txt:582
 msgid "Footnotes"
-msgstr ""
+msgstr "Notes de pied de page"
 
 #: ../../workshop/2013/js_services_chaining.txt:583
-msgid ""
-"The ``ZOO.Process`` class uses ``JSRequest`` (cf. `ref <http://zoo-"
-"project.org/docs/api/zoo-format-wps.html>`__). You will get example of use "
-"`later  <#the-javascript-service>`__."
-msgstr ""
+msgid "The ``ZOO.Process`` class uses ``JSRequest`` (cf. `ref <http://zoo-project.org/docs/api/zoo-format-wps.html>`__). You will get example of use `later  <#the-javascript-service>`__."
+msgstr "La classe ``ZOO.Process`` utilise ``JSRequest`` (cf. `ref <http://zoo-project.org/docs/api/zoo-format-wps.html>`__). Vous aurez un exemple d'utilisation `plus tard <#the-javascript-service>`__."
 
 #: ../../workshop/2013/js_services_chaining.txt:586
-msgid ""
-"So ``conf``, ``inputs`` and ``outputs`` are simple JavaScript objects, "
-"similar to the Python dictionaries used in the `previous section "
-"<ogr_base_vect_ops.html>`__."
-msgstr ""
+msgid "So ``conf``, ``inputs`` and ``outputs`` are simple JavaScript objects, similar to the Python dictionaries used in the `previous section <ogr_base_vect_ops.html>`__."
+msgstr "Ainsi ``conf``, ``inputs`` et ``outputs`` sont de simples objets JavaScript, similaires aux dictionnaires Python utilisés dans la `section précédente <ogr_base_vect_ops.html>`__."
 
 #: ../../workshop/2013/js_services_chaining.txt:588
 msgid "Such as ``conf``, ``inputs`` and ``outputs``."
-msgstr ""
+msgstr "Comme ``conf``, ``inputs`` et ``outputs``."
 
 #: ../../workshop/2013/js_services_chaining.txt:589
-msgid ""
-"You can also return a conf Object if you get any informations updated from "
-"your JavaScript service (such as cookie for instance)"
-msgstr ""
+msgid "You can also return a conf Object if you get any informations updated from your JavaScript service (such as cookie for instance)"
+msgstr "Vous pouvez également retourner un objet de configuration si vous obtenez des informations mises à jour depuis votre service JavaScript (tels que des cookies par exemple)"
 
 #: ../../workshop/2013/js_services_chaining.txt:590
-msgid ""
-"Using one of the available ``ZOO.formats`` you are also able to support "
-"various ``ComplexData`` for both input and output of the service. To "
-"simplify the presentation here, you will use only this default ones."
-msgstr ""
+msgid "Using one of the available ``ZOO.formats`` you are also able to support various ``ComplexData`` for both input and output of the service. To simplify the presentation here, you will use only this default ones."
+msgstr "En utilisant un des ``ZOO.formats`` disponibles, vous êtes également capable de supporter divers ``ComplexData`` à la fois en entrée et en sortie du service. Pour simplifier la présentation ici, vous utiliserez seulement ceux par défaut."
 
 #: ../../workshop/2013/js_services_chaining.txt:593
 msgid "So in the hole you created in the previous section."
-msgstr ""
+msgstr "Ainsi, dans le trou que vous avez créé dans la section précédente."
+
