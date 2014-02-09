@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: ZOO Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-24 19:27+0100\n"
-"PO-Revision-Date: 2014-02-09 02:21+0100\n"
+"PO-Revision-Date: 2014-02-09 14:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,15 +37,15 @@ msgstr "La structure actuelle du processus de documentation du projet ZOO est po
 
 #: ../../development/documentation.txt:24
 msgid "reStructuredText Reference Guides"
-msgstr "Guides de référence du ReStructuredText"
+msgstr "Guides de référence du reStructuredText"
 
 #: ../../development/documentation.txt:26
 msgid "Docutils `Quick reStructuredText <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__"
-msgstr "le `ReStructuredText rapide <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__ de Docutils"
+msgstr "le `reStructuredText rapide <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__ de Docutils"
 
 #: ../../development/documentation.txt:27
 msgid "Docutils `reStructuredText Directives <http://docutils.sourceforge.net/docs/ref/rst/directives.html>`__"
-msgstr "les `directives ReStructuredText <http://docutils.sourceforge.net/docs/ref/rst/directives.html>`__ de Docutils"
+msgstr "les `directives reStructuredText <http://docutils.sourceforge.net/docs/ref/rst/directives.html>`__ de Docutils"
 
 #: ../../development/documentation.txt:28
 msgid "Sphinx's `reStructuredText Primer <http://sphinx.pocoo.org/rest.html>`__"
@@ -57,7 +57,7 @@ msgstr "cherchez dans la `liste de diffusion <http://groups.google.com/group/sph
 
 #: ../../development/documentation.txt:32
 msgid "reStructuredText Formatting"
-msgstr "Formatage du ReStructuredText"
+msgstr "Formatage du reStructuredText"
 
 #: ../../development/documentation.txt:34
 msgid "All text should be hard breaks at or around the 80 column mark, just as the source code."
